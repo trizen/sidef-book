@@ -1,0 +1,30 @@
+[1]: http://rosettacode.org/wiki/Polymorphic_copy
+
+# [Polymorphic copy][1]
+
+_Sys.copy()_ makes a deep-copy of any object and returns it to the caller.
+
+```ruby
+class T(value) {
+    method display {
+        say value;
+    }
+}
+ 
+class S(value) < T {
+    method display {
+        say value;
+    }
+}
+ 
+var obj1 = T("T");
+var obj2 = S("S");
+var obj3 = Sys.copy(obj2);      # make a copy to obj2
+ 
+obj1.value = "foo";             # change the value of obj1
+obj2.value = "bar";             # change the value of obj2
+ 
+obj1.display;                   # prints "foo"
+obj2.display;                   # prints "bar"
+obj3.display;                   # prints "S"
+```

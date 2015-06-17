@@ -1,0 +1,13 @@
+[1]: http://rosettacode.org/wiki/Sierpinski_carpet
+
+# [Sierpinski carpet][1]
+
+```ruby
+var c = ['##'];
+{
+    c = (c.map{.times(3)}                     +
+         c.map{|x| x + ' '.times(x.len) + x } +
+         c.map{.times(3)});
+} * 3;
+c.join("\n").say;
+```
