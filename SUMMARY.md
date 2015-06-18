@@ -242,6 +242,7 @@
        * [Polymorphic copy](programming_tasks/P/Polymorphic_copy.md)
        * [Polymorphism](programming_tasks/P/Polymorphism.md)
        * [Primality by trial division](programming_tasks/P/Primality_by_trial_division.md)
+       * [Problem of Apollonius](programming_tasks/P/Problem_of_Apollonius.md)
        * [Program name](programming_tasks/P/Program_name.md)
        * [Program termination](programming_tasks/P/Program_termination.md)
    * Q

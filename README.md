@@ -29,6 +29,7 @@ Sidef is a high-level, general-purpose programming language, inspired by Ruby, P
 ### WWW
 
 * Github: https://github.com/trizen/sidef
+* Gitbook: http://trizen.gitbooks.io/sidef-lang/
 * RosettaCode: http://rosettacode.org/wiki/Sidef
 
 ### LICENSE AND COPYRIGHT
