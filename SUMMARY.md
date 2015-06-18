@@ -151,6 +151,7 @@
        * [Hickerson series of almost integers](programming_tasks/H/Hickerson_series_of_almost_integers.md)
        * [Higher-order functions](programming_tasks/H/Higher-order_functions.md)
        * [HTTP](programming_tasks/H/HTTP.md)
+       * [HTTPS](programming_tasks/H/HTTPS.md)
        * [Huffman coding](programming_tasks/H/Huffman_coding.md)
    * I
        * [IBAN](programming_tasks/I/IBAN.md)
@@ -219,6 +220,7 @@
        * [Multifactorial](programming_tasks/M/Multifactorial.md)
        * [Multiple distinct objects](programming_tasks/M/Multiple_distinct_objects.md)
        * [Multiplication tables](programming_tasks/M/Multiplication_tables.md)
+       * [Multisplit](programming_tasks/M/Multisplit.md)
        * [Munching squares](programming_tasks/M/Munching_squares.md)
        * [Mutual recursion](programming_tasks/M/Mutual_recursion.md)
    * N
@@ -271,6 +273,7 @@
            * [Decode](programming_tasks/R/Roman_numerals/Decode.md)
            * [Encode](programming_tasks/R/Roman_numerals/Encode.md)
        * [Roots of a function](programming_tasks/R/Roots_of_a_function.md)
+       * [Roots of a quadratic function](programming_tasks/R/Roots_of_a_quadratic_function.md)
        * [Rot-13](programming_tasks/R/Rot-13.md)
        * [Run-length encoding](programming_tasks/R/Run-length_encoding.md)
        * [Runtime evaluation](programming_tasks/R/Runtime_evaluation.md)
