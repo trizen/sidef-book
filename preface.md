@@ -18,7 +18,6 @@ along with examples and notes. At the end of the book I will include a large col
 ### WWW
 * Github: https://github.com/trizen
 * Blogspot: https://trizenx.blogspot.com
-* Google+: https://plus.google.com/u/0/+DanielȘuteu
 
 ### Email
 If you find any issues, please contact me at `trizenx`. (I'm using the Google mail sevices)
