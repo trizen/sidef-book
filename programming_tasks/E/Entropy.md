@@ -4,10 +4,11 @@
 
 ```ruby
 func entropy(s) {
-  var counts = Hash.new(0);
+  var counts = Hash.new;
+  counts.default(0);
   s.each { |c| counts[c]++ };
   var len = s.len;
-  [0, counts.values.map {|count| 
+  [0, counts.values.map {|count|
     var freq = count/len; freq * freq.log2 }...
   ]«-»;
 }

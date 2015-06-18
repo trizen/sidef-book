@@ -4,7 +4,8 @@
 
 ```ruby
 func entropy(s) {
-    var counts = Hash.new(0);
+    var counts = Hash.new;
+    counts.default(0);
     s.each { |c| counts[c] += 1 };
     var e = 0;
     counts.values.each { |v|
