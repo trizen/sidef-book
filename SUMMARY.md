@@ -343,6 +343,7 @@
            * [Top and tail](programming_tasks/S/Substring/Top_and_tail.md)
        * [Sudoku](programming_tasks/S/Sudoku.md)
        * [Sum and product of an array](programming_tasks/S/Sum_and_product_of_an_array.md)
+       * [Sum multiples of 3 and 5](programming_tasks/S/Sum_multiples_of_3_and_5.md)
        * [Sum of a series](programming_tasks/S/Sum_of_a_series.md)
        * [Sum of squares](programming_tasks/S/Sum_of_squares.md)
        * [Symmetric difference](programming_tasks/S/Symmetric_difference.md)
