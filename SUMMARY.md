@@ -359,6 +359,7 @@
    * U
        * [Unicode strings](programming_tasks/U/Unicode_strings.md)
        * [Unicode variable names](programming_tasks/U/Unicode_variable_names.md)
+       * [Universal Turing machine](programming_tasks/U/Universal_Turing_machine.md)
        * Unix
            * [ls](programming_tasks/U/Unix/ls.md)
        * [URL decoding](programming_tasks/U/URL_decoding.md)
