@@ -376,6 +376,7 @@
            * [Recursively](programming_tasks/W/Walk_a_directory/Recursively.md)
        * [Window creation](programming_tasks/W/Window_creation.md)
        * [Word wrap](programming_tasks/W/Word_wrap.md)
+       * [Write language name in 3D ASCII](programming_tasks/W/Write_language_name_in_3D_ASCII.md)
    * Y
        * [Y combinator](programming_tasks/Y/Y_combinator.md)
    * Z
