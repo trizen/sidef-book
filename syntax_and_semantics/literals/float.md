@@ -1,4 +1,4 @@
-# Floats
+# Float
 
 By default, each floating-point number is represented by a `Math::BigFloat` object.
 
