@@ -8,6 +8,11 @@
    * [Test installation](getting_started/hello_world.md)
 * [Syntax and semantics](syntax_and_semantics/README.md)
    * [Comments](syntax_and_semantics/comments.md)
+   * [Literals](syntax_and_semantics/literals.md)
+      * [Nil](syntax_and_semantics/nil.md)
+      * [Bool](syntax_and_semantics/bool.md)
+      * [Integers](syntax_and_semantics/integers.md)
+      * [Floats](syntax_and_semantics/floats.md)
 * [Programming tasks](programming_tasks/README.md)
    * 1
        * [100 doors](programming_tasks/1/100_doors.md)
