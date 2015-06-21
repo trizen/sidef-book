@@ -15,8 +15,9 @@ A String is typically created with a string literal, enclosing UTF-8 characters 
 Being a new programming language, Sidef has built-in support for Unicode quotes as well:
 
 ```ruby
-„double\tquoted”        # == "double    quoted"
+„double quoted”        # == "double quoted"
 ```
+
 
 A backslash can be used to denote some characters inside the string:
 

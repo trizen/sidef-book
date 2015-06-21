@@ -6,6 +6,13 @@ An Array is a collection of objects which can grow or shrink dynamically.
 [123, "abc", true, nil]
 ```
 
+Alternatively, you can use:
+
+```ruby
+Array.new(123, "abc", true, nil)
+```
+
+
 ## Special arrays
 
 Arrays of strings or numbers can be created with a special syntax:
@@ -33,12 +40,12 @@ There is also `%W(...)` which understands escapes and interpolation:
 ```ruby
 %W(
     hello\tworld
-    one\ word         # some comment
+    one\ item         # some comment
     \#{1+2}
 )
 ```
 
-...which means: `["hello\tworld", "one word", "3"]`.
+...which means: `["hello\tworld", "one item", "3"]`.
 
 
 Another way is by using the `<...>` and `«...»` delimiters, which will try to determine the types automatically for you:
