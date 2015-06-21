@@ -14,8 +14,8 @@ A String is typically created with a string literal, enclosing UTF-8 characters 
 
 Being a new programming language, Sidef has built-in support for Unicode quotes as well:
 
-```
-„double quoted”        # == "double quoted"
+```ruby
+„double\tquoted”        # == "double    quoted"
 ```
 
 A backslash can be used to denote some characters inside the string:
@@ -108,7 +108,6 @@ Single quoted strings does not support escapes, nor interpolation.
 
 ```ruby
 'single\tquoted'   # creates a string as it is
-"double\tquoted"   # replaces `\t` with a tab-character
 ```
 
 To specify a custom delimiter, you can use `%q` followed by any non-whitespace delimiter:

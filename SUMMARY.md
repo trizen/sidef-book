@@ -14,6 +14,7 @@
       * [Integer](syntax_and_semantics/literals/integer.md)
       * [Float](syntax_and_semantics/literals/float.md)
       * [String](syntax_and_semantics/literals/string.md)
+      * [Array](syntax_and_semantics/literals/array.md)
 * [Programming tasks](programming_tasks/README.md)
    * 1
        * [100 doors](programming_tasks/1/100_doors.md)
