@@ -17,4 +17,4 @@ In this book I will try to cover the entire language specifications, along with 
 * Blogspot: https://trizenx.blogspot.com
 
 ### Email
-If you have any questions or find any issues, please contact me at `trizenx`. (I'm using the Google mail sevices)
+If you have any questions or find any issues, please contact me at `trizenx`. (I'm using the Google mail services)
