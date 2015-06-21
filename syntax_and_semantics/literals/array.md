@@ -16,7 +16,7 @@ Arrays of strings or numbers can be created with a special syntax:
 %i(1 2.5 3.75)          # same as: [1, 2, 3]
 ```
 
-Unescaped spaces and unescaped comments are removed from the declaration For example, the following declaration:
+Unescaped spaces and unescaped comments are removed. For example, the following declaration:
 
 ```ruby
 %w(
