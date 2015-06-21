@@ -16,6 +16,7 @@
       * [String](syntax_and_semantics/literals/string.md)
       * [Array](syntax_and_semantics/literals/array.md)
       * [Hash](syntax_and_semantics/literals/hash.md)
+      * [Block](syntax_and_semantics/literals/block.md)
 * [Programming tasks](programming_tasks/README.md)
    * 1
        * [100 doors](programming_tasks/1/100_doors.md)
