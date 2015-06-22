@@ -6,7 +6,7 @@ An Array is a collection of objects which can grow or shrink dynamically.
 [123, "abc", true, nil]
 ```
 
-Alternatively, you can use:
+Alternatively, you can write:
 
 ```ruby
 Array.new(123, "abc", true, nil)
