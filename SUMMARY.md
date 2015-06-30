@@ -128,6 +128,7 @@
        * [Filter](programming_tasks/F/Filter.md)
        * [Find common directory path](programming_tasks/F/Find_common_directory_path.md)
        * [Find duplicate files](programming_tasks/F/Find_duplicate_files.md)
+       * [Find limit of recursion](programming_tasks/F/Find_limit_of_recursion.md)
        * [FizzBuzz](programming_tasks/F/FizzBuzz.md)
        * [Flatten a list](programming_tasks/F/Flatten_a_list.md)
        * [Floyd's triangle](programming_tasks/F/Floyd's_triangle.md)
