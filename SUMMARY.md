@@ -53,6 +53,7 @@
            * [Simple moving average](programming_tasks/A/Averages/Simple_moving_average.md)
    * B
        * [Balanced brackets](programming_tasks/B/Balanced_brackets.md)
+       * [Base64 encode data](programming_tasks/B/Base64_encode_data.md)
        * [Benford's law](programming_tasks/B/Benford's_law.md)
        * [Best shuffle](programming_tasks/B/Best_shuffle.md)
        * [Binary digits](programming_tasks/B/Binary_digits.md)
@@ -137,6 +138,7 @@
        * [Function composition](programming_tasks/F/Function_composition.md)
        * [Function definition](programming_tasks/F/Function_definition.md)
    * G
+       * [Gamma function](programming_tasks/G/Gamma_function.md)
        * [Generate lower case ASCII alphabet](programming_tasks/G/Generate_lower_case_ASCII_alphabet.md)
        * [Generic swap](programming_tasks/G/Generic_swap.md)
        * [Get system command output](programming_tasks/G/Get_system_command_output.md)
@@ -162,6 +164,7 @@
        * [Here document](programming_tasks/H/Here_document.md)
        * [Hickerson series of almost integers](programming_tasks/H/Hickerson_series_of_almost_integers.md)
        * [Higher-order functions](programming_tasks/H/Higher-order_functions.md)
+       * [Hostname](programming_tasks/H/Hostname.md)
        * [HTTP](programming_tasks/H/HTTP.md)
        * [HTTPS](programming_tasks/H/HTTPS.md)
        * [Huffman coding](programming_tasks/H/Huffman_coding.md)
