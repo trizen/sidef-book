@@ -17,7 +17,7 @@ s == "";
 s.length == 0;
 s.is_empty;
 s ~~ /^\z/;
-/\A\z/.match(s)??;
+s ~~ /\A\z/;
 ```
 
 
@@ -29,5 +29,4 @@ s.length?;
 s.length > 0;
 s ~~ /./s;
 s !~ /^\z/;
-/./s.match(s)??;
 ```

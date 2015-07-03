@@ -9,7 +9,7 @@ func h(n) {
  
 17.times { |n|
     "h(%2d) = %22s is%s almost an integer.\n".printf(
-        n, var hn = h(n).roundf(-3), hn.to_s =~ /\.[09]/ ?? ? '' : ' NOT');
+        n, var hn = h(n).roundf(-3), hn.to_s ~~ /\.[09]/ ? '' : ' NOT');
 }
 ```
 
