@@ -266,6 +266,7 @@
        * [Quickselect algorithm](programming_tasks/Q/Quickselect_algorithm.md)
        * [Quine](programming_tasks/Q/Quine.md)
    * R
+       * [Random number generator [device]](programming_tasks/R/Random_number_generator_[device].md)
        * [Random numbers](programming_tasks/R/Random_numbers.md)
        * [Range expansion](programming_tasks/R/Range_expansion.md)
        * [Rate counter](programming_tasks/R/Rate_counter.md)
