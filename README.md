@@ -16,13 +16,11 @@ Sidef is a high-level, general-purpose programming language, inspired by Ruby, P
 ```
 
 * Sidef offers a large number of features, such as:
-    * pattern matching,
-    * multiple dispatch,
     * object-oriented programming,
-    * embedding support,
+    * multiple dispatch,
     * metaprogramming,
+    * regular expressions,
     * support for using Perl modules,
-    * built-in memoization,
     * optional dynamic type checking,
     * and a large number of built-in types.
 
