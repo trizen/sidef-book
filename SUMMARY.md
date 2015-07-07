@@ -188,6 +188,8 @@
        * [Josephus problem](programming_tasks/J/Josephus_problem.md)
        * [JSON](programming_tasks/J/JSON.md)
    * K
+       * Knapsack problem
+           * [Continuous](programming_tasks/K/Knapsack_problem/Continuous.md)
        * [Knuth shuffle](programming_tasks/K/Knuth_shuffle.md)
    * L
        * [Langton's ant](programming_tasks/L/Langton's_ant.md)
