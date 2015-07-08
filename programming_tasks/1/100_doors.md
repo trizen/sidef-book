@@ -9,7 +9,7 @@ var doors = [];
  
 { |pass|
     { |i|
-        i %% pass && (
+        i % pass == 0 && (
             doors[i] := false -> not!
         );
     } * 100;
@@ -25,6 +25,6 @@ var doors = [];
 
 ```ruby
 { |i|
-    "Door %3d is %s\n".printf(i, ["closed", "open"][i**0.5->isInt]);
+    "Door %3d is %s\n".printf(i, ["closed", "open"][i.sqrt.is_int]);
 } * 100;
 ```
