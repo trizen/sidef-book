@@ -375,6 +375,7 @@
        * [Tree traversal](programming_tasks/T/Tree_traversal.md)
        * [Truncate a file](programming_tasks/T/Truncate_a_file.md)
    * U
+       * [Ulam spiral [for primes]](programming_tasks/U/Ulam_spiral_[for_primes].md)
        * [Unicode strings](programming_tasks/U/Unicode_strings.md)
        * [Unicode variable names](programming_tasks/U/Unicode_variable_names.md)
        * [Universal Turing machine](programming_tasks/U/Universal_Turing_machine.md)
