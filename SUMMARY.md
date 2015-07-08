@@ -22,6 +22,9 @@
 * [Programming tasks](programming_tasks/README.md)
    * 1
        * [100 doors](programming_tasks/1/100_doors.md)
+   * 2
+       * 24 game
+           * [Solve](programming_tasks/2/24_game/Solve.md)
    * 9
        * [99 Bottles of Beer](programming_tasks/9/99_Bottles_of_Beer.md)
    * A
@@ -93,6 +96,7 @@
        * [Create an HTML table](programming_tasks/C/Create_an_HTML_table.md)
    * D
        * [Date format](programming_tasks/D/Date_format.md)
+       * [Deepcopy](programming_tasks/D/Deepcopy.md)
        * [Define a primitive data type](programming_tasks/D/Define_a_primitive_data_type.md)
        * [Delete a file](programming_tasks/D/Delete_a_file.md)
        * [Determine if a string is numeric](programming_tasks/D/Determine_if_a_string_is_numeric.md)
@@ -251,6 +255,8 @@
        * [Optional parameters](programming_tasks/O/Optional_parameters.md)
        * [Ordered words](programming_tasks/O/Ordered_words.md)
    * P
+       * [Palindrome detection](programming_tasks/P/Palindrome_detection.md)
+       * [Pangram checker](programming_tasks/P/Pangram_checker.md)
        * [Permutations](programming_tasks/P/Permutations.md)
        * [Phrase reversals](programming_tasks/P/Phrase_reversals.md)
        * [Pi](programming_tasks/P/Pi.md)
