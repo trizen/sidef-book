@@ -4,31 +4,27 @@
 
 ```ruby
 var formats = [
-    '((%d %s %d) %s %d) %s %d',
-    '(%d %s (%d %s %d)) %s %d',
-    '(%d %s %d) %s (%d %s %d)',
-    '%d %s ((%d %s %d) %s %d)',
-    '%d %s (%d %s (%d %s %d))',
+    '((%d %s %d) %s %d) %s %d',
+    '(%d %s (%d %s %d)) %s %d',
+    '(%d %s %d) %s (%d %s %d)',
+    '%d %s ((%d %s %d) %s %d)',
+    '%d %s (%d %s (%d %s %d))',
 ];
- 
+
 var op = %w( + - * / );
 var operators = op.map { |a| op.map {|b| op.map {|c| "#{a} #{b} #{c}" } } }.flatten;
- 
+
 loop {
     var input = Sys.scanln("Enter four integers or 'q' to exit: ");
     input == 'q' && break;
- 
-    input ~~ /^[1-9]\h+[1-9]\h+[1-9]\h+[1-9]$/ || (
+
+    input ~~ /^\h*[1-9]\h+[1-9]\h+[1-9]\h+[1-9]\h*$/ || (
         say "Invalid input!"; next;
     );
- 
+
     var n = input.split.map{.to_i};
- 
-    var numbers = [];
-    n.permute {
-        numbers.append(_);
-    };
- 
+    var numbers = n.permute;
+
     formats.each { |format|
         numbers.each { |n|
             operators.each { |operator|
@@ -38,7 +34,7 @@ loop {
             }
         }
     }
-};
+}
 ```
 
 #### Output:
