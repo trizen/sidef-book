@@ -7,7 +7,7 @@ class Counter {
     method factors(n, p=2) {
         var out = [];
         while (n >= p*p) {
-            while (n %% p) {
+            while (n % p == 0) {
                 out.append(p);
                 n /= p;
             };
