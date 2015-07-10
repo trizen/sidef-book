@@ -23,7 +23,7 @@
    * 1
        * [100 doors](programming_tasks/1/100_doors.md)
    * 2
-       * 24 game
+       * [24 game](programming_tasks/2/24_game.md)
            * [Solve](programming_tasks/2/24_game/Solve.md)
    * 9
        * [99 Bottles of Beer](programming_tasks/9/99_Bottles_of_Beer.md)
