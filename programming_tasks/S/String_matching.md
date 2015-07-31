@@ -14,7 +14,8 @@ say first.ends_with(second);        #=> false
 say first.index(second);            #=> 0
  
 # Find multiple occurrences of a string
-while (var(pos=-1) = first.index(second, pos+1) != -1) {
+var pos = -1;
+while (pos = first.index(second, pos+1) != -1) {
     say "Match at pos: #{pos}";
 }
 ```

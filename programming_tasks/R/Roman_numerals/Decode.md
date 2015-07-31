@@ -59,7 +59,7 @@ func roman2arabic(digit) {
         V:     '5+',
         IV:    '4+',
         I:     '1+',
-    ]).split('+').map{.toInt}.sum;
+    ]).split('+').map{.to_i}.sum;
 }
  
 %w(MCMXC MMVIII MDCLXVI).each { |roman_num|

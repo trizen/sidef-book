@@ -9,7 +9,7 @@ var files = %w(
                 c.txt
               );
  
-files.map{.toFile}.each { |file|
+files.map{.to_file}.each { |file|
     say file.edit { |line|
         line.gsub("Goodbye London!", "Hello New York!");
     };
