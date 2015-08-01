@@ -9,7 +9,7 @@ There may be methods that share the same name, but each pointing at different fu
 [1,2,3].length;     # Array.length()
 ```
 
-The methods can also be called, using the prefix notation:
+The methods can also be called using the prefix notation:
 
 ```ruby
 length("string");
