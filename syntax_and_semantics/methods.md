@@ -18,7 +18,6 @@ The parentheses are optional when the method is called with only one argument.
 
 ```ruby
 int 12.5;   # means: int(12.5)
-            # means: 12.5.int
 ```
 
 The prefix and postfix notations can be combined:
