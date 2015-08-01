@@ -7,7 +7,7 @@ A File object represents a local file.
 ```
 
 
-Alternatively, you can use:
+Alternatively, one can write:
 
 ```ruby
 File.new("/path/to/filename.ext")

@@ -14,6 +14,7 @@
       * [Integer](syntax_and_semantics/literals/integer.md)
       * [Float](syntax_and_semantics/literals/float.md)
       * [String](syntax_and_semantics/literals/string.md)
+      * [Regex](syntax_and_semantics/literals/regex.md)
       * [File](syntax_and_semantics/literals/file.md)
       * [Dir](syntax_and_semantics/literals/dir.md)
       * [Array](syntax_and_semantics/literals/array.md)

@@ -34,7 +34,7 @@ A backslash can be used to denote some characters inside the string:
 ```
 
 
-You can use `\o{...}` to denote a code point written in octal:
+One can use `\o{...}` to denote a code point written in octal:
 
 ```ruby
 "\o{101}"   # == "A"
@@ -44,7 +44,7 @@ You can use `\o{...}` to denote a code point written in octal:
 ```
 
 
-Or you can use `\x{...}` and specify hexadecimal numbers:
+Or `\x{...}` and specify hexadecimal numbers:
 
 ```ruby
 "\x{41}"    # == "A"
@@ -52,7 +52,7 @@ Or you can use `\x{...}` and specify hexadecimal numbers:
 ```
 
 
-To specity Unicode names, you can use `\N{...}`:
+To specity Unicode names, one can use `\N{...}`:
 
 ```ruby
 "\N{WHITE SMILING FACE}"            # == "☺"
@@ -68,7 +68,7 @@ world"    # same as "hello\nworld"
 ```
 
 
-If you need to write a string that has many double quotes, parenthesis, or similar characters, you can use alternative literals:
+For writing a string that has many double quotes, parenthesis, or similar characters, one can use alternative literals:
 
 ```ruby
 # Supports double quotes and nested parenthesis
@@ -97,7 +97,7 @@ The Parser is aware of Unicode delimiters as well. Here are only a few examples:
 
 ### Interpolation
 
-To create a String with embedded expressions, you can use string interpolation:
+Creating a String with embedded expressions, is called string interpolation:
 
 ```ruby
 "sum = #{1 + 2}"        # "sum = 3"
@@ -111,7 +111,7 @@ Single quoted strings does not support escapes, nor interpolation.
 'single\tquoted'   # creates a string as it is
 ```
 
-To specify a custom delimiter, you can use `%q` followed by any non-whitespace delimiter:
+For specifying a custom delimiter, one can use `%q` followed by any non-whitespace delimiter:
 
 ```ruby
 %q(hello ('world'))     # same as 'hello (\'world\')'

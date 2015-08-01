@@ -6,7 +6,7 @@ An Array is a collection of objects which can grow or shrink dynamically.
 [123, "abc", true, nil]
 ```
 
-Alternatively, you can write:
+Alternatively, one can write:
 
 ```ruby
 Array.new(123, "abc", true, nil)
@@ -48,8 +48,8 @@ There is also `%W(...)` which understands escapes and interpolation:
 ...which means: `["hello\tworld", "one item", "3"]`.
 
 
-Another way is by using the `<...>` and `«...»` delimiters, which will try to determine the types automatically for you:
+Another way is by using the `<...>` and `«...»` delimiters:
 
 ```ruby
-<I 8 some 3.14>         # same as: ["I", 8, "some", 3.14]
+<I 8 some 3.14>         # same as: ["I", "8", "some", "3.14"]
 ```
