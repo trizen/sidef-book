@@ -12,4 +12,4 @@ The rules are the following:
 
 - `.` binds the method to the object which precedes the dot
 - `->` it makes everything from its left-side an expression and applies the method on the result
-- ` ` in just applies the method linearly to whatever is on its left-side (almost identical with `->`)
+- `\ ` in just applies the method linearly to whatever is on its left-side (almost identical with `->`)
