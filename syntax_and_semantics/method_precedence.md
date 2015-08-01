@@ -1,6 +1,6 @@
 # Method precedence
 
-Methods precedence is controlled by the following three method separators: `.`, `->` and ` ` (space).
+Method precedence is controlled by the following three method separators: `.`, `->` and ` ` (space).
 
 ```ruby
 1 + 25.sqrt;     # means: 1 + sqrt(25)
