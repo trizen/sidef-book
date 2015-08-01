@@ -1,7 +1,5 @@
 # Operator precedence
 
-In Sidef, the operator precedence rules are fundamentally different from other languages.
-
 All operators have the same precedence, which is controlled by the lack of whitespace between the operands.
 
 ```ruby
