@@ -261,6 +261,7 @@
    * P
        * [Palindrome detection](programming_tasks/P/Palindrome_detection.md)
        * [Pangram checker](programming_tasks/P/Pangram_checker.md)
+       * [Pascal's triangle](programming_tasks/P/Pascal's_triangle.md)
        * [Permutations](programming_tasks/P/Permutations.md)
        * [Phrase reversals](programming_tasks/P/Phrase_reversals.md)
        * [Pi](programming_tasks/P/Pi.md)
