@@ -29,7 +29,7 @@ func stern_brocot {
 # Check that the greatest common divisor of all the two consecutive
 # members of the series up to the 1000th member, is always one.
 var generator = stern_brocot();
-var (a, b) = (generator(), $generator());
+var (a, b) = (generator(), generator());
 {
     assert_eq(Math.gcd(a, b), 1);
     a = b;
