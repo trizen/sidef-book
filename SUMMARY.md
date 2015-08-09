@@ -37,6 +37,7 @@
        * [Accumulator factory](programming_tasks/A/Accumulator_factory.md)
        * [Ackermann function](programming_tasks/A/Ackermann_function.md)
        * [Add a variable to a class instance at runtime](programming_tasks/A/Add_a_variable_to_a_class_instance_at_runtime.md)
+       * [Address of a variable](programming_tasks/A/Address_of_a_variable.md)
        * [Align columns](programming_tasks/A/Align_columns.md)
        * [Anagrams](programming_tasks/A/Anagrams.md)
            * [Deranged anagrams](programming_tasks/A/Anagrams/Deranged_anagrams.md)
@@ -49,6 +50,9 @@
        * [Arithmetic evaluation](programming_tasks/A/Arithmetic_evaluation.md)
        * [Array concatenation](programming_tasks/A/Array_concatenation.md)
        * [Arrays](programming_tasks/A/Arrays.md)
+       * [Assertions](programming_tasks/A/Assertions.md)
+       * Associative array
+           * [Creation](programming_tasks/A/Associative_array/Creation.md)
        * Averages
            * [Arithmetic mean](programming_tasks/A/Averages/Arithmetic_mean.md)
            * [Mean angle](programming_tasks/A/Averages/Mean_angle.md)
@@ -355,6 +359,7 @@
        * [Stack](programming_tasks/S/Stack.md)
        * Statistics
            * [Basic](programming_tasks/S/Statistics/Basic.md)
+       * [Stern-Brocot sequence](programming_tasks/S/Stern-Brocot_sequence.md)
        * [String append](programming_tasks/S/String_append.md)
        * [String case](programming_tasks/S/String_case.md)
        * [String comparison](programming_tasks/S/String_comparison.md)
