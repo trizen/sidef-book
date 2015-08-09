@@ -53,6 +53,7 @@
        * [Assertions](programming_tasks/A/Assertions.md)
        * Associative array
            * [Creation](programming_tasks/A/Associative_array/Creation.md)
+           * [Iteration](programming_tasks/A/Associative_array/Iteration.md)
        * Averages
            * [Arithmetic mean](programming_tasks/A/Averages/Arithmetic_mean.md)
            * [Mean angle](programming_tasks/A/Averages/Mean_angle.md)
