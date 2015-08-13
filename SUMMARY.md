@@ -118,6 +118,8 @@
        * [Draw a cuboid](programming_tasks/D/Draw_a_cuboid.md)
        * [Dynamic variable names](programming_tasks/D/Dynamic_variable_names.md)
    * E
+       * [Elementary cellular automaton](programming_tasks/E/Elementary_cellular_automaton.md)
+           * [Random Number Generator](programming_tasks/E/Elementary_cellular_automaton/Random_Number_Generator.md)
        * [Empty directory](programming_tasks/E/Empty_directory.md)
        * [Empty program](programming_tasks/E/Empty_program.md)
        * [Empty string](programming_tasks/E/Empty_string.md)
