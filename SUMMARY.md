@@ -418,6 +418,7 @@
        * [Write language name in 3D ASCII](programming_tasks/W/Write_language_name_in_3D_ASCII.md)
    * Y
        * [Y combinator](programming_tasks/Y/Y_combinator.md)
+       * [Yin and yang](programming_tasks/Y/Yin_and_yang.md)
    * Z
        * [Zig-zag matrix](programming_tasks/Z/Zig-zag_matrix.md)
 * [The End](the_end.md)
