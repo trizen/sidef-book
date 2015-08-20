@@ -4,7 +4,7 @@
 
 ```ruby
 var tk = require 'Tk';
-var main = 'MainWindow'.to_caller.new;
+var main = %s'MainWindow'.new;
 main.Button(
     '-text'    => 'Goodbye, World!',
     '-command' => 'exit',
@@ -14,9 +14,9 @@ tk.MainLoop;
 ```ruby
 Perl.eval('use Gtk2 qw(-init)');
  
-var gtk2   = 'Gtk2'.to_caller;
-var window = 'Gtk2::Window'.to_caller.new;
-var label  = 'Gtk2::Label'.to_caller.new('Goodbye, World!');
+var gtk2   = %s'Gtk2';
+var window = %s'Gtk2::Window'.new;
+var label  = %s'Gtk2::Label'.new('Goodbye, World!');
  
 window.set_title('Goodbye, World!');
 window.signal_connect(destroy => { gtk2.main_quit });
