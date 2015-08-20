@@ -103,6 +103,7 @@
        * [Count occurrences of a substring](programming_tasks/C/Count_occurrences_of_a_substring.md)
        * [Create a file](programming_tasks/C/Create_a_file.md)
        * [Create an HTML table](programming_tasks/C/Create_an_HTML_table.md)
+       * [Currying](programming_tasks/C/Currying.md)
    * D
        * [Date format](programming_tasks/D/Date_format.md)
        * [Deepcopy](programming_tasks/D/Deepcopy.md)
