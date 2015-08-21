@@ -13,7 +13,7 @@ func nthroot(n, a, precision=1e-5) {
   return x;
 }
  
-say nthroot(5,34);  # => 2.024397458501034082599817835297912829678
+say nthroot(5, 34);  # => 2.024397458501034082599817835297912829678
 ```
 
 A minor optimization would be to calculate the successive `int(n-1)` square roots of a number, then raise the result to the power of `2**(int(n-1) / n)`.
@@ -24,5 +24,5 @@ func nthroot_fast(n, a, precision=1e-5) {
   a ** (2**int(n-1) / n);
 }
 
-say nthroot(5,34);  # => 2.024397458501034082599817835297912829678
+say nthroot(5, 34, 1e-64);  # => 2.024397458499885042510817245541937419115
 ```
