@@ -47,6 +47,7 @@
            * [Complex](programming_tasks/A/Arithmetic/Complex.md)
            * [Integer](programming_tasks/A/Arithmetic/Integer.md)
        * [Arithmetic-geometric mean](programming_tasks/A/Arithmetic-geometric_mean.md)
+           * [Calculate Pi](programming_tasks/A/Arithmetic-geometric_mean/Calculate_Pi.md)
        * [Arithmetic evaluation](programming_tasks/A/Arithmetic_evaluation.md)
        * [Array concatenation](programming_tasks/A/Array_concatenation.md)
        * [Arrays](programming_tasks/A/Arrays.md)
