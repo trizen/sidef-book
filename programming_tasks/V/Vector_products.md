@@ -5,7 +5,7 @@
 ```ruby
 class Vector(x, y, z) {
     method ∙(vec) {
-        self[:x..:z] »*« vec[:x..:z] [+];
+        self[:x..:z] »*« vec[:x..:z] «+»;
     }
  
     method ⨉(vec) {
