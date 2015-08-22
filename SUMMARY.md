@@ -77,6 +77,7 @@
        * [Bulls and cows](programming_tasks/B/Bulls_and_cows.md)
            * [Player](programming_tasks/B/Bulls_and_cows/Player.md)
    * C
+       * [Caesar cipher](programming_tasks/C/Caesar_cipher.md)
        * [Case-sensitivity of identifiers](programming_tasks/C/Case-sensitivity_of_identifiers.md)
        * [Catalan numbers](programming_tasks/C/Catalan_numbers.md)
        * [Catamorphism](programming_tasks/C/Catamorphism.md)
