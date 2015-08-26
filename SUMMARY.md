@@ -186,6 +186,7 @@
        * [Hostname](programming_tasks/H/Hostname.md)
        * [HTTP](programming_tasks/H/HTTP.md)
        * [HTTPS](programming_tasks/H/HTTPS.md)
+           * [Authenticated](programming_tasks/H/HTTPS/Authenticated.md)
        * [Huffman coding](programming_tasks/H/Huffman_coding.md)
    * I
        * [IBAN](programming_tasks/I/IBAN.md)
@@ -318,6 +319,7 @@
        * [Roots of a quadratic function](programming_tasks/R/Roots_of_a_quadratic_function.md)
        * [Rot-13](programming_tasks/R/Rot-13.md)
        * [Run-length encoding](programming_tasks/R/Run-length_encoding.md)
+       * [Runge-Kutta method](programming_tasks/R/Runge-Kutta_method.md)
        * [Runtime evaluation](programming_tasks/R/Runtime_evaluation.md)
            * [In an environment](programming_tasks/R/Runtime_evaluation/In_an_environment.md)
    * S

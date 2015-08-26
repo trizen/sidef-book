@@ -1,0 +1,20 @@
+[1]: http://rosettacode.org/wiki/HTTPS/Authenticated
+
+# [HTTPS/Authenticated][1]
+
+```ruby
+require 'WWW::Mechanize'
+ 
+var mech = %s'WWW::Mechanize'.new(
+    cookie_jar => Hash.new,
+    agent => 'Mozilla/5.0',
+);
+ 
+mech.get('https://login.yahoo.com/');
+mech.submit_form(
+    form_id => 'mbr-login-form',   # form id
+    fields => Hash.new(
+        'login'  => 'XXXXXX',
+        'passwd' => 'YYYYYY',
+));
+```
