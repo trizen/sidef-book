@@ -240,6 +240,7 @@
            * [N plus one half](programming_tasks/L/Loops/N_plus_one_half.md)
            * [Nested](programming_tasks/L/Loops/Nested.md)
            * [While](programming_tasks/L/Loops/While.md)
+       * [Lucas-Lehmer test](programming_tasks/L/Lucas-Lehmer_test.md)
        * [Luhn test of credit card numbers](programming_tasks/L/Luhn_test_of_credit_card_numbers.md)
        * [LZW compression](programming_tasks/L/LZW_compression.md)
    * M
