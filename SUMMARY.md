@@ -159,6 +159,8 @@
    * G
        * [Gamma function](programming_tasks/G/Gamma_function.md)
        * [Generate lower case ASCII alphabet](programming_tasks/G/Generate_lower_case_ASCII_alphabet.md)
+       * Generator
+           * [Exponential](programming_tasks/G/Generator/Exponential.md)
        * [Generic swap](programming_tasks/G/Generic_swap.md)
        * [Get system command output](programming_tasks/G/Get_system_command_output.md)
        * [Globally replace text in several files](programming_tasks/G/Globally_replace_text_in_several_files.md)
@@ -359,6 +361,7 @@
            * [Heapsort](programming_tasks/S/Sorting_algorithms/Heapsort.md)
            * [Insertion sort](programming_tasks/S/Sorting_algorithms/Insertion_sort.md)
            * [Merge sort](programming_tasks/S/Sorting_algorithms/Merge_sort.md)
+           * [Permutation sort](programming_tasks/S/Sorting_algorithms/Permutation_sort.md)
            * [Quicksort](programming_tasks/S/Sorting_algorithms/Quicksort.md)
            * [Radix sort](programming_tasks/S/Sorting_algorithms/Radix_sort.md)
            * [Selection sort](programming_tasks/S/Sorting_algorithms/Selection_sort.md)
@@ -387,6 +390,7 @@
            * [Top and tail](programming_tasks/S/Strip_whitespace_from_a_string/Top_and_tail.md)
        * [Substring](programming_tasks/S/Substring.md)
            * [Top and tail](programming_tasks/S/Substring/Top_and_tail.md)
+       * [Subtractive generator](programming_tasks/S/Subtractive_generator.md)
        * [Sudoku](programming_tasks/S/Sudoku.md)
        * [Sum and product of an array](programming_tasks/S/Sum_and_product_of_an_array.md)
        * [Sum multiples of 3 and 5](programming_tasks/S/Sum_multiples_of_3_and_5.md)
