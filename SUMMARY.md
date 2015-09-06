@@ -38,6 +38,7 @@
        * [Ackermann function](programming_tasks/A/Ackermann_function.md)
        * [Add a variable to a class instance at runtime](programming_tasks/A/Add_a_variable_to_a_class_instance_at_runtime.md)
        * [Address of a variable](programming_tasks/A/Address_of_a_variable.md)
+       * [AKS test for primes](programming_tasks/A/AKS_test_for_primes.md)
        * [Align columns](programming_tasks/A/Align_columns.md)
        * [Anagrams](programming_tasks/A/Anagrams.md)
            * [Deranged anagrams](programming_tasks/A/Anagrams/Deranged_anagrams.md)
@@ -84,6 +85,7 @@
        * [Character codes](programming_tasks/C/Character_codes.md)
        * [Chebyshev coefficients](programming_tasks/C/Chebyshev_coefficients.md)
        * [Check that file exists](programming_tasks/C/Check_that_file_exists.md)
+       * [Chinese remainder theorem](programming_tasks/C/Chinese_remainder_theorem.md)
        * [Cholesky decomposition](programming_tasks/C/Cholesky_decomposition.md)
        * [Classes](programming_tasks/C/Classes.md)
        * Closures
@@ -106,6 +108,7 @@
        * [Count occurrences of a substring](programming_tasks/C/Count_occurrences_of_a_substring.md)
        * [Create a file](programming_tasks/C/Create_a_file.md)
        * [Create an HTML table](programming_tasks/C/Create_an_HTML_table.md)
+       * [CSV data manipulation](programming_tasks/C/CSV_data_manipulation.md)
        * [Currying](programming_tasks/C/Currying.md)
    * D
        * [Date format](programming_tasks/D/Date_format.md)
@@ -201,6 +204,7 @@
            * [Single](programming_tasks/I/Inheritance/Single.md)
        * [Input loop](programming_tasks/I/Input_loop.md)
        * [Integer comparison](programming_tasks/I/Integer_comparison.md)
+       * [Integer overflow](programming_tasks/I/Integer_overflow.md)
        * [Integer sequence](programming_tasks/I/Integer_sequence.md)
        * [Interactive programming](programming_tasks/I/Interactive_programming.md)
        * [Inverted syntax](programming_tasks/I/Inverted_syntax.md)
@@ -217,6 +221,7 @@
        * [Langton's ant](programming_tasks/L/Langton's_ant.md)
        * [Largest int from concatenated ints](programming_tasks/L/Largest_int_from_concatenated_ints.md)
        * [Leap year](programming_tasks/L/Leap_year.md)
+       * [Left factorials](programming_tasks/L/Left_factorials.md)
        * [Letter frequency](programming_tasks/L/Letter_frequency.md)
        * [Levenshtein distance](programming_tasks/L/Levenshtein_distance.md)
        * Literals
@@ -246,6 +251,7 @@
        * [Luhn test of credit card numbers](programming_tasks/L/Luhn_test_of_credit_card_numbers.md)
        * [LZW compression](programming_tasks/L/LZW_compression.md)
    * M
+       * [Magic squares of odd order](programming_tasks/M/Magic_squares_of_odd_order.md)
        * [Make directory path](programming_tasks/M/Make_directory_path.md)
        * [Man or boy test](programming_tasks/M/Man_or_boy_test.md)
        * [Mandelbrot set](programming_tasks/M/Mandelbrot_set.md)
