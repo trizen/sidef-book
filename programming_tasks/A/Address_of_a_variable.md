@@ -2,7 +2,7 @@
 
 # [Address of a variable][1]
 
-There is no way access the address of a variable in Sidef, but you access the address of an object.
+There is no way to access the address of a variable in Sidef, but you access the address of an object.
 
 ```ruby
 var n = 42;
