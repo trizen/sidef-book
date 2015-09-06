@@ -273,6 +273,8 @@
        * [Named parameters](programming_tasks/N/Named_parameters.md)
        * [Names to numbers](programming_tasks/N/Names_to_numbers.md)
        * [Narcissist](programming_tasks/N/Narcissist.md)
+       * [Natural sorting](programming_tasks/N/Natural_sorting.md)
+       * [Non-continuous subsequences](programming_tasks/N/Non-continuous_subsequences.md)
        * [Nth root](programming_tasks/N/Nth_root.md)
        * [Null object](programming_tasks/N/Null_object.md)
    * O
@@ -410,6 +412,7 @@
        * [Time a function](programming_tasks/T/Time_a_function.md)
        * [Tokenize a string](programming_tasks/T/Tokenize_a_string.md)
        * [Topic variable](programming_tasks/T/Topic_variable.md)
+       * [Towers of Hanoi](programming_tasks/T/Towers_of_Hanoi.md)
        * [Tree traversal](programming_tasks/T/Tree_traversal.md)
        * [Truncate a file](programming_tasks/T/Truncate_a_file.md)
    * U
