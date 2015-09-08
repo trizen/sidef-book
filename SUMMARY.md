@@ -279,6 +279,7 @@
        * [Null object](programming_tasks/N/Null_object.md)
    * O
        * [Old lady swallowed a fly](programming_tasks/O/Old_lady_swallowed_a_fly.md)
+       * [One-dimensional cellular automata](programming_tasks/O/One-dimensional_cellular_automata.md)
        * [Optional parameters](programming_tasks/O/Optional_parameters.md)
        * [Ordered words](programming_tasks/O/Ordered_words.md)
    * P
@@ -380,6 +381,7 @@
        * [Sparkline in unicode](programming_tasks/S/Sparkline_in_unicode.md)
        * [Spiral matrix](programming_tasks/S/Spiral_matrix.md)
        * [Stack](programming_tasks/S/Stack.md)
+       * [Standard deviation](programming_tasks/S/Standard_deviation.md)
        * Statistics
            * [Basic](programming_tasks/S/Statistics/Basic.md)
        * [Stern-Brocot sequence](programming_tasks/S/Stern-Brocot_sequence.md)
@@ -408,6 +410,7 @@
        * [System time](programming_tasks/S/System_time.md)
    * T
        * Terminal control
+           * [Dimensions](programming_tasks/T/Terminal_control/Dimensions.md)
            * [Unicode output](programming_tasks/T/Terminal_control/Unicode_output.md)
        * [Time a function](programming_tasks/T/Time_a_function.md)
        * [Tokenize a string](programming_tasks/T/Tokenize_a_string.md)
