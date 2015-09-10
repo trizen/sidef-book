@@ -12,7 +12,7 @@ main.Button(
 tk.MainLoop;
 ```
 ```ruby
-Perl.eval('use Gtk2 qw(-init)');
+require('Gtk2') -> init;
  
 var gtk2   = %s'Gtk2';
 var window = %s'Gtk2::Window'.new;
