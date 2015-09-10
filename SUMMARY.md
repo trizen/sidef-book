@@ -148,9 +148,9 @@
        * [Factorial](programming_tasks/F/Factorial.md)
        * [Fibonacci sequence](programming_tasks/F/Fibonacci_sequence.md)
        * [Fibonacci word](programming_tasks/F/Fibonacci_word.md)
-           * [fractal](programming_tasks/F/Fibonacci_word/fractal.md)
+           * [Fractal](programming_tasks/F/Fibonacci_word/fractal.md)
        * File input
-           * [output](programming_tasks/F/File_input/output.md)
+           * [Output](programming_tasks/F/File_input/output.md)
        * [File modification time](programming_tasks/F/File_modification_time.md)
        * [File size](programming_tasks/F/File_size.md)
        * [Filter](programming_tasks/F/Filter.md)
@@ -438,7 +438,7 @@
        * [Unicode variable names](programming_tasks/U/Unicode_variable_names.md)
        * [Universal Turing machine](programming_tasks/U/Universal_Turing_machine.md)
        * Unix
-           * [ls](programming_tasks/U/Unix/ls.md)
+           * [Ls](programming_tasks/U/Unix/ls.md)
        * [URL decoding](programming_tasks/U/URL_decoding.md)
        * [URL encoding](programming_tasks/U/URL_encoding.md)
        * User input
