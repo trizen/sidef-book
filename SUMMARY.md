@@ -324,6 +324,7 @@
        * [Polymorphic copy](programming_tasks/P/Polymorphic_copy.md)
        * [Polymorphism](programming_tasks/P/Polymorphism.md)
        * [Power set](programming_tasks/P/Power_set.md)
+       * [Price fraction](programming_tasks/P/Price_fraction.md)
        * [Primality by trial division](programming_tasks/P/Primality_by_trial_division.md)
        * [Problem of Apollonius](programming_tasks/P/Problem_of_Apollonius.md)
        * [Program name](programming_tasks/P/Program_name.md)
