@@ -472,6 +472,7 @@
        * [Van der Corput sequence](programming_tasks/V/Van_der_Corput_sequence.md)
        * [Variadic function](programming_tasks/V/Variadic_function.md)
        * [Vector products](programming_tasks/V/Vector_products.md)
+       * [Vigenère cipher](programming_tasks/V/Vigenère_cipher.md)
    * W
        * Walk a directory
            * [Non-recursively](programming_tasks/W/Walk_a_directory/Non-recursively.md)
