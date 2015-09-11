@@ -69,6 +69,7 @@
        * [Balanced brackets](programming_tasks/B/Balanced_brackets.md)
        * [Base64 encode data](programming_tasks/B/Base64_encode_data.md)
        * [Benford's law](programming_tasks/B/Benford's_law.md)
+       * [Bernoulli numbers](programming_tasks/B/Bernoulli_numbers.md)
        * [Best shuffle](programming_tasks/B/Best_shuffle.md)
        * [Binary digits](programming_tasks/B/Binary_digits.md)
        * [Binary search](programming_tasks/B/Binary_search.md)
@@ -91,6 +92,7 @@
        * Closures
            * [Value capture](programming_tasks/C/Closures/Value_capture.md)
        * [Combinations](programming_tasks/C/Combinations.md)
+       * [Combinations and permutations](programming_tasks/C/Combinations_and_permutations.md)
        * [Combinations with repetitions](programming_tasks/C/Combinations_with_repetitions.md)
        * [Comma quibbling](programming_tasks/C/Comma_quibbling.md)
        * [Command-line arguments](programming_tasks/C/Command-line_arguments.md)
@@ -107,6 +109,7 @@
        * [Count in octal](programming_tasks/C/Count_in_octal.md)
        * [Count occurrences of a substring](programming_tasks/C/Count_occurrences_of_a_substring.md)
        * [Create a file](programming_tasks/C/Create_a_file.md)
+       * [Create a two-dimensional array at runtime](programming_tasks/C/Create_a_two-dimensional_array_at_runtime.md)
        * [Create an HTML table](programming_tasks/C/Create_an_HTML_table.md)
        * [CSV data manipulation](programming_tasks/C/CSV_data_manipulation.md)
        * [Currying](programming_tasks/C/Currying.md)
@@ -119,6 +122,7 @@
        * [Delete a file](programming_tasks/D/Delete_a_file.md)
        * [Determine if a string is numeric](programming_tasks/D/Determine_if_a_string_is_numeric.md)
        * [Determine if only one instance is running](programming_tasks/D/Determine_if_only_one_instance_is_running.md)
+       * [Dinesman's multiple-dwelling problem](programming_tasks/D/Dinesman's_multiple-dwelling_problem.md)
        * [Dot product](programming_tasks/D/Dot_product.md)
        * Doubly-linked list
            * [Element definition](programming_tasks/D/Doubly-linked_list/Element_definition.md)
@@ -146,6 +150,8 @@
        * [Extend your language](programming_tasks/E/Extend_your_language.md)
    * F
        * [Factorial](programming_tasks/F/Factorial.md)
+       * [Fast Fourier transform](programming_tasks/F/Fast_Fourier_transform.md)
+       * [Fibonacci n-step number sequences](programming_tasks/F/Fibonacci_n-step_number_sequences.md)
        * [Fibonacci sequence](programming_tasks/F/Fibonacci_sequence.md)
        * [Fibonacci word](programming_tasks/F/Fibonacci_word.md)
            * [Fractal](programming_tasks/F/Fibonacci_word/fractal.md)
@@ -157,6 +163,7 @@
        * [Find common directory path](programming_tasks/F/Find_common_directory_path.md)
        * [Find duplicate files](programming_tasks/F/Find_duplicate_files.md)
        * [Find limit of recursion](programming_tasks/F/Find_limit_of_recursion.md)
+       * [Find the last Sunday of each month](programming_tasks/F/Find_the_last_Sunday_of_each_month.md)
        * [Find the missing permutation](programming_tasks/F/Find_the_missing_permutation.md)
        * [First-class functions](programming_tasks/F/First-class_functions.md)
            * [Use numbers analogously](programming_tasks/F/First-class_functions/Use_numbers_analogously.md)
@@ -169,6 +176,7 @@
        * [Formatted numeric output](programming_tasks/F/Formatted_numeric_output.md)
        * [Forward difference](programming_tasks/F/Forward_difference.md)
        * [Fractal tree](programming_tasks/F/Fractal_tree.md)
+       * [FTP](programming_tasks/F/FTP.md)
        * [Function composition](programming_tasks/F/Function_composition.md)
        * [Function definition](programming_tasks/F/Function_definition.md)
    * G
@@ -237,6 +245,7 @@
        * [Left factorials](programming_tasks/L/Left_factorials.md)
        * [Letter frequency](programming_tasks/L/Letter_frequency.md)
        * [Levenshtein distance](programming_tasks/L/Levenshtein_distance.md)
+       * [Linear congruential generator](programming_tasks/L/Linear_congruential_generator.md)
        * Literals
            * [Floating point](programming_tasks/L/Literals/Floating_point.md)
            * [Integer](programming_tasks/L/Literals/Integer.md)
@@ -275,6 +284,7 @@
        * [Maze generation](programming_tasks/M/Maze_generation.md)
        * [MD5](programming_tasks/M/MD5.md)
        * [Menu](programming_tasks/M/Menu.md)
+       * [Middle three digits](programming_tasks/M/Middle_three_digits.md)
        * [Monty Hall problem](programming_tasks/M/Monty_Hall_problem.md)
        * [Multifactorial](programming_tasks/M/Multifactorial.md)
        * [Multiple distinct objects](programming_tasks/M/Multiple_distinct_objects.md)
@@ -283,22 +293,29 @@
        * [Munching squares](programming_tasks/M/Munching_squares.md)
        * [Mutual recursion](programming_tasks/M/Mutual_recursion.md)
    * N
+       * [N'th](programming_tasks/N/N'th.md)
        * [Named parameters](programming_tasks/N/Named_parameters.md)
        * [Names to numbers](programming_tasks/N/Names_to_numbers.md)
        * [Narcissist](programming_tasks/N/Narcissist.md)
        * [Natural sorting](programming_tasks/N/Natural_sorting.md)
        * [Non-continuous subsequences](programming_tasks/N/Non-continuous_subsequences.md)
+       * Non-decimal radices
+           * [Input](programming_tasks/N/Non-decimal_radices/Input.md)
+           * [Output](programming_tasks/N/Non-decimal_radices/Output.md)
        * [Nth root](programming_tasks/N/Nth_root.md)
        * [Null object](programming_tasks/N/Null_object.md)
    * O
        * [Old lady swallowed a fly](programming_tasks/O/Old_lady_swallowed_a_fly.md)
        * [One-dimensional cellular automata](programming_tasks/O/One-dimensional_cellular_automata.md)
        * [Optional parameters](programming_tasks/O/Optional_parameters.md)
+       * [Order disjoint list items](programming_tasks/O/Order_disjoint_list_items.md)
        * [Ordered words](programming_tasks/O/Ordered_words.md)
    * P
        * [Palindrome detection](programming_tasks/P/Palindrome_detection.md)
        * [Pangram checker](programming_tasks/P/Pangram_checker.md)
        * [Pascal's triangle](programming_tasks/P/Pascal's_triangle.md)
+       * [Pascal matrix generation](programming_tasks/P/Pascal_matrix_generation.md)
+       * [Perfect numbers](programming_tasks/P/Perfect_numbers.md)
        * [Permutations](programming_tasks/P/Permutations.md)
        * [Phrase reversals](programming_tasks/P/Phrase_reversals.md)
        * [Pi](programming_tasks/P/Pi.md)
@@ -342,6 +359,8 @@
            * [Encode](programming_tasks/R/Roman_numerals/Encode.md)
        * [Roots of a function](programming_tasks/R/Roots_of_a_function.md)
        * [Roots of a quadratic function](programming_tasks/R/Roots_of_a_quadratic_function.md)
+       * Rosetta Code
+           * [Rank languages by popularity](programming_tasks/R/Rosetta_Code/Rank_languages_by_popularity.md)
        * [Rot-13](programming_tasks/R/Rot-13.md)
        * [Run-length encoding](programming_tasks/R/Run-length_encoding.md)
        * [Runge-Kutta method](programming_tasks/R/Runge-Kutta_method.md)
@@ -392,6 +411,7 @@
            * [Stooge sort](programming_tasks/S/Sorting_algorithms/Stooge_sort.md)
        * [Soundex](programming_tasks/S/Soundex.md)
        * [Sparkline in unicode](programming_tasks/S/Sparkline_in_unicode.md)
+       * [Speech synthesis](programming_tasks/S/Speech_synthesis.md)
        * [Spiral matrix](programming_tasks/S/Spiral_matrix.md)
        * [Stack](programming_tasks/S/Stack.md)
        * [Standard deviation](programming_tasks/S/Standard_deviation.md)
@@ -431,6 +451,7 @@
        * [Topological sort](programming_tasks/T/Topological_sort.md)
        * [Towers of Hanoi](programming_tasks/T/Towers_of_Hanoi.md)
        * [Tree traversal](programming_tasks/T/Tree_traversal.md)
+       * [Trigonometric functions](programming_tasks/T/Trigonometric_functions.md)
        * [Truncate a file](programming_tasks/T/Truncate_a_file.md)
    * U
        * [Ulam spiral [for primes]](programming_tasks/U/Ulam_spiral_[for_primes].md)
@@ -442,6 +463,7 @@
        * [URL decoding](programming_tasks/U/URL_decoding.md)
        * [URL encoding](programming_tasks/U/URL_encoding.md)
        * User input
+           * [Graphical](programming_tasks/U/User_input/Graphical.md)
            * [Text](programming_tasks/U/User_input/Text.md)
    * V
        * [Van der Corput sequence](programming_tasks/V/Van_der_Corput_sequence.md)
@@ -458,5 +480,7 @@
        * [Y combinator](programming_tasks/Y/Y_combinator.md)
        * [Yin and yang](programming_tasks/Y/Yin_and_yang.md)
    * Z
+       * [Zeckendorf number representation](programming_tasks/Z/Zeckendorf_number_representation.md)
+       * [Zero to the zero power](programming_tasks/Z/Zero_to_the_zero_power.md)
        * [Zig-zag matrix](programming_tasks/Z/Zig-zag_matrix.md)
 * [The End](the_end.md)
