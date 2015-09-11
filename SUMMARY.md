@@ -82,6 +82,7 @@
        * [Caesar cipher](programming_tasks/C/Caesar_cipher.md)
        * [Case-sensitivity of identifiers](programming_tasks/C/Case-sensitivity_of_identifiers.md)
        * [Catalan numbers](programming_tasks/C/Catalan_numbers.md)
+           * [Pascal's triangle](programming_tasks/C/Catalan_numbers/Pascal's_triangle.md)
        * [Catamorphism](programming_tasks/C/Catamorphism.md)
        * [Character codes](programming_tasks/C/Character_codes.md)
        * [Chebyshev coefficients](programming_tasks/C/Chebyshev_coefficients.md)
@@ -370,6 +371,7 @@
        * [Runtime evaluation](programming_tasks/R/Runtime_evaluation.md)
            * [In an environment](programming_tasks/R/Runtime_evaluation/In_an_environment.md)
    * S
+       * [Sailors  coconuts and a monkey problem](programming_tasks/S/Sailors__coconuts_and_a_monkey_problem.md)
        * Scope
            * [Function names and labels](programming_tasks/S/Scope/Function_names_and_labels.md)
        * [Search a list](programming_tasks/S/Search_a_list.md)
@@ -445,9 +447,16 @@
        * [Symmetric difference](programming_tasks/S/Symmetric_difference.md)
        * [System time](programming_tasks/S/System_time.md)
    * T
+       * Table creation
+           * [Postal addresses](programming_tasks/T/Table_creation/Postal_addresses.md)
+       * [Take notes on the command line](programming_tasks/T/Take_notes_on_the_command_line.md)
+       * [Temperature conversion](programming_tasks/T/Temperature_conversion.md)
        * Terminal control
            * [Dimensions](programming_tasks/T/Terminal_control/Dimensions.md)
            * [Unicode output](programming_tasks/T/Terminal_control/Unicode_output.md)
+       * Text processing
+           * [2](programming_tasks/T/Text_processing/2.md)
+       * [The ISAAC Cipher](programming_tasks/T/The_ISAAC_Cipher.md)
        * [Time a function](programming_tasks/T/Time_a_function.md)
        * [Tokenize a string](programming_tasks/T/Tokenize_a_string.md)
        * [Topic variable](programming_tasks/T/Topic_variable.md)
@@ -458,6 +467,7 @@
        * [Truncate a file](programming_tasks/T/Truncate_a_file.md)
    * U
        * [Ulam spiral [for primes]](programming_tasks/U/Ulam_spiral_[for_primes].md)
+       * [Undefined values](programming_tasks/U/Undefined_values.md)
        * [Unicode strings](programming_tasks/U/Unicode_strings.md)
        * [Unicode variable names](programming_tasks/U/Unicode_variable_names.md)
        * [Universal Turing machine](programming_tasks/U/Universal_Turing_machine.md)
