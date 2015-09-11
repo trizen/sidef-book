@@ -108,6 +108,7 @@
        * [Count in factors](programming_tasks/C/Count_in_factors.md)
        * [Count in octal](programming_tasks/C/Count_in_octal.md)
        * [Count occurrences of a substring](programming_tasks/C/Count_occurrences_of_a_substring.md)
+       * [Count the coins](programming_tasks/C/Count_the_coins.md)
        * [Create a file](programming_tasks/C/Create_a_file.md)
        * [Create a two-dimensional array at runtime](programming_tasks/C/Create_a_two-dimensional_array_at_runtime.md)
        * [Create an HTML table](programming_tasks/C/Create_an_HTML_table.md)
@@ -313,6 +314,7 @@
    * P
        * [Palindrome detection](programming_tasks/P/Palindrome_detection.md)
        * [Pangram checker](programming_tasks/P/Pangram_checker.md)
+       * [Partial function application](programming_tasks/P/Partial_function_application.md)
        * [Pascal's triangle](programming_tasks/P/Pascal's_triangle.md)
        * [Pascal matrix generation](programming_tasks/P/Pascal_matrix_generation.md)
        * [Perfect numbers](programming_tasks/P/Perfect_numbers.md)
