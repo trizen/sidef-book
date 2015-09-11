@@ -24,7 +24,7 @@
 ```
 
 
-However, taking the 0'th root of a number and raising it back to the zero power, we get following results:
+However, taking the 0'th root of a number and raising it back to the zero power, we get the following results:
 
 ```ruby
 say 0.root(0).pow(0);       # => "NaN"
