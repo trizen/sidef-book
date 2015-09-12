@@ -210,6 +210,7 @@
        * [Here document](programming_tasks/H/Here_document.md)
        * [Hickerson series of almost integers](programming_tasks/H/Hickerson_series_of_almost_integers.md)
        * [Higher-order functions](programming_tasks/H/Higher-order_functions.md)
+       * [Horner's rule for polynomial evaluation](programming_tasks/H/Horner's_rule_for_polynomial_evaluation.md)
        * [Hostname](programming_tasks/H/Hostname.md)
        * [HTTP](programming_tasks/H/HTTP.md)
        * [HTTPS](programming_tasks/H/HTTPS.md)
@@ -284,6 +285,7 @@
        * [Matrix transposition](programming_tasks/M/Matrix_transposition.md)
        * [Maximum triangle path sum](programming_tasks/M/Maximum_triangle_path_sum.md)
        * [Maze generation](programming_tasks/M/Maze_generation.md)
+       * [MD4](programming_tasks/M/MD4.md)
        * [MD5](programming_tasks/M/MD5.md)
        * [Menu](programming_tasks/M/Menu.md)
        * [Middle three digits](programming_tasks/M/Middle_three_digits.md)
@@ -487,6 +489,7 @@
        * Walk a directory
            * [Non-recursively](programming_tasks/W/Walk_a_directory/Non-recursively.md)
            * [Recursively](programming_tasks/W/Walk_a_directory/Recursively.md)
+       * [Web scraping](programming_tasks/W/Web_scraping.md)
        * [Window creation](programming_tasks/W/Window_creation.md)
        * [Word wrap](programming_tasks/W/Word_wrap.md)
        * [Write language name in 3D ASCII](programming_tasks/W/Write_language_name_in_3D_ASCII.md)
