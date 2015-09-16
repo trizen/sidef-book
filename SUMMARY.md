@@ -311,6 +311,7 @@
            * [Output](programming_tasks/N/Non-decimal_radices/Output.md)
        * [Nth root](programming_tasks/N/Nth_root.md)
        * [Null object](programming_tasks/N/Null_object.md)
+       * [Number names](programming_tasks/N/Number_names.md)
    * O
        * [Old lady swallowed a fly](programming_tasks/O/Old_lady_swallowed_a_fly.md)
        * [One-dimensional cellular automata](programming_tasks/O/One-dimensional_cellular_automata.md)
