@@ -5,7 +5,7 @@
 ```ruby
 for (1..10) { |i|
     print i;
-    if (i %% 5) {
+    if (i % 5 == 0) {
         print "\n";
         next;
     };

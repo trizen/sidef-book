@@ -4,12 +4,12 @@
 
 ```ruby
 { |i|
-    if (i %% 3) {
+    if (3.divides(i)) {
         print "Fizz";
-        i %% 5 && print "Buzz";
+        5.divides(i) && print "Buzz";
         print "\n";
     }
-    elsif (i %% 5) { say "Buzz" }
+    elsif (5.divides(i)) { say "Buzz" }
     else  { say i };
 } * 100;
 ```

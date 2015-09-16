@@ -7,7 +7,7 @@ class FizzBuzz(schema=Hash.new(<3 Fizz 5 Buzz>...)) {
     method filter(this) {
         var fb = '';
         schema.sort_by {|k,_| k.to_i }.each { |pair|
-            fb += (this %% pair[0] ? pair[1] : '');
+            fb += (pair[0].divides(this) ? pair[1] : '');
         };
         fb.len > 0 ? fb : this;
     }
