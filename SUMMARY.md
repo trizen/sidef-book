@@ -44,6 +44,7 @@
            * [Deranged anagrams](programming_tasks/A/Anagrams/Deranged_anagrams.md)
        * [Anonymous recursion](programming_tasks/A/Anonymous_recursion.md)
        * [Apply a callback to an array](programming_tasks/A/Apply_a_callback_to_an_array.md)
+       * [Arbitrary-precision integers [included]](programming_tasks/A/Arbitrary-precision_integers_[included].md)
        * Arithmetic
            * [Complex](programming_tasks/A/Arithmetic/Complex.md)
            * [Integer](programming_tasks/A/Arithmetic/Integer.md)
@@ -80,6 +81,7 @@
            * [Player](programming_tasks/B/Bulls_and_cows/Player.md)
    * C
        * [Caesar cipher](programming_tasks/C/Caesar_cipher.md)
+       * [Call an object method](programming_tasks/C/Call_an_object_method.md)
        * [Carmichael 3 strong pseudoprimes](programming_tasks/C/Carmichael_3_strong_pseudoprimes.md)
        * [Case-sensitivity of identifiers](programming_tasks/C/Case-sensitivity_of_identifiers.md)
        * [Catalan numbers](programming_tasks/C/Catalan_numbers.md)
@@ -199,7 +201,9 @@
        * [Gray code](programming_tasks/G/Gray_code.md)
        * [Greatest common divisor](programming_tasks/G/Greatest_common_divisor.md)
        * [Greatest element of a list](programming_tasks/G/Greatest_element_of_a_list.md)
+       * [Greatest subsequential sum](programming_tasks/G/Greatest_subsequential_sum.md)
        * [Guess the number](programming_tasks/G/Guess_the_number.md)
+           * [With feedback](programming_tasks/G/Guess_the_number/With_feedback.md)
            * [With feedback [player]](programming_tasks/G/Guess_the_number/With_feedback_[player].md)
    * H
        * [Hailstone sequence](programming_tasks/H/Hailstone_sequence.md)
@@ -335,6 +339,7 @@
        * [Perfect shuffle](programming_tasks/P/Perfect_shuffle.md)
        * [Permutation test](programming_tasks/P/Permutation_test.md)
        * [Permutations](programming_tasks/P/Permutations.md)
+       * [Permutations by swapping](programming_tasks/P/Permutations_by_swapping.md)
        * [Phrase reversals](programming_tasks/P/Phrase_reversals.md)
        * [Pi](programming_tasks/P/Pi.md)
        * [Pick random element](programming_tasks/P/Pick_random_element.md)
@@ -349,6 +354,7 @@
        * [Price fraction](programming_tasks/P/Price_fraction.md)
        * [Primality by trial division](programming_tasks/P/Primality_by_trial_division.md)
        * [Primorial numbers](programming_tasks/P/Primorial_numbers.md)
+       * [Probabilistic choice](programming_tasks/P/Probabilistic_choice.md)
        * [Problem of Apollonius](programming_tasks/P/Problem_of_Apollonius.md)
        * [Program name](programming_tasks/P/Program_name.md)
        * [Program termination](programming_tasks/P/Program_termination.md)
@@ -385,6 +391,7 @@
        * [Roots of a function](programming_tasks/R/Roots_of_a_function.md)
        * [Roots of a quadratic function](programming_tasks/R/Roots_of_a_quadratic_function.md)
        * Rosetta Code
+           * [Fix code tags](programming_tasks/R/Rosetta_Code/Fix_code_tags.md)
            * [Rank languages by popularity](programming_tasks/R/Rosetta_Code/Rank_languages_by_popularity.md)
        * [Rot-13](programming_tasks/R/Rot-13.md)
        * [Run-length encoding](programming_tasks/R/Run-length_encoding.md)
@@ -445,6 +452,7 @@
        * [Speech synthesis](programming_tasks/S/Speech_synthesis.md)
        * [Spiral matrix](programming_tasks/S/Spiral_matrix.md)
        * [Stack](programming_tasks/S/Stack.md)
+       * [Stair-climbing puzzle](programming_tasks/S/Stair-climbing_puzzle.md)
        * [Standard deviation](programming_tasks/S/Standard_deviation.md)
        * Statistics
            * [Basic](programming_tasks/S/Statistics/Basic.md)
@@ -522,6 +530,10 @@
        * [Word wrap](programming_tasks/W/Word_wrap.md)
        * [Write float arrays to a text file](programming_tasks/W/Write_float_arrays_to_a_text_file.md)
        * [Write language name in 3D ASCII](programming_tasks/W/Write_language_name_in_3D_ASCII.md)
+   * X
+       * XML
+           * [Input](programming_tasks/X/XML/Input.md)
+           * [XPath](programming_tasks/X/XML/XPath.md)
    * Y
        * [Y combinator](programming_tasks/Y/Y_combinator.md)
        * [Yin and yang](programming_tasks/Y/Yin_and_yang.md)
