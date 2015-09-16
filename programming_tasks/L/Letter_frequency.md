@@ -4,7 +4,7 @@
 
 ```ruby
 func letter_frequency(file) {
-    file.open('<:utf8').slurp.split(1).grep{.matches(/[[:alpha:]]/)}
+    file.open('<:utf8').slurp.split(1).grep{.match(/[[:alpha:]]/)}
         .group_by {|letter| letter.downcase}
         .map_val  {|_, val| val.len}
         .sort_by  {|_, val| -val}

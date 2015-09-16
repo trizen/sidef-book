@@ -22,8 +22,7 @@ sock.bind(Socket.sockaddr_in(port, Socket::INADDR_ANY)) || die "couldn't bind so
 sock.listen(Socket::SOMAXCONN) || die "couldn't listen to port #{port}: #{$!}";
   # start listening for incoming connections
  
-var client;
-while (client = sock.accept) {
+while (var client = sock.accept) {
   client.print ("HTTP/1.1 200 OK\r\n" +
                "Content-Type: text/html; charset=UTF-8\r\n\r\n" +
                "<html><head><title>Goodbye, world!</title></head>" +
@@ -41,10 +40,9 @@ var inet = require 'IO::Socket::INET';
 var sock = inet.new( LocalAddr => "127.0.0.1:8080",
                      Listen    => 1,
                      Reuse     => 1,
-            ) || die "Could not create socket: #{$!}";
+            );
  
-var client;
-while (client = sock.accept...) {
+while (var client = sock.accept) {
     client.print ("HTTP/1.1 200 OK\r\n" +
                 "Content-Type: text/html; charset=UTF-8\r\n\r\n" +
                 "<html><head><title>Goodbye, world!</title></head>" +

@@ -3,7 +3,7 @@
 # [Catalan numbers][1]
 
 ```ruby
-func f(i) { i.isZero ? 1 : (i * f(i-1)) };
+func f(i) { i==0 ? 1 : (i * f(i-1)) };
 func c(n) { f(2*n) / f(n) / f(n+1) };
 ```
 
