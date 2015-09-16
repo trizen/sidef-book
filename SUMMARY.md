@@ -326,6 +326,7 @@
        * Percolation
            * [Mean run density](programming_tasks/P/Percolation/Mean_run_density.md)
        * [Perfect numbers](programming_tasks/P/Perfect_numbers.md)
+       * [Perfect shuffle](programming_tasks/P/Perfect_shuffle.md)
        * [Permutation test](programming_tasks/P/Permutation_test.md)
        * [Permutations](programming_tasks/P/Permutations.md)
        * [Phrase reversals](programming_tasks/P/Phrase_reversals.md)
@@ -337,9 +338,11 @@
        * [Polymorphic copy](programming_tasks/P/Polymorphic_copy.md)
        * [Polymorphism](programming_tasks/P/Polymorphism.md)
        * [Polynomial regression](programming_tasks/P/Polynomial_regression.md)
+       * [Population count](programming_tasks/P/Population_count.md)
        * [Power set](programming_tasks/P/Power_set.md)
        * [Price fraction](programming_tasks/P/Price_fraction.md)
        * [Primality by trial division](programming_tasks/P/Primality_by_trial_division.md)
+       * [Primorial numbers](programming_tasks/P/Primorial_numbers.md)
        * [Problem of Apollonius](programming_tasks/P/Problem_of_Apollonius.md)
        * [Program name](programming_tasks/P/Program_name.md)
        * [Program termination](programming_tasks/P/Program_termination.md)
@@ -471,6 +474,7 @@
        * Text processing
            * [2](programming_tasks/T/Text_processing/2.md)
        * [The ISAAC Cipher](programming_tasks/T/The_ISAAC_Cipher.md)
+       * [The Twelve Days of Christmas](programming_tasks/T/The_Twelve_Days_of_Christmas.md)
        * [Time a function](programming_tasks/T/Time_a_function.md)
        * [Tokenize a string](programming_tasks/T/Tokenize_a_string.md)
        * [Topic variable](programming_tasks/T/Topic_variable.md)
