@@ -131,6 +131,7 @@
        * [Determine if a string is numeric](programming_tasks/D/Determine_if_a_string_is_numeric.md)
        * [Determine if only one instance is running](programming_tasks/D/Determine_if_only_one_instance_is_running.md)
        * [Dinesman's multiple-dwelling problem](programming_tasks/D/Dinesman's_multiple-dwelling_problem.md)
+       * [DNS query](programming_tasks/D/DNS_query.md)
        * [Dot product](programming_tasks/D/Dot_product.md)
        * Doubly-linked list
            * [Element definition](programming_tasks/D/Doubly-linked_list/Element_definition.md)
@@ -248,6 +249,8 @@
        * [Josephus problem](programming_tasks/J/Josephus_problem.md)
        * [JSON](programming_tasks/J/JSON.md)
    * K
+       * Keyboard input
+           * [Obtain a Y or N response](programming_tasks/K/Keyboard_input/Obtain_a_Y_or_N_response.md)
        * Knapsack problem
            * [Continuous](programming_tasks/K/Knapsack_problem/Continuous.md)
        * [Knuth shuffle](programming_tasks/K/Knuth_shuffle.md)
@@ -330,6 +333,10 @@
    * P
        * [Palindrome detection](programming_tasks/P/Palindrome_detection.md)
        * [Pangram checker](programming_tasks/P/Pangram_checker.md)
+       * Parsing
+           * [RPN calculator algorithm](programming_tasks/P/Parsing/RPN_calculator_algorithm.md)
+           * [RPN to infix conversion](programming_tasks/P/Parsing/RPN_to_infix_conversion.md)
+           * [Shunting-yard algorithm](programming_tasks/P/Parsing/Shunting-yard_algorithm.md)
        * [Partial function application](programming_tasks/P/Partial_function_application.md)
        * [Pascal's triangle](programming_tasks/P/Pascal's_triangle.md)
        * [Pascal matrix generation](programming_tasks/P/Pascal_matrix_generation.md)
@@ -345,6 +352,8 @@
        * [Pick random element](programming_tasks/P/Pick_random_element.md)
        * Pig the dice game
            * [Player](programming_tasks/P/Pig_the_dice_game/Player.md)
+       * [Playing cards](programming_tasks/P/Playing_cards.md)
+       * [Plot coordinate pairs](programming_tasks/P/Plot_coordinate_pairs.md)
        * [Pointers and references](programming_tasks/P/Pointers_and_references.md)
        * [Polymorphic copy](programming_tasks/P/Polymorphic_copy.md)
        * [Polymorphism](programming_tasks/P/Polymorphism.md)
@@ -358,6 +367,7 @@
        * [Problem of Apollonius](programming_tasks/P/Problem_of_Apollonius.md)
        * [Program name](programming_tasks/P/Program_name.md)
        * [Program termination](programming_tasks/P/Program_termination.md)
+       * [Pythagorean triples](programming_tasks/P/Pythagorean_triples.md)
    * Q
        * Queue
            * [Definition](programming_tasks/Q/Queue/Definition.md)
@@ -487,10 +497,15 @@
        * [Take notes on the command line](programming_tasks/T/Take_notes_on_the_command_line.md)
        * [Temperature conversion](programming_tasks/T/Temperature_conversion.md)
        * Terminal control
+           * [Clear the screen](programming_tasks/T/Terminal_control/Clear_the_screen.md)
+           * [Coloured text](programming_tasks/T/Terminal_control/Coloured_text.md)
            * [Dimensions](programming_tasks/T/Terminal_control/Dimensions.md)
+           * [Display an extended character](programming_tasks/T/Terminal_control/Display_an_extended_character.md)
+           * [Ringing the terminal bell](programming_tasks/T/Terminal_control/Ringing_the_terminal_bell.md)
            * [Unicode output](programming_tasks/T/Terminal_control/Unicode_output.md)
        * Text processing
            * [2](programming_tasks/T/Text_processing/2.md)
+           * [Max licenses in use](programming_tasks/T/Text_processing/Max_licenses_in_use.md)
        * [The ISAAC Cipher](programming_tasks/T/The_ISAAC_Cipher.md)
        * [The Twelve Days of Christmas](programming_tasks/T/The_Twelve_Days_of_Christmas.md)
        * [Time a function](programming_tasks/T/Time_a_function.md)
@@ -532,7 +547,9 @@
        * [Write language name in 3D ASCII](programming_tasks/W/Write_language_name_in_3D_ASCII.md)
    * X
        * XML
+           * [DOM serialization](programming_tasks/X/XML/DOM_serialization.md)
            * [Input](programming_tasks/X/XML/Input.md)
+           * [Output](programming_tasks/X/XML/Output.md)
            * [XPath](programming_tasks/X/XML/XPath.md)
    * Y
        * [Y combinator](programming_tasks/Y/Y_combinator.md)
