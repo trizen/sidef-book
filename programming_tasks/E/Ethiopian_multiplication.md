@@ -1,0 +1,25 @@
+[1]: http://rosettacode.org/wiki/Ethiopian_multiplication
+
+# [Ethiopian multiplication][1]
+
+```ruby
+func double (n) { n * 2 };
+func halve  (n) { int(n / 2) };
+ 
+func ethiopic_mult(a, b) {
+    var r = 0;
+    while (a > 0) {
+        a.is_even || (r += b);
+        a = halve(a);
+        b = double(b);
+    };
+    return r;
+}
+ 
+say ethiopic_mult(17, 34);
+```
+
+#### Output:
+```
+578
+```

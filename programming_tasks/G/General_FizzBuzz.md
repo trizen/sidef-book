@@ -1,0 +1,49 @@
+[1]: http://rosettacode.org/wiki/General_FizzBuzz
+
+# [General FizzBuzz][1]
+
+```ruby
+class FizzBuzz(schema=Hash.new(<3 Fizz 5 Buzz>...)) {
+    method filter(this) {
+        var fb = '';
+        schema.sort_by {|k,_| k.to_i }.each { |pair|
+            fb += (this %% pair[0] ? pair[1] : '');
+        };
+        fb.len > 0 ? fb : this;
+    }
+}
+ 
+func GeneralFizzBuzz(upto, schema) {
+    var ping = FizzBuzz();
+    nil != schema && (
+        ping.schema = schema.to_hash;
+    );
+    upto.of {|i| ping.filter(i) };
+}
+ 
+GeneralFizzBuzz(20, <3 Fizz 5 Buzz 7 Baxx>).each { .say };
+```
+
+#### Output:
+```
+1
+2
+Fizz
+4
+Buzz
+Fizz
+Baxx
+8
+Fizz
+Buzz
+11
+Fizz
+13
+Baxx
+FizzBuzz
+16
+17
+Fizz
+19
+Buzz
+```

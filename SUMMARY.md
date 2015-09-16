@@ -143,6 +143,7 @@
        * [Enumerations](programming_tasks/E/Enumerations.md)
        * [Environment variables](programming_tasks/E/Environment_variables.md)
        * [Equilibrium index](programming_tasks/E/Equilibrium_index.md)
+       * [Ethiopian multiplication](programming_tasks/E/Ethiopian_multiplication.md)
        * [Evaluate binomial coefficients](programming_tasks/E/Evaluate_binomial_coefficients.md)
        * [Even or odd](programming_tasks/E/Even_or_odd.md)
        * [Exceptions](programming_tasks/E/Exceptions.md)
@@ -183,6 +184,8 @@
        * [Function definition](programming_tasks/F/Function_definition.md)
    * G
        * [Gamma function](programming_tasks/G/Gamma_function.md)
+       * [Gaussian elimination](programming_tasks/G/Gaussian_elimination.md)
+       * [General FizzBuzz](programming_tasks/G/General_FizzBuzz.md)
        * [Generate lower case ASCII alphabet](programming_tasks/G/Generate_lower_case_ASCII_alphabet.md)
        * Generator
            * [Exponential](programming_tasks/G/Generator/Exponential.md)
@@ -320,14 +323,20 @@
        * [Partial function application](programming_tasks/P/Partial_function_application.md)
        * [Pascal's triangle](programming_tasks/P/Pascal's_triangle.md)
        * [Pascal matrix generation](programming_tasks/P/Pascal_matrix_generation.md)
+       * Percolation
+           * [Mean run density](programming_tasks/P/Percolation/Mean_run_density.md)
        * [Perfect numbers](programming_tasks/P/Perfect_numbers.md)
+       * [Permutation test](programming_tasks/P/Permutation_test.md)
        * [Permutations](programming_tasks/P/Permutations.md)
        * [Phrase reversals](programming_tasks/P/Phrase_reversals.md)
        * [Pi](programming_tasks/P/Pi.md)
        * [Pick random element](programming_tasks/P/Pick_random_element.md)
+       * Pig the dice game
+           * [Player](programming_tasks/P/Pig_the_dice_game/Player.md)
        * [Pointers and references](programming_tasks/P/Pointers_and_references.md)
        * [Polymorphic copy](programming_tasks/P/Polymorphic_copy.md)
        * [Polymorphism](programming_tasks/P/Polymorphism.md)
+       * [Polynomial regression](programming_tasks/P/Polynomial_regression.md)
        * [Power set](programming_tasks/P/Power_set.md)
        * [Price fraction](programming_tasks/P/Price_fraction.md)
        * [Primality by trial division](programming_tasks/P/Primality_by_trial_division.md)
@@ -344,6 +353,7 @@
        * [Random numbers](programming_tasks/R/Random_numbers.md)
        * [Range expansion](programming_tasks/R/Range_expansion.md)
        * [Rate counter](programming_tasks/R/Rate_counter.md)
+       * [Read a configuration file](programming_tasks/R/Read_a_configuration_file.md)
        * [Read a file line by line](programming_tasks/R/Read_a_file_line_by_line.md)
        * [Read a specific line from a file](programming_tasks/R/Read_a_specific_line_from_a_file.md)
        * [Read entire file](programming_tasks/R/Read_entire_file.md)
@@ -393,6 +403,7 @@
        * Singly-linked list
            * [Element definition](programming_tasks/S/Singly-linked_list/Element_definition.md)
            * [Element insertion](programming_tasks/S/Singly-linked_list/Element_insertion.md)
+           * [Traversal](programming_tasks/S/Singly-linked_list/Traversal.md)
        * [Sleep](programming_tasks/S/Sleep.md)
        * [Sockets](programming_tasks/S/Sockets.md)
        * [Sort an array of composite structures](programming_tasks/S/Sort_an_array_of_composite_structures.md)
@@ -436,6 +447,7 @@
        * [Strip a set of characters from a string](programming_tasks/S/Strip_a_set_of_characters_from_a_string.md)
        * [Strip block comments](programming_tasks/S/Strip_block_comments.md)
        * [Strip comments from a string](programming_tasks/S/Strip_comments_from_a_string.md)
+       * [Strip control codes and extended characters from a string](programming_tasks/S/Strip_control_codes_and_extended_characters_from_a_string.md)
        * Strip whitespace from a string
            * [Top and tail](programming_tasks/S/Strip_whitespace_from_a_string/Top_and_tail.md)
        * [Substring](programming_tasks/S/Substring.md)
@@ -492,6 +504,7 @@
        * [Web scraping](programming_tasks/W/Web_scraping.md)
        * [Window creation](programming_tasks/W/Window_creation.md)
        * [Word wrap](programming_tasks/W/Word_wrap.md)
+       * [Write float arrays to a text file](programming_tasks/W/Write_float_arrays_to_a_text_file.md)
        * [Write language name in 3D ASCII](programming_tasks/W/Write_language_name_in_3D_ASCII.md)
    * Y
        * [Y combinator](programming_tasks/Y/Y_combinator.md)
