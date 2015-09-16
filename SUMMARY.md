@@ -80,6 +80,7 @@
            * [Player](programming_tasks/B/Bulls_and_cows/Player.md)
    * C
        * [Caesar cipher](programming_tasks/C/Caesar_cipher.md)
+       * [Carmichael 3 strong pseudoprimes](programming_tasks/C/Carmichael_3_strong_pseudoprimes.md)
        * [Case-sensitivity of identifiers](programming_tasks/C/Case-sensitivity_of_identifiers.md)
        * [Catalan numbers](programming_tasks/C/Catalan_numbers.md)
            * [Pascal's triangle](programming_tasks/C/Catalan_numbers/Pascal's_triangle.md)
@@ -92,6 +93,8 @@
        * [Classes](programming_tasks/C/Classes.md)
        * Closures
            * [Value capture](programming_tasks/C/Closures/Value_capture.md)
+       * Colour bars
+           * [Display](programming_tasks/C/Colour_bars/Display.md)
        * [Combinations](programming_tasks/C/Combinations.md)
        * [Combinations and permutations](programming_tasks/C/Combinations_and_permutations.md)
        * [Combinations with repetitions](programming_tasks/C/Combinations_with_repetitions.md)
@@ -119,6 +122,7 @@
        * [Date format](programming_tasks/D/Date_format.md)
        * [Date manipulation](programming_tasks/D/Date_manipulation.md)
        * [Day of the week](programming_tasks/D/Day_of_the_week.md)
+       * [Death Star](programming_tasks/D/Death_Star.md)
        * [Deepcopy](programming_tasks/D/Deepcopy.md)
        * [Define a primitive data type](programming_tasks/D/Define_a_primitive_data_type.md)
        * [Delete a file](programming_tasks/D/Delete_a_file.md)
@@ -279,6 +283,7 @@
        * [Luhn test of credit card numbers](programming_tasks/L/Luhn_test_of_credit_card_numbers.md)
        * [LZW compression](programming_tasks/L/LZW_compression.md)
    * M
+       * [Mad Libs](programming_tasks/M/Mad_Libs.md)
        * [Magic squares of odd order](programming_tasks/M/Magic_squares_of_odd_order.md)
        * [Make directory path](programming_tasks/M/Make_directory_path.md)
        * [Man or boy test](programming_tasks/M/Man_or_boy_test.md)
@@ -388,6 +393,7 @@
            * [In an environment](programming_tasks/R/Runtime_evaluation/In_an_environment.md)
    * S
        * [Sailors  coconuts and a monkey problem](programming_tasks/S/Sailors__coconuts_and_a_monkey_problem.md)
+       * [Same Fringe](programming_tasks/S/Same_Fringe.md)
        * Scope
            * [Function names and labels](programming_tasks/S/Scope/Function_names_and_labels.md)
        * [Search a list](programming_tasks/S/Search_a_list.md)
@@ -396,6 +402,7 @@
        * [Send an unknown method call](programming_tasks/S/Send_an_unknown_method_call.md)
        * [Sequence of non-squares](programming_tasks/S/Sequence_of_non-squares.md)
        * [Sequence of primes by Trial Division](programming_tasks/S/Sequence_of_primes_by_Trial_Division.md)
+       * [Seven-sided dice from five-sided dice](programming_tasks/S/Seven-sided_dice_from_five-sided_dice.md)
        * [SHA-1](programming_tasks/S/SHA-1.md)
        * [SHA-256](programming_tasks/S/SHA-256.md)
        * [Shell one-liner](programming_tasks/S/Shell_one-liner.md)
@@ -404,6 +411,7 @@
        * [Sierpinski carpet](programming_tasks/S/Sierpinski_carpet.md)
        * [Sierpinski triangle](programming_tasks/S/Sierpinski_triangle.md)
            * [Graphical](programming_tasks/S/Sierpinski_triangle/Graphical.md)
+       * [Simple windowed application](programming_tasks/S/Simple_windowed_application.md)
        * Singly-linked list
            * [Element definition](programming_tasks/S/Singly-linked_list/Element_definition.md)
            * [Element insertion](programming_tasks/S/Singly-linked_list/Element_insertion.md)
@@ -431,6 +439,7 @@
            * [Shell sort](programming_tasks/S/Sorting_algorithms/Shell_sort.md)
            * [Sleep sort](programming_tasks/S/Sorting_algorithms/Sleep_sort.md)
            * [Stooge sort](programming_tasks/S/Sorting_algorithms/Stooge_sort.md)
+           * [Strand sort](programming_tasks/S/Sorting_algorithms/Strand_sort.md)
        * [Soundex](programming_tasks/S/Soundex.md)
        * [Sparkline in unicode](programming_tasks/S/Sparkline_in_unicode.md)
        * [Speech synthesis](programming_tasks/S/Speech_synthesis.md)
@@ -478,6 +487,7 @@
        * [The Twelve Days of Christmas](programming_tasks/T/The_Twelve_Days_of_Christmas.md)
        * [Time a function](programming_tasks/T/Time_a_function.md)
        * [Tokenize a string](programming_tasks/T/Tokenize_a_string.md)
+       * [Top rank per group](programming_tasks/T/Top_rank_per_group.md)
        * [Topic variable](programming_tasks/T/Topic_variable.md)
        * [Topological sort](programming_tasks/T/Topological_sort.md)
        * [Towers of Hanoi](programming_tasks/T/Towers_of_Hanoi.md)
@@ -508,6 +518,7 @@
            * [Recursively](programming_tasks/W/Walk_a_directory/Recursively.md)
        * [Web scraping](programming_tasks/W/Web_scraping.md)
        * [Window creation](programming_tasks/W/Window_creation.md)
+       * [Wireworld](programming_tasks/W/Wireworld.md)
        * [Word wrap](programming_tasks/W/Word_wrap.md)
        * [Write float arrays to a text file](programming_tasks/W/Write_float_arrays_to_a_text_file.md)
        * [Write language name in 3D ASCII](programming_tasks/W/Write_language_name_in_3D_ASCII.md)
