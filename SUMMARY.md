@@ -501,6 +501,7 @@
            * [Coloured text](programming_tasks/T/Terminal_control/Coloured_text.md)
            * [Dimensions](programming_tasks/T/Terminal_control/Dimensions.md)
            * [Display an extended character](programming_tasks/T/Terminal_control/Display_an_extended_character.md)
+           * [Preserve screen](programming_tasks/T/Terminal_control/Preserve_screen.md)
            * [Ringing the terminal bell](programming_tasks/T/Terminal_control/Ringing_the_terminal_bell.md)
            * [Unicode output](programming_tasks/T/Terminal_control/Unicode_output.md)
        * Text processing
