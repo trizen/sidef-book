@@ -108,6 +108,7 @@
        * [Compound data type](programming_tasks/C/Compound_data_type.md)
        * [Concurrent computing](programming_tasks/C/Concurrent_computing.md)
        * [Constrained random points on a circle](programming_tasks/C/Constrained_random_points_on_a_circle.md)
+       * [Continued fraction](programming_tasks/C/Continued_fraction.md)
        * [Convert decimal number to rational](programming_tasks/C/Convert_decimal_number_to_rational.md)
        * [Conway's Game of Life](programming_tasks/C/Conway's_Game_of_Life.md)
        * [Copy a string](programming_tasks/C/Copy_a_string.md)
@@ -250,6 +251,7 @@
        * [JSON](programming_tasks/J/JSON.md)
    * K
        * Keyboard input
+           * [Flush the keyboard buffer](programming_tasks/K/Keyboard_input/Flush_the_keyboard_buffer.md)
            * [Obtain a Y or N response](programming_tasks/K/Keyboard_input/Obtain_a_Y_or_N_response.md)
        * Knapsack problem
            * [Continuous](programming_tasks/K/Knapsack_problem/Continuous.md)
@@ -547,6 +549,7 @@
        * [Write float arrays to a text file](programming_tasks/W/Write_float_arrays_to_a_text_file.md)
        * [Write language name in 3D ASCII](programming_tasks/W/Write_language_name_in_3D_ASCII.md)
    * X
+       * [Xiaolin Wu's line algorithm](programming_tasks/X/Xiaolin_Wu's_line_algorithm.md)
        * XML
            * [DOM serialization](programming_tasks/X/XML/DOM_serialization.md)
            * [Input](programming_tasks/X/XML/Input.md)

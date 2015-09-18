@@ -1,0 +1,42 @@
+[1]: http://rosettacode.org/wiki/Continued_fraction
+
+# [Continued fraction][1]
+
+```ruby
+func continued_fraction(a, b, n=100) {
+    a() + (n > 0 && (b() / continued_fraction(a, b, n-1)));
+}
+ 
+var f = Hash.new(
+    "√2" => [
+        run { var n = 0; closure { n++ ? 2 : 1 } },
+        { 1 },
+    ],
+    "e" => [
+        run { var n = 0; closure { n++ || 2 } },
+        run { var n = 0; closure { n++ || 1 } },
+    ],
+    "π" => [
+        run { var n = 0; closure { n++ ? 6 : 3 } },
+        run { var n = 0; closure { (2*(n++) + 1)**2 } },
+        1_000,
+    ],
+    "π/2" => [
+        run { var n = 0; closure { 1/(n++ || 1) } },
+        { 1 },
+        1_000,
+    ]
+);
+ 
+f.each { |k,v|
+    printf("%3s ≈ %.9f\n", k, continued_fraction(v...));
+};
+```
+
+#### Output:
+```
+  e ≈ 2.718281828
+  π ≈ 3.141592653
+ √2 ≈ 1.414213562
+π/2 ≈ 1.570011909
+```
