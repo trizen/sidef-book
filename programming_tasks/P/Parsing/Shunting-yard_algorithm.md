@@ -31,9 +31,9 @@ func shunting_yard(prog) {
  
     while (inp) {
         given(var t = inp.shift)
-           ~ /\d/ { reduce(t) }
-           > '('  { shift(t) }
-           > ')'  { while (ops && (var x = ops.pop) && (x != '(')) { reduce(x) } }
+           ~ (/\d/) { reduce(t) }
+           > ('(')  { shift(t) }
+           > (')')  { while (ops && (var x = ops.pop) && (x != '(')) { reduce(x) } }
            : {
                 var newprec = prec[t];
                 while (ops) {
@@ -75,10 +75,10 @@ say shunting_yard('3 + 4 * 2 / ( 1 - 5 ) ^ 2 ^ 3').to_s;
             3 4 2 * 1 5 -    + /        shift ^ 2 ^ 3
             3 4 2 * 1 5 -    + / ^     reduce 2 ^ 3
           3 4 2 * 1 5 - 2    + / ^      shift ^ 3
-          3 4 2 * 1 5 - 2    + / ^ ^   reduce 3 
-        3 4 2 * 1 5 - 2 3    + / ^     reduce ^ 
-      3 4 2 * 1 5 - 2 3 ^    + /       reduce ^ 
-    3 4 2 * 1 5 - 2 3 ^ ^    +         reduce / 
-  3 4 2 * 1 5 - 2 3 ^ ^ /              reduce + 
+          3 4 2 * 1 5 - 2    + / ^ ^   reduce 3
+        3 4 2 * 1 5 - 2 3    + / ^     reduce ^
+      3 4 2 * 1 5 - 2 3 ^    + /       reduce ^
+    3 4 2 * 1 5 - 2 3 ^ ^    +         reduce /
+  3 4 2 * 1 5 - 2 3 ^ ^ /              reduce +
 3 4 2 * 1 5 - 2 3 ^ ^ / +
 ```

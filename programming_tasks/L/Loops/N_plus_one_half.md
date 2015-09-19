@@ -3,7 +3,7 @@
 # [Loops/N plus one half][1]
 
 ```ruby
-for 1..10 { |i|
+for (1..10) { |i|
     print i;
     i == 10 && break;
     print ', ';

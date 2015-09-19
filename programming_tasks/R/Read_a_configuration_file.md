@@ -11,13 +11,13 @@ ARGF.each { |line|
     var(key, value) = line.strip.split(/\h+/, 2)...;
  
     given(key)
-        ~ /^([#;]|\h*$)/    {  }
-        > "FULLNAME"        { fullname = value }
-        > "FAVOURITEFRUIT"  { favouritefruit = value }
-        > "NEEDSPEELING"    { needspeeling = true }
-        > "SEEDSREMOVED"    { seedsremoved = true }
-        > "OTHERFAMILY"     { otherfamily = value.split(',')»strip»() }
-        ~ /^./              { say "#{key}: unknown key" }
+        ~ (/^([#;]|\h*$)/)    {  }
+        > ("FULLNAME")        { fullname = value }
+        > ("FAVOURITEFRUIT")  { favouritefruit = value }
+        > ("NEEDSPEELING")    { needspeeling = true }
+        > ("SEEDSREMOVED")    { seedsremoved = true }
+        > ("OTHERFAMILY")     { otherfamily = value.split(',')»strip»() }
+        ~ (/^./)              { say "#{key}: unknown key" }
     ;
 }
  
