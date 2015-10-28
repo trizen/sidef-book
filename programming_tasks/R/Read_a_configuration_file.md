@@ -10,15 +10,16 @@ var otherfamily = [];
 ARGF.each { |line|
     var(key, value) = line.strip.split(/\h+/, 2)...;
  
-    given(key)
-        ~ (/^([#;]|\h*$)/)    {  }
-        > ("FULLNAME")        { fullname = value }
-        > ("FAVOURITEFRUIT")  { favouritefruit = value }
-        > ("NEEDSPEELING")    { needspeeling = true }
-        > ("SEEDSREMOVED")    { seedsremoved = true }
-        > ("OTHERFAMILY")     { otherfamily = value.split(',')»strip»() }
-        ~ (/^./)              { say "#{key}: unknown key" }
-    ;
+    given(key) {
+        when (nil)              { }
+        when (/^([#;]|\h*$)/)   { }
+        when ("FULLNAME")       { fullname = value }
+        when ("FAVOURITEFRUIT") { favouritefruit = value }
+        when ("NEEDSPEELING")   { needspeeling = true }
+        when ("SEEDSREMOVED")   { seedsremoved = true }
+        when ("OTHERFAMILY")    { otherfamily = value.split(',')»strip»() }
+        default                 { say "#{key}: unknown key" }
+    }
 }
  
 say "fullname       = #{fullname}";
@@ -28,7 +29,7 @@ say "seedsremoved   = #{seedsremoved}";
  
 otherfamily.each_with_index {|i, name|
     say "otherfamily(#{i+1}) = #{name}";
-};
+}
 ```
 
 #### Output:

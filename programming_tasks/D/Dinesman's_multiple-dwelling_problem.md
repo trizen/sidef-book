@@ -14,28 +14,29 @@ func dinesman(problem) {
   var re_keywords = Regex.new(words.join('|'));
  
   # Build an array of lambda's
-  var predicates = lines[1 .. lines.end-1].map{ |line|
+  var predicates = lines.ft(1, lines.end-1).map{ |line|
     var keywords = line.scan(re_keywords);
     var (name1, name2) = line.scan(re_names)...;
  
     keywords.map{ |keyword|
-      var l = (
-        given(keyword)
-            > ("bottom")   { closure{|c| c.first == name1 } }
-            > ("top")      { closure{|c| c.last == name1 } }
-            > ("higher")   { closure{|c| c.index(name1) > c.index(name2) } }
-            > ("lower")    { closure{|c| c.index(name1) < c.index(name2) } }
-            > ("adjacent") { closure{|c| c.index(name1) - c.index(name2) -> abs == 1 } }
-            :              { closure{|c| c[words.index(keyword)] == name1 } }
-      );
-      line ~~ /\bnot\b/ ? closure{|c| l(c) -> not } : l;    # handle "not"
+      var l = do {
+        given(keyword) {
+            when ("bottom")   { ->(c) { c.first == name1 } }
+            when ("top")      { ->(c) { c.last == name1 } }
+            when ("higher")   { ->(c) { c.index(name1) > c.index(name2) } }
+            when ("lower")    { ->(c) { c.index(name1) < c.index(name2) } }
+            when ("adjacent") { ->(c) { c.index(name1) - c.index(name2) -> abs == 1 } }
+            default           { ->(c) { c[words.index(keyword)] == name1 } }
+        }
+      }
+      line ~~ /\bnot\b/ ? func(c) { l(c) -> not } : l;  # handle "not"
     }
   }.flatten;
  
   names.permutations { |candidate|
     predicates.all { |predicate| predicate(candidate) } && return candidate;
   }
-};
+}
 ```
 
 

@@ -3,9 +3,9 @@
 # [Terminal control/Unicode output][1]
 
 ```ruby
-if (ENV["LC_ALL","LC_CTYPE","LANG"].any{_ ~~ /\bUTF-?8/i}) {
+if (/\bUTF-?8/i ~~ [ENV{"LC_ALL","LC_CTYPE","LANG"}]) {
     say "△"
 } else {
-    die "Terminal can't handle UTF-8.";
+    die "Terminal can't handle UTF-8.\n";
 }
 ```

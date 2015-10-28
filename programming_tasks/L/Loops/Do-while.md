@@ -4,6 +4,7 @@
 
 ```ruby
 var value = 0;
-{ say ++value;
-} do while {value % 6};
+do {
+    say ++value;
+} while (value % 6);
 ```

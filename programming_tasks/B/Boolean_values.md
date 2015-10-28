@@ -13,7 +13,7 @@ var f = false;
 In conditional expressions, anything that evaluates to zero or nothing is considered _false_, including empty arrays and empty hashes.
 
 ```ruby
-if (0 || "0" || false || nil || "" || [] || :{}) {
+if (0 || "0" || false || nil || "" || [] || :()) {
     say "true"
 } else {
     say "false";

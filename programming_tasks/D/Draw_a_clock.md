@@ -6,15 +6,15 @@
 STDOUT.autoflush(1);
  
 var (rows, cols) = `stty size`.words.map{.to_i}...;
+ 
 var x = (rows/2 - 1  -> int);
 var y = (cols/2 - 16 -> int);
  
-var chars = (
-                ["┌─┐  ╷╶─┐╶─┐╷ ╷┌─╴┌─╴╶─┐┌─┐┌─┐   ",
+var chars = [
+                 "┌─┐  ╷╶─┐╶─┐╷ ╷┌─╴┌─╴╶─┐┌─┐┌─┐   ",
                  "│ │  │┌─┘╶─┤└─┤└─┐├─┐  │├─┤└─┤ : ",
-                 "└─┘  ╵└─╴╶─┘  ╵╶─┘└─┘  ╵└─┘╶─┘   "]
-                      map {|s| s.split(3) }
-            );
+                 "└─┘  ╵└─╴╶─┘  ╵╶─┘└─┘  ╵└─┘╶─┘   "
+             ].map {|s| s.split(3) };
  
 func position(i,j) {
     "\e[%d;%dH"%(i, j);
@@ -29,7 +29,7 @@ loop {
     print "\e[H\e[J";
     chars.range.each { |i|
       print position(x + i, y);
-      print chars[i][indices()].join(' ');
+      print [chars[i]@[indices()]].join(' ');
     };
     print position(1, 1);
     Sys.sleep(1);

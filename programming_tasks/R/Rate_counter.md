@@ -3,15 +3,15 @@
 # [Rate counter][1]
 
 ```ruby
-var benchmark = require('Benchmark').();   # .() denotes that the Perl module is function-oriented
+var benchmark = frequire('Benchmark');
  
 func job1 {
     #...job1 code...
-};
+}
 func job2 {
     #...job2 code...
-};
+}
  
-const COUNT = -1;   # run for one second
-benchmark.timethese(COUNT, :('Job1' => job1, 'Job2' => job2));
+const COUNT = -1;   # run for one CPU second
+benchmark.timethese(COUNT, Hash.new('Job1' => job1, 'Job2' => job2));
 ```

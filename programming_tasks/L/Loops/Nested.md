@@ -8,10 +8,10 @@ var arr = 10.of{ 10.of{ 20.rand.int + 1 } };
 for (arr) { |row|
     for (row) { |num|
         "%3d".printf(num);
-        num == 20 && break(2);
-    };
+        num == 20 && goto :OUT;
+    }
     print "\n";
-}
+} @:OUT;
  
 print "\n";
 ```

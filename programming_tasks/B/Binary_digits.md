@@ -4,7 +4,7 @@
 
 ```ruby
 [5, 50, 9000].each { |n|
-    say n.to_bin.substr(2);
+    say n.as_bin;
 }
 ```
 

@@ -3,24 +3,20 @@
 # [Pi][1]
 
 ```ruby
-__USE_INTNUM__
- 
 func pi(callback) {
     var (q, r, t, k, n, l) = (1, 0, 1, 1, 3, 3);
     loop {
         if ((4*q + r - t) < n*t) {
             callback(n);
-            static dot = (
-                callback('.'); dot;
-            );
+            static _dot = callback('.');
             var nr = 10*(r-n*t);
-            n = (((10*(3*q + r)) / t) - 10*n);
+            n = (int((10*(3*q + r)) / t) - 10*n);
             q *= 10;
             r = nr;
         }
         else {
             var nr = ((2*q + r) * l);
-            var nn = ((q*(7*k + 2) + r*l) / (t*l));
+            var nn = int((q*(7*k + 2) + r*l) / (t*l));
             q *= k;
             t *= l;
             l += 2;

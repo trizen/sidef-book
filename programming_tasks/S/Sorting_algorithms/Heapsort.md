@@ -3,13 +3,13 @@
 # [Sorting algorithms/Heapsort][1]
 
 ```ruby
-func siftDown(a, start, end) {
+func sift_down(a, start, end) {
     var root = start;
     while ((2*root + 1) <= end) {
         var child = (2*root + 1);
         if ((child+1 <= end) && (a[child] < a[child + 1])) {
             child += 1;
-        };
+        }
         if (a[root] < a[child]) {
             a[child, root] = a[root, child];
             root = child;
@@ -22,25 +22,26 @@ func siftDown(a, start, end) {
 func heapify(a, count) {
     var start = ((count - 2) / 2);
     while (start >= 0) {
-        siftDown(a, start, count-1);
+        sift_down(a, start, count-1);
         start -= 1;
     }
 }
  
-func heapSort(a, count) {
+func heap_sort(a, count) {
     heapify(a, count);
     var end = (count - 1);
     while (end > 0) {
         a[0, end] = a[end, 0];
         end -= 1;
-        siftDown(a, 0, end)
+        sift_down(a, 0, end)
     }
+    return a
 }
  
-var arr = (1..10 shuffle);  # creates a shuffled array
-say arr.dump;               # prints the unsorted array
-heapSort(arr, arr.len);     # sorts the array in-place
-say arr.dump;               # prints the sorted array
+var arr = (1..10 -> shuffle);  # creates a shuffled array
+say arr;                       # prints the unsorted array
+heap_sort(arr, arr.len);       # sorts the array in-place
+say arr;                       # prints the sorted array
 ```
 
 #### Output:

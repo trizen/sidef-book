@@ -4,7 +4,7 @@
 
 ```ruby
 func fs(f) {
-    closure func(*args) {
+    func(*args) {
         args.map {f(_)}
     }
 }

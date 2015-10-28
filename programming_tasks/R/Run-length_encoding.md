@@ -11,7 +11,7 @@ func encode(str) {
  
 func decode(str) {
   str.gsub(/(\d+)(.)/, {|a,b| b * a.to_i });
-};
+}
 ```
 
 #### Output:
@@ -30,11 +30,11 @@ func encode(str) {
 func decode(str) {
      var chars = str.chars;
      var r = '';
-     0 .. (chars.len/2 - 1 -> int) each { |i|
-         r += (chars[2*i + 1] * str[2*i].ord);
-     };
+     (chars.len/2 - 1 -> int).range.each { |i|
+         r += (chars[2*i + 1] * chars[2*i].ord);
+     }
      return r;
-};
+}
 ```
 
 #### Output:

@@ -14,7 +14,7 @@ func point (index) {
 func test_angle (ix) { ix * 11.25 + [0, 5.62, -5.62][ ix % 3 ] };
 func angle_to_point(𝜽) { (𝜽 / 360 * 32) + 0.5 -> floor };
  
-0...32 each { |ix|
+0...32 -> each { |ix|
     var 𝜽 = test_angle(ix);
     printf("  %2d %6.2f° %s\n", ix % 32 + 1, 𝜽, point(angle_to_point(𝜽)).tc);
 }

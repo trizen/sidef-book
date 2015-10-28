@@ -3,8 +3,8 @@
 # [Classes][1]
 
 ```ruby
-class MyClass(instance_var=1) {
-    method add(num is Number) {
+class MyClass(instance_var) {
+    method add(num) {
         instance_var += num;
     }
 }

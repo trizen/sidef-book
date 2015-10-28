@@ -12,7 +12,7 @@ file.open_r(\var fh, \var err)
 fh.each { |line|
     line.trim!;
     line == line.sort && (
-        words[line.length] := [] append(line);
+        words[line.length] := [] -> append(line);
     );
 };
  

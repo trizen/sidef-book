@@ -5,7 +5,7 @@
 Command line arguments are available in the ARGV array.
 
 ```ruby
-say ARGV.dump;
+say ARGV;
 ```
 
 #### Output:

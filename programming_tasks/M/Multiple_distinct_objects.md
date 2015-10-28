@@ -7,5 +7,4 @@
 ```
 ```ruby
 n.of {Foo.new};     # correct
-1..n map {Foo.new}; # also correct
 ```

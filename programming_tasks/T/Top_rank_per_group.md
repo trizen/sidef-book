@@ -3,7 +3,7 @@
 # [Top rank per group][1]
 
 ```ruby
-var data = <<'EOF'.lines.map{ (var h = Hash.new)[%w(name id salary dept)] = .split(','); h };
+var data = <<'EOF'.lines.map{ (var h = Hash.new).@{<name id salary dept>} = @.split(','); h }
 Tyler Bennett,E10297,32000,D101
 John Rappl,E21437,47000,D050
 George Woltman,E00127,53500,D101
@@ -21,18 +21,16 @@ EOF
  
 var n = (ARGV ? ARGV[0].to_i : "usage: #{__MAIN__} [n]\n".die);
  
-data.map { _[:dept] }.uniq.sort.each { |d|
-    var es = data.grep { _[:dept] == d }.sort {|a,b|
-        b[:salary].to_num <=> a[:salary].to_num
-    };
+data.map {|h| h{:dept} }.uniq.sort.each { |d|
+    var es = data.grep { _{:dept} == d }.sort_by{ _{:salary}.to_num }.reverse;
     say d;
     n.times {
         es || break;
         var e = es.shift;
-        printf("%-15s | %-6s | %5d\n", e[%w(name id salary)]...);
-    };
+        printf("%-15s | %-6s | %5d\n", e.@{%w(name id salary)});
+    }
     print "\n";
-};
+}
 ```
 
 #### Output:

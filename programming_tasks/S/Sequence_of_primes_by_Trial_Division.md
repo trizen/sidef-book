@@ -10,11 +10,11 @@ func prime_seq(amount, callback) {
     while (counter < amount) {
         if (is_prime(number)) {
             callback(number);
-            counter += 1;
-        };
-        number += 1;
-    };
-};
+            ++counter;
+        }
+        ++number;
+    }
+}
  
 prime_seq(100, {|p| say p});     # prints the first 100 primes
 ```

@@ -4,10 +4,10 @@
 
 ```ruby
 func isleap(year) {
-    if (year % 100 == 0) {
-        return (year % 400 == 0);
-    };
-    return (year % 4 == 0);
+    if (year %% 100) {
+        return (year %% 400);
+    }
+    return (year %% 4);
 }
 ```
 
@@ -15,5 +15,5 @@ func isleap(year) {
 or a little bit simpler:
 
 ```ruby
-func isleap(year) { 100.divides(year) ? 400.divides(year) : 4.divides(year) };
+func isleap(year) { year %% 100 ? (year %% 400) : (year %% 4) };
 ```

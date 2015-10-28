@@ -8,14 +8,14 @@ func print_topo_sort (deps) {
     deps.each { |before, afters|
         afters.each { |after|
             if (before != after) {
-                ba[before][after] = 1;
+                ba{before}{after} = 1;
             };
-            ba[after] \\= Hash.new;
+            ba{after} \\= Hash.new;
         }
     };
  
     loop {
-        var afters = ba.keys.grep { ba[_].values.len == 0 }.sort;
+        var afters = ba.keys.grep {|k| ba{k}.values.len == 0 }.sort;
         afters.len || break;
         say afters.join(" ");
         ba.delete(afters...);
@@ -43,7 +43,7 @@ var deps = Hash.new(
 );
  
 print_topo_sort(deps);
-deps[:dw01].append('dw04');     # Add unresolvable dependency
+deps{:dw01}.append('dw04');     # Add unresolvable dependency
 print_topo_sort(deps);
 ```
 

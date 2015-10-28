@@ -5,35 +5,35 @@
 ```ruby
 func walk(n, s, h) {
     n.exists('a') && (
-        h[n['a']] = s;
-        say "#{n['a']}: #{s}";
+        h{n{'a'}} = s;
+        say "#{n{'a'}}: #{s}";
         return;
     );
-    walk(n['0'], s+'0', h);
-    walk(n['1'], s+'1', h);
+    walk(n{'0'}, s+'0', h);
+    walk(n{'1'}, s+'1', h);
 }
  
 func make_tree(text) {
     var letters = Hash.new;
-    text.each { |c| letters[c] := 0 ++ };
+    text.each { |c| letters{c} \\= 0 ++ };
     var nodes = letters.keys.map { |l|
-            Hash.new('a' => l, 'freq' => letters[l])
+            Hash.new('a' => l, 'freq' => letters{l})
     };
  
     var n = Hash.new;
-    while (nodes.sort!{|a,b| a['freq'] <=> b['freq'] }.len > 1) {
+    while (nodes.sort!{|a,b| a{'freq'} <=> b{'freq'} }.len > 1) {
         n = Hash.new('0' => nodes.shift, '1' => nodes.shift);
-        n['freq'] = (n['0']['freq'] + n['1']['freq']);
+        n{'freq'} = (n{'0'}{'freq'} + n{'1'}{'freq'});
         nodes.append(n);
     }
  
-    walk(n, '', n['tree'] = Hash.new);
+    walk(n, '', n{'tree'} = Hash.new);
     return n;
 }
  
 func encode(s, t) {
-    t = t['tree'];
-    s.split(1).join('' => {t[_]});
+    t = t{'tree'};
+    s.split(1).join('' => {|c| t{c}});
 }
  
 func decode (enc, tree) {
@@ -41,8 +41,9 @@ func decode (enc, tree) {
     var out = '';
  
     enc.each {|bit|
-        (n = n[bit]).exists('a') && (
-            out += n['a']; n = tree;
+        n = n{bit};
+        n.has_key('a') && (
+            out += n{'a'}; n = tree;
         );
     };
  

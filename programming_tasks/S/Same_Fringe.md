@@ -14,12 +14,12 @@ var trees = [
  
 func get_tree_iterator(*rtrees) {
     var tree;
-    closure {
+    func {
         tree = rtrees.pop;
-        while (tree.is_an(Array)) {
+        while (defined(tree) && tree.is_an(Array)) {
             rtrees.append(tree[1]);
             tree = tree[0];
-        };
+        }
         return tree;
     }
 }
@@ -29,8 +29,8 @@ func cmp_fringe(a, b) {
     var ti2 = get_tree_iterator(b);
     loop {
         var (L, R) = (ti1(), ti2());
-        all { L != nil; R != nil; L == R } && next;
-        all { L == nil; R == nil } && return "Same";
+         defined(L) &&  defined(R) && (L == R) && next;
+        !defined(L) && !defined(R) && return "Same";
         return "Different";
     }
 }
@@ -38,7 +38,7 @@ func cmp_fringe(a, b) {
 range(1, trees.end).each { |tree_idx|
     say ("tree[#{tree_idx-1}] vs tree[#{tree_idx}]: ",
            cmp_fringe(trees[tree_idx-1], trees[tree_idx]));
-};
+}
 ```
 
 #### Output:

@@ -7,7 +7,8 @@ func R(n,p) {
     n.of { 1.rand < p ? 1 : 0}.sum;
 }
  
-say ('t=', const t = 100);
+const t = 100;
+say ('t=', t);
  
 range(.1, .9, .2).each { |p|
     printf("p= %f, K(p)= %f\n", p, p*(1-p));

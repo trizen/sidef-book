@@ -9,5 +9,5 @@ var hash = Hash.new(
 );
  
 # Add a new key-value pair
-hash[:key3] = 'value3';
+hash{:key3} = 'value3';
 ```

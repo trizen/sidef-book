@@ -8,7 +8,7 @@ func roman2arabic(roman) {
     var arabic = 0;
     var last_digit = 1000;
  
-    static m = :(
+    static m = Hash.new(
         I =>    1,
         V =>    5,
         X =>   10,
@@ -18,19 +18,19 @@ func roman2arabic(roman) {
         M => 1000,
     );
  
-    roman.uc.split('').map{m[_] \\ 0}.each { |digit|
+    roman.uc.split('').map{m{_} \\ 0}.each { |digit|
         last_digit < digit && (
             arabic -= (2 * last_digit);
         );
         arabic += (last_digit = digit);
-    };
+    }
  
     return arabic;
 }
  
 %w(MCMXC MMVIII MDCLXVI).each { |roman_digit|
     "%-10s == %d\n".printf(roman_digit, roman2arabic(roman_digit));
-};
+}
 ```
 
 #### Output:
@@ -46,19 +46,19 @@ Simpler:
 ```ruby
 func roman2arabic(digit) {
     digit.uc.trans([
-        M:  '1000+',
-        CM:  '900+',
-        D:   '500+',
-        CD:  '400+',
-        C:   '100+',
-        XC:   '90+',
-        L:    '50+',
-        XL:   '40+',
-        X:    '10+',
-        IX:    '9+',
-        V:     '5+',
-        IV:    '4+',
-        I:     '1+',
+        :M:  '1000+',
+        :CM:  '900+',
+        :D:   '500+',
+        :CD:  '400+',
+        :C:   '100+',
+        :XC:   '90+',
+        :L:    '50+',
+        :XL:   '40+',
+        :X:    '10+',
+        :IX:    '9+',
+        :V:     '5+',
+        :IV:    '4+',
+        :I:     '1+',
     ]).split('+').map{.to_i}.sum;
 }
  

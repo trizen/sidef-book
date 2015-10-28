@@ -13,13 +13,12 @@ func dice7 {
 }
  
 var count7 = Hash.new;
-count7.default(0);
  
 var n = 1e6;
-n.times { count7[dice7()]++ };
+n.times { count7{dice7()} := 0 ++ }
 count7.keys.sort.each { |k|
-    printf("%s: %5.2f%%\n", k, 100*(count7[k]/n * 7 - 1));
-};
+    printf("%s: %5.2f%%\n", k, 100*(count7{k}/n * 7 - 1));
+}
 ```
 
 #### Output:

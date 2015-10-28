@@ -3,9 +3,8 @@
 # [Non-continuous subsequences][1]
 
 ```ruby
-func non_continuous(min, max, subseq, has_gap=false) {
+func non_continuous(min, max, subseq=[], has_gap=false) {
  
-    subseq \\= [];
     static current = [];
  
     range(min, max).each { |i|
@@ -13,7 +12,7 @@ func non_continuous(min, max, subseq, has_gap=false) {
         has_gap && subseq.append([current...]);
         i < max && non_continuous(i.inc, max, subseq, has_gap);
         current.pop;
-        has_gap = current.len?;
+        has_gap = current.len;
     }
  
     subseq;

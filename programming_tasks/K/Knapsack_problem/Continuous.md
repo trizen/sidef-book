@@ -24,7 +24,7 @@ items.each { |item|
         value += item[2]*ratio;
         limit -= item[1];
         if (ratio == 1) {
-            printf("%-8s %-4s %7.2f %6.2f\n", item[0], 'all', item[1], item[2]);
+            printf("%-8s %4s %7.2f %6.2f\n", item[0], 'all', item[1], item[2]);
         }
         else {
             printf("%-8s %-4.2f %7.2f %6.2f\n", item[0], ratio, item[1]*ratio, item[2]*ratio);
@@ -38,11 +38,11 @@ say "#{'-'*28}\ntotal value: #{'%.14g' % value }";
 #### Output:
 ```
 Item   Fraction Weight Value
-salami   all     3.00  95.00
-ham      all     3.60  90.00
-brawn    all     2.50  56.00
-greaves  all     2.40  45.00
-welt     0.95    3.50  63.38
+salami    all    3.00  95.00
+ham       all    3.60  90.00
+brawn     all    2.50  56.00
+greaves   all    2.40  45.00
+welt     0.95    3.50  63.38
 ----------------------------
 total value: 349.37837837838
 ```

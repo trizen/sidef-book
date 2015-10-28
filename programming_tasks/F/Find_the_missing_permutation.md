@@ -4,13 +4,13 @@
 
 ```ruby
 func check_perm(arr) {
-    (var hash = Hash.new)[arr] = 1;
+    (var hash = Hash.new).@{arr} = @[1]*arr.len;
     arr.each { |s|
         s.len.times {
             var t = (s.substr(1) + s.substr(0, 1));
             hash.has_key(t) || return t;
         }
-    };
+    }
 }
  
 var perms = %w(ABCD CABD ACDB DACB BCDA ACBD ADCB CDAB DABC BCAD CADB CDBA

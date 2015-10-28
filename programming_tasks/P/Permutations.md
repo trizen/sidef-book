@@ -7,7 +7,7 @@ Built-in:
 ```ruby
 [1,2,3].permutations { |set|
     say set.join;
-};
+}
 ```
 
 
@@ -19,7 +19,7 @@ func permutations(callback, arr) {
     var idx = 0..end;
  
     loop {
-        callback(arr[idx]);
+        callback([arr.@[idx]]);
  
         var p = end;
         while (idx[p-1] > idx[p]) {p--};
@@ -34,7 +34,7 @@ func permutations(callback, arr) {
 }
  
 var list = [1,2,3];
-permutations({ |set| say set.join }, list);
+permutations({|set| say set.join }, list);
 ```
 
 
@@ -42,11 +42,11 @@ Recursive:
 
 ```ruby
 func permutations(callback, set, perm=[]) {
-    set.len == 0 && callback(perm);
-    0 ... set.end -> each { |i|
-        __FUNC__(callback, set[(0 .. i-1) + (i+1 .. set.end)], [perm..., set[i]]);
+    set.is_empty && callback(perm);
+    set.range.each { |i|
+        __FUNC__(callback, [set[@(0 .. i-1), @(i+1 .. set.end)]], [perm..., set[i]]);
     }
-};
+}
  
 var list = [1,2,3];
 permutations({|set| say set.join}, list);

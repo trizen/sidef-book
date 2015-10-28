@@ -6,22 +6,22 @@
 var hash = Hash.new(
     key1 => 'value1',
     key2 => 'value2',
-);
+)
  
 # Iterate over key-value pairs
 hash.each { |key, value|
     say "#{key}: #{value}";
-};
+}
  
 # Iterate only over keys
 hash.keys.each { |key|
     say key;
-};
+}
  
 # Iterate only over values
 hash.values.each { |value|
     say value;
-};
+}
 ```
 
 #### Output:

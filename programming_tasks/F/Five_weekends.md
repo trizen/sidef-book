@@ -33,8 +33,8 @@ range(1900, 2100).each { |year|
  
 say "There are #{happymonths.len} months with 5 full weekends!";
 say "The first 5 and the last 5 of them are:";
-say happymonths[0..4].join("\n");
-say happymonths[-5..-1].join("\n");
+say happymonths.first(5).join("\n");
+say happymonths.last(5).join("\n");
 say "No long weekends in the following #{workhardyears.len} years:";
 say workhardyears.join(",");
 ```

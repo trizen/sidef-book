@@ -5,22 +5,22 @@
 ```ruby
 func shell_sort(a) {
     var h = a.len;
-    while (h = (h / 2 int)) {
-        h .. a.offset -> each { |i|
+    while (h = (h / 2 -> int)) {
+        range(h, a.end).each { |i|
             var k = a[i];
             for (var j = i; (j >= h) && (k < a[j - h]); j -= h) {
                 a[j] = a[j - h];
-            };
+            }
             a[j] = k;
         }
-    };
+    }
     return a;
 }
  
 var a = 10.of {100.rand.int};
-say a.dump;
+say a;
 shell_sort(a);
-say a.dump;
+say a;
 ```
 
 #### Output:

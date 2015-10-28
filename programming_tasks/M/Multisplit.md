@@ -3,14 +3,14 @@
 # [Multisplit][1]
 
 ```ruby
-func multisplit(sep, str, :opt) {
+func multisplit(sep, str, keep_sep=false) {
     sep = sep.map{.escape}.join('|');
-    var re = Regex.new(opt[:keep_sep] ? "(#{sep})" : sep);
+    var re = Regex.new(keep_sep ? "(#{sep})" : sep);
     str.split(re, -1);
 }
  
 [false, true].each { |bool|
-    say multisplit(%w(== != =), 'a!===b=!=c', keep_sep => bool);
+    say multisplit(%w(== != =), 'a!===b=!=c', keep_sep: bool);
 }
 ```
 

@@ -9,7 +9,7 @@ say (2**64 * 2**64);
 ```
 ```ruby
 func add_with_carry(result, addend, addendpos) {
-    while (true) {
+    loop {
         while (result.len < addendpos+1) {
             result.append(0);
         };
@@ -45,6 +45,67 @@ func longhand_multiplication(multiplicand, multiplier) {
 }
  
 say longhand_multiplication('18446744073709551616', '18446744073709551616');
+```
+
+
+*A faster approach:*
+
+```ruby
+func long_multiplication(a is String, b is String) -> String {
+ 
+    a.len < b.len && (
+        [b, a] » (\a, \b);
+    );
+ 
+    '0' ~~ [a, b] && return '0';
+ 
+    var x = a.split('').map{.to_i}.reverse;
+    var y = b.split('').map{.to_i}.reverse;
+ 
+    var xlen = x.end;
+    var ylen = y.end;
+ 
+    var mem = 0;
+    var map = y.len.of { Array.new };
+ 
+    ylen.range.each { |j|
+        xlen.range.each { |i|
+            var n = (x[i]*y[j] + mem);
+            var(d, m) = n.divmod(10)...;
+            if (i == xlen) {
+                map[j].append(m, d);
+                mem = 0;
+            }
+            else {
+                map[j].append(m);
+                mem = d;
+            }
+        }
+ 
+        var n = (ylen - j);
+        n > 0 && map[j].append(n.of(0)...);
+        var m = (ylen - n);
+        m > 0 && map[j].prepend(m.of(0)...);
+    }
+ 
+    var result = [];
+    var mrange = (0 .. map.end);
+    var end    = (xlen + ylen + 1);
+ 
+    end.range.each { |i|
+        var n = (mrange.map {|j| map[j][i] }.sum + mem);
+        if (i == end) {
+            n != 0 && result.append(n);
+        }
+        else {
+            n.divmod(10) » (\mem, \result[result.end+1]);
+        }
+    }
+ 
+    result.reverse.join('');
+}
+ 
+say long_multiplication('18446744073709551616', '18446744073709551616');
 ```
 
 #### Output:

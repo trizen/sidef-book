@@ -10,13 +10,13 @@ func cocktailsort(a) {
             a[i, i+1] = a[i+1, i];
             swapped = true;
         }
-    };
-    var max = a.offset;
-    {
+    }
+    var max = a.end;
+    do {
         { |i| cmpsw(i-1) } * max;
         swapped.not! && break;
         { |i| cmpsw(max-i) } * max;
-    } do while {swapped};
+    } while (swapped);
     return a;
 }
 ```

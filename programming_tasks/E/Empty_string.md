@@ -5,8 +5,8 @@
 Create an empty string:
 
 ```ruby
-s = "";
-s = String.new;
+var s = "";
+var s = String.new;
 ```
 
 
@@ -25,7 +25,6 @@ Non-empty expressions, in addition to simply negating the above expressions:
 
 ```ruby
 s != "";
-s.length?;
 s.length > 0;
 s ~~ /./s;
 s !~ /^\z/;

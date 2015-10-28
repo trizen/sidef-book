@@ -6,10 +6,11 @@
 func coconuts(sailor) {
     range(sailor, Math.inf, sailor).each { |nuts|
         sailor.times {
-            nuts % (sailor-1) != 0 && next(2);
+            nuts % (sailor-1) != 0 && goto :NEXT;
             nuts += (nuts / (sailor-1) + 1);
-        };
+        }
         return nuts;
+        @:NEXT;
     }
 }
  

@@ -4,7 +4,7 @@
 
 ```ruby
 func multiplier(n1, n2) {
-    closure { |n3|
+    func (n3) {
         n1 * n2 * n3;
     }
 }

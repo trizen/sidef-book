@@ -7,7 +7,7 @@ A parameter declared with "\*", can take any number of arguments of any type.
 ```ruby
 func print_all(*things) {
     things.each { |x| say x };
-};
+}
 ```
 
 

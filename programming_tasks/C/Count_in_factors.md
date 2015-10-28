@@ -10,9 +10,9 @@ class Counter {
             while (n % p == 0) {
                 out.append(p);
                 n /= p;
-            };
+            }
             p = self.next_prime(p);
-        };
+        }
         (n > 1 || out.len.is_zero) && out.append(n);
         return out;
     }
@@ -22,13 +22,14 @@ class Counter {
     }
  
     method next_prime(p) {
-        { p == 2 ? (p = 3) : (p+=2) }
-            do  while {!self.is_prime(p)};
+        do {
+            p == 2 ? (p = 3) : (p+=2)
+        } while (!self.is_prime(p));
         return p;
     }
 }
  
-{ |i|
+100.times { |i|
     say "#{i} = #{Counter().factors(i).join(' × ')}";
-} * 100;
+}
 ```

@@ -9,21 +9,21 @@ class Array {
         var len = self.len;
         while (i < len) {
             if (self[i-1] <= self[i]) {
-                [j, j+1] » (\i, \j);
+                (i, j) = (j, j+1);
             }
             else {
-                [self[i], self[i-1]] » (\self[i-1], \self[i]);
+                self[i-1, i] = self[i, i-1];
                 if (--i == 0) {
-                    [j, j+1] » (\i, \j);
+                    (i, j) = (j, j+1);
                 }
             }
-        };
+        }
         return self;
     }
 }
  
 var ary = [7,6,5,9,8,4,3,1,2,0];
-say ary.gnomesort.dump;
+say ary.gnomesort;
 ```
 
 #### Output:

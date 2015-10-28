@@ -7,16 +7,16 @@ var(w:5, h:5) = ARGV.map{.to_i}...;
 var avail = (w * h);
  
 # cell is padded by sentinel col and row, so I don't check array bounds
-var cell = (1..h -> map {([true] * w) + [false]} + [[false] * w+1]);
-var ver  = (1..h -> map {["|  "] * w });
-var hor  = (0..h -> map {["+--"] * w });
+var cell = (1...h -> map {([true] * w) + [false]} + [[false] * w+1]);
+var ver  = (1...h -> map {["|  "] * w });
+var hor  = (0...h -> map {["+--"] * w });
  
 func walk(x, y) {
     cell[y][x] = false;
     avail-- > 0 || return;  # no more bottles, er, cells
  
     var d = [[-1, 0], [0, 1], [1, 0], [0, -1]];
-    while (d.len?) {
+    while (!d.is_empty) {
         var i = d.pop_rand;
         var (x1, y1) = (x + i[0], y + i[1]);
  
@@ -30,7 +30,7 @@ func walk(x, y) {
  
 walk(w.rand.int, h.rand.int);   # generate
  
-0...h each { |i|
+0...h -> each { |i|
     say (hor[i].join('') + '+');
     if (i < h) {
         say (ver[i].join('') + '|');

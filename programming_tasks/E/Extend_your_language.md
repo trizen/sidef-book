@@ -5,41 +5,38 @@
 ```ruby
 class if2(cond1, cond2) {
     method then(block) {    # both true
-        if (self.cond1 && self.cond2) {
+        if (cond1 && cond2) {
             block.run;
-        };
+        }
         return self;
-    };
+    }
     method else1(block) {   # first true
-        if (self.cond1 && !self.cond2) {
+        if (cond1 && !cond2) {
             block.run;
-        };
+        }
         return self;
-    };
+    }
     method else2(block) {   # second true
-        if (self.cond2 && !self.cond1) {
+        if (cond2 && !cond1) {
             block.run;
-        };
+        }
         return self;
-    };
+    }
     method else(block) {    # none true
-        if (!self.cond1 && !self.cond2) {
+        if (!cond1 && !cond2) {
             block.run;
-        };
+        }
         return self;
-    };
+    }
 }
  
-if2(false, true) then {
+if2(false, true).then {
     say "if2";
-}
-else1 {
+}.else1 {
     say "else1";
-}
-else2 {
+}.else2 {
     say "else2";        # <- this gets printed
+}.else {
+    say "else"
 }
-else {
-    say "else";
-};
 ```

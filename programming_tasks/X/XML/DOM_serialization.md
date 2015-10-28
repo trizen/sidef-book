@@ -5,7 +5,7 @@
 ```ruby
 require 'XML::Simple';
 print %S'XML::Simple'.XMLout(
-    :{root => :{ element => 'Some text here' }},
+    :(root => :( element => 'Some text here' )),
     NoAttr => 1, RootName => '',
 );
 ```

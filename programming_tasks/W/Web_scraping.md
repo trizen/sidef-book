@@ -5,5 +5,11 @@
 ```ruby
 var ua = frequire('LWP::Simple');
 var url = 'http://tycho.usno.navy.mil/cgi-bin/timer.pl';
-ua.get(url) ~~ /<BR>(.+? UTC)/ && say $1;
+var match = /<BR>(.+? UTC)/.match(ua.get(url));
+say match[0] if match;
+```
+
+#### Output:
+```
+Oct. 27, 00:20:50 UTC
 ```

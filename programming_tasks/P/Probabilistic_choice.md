@@ -11,11 +11,11 @@ func prob_choice_picker(options) {
     options.each { |k,v|
         n += v;
         a << [n, k];
-    };
-    closure {
+    }
+    func {
         var r = 1.rand;
         a.first{|e| r <= e[0] }[1];
-    };
+    }
 }
  
 var ps = Hash.new(
@@ -28,23 +28,23 @@ var ps = Hash.new(
    zayin  => 1/11
 );
  
-ps[:heth] = (1 - ps.values.sum);
+ps{:heth} = (1 - ps.values.sum);
  
 var picker = prob_choice_picker(ps);
-var results = Hash.new -> default(0);
+var results = Hash.new;
  
 range(0, TRIALS).each {
-    results[picker()]++;
-};
+    results{picker()} := 0 ++;
+}
  
 say "Event   Occurred  Expected  Difference";
-results.sort_by {|k| results[k] }.reverse.each { |pair|
+results.sort_by {|k| results{k} }.reverse.each { |pair|
     var(k, v) = pair...;
     printf("%-6s  %f  %f  %f\n",
-        k, v/TRIALS, ps[k],
-        abs(v/TRIALS - ps[k])
+        k, v/TRIALS, ps{k},
+        abs(v/TRIALS - ps{k})
     );
-};
+}
 ```
 
 #### Output:

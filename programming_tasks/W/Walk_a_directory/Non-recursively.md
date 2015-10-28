@@ -12,7 +12,7 @@ x.pl
 x.pm
 ```
 ```ruby
-func file_match(callback is Block, pattern=/\.txt\z/, path=Dir.cwd) {
+func file_match(Block callback, pattern=/\.txt\z/, path=Dir.cwd) {
     path.open(\var dir_h) || return;
     dir_h.entries.each { |entry|
         if (entry.basename ~~ pattern) {

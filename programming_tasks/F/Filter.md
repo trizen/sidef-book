@@ -6,10 +6,10 @@
 var arr = [1,2,3,4,5];
  
 # Creates a new array
-var new = arr.grep { .is_even };
+var new = arr.grep {|i| i %% 2};
 say new.dump;     # => [2, 4]
  
 # Destructive (at variable level)
-arr.grep! { .is_even };
+arr.grep! {|i| i %% 2};
 say arr.dump;    # => [2, 4]
 ```

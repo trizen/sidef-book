@@ -6,12 +6,12 @@
 func getNthLine(filename, n) {
   var file = File.new(filename);
   file.open_r.each { |line|
-     $. == n && return line;
-  };
-  Sys.warn("file #{file} does not have #{n} lines, only #{$.}\n");
+    Num($.) == n && return line;
+  }
+  warn "file #{file} does not have #{n} lines, only #{$.}\n";
   return nil;
 }
  
-var wantedLine = getNthLine("/etc/passwd", 7);
-wantedLine != nil && print wantedLine;
+var line = getNthLine("/etc/passwd", 7);
+print line if defined line;
 ```

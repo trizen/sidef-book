@@ -22,45 +22,43 @@ func evalArithmeticExp(s) {
                 return(add(s.sub(/--/,'+')));
             }
  
-            (var b = s.split('-')).len == 3
-                    ? (-1 * b[1].to_num - b[2].to_num)
-                    : (operate(s, '-'));
+            var b = s.split('-');
+            b.len == 3 ? (-1*b[1].to_num - b[2].to_num)
+                       : operate(s, '-');
         }
  
         s.gsub!(/[()]/,'').gsub!(/-\+/, '-');
  
         var reM  = /\*/;
-        var reMD = %r'(\d+\.?\d*\s*[*/]\s*[+-]?\d+\.?\d*)';
+        var reMD = %r"(\d+\.?\d*\s*[*/]\s*[+-]?\d+\.?\d*)";
  
         var reA  = /\d\+/;
         var reAS = /(-?\d+\.?\d*\s*[+-]\s*[+-]?\d+\.?\d*)/;
  
-        var match;
-        while (match = s.match(reMD)) {
-            (var cap = match.captures[0]) ~~ reM
-                ? (s.sub!(reMD, operate(cap, '*').to_s))
-                : (s.sub!(reMD, operate(cap, '/').to_s));
+        while (var match = reMD.match(s)) {
+            match[0] ~~ reM
+                ? s.sub!(reMD, operate(match[0], '*').to_s)
+                : s.sub!(reMD, operate(match[0], '/').to_s);
         }
  
-        while (match = s.match(reAS)) {
-            (var cap = match.captures[0]) ~~ reA
-                ? (s.sub!(reAS,      add(cap).to_s))
-                : (s.sub!(reAS, subtract(cap).to_s));
+        while (var match = reAS.match(s)) {
+            match[0] ~~ reA
+                ? s.sub!(reAS,      add(match[0]).to_s)
+                : s.sub!(reAS, subtract(match[0]).to_s);
         }
  
-        return(s);
+        return s;
     }
  
     var rePara = /(\([^\(\)]*\))/;
     s.split!.join!('').sub!(/^\+/,'');
  
-    var match;
-    while (match = s.match(rePara)) {
-        s.sub!(rePara, evalExp(match.captures[0]));
+    while (var match = s.match(rePara)) {
+        s.sub!(rePara, evalExp(match[0]));
     }
  
-    return(evalExp(s).to_num);
-};
+    return evalExp(s).to_num;
+}
 ```
 
 
@@ -68,18 +66,19 @@ Testing the function:
 
 ```ruby
 [
-    ['2+3'                                      =>        5],
-    ['-4-3'                                     =>       -7],
-    ['-+2+3/4'                                  =>    -1.25],
-    ['2*3-4'                                    =>        2],
-    ['2*(3+4)+2/4'                              => 2/4 + 14],
-    ['2*-3--4+-0.25'                            =>    -2.25],
-    ['2 * (3 + (4 * 5 + (6 * 7) * 8) - 9) * 10' =>     7000],
+     ['2+3'                                      =>        5],
+     ['-4-3'                                     =>       -7],
+     ['-+2+3/4'                                  =>    -1.25],
+     ['2*3-4'                                    =>        2],
+     ['2*(3+4)+2/4'                              => 2/4 + 14],
+     ['2*-3--4+-0.25'                            =>    -2.25],
+     ['2 * (3 + (4 * 5 + (6 * 7) * 8) - 9) * 10' =>     7000],
 ].each { |arr|
  
     var (expr, res) = arr...;
-    var num = (evalArithmeticExp(expr)) == res || (
-            "Error occurred on expression '#{expr}': got '#{num}' instead of '#{res}'\n".die;
+    var num = evalArithmeticExp(expr);
+    num == res || (
+            die "Error occurred on expression '#{expr}': got '#{num}' instead of '#{res}'\n";
     );
  
     "%-45s == %10g\n".printf(expr, num);

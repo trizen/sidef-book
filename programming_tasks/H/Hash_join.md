@@ -9,12 +9,12 @@ func hashJoin(table1, index1, table2, index2) {
  
     # hash phase
     table1.each { |s|
-        h[s[index1]] := [] append(s);
+        h{s[index1]} := [] -> append(s);
     };
  
     # join phase
     table2.each { |r|
-        a += h[r[index2]].map{[_,r]};
+        a += h{r[index2]}.map{[_,r]};
     };
  
     return a;

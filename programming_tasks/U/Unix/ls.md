@@ -9,11 +9,11 @@ var content = [];
 Dir.cwd.open.each { |file|
     file ~~ < . .. > && next;
     content.append(file);
-};
+}
  
 content.sort.each { |file|
     say file;
-};
+}
 ```
 
 
@@ -22,5 +22,5 @@ Implicit, by using the _String.glob_ method:
 ```ruby
 '*'.glob.each { |file|
     say file;
-};
+}
 ```

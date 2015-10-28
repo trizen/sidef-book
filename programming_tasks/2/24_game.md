@@ -34,9 +34,10 @@ loop {
         next;
     }
  
-    given(var n = eval(input))
+    given(var n = eval(input)) {
         when (24) { say "You win!"; break }
-        default   { say "Sorry, your expression is #{n}, not 24" };
+        default   { say "Sorry, your expression is #{n}, not 24" }
+    }
 }
 ```
 

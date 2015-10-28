@@ -2,6 +2,13 @@
 
 # [Palindrome detection][1]
 
+*Built-in*
+
+```ruby
+say "noon".is_palindrome;    # true
+```
+
+
 *Non-recursive*
 
 ```ruby
@@ -14,15 +21,15 @@ func palindrome(s) {
 *Recursive*
 
 ```ruby
-func r_palindrome(s) {
+func palindrome(s) {
     if (s.len <= 1) {
         true
     }
-    elsif (s.char_at(0) != s.char_at(-1)) {
+    elsif (s.first != s.last) {
         false
     }
     else {
-        __FUNC__(s.substr(1, -1))
+        __FUNC__(s.ft(1, -2))
     }
 }
 ```

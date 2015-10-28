@@ -3,12 +3,12 @@
 # [Sorting algorithms/Permutation sort][1]
 
 ```ruby
-func psort(x, d) {
+func psort(x, d=x.end) {
  
-    (d \\= x.end) || (
+    d.is_zero && (
         range(1, x.end).each { |i|
             x[i] < x[i-1] && return false
-        };
+        }
         return true;
     );
  
@@ -16,7 +16,7 @@ func psort(x, d) {
         x.prepend(x.splice(d, 1)...);
         x[d] < x[d-1] && next;
         psort(x, d-1) && return true;
-    };
+    }
  
     return false;
 }

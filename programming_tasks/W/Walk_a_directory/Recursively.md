@@ -3,7 +3,7 @@
 # [Walk a directory/Recursively][1]
 
 ```ruby
-func traverse(callback is Block, dir is Dir) {
+func traverse(Block callback, Dir dir) {
     dir.open(\var dir_h) || return;
  
     dir_h.entries.each { |entry|
@@ -16,7 +16,7 @@ func traverse(callback is Block, dir is Dir) {
 }
  
 var dir = Dir.cwd;
-var pattern = /foo/;
+var pattern = /foo/;   # display files that contain 'foo'
  
 traverse(
     { |file|

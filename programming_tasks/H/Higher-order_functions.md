@@ -4,7 +4,7 @@
 
 ```ruby
 func first(f) {
-  return f.call();
+  return f();
 }
  
 func second {

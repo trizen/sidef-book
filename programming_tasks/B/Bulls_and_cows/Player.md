@@ -5,31 +5,31 @@
 ```ruby
 # Build a list of all possible solutions.  The regular expression weeds
 # out numbers containing zeroes or repeated digits.
-var candidates = ('1234'..'9876' grep {|n| n !~ /0 | (\d) .*? \1 /x});
+var candidates = ('1234'..'9876' -> grep {|n| !(n =~ /0 | (\d) .*? \1 /x) }.map{.to_i.digits});
  
 # Repeatedly prompt for input until the user supplies a reasonable score.
 # The regex validates the user's input and then returns two numbers.
 func read_score(guess) {
     loop {
         "My guess: %s   (from %d possibilities)\n"
-            -> printf(guess, candidates.len);
+            -> printf(guess.join, candidates.len);
  
-        if (Sys.scanln("bulls cows: ") ~~ /^\h*(\d)\h*(\d)\h*$/) {
-            var (bulls, cows) = ($1.to_i, $2.to_i);
-            bulls+cows <= 4 && return [bulls, cows];
+        if (var m = (Sys.scanln("bulls cows: ") =~ /^\h*(\d)\h*(\d)\h*$/)) {
+            var (bulls, cows) = m.cap.map{.to_i}...;
+            bulls+cows <= 4 && return (bulls, cows);
         }
  
         say "Please specify the number of bulls and the number of cows";
-    };
+    }
 }
  
 func score_correct(a, b, bulls, cows) {
     var (exact, loose) = (0, 0);
  
-    0...3 each { |i|
+    3.range.each { |i|
         a[i] == b[i] ? ++exact
-                     : (b.contains(a[i]) && ++loose);
-    };
+                     : (b.contains(a[i]) && ++loose)
+    }
  
     (bulls == exact) && (cows == loose);
 }
@@ -38,16 +38,16 @@ func score_correct(a, b, bulls, cows) {
 # that don't match the score:
 loop {
     var guess = candidates.pick;
-    var (bulls, cows) = read_score(guess)...;
-    candidates.grep!{|n| score_correct(n, guess, bulls, cows)};
+    var (bulls, cows) = read_score(guess);
+    candidates.grep!{|n| score_correct(n, guess, bulls, cows) };
     candidates.len > 1 || break;
 }
  
 # Print the secret number or the error message
 say (
-     candidates.len == 1 ? ("Your secret number is: %d" % candidates[0])
+     candidates.len == 1 ? ("Your secret number is: %d" % candidates[0].join)
                          : ("I think you made a mistake with your scoring")
-    );
+    )
 ```
 
 

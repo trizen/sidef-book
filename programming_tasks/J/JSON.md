@@ -5,8 +5,8 @@
 ```ruby
 var json = require('JSON').new;
 var data = json.decode('{"blue": [1, 2], "ocean": "water"}');
-say data.dump;
-data[:ocean] = Hash.new(water => %w[fishy salty]);
+say data;
+data{:ocean} = Hash.new(water => %w[fishy salty]);
 say json.encode(data);
 ```
 

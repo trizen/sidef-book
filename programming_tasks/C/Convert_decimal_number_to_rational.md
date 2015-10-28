@@ -2,7 +2,7 @@
 
 # [Convert decimal number to rational][1]
 
-This can be done by using the "to_r" method, which converts a scalar-object into a rational number:
+This can be done by using the _to_r_ method, which converts a scalar-object into a rational number:
 
 ```ruby
 '0.9054054 0.518518 0.75'.split.each { |d|
@@ -11,12 +11,12 @@ This can be done by using the "to_r" method, which converts a scalar-object into
 ```
 
 
-Another way is by using the "r" suffix on number literals:
+Another way is by calling the _rat_ method on Number objects:
 
 ```ruby
-say 0.9054054r;
-say 0.518518r;
-say 0.75r;
+say 0.9054054.rat;
+say 0.518518.rat;
+say 0.75.rat;
 ```
 
 #### Output:

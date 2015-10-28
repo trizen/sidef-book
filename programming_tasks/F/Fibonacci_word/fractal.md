@@ -3,21 +3,21 @@
 # [Fibonacci word/fractal][1]
 
 ```ruby
-var(m=17, scale=3) = ARGV»to_i»()...;
+var(m=17, scale=3) = @ARGV.map{.to_i};
  
-(var world = Hash.new)[0][0] = 1;
+(var world = Hash.new){0}{0} = 1;
 var loc = Complex(0, 0);
 var dir = Complex::i;
  
+var fib = ['1', '0'];
 func fib_word(n) {
-    static fib = ['1', '0'];
     fib[n] \\= (fib_word(n-1) + fib_word(n-2));
 }
  
 func step {
     scale.times {
         loc += dir;
-        world[loc.im][loc.re] = 1;
+        world{loc.im}{loc.re} = 1;
     }
 }
  
@@ -39,7 +39,7 @@ func braille_graphics(a) {
     a.each_key { |y|
         ylo.min!(y.to_i);
         yhi.max!(y.to_i);
-        a[y].each_key { |x|
+        a{y}.each_key { |x|
             xlo.min!(x.to_i);
             xhi.max!(x.to_i);
         }
@@ -49,14 +49,14 @@ func braille_graphics(a) {
         range(xlo, xhi, 2).each { |x|
             var cell = 0x2800;
  
-            a[y+0][x+0] && (cell += 1);
-            a[y+1][x+0] && (cell += 2);
-            a[y+2][x+0] && (cell += 4);
-            a[y+0][x+1] && (cell += 8);
-            a[y+1][x+1] && (cell += 16);
-            a[y+2][x+1] && (cell += 32);
-            a[y+3][x+0] && (cell += 64);
-            a[y+3][x+1] && (cell += 128);
+            a{y+0}{x+0} && (cell += 1);
+            a{y+1}{x+0} && (cell += 2);
+            a{y+2}{x+0} && (cell += 4);
+            a{y+0}{x+1} && (cell += 8);
+            a{y+1}{x+1} && (cell += 16);
+            a{y+2}{x+1} && (cell += 32);
+            a{y+3}{x+0} && (cell += 64);
+            a{y+3}{x+1} && (cell += 128);
  
             print cell.chr;
         };
@@ -65,4 +65,25 @@ func braille_graphics(a) {
 }
  
 braille_graphics(world);
+```
+
+#### Output:
+```
+$ sidef fib_word_fractal.sf 12 3
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡤⢤⠀⡤⠼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠒⠃⠘⠒⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⣇⣸⠉⣇⣀⠀⣀⣸⠉⣇⣀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡤⠼⠀⠧⢤⠀⡤⠼⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠓⢲⠀⡖⠚⠀⠓⢲⠀⡖⢲⠀⠀
+⠀⠀⠀⠀⢀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⣉⡁⠀⠀⠀⢈⣉⡁⢈⣉⡇
+⠀⠀⠀⡤⠼⠀⠧⢤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡤⠼⠀⠧⢤⠀⡤⠼⠀⠧⠼⠀⠀
+⠀⠀⠀⠓⢲⠀⡖⠚⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠓⢲⠀⡖⠚⠀⠓⢲⠀⠀⠀⠀⠀
+⠉⢹⣀⡏⠉⠀⠉⢹⣀⡏⢹⣀⡀⢀⣀⡏⢹⣀⡏⠉⠀⠉⢹⣀⡏⠉⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢠⠤⡄⢠⠤⠇⠸⠤⡄⢠⠤⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⡖⠚⠀⠓⠚⠀⠀⠀⠀⠓⠚⠀⠓⢲⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠉⢹⣀⡏⢹⣀⡀⢀⣀⡏⢹⣀⡏⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠤⠇⠸⠤⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠒⡆⢰⠒⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ```

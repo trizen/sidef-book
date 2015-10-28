@@ -5,7 +5,7 @@
 ```ruby
 func perfect_shuffle(deck) {
      var mid = deck.len/2;
-     deck[0 .. mid-1].zip(deck[mid .. deck.end]);
+     deck.ft(0, mid-1).zip(deck.ft(mid)).flatten;
 }
  
 [8, 24, 52, 100, 1020, 1024, 10000].each { |size|
@@ -15,15 +15,16 @@ func perfect_shuffle(deck) {
  
     var n = 0;
     loop {
-        n++;
+        ++n;
         shuffled = perfect_shuffle(shuffled);
  
         shuffled.each_index { |i|
-            shuffled[i] == deck[i] || next(2);
-        };
+            shuffled[i] == deck[i] || goto :NEXT;
+        }
  
         break;
-    };
+        @:NEXT;
+    }
  
     printf("%5d cards: %4d\n", size, n);
 }

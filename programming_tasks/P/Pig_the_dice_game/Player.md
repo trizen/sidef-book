@@ -3,32 +3,29 @@
 # [Pig the dice game/Player][1]
 
 ```ruby
-var (games=100) = ARGV»to_num»()...;
+var (games=100) = @ARGV.map{.to_i};
  
 define DIE = 1..6;
 define GOAL = 100;
  
 class Player(score=0, ante, rolls, strategy={false}) {
     method turn {
-        self.rolls = 0;
-        self.ante  = 0;
+        rolls = 0;
+        ante  = 0;
         loop {
-            self.rolls++;
-            given (var roll = DIE.rand)
-                exact(1) {
-                    self.ante = 0;
+            rolls++;
+            given (var roll = DIE.rand) {
+                when (1) {
+                    ante = 0;
                     break;
                 }
-                case(roll > 1) {
-                    self.ante += roll;
+                when (roll > 1) {
+                    ante += roll;
                 }
-            ;
-            any {
-                score + ante >= GOAL;
-                strategy();
-            } && break;
-        };
-        self.score += ante;
+            }
+            ((score + ante >= GOAL) || strategy) && break;
+        }
+        score += ante;
     }
 }
  
@@ -58,7 +55,7 @@ games.times {
         var p = players[player % players.len];
         p.turn;
         p.score >= GOAL && break;
-    };
+    }
     wins[player % players.len]++;
     players.map{.score}.join("\t").say;
     players.each { |p| p.score = 0 };

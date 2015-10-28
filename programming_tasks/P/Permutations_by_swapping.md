@@ -11,10 +11,10 @@ func perms(xx) {
           var (s, *p) = arr...;
           var r = range(0, p.len);
           (s < 0 ? r : r.reverse).map {|i|
-            [sign *= -1, p[0..i-1]..., x, p[i..p.end]...]
-          };
+            [sign *= -1, p.@[0..i-1], x, p.@[i..p.end]]
+          }
       }
-   };
+   }
    perms;
 }
  

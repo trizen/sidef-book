@@ -3,17 +3,20 @@
 # [Hailstone sequence][1]
 
 ```ruby
-func hailstone(n) {
-    var a = [n];
+func hailstone (n) {
+    var sequence = [n];
     while (n > 1) {
-        a.append(n = (n % 2 == 0 ? n/2 : (3*n + 1)));
-    };
-    return a;
+        sequence.append(
+            n.is_even ? n.div!(2)
+                      : n.mul!(3).add!(1)
+        );
+    }
+    return(sequence);
 }
  
 # The hailstone sequence for the number 27
 var arr = hailstone(var nr = 27);
-say "#{nr}: #{arr[0..3].to_s} ... #{arr[-4..-1].to_s} (#{arr.len})";
+say "#{nr}: #{arr.first(4).to_s} ... #{arr.last(4).to_s} (#{arr.len})";
  
 # The longest hailstone sequence for a number less than 100,000
 var h = [0, 0];
@@ -21,7 +24,7 @@ var h = [0, 0];
     (var l = hailstone(i).len) > h[1] && (
         h = [i, l];
     );
-};
+}
  
 printf("%d: (%d)\n", h...);
 ```

@@ -9,7 +9,7 @@ var doors = [];
  
 { |pass|
     { |i|
-        i % pass == 0 && (
+        i %% pass && (
             doors[i] := false -> not!
         );
     } * 100;

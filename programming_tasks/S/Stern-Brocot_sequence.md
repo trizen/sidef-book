@@ -6,10 +6,10 @@
 # Declare a function to generate the Stern-Brocot sequence
 func stern_brocot {
     var list = [1, 1];
-    {
+    func {
         list.append(list[0]+list[1], list[1]);
         list.shift;
-    }.copy;
+    }
 }
  
 # Show the first fifteen members of the sequence.
@@ -21,8 +21,8 @@ func stern_brocot {
     var index = 1;
     var generator = stern_brocot();
     while (generator() != i) {
-        index++;
-    };
+        ++index;
+    }
     say "First occurrence of #{i} is at index #{index}";
 }
  

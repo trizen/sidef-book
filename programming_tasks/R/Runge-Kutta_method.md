@@ -3,8 +3,6 @@
 # [Runge-Kutta method][1]
 
 ```ruby
-__USE_BIGNUM__
- 
 func runge_kutta(yp) {
     func (t, y, δt) {
         var a = (δt * yp(t, y));
@@ -12,7 +10,7 @@ func runge_kutta(yp) {
         var c = (δt * yp(t + δt/2, y + b/2));
         var d = (δt * yp(t + δt, y + c));
         (a + 2*(b + c) + d) / 6;
-    }.copy;
+    }
 }
  
 define δt = 0.1;

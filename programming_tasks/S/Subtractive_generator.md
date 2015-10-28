@@ -3,16 +3,15 @@
 # [Subtractive generator][1]
 
 ```ruby
-class SubRandom(seed) {
+class SubRandom(seed, state=[]) {
  
-    def state = [];
     const mod = 1_000_000_000;
  
-    method new {
+    method init {
         var s = [seed % mod, 1];
         53.times {
             s.append((s[-2] - s[-1]) % mod);
-        };
+        }
         state = range(s).map {|i| s[(34 + 34*i) % 55] };
         range(55, 219).each { self.subrand };
     }

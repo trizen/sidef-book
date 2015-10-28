@@ -6,7 +6,7 @@
 var (COINS, CACHE);
  
 func do_count(n, m) {
-    any { n < 0; m < 0 }
+    (n < 0) || (m < 0)
         ? 0
         : (CACHE[n][m] \\= (do_count(n-COINS[m], m) + do_count(n, m-1)));
 }

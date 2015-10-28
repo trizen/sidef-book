@@ -5,14 +5,14 @@
 ```ruby
 var c = 0;
 var seen = Hash.new;
-seen.default(0);
-
+ 
 ARGF.each { |line|
     line.chomp!;
     var r = line.reverse;
-    (seen[r]++ && (c++ < 5) && say "#{line} #{r}") || seen[line]++;
+    ((seen{r} := 0 ++) && (c++ < 5) && say "#{line} #{r}")
+        || (seen{line} := 0 ++);
 }
-
+ 
 say c;
 ```
 

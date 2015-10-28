@@ -5,7 +5,7 @@
 ```ruby
 func main(file) {
     file.open_r(&var fh, &var err)
-        || "Can't open file `#{file}' for reading: #{err}\n".die;
+        || die "Can't open file `#{file}' for reading: #{err}\n";
  
     var vls = fh.words.group_by{.sort}.values;
     var max = vls.map{.len}.max;

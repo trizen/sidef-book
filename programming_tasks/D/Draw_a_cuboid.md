@@ -10,7 +10,7 @@ func cuboid(nx, ny, nz) {
   var(x, y, z) = (8*nx, 2*ny, 4*nz);
   var area = [];
   var line = func(n, sx, sy, c) {
-    var(dx, dy) = DIR[c]...;
+    var(dx, dy) = DIR{c}...;
     0..n -> each {|i|
       var (xi, yi) = (sx + i*dx, sy + i*dy);
       area[yi] \\= [" "]*(x+y+1);
@@ -45,13 +45,13 @@ func cuboid (x=1,y=1,z=1,s=' ',c='+',h='-',v='|',d='/') {
     ' ' * z+1 + c + h*x + c -> say;
  
     { |i|
-        ' ' * (z - i + 1) + d + s*x + d
-            + (s * (i - (i > y ? i-y : 1)))
-            + (i - 1 == y ? c : (i > y ? d : v)) -> say
+        ' ' * (z - i + 1) + d + s*x + d +
+              (s * (i - (i > y ? i-y : 1))) +
+              (i - 1 == y ? c : (i > y ? d : v)) -> say
     } * z;
  
-    c + h*x + c + (s * (z < y ? z : y)
-        + (z < y ? v : (z == y ? c : d))) -> say;
+    c + h*x + c + (s * (z < y ? z : y) +
+        (z < y ? v : (z == y ? c : d))) -> say;
  
     { |i|
         v + s*x + v + (z > y
@@ -66,10 +66,10 @@ func cuboid (x=1,y=1,z=1,s=' ',c='+',h='-',v='|',d='/') {
     c + h*x + c -> say;
 };
  
-cuboid(x:2, y:3, z:4);
-cuboid(x:1, y:1, z:1);
-cuboid(x:6, y:2, z:1);
-cuboid(x:2, y:4, z:1);
+cuboid(2, 3, 4);
+cuboid(1, 1, 1);
+cuboid(6, 2, 1);
+cuboid(2, 4, 1);
 ```
 
 #### Output:

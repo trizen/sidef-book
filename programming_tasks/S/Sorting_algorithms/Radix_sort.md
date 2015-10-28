@@ -6,17 +6,17 @@
 class Array {
     method radix_sort(base=10) {
         var arr = self.copy;
-        var rounds = ([arr.minmax].map{.abs}.max.log(base).floor + 1);
-        0 .. rounds-1 each { |i|
-            var buckets = (2*base of {[]});
+        var rounds = ([arr.minmax].map{.abs}.max -> log(base).floor + 1);
+        range(0, rounds-1).each { |i|
+            var buckets = (2*base -> of {[]});
             var base_i = base**i;
             arr.each { |n|
                 var digit = (n/base_i % base);
-                {digit += base} if (0 <= n);
+                digit += base if (0 <= n);
                 buckets[digit].append(n);
-            };
+            }
             arr = buckets.flatten;
-        };
+        }
         return arr;
     }
 }
@@ -27,8 +27,8 @@ class Array {
     [170, 45, 75, 90, 2, 24, -802, -66],
     [100000, -10000, 400, 23, 10000],
 ].each { |arr|
-    say arr.radix_sort.dump;
-};
+    say arr.radix_sort;
+}
 ```
 
 #### Output:

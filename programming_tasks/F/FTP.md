@@ -6,7 +6,7 @@
 require 'Net::FTP';
  
 var ftp = %s'Net::FTP'.new('ftp.ed.ac.uk', Passive => 1);
-ftp.login('anonymous','aaa@gmail.com');
+ftp.login('anonymous','email@example.com');
 ftp.cwd('pub/courses');
 [ftp.dir].each {|line| say line };
 ftp.binary;   # set binary mode

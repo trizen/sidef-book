@@ -28,10 +28,10 @@ say gifts[0].sub('And a', 'A');
 range(1, 11).each { |d|
     say '';
     nth(d);
-    d ^.. 0 each { |i|
+    d.downto(0).each { |i|
         say gifts[i];
     }
-};
+}
 ```
 
 #### Output:

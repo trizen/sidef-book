@@ -5,20 +5,20 @@
 ```ruby
 class Automaton(rule, cells) {
  
-    method new {
+    method init {
         rule = sprintf("%08b", rule).split(1).map{.to_i}.reverse;
     }
  
     method next {
         var previous = cells.map{_};
         var len = previous.len;
-        cells = rule[
-                previous.range.map { |i|
-                    4*previous[i-1 % len] +
-                    2*previous[i]         +
-                      previous[i+1 % len]
-                }
-            ];
+        cells = [rule.@[
+                    previous.range.map { |i|
+                        4*previous[i-1 % len] +
+                        2*previous[i]         +
+                        previous[i+1 % len]
+                    }
+                ]];
     }
  
     method to_s {

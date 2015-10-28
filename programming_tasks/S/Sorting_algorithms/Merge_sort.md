@@ -12,10 +12,10 @@ func merge(left, right) {
 }
  
 func mergesort(array) {
-    var len = array.len
-            < 2 && return array;
+    var len = array.len;
+    len < 2 && return array;
  
-    var mid   = (len/2 int);
+    var mid   = (len/2 -> int);
     var left  = array.ft(0, mid-1);
     var right = array.ft(mid);
  
@@ -26,12 +26,12 @@ func mergesort(array) {
 }
  
 # Numeric sort
-var nums = (0..7 shuffle);
-mergesort(nums).dump.say;
+var nums = (0..7 -> shuffle);
+say mergesort(nums);
  
 # String sort
-var strings = ('a'..'e' shuffle);
-mergesort(strings).dump.say;
+var strings = ('a'..'e' -> shuffle);
+say mergesort(strings);
 ```
 
 #### Output:

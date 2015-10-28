@@ -23,7 +23,7 @@ func triples(limit) {
  
 range(1, Math.inf).each { |n|
     say triples(10**n);
-};
+}
 ```
 
 #### Output:

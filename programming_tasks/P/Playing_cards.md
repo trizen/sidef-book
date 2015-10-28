@@ -10,14 +10,13 @@ class Card(pip, suit) {
     method to_s { pip + suit }
 }
  
-class Deck {
-    def cards = gather {
-        Pip.each { |p|
-            Suit.each { |s|
-                take(Card(p, s));
-            }
+class Deck(cards=[]) {
+ 
+    method init {
+        cards = gather {
+            Pip.each { |p| Suit.each { |s| take(Card(p, s)) } }
         }
-    };
+    }
  
     method shuffle {
         cards.shuffle!;

@@ -4,7 +4,7 @@
 
 ```ruby
 var f = (
-    0..9 -> map {|i| func(j){i * j}.copy }
+    0...9 -> map {|i| func(j){i * j} }
 );
  
 0 ..^ 8 -> each { |j|

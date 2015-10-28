@@ -52,11 +52,11 @@ func draw(k, amb) {
             else                            { hit = 1 };
  
             var (val, v);
-            given(hit)
-                > (0) { val = 0}
-                > (1) { v = [x-pos[0], y-pos[1], h[0]-pos[2]] }
-                :     { v = [neg[0]-x, neg[1]-y, neg[2]-hs[1]] }
-            ;
+            given(hit) {
+                when (0) { val = 0}
+                when (1) { v = [x-pos[0], y-pos[1], h[0]-pos[2]] }
+                default  { v = [neg[0]-x, neg[1]-y, neg[2]-hs[1]] }
+            }
  
             if (v) {
                 v = normalize(v);

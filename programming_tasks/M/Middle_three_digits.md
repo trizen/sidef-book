@@ -4,12 +4,14 @@
 
 ```ruby
 func middle_three(n) {
-  var s = n.to_i.abs.to_s;
-  var l = s.len;
-  given ()
-    ? (l < 3)     { "#{n} is too short" }
-    ? (l.is_even) { "#{n} has an even number of digits" }
-    :             { "The three middle digits of #{n} are: " + s.substr(l-3 / 2, 3) }
+  var l = n.len;
+  if (l < 3) {
+    "#{n} is too short"
+  } elsif (l.is_even) {
+    "#{n} has an even number of digits"
+  } else {
+    "The three middle digits of #{n} are: " + n.digits.ft(l-3 / 2, l/2 + 1).join
+  }
 }
  
 var nums = %n(

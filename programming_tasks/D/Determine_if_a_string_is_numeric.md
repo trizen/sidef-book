@@ -2,6 +2,15 @@
 
 # [Determine if a string is numeric][1]
 
+There is the the _String.looks_like_number_ method, which returns true when a given strings looks like a number:
+
+```ruby
+say "0.1E-5".looks_like_number;       #=> true
+```
+
+
+Alternatively, we can use regular expressions to determine this:
+
 ```ruby
 func is_numeric(s) {
        (s ~~ /^[+-]?+(?=\.?[0-9])[0-9_]*+(?:\.[0-9_]++)?(?:[Ee](?:[+-]?+[0-9_]+))?\z/)
@@ -15,7 +24,7 @@ Sample:
 ```ruby
 var strings = %w(0 0.0 -123 abc 0x10 0xABC 123a -123e3 0.1E-5 50e);
 strings.each { |str|
-    say ("%9s => %s" % [str, is_numeric(str)]);
+    say ("%9s => %s" % (str, is_numeric(str)));
 };
 ```
 

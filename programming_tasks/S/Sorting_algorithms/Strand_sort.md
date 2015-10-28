@@ -6,11 +6,12 @@
 func merge(x, y) {
     var out = [];
     while (x && y) {
-        given (x[-1] <=> y[-1])
-            > ( 1) { out.prepend(x.pop) }
-            > (-1) { out.prepend(y.pop) }
-            :      { out.prepend(x.pop, y.pop) }
-    };
+        given (x[-1] <=> y[-1]) {
+            when ( 1) { out.prepend(x.pop) }
+            when (-1) { out.prepend(y.pop) }
+            default   { out.prepend(x.pop, y.pop) }
+        }
+    }
     x + y + out;
 }
  
@@ -23,21 +24,21 @@ func strand(x) {
                 out.append(x.pop_at(i));
             }
         }
-    };
-    out;
+    }
+    return out;
 }
  
 func strand_sort(x) {
     var out = [];
     while (var strd = strand(x)) {
         out = merge(out, strd);
-    };
-    out;
+    }
+    return out;
 }
  
 var a = 10.of {100.rand.int};
 say "Before: #{a}";
-say "After: #{strand_sort(a.copy)}";
+say "After: #{strand_sort(a)}";
 ```
 
 #### Output:

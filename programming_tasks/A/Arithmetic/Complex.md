@@ -9,13 +9,13 @@ var b = 3.14159:1.25;       # Complex(3.14159, 1.25)
 [   a + b,                  # addition
     a * b,                  # multiplication
     -a,                     # negation
-    1c / a,                 # multiplicative inverse
+    1.c / a,                # multiplicative inverse
     ~a,                     # complex conjugate
     a.abs,                  # abs
     a.sqrt.cartesian,       # sqrt
     b.re,                   # real
     b.im,                   # imaginary
-].each { |c| say c };
+].each { |c| say c }
 ```
 
 #### Output:

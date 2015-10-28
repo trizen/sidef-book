@@ -13,3 +13,15 @@ p(2, [], %w(iced jam plain)).each { |a|
  
 printf("\nThere are %d ways to pick 7 out of 10\n", n(7, 10));
 ```
+
+#### Output:
+```
+iced iced
+iced jam
+iced plain
+jam jam
+jam plain
+plain plain
+
+There are 11440 ways to pick 7 out of 10
+```

@@ -3,8 +3,6 @@
 # [Mandelbrot set][1]
 
 ```ruby
-__USE_FASTNUM__
- 
 func mandelbrot(z) {
     var c = z;
     {   z = (z*z + c);
@@ -13,10 +11,10 @@ func mandelbrot(z) {
     return false;
 }
  
-1 ^.. (-1, 0.05) each { |y|
-    -2 ..^ (0.5, 0.0315) each { |x|
+1 ^.. (-1, 0.05) -> each { |y|
+    -2 ..^ (0.5, 0.0315) -> each { |x|
         print(mandelbrot(y.i + x) ? ' ' : '#');
-    };
+    }
     print "\n";
 }
 ```

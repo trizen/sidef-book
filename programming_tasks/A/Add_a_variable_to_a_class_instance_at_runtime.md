@@ -5,6 +5,6 @@
 ```ruby
 class Empty{};
 var e = Empty();    # create a new class instance
-e[:foo] = 1;        # add variable 'foo'
-say e[:foo];        # print the value of 'foo'
+e{:foo} = 42;       # add variable 'foo'
+say e{:foo};        # print the value of 'foo'
 ```

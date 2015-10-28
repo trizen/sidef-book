@@ -5,12 +5,12 @@
 ```ruby
 func gen_pow(m) {
     var e = 0;
-    closure { e++ ** m };
+    func { e++ ** m };
 }
  
 func gen_filter(g1, g2) {
     var v2 = g2.run;
-    closure {
+    func {
         loop {
             var v1 = g1.run;
             while (v1 > v2) { v2 = g2.run };

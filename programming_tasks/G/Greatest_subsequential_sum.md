@@ -16,7 +16,7 @@ func maxsubseq(*a) {
             start = i;
         }
     };
-    a[start+1 .. end];
+    a.ft(start+1, end);
 }
  
 say maxsubseq(-1, -2,  3,  5,  6, -2, -1,  4, -4,  2, -1);

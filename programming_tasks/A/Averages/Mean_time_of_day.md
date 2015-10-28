@@ -6,15 +6,15 @@ Using the *mean_angle()* function from: ["Averages/Mean angle"](http://rosettaco
 
 ```ruby
 func time2deg(t) {
-  t ~~ /^(\d\d):(\d\d):(\d\d)$/ || die "invalid time";
-  var (hh,mm,ss) = [$1, $2, $3].map{.to_i}...;
+  (var m = t.match(/^(\d\d):(\d\d):(\d\d)$/)) || die "invalid time";
+  var (hh,mm,ss) = m.cap.map{.to_i}...;
   ((hh ~~ 0...23) && (mm ~~ 0...59) && (ss ~~ 0...59)) || die "invalid time";
   (hh*3600 + mm*60 + ss) * 360 / 86400;
 }
  
 func deg2time(d) {
   var sec = ((d % 360) * 86400 / 360);
-  "%02d:%02d:%02d" % [sec/3600, (sec%3600)/60, sec%60];
+  "%02d:%02d:%02d" % (sec/3600, (sec%3600)/60, sec%60);
 }
  
 func mean_time(times) {

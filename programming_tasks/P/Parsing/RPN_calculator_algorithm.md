@@ -5,27 +5,25 @@
 ```ruby
 var proggie = '3 4 2 * 1 5 - 2 3 ^ ^ / +';
  
-class RPN {
-    def arr = [];
+class RPN(arr=[]) {
  
-    -> binop(op) {
-        var x = arr.pop;
-        var y = arr.pop;
-        arr << y.(op)(x);
-    };
+    method binop(op) {
+        var x = arr.pop
+        var y = arr.pop
+        arr << y.(op)(x)
+    }
  
-    -> run(p) {
+    method run(p) {
         p.each_word { |w|
             say "#{w} (#{arr})";
-            given(w)
-              ~ (/\d/)      { arr << w.to_f }
-              ~ (<+ - * />) { self.binop(w) }
-              > ('^')       { self.binop('**') }
-              :             { die "#{w} is bogus" }
-            ;
-        };
-        say arr[0];
-    };
+            if    (w ~~ /\d/)        { arr << w.to_f }
+            elsif (w ~~ %w(+ - * /)) { self.binop(w) }
+            elsif (w == '^')         { self.binop('**') }
+            else                     { die "#{w} is bogus" }
+        }
+        say arr[0]
+        assert_eq(arr[0], 3.0001220703125)
+    }
 }
  
 RPN.new.run(proggie);

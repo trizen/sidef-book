@@ -16,7 +16,7 @@ Or by using a generic curry function:
 func curry(f, *args1) {
     func (*args2) {
         f(args1..., args2...);
-    }.copy
+    }
 }
  
 func add(a, b) {

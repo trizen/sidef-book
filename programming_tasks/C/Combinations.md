@@ -5,15 +5,15 @@
 ```ruby
 func combine(n, set) {
  
-    set.len? || return [];
-    n == 1   && return set.map{[_]};
+    set.len || return [];
+    n == 1  && return set.map{[_]};
  
     var (head, result);
     head   = set.shift;
     result = __FUNC__(n-1, set.copy);
  
     result.each { |subarray|
-        subarray.unshift(head);
+        subarray.prepend(head);
     };
  
     result + __FUNC__(n, set);

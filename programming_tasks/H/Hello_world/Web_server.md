@@ -6,7 +6,7 @@ Using the low-level _Socket_ object:
 
 ```ruby
 var port = 8080;
-var protocol = Socket.getprotobyname( "tcp" );
+var protocol = Socket.getprotobyname("tcp");
  
 var sock = (Socket.open(Socket::PF_INET, Socket::SOCK_STREAM, protocol) || die "couldn't open a socket: #{$!}");
   # PF_INET to indicate that this socket will connect to the internet domain

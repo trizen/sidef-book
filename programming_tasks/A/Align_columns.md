@@ -5,10 +5,10 @@
 ```ruby
 class Format(text, width) {
     method align(j) {
-        self[:text].map { |row|
+        text.map { |row|
             row.range.map { |i|
-                '%-*s ' % (self[:width][i],
-                  '%*s' % (row[i].len + (self[:width][i]-row[i].len * j/2), row[i]));
+                '%-*s ' % (width[i],
+                  '%*s' % (row[i].len + (width[i]-row[i].len * j/2), row[i]));
             }.join("");
         }.join("\n") + "\n";
     }

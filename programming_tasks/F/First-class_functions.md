@@ -4,7 +4,7 @@
 
 ```ruby
 func compose(f,g) {
-    closure { |*args|
+    func (*args) {
         f(g(args...));
     }
 }

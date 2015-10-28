@@ -9,10 +9,34 @@ func identity_matrix(n) {
     }
 }
  
-ARGV.len? ? ARGV.map {.to_i} : [4, 5, 6] -> each { |n|
+(ARGV.len ? ARGV.map{.to_i} : [4, 5, 6]) -> each { |n|
   say "\n#{n}:";
   identity_matrix(n).each { |row|
     say row.join(' ');
-  };
+  }
 }
+```
+
+#### Output:
+```
+4:
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+
+5:
+1 0 0 0 0
+0 1 0 0 0
+0 0 1 0 0
+0 0 0 1 0
+0 0 0 0 1
+
+6:
+1 0 0 0 0 0
+0 1 0 0 0 0
+0 0 1 0 0 0
+0 0 0 1 0 0
+0 0 0 0 1 0
+0 0 0 0 0 1
 ```

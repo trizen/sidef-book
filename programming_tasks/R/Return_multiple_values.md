@@ -2,13 +2,17 @@
 
 # [Return multiple values][1]
 
-The _return_ keyword can return multiple values from functions. In its absence, only one value is returned.
-
 ```ruby
 func foo(a,b) {
     return (a+b, a*b);
-};
+}
 ```
+
+
+Catching the returned arguments:
+
 ```ruby
 var (x, y) = foo(4, 5);
+say x;   #=> 9
+say y;   #=> 20
 ```

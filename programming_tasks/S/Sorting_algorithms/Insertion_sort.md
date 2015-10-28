@@ -13,11 +13,11 @@ class Array {
                 j--;
             };
             self[j] = k;
-        } * self.offset;
+        } * self.end;
         return self;
     }
 }
  
 var a = 10.of {100.rand.int};
-say a.insertion_sort.dump;
+say a.insertion_sort;
 ```

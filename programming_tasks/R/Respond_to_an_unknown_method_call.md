@@ -8,11 +8,11 @@ The special *AUTOLOAD* method gets called when a method isn't defined in the cur
 class Example {
     method foo {
         say "this is foo"
-    };
+    }
     method bar {
         say "this is bar"
-    };
-    method AUTOLOAD(name, *args) {
+    }
+    method AUTOLOAD(_, name, *args) {
         say ("tried to handle unknown method %s" % name);
         if (args.len > 0) {
             say ("it had arguments: %s" % args.join(', '));

@@ -4,9 +4,9 @@
 
 ```ruby
 func dsort(m, n) {
-    var h = Hash.new -> default(0);
-    n.each {|item| h[item]++ };
-    m.map  {|item| h[item]-- > 0 ? n.shift : item};
+    var h = Hash.new;
+    n.each {|item| h{item} := 0 ++ };
+    m.map  {|item| h{item} := 0 -- > 0 ? n.shift : item};
 }
  
 <<'EOT'.lines.each { |line|

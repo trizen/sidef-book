@@ -3,17 +3,16 @@
 # [Catalan numbers][1]
 
 ```ruby
-func f(i) { i==0 ? 1 : (i * f(i-1)) };
-func c(n) { f(2*n) / f(n) / f(n+1) };
+func f(i) { i==0 ? 1 : (i * f(i-1)) }
+func c(n) { f(2*n) / f(n) / f(n+1) }
 ```
 
 
-Recursive (with memoization):
+With memoization:
 
 ```ruby
-func c(n) {
-    static mem = [1];
-    mem[n-1] := (c(n-1) * (4 * n - 2) / (n + 1));
+func c(n) is cached {
+    n == 0 ? 1 : (c(n-1) * (4 * n - 2) / (n + 1));
 }
 ```
 

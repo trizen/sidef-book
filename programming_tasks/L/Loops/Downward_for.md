@@ -7,3 +7,12 @@ for (var i = 10; i >= 0; i--) {
     say i;
 }
 ```
+
+
+Idiomatic:
+
+```ruby
+10.downto(0).each { |i|
+    say i;
+}
+```

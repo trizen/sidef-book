@@ -3,10 +3,10 @@
 # [Singly-linked list/Element definition][1]
 
 ```ruby
-var node = :(
+var node = Hash.new(
     data => 'say what',
     next => foo_node,
 );
  
-node[:next] = bar_node;  # mutable
+node{:next} = bar_node;  # mutable
 ```

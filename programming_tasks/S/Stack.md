@@ -15,8 +15,7 @@ say stack.is_empty;     # is_emtpy?
 Creating a Stack class:
 
 ```ruby
-class Stack {
-    def stack = [];
+class Stack(stack=[]) {
     method pop        { stack.pop };
     method push(item) { stack.push(item) };
     method empty      { stack.is_empty };

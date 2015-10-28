@@ -11,11 +11,11 @@ func test() {
     ['&&', '||'].each { |op|
         [[1,1],[1,0],[0,1],[0,0]].each { |pair|
             "a(%s) %s b(%s): ".printf(pair[0], op, pair[1]);
-            a(pair[0].to_bool).$op(b(pair[1].to_bool));
+            eval "a(pair[0].to_bool) #{op} b(pair[1].to_bool)";
             print "\n";
-        };
-    };
-};
+        }
+    }
+}
  
 # Test and display
 test();

@@ -11,13 +11,15 @@ n.times {                                     # play the game n times
    var chosen = 3.rand.int;
  
    var show;
-   { show = 3.rand.int }
-     do while {show ~~ [chosen, prize]};
+   do {
+        show = 3.rand.int
+   } while (show ~~ [chosen, prize]);
  
-   given(chosen)
+   given(chosen) {
      when (prize)                 { stayWins   += 1 }
-     when (3 - show - prize)      { switchWins += 1 }
-     default                      { die "~ error ~" };
+     when ([3 - show - prize])    { switchWins += 1 }
+     default                      { die "~ error ~" }
+    }
 }
  
 say ("Staying wins %.2f%% of the time."   % (100.0 * stayWins   / n));
@@ -26,6 +28,6 @@ say ("Switching wins %.2f%% of the time." % (100.0 * switchWins / n));
 
 #### Output:
 ```
-Staying wins 34.80% of the time.
-Switching wins 65.20% of the time.
+Staying wins 31.20% of the time.
+Switching wins 68.80% of the time.
 ```

@@ -4,14 +4,14 @@
 
 ```ruby
 func disjointSort(values, indices) {
-    values[indices.sort] = values[indices].sort;
+    values.@[indices.sort] = @ [values.@[indices]].sort;
 }
  
 var values =  [7, 6, 5, 4, 3, 2, 1, 0];
 var indices = [6, 1, 7];
  
 disjointSort(values, indices);
-values.dump.say;
+say values;
 ```
 
 #### Output:

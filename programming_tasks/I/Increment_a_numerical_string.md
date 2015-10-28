@@ -3,6 +3,6 @@
 # [Increment a numerical string][1]
 
 ```ruby
-say '1234'++;    #=> '1235'
-say '99'++;      #=> '100'
+say '1234'.inc;    #=> '1235'
+say '99'.inc;      #=> '100'
 ```

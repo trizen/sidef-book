@@ -3,7 +3,7 @@
 # [Sorting algorithms/Bubble sort][1]
 
 ```ruby
-func bubble_sort(arr is Array) -> Array {
+func bubble_sort(arr) {
     loop {
         var swapped = false;
         { |i|
@@ -11,9 +11,9 @@ func bubble_sort(arr is Array) -> Array {
                 arr[i-1, i] = arr[i, i-1];
                 swapped = true;
             );
-        } * arr.offset;
+        } * arr.end;
         swapped || break;
-    };
+    }
     return arr;
-};
+}
 ```

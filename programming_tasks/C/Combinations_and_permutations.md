@@ -16,7 +16,7 @@ class Logarithm(value) {
  
 func lstirling(n) {
     n < 10 ? (lstirling(n+1) - log(n+1))
-           : (0.5*log(2*Math.pi*n) + n*log(n/Math.e + 1/(12*Math.e*n)));
+           : (0.5*log(2*Math::PI*n) + n*log(n/Math::e + 1/(12*Math::e*n)));
 }
  
 func P_approx(n, k) {

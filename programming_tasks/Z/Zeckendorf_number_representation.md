@@ -3,16 +3,15 @@
 # [Zeckendorf number representation][1]
 
 ```ruby
-func fib(n) {
-    static f = [];
+func fib(n) is cached {
     n < 2 ? 1
-          : (f[n] \\= (fib(n-1) + fib(n-2)));
+          : (fib(n-1) + fib(n-2));
 }
  
 func zeckendorf(n) {
     n == 0 && return '0';
     var i = 1;
-    while (fib(i) <= n) { i++ };
+    ++i while (fib(i) <= n);
     gather {
         while (--i > 0) {
             var f = fib(i);

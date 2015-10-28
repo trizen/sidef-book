@@ -7,10 +7,10 @@ var number = rand(1..10);
 say "Guess the number between 1 and 10";
  
 loop {
-    given(read(Number).int)
-        > (number)           { say "You guessed it."; break }
-        ~ (range(1, number)) { say "Too low" }
-        :                    { say "Too high" }
-    ;
+    given(var n = Sys.scanln("> ").to_i) {
+        when (number)     { say "You guessed it."; break }
+        when (n < number) { say "Too low" }
+        default           { say "Too high" }
+    }
 }
 ```

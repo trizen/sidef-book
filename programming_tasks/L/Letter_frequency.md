@@ -11,32 +11,31 @@ func letter_frequency(file) {
 }
  
 var top = letter_frequency(File.new(__FILE__));
-top.each{|key, val| say "#{key}: #{val}"};
+top.each{|pair| say "#{pair[0]}: #{pair[1]}"};
 ```
 
 #### Output:
 ```
-e: 25
-l: 19
-a: 15
+e: 22
+l: 17
+a: 16
 t: 14
-r: 11
-p: 9
-v: 8
+r: 14
+p: 12
 f: 8
+i: 8
 n: 7
-y: 7
-o: 6
 c: 6
 u: 6
-s: 6
-i: 5
+o: 6
+v: 6
+y: 5
+s: 5
 h: 3
 w: 2
-m: 2
-b: 2
 q: 2
+b: 2
+m: 2
 g: 2
-k: 2
 d: 1
 ```

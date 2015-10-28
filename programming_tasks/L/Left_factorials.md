@@ -7,7 +7,7 @@ Straightforward:
 ```ruby
 func left_fact(k) {
     range(0, k-1).map { _! }.sum \\ 0;
-};
+}
 ```
 
 
@@ -31,7 +31,7 @@ func left_fact(n) {
     }
  
     leftfact;
-};
+}
 ```
 
 

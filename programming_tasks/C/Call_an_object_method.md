@@ -9,11 +9,11 @@ class MyClass {
  
 var arg = 42;
  
-# Class method
-MyClass.method(:foo)(arg);
+# Call a class method
+MyClass.foo(arg);
  
-# Alternatively, by specifying the self-object
-MyClass.invoke(:foo, MyClass, arg);
+# Alternatively, using an expression for the method name
+MyClass.(:foo)(arg);
  
 # Create an instance
 var instance = MyClass();
@@ -21,7 +21,7 @@ var instance = MyClass();
 # Instance method
 instance.foo(arg);
  
-# Alternatively, by using an expression as a method
+# Alternatively, by using an expression for the method name
 instance.(:foo)(arg);
  
 # Alternatively, by asking for a method

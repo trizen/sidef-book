@@ -3,7 +3,7 @@
 # [Window creation][1]
 
 ```ruby
-var tk = require 'Tk';
+var tk = require('Tk');
 %s'MainWindow'.new;
 tk.MainLoop;
 ```

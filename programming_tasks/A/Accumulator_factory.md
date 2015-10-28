@@ -3,9 +3,9 @@
 # [Accumulator factory][1]
 
 ```ruby
-class Accumulator (sum) {
+class Accumulator(sum) {
     method add(num) {
-        self.sum += num;
+        sum += num;
     }
 }
  
@@ -16,15 +16,15 @@ say x.add(2.3);               # prints: 8.3
 ```
 
 
-The same thing can be achieved by using the *.copy* method on the block returned by the *Accumulator* function.
+The same thing can be achieved by returning a closure from the *Accumulator* function.
 
 ```ruby
 func Accumulator(sum) {
-    {|num| sum += num }.copy;
+    func(num) { sum += num };
 }
  
 var x = Accumulator(1);
-x.call(5);
+x(5);
 Accumulator(3);
-say x.call(2.3);            # prints: 8.3
+say x(2.3);                  # prints: 8.3
 ```

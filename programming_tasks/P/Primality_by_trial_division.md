@@ -4,9 +4,10 @@
 
 ```ruby
 func is_prime(a) {
-  given (a)
-    case (a == 2)              { true  }
-    case (a <= 1 || a.is_even) { false }
-    default                    { 3 .. a.sqrt any { .divides(a) } not };
+  given (a) {
+    when (2)                   { true  }
+    when (a <= 1 || a.is_even) { false }
+    default                    { 3 ... a.sqrt -> any { .divides(a) } -> not }
+  }
 }
 ```

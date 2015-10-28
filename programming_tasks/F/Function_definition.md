@@ -5,5 +5,5 @@
 ```ruby
 func multiply(a, b) {
     a * b;
-};
+}
 ```

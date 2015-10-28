@@ -61,8 +61,8 @@ func testSoundex {
  
     sndx.keys.sort.each { |name|
         var findSdx = soundex(name, 4);    # calls function w/param of name
-        say "The soundex for #{name} should be #{sndx[name]} and is #{findSdx}";
-        if (findSdx != sndx[name]) {
+        say "The soundex for #{name} should be #{sndx{name}} and is #{findSdx}";
+        if (findSdx != sndx{name}) {
             say "\tHowever, that is incorrect!\n";
         }
     }

@@ -46,9 +46,9 @@ m2f.each { |pair|
     gen_pluralize(m, f).each { |arr|
         var (x, y) = arr.map{.lc}...;
         if (!dict.contains(x)) {
-            dict[x, y] = [y, x];
+            dict{x, y} = (y, x);
         } else {
-            dict[y] = x;
+            dict{y} = x;
         }
     }
 }
@@ -61,7 +61,7 @@ func copy_case(orig, repl) {
  
     var uc = 0;
     var min = [a, b].map{.len}.min;
-    0 .. min-1 each { |i|
+    0 .. min-1 -> each { |i|
         if (a[i] ~~ /^[[:upper:]]/) {
             b[i].uc!;
             uc += 1;
@@ -72,8 +72,8 @@ func copy_case(orig, repl) {
 }
  
 func reverse_gender(text) {
-    text.gsub(gen_re, { |a| copy_case(a, dict[a.lc]) });
-};
+    text.gsub(gen_re, { |a| copy_case(a, dict{a.lc}) });
+}
 ```
 
 

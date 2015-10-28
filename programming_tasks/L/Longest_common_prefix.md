@@ -6,8 +6,8 @@
 # Finds the first point where the tree bifurcates
 func find_common_prefix(hash, acc) {
     if ((var keys = hash.keys).len == 1) {
-        return __FUNC__(hash[keys[0]], acc+keys[0]);
-    };
+        return __FUNC__(hash{keys[0]}, acc+keys[0]);
+    }
     return acc;
 }
  
@@ -15,21 +15,21 @@ func find_common_prefix(hash, acc) {
 func lcp(*strings) {
     var hash = Hash.new;
  
-    strings.sort {|a,b| a.len <=> b.len}.each { |str|
+    strings.sort_by{.len}.each { |str|
         var ref = hash;
-        str == '' && return '';
+        str.is_empty && return '';
         str.each { |char|
             if (ref.has_key(char)) {
-                ref = ref[char];
+                ref = ref{char};
                 ref.keys.len == 0 && break;
             } else {
-                ref = (ref[char] = Hash.new);
+                ref = (ref{char} = Hash.new);
             }
         };
     };
  
     return find_common_prefix(hash, '');
-};
+}
 ```
 
 

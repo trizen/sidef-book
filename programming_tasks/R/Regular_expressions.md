@@ -20,8 +20,8 @@ var str = <<'EOF';
     y:Bar
 EOF
  
-while (str =~ /(\w+):(\S+)/g) {
-    say "#{$1} -> #{$2}";
+while (var m = str=~/(\w+):(\S+)/g) {
+    say "#{m[0]} -> #{m[1]}";
 }
 ```
 

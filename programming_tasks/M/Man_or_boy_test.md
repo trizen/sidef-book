@@ -2,12 +2,36 @@
 
 # [Man or boy test][1]
 
-Sidef does not support closures, but something similar can be achieved by using the _Block.copy()_ method.
+```ruby
+func a(k, x1, x2, x3, x4, x5) {
+    func b { a(--k, b, x1, x2, x3, x4) };
+    k <= 0 ? (x4() + x5()) : b();
+}
+say a(10, {1}, {-1}, {-1}, {1}, {0});      #=> -67
+```
+
+
+This solution avoids creating the closure b if k &lt;= 0 (that is, nearly every time).
 
 ```ruby
 func a(k, x1, x2, x3, x4, x5) {
-    func b { (a.copy)(--k, b, x1, x2, x3, x4) };
-    k <= 0 ? (x4() + x5()) : b();
-};
-println(a(10, {1}, {-1}, {-1}, {1}, {0}));      #=> -67
+    k <= 0 ? (x4() + x5())
+           : func b { a(--k, b, x1, x2, x3, x4) }();
+}
+say a(10, {1}, {-1}, {-1}, {1}, {0});      #=> -67
+```
+
+
+Alternatively, we can implement it as a class also:
+
+```ruby
+class MOB {
+    method a(k, x1, x2, x3, x4, x5) {
+        func b { self.a(--k, b, x1, x2, x3, x4) };
+        k <= 0 ? (x4() + x5()) : b();
+    }
+}
+ 
+var obj = MOB();
+say obj.a(10, {1}, {-1}, {-1}, {1}, {0});
 ```

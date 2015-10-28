@@ -19,12 +19,12 @@ func drawLine(x0, y0, x1, y1) {
  
     var p = plot;
     if (abs(y1 - y0) > abs(x1 - x0)) {
-        p = {|arg| plot(arg[1, 0, 2]...) };
-        [y0, x0, y1, x1] » (\x0, \y0, \x1, \y1);
+        p = {|arg| plot(arg[1, 0, 2]) };
+        (x0, y0, x1, y1) = (y0, x0, y1, x1);
     }
  
     if (x0 > x1) {
-        [x1, x0, y1, y0] » (\x0, \x1, \y0, \y1);
+        (x0, x1, y0, y1) = (x1, x0, y1, y0);
     }
  
     var dx = (x1 - x0);
@@ -47,7 +47,7 @@ func drawLine(x0, y0, x1, y1) {
  
         p.call(x_pixel, y_pixel  , rfpart(yend) * xgap);
         p.call(x_pixel, y_pixel+1,  fpart(yend) * xgap);
-        intery == nil || next;
+        defined(intery) && next;
  
         # first y-intersection for the main loop
         intery = (yend + gradient);

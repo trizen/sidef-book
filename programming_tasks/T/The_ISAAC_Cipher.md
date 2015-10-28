@@ -9,8 +9,8 @@ func xor_isaac(key, msg) {
   var rng = %s'Math::Random::ISAAC'.new(unpack('C*', key));
  
   msg.chars»ord»()
-    »^« 256.of{ rng.irand % 95 + 32 }.last(msg.len).reverse
-    «%« '%02X' -> join;
+    -> »^« 256.of{ rng.irand % 95 + 32 }.last(msg.len).reverse
+    -> «%« '%02X' -> join;
 }
  
 var msg = 'a Top Secret secret';

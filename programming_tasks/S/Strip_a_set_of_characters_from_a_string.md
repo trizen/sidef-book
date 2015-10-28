@@ -5,7 +5,7 @@
 ```ruby
 func stripchars(str, char_list) {
     str.tr(char_list, "", "d");
-};
+}
 ```
 
 
@@ -13,8 +13,8 @@ or:
 
 ```ruby
 func stripchars(str, char_list) {
-    str.split(1).grep {|c| !char_list.contains(c)}.join;
-};
+    str.chars.grep {|c| !char_list.contains(c)}.join;
+}
 ```
 
 

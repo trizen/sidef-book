@@ -5,19 +5,19 @@
 ```ruby
 class Vector(x, y, z) {
     method ∙(vec) {
-        self[:x..:z] »*« vec[:x..:z] «+»;
+        [self{:x,:y,:z}] »*« [vec{:x,:y,:z}] «+»;
     }
  
     method ⨉(vec) {
-        Vector(self[:y]*vec[:z] - self[:z]*vec[:y],
-               self[:z]*vec[:x] - self[:x]*vec[:z],
-               self[:x]*vec[:y] - self[:y]*vec[:x]);
+        Vector(self.y*vec.z - self.z*vec.y,
+               self.z*vec.x - self.x*vec.z,
+               self.x*vec.y - self.y*vec.x);
     }
  
     method to_s {
-        "(#{self[:x]}, #{self[:y]}, #{self[:z]})";
+        "(#{x}, #{y}, #{z})";
     }
-};
+}
  
 var a = Vector(3, 4, 5);
 var b = Vector(4, 3, 5);

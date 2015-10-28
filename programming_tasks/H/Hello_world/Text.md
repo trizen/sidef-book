@@ -3,5 +3,5 @@
 # [Hello world/Text][1]
 
 ```text
-„Goodbye, World!”.say;
+„Hello world!”.say;
 ```

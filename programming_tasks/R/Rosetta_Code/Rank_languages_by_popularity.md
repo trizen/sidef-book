@@ -23,22 +23,22 @@ loop {
         )
     );
  
-    languages.append(apih[:query][:pages].values...);
-    gcmcontinue = apih['query-continue'][:categorymembers][:gcmcontinue];
+    languages.append(apih{:query}{:pages}.values...);
+    gcmcontinue = apih{'query-continue'}{:categorymembers}{:gcmcontinue};
     gcmcontinue || break;
 }
  
 languages.each { |lang|
-    lang[:title] -= /^Category:/;
-    lang[:categoryinfo][:size] \\= 0;
+    lang{:title} -= /^Category:/;
+    lang{:categoryinfo}{:size} \\= 0;
 }
  
 var sorted_languages = languages.sort { |a, b|
-    a[:categoryinfo][:size] <=> b[:categoryinfo][:size]
+    a{:categoryinfo}{:size} <=> b{:categoryinfo}{:size}
 }.reverse;
  
 sorted_languages.each_with_index { |i, lang|
-    printf("%3d. %20s - %3d\n", i+1, lang[:title], lang[:categoryinfo][:size]);
+    printf("%3d. %20s - %3d\n", i+1, lang{:title}, lang{:categoryinfo}{:size});
 }
 ```
 

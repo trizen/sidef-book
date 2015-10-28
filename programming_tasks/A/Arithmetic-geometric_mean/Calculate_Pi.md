@@ -21,7 +21,7 @@ func agm_pi(digits) {
         pn *= 2;
     }
  
-    Math.precision(nil);
+    Math.precision(0);
     ((an+bn)**2 / 4*tn)->round(digits);
 }
  

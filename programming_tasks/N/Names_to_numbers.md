@@ -21,10 +21,10 @@ func names_to_number(str) {
     );
  
     # Groupings for thousands, millions, ..., quintillions
-    static groups = /\d{4}|\d{7}|\d{10}|\d{13}|1\d{15}|1\d{18}/;
+    static groups = /\d{4}|\d{7}|\d{10}|\d{13}|\d{16}|\d{19}/;
  
-    # Numeral or e-notation
-    static num = /\d+|\d+e\+\d+/;
+    # Numeral
+    static num = /\d+/;
  
     str.trim!;                      # remove leading and trailing whitespace
     str.gsub!('-', ' ');            # convert hyphens to spaces
@@ -36,8 +36,8 @@ func names_to_number(str) {
     str.gsub!(/([.?!])$/, {|a| ' ' + a + "\n"});
  
     # tokenize other punctuation and symbols
-    str.gsub!(/\$(.)/,           {|a| '$ ' + a });       # prefix
-    str.gsub!(/(.)([;:%'',])/, {|a,b| a + ' ' + b});     # suffix
+    str.gsub!(/\$(.)/,           {|a| "$ #{a}" });       # prefix
+    str.gsub!(/(.)([;:%'',])/, {|a,b| "#{a} #{b}"});     # suffix
  
     nums.each { |key, value| str.gsub!(Regex.new('\b' + key + '\b'), value) };
  
@@ -48,7 +48,7 @@ func names_to_number(str) {
         Regex.new('\b(\d) 100 (\d\d) (\d) (' + groups + ')\b'),
         Regex.new('\b(\d) 100 (\d\d) (' + groups + ')\b'),
         Regex.new('\b(\d) 100 (\d) (' + groups + ')\b'),
-        Regex.new('\b100 (\d\d) (\d) (' + groups + ')\b'),
+        Regex.new('\b(\d) 100 (' + groups + ')\b'),
         Regex.new('\b100 (\d\d) (\d) (' + groups + ')\b'),
         Regex.new('\b100 (\d\d) (' + groups + ')\b'),
         Regex.new('\b100 (\d) (' + groups + ')\b'),
@@ -71,9 +71,9 @@ func names_to_number(str) {
  
     str.gsub!(/\b(\d\d) (\d) 100\b/, {|a,b| (a.to_i + b.to_i) * 100});
     str.gsub!(/\b(\d{1,2}) 100\b/,   {|a|   (a.to_i * 100) });
-    str.gsub!(/\b(\d{2}) (\d{2})\b/, {|a,b| a.to_i*100 + b.to_i});
+    str.gsub!(/\b(\d{2}) (\d{2})\b/, {|a,b| (a.to_i * 100) + b.to_i});
     str.gsub!(regex[10], {|a| a.split(' ').map{.to_i}.sum });
-};
+}
 ```
 
 

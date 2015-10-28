@@ -5,16 +5,16 @@
 ```ruby
 func mul_inv(a, b) {
     b == 1 && return 1;
-    var (b0, x0, x1) = (b0, 0, 1);
+    var (b0, x0, x1) = (0, 0, 1);
     while (a > 1) {
-        [b, a % b, x1 - x0*int(a / b), x0] » (\a, \b, \x0, \x1);
+        (a, b, x0, x1) = (b, a % b, x1 - x0*int(a / b), x0);
     };
     x1 < 0 ? x1+b0 : x1;
 }
  
 func chinese_remainder(*n) {
     var N = n«*»;
-    closure ->(*a) {
+    func (*a) {
         n.range.map { |i|
             var p = int(N / n[i]);
             a[i] * mul_inv(p, n[i]) * p;

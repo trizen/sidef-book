@@ -4,15 +4,15 @@
 
 ```ruby
 # Compress a string to a list of output symbols.
-func compress(uncompressed is String) -> Array {
+func compress(String uncompressed) -> Array {
  
     # Build the dictionary.
     var dict_size = 256;
     var dictionary = Hash.new;
  
-    0 .. dict_size-1 -> each { |i|
-        dictionary[i.chr] = i.chr;
-    };
+    0 ... dict_size-1 -> each { |i|
+        dictionary{i.chr} = i.chr;
+    }
  
     var w = '';
     var result = [];
@@ -21,54 +21,54 @@ func compress(uncompressed is String) -> Array {
         if (dictionary.exists(wc)) {
             w = wc;
         } else {
-            result.append(dictionary[w]);
+            result.append(dictionary{w});
             # Add wc to the dictionary.
-            dictionary[wc] = dict_size;
+            dictionary{wc} = dict_size;
             dict_size++;
             w = c;
         }
-    };
+    }
  
     # Output the code for w.
     if (w != '') {
-        result.append(dictionary[w]);
-    };
+        result.append(dictionary{w});
+    }
  
     return result;
-};
+}
  
 # Decompress a list of output ks to a string.
-func decompress(compressed is Array) -> String {
+func decompress(Array compressed) -> String {
  
     # Build the dictionary.
     var dict_size = 256;
     var dictionary = Hash.new;
  
-    0 .. dict_size-1 -> each { |i|
-        dictionary[i.chr] = i.chr;
-    };
+    0 ... dict_size-1 -> each { |i|
+        dictionary{i.chr} = i.chr;
+    }
  
     var w = compressed.shift;
     var result = w;
     compressed.each { |k|
         var entry;
         if (dictionary.exists(k)) {
-            entry = dictionary[k];
+            entry = dictionary{k};
         } elsif (k == dict_size) {
-            entry = w+w.substr(0,1);
+            entry = w+w.first;
         } else {
             die "Bad compressed k: #{k}";
         };
         result += entry;
  
         # Add w+entry[0] to the dictionary.
-        dictionary[dict_size] = w+entry.substr(0,1);
+        dictionary{dict_size} = w+entry.first;
         dict_size++;
  
         w = entry;
-    };
+    }
     return result;
-};
+}
  
 # How to use:
 var compressed = compress('TOBEORNOTTOBEORTOBEORNOT');

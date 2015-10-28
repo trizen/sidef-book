@@ -3,10 +3,7 @@
 # [Universal Turing machine][1]
 
 ```ruby
-func run_utm(state="", blank="", rules=[], tape=[], halt="", pos=0) {
-    if (tape.is_empty) {
-        tape = [blank];
-    }
+func run_utm(state="", blank="", rules=[], tape=[blank], halt="", pos=0) {
  
     if (pos < 0) {
         pos += tape.len;
@@ -36,7 +33,7 @@ func run_utm(state="", blank="", rules=[], tape=[], halt="", pos=0) {
  
             tape[pos] = v1;
  
-            given(dir)
+            given(dir) {
                 when ('left') {
                      if (pos == 0) { tape.unshift(blank) }
                      else          { --pos };
@@ -45,13 +42,15 @@ func run_utm(state="", blank="", rules=[], tape=[], halt="", pos=0) {
                     if (++pos >= tape.len) {
                         tape.append(blank)
                     }
-                };
+                }
+            }
  
             state = s1;
-            next(2);
-        };
+            goto :NEXT;
+        }
  
         die 'No matching rules';
+        @:NEXT;
     }
 }
  

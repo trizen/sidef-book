@@ -7,5 +7,5 @@ var keys = %w(a b c);
 var vals = [1, 2, 3];
  
 var hash = Hash.new;
-hash[keys] = vals;
+hash.@{keys} = @vals;
 ```

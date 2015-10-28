@@ -11,10 +11,6 @@ var b = Sys.scanln("Second number: ").to_i;
 }
 ```
 
-
-*Output:*
-
-
 #### Output:
 ```
 ** Integer a: 100

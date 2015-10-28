@@ -3,10 +3,10 @@
 # [Levenshtein distance][1]
 
 ```ruby
-func lev(s,t) {
+func lev(s, t) is cached {
  
-    s == '' && return t.len;
-    t == '' && return s.len;
+    s.is_empty && return t.len;
+    t.is_empty && return s.len;
  
     var s1 = s.ft(1);
     var t1 = t.ft(1);
@@ -17,7 +17,7 @@ func lev(s,t) {
                         __FUNC__(s,  t1),
                         __FUNC__(s1, t )
                      ].min;
-};
+}
 ```
 ```ruby
 func lev(s, t) {
@@ -32,13 +32,13 @@ func lev(s, t) {
         } * t.len;
     } * s.len;
     d[-1][-1] \\ [s.len, t.len].min;
-};
+}
 ```
 
 
 Calling the function:
 
 ```ruby
-say lev('kitten', 'sitting');               # prints: 3
-say lev('rosettacode', 'raisethysword');    # prints: 8
+say lev(%c'kitten', %c'sitting');               # prints: 3
+say lev(%c'rosettacode', %c'raisethysword');    # prints: 8
 ```

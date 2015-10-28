@@ -10,6 +10,6 @@ var dirs = %w(
 );
  
 var unique_pref = dirs.map{.split('/')}.abbrev.min_by{.len};
-var common_dir  = unique_pref.pop:.join('/');
+var common_dir  = [unique_pref, unique_pref.pop][0].join('/');
 say common_dir;   # => /home/user1/tmp
 ```

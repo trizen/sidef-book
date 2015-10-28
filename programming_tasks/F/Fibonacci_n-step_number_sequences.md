@@ -4,20 +4,17 @@
 
 ```ruby
 func fib(n, xs=[1]) {
-    xs.copy!;
- 
     loop {
         var len = xs.len;
         len >= 20 && break;
-        xs.append(xs[0.max(len - n) .. len-1].sum);
-    };
- 
-    xs;
+        xs.append(xs.ft(0.max(len - n)).sum);
+    }
+    return xs;
 }
  
 range(2, 10).each { |i|
     say fib(i).join(' ');
-};
+}
 say fib(2, [2, 1]).join(' ');
 ```
 

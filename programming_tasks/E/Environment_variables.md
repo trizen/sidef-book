@@ -5,5 +5,5 @@
 The _ENV_ hash maps environment variables to their values:
 
 ```ruby
-say ENV['HOME'];
+say ENV{'HOME'};
 ```

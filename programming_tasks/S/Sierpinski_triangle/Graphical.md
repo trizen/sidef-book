@@ -2,6 +2,8 @@
 
 # [Sierpinski triangle/Graphical][1]
 
+Creates a PNG image.
+
 ```ruby
 func sierpinski_triangle(n) -> Array {
   var triangle = ['*'];
@@ -27,20 +29,26 @@ class Array {
     var img = gd.new(width * scale, self.len * scale);
  
     self.range.each { |i|
-      (i * scale) ..^ (i * scale + scale) -> each { |j|
+      range(i * scale, i * scale + scale).each { |j|
         var row = self[i];
         img.moveTo(0, j);
         loop {
-          if (row.sub!(/^(\s+)/); $1.len?) {
+          if ((var sp = row.count(/^\s+/)) > 0) {
+             row.substr!(sp);
              img.fgcolor(bgcolor);
-             img.line(scale * $1.len);
-          } elsif (row.sub!(/^(\S+)/); $1.len?) {
+             img.line(scale * sp);
+          }
+          elsif ((var nsp = row.count(/^\S+/)) > 0) {
+             row.substr!(nsp);
              img.fgcolor(fgcolor);
-             img.line(scale * $1.len);
-          } else { break }
+             img.line(scale * nsp);
+          }
+          else {
+             break;
+          }
         }
       }
-    };
+    }
  
     return img.png;
   }

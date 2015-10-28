@@ -4,14 +4,14 @@
 
 ```ruby
 var victims = [
-    fly:    "  I don't know why S—",
-    spider: "  That wriggled and jiggled and tickled inside her.",
-    bird:   "  How absurd, T!",
-    cat:    "  Fancy that, S!",
-    dog:    "  What a hog, T!",
-    goat:   "  She just opened her throat, and in walked the goat!",
-    cow:    "  I don't know how S!",
-    horse:  "  She's dead, of course...",
+    :fly:    "  I don't know why S—",
+    :spider: "  That wriggled and jiggled and tickled inside her.",
+    :bird:   "  How absurd, T!",
+    :cat:    "  Fancy that, S!",
+    :dog:    "  What a hog, T!",
+    :goat:   "  She just opened her throat, and in walked the goat!",
+    :cow:    "  I don't know how S!",
+    :horse:  "  She's dead, of course...",
 ];
  
 var history = ["I guess she'll die...\n"];

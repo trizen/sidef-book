@@ -21,7 +21,7 @@ func depth(t) {
     while (a.len > 0) {
         var v = (a.shift \\ next);
         ret « v[0];
-        a += v[1,2];
+        a += [v[1,2]];
     };
     return ret;
 }

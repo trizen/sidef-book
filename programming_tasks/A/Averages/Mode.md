@@ -5,9 +5,9 @@
 ```ruby
 func mode(array) {
     var c = Hash.new;
-    array.each{|i| c[i] := 0 ++};
+    array.each{|i| c{i} := 0 ++};
     var max = c.values.max;
-    c.keys.grep{|i| c[i] == max};
+    c.keys.grep{|i| c{i} == max};
 }
 ```
 

@@ -22,26 +22,27 @@ loop {
     EOT
  
     ++tries;
-    switch(var score = STDIN.readline)
-        case(max <= min) {
+    given (var score = STDIN.readline) {
+        when (max <= min) {
             say "\nI give up...";
             break;
         }
-        case(score ~~ /^h/i) {
+        when (score ~~ /^h/i) {
             min = guess+1;
         }
-        case(score ~~ /^l/i) {
+        when (score ~~ /^l/i) {
             max = guess;
         }
-        case(score ~~ /^e/i) {
+        when (score ~~ /^e/i) {
             say "\nI knew it! It took me only #{tries} tries.";
             break;
         }
         default {
             say "error: invalid score";
             next;
-        };
+        }
+    }
  
-    guess = (min+max / 2 int);
+    guess = (min+max / 2 -> int);
 }
 ```

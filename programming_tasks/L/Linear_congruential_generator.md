@@ -5,27 +5,27 @@
 ```ruby
 module LCG {
  
-  # Creates a linear congruential generator with the given _seed_.
+  # Creates a linear congruential generator with the self _seed_.
   class Common {
-    -> new(seed) {
-      self[:seed] = (self[:r] = seed);
+    -> init {
+      self{:r} = self.seed;
     }
   }
  
   # LCG::Berkeley generates 31-bit integers using the same formula
   # as BSD rand().
-  class Berkeley < Common {
+  class Berkeley(seed) < Common {
     -> rand {
-      self.r = ((1103515245 * self.r + 12345) & 0x7fff_ffff);
+      self{:r} = ((1103515245 * self{:r} + 12345) & 0x7fff_ffff);
     }
   }
  
   # LCG::Microsoft generates 15-bit integers using the same formula
   # as rand() from the Microsoft C Runtime.
-  class Microsoft < Common {
+  class Microsoft(seed) < Common {
     -> rand {
-      self.r = ((214013 * self.r + 2531011) & 0x7fff_ffff);
-      self.r >> 16;
+      self{:r} = ((214013 * self{:r} + 2531011) & 0x7fff_ffff);
+      self{:r} >> 16;
     }
   }
 }

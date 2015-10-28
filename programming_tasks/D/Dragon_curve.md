@@ -3,7 +3,7 @@
 # [Dragon curve][1]
 
 ```ruby
-const halfpi = Math.pi/2;
+define halfpi = Math.pi/2;
  
 # Computing the dragon with a L-System
 var dragon = 'FX';
@@ -27,7 +27,7 @@ xmlns='http://www.w3.org/2000/svg'>
 EOT
  
 dragon.each { |c|
-    given(c)
+    given(c) {
         when ('F') {
             printf("<line x1='%.0f' y1='%.0f' ", x, y);
             printf("x2='%.0f' ", x += r*Math.cos(theta));
@@ -35,8 +35,12 @@ dragon.each { |c|
             printf("style='stroke:rgb(0,0,0);stroke-width:1'/>\n");
         }
         when ('+') { theta += halfpi }
-        when ('-') { theta -= halfpi };
+        when ('-') { theta -= halfpi }
+    }
 }
  
 print '</svg>';
 ```
+
+
+Generates a SVG image to the standard output.

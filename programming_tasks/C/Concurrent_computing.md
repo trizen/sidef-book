@@ -6,8 +6,8 @@ A very basic threading support is provided by the *Block.fork()* method:
 
 ```ruby
 <Enjoy Rosetta Code>
-    map{|str| {say str}.fork }
-    map{|thr| thr.wait };
+    .map{|str| {say str}.fork }
+    .map{|thr| thr.wait };
 ```
 
 #### Output:

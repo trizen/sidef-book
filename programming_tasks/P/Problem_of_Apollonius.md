@@ -4,8 +4,7 @@
 
 ```ruby
 class Circle(x,y,r) {
-    method to_s { "Circle(#{x}, #{y}, #{r})" };
-    method say  { CORE::say self.to_s };
+    method to_s { "Circle(#{x}, #{y}, #{r})" }
 }
  
 func solve_apollonius(c, s) {

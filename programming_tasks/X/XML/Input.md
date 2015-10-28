@@ -15,7 +15,7 @@ var ref = %S'XML::Simple'.XMLin('<Students>
   <Student DateOfBirth="1993-09-10" Gender="F" Name="&#x00C9;mily" />
 </Students>');
  
-ref[:Student].each { _[:Name].say };
+ref{:Student}.each { say _{:Name} };
 ```
 
 #### Output:

@@ -12,9 +12,8 @@ main.Button(
 tk.MainLoop;
 ```
 ```ruby
-require('Gtk2') -> init;
+var gtk2 = require('Gtk2') -> init;
  
-var gtk2   = %s'Gtk2';
 var window = %s'Gtk2::Window'.new;
 var label  = %s'Gtk2::Label'.new('Goodbye, World!');
  
