@@ -2,7 +2,7 @@
 
 The interactive mode (aka REPL) is available by simply executing the `sidef` command, or by specifying the `-i` command-line switch.
 
-```ruby
+```shell
 $ sidef -i
 Sidef 2.10 on linux
 Type "help", "copyright" or "license" for more information.
