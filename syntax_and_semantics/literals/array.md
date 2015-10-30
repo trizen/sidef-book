@@ -9,7 +9,7 @@ An Array is a collection of objects which can grow or shrink dynamically.
 Alternatively, one can write:
 
 ```ruby
-Array.new(123, "abc", true, nil)
+Array(123, "abc", true, nil)
 ```
 
 

@@ -10,5 +10,5 @@ The Dir object represents a local directory.
 Alternatively, one can use:
 
 ```ruby
-Dir.new("/my/path")
+Dir("/my/path")
 ```

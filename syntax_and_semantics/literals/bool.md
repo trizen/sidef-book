@@ -10,6 +10,6 @@ false;   # A Boolean value that is false
 Alternatively, one can write:
 
 ```ruby
-Bool.new(1);    # true
-Bool.new(0);    # false
+Bool(1);    # true
+Bool(0);    # false
 ```

@@ -4,7 +4,7 @@ Method precedence is controlled by the following three method separators: `.`, `
 
 ```ruby
 1 + 25.sqrt;     # means: 1 + sqrt(25)
-1 + 25->sqrt;    # means: sqrt(1+25)
+1 + 25->sqrt;    # means: sqrt(1 + 25)
 ```
 
 The rules are the following:

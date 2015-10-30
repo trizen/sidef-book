@@ -5,14 +5,19 @@ A String represents an immutable sequence of UTF-8 characters.
 ## Double quoted strings
 
 
-A String is typically created with a string literal, enclosing UTF-8 characters in double quotes:
+A String object is typically created with a string literal, enclosing UTF-8 characters in double quotes:
 
 ```ruby
 "hello world"
 ```
 
+Alternatively, we can create strings using the _String_ class:
 
-Being a new programming language, Sidef has built-in support for Unicode quotes as well:
+```ruby
+String("hello world")
+```
+
+Being a new programming language, Sidef has also built-in support for Unicode quotation marks:
 
 ```ruby
 „double quoted”        # == "double quoted"
