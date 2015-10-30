@@ -17,7 +17,7 @@ Sidef is a high-level, general-purpose programming language, inspired by Ruby, P
 
 * Sidef offers a large number of features, such as:
     * object-oriented programming,
-    * multiple dispatch,
+    * functional programming,
     * metaprogramming,
     * regular expressions,
     * support for using Perl modules,
@@ -32,8 +32,7 @@ Sidef is a high-level, general-purpose programming language, inspired by Ruby, P
 
 ### LICENSE AND COPYRIGHT
 
-* Copyright (C) 2013 Daniel Șuteu, Ioana Fălcușan
-* Copyright (C) 2014-2015 Daniel Șuteu
+* Copyright (C) 2013-2015 Daniel Șuteu, Ioana Fălcușan
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of the *Artistic License (2.0)*. You may obtain a
