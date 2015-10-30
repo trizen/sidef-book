@@ -3,9 +3,9 @@
 Deparsing is the reverse process of parsing, which translates the AST back into code. Currently, Sidef supports deparsing into two languages with the `-R lang` switch:
 
 * `-R perl`
-    - Parses and deparses the AST into valid Perl code.
+    - Deparses the AST into valid Perl code.
 * `-R sidef`
-    - Parses and deparses the AST into valid Sidef code.
+    - Deparses the AST into valid Sidef code.
 
 Example:
 
