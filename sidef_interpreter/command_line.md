@@ -2,7 +2,7 @@
 
 The Sidef interpreter has the following command-line options:
 
-```
+```ruby
 usage: sidef [switches] [--] [programfile] [arguments]
 
   -c            compile the code as a stand-alone Perl program
@@ -27,4 +27,4 @@ usage: sidef [switches] [--] [programfile] [arguments]
   -W            make warnings fatal (with stack backtrace)
 ```
 
-which we'll examine in the following sub-sections.
+which we'll examine in the following sections.

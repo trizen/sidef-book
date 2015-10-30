@@ -8,6 +8,7 @@
    * [Test installation](getting_started/hello_world.md)
 * [Sidef interpreter](sidef_interpreter/README.md)
    * [Command-line options](sidef_interpreter/command_line.md)
+   * [One-line programs](sidef_interpreter/one_liners.md)
    * [Interactive mode](sidef_interpreter/interactive.md)
    * [Dumping the AST](sidef_interpreter/dump_ast.md)
    * [Optimization](sidef_interpreter/optimization.md)

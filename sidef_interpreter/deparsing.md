@@ -1,18 +1,28 @@
 # Deparsing
 
-The deparsing is the reverse process of parsing, which translates the AST back into code.
+Deparsing is the reverse process of parsing, which translates the AST back into code. Currently, Sidef supports deparsing into two languages with the `-R` switch:
 
-Currently, Sidef supports deparsing into two languages with the `-R` switch:
-
-* -Rperl
+* `-Rperl`
     - Parses and deparses the AST into valid Perl code.
-* -Rsidef
+* `-Rsidef`
     - Parses and deparses the AST into valid Sidef code.
 
 Example:
 
 ```shell
 $ sidef -Rperl script.sf | perl
+```
+
+The `-Rsidef` switch (or simply `-r`) it's very useful to check how the parser really parses the code.
+
+Example:
+```shell
+$ sidef -r -E 'sqrt(42)'
+```
+
+Outputs:
+```ruby
+42->sqrt;
 ```
 
 Alternatively, Sidef can deparse code in interactive mode as well:
