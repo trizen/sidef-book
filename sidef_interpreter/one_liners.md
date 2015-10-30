@@ -8,8 +8,8 @@ Example:
 $ sidef -E "say 'hello world'"
 ```
 
-Output:
+Outputs:
 
 ```
 hello world
-``
+```

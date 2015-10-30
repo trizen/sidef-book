@@ -14,4 +14,4 @@ Currently, there are three level of optimization available:
     - Does constant folding, after which it deparses the AST into Sidef code, parses the code again and does constant folding on the new AST
 
 
-After the above optional optimizations, the code is translated into Perl and ready to be executed. In the translation process, however, more non-optional optimizations are done.
+After the above optional optimizations, the code is translated into Perl and is ready to be executed. In the translation process, however, more non-optional optimizations are done.
