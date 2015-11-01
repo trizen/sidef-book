@@ -27,4 +27,4 @@ usage: sidef [switches] [--] [programfile] [arguments]
   -W            make warnings fatal (with stack backtrace)
 ```
 
-which we'll examine in the following sections.
+which we'll examine in the following pages.
