@@ -90,6 +90,7 @@
            * [Player](programming_tasks/B/Bulls_and_cows/Player.md)
    * C
        * [Caesar cipher](programming_tasks/C/Caesar_cipher.md)
+       * [Call a function](programming_tasks/C/Call_a_function.md)
        * [Call an object method](programming_tasks/C/Call_an_object_method.md)
        * [Carmichael 3 strong pseudoprimes](programming_tasks/C/Carmichael_3_strong_pseudoprimes.md)
        * [Case-sensitivity of identifiers](programming_tasks/C/Case-sensitivity_of_identifiers.md)
@@ -430,6 +431,7 @@
            * [Function names and labels](programming_tasks/S/Scope/Function_names_and_labels.md)
        * [Search a list](programming_tasks/S/Search_a_list.md)
        * [Secure temporary file](programming_tasks/S/Secure_temporary_file.md)
+       * [Semiprime](programming_tasks/S/Semiprime.md)
        * [Semordnilap](programming_tasks/S/Semordnilap.md)
        * [Send an unknown method call](programming_tasks/S/Send_an_unknown_method_call.md)
        * [Sequence of non-squares](programming_tasks/S/Sequence_of_non-squares.md)
