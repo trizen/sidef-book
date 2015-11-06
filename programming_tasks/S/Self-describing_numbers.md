@@ -17,7 +17,7 @@ values.each { |test|
     say "#{test} is #{sdn(test) ? '' : 'NOT ' }a self describing number.";
 }
  
-range(0, 1e5).each { |i say i if sdn(i) }
+range(0, 1e5).each { |i| say i if sdn(i) }
 ```
 
 #### Output:
