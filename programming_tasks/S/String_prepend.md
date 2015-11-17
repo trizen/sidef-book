@@ -8,6 +8,14 @@ str.sub!(/^/, 'He');
 say str;
 ```
 
+or
+
+```ruby
+var str = 'llo!';
+str.prepend!('He');
+say str;
+```
+
 #### Output:
 ```
 Hello!
