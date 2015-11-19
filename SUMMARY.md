@@ -483,6 +483,7 @@
        * [Sparkline in unicode](programming_tasks/S/Sparkline_in_unicode.md)
        * [Speech synthesis](programming_tasks/S/Speech_synthesis.md)
        * [Spiral matrix](programming_tasks/S/Spiral_matrix.md)
+       * [Stable marriage problem](programming_tasks/S/Stable_marriage_problem.md)
        * [Stack](programming_tasks/S/Stack.md)
        * [Stair-climbing puzzle](programming_tasks/S/Stair-climbing_puzzle.md)
        * [Standard deviation](programming_tasks/S/Standard_deviation.md)
