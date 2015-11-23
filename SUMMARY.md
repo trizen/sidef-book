@@ -331,6 +331,7 @@
        * [Named parameters](programming_tasks/N/Named_parameters.md)
        * [Names to numbers](programming_tasks/N/Names_to_numbers.md)
        * [Narcissist](programming_tasks/N/Narcissist.md)
+       * [Native shebang](programming_tasks/N/Native_shebang.md)
        * [Natural sorting](programming_tasks/N/Natural_sorting.md)
        * [Non-continuous subsequences](programming_tasks/N/Non-continuous_subsequences.md)
        * Non-decimal radices

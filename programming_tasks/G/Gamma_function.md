@@ -19,9 +19,9 @@ func gamma(x) {
     1 / a.reverse.reduce {|sum, an| sum*y + an};
 }
  
-(1..10).each { |i|
+for i in 1..10 {
     say ("%.14e" % gamma(i/3));
-};
+}
 ```
 
 #### Output:
@@ -39,7 +39,65 @@ func gamma(x) {
 ```
 
 
-Another implementation:
+Lanczos approximation:
+
+```ruby
+func gamma(z) {
+    var epsilon = 0.0000001
+    func withinepsilon(x) {
+        abs(x - abs(x)) <= epsilon
+    }
+ 
+    var p = [
+        676.5203681218851,     -1259.1392167224028,
+        771.32342877765313,    -176.61502916214059,
+        12.507343278686905,    -0.13857109526572012,
+        9.9843695780195716e-6,  1.5056327351493116e-7,
+    ]
+ 
+    var result;
+    z = Complex(z)
+    const pi = Complex.pi
+ 
+    if (z.real < 0.5) {
+        result = (pi / (sin(pi * z) * gamma(Complex(1) - z)))
+    } 
+    else {
+        z -= 1
+        var x = 0.99999999999980993
+ 
+        p.each_with_index { |i, v|
+            x += v/(z + i + 1)
+        }
+ 
+        var t = (z + p.len - 0.5)
+        result = (sqrt(pi*2) * t**(z+0.5) * exp(-t) * x)
+    }
+ 
+    withinepsilon(result.im) ? result.real : result
+}
+ 
+for i in 1..10 {
+    say ("%.14e" % gamma(i/3));
+}
+```
+
+#### Output:
+```
+2.67893853470774e+00
+1.35411793942640e+00
+1.00000000000000e+00
+8.92979511569252e-01
+9.02745292950931e-01
+1.00000000000000e+00
+1.19063934875900e+00
+1.50457548825155e+00
+2.00000000000000e+00
+2.77815848043767e+00
+```
+
+
+A simpler implementation:
 
 ```ruby
 define e  = Math.e;
@@ -50,9 +108,9 @@ func Γ(t) {
            : (Math.sqrt(2*pi*t) * Math.pow(t/e + 1/(12*e*t), t) / t);
 }
  
-(1..10).each { |i|
+for i in 1..10 {
     say ("%.14e" % Γ(i/3));
-};
+}
 ```
 
 #### Output:

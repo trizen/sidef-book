@@ -51,10 +51,10 @@ say longhand_multiplication('18446744073709551616', '18446744073709551616');
 *A faster approach:*
 
 ```ruby
-func long_multiplication(a is String, b is String) -> String {
+func long_multiplication(String a, String b) -> String {
  
     a.len < b.len && (
-        [b, a] » (\a, \b);
+        (a, b) = (b, a);
     );
  
     '0' ~~ [a, b] && return '0';
@@ -71,7 +71,7 @@ func long_multiplication(a is String, b is String) -> String {
     ylen.range.each { |j|
         xlen.range.each { |i|
             var n = (x[i]*y[j] + mem);
-            var(d, m) = n.divmod(10)...;
+            var(d, m) = n.divmod(10);
             if (i == xlen) {
                 map[j].append(m, d);
                 mem = 0;
@@ -98,7 +98,7 @@ func long_multiplication(a is String, b is String) -> String {
             n != 0 && result.append(n);
         }
         else {
-            n.divmod(10) » (\mem, \result[result.end+1]);
+            (mem, result[result.end+1]) = n.divmod(10);
         }
     }
  
