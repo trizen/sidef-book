@@ -4,7 +4,7 @@
 
 ```ruby
 var lim = 20;
-while (true) {
+loop {
     say (var n = lim.rand.int);
     n == 10 && break;
     say lim.rand.int;
