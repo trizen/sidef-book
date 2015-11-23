@@ -11,4 +11,8 @@ catch { |type, msg|
 }
 ```
 
-Where `type` is either `error` or `warning`.
+#### Output:
+
+```
+Catched the following error: Undefined method: Sidef::Types::String::String::some_undefined_method at /Sidef/lib/Sidef.pm line 57.
+```
