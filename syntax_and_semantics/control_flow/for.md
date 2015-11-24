@@ -10,10 +10,10 @@ for (var i = 0; i < 10; i++) {
 }
 ```
 
-Alternatively, using a simpler form of `for`:
+Alternatively, using a simpler form of counting:
 
 ```ruby
-for (0 ..^ 9) { |i|
+(0 ..^ 10).each { |i|
     say i
 }
 ```
