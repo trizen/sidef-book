@@ -1,6 +1,6 @@
 # if
 
-The `if` construct is one of the most basic conditional construct.
+The `if` construct is one of the most basic conditional constructs.
 
 ```ruby
 var a = 21
