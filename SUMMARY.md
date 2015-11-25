@@ -335,6 +335,7 @@
        * [Metaprogramming](programming_tasks/M/Metaprogramming.md)
        * [Middle three digits](programming_tasks/M/Middle_three_digits.md)
        * [Monty Hall problem](programming_tasks/M/Monty_Hall_problem.md)
+       * [Move-to-front algorithm](programming_tasks/M/Move-to-front_algorithm.md)
        * [Multifactorial](programming_tasks/M/Multifactorial.md)
        * [Multiple distinct objects](programming_tasks/M/Multiple_distinct_objects.md)
        * [Multiplication tables](programming_tasks/M/Multiplication_tables.md)
@@ -404,6 +405,7 @@
    * Q
        * Queue
            * [Definition](programming_tasks/Q/Queue/Definition.md)
+           * [Usage](programming_tasks/Q/Queue/Usage.md)
        * [Quickselect algorithm](programming_tasks/Q/Quickselect_algorithm.md)
        * [Quine](programming_tasks/Q/Quine.md)
    * R
