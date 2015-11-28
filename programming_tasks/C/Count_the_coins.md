@@ -3,26 +3,25 @@
 # [Count the coins][1]
 
 ```ruby
-var (COINS, CACHE);
- 
-func do_count(n, m) {
-    (n < 0) || (m < 0)
-        ? 0
-        : (CACHE[n][m] \\= (do_count(n-COINS[m], m) + do_count(n, m-1)));
+func cc(amount, first, *rest) is cached {
+    return 0 if (amount.is_neg || !defined(first));
+    return 1 if amount.is_zero;
+    cc(amount, rest...) + cc(amount - first, first, rest...);
 }
- 
-func make_change(amount, coins) {
-    CACHE = amount.inc.of { |i| coins.size.of { i == 1 ? 1 : nil }};
-    COINS = coins;
-    do_count(amount, coins.end);
+
+func cc_optimized(amount, *rest) {
+    cc(amount, rest.sort_by{|v| -v }...);
 }
- 
-say make_change(   1_00, [1,5,10,25]);
-say make_change(1000_00, [1,5,10,25,50,100]);
+
+var x = cc_optimized(100, 1, 5, 10, 25);
+say "Ways to change $1 with common coins: #{x}";
+
+var y = cc_optimized(1000 * 100, 1, 5, 10, 25, 50, 100);
+say "Ways to change $1000 with addition of less common coins: #{y}";
 ```
 
 #### Output:
 ```
-242
-13398445413854501
+Ways to change $1 with common coins: 242
+Ways to change $1000 with addition of less common coins: 13398445413854501
 ```
