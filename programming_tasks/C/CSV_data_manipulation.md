@@ -24,7 +24,7 @@ For complex files, the _Text::CSV_ library is recommended.
 
 ```ruby
 var csv = require('Text::CSV').new(
-    :{eol => "\n"}
+    Hash(eol => "\n")
 );
  
 # Open
