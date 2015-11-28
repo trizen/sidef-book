@@ -54,6 +54,7 @@
        * [99 Bottles of Beer](programming_tasks/9/99_Bottles_of_Beer.md)
    * A
        * [A B](programming_tasks/A/A_B.md)
+       * [ABC Problem](programming_tasks/A/ABC_Problem.md)
        * [Abstract type](programming_tasks/A/Abstract_type.md)
        * [Accumulator factory](programming_tasks/A/Accumulator_factory.md)
        * [Ackermann function](programming_tasks/A/Ackermann_function.md)
@@ -182,9 +183,11 @@
            * [Catch an exception thrown in a nested call](programming_tasks/E/Exceptions/Catch_an_exception_thrown_in_a_nested_call.md)
        * [Execute a system command](programming_tasks/E/Execute_a_system_command.md)
        * [Execute Brain****](programming_tasks/E/Execute_Brain****.md)
+       * [Exponentiation operator](programming_tasks/E/Exponentiation_operator.md)
        * [Extend your language](programming_tasks/E/Extend_your_language.md)
    * F
        * [Factorial](programming_tasks/F/Factorial.md)
+       * [Factors of an integer](programming_tasks/F/Factors_of_an_integer.md)
        * [Fast Fourier transform](programming_tasks/F/Fast_Fourier_transform.md)
        * [Fibonacci n-step number sequences](programming_tasks/F/Fibonacci_n-step_number_sequences.md)
        * [Fibonacci sequence](programming_tasks/F/Fibonacci_sequence.md)
@@ -250,6 +253,8 @@
        * [Heronian triangles](programming_tasks/H/Heronian_triangles.md)
        * [Hickerson series of almost integers](programming_tasks/H/Hickerson_series_of_almost_integers.md)
        * [Higher-order functions](programming_tasks/H/Higher-order_functions.md)
+       * [Hofstadter Figure-Figure sequences](programming_tasks/H/Hofstadter_Figure-Figure_sequences.md)
+       * [Hofstadter Q sequence](programming_tasks/H/Hofstadter_Q_sequence.md)
        * [Horner's rule for polynomial evaluation](programming_tasks/H/Horner's_rule_for_polynomial_evaluation.md)
        * [Hostname](programming_tasks/H/Hostname.md)
        * [HTTP](programming_tasks/H/HTTP.md)
@@ -359,6 +364,8 @@
    * O
        * [Old lady swallowed a fly](programming_tasks/O/Old_lady_swallowed_a_fly.md)
        * [One-dimensional cellular automata](programming_tasks/O/One-dimensional_cellular_automata.md)
+       * [One of n lines in a file](programming_tasks/O/One_of_n_lines_in_a_file.md)
+       * [Operator precedence](programming_tasks/O/Operator_precedence.md)
        * [Optional parameters](programming_tasks/O/Optional_parameters.md)
        * [Order disjoint list items](programming_tasks/O/Order_disjoint_list_items.md)
        * [Ordered words](programming_tasks/O/Ordered_words.md)
@@ -435,6 +442,7 @@
            * [Encode](programming_tasks/R/Roman_numerals/Encode.md)
        * [Roots of a function](programming_tasks/R/Roots_of_a_function.md)
        * [Roots of a quadratic function](programming_tasks/R/Roots_of_a_quadratic_function.md)
+       * [Roots of unity](programming_tasks/R/Roots_of_unity.md)
        * Rosetta Code
            * [Fix code tags](programming_tasks/R/Rosetta_Code/Fix_code_tags.md)
            * [Rank languages by popularity](programming_tasks/R/Rosetta_Code/Rank_languages_by_popularity.md)
@@ -586,6 +594,7 @@
        * [Window creation](programming_tasks/W/Window_creation.md)
        * [Wireworld](programming_tasks/W/Wireworld.md)
        * [Word wrap](programming_tasks/W/Word_wrap.md)
+       * [Write entire file](programming_tasks/W/Write_entire_file.md)
        * [Write float arrays to a text file](programming_tasks/W/Write_float_arrays_to_a_text_file.md)
        * [Write language name in 3D ASCII](programming_tasks/W/Write_language_name_in_3D_ASCII.md)
    * X

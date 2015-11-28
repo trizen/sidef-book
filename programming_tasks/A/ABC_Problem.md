@@ -1,0 +1,60 @@
+[1]: http://rosettacode.org/wiki/ABC_Problem
+
+# [ABC Problem][1]
+
+```ruby
+func can_make_word(word, blocks) {
+ 
+    blocks.map! { |b| b.uc.chars.sort.join }.freq!
+ 
+    func(word, blocks) {
+        var char = word.shift
+        var candidates = blocks.keys.grep { |k| 0 <= k.index(char) }
+ 
+        for candidate in candidates {
+            blocks{candidate} <= 0 && next;
+            local blocks{candidate} = (blocks{candidate} - 1);
+            return true if (word.is_empty || __FUNC__(word, blocks));
+        }
+ 
+        return false;
+    }(word.uc.chars, blocks)
+}
+```
+
+
+Tests:
+
+```ruby
+var b1 = %w(BO XK DQ CP NA GT RE TG QD FS JW HU VI AN OB ER FS LY PC ZM)
+var b2 = %w(US TZ AO QA)
+ 
+var tests = [
+    ["A", true, b1],
+    ["BARK", true, b1],
+    ["BOOK", false, b1],
+    ["TREAT", true, b1],
+    ["COMMON", false, b1],
+    ["SQUAD", true, b1],
+    ["CONFUSE", true, b1],
+    ["auto", true, b2],
+];
+ 
+tests.each { |t|
+    var bool = can_make_word(t[0], t[2]);
+    say ("%7s -> %s" % (t[0], bool));
+    assert(bool == t[1])
+}
+```
+
+#### Output:
+```
+      A -> true
+   BARK -> true
+   BOOK -> false
+  TREAT -> true
+ COMMON -> false
+  SQUAD -> true
+CONFUSE -> true
+   auto -> true
+```
