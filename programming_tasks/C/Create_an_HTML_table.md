@@ -4,50 +4,51 @@
 
 ```ruby
 class HTML {
-    method _attr(h is Hash) {
-        h.keys.sort.map {|k| %Q' #{k}="#{h[k]}"' }.join('')
-    };
- 
-    method _tag(h is Hash, name, value) {
+    method _attr(Hash h) {
+        h.keys.sort.map {|k| %Q' #{k}="#{h{k}}"' }.join('')
+    }
+
+    method _tag(Hash h, name, value) {
         "<#{name}" + self._attr(h) + '>' + value + "</#{name}>"
-    };
- 
-    method table(h is Hash, *data) { self._tag(h, 'table', data.join('')) };
-    method table(*data)            { self.table(:(), data...) };
+    }
+
+    method table(Hash h, *data) { self._tag(h, 'table', data.join('')) }
+    method table(*data)         { self.table(Hash(), data...) }
 }
- 
+
 class Table < HTML {
-    method th(h is Hash, value) { self._tag(h, 'th', value) };
-    method th(value)            { self.th(:(), value) };
- 
-    method tr(h is Hash, *rows) { self._tag(h, 'tr', rows.join('')) };
-    method tr(*rows)            { self.tr(:(), rows...) };
- 
-    method td(h is Hash, value) { self._tag(h, 'td', value) };
-    method td(value)            { self.td(:(), value) };
+    method th(Hash h, value) { self._tag(h, 'th', value) }
+    method th(value)         { self.th(Hash(), value) }
+
+    method tr(Hash h, *rows) { self._tag(h, 'tr', rows.join('')) }
+    method tr(*rows)         { self.tr(Hash(), rows...) }
+
+    method td(Hash h, value) { self._tag(h, 'td', value) }
+    method td(value)         { self.td(Hash(), value) }
 }
- 
+
 var header = %w(&nbsp; X Y Z);
 var rows = 5;
- 
+
 var html = HTML.new;
 var table = Table.new;
- 
+
 say html.table(
-    :(  # attributes
+    # attributes
+    Hash(
         cellspacing => 4,
         style => "text-align:right; border: 1px solid;"
      ),
- 
+
     # header
     table.tr(header.map{|elem| table.th(elem)}...),
- 
+
     # rows
     (1..rows).map { |i|
         table.tr(
             table.td(:(align => 'right'), i),
             (header.len - 1).of {
-                table.td(:(align => 'right'), 10000.rand.int)
+                table.td(Hash(align => 'right'), 10000.rand.int)
             }...
         )
     }...
@@ -55,10 +56,7 @@ say html.table(
 ```
 
 
-Output (tidied afterwards):
-
-
-#### Output:
+#### Output (tidied afterwards):
 ```
 <table cellspacing="4" style="text-align:right; border: 1px solid;">
 <tr><th> </th><th>X</th><th>Y</th><th>Z</th></tr>
