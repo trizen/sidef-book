@@ -4,20 +4,20 @@
 
 ```ruby
 class Point(x=0, y=0) {
- 
-};
- 
-class Circle(x=0, y=0, r=0) << Point {
- 
-};
- 
-func pp(obj is Point) {
+
+}
+
+class Circle(x=0, y=0, r=0) {
+
+}
+
+func pp(Point obj) {
     say "Point at #{obj.x},#{obj.y}";
-};
- 
-func pp(obj is Circle) {
+}
+
+func pp(Circle obj) {
     say "Circle at #{obj.x},#{obj.y} with radius #{obj.r}";
-};
+}
 ```
 
 
