@@ -22,7 +22,7 @@ loop {
     EOT
  
     ++tries;
-    given (var score = STDIN.readline) {
+    given (STDIN.readline) {
         case (max <= min) {
             say "\nI give up...";
             break;
