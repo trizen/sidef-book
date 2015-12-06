@@ -2,7 +2,7 @@
 
 # [Binary search][1]
 
-*Iterative*
+Iterative
 
 ```ruby
 func binary_search(a, i) {
@@ -21,21 +21,26 @@ func binary_search(a, i) {
 }
 ```
 
-
-*Recursive*
+Recursive
 
 ```ruby
-func binary_search(array, value, low, high) {
+func binary_search(arr, value, low=0, high=arr.end) {
     high < low && return -1;
     var middle = (high+low / 2 -> int);
  
-    if (value < array[middle]) {
-        return binary_search(array, value, low, middle-1);
+    if (value < arr[middle]) {
+        return binary_search(arr, value, low, middle-1);
     }
-    elsif (value > array[middle]) {
-        return binary_search(array, value, middle+1, high);
+    elsif (value > arr[middle]) {
+        return binary_search(arr, value, middle+1, high);
     }
  
     return middle;
 }
+```
+
+Usage example:
+
+```ruby
+say binary_search([34, 42, 55, 778], 55);       #=> 2
 ```

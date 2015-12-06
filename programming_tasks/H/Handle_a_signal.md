@@ -5,13 +5,22 @@
 ```ruby
 var start = Time.sec;
  
-Sig.INT {
+Sig.INT { |_|
     Sys.say("Ran for #{Time.sec - start} seconds.");
     Sys.exit;
-};
+}
  
 { |i|
     Sys.say(i);
     Sys.sleep(0.5);
 } * Math.inf;
+```
+
+#### Output:
+```
+1
+2
+3
+4
+^CRan for 2 seconds.
 ```

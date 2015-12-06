@@ -7,9 +7,16 @@ func A(m, n) {
     m == 0 ? (n + 1)
            : (n == 0 ? (A(m - 1, 1))
                      : (A(m - 1, A(m, n - 1))));
-};
+}
 ```
 
+Alternatively, using multiple dispatch:
+
+```ruby
+func A((0), n) { n + 1 }
+func A(m, (0)) { A(m - 1, 1) }
+func A(m,  n)  { A(m-1, A(m, n-1)) }
+```
 
 Calling the function:
 

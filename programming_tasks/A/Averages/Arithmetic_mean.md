@@ -3,9 +3,8 @@
 # [Averages/Arithmetic mean][1]
 
 ```ruby
-func avg(list) {
-    list.is_a(Array) || return nil;
-    list.len > 0     || return 0;
+func avg(Array list) {
+    list.len > 0 || return 0;
     list.sum / list.len;
 }
  

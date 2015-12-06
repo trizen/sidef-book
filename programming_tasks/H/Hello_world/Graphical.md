@@ -18,7 +18,7 @@ var window = %s'Gtk2::Window'.new;
 var label  = %s'Gtk2::Label'.new('Goodbye, World!');
  
 window.set_title('Goodbye, World!');
-window.signal_connect(destroy => { gtk2.main_quit });
+window.signal_connect(destroy => func(*_){ gtk2.main_quit });
  
 window.add(label);
 window.show_all;

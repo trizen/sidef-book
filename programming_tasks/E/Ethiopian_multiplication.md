@@ -12,7 +12,7 @@ func ethiopic_mult(a, b) {
         a.is_even || (r += b);
         a = halve(a);
         b = double(b);
-    };
+    }
     return r;
 }
  

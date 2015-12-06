@@ -5,18 +5,21 @@
 Function definition:
 
 ```ruby
-func expon(base, exp) {
-  exp.is_int  || die "Exponent '#{exp}' must be an integer!"
-  exp.is_zero && return 1
-  exp.is_neg  && ((base, exp) = (1/base, -exp))
- 
+func expon(_, { .is_zero }) { 1 }
+
+func expon(base, exp { .is_neg }) {
+    expon(1/base, -exp)
+}
+
+func expon(base, exp { .is_int }) {
+
   var c = 1
   while (exp > 1) {
     c *= base if exp.is_odd
     base *= base
     exp >>= 1
   }
- 
+
   return (base * c)
 }
  

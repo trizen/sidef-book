@@ -4,5 +4,5 @@
 
 ```ruby
 say 'a'.ord;    # => 97
-say 97.chr;     # => 'a' (of type Char)
+say 97.chr;     # => 'a'
 ```

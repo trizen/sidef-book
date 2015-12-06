@@ -2,18 +2,14 @@
 
 # [Address of a variable][1]
 
-There is no way to access the address of a variable in Sidef, but you access the address of an object.
-
 ```ruby
 var n = 42;
-say Sys.refaddr(n);
- 
-var x = n;          # "x" will point at the same object at which "n" points to
-say Sys.refaddr(x);
+say Sys.refaddr(\n);        # prints the address of the variable
+say Sys.refaddr(n);         # prints the address of the object at which the variable points to
 ```
 
 #### Output:
 ```
-26411640
-26411640
+42823224
+37867184
 ```

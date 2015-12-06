@@ -15,7 +15,7 @@ func cholesky(matrix) {
         };
     };
     return chol;
-};
+}
 ```
 
 

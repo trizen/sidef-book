@@ -17,7 +17,7 @@ func chebft (callback, a, b, n) {
  
 chebft(func(v){v.cos}, 0, 1, 10).each { |v|
     say ("%+.10e" % v);
-};
+}
 ```
 
 #### Output:

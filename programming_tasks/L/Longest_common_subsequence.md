@@ -12,7 +12,7 @@ func lcs(xstr, ystr) is cached {
                          ystr.ft(0,0), ystr.ft(1));
  
     if (x == y) {
-        x + lcs($xs, $ys)
+        x + lcs(xs, ys)
     } else {
         [lcs(xstr, ys), lcs(xs, ystr)].max_by { .len };
     }

@@ -3,7 +3,7 @@
 # [Generic swap][1]
 
 ```ruby
-func swap(a is Ref, b is Ref) {
+func swap(Ref a, Ref b) {
     var tmp = *a;
     *a = *b;
     *b = tmp;
@@ -14,7 +14,7 @@ func swap(a is Ref, b is Ref) {
 or:
 
 ```ruby
-func swap(a is Ref, b is Ref) {
+func swap(Ref a, Ref b) {
     (*a, *b) = (*b, *a);
 }
 ```
@@ -23,7 +23,7 @@ func swap(a is Ref, b is Ref) {
 or:
 
 ```ruby
-func swap(a is Ref, b is Ref) {
+func swap(Ref a, Ref b) {
     [*a, *b] » (b, a);
 }
 ```

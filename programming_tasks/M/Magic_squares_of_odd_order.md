@@ -3,38 +3,37 @@
 # [Magic squares of odd order][1]
 
 ```ruby
-__USE_INTNUM__
- 
-func magic_square(n) {
- 
-    (n % 2 == 0) || (n < 0) && (
-        warn "Sorry, must be a positive odd integer.";
-        return;
-    );
- 
-    var x = int(n/2);
-    var y = 0;
-    var i = 1;
-    var sq = n.of { n.of(0) };
- 
-    range(0, n*n - 1).each {
-        sq[(i % n ? y-- : y++) % n][(i % n ? x++ : x) % n] = i++;
+func magic_square(n {.is_pos && .is_odd}) {
+    var i = 0;
+    var j = int(n/2);
+
+    var magic_square = [];
+    range(1, n**2).each { |l|
+        magic_square[i][j] = l;
+
+        if (magic_square[i.dec % n][j.inc % n]) {
+            i = (i.inc % n);
+        }
+        else {
+            i = (i.dec % n);
+            j = (j.inc % n);
+        }
     }
- 
-    return sq;
+
+    return magic_square;
 }
- 
+
 func print_square(sq) {
     var f = "%#{(sq.len**2).len}d";
     sq.each {|row|
         say row.map{ f % _ }.join(' ');
-    };
+    }
 }
- 
-var(n=5) = ARGV.map{.to_i}...;
+
+var(n=5) = @ARGV»to_i»();
 var sq = magic_square(n);
 print_square(sq);
- 
+
 say "\nThe magic number is: #{sq[0].sum}";
 ```
 

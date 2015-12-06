@@ -4,30 +4,30 @@
 
 ```ruby
 var gtk2 = require('Gtk2') -> init;
- 
+
 var gui = %s'Gtk2::Builder'.new;
 gui.add_from_string(DATA.slurp);
- 
-func clicked_ok {
+
+func clicked_ok(*_) {
     var entry = gui.get_object('entry1');
     var text = entry.get_text;
- 
+
     var spinner = gui.get_object('spinbutton1');
     var number = spinner.get_text;
- 
+
     say "string: #{text}";
     say "number: #{number}";
- 
-    number == 75000 ? gtk2.main_quit : warn "Invalid number!";
+
+    number == 75000 ? gtk2.main_quit : warn "Invalid number!";
 }
- 
-func clicked_cancel {
+
+func clicked_cancel(*_) {
     gtk2.main_quit;
 }
- 
+
 gui.get_object('button1').signal_connect('clicked', clicked_ok);
 gui.get_object('button2').signal_connect('clicked', clicked_cancel);
- 
+
 gtk2.main;
  
 __DATA__

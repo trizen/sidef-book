@@ -3,7 +3,8 @@
 # [Integer comparison][1]
 
 ```ruby
-read(Number, \var a, \var b);
+var a = read("a: ", Number);
+var b = read("b: ", Number);
  
 if (a < b) {
     say 'Lower';

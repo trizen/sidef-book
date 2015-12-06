@@ -24,7 +24,7 @@ func decode(nums) {
 }
  
 %w(broood bananaaa hiphophiphop).each { |test|
-    var encoded = encode($test);
+    var encoded = encode(test);
     say "#{test}: #{encoded}";
     var decoded = decode(encoded);
     print "in" if (decoded != test);
@@ -66,7 +66,7 @@ module MoveToFront {
 }
  
 %w(broood bananaaa hiphophiphop).each { |test|
-    var encoded = MoveToFront::encode($test);
+    var encoded = MoveToFront::encode(test);
     say "#{test}: #{encoded}";
     var decoded = MoveToFront::decode(encoded);
     print "in" if (decoded != test);

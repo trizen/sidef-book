@@ -5,6 +5,6 @@
 ```ruby
 func dot_product(a, b) {
     (a »*« b)«+»;
-};
+}
 say dot_product([1,3,-5], [4,-2,-1]);   # => 3
 ```

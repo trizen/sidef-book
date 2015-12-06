@@ -11,7 +11,7 @@ func josephus(n, k) {
         prisoners.rotate!(k - 1).shift;
     };
     return prisoners[0];
-};
+}
 ```
 
 
@@ -20,7 +20,7 @@ Recursive:
 ```ruby
 func josephus(n, k) {
     n == 1 ? 0 : ((__FUNC__(n-1, k) + k) % n)
-};
+}
 ```
 
 

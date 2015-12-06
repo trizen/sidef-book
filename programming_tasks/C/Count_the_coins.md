@@ -3,9 +3,11 @@
 # [Count the coins][1]
 
 ```ruby
+func cc(_)                { 0 }
+func cc({ .is_neg  }, *_) { 0 }
+func cc({ .is_zero }, *_) { 1 }
+
 func cc(amount, first, *rest) is cached {
-    return 0 if (amount.is_neg || !defined(first));
-    return 1 if amount.is_zero;
     cc(amount, rest...) + cc(amount - first, first, rest...);
 }
 

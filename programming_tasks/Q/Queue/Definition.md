@@ -19,19 +19,3 @@ class FIFO(*array) {
     }
 }
 ```
-
-
-Usage:
-
-```ruby
-var f = FIFO();
-say f.empty;        # true
-f.push('foo');
-f.push('bar', 'baz');
-say f.pop;          # foo
-say f.empty;        # false
- 
-var g = FIFO('xxx', 'yyy');
-say g.pop;          # xxx
-say f.pop;          # bar
-```
