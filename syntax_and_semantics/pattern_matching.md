@@ -14,8 +14,6 @@ foo(2)      # calls the second function
 foo(3)      # calls the third function
 ```
 
-Declaring a function or a method with an expression in place of a parameter, Sidef will check the result of the expression for equality with the argument that the function is called. When the arguments are equal, the body of the function will be executed, otherwise it will check other possible candidates or it will fail when no function matches the arguments.
-
 Taking advantage of this feature, we can write the Fibonacci function in the following way:
 
 ```ruby
