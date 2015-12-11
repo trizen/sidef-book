@@ -44,6 +44,8 @@
    * [Methods](syntax_and_semantics/methods.md)
    * [Operator precedence](syntax_and_semantics/operator_precedence.md)
    * [Method precedence](syntax_and_semantics/method_precedence.md)
+   * [Multiple dispatch](syntax_and_semantics/multiple_dispatch.md)
+   * [Functional pattern matching](syntax_and_semantics/pattern_matching.md)
 * [Programming tasks](programming_tasks/README.md)
    * 1
        * [100 doors](programming_tasks/1/100_doors.md)
