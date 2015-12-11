@@ -11,10 +11,10 @@ say defined(nil)       # false
 ```
 
 
-However, _nil_ is not an object, so we can't call methods on it. Alternatively, Sidef provides the _Null_ object:
+However, _nil_ is not an object, so we can't call methods on it. Alternatively, Sidef provides the _null_ object:
 
 ```ruby
-var null_obj = Null;        # initialize with a Null value  
-say null_obj.is_a(Null);    # true
+var null_obj = null;        # initialize with a null value
+say null_obj.is_a(null);    # true
 say defined(null_obj);      # true
 ```
