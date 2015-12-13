@@ -219,6 +219,7 @@
        * [FTP](programming_tasks/F/FTP.md)
        * [Function composition](programming_tasks/F/Function_composition.md)
        * [Function definition](programming_tasks/F/Function_definition.md)
+       * [Function frequency](programming_tasks/F/Function_frequency.md)
    * G
        * [Gamma function](programming_tasks/G/Gamma_function.md)
        * [Gaussian elimination](programming_tasks/G/Gaussian_elimination.md)
