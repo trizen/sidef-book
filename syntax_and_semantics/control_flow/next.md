@@ -1,6 +1,6 @@
 # next
 
-The `next` statements skips one iteration of the loop.
+The `next` statement skips one iteration of a loop.
 
 ```ruby
 for (var i = 0; i <= 5; i++) {
@@ -9,4 +9,4 @@ for (var i = 0; i <= 5; i++) {
 }
 ```
 
-The statement can be used inside of all forms of loops.
+It can be used in all kinds of loops.

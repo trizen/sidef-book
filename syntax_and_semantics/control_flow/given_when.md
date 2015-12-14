@@ -1,10 +1,10 @@
 # given/when
 
-This is another construct borrowed from Perl 6 and it's almost the same as `switch/case` in most other languages.
+The `given/when` construct is borrowed from Perl 6 and it's somewhat equivalent with `switch/case` from other languages.
 
 ```ruby
-given (var value = 42) {
-  case (value < 0) {
+given (42) {
+  case (_ < 0) {
        say "Negative value!"
   }
   when (0) {

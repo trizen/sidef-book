@@ -1,6 +1,6 @@
 # for
 
-The `for` construct it's a very popular construct as well. It's usually used for iteration over collections and for counting.
+The `for` construct it's usually used for iteration over collections and for counting.
 
 The following loop counts from 0 to 9:
 

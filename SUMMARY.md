@@ -99,6 +99,8 @@
        * [Best shuffle](programming_tasks/B/Best_shuffle.md)
        * [Binary digits](programming_tasks/B/Binary_digits.md)
        * [Binary search](programming_tasks/B/Binary_search.md)
+       * Bitmap
+           * [Bresenham's line algorithm](programming_tasks/B/Bitmap/Bresenham's_line_algorithm.md)
        * [Bitwise operations](programming_tasks/B/Bitwise_operations.md)
        * [Boolean values](programming_tasks/B/Boolean_values.md)
        * [Box the compass](programming_tasks/B/Box_the_compass.md)
@@ -342,6 +344,7 @@
        * [Menu](programming_tasks/M/Menu.md)
        * [Metaprogramming](programming_tasks/M/Metaprogramming.md)
        * [Middle three digits](programming_tasks/M/Middle_three_digits.md)
+       * [Modular inverse](programming_tasks/M/Modular_inverse.md)
        * [Monty Hall problem](programming_tasks/M/Monty_Hall_problem.md)
        * [Move-to-front algorithm](programming_tasks/M/Move-to-front_algorithm.md)
        * [Multifactorial](programming_tasks/M/Multifactorial.md)
