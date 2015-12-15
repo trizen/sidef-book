@@ -110,6 +110,7 @@
            * [Player](programming_tasks/B/Bulls_and_cows/Player.md)
    * C
        * [Caesar cipher](programming_tasks/C/Caesar_cipher.md)
+       * [Calendar](programming_tasks/C/Calendar.md)
        * [Call a function](programming_tasks/C/Call_a_function.md)
        * [Call an object method](programming_tasks/C/Call_an_object_method.md)
        * [Carmichael 3 strong pseudoprimes](programming_tasks/C/Carmichael_3_strong_pseudoprimes.md)
