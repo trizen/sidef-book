@@ -106,6 +106,7 @@
        * [Bitwise operations](programming_tasks/B/Bitwise_operations.md)
        * [Boolean values](programming_tasks/B/Boolean_values.md)
        * [Box the compass](programming_tasks/B/Box_the_compass.md)
+       * [Break OO privacy](programming_tasks/B/Break_OO_privacy.md)
        * [Bulls and cows](programming_tasks/B/Bulls_and_cows.md)
            * [Player](programming_tasks/B/Bulls_and_cows/Player.md)
    * C
@@ -161,6 +162,7 @@
        * [Deepcopy](programming_tasks/D/Deepcopy.md)
        * [Define a primitive data type](programming_tasks/D/Define_a_primitive_data_type.md)
        * [Delete a file](programming_tasks/D/Delete_a_file.md)
+       * [Detect division by zero](programming_tasks/D/Detect_division_by_zero.md)
        * [Determine if a string is numeric](programming_tasks/D/Determine_if_a_string_is_numeric.md)
        * [Determine if only one instance is running](programming_tasks/D/Determine_if_only_one_instance_is_running.md)
        * [Dinesman's multiple-dwelling problem](programming_tasks/D/Dinesman's_multiple-dwelling_problem.md)
@@ -377,6 +379,8 @@
        * [Nth root](programming_tasks/N/Nth_root.md)
        * [Null object](programming_tasks/N/Null_object.md)
        * [Number names](programming_tasks/N/Number_names.md)
+       * Numerical integration
+           * [Gauss-Legendre Quadrature](programming_tasks/N/Numerical_integration/Gauss-Legendre_Quadrature.md)
    * O
        * [Old lady swallowed a fly](programming_tasks/O/Old_lady_swallowed_a_fly.md)
        * [One-dimensional cellular automata](programming_tasks/O/One-dimensional_cellular_automata.md)
@@ -384,6 +388,7 @@
        * [Operator precedence](programming_tasks/O/Operator_precedence.md)
        * [Optional parameters](programming_tasks/O/Optional_parameters.md)
        * [Order disjoint list items](programming_tasks/O/Order_disjoint_list_items.md)
+       * [Ordered Partitions](programming_tasks/O/Ordered_Partitions.md)
        * [Ordered words](programming_tasks/O/Ordered_words.md)
    * P
        * [Palindrome detection](programming_tasks/P/Palindrome_detection.md)

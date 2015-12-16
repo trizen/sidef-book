@@ -1,0 +1,19 @@
+[1]: http://rosettacode.org/wiki/Detect_division_by_zero
+
+# [Detect division by zero][1]
+
+```ruby
+func div(a, b){
+    try {
+        a / b
+    }
+    catch { |_, msg|
+        say "tried to divide by zero" if (msg ~~ /Division by zero/)
+        nil
+    }
+}
+ 
+say div(10, 2);      # 5
+say div(1, 0);       # inf, 1/0 constants are substituted for infinity
+say div(1.c, 0.c);   # nil, and prints "tried to divide by zero" (complex numbers)
+```
