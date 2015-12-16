@@ -5,21 +5,19 @@
 ```ruby
 func part(_,    {.is_empty}) { [[]] }
 func partitions({.is_empty}) { [[]] }
- 
+
 func part(s, args) {
-  var res = [];
-  var combs = s.combinations(args[0]);
-  combs << [] if combs.is_empty;
-  combs.each { |c|
-    part(s - c, args.ft(1)).each{|r| res << ([c] + r)}
+  gather {
+    s.combinations(args[0], { |c|
+      part(s - c, args.ft(1)).each{|r| take([c] + r) }
+    })
   }
-  res
 }
- 
+
 func partitions(args) {
   part(1..args.sum, args)
 }
- 
+
 [[],[0,0,0],[1,1,1],[2,0,2]].each { |test_case|
   say "partitions #{test_case.dump}:"
   partitions(test_case).each{|part| say part.dump }

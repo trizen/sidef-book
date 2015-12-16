@@ -314,6 +314,7 @@
        * [Letter frequency](programming_tasks/L/Letter_frequency.md)
        * [Levenshtein distance](programming_tasks/L/Levenshtein_distance.md)
        * [Linear congruential generator](programming_tasks/L/Linear_congruential_generator.md)
+       * [List comprehensions](programming_tasks/L/List_comprehensions.md)
        * Literals
            * [Floating point](programming_tasks/L/Literals/Floating_point.md)
            * [Integer](programming_tasks/L/Literals/Integer.md)
