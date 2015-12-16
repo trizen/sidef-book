@@ -126,6 +126,7 @@
        * [Classes](programming_tasks/C/Classes.md)
        * Closures
            * [Value capture](programming_tasks/C/Closures/Value_capture.md)
+       * [Collections](programming_tasks/C/Collections.md)
        * Colour bars
            * [Display](programming_tasks/C/Colour_bars/Display.md)
        * [Combinations](programming_tasks/C/Combinations.md)
@@ -245,6 +246,8 @@
        * [Guess the number](programming_tasks/G/Guess_the_number.md)
            * [With feedback](programming_tasks/G/Guess_the_number/With_feedback.md)
            * [With feedback [player]](programming_tasks/G/Guess_the_number/With_feedback_[player].md)
+       * GUI
+           * [Maximum window dimensions](programming_tasks/G/GUI/Maximum_window_dimensions.md)
    * H
        * [Hailstone sequence](programming_tasks/H/Hailstone_sequence.md)
        * [Hamming numbers](programming_tasks/H/Hamming_numbers.md)
@@ -293,6 +296,7 @@
        * [Josephus problem](programming_tasks/J/Josephus_problem.md)
        * [JSON](programming_tasks/J/JSON.md)
    * K
+       * [Kaprekar numbers](programming_tasks/K/Kaprekar_numbers.md)
        * Keyboard input
            * [Flush the keyboard buffer](programming_tasks/K/Keyboard_input/Flush_the_keyboard_buffer.md)
            * [Obtain a Y or N response](programming_tasks/K/Keyboard_input/Obtain_a_Y_or_N_response.md)
@@ -409,6 +413,7 @@
        * [Pointers and references](programming_tasks/P/Pointers_and_references.md)
        * [Polymorphic copy](programming_tasks/P/Polymorphic_copy.md)
        * [Polymorphism](programming_tasks/P/Polymorphism.md)
+       * [Polynomial long division](programming_tasks/P/Polynomial_long_division.md)
        * [Polynomial regression](programming_tasks/P/Polynomial_regression.md)
        * [Population count](programming_tasks/P/Population_count.md)
        * [Power set](programming_tasks/P/Power_set.md)
@@ -440,6 +445,7 @@
        * [Real constants and functions](programming_tasks/R/Real_constants_and_functions.md)
        * [Regular expressions](programming_tasks/R/Regular_expressions.md)
        * [Remove duplicate elements](programming_tasks/R/Remove_duplicate_elements.md)
+       * [Remove lines from a file](programming_tasks/R/Remove_lines_from_a_file.md)
        * [Rename a file](programming_tasks/R/Rename_a_file.md)
        * [Rep-string](programming_tasks/R/Rep-string.md)
        * [Repeat](programming_tasks/R/Repeat.md)
@@ -457,6 +463,7 @@
        * [Roots of a quadratic function](programming_tasks/R/Roots_of_a_quadratic_function.md)
        * [Roots of unity](programming_tasks/R/Roots_of_unity.md)
        * Rosetta Code
+           * [Count examples](programming_tasks/R/Rosetta_Code/Count_examples.md)
            * [Fix code tags](programming_tasks/R/Rosetta_Code/Fix_code_tags.md)
            * [Rank languages by popularity](programming_tasks/R/Rosetta_Code/Rank_languages_by_popularity.md)
        * [Rot-13](programming_tasks/R/Rot-13.md)
@@ -599,6 +606,7 @@
        * [Variadic function](programming_tasks/V/Variadic_function.md)
        * [Vector products](programming_tasks/V/Vector_products.md)
        * [Vigenère cipher](programming_tasks/V/Vigenère_cipher.md)
+       * [Visualize a tree](programming_tasks/V/Visualize_a_tree.md)
    * W
        * Walk a directory
            * [Non-recursively](programming_tasks/W/Walk_a_directory/Non-recursively.md)
