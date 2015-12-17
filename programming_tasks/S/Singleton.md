@@ -7,7 +7,7 @@ class Singleton(name) {
     static instance;
  
     method new(name) {
-        instance ||= Singleton.bless(Hash(name => name));
+        instance := Singleton.bless(Hash(:name => name));
     }
     method new {
         Singleton.new(nil);
