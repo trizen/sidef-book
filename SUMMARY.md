@@ -190,6 +190,7 @@
        * [Euler method](programming_tasks/E/Euler_method.md)
        * [Evaluate binomial coefficients](programming_tasks/E/Evaluate_binomial_coefficients.md)
        * [Even or odd](programming_tasks/E/Even_or_odd.md)
+       * [Evolutionary algorithm](programming_tasks/E/Evolutionary_algorithm.md)
        * [Exceptions](programming_tasks/E/Exceptions.md)
            * [Catch an exception thrown in a nested call](programming_tasks/E/Exceptions/Catch_an_exception_thrown_in_a_nested_call.md)
        * [Execute a system command](programming_tasks/E/Execute_a_system_command.md)
@@ -274,6 +275,8 @@
        * [Higher-order functions](programming_tasks/H/Higher-order_functions.md)
        * [Hofstadter Figure-Figure sequences](programming_tasks/H/Hofstadter_Figure-Figure_sequences.md)
        * [Hofstadter Q sequence](programming_tasks/H/Hofstadter_Q_sequence.md)
+       * [Holidays related to Easter](programming_tasks/H/Holidays_related_to_Easter.md)
+       * [Horizontal sundial calculations](programming_tasks/H/Horizontal_sundial_calculations.md)
        * [Horner's rule for polynomial evaluation](programming_tasks/H/Horner's_rule_for_polynomial_evaluation.md)
        * [Hostname](programming_tasks/H/Hostname.md)
        * [HTTP](programming_tasks/H/HTTP.md)
@@ -384,7 +387,7 @@
        * [Nth root](programming_tasks/N/Nth_root.md)
        * [Null object](programming_tasks/N/Null_object.md)
        * [Number names](programming_tasks/N/Number_names.md)
-       * Numerical integration
+       * [Numerical integration](programming_tasks/N/Numerical_integration.md)
            * [Gauss-Legendre Quadrature](programming_tasks/N/Numerical_integration/Gauss-Legendre_Quadrature.md)
    * O
        * [Old lady swallowed a fly](programming_tasks/O/Old_lady_swallowed_a_fly.md)
@@ -489,6 +492,7 @@
            * [Function names and labels](programming_tasks/S/Scope/Function_names_and_labels.md)
        * [Search a list](programming_tasks/S/Search_a_list.md)
        * [Secure temporary file](programming_tasks/S/Secure_temporary_file.md)
+       * [SEDOLs](programming_tasks/S/SEDOLs.md)
        * [Self-describing numbers](programming_tasks/S/Self-describing_numbers.md)
        * [Semiprime](programming_tasks/S/Semiprime.md)
        * [Semordnilap](programming_tasks/S/Semordnilap.md)
