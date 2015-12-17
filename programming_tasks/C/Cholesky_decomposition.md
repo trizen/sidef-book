@@ -10,10 +10,10 @@ func cholesky(matrix) {
             var x = matrix[row][col];
             col.range.each { |i|
                 x -= (chol[row][i] * chol[col][i]);
-            };
+            }
             chol[row][col] = (row == col ? x.sqrt : x/chol[col][col]);
-        };
-    };
+        }
+    }
     return chol;
 }
 ```

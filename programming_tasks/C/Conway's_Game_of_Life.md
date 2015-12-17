@@ -14,22 +14,22 @@ var universe = h.of { w.of {1.rand < 0.1} };
  
 func iterate {
     var new = h.of { w.of(false) };
-    range(h-1).each { |i|
-        range(w-1).each { |j|
+    h.range.each { |i|
+        w.range.each { |j|
         var neighbor = 0;
         dirs.each { |dir|
             var (y, x) = (dir[0] + i, dir[1] + j);
             neighbor += (universe[y % h][x % w] ? 1 : 0);
             neighbor > 3 && break;
-        };
+        }
  
         new[i][j] = (universe[i][j]
                         ? (neighbor ~~ [2,3])
                         : (neighbor ==    3));
-       };
-    };
+       }
+    }
     universe = new;
-};
+}
  
 loop {
     print r;

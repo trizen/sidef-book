@@ -456,6 +456,7 @@
        * [Read a specific line from a file](programming_tasks/R/Read_a_specific_line_from_a_file.md)
        * [Read entire file](programming_tasks/R/Read_entire_file.md)
        * [Real constants and functions](programming_tasks/R/Real_constants_and_functions.md)
+       * [Reduced row echelon form](programming_tasks/R/Reduced_row_echelon_form.md)
        * [Regular expressions](programming_tasks/R/Regular_expressions.md)
        * [Remove duplicate elements](programming_tasks/R/Remove_duplicate_elements.md)
        * [Remove lines from a file](programming_tasks/R/Remove_lines_from_a_file.md)
