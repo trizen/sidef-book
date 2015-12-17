@@ -3,9 +3,9 @@
 # [First class environments][1]
 
 ```ruby
-func calculator({.is_one} ) { 1 }
-func calculator(n {_ %% 2}) { n / 2 }
-func calculator(n         ) { 3*n + 1 }
+func calculator({.is_one}   ) { 1 }
+func calculator(n {.is_even}) { n / 2 }
+func calculator(n           ) { 3*n + 1 }
  
 func succ(this {_{:value}.is_one}, _) {
     return this

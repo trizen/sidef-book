@@ -7,17 +7,17 @@
 ```ruby
 var doors = [];
  
-{ |pass|
-    { |i|
-        i %% pass && (
+100.times { |pass|
+    100.times { |i|
+        if (i % pass == 0) {
             doors[i] := false -> not!
-        );
-    } * 100;
-} * 100;
+        }
+    }
+}
  
-{ |i|
+100.times { |i|
     "Door %3d is %s\n".printf(i, doors[i] ? 'open' : 'closed');
-} * 100;
+}
 ```
 
 
