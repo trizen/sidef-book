@@ -1,0 +1,56 @@
+[1]: http://rosettacode.org/wiki/First_class_environments
+
+# [First class environments][1]
+
+```ruby
+func calculator({.is_one} ) { 1 }
+func calculator(n {_ %% 2}) { n / 2 }
+func calculator(n         ) { 3*n + 1 }
+ 
+func succ(this {_{:value}.is_one}, _) {
+    return this
+}
+ 
+func succ(this, get_next) {
+    this{:value} = get_next(this{:value})
+    this{:count}++
+    return this
+}
+ 
+var enviornments = (1..12 -> map {|i| Hash(value => i, count => 0) });
+ 
+while (!enviornments.map{ _{:value} }.all { .is_one }) {
+    say enviornments.map {|h| "%4s" % h{:value} }.join;
+    enviornments.range.each { |i|
+        enviornments[i] = succ(enviornments[i], calculator);
+    }
+}
+ 
+say 'Counts';
+say enviornments.map{ |h| "%4s" % h{:count} }.join;
+```
+
+#### Output:
+```
+   1   2   3   4   5   6   7   8   9  10  11  12
+   1   1  10   2  16   3  22   4  28   5  34   6
+   1   1   5   1   8  10  11   2  14  16  17   3
+   1   1  16   1   4   5  34   1   7   8  52  10
+   1   1   8   1   2  16  17   1  22   4  26   5
+   1   1   4   1   1   8  52   1  11   2  13  16
+   1   1   2   1   1   4  26   1  34   1  40   8
+   1   1   1   1   1   2  13   1  17   1  20   4
+   1   1   1   1   1   1  40   1  52   1  10   2
+   1   1   1   1   1   1  20   1  26   1   5   1
+   1   1   1   1   1   1  10   1  13   1  16   1
+   1   1   1   1   1   1   5   1  40   1   8   1
+   1   1   1   1   1   1  16   1  20   1   4   1
+   1   1   1   1   1   1   8   1  10   1   2   1
+   1   1   1   1   1   1   4   1   5   1   1   1
+   1   1   1   1   1   1   2   1  16   1   1   1
+   1   1   1   1   1   1   1   1   8   1   1   1
+   1   1   1   1   1   1   1   1   4   1   1   1
+   1   1   1   1   1   1   1   1   2   1   1   1
+Counts
+   0   1   7   2   5   8  16   3  19   6  14   9
+```

@@ -4,7 +4,7 @@
 
 ```ruby
 var arr = %w(a b c);
-(arr.len+1).range.each { |i|
+0.to(arr.len).each { |i|
     say arr.combinations(i);
 }
 ```

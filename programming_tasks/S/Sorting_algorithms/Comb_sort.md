@@ -9,7 +9,7 @@ func comb_sort(arr) {
     while (gap > 1 || swaps) {
         gap.div!(1.25).int! if (gap > 1);
         swaps = false;
-        (arr.end - gap).range.each { |i|
+        (arr.len - gap).range.each { |i|
             if (arr[i] > arr[i+gap]) {
                 arr[i, i+gap] = arr[i+gap, i];
                 swaps = true;

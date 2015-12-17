@@ -166,6 +166,7 @@
        * [Determine if a string is numeric](programming_tasks/D/Determine_if_a_string_is_numeric.md)
        * [Determine if only one instance is running](programming_tasks/D/Determine_if_only_one_instance_is_running.md)
        * [Dinesman's multiple-dwelling problem](programming_tasks/D/Dinesman's_multiple-dwelling_problem.md)
+       * [Discordian date](programming_tasks/D/Discordian_date.md)
        * [DNS query](programming_tasks/D/DNS_query.md)
        * [Dot product](programming_tasks/D/Dot_product.md)
        * Doubly-linked list
@@ -218,6 +219,7 @@
        * [Find the missing permutation](programming_tasks/F/Find_the_missing_permutation.md)
        * [First-class functions](programming_tasks/F/First-class_functions.md)
            * [Use numbers analogously](programming_tasks/F/First-class_functions/Use_numbers_analogously.md)
+       * [First class environments](programming_tasks/F/First_class_environments.md)
        * [Five weekends](programming_tasks/F/Five_weekends.md)
        * [FizzBuzz](programming_tasks/F/FizzBuzz.md)
        * [Flatten a list](programming_tasks/F/Flatten_a_list.md)
@@ -569,6 +571,7 @@
        * [Strip control codes and extended characters from a string](programming_tasks/S/Strip_control_codes_and_extended_characters_from_a_string.md)
        * Strip whitespace from a string
            * [Top and tail](programming_tasks/S/Strip_whitespace_from_a_string/Top_and_tail.md)
+       * [Subleq](programming_tasks/S/Subleq.md)
        * [Substring](programming_tasks/S/Substring.md)
            * [Top and tail](programming_tasks/S/Substring/Top_and_tail.md)
        * [Subtractive generator](programming_tasks/S/Subtractive_generator.md)

@@ -92,7 +92,7 @@ func long_multiplication(String a, String b) -> String {
     var mrange = (0 .. map.end);
     var end    = (xlen + ylen + 1);
  
-    (end+1).range.each { |i|
+    0.to(end).each { |i|
         var n = (mrange.map {|j| map[j][i] }.sum + mem);
         if (i == end) {
             n != 0 && result.append(n);
