@@ -186,6 +186,7 @@
        * [Environment variables](programming_tasks/E/Environment_variables.md)
        * [Equilibrium index](programming_tasks/E/Equilibrium_index.md)
        * [Ethiopian multiplication](programming_tasks/E/Ethiopian_multiplication.md)
+       * [Euler's sum of powers conjecture](programming_tasks/E/Euler's_sum_of_powers_conjecture.md)
        * [Euler method](programming_tasks/E/Euler_method.md)
        * [Evaluate binomial coefficients](programming_tasks/E/Evaluate_binomial_coefficients.md)
        * [Even or odd](programming_tasks/E/Even_or_odd.md)
@@ -193,6 +194,7 @@
            * [Catch an exception thrown in a nested call](programming_tasks/E/Exceptions/Catch_an_exception_thrown_in_a_nested_call.md)
        * [Execute a system command](programming_tasks/E/Execute_a_system_command.md)
        * [Execute Brain****](programming_tasks/E/Execute_Brain****.md)
+       * [Execute HQ9 ](programming_tasks/E/Execute_HQ9_.md)
        * [Exponentiation operator](programming_tasks/E/Exponentiation_operator.md)
        * [Extend your language](programming_tasks/E/Extend_your_language.md)
    * F
@@ -255,6 +257,7 @@
        * [Hamming numbers](programming_tasks/H/Hamming_numbers.md)
        * [Handle a signal](programming_tasks/H/Handle_a_signal.md)
        * [Happy numbers](programming_tasks/H/Happy_numbers.md)
+       * [Harshad or Niven series](programming_tasks/H/Harshad_or_Niven_series.md)
        * [Hash from two arrays](programming_tasks/H/Hash_from_two_arrays.md)
        * [Hash join](programming_tasks/H/Hash_join.md)
        * [Haversine formula](programming_tasks/H/Haversine_formula.md)
@@ -304,6 +307,7 @@
            * [Obtain a Y or N response](programming_tasks/K/Keyboard_input/Obtain_a_Y_or_N_response.md)
        * Knapsack problem
            * [Continuous](programming_tasks/K/Knapsack_problem/Continuous.md)
+       * [Knuth's algorithm S](programming_tasks/K/Knuth's_algorithm_S.md)
        * [Knuth shuffle](programming_tasks/K/Knuth_shuffle.md)
    * L
        * [Langton's ant](programming_tasks/L/Langton's_ant.md)
@@ -478,6 +482,7 @@
        * [Runtime evaluation](programming_tasks/R/Runtime_evaluation.md)
            * [In an environment](programming_tasks/R/Runtime_evaluation/In_an_environment.md)
    * S
+       * [S-Expressions](programming_tasks/S/S-Expressions.md)
        * [Sailors  coconuts and a monkey problem](programming_tasks/S/Sailors__coconuts_and_a_monkey_problem.md)
        * [Same Fringe](programming_tasks/S/Same_Fringe.md)
        * Scope
@@ -500,7 +505,9 @@
        * [Sierpinski carpet](programming_tasks/S/Sierpinski_carpet.md)
        * [Sierpinski triangle](programming_tasks/S/Sierpinski_triangle.md)
            * [Graphical](programming_tasks/S/Sierpinski_triangle/Graphical.md)
+       * [Sieve of Eratosthenes](programming_tasks/S/Sieve_of_Eratosthenes.md)
        * [Simple windowed application](programming_tasks/S/Simple_windowed_application.md)
+       * [Singleton](programming_tasks/S/Singleton.md)
        * Singly-linked list
            * [Element definition](programming_tasks/S/Singly-linked_list/Element_definition.md)
            * [Element insertion](programming_tasks/S/Singly-linked_list/Element_insertion.md)
@@ -591,6 +598,7 @@
        * [Topic variable](programming_tasks/T/Topic_variable.md)
        * [Topological sort](programming_tasks/T/Topological_sort.md)
        * [Towers of Hanoi](programming_tasks/T/Towers_of_Hanoi.md)
+       * [Trabb Pardo Knuth algorithm](programming_tasks/T/Trabb_Pardo_Knuth_algorithm.md)
        * [Tree traversal](programming_tasks/T/Tree_traversal.md)
        * [Trigonometric functions](programming_tasks/T/Trigonometric_functions.md)
        * [Truncate a file](programming_tasks/T/Truncate_a_file.md)
