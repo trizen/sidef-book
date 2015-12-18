@@ -556,6 +556,7 @@
        * [Standard deviation](programming_tasks/S/Standard_deviation.md)
        * Statistics
            * [Basic](programming_tasks/S/Statistics/Basic.md)
+       * [Stem-and-leaf plot](programming_tasks/S/Stem-and-leaf_plot.md)
        * [Stern-Brocot sequence](programming_tasks/S/Stern-Brocot_sequence.md)
        * [String append](programming_tasks/S/String_append.md)
        * [String case](programming_tasks/S/String_case.md)
