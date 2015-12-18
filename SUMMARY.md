@@ -194,6 +194,7 @@
        * [Evolutionary algorithm](programming_tasks/E/Evolutionary_algorithm.md)
        * [Exceptions](programming_tasks/E/Exceptions.md)
            * [Catch an exception thrown in a nested call](programming_tasks/E/Exceptions/Catch_an_exception_thrown_in_a_nested_call.md)
+       * [Executable library](programming_tasks/E/Executable_library.md)
        * [Execute a system command](programming_tasks/E/Execute_a_system_command.md)
        * [Execute Brain****](programming_tasks/E/Execute_Brain****.md)
        * [Execute HQ9 ](programming_tasks/E/Execute_HQ9_.md)
