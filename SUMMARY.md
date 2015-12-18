@@ -174,6 +174,7 @@
        * [Dragon curve](programming_tasks/D/Dragon_curve.md)
        * [Draw a clock](programming_tasks/D/Draw_a_clock.md)
        * [Draw a cuboid](programming_tasks/D/Draw_a_cuboid.md)
+       * [Draw a sphere](programming_tasks/D/Draw_a_sphere.md)
        * [Dynamic variable names](programming_tasks/D/Dynamic_variable_names.md)
    * E
        * [Elementary cellular automaton](programming_tasks/E/Elementary_cellular_automaton.md)
@@ -390,6 +391,7 @@
        * [Nth root](programming_tasks/N/Nth_root.md)
        * [Null object](programming_tasks/N/Null_object.md)
        * [Number names](programming_tasks/N/Number_names.md)
+       * [Number reversal game](programming_tasks/N/Number_reversal_game.md)
        * [Numerical integration](programming_tasks/N/Numerical_integration.md)
            * [Gauss-Legendre Quadrature](programming_tasks/N/Numerical_integration/Gauss-Legendre_Quadrature.md)
    * O

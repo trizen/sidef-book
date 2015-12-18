@@ -22,7 +22,7 @@ func Formatter(text) {
         var words = .split('$');
         textArr.append(words);
  
-        words.each_with_index { |i, word|
+        words.each_kv { |i, word|
             if (i == widthArr.len) {
                 widthArr.append(word.len);
             }

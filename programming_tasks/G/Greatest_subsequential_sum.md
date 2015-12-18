@@ -5,7 +5,7 @@
 ```ruby
 func maxsubseq(*a) {
     var (start, end, sum, maxsum) = (-1, -1, 0, 0);
-    a.each_with_index { |i, x|
+    a.each_kv { |i, x|
         sum += x;
         if (maxsum < sum) {
             maxsum = sum;

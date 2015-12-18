@@ -31,7 +31,7 @@ Example:
 ```ruby
 func poly_print(c) {
     var l = c.len
-    c.each_with_index {|i, n|
+    c.each_kv {|i, n|
         print n
         print("x^", (l - i - 1), " + ") if (i < l-1)
     }

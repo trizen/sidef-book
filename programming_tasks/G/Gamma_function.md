@@ -61,12 +61,12 @@ func gamma(z) {
  
     if (z.real < 0.5) {
         result = (pi / (sin(pi * z) * gamma(Complex(1) - z)))
-    } 
+    }
     else {
         z -= 1
         var x = 0.99999999999980993
  
-        p.each_with_index { |i, v|
+        p.each_kv { |i, v|
             x += v/(z + i + 1)
         }
  

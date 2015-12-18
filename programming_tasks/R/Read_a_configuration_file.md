@@ -27,7 +27,7 @@ say "favouritefruit = #{favouritefruit}";
 say "needspeeling   = #{needspeeling}";
 say "seedsremoved   = #{seedsremoved}";
  
-otherfamily.each_with_index {|i, name|
+otherfamily.each_kv {|i, name|
     say "otherfamily(#{i+1}) = #{name}";
 }
 ```
