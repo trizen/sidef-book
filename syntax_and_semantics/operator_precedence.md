@@ -13,5 +13,11 @@ The implications are the following:
 ```ruby
 var n = 1 + 2;      # wrong -- it means: (var n = 1) + 2
 var n = 1+2;        # correct
-var n = (1+2);      # correct
+var n = (1 + 2);    # correct
+```
+
+When no precedence is declared, the order of operations is from left to right:
+
+```ruby
+var n = (1 + 2 * 3);      # means: ((1 + 2) * 3)
 ```

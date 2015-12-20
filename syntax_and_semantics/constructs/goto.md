@@ -28,4 +28,4 @@ say "Program Completed."
 Program Completed.
 ```
 
-Goto statements have been considered harmful by many computer scientists, notably Dijkstra.
+However, the goto statements have been considered harmful by many computer scientists, notably Dijkstra, so try to avoid using it if possible.

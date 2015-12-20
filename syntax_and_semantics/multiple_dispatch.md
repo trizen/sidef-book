@@ -2,7 +2,7 @@
 
 Multiple dispatch allows us to declare multiple variants of the same function or method, each working only with a certain type of arguments.
 
-For example, if we declare to functions with the same name, but with different types of parameters, Sidef will decide automatically which function to call:
+For example, if we declare two functions with the same name, but with different types of parameters, Sidef will decide automatically which function to call:
 
 ```ruby
 func foo(Number a) {

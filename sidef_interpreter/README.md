@@ -1,3 +1,3 @@
 # Sidef interpreter
 
-This section describes the details of the official Sidef interpreter
+This section describes the details of the main Sidef interpreter

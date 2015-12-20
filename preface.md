@@ -1,6 +1,6 @@
 # Preface
 
-My name is Daniel Șuteu and I'm a computer programmer born in Romania. I'm interested in many areas of computer science, including image and text processing, computational number theory and, more recently, programming language design.
+My name is Daniel Șuteu and I'm a computer programmer born in Romania. My main interests are in image and text processing, computational number theory and, more recently, programming language design.
 
 In this book, we are going to take a complete tour of the Sidef programming language; a language which explores the features of the object-oriented paradigm.
 
@@ -8,7 +8,7 @@ All started out as an idea at the beginning of 2013 when I talked with a good fr
 
 The original desing was for an elegant, object-oriented programming language that was easy to write, easy to parse and easy to implement. As the time passed by, the original design has changed a little bit, but the core concept remained the same.
 
-At the time of writing this book, Sidef is a little bit more than 2 years old. In this book I will try to cover the entire language specifications, along with examples and notes. At the end of the book I will include a large collection of programming tasks written in Sidef, hopping to give the reader a better grasp of the language.
+At the time of writing this book, Sidef is a little bit more than 2 years old. This book will try to cover the entire language specifications, along with examples and notes. At the end of the book I included a large collection of programming tasks written in Sidef, hopping to give the reader a better grasp of the language.
 
 ### WWW
 * Github: https://github.com/trizen
