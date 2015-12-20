@@ -5,7 +5,7 @@
 ```ruby
 var fibonacci = [0, 1] ;
 {
-    fibonacci.append(fibonacci[-1] + $fibonacci[-2]);
+    fibonacci.append(fibonacci[-1] + fibonacci[-2]);
 } * (1000 - fibonacci.len);
  
 var (actuals, expected) = ([], []);
