@@ -3,23 +3,18 @@
 # [Benford's law][1]
 
 ```ruby
-var fibonacci = [0, 1] ;
-{
-    fibonacci.append(fibonacci[-1] + fibonacci[-2]);
-} * (1000 - fibonacci.len);
- 
 var (actuals, expected) = ([], []);
- 
+var fibonacci = 1000.of {|i| fib(i-1).digit(0) }
+
 { |i|
-    var num = 0;
-    fibonacci.each { |j| j.digit(-1) == i && (num++)};
+    var num = fibonacci.count { |j| j == i };
     actuals.append(num / 1000);
     expected.append(1 + (1/i) -> log10);
 } * 9;
- 
+
 "%17s%17s\n".printf("Observed","Expected");
 { |i|
-    "%d : %11s %%%15s %%\n".printf(
+    "%d : %11s %%%15s %%\n".printf(
             i, "%.2f".sprintf(100 *  actuals[i - 1]),
                "%.2f".sprintf(100 * expected[i - 1]),
     );

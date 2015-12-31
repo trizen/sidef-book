@@ -5,11 +5,11 @@
 ```ruby
 func is_k_almost_prime(n, k) {
     for (var (p, f) = (2, 0); (f < k) && (p*p <= n); ++p) {
-        (n /= p; ++f) while (n %% p);
+        (n /= p; ++f) while p.divides(n);
     }
-    f + (n > 1) == k
+    n > 1 ? (f.inc == k) : (f == k)
 }
- 
+
 5.times { |k|
     var x = 10
     say gather {

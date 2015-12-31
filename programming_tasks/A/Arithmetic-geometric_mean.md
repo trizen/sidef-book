@@ -5,16 +5,16 @@
 ```ruby
 func agm(a, g) {
     loop {
-        var x = [a+g / 2, Math.sqrt(a*g)];
+        var x = [float(a+g / 2), sqrt(a*g)];
         x == [a, g] && return a;
-        x » (\a, \g);
+        (a, g) = x...;
     }
 }
- 
-say agm(1, 1/Math.sqrt(2));
+
+say agm(1, 1/sqrt(2));
 ```
 
 #### Output:
 ```
-0.8472130847939790866064991234821916364814
+0.84721308479397908660649912348219163648
 ```

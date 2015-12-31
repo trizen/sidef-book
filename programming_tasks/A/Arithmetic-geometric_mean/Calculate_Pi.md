@@ -5,13 +5,14 @@
 ```ruby
 func agm_pi(digits) {
     var acc = (digits + 8);
-    Math.precision(-acc);
- 
+
+    local Num!PREC = (3.3 * digits);
+
     var an = 1;
     var bn = sqrt(0.5);
     var tn = 0.5**2;
     var pn = 1;
- 
+
     while (pn < acc) {
         var prev_an = an;
         an = (bn+an / 2);
@@ -20,11 +21,10 @@ func agm_pi(digits) {
         tn -= (pn * prev_an**2);
         pn *= 2;
     }
- 
-    Math.precision(0);
-    ((an+bn)**2 / 4*tn)->round(digits);
+
+    ((an+bn)**2 / 4*tn).to_s
 }
- 
+
 say agm_pi(100);
 ```
 

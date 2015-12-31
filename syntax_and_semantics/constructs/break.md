@@ -3,13 +3,12 @@
 The `break` statement is used to exit early from loops.
 
 ```ruby
+var set_of_numbers = 0..100;
+
 for n in set_of_numbers {
-    if isprime(n) {
-        say "Set contains a prime number"
+    if is_prime(n) {
+        say "Set contains a prime number: #{n}"
         break
-    }
-    else {
-        say "Set did not contain any prime numbers"
     }
 }
 ```
