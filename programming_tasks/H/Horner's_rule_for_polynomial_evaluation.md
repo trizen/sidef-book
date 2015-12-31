@@ -18,8 +18,9 @@ Recursive:
 ```ruby
 func horner(coeff, x) {
     coeff.len > 0
-        && (coeff[0] + x*horner(coeff.ft(1), x));
+        ? (coeff[0] + x*horner(coeff.ft(1), x))
+        : 0
 }
- 
+
 say horner([-19, 7, -4, 6], 3);   # => 128
 ```
