@@ -4,7 +4,7 @@
 
 ```ruby
 func continued_fraction(a, b, n=100) {
-    a.run + (n > 0 && (b.run / continued_fraction(a, b, n-1)));
+    a() + (n > 0 ? (b() / continued_fraction(a, b, n-1)) : 0);
 }
  
 var f = Hash.new(

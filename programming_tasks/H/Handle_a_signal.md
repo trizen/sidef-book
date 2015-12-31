@@ -5,7 +5,7 @@
 ```ruby
 var start = Time.sec;
  
-Sig.INT { |_|
+Sig.INT {
     Sys.say("Ran for #{Time.sec - start} seconds.");
     Sys.exit;
 }

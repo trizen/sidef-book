@@ -2,6 +2,8 @@
 
 # [Hello world/Graphical][1]
 
+Tk:
+
 ```ruby
 var tk = require 'Tk';
 var main = %s'MainWindow'.new;
@@ -11,6 +13,9 @@ main.Button(
 ).pack;
 tk.MainLoop;
 ```
+
+Gtk2:
+
 ```ruby
 var gtk2 = require('Gtk2') -> init;
  
@@ -18,7 +23,7 @@ var window = %s'Gtk2::Window'.new;
 var label  = %s'Gtk2::Label'.new('Goodbye, World!');
  
 window.set_title('Goodbye, World!');
-window.signal_connect(destroy => func(*_){ gtk2.main_quit });
+window.signal_connect(destroy => { gtk2.main_quit });
  
 window.add(label);
 window.show_all;

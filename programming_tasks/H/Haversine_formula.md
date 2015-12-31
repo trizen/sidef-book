@@ -30,5 +30,5 @@ class EarthPoint(lat, lon) {
 var BNA = EarthPoint.new(lat: 36.12, lon: -86.67);
 var LAX = EarthPoint.new(lat: 33.94, lon: -118.4);
  
-say BNA.haversine_dist(LAX);   # => 2886.444442837981524
+say BNA.haversine_dist(LAX);   # => 2886.44444283798329974715782394574671653702
 ```

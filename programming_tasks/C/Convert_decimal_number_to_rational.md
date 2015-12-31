@@ -2,21 +2,21 @@
 
 # [Convert decimal number to rational][1]
 
-This can be done by using the _to_r_ method, which converts a scalar-object into a rational number:
+This can be done by using the _num_ method, which converts a scalar-object into a number, followed by the _as_rat_ method, which converts it back into a string as a fraction:
 
 ```ruby
 '0.9054054 0.518518 0.75'.split.each { |d|
-    say d.to_r;
+    say d.num.as_rat;
 }
 ```
 
 
-Another way is by calling the _rat_ method on Number objects:
+Another way is by calling the _as_rat_ method directly on Number objects:
 
 ```ruby
-say 0.9054054.rat;
-say 0.518518.rat;
-say 0.75.rat;
+say 0.9054054.as_rat;
+say 0.518518.as_rat;
+say 0.75.as_rat;
 ```
 
 #### Output:

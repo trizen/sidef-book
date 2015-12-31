@@ -6,7 +6,7 @@
 func harshad() {
     var n = 0;
     {
-        ++n while !(n %% n.digits.sum);
+        ++n while !n.digits.sum.divides(n);
         n;
     }
 }

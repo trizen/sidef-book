@@ -5,8 +5,6 @@
 Straightforward translation of the formula:
 
 ```ruby
-include bigint;
- 
 func binomial(n,k) {
     n! / ((n-k)! * k!);
 }

@@ -6,37 +6,40 @@
 define w = `tput cols`.to_i-1;
 define h = `tput lines`.to_i-1;
 define r = "\033[H";
- 
+
 define red = "\033[31m";
 define green = "\033[32m";
 define yellow = "\033[33m";
- 
+
 define chars = [' ', green+'*', yellow+'&', red+'&'];
- 
+
 define tree_prob = 0.05;
 define burn_prob = 0.0002;
- 
+
 enum |Empty, Tree, Heating, Burning|;
- 
+
 define dirs = [
     %n(-1 -1), %n(-1 0), %n(-1 1), %n(0 -1),
     %n(0   1), %n(1 -1), %n(1  0), %n(1  1),
 ];
- 
-var forest = h.of { w.of { 1.rand < tree_prob ? Tree : Empty } };
- 
+
+var forest = h.of { w.of { 1.rand < tree_prob ? Tree : Empty } };
+
+var range_h = (0 ... h-1);
+var range_w = (0 ... w-1);
+
 func iterate {
     var new = h.of{ w.of(0) };
-    range(0, h-1).each { |i|
-        range(0, w-1).each { |j|
+    range_h.each { |i|
+        range_w.each { |j|
             given (new[i][j] = forest[i][j]) {
               when (Tree) {
                 1.rand < burn_prob && (new[i][j] = Heating; next);
                 dirs.each { |pair|
                     var y = pair[0]+i;
-                    y ~~ range(0, h-1) || next;
+                    range_h.contains(y) || next;
                     var x = pair[1]+j;
-                    x ~~ range(0, w-1) || next;
+                    range_w.contains(x) || next;
                     forest[y][x] == Heating && (new[i][j] = Heating; break);
                 }
               }
@@ -48,7 +51,7 @@ func iterate {
     }
     forest = new;
 }
- 
+
 func init_forest {
     print r;
     forest.each { |row|
@@ -57,8 +60,8 @@ func init_forest {
     }
     iterate();
 }
- 
-loop { init_forest() };
+
+loop { init_forest() }
 ```
 
 

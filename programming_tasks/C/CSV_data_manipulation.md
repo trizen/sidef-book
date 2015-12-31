@@ -9,7 +9,7 @@ For simple files we can use the _split_ method.
 var csvfile = %f'data.csv';
 var fh = csvfile.open_r;
 var header = fh.line.trim_end.split(',');
-var csv = fh.lines.map { .trim_end.split(',').map{.to_num} };
+var csv = fh.lines.map { .trim_end.split(',').map{.to_num} }
 fh.close;
  
 # Write
@@ -40,11 +40,11 @@ while (var row = csv.getline(fh)) {
  
 # Process
 header.append('SUM');
-rows.each { |row| row.append(row.sum) };
+rows.each { |row| row.append(row.sum) }
  
 # Write
 var out = csvfile.open_w;
 [header, rows...].each { |row|
     csv.print(out, row);
-};
+}
 ```
