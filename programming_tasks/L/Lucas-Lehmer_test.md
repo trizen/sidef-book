@@ -16,11 +16,11 @@ func is_mersenne_prime(p) {
     range(3, p).each {
       s = (s.expmod(2, mp) - 2);
       s < 0 && (s += mp);
-    };
+    }
     s == 0;
 }
  
-range(2, Math.inf).each { |n|
+Inf.times { |n|
        is_prime(n)
     && is_mersenne_prime(n)
     && say "M#{n}";

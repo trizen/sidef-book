@@ -4,8 +4,8 @@
 
 ```ruby
 func transpose(matrix) {
-    matrix[0].range.map{|i| matrix.map{_[i]}};
-};
+    matrix[0].range.map {|i| matrix.map { _[i] } }
+}
  
 var m = [
   [1,  1,   1,   1],

@@ -12,8 +12,8 @@ func add_with_carry(result, addend, addendpos) {
     loop {
         while (result.len < addendpos+1) {
             result.append(0);
-        };
-        var addend_digits = (addend.to_i + result[addendpos].to_i -> to_chars);
+        }
+        var addend_digits = (addend.to_i + result[addendpos] -> digits);
         result[addendpos] = addend_digits.pop;
         addend_digits.len > 0 || break;
         addend = addend_digits.pop;
@@ -35,11 +35,11 @@ func longhand_multiplication(multiplicand, multiplier) {
             multiplication_result.reverse.each { |result_digit_addend|
                 add_with_carry(result, result_digit_addend, addend_offset);
                 addend_offset++;
-            };
+            }
             multiplier_offset++;
-        };
+        }
         multiplicand_offset++;
-    };
+    }
  
     return result.join.reverse;
 }
@@ -48,7 +48,7 @@ say longhand_multiplication('18446744073709551616', '18446744073709551616');
 ```
 
 
-*A faster approach:*
+**A faster approach:**
 
 ```ruby
 func long_multiplication(String a, String b) -> String {

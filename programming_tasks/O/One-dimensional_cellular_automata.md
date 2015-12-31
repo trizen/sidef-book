@@ -10,7 +10,7 @@ loop {
     seq.tr!('01', '_#');
     say seq;
     seq.tr!('_#', '01');
-    seq.gsub!(/(?<=(.))(.)(?=(.))/, {|s1,s2,s3| s1 == s3 ? (s1 ? 1-s2 : 0) : s2});
+    seq.gsub!(/(?<=(.))(.)(?=(.))/, {|s1,s2,s3| s1 == s3 ? (s1 ? 1-s2.to_i : 0) : s2});
     (x != seq) && (x = seq) || break;
 }
 ```
@@ -29,11 +29,11 @@ __##________________
 ```
 ```ruby
 class Automaton(rule, cells) {
- 
+
     method init {
         rule = sprintf("%08b", rule).chars.map{.to_i}.reverse;
     }
- 
+
     method next {
         var previous = cells.map{_};
         var len = previous.len;
@@ -44,18 +44,18 @@ class Automaton(rule, cells) {
                       previous[i+1 % len]
                 }]];
     }
- 
+
     method to_s {
-        cells.map { _ ? '#' : ' ' }.join('');
+        cells.map { _ ? '#' : ' ' }.join('');
     }
 }
- 
+
 var size = 10;
 var auto = Automaton(
     rule: 104,
-    cells: [(size/2).of(0)..., '111011010101'.chars..., (size/2).of(0)...],
+    cells: [(size/2).of(0)..., 111011010101.digits..., (size/2).of(0)...],
 );
- 
+
 size.times {
     say "|#{auto}|";
     auto.next;

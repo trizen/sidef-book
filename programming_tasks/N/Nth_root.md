@@ -8,8 +8,8 @@ func nthroot(n, a, precision=1e-5) {
   var prev = 0;
   while ((prev-x).abs > precision) {
     prev = x;
-    x = (((n-1)*prev + a/(prev**(n-1))) / n);
-  };
+    x = float(((n-1)*prev + a/(prev**(n-1))) / n);
+  }
   return x;
 }
  

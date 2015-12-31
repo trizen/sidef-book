@@ -28,7 +28,7 @@ func approximate_legendre_root(n, k) {
 }
  
 func newton_raphson(f, f_prime, r, eps = 2e-16) {
-    while (var dr = (-f(r) / f_prime(r)) -> abs >= eps) {
+    while (var dr = float(-f(r) / f_prime(r)) -> abs >= eps) {
         r += dr;
     }
     return r;
