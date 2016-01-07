@@ -341,6 +341,7 @@
        * [Long multiplication](programming_tasks/L/Long_multiplication.md)
        * [Longest common prefix](programming_tasks/L/Longest_common_prefix.md)
        * [Longest common subsequence](programming_tasks/L/Longest_common_subsequence.md)
+       * [Longest Common Substring](programming_tasks/L/Longest_Common_Substring.md)
        * [Longest string challenge](programming_tasks/L/Longest_string_challenge.md)
        * [Look-and-say sequence](programming_tasks/L/Look-and-say_sequence.md)
        * [Loop over multiple arrays simultaneously](programming_tasks/L/Loop_over_multiple_arrays_simultaneously.md)
