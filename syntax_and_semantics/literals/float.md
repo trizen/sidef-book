@@ -1,6 +1,6 @@
 # Float
 
-By default, each floating-point number is represented by a `Math::BigFloat` object.
+In Sidef, there is no real distinction between integers and floating-point numbers, as all numbers are represented by `Math::GMPq` in rational form.
 
 ```ruby
 1.234;          # 1.234

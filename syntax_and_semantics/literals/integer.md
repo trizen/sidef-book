@@ -1,7 +1,5 @@
 # Integer
 
-There are several ways possible to write an integer in Sidef. Each integer is represented by a `Math::BigInt` object.
-
 Here is `255` written as integer in different bases:
 
 ```ruby
