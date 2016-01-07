@@ -3,21 +3,17 @@
 The Sidef interpreter has the following command-line options:
 
 ```text
-usage: sidef [switches] [--] [programfile] [arguments]
+Usage: sidef [switches] [--] [programfile] [arguments]
 
-  -A int        set the numeric accuracy to a certain number of digits
   -c            compile the code as a stand-alone Perl program
   -C            check syntax only
   -D            dump the syntax tree of a program
-  -d file       load a dumped syntax tree
   -E program    one line of program
   -H            interactive help
   -i            interactive mode
   -k            keep track of potential unsafe parser interpretations
   -M mode       set the rounding mode of floating-point numbers
-                valid modes: [even], odd, +inf, -inf, zero, trunc, common
-  -n type       try to use a specific backend for Math::BigInt
-                valid types: GMP, Pari, FastCalc
+                valid modes: [near], zero, +zero, +inf, -inf
   -o file       file where to dump the output
   -O level      perform code optimizations before execution
                 valid levels: [0], 1, 2
@@ -32,4 +28,4 @@ usage: sidef [switches] [--] [programfile] [arguments]
   -W            make warnings fatal (with stack backtrace)
 ```
 
-which we'll examine in the following pages.
+...which we'll examine in more detail in the following pages.

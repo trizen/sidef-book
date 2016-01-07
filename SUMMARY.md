@@ -317,7 +317,10 @@
            * [Flush the keyboard buffer](programming_tasks/K/Keyboard_input/Flush_the_keyboard_buffer.md)
            * [Obtain a Y or N response](programming_tasks/K/Keyboard_input/Obtain_a_Y_or_N_response.md)
        * Knapsack problem
+           * [0-1](programming_tasks/K/Knapsack_problem/0-1.md)
+           * [Bounded](programming_tasks/K/Knapsack_problem/Bounded.md)
            * [Continuous](programming_tasks/K/Knapsack_problem/Continuous.md)
+           * [Unbounded](programming_tasks/K/Knapsack_problem/Unbounded.md)
        * [Knuth's algorithm S](programming_tasks/K/Knuth's_algorithm_S.md)
        * [Knuth shuffle](programming_tasks/K/Knuth_shuffle.md)
    * L

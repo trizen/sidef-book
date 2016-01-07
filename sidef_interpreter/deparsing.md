@@ -13,7 +13,7 @@ Example:
 $ sidef -Rperl script.sf | perl
 ```
 
-The `-Rsidef` switch (or simply `-r`) it's very useful to check how the parser really parses the code.
+The `-Rsidef` switch (or simply `-r`) it's very useful to check how the code is actually parsed.
 
 Example:
 ```shell
@@ -25,7 +25,7 @@ Outputs:
 42->sqrt;
 ```
 
-Alternatively, Sidef can deparse code in interactive mode as well:
+Deparsing can be activated in interactive mode as well:
 
 ```shell
 $ sf -i -Rperl

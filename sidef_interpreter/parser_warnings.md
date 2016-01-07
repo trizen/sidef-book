@@ -1,6 +1,6 @@
 # Parser warnings
 
-Sidef provides the `-k` option which will keep track of all possible unsafe parser interpretations.
+Sidef provides the `-k` option which will keep track of all the possible unsafe parser interpretations.
 
 For example, if we declare the following function, but we misspell its name when we call it, Sidef will interpret it as a method call, which is probably not what we want:
 
