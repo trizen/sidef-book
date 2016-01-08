@@ -21,7 +21,7 @@ func triples(limit) {
     "#{limit} => (#{primitive} #{civilized})";
 }
  
-range(1, Math.inf).each { |n|
+Inf.times { |n|
     say triples(10**n);
 }
 ```
