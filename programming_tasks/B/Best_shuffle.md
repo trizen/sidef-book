@@ -3,27 +3,27 @@
 # [Best shuffle][1]
 
 ```ruby
-func best_shuffle(original_word) {
- 
-    var s = original_word.chars;
-    var t = s.shuffle;
- 
+func best_shuffle(String orig) -> (String, Number) {
+
+    var s = orig.chars
+    var t = s.shuffle
+
     s.range.each { |i|
         s.range.each { |j|
-            i!=j && t[i]!=s[j] && t[j]!=s[i] && (
+            if (i!=j && t[i]!=s[j] && t[j]!=s[i]) {
                 t[i, j] = t[j, i];
                 break;
-            );
+            }
         }
     }
- 
-    var word = t.join('');
-    [word, original_word ^ word -> count("\0")];
+
+    var word = t.join;
+    (word, orig ^ word -> count("\0"));
 }
- 
+
 <abracadabra seesaw elk grrrrrr up a>.each { |word|
-    var (sword, score) = best_shuffle(word)...;
-    "%-12s %12s: %d\n".printf(word, sword, score);
+    var (sword, score) = best_shuffle(word)
+    "%-12s %12s: %d\n".printf(word, sword, score)
 }
 ```
 
