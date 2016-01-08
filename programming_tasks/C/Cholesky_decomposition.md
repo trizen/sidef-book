@@ -6,9 +6,9 @@
 func cholesky(matrix) {
     var chol = matrix.len.of { matrix.len.of(0) };
     matrix.range.each { |row|
-        (0..row).each { |col|
+        0.to(row).each { |col|
             var x = matrix[row][col];
-            (0..col).each { |i|
+            0.to(col).each { |i|
                 x -= (chol[row][i] * chol[col][i]);
             }
             chol[row][col] = (row == col ? x.sqrt : x/chol[col][col]);
