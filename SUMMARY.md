@@ -205,6 +205,7 @@
        * [Exponentiation operator](programming_tasks/E/Exponentiation_operator.md)
        * [Extend your language](programming_tasks/E/Extend_your_language.md)
        * [Extract file extension](programming_tasks/E/Extract_file_extension.md)
+       * [Extreme floating point values](programming_tasks/E/Extreme_floating_point_values.md)
    * F
        * [Factorial](programming_tasks/F/Factorial.md)
        * [Factors of an integer](programming_tasks/F/Factors_of_an_integer.md)
