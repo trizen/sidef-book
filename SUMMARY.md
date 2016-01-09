@@ -670,6 +670,7 @@
        * [Y combinator](programming_tasks/Y/Y_combinator.md)
        * [Yin and yang](programming_tasks/Y/Yin_and_yang.md)
    * Z
+       * [Zebra puzzle](programming_tasks/Z/Zebra_puzzle.md)
        * [Zeckendorf number representation](programming_tasks/Z/Zeckendorf_number_representation.md)
        * [Zero to the zero power](programming_tasks/Z/Zero_to_the_zero_power.md)
        * [Zhang-Suen thinning algorithm](programming_tasks/Z/Zhang-Suen_thinning_algorithm.md)
