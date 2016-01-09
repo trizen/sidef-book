@@ -314,6 +314,7 @@
        * [Josephus problem](programming_tasks/J/Josephus_problem.md)
        * [JSON](programming_tasks/J/JSON.md)
    * K
+       * [K-d tree](programming_tasks/K/K-d_tree.md)
        * [Kaprekar numbers](programming_tasks/K/Kaprekar_numbers.md)
        * Keyboard input
            * [Flush the keyboard buffer](programming_tasks/K/Keyboard_input/Flush_the_keyboard_buffer.md)
