@@ -379,6 +379,7 @@
        * [Menu](programming_tasks/M/Menu.md)
        * [Metaprogramming](programming_tasks/M/Metaprogramming.md)
        * [Middle three digits](programming_tasks/M/Middle_three_digits.md)
+       * [Miller Rabin primality test](programming_tasks/M/Miller_Rabin_primality_test.md)
        * [Modular inverse](programming_tasks/M/Modular_inverse.md)
        * [Monty Hall problem](programming_tasks/M/Monty_Hall_problem.md)
        * [Move-to-front algorithm](programming_tasks/M/Move-to-front_algorithm.md)
