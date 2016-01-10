@@ -25,7 +25,7 @@ loop {
   }
   say "| #{expr}"
  
-  var body = ("say (" + vars.map{|v| v+",'\t'," }.join + " '| ', eval(expr))")
+  var body = ("say (" + vars.map{|v| v+",'\t'," }.join + " '| ', #{expr})")
   eval(prefix + [body] + suffix -> join("\n"))
 }
 ```
