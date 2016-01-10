@@ -211,6 +211,7 @@
        * [Factorial](programming_tasks/F/Factorial.md)
        * [Factors of an integer](programming_tasks/F/Factors_of_an_integer.md)
        * [Fast Fourier transform](programming_tasks/F/Fast_Fourier_transform.md)
+       * [Faulhaber's formula](programming_tasks/F/Faulhaber's_formula.md)
        * [Fibonacci n-step number sequences](programming_tasks/F/Fibonacci_n-step_number_sequences.md)
        * [Fibonacci sequence](programming_tasks/F/Fibonacci_sequence.md)
        * [Fibonacci word](programming_tasks/F/Fibonacci_word.md)
