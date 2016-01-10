@@ -622,6 +622,7 @@
        * [The Twelve Days of Christmas](programming_tasks/T/The_Twelve_Days_of_Christmas.md)
        * [Time a function](programming_tasks/T/Time_a_function.md)
        * [Tokenize a string](programming_tasks/T/Tokenize_a_string.md)
+       * [Tokenize a string with escaping](programming_tasks/T/Tokenize_a_string_with_escaping.md)
        * [Top rank per group](programming_tasks/T/Top_rank_per_group.md)
        * [Topic variable](programming_tasks/T/Topic_variable.md)
        * [Topological sort](programming_tasks/T/Topological_sort.md)
@@ -630,6 +631,7 @@
        * [Tree traversal](programming_tasks/T/Tree_traversal.md)
        * [Trigonometric functions](programming_tasks/T/Trigonometric_functions.md)
        * [Truncate a file](programming_tasks/T/Truncate_a_file.md)
+       * [Truth table](programming_tasks/T/Truth_table.md)
    * U
        * [Ulam spiral [for primes]](programming_tasks/U/Ulam_spiral_[for_primes].md)
        * [Undefined values](programming_tasks/U/Undefined_values.md)
