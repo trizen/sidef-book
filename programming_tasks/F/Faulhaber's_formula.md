@@ -4,10 +4,10 @@
 
 ```ruby
 func bernoulli_number((1))       { 1/2 }
-func bernoulli_number({.is_odd}) { 0 }
- 
+func bernoulli_number({.is_odd}) { 0/1 }
+
 func bernoulli_number(n) {
- 
+
     var a = [];
     0.to(n).each { |m|
         a[m] = 1/(m + 1)
@@ -15,28 +15,28 @@ func bernoulli_number(n) {
             a[j-1] = j*(a[j-1] - a[j])
         }
     }
- 
+
     return a[0]
 }
- 
+
 func faulhaber_s_formula(p) {
- 
+
     var formula = gather {
         0.to(p).each { |j|
             take "(#{binomial(p+1, j) * bernoulli_number(j) -> as_rat})*n^#{p+1 - j}"
         }
     }
- 
-    formula.grep! { !.match(/\(0\)\*/) }.join!(' + ')
- 
+
+    formula.grep! { !.contains('(0)*') }.join!(' + ')
+
     formula -= /\(1\)\*/g
     formula -= /\^1\b/g
- 
+
     "1/#{p + 1} * (#{formula})"
 }
- 
+
 0.to(9).each { |p|
-    printf("%2d: %s\n", p, faulhaber_s_formula(p))
+    printf("%2d: %s\n", p, faulhaber_s_formula(p))
 }
 ```
 
