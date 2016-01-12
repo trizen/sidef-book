@@ -631,6 +631,7 @@
        * [Trabb Pardo Knuth algorithm](programming_tasks/T/Trabb_Pardo_Knuth_algorithm.md)
        * [Tree traversal](programming_tasks/T/Tree_traversal.md)
        * [Trigonometric functions](programming_tasks/T/Trigonometric_functions.md)
+       * [Truncatable primes](programming_tasks/T/Truncatable_primes.md)
        * [Truncate a file](programming_tasks/T/Truncate_a_file.md)
        * [Truth table](programming_tasks/T/Truth_table.md)
    * U
