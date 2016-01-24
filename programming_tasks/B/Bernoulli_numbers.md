@@ -5,27 +5,27 @@
 Recursive solution (with auto-memoization):
 
 ```ruby
-func bernoulli_number{};     # must be declared before first used
+func bernoulli_number{}     # must be declared before first used
 
 func bern_helper(n, k) {
-    binomial(n, k) * (bernoulli_number(k) / (n - k + 1));
+    binomial(n, k) * (bernoulli_number(k) / (n - k + 1))
 }
 
 func bern_diff(n, k, d) {
-    n < k ? d : bern_diff(n, k + 1, d - bern_helper(n + 1, k));
+    n < k ? d : bern_diff(n, k + 1, d - bern_helper(n + 1, k))
 }
 
 bernoulli_number = func(n) is cached {
 
-    n.is_one && return 1/2;
-    n.is_odd && return   0;
+    n.is_one && return 1/2
+    n.is_odd && return   0
 
-    n > 0 ? bern_diff(n - 1, 0, 1) : 1;
+    n > 0 ? bern_diff(n - 1, 0, 1) : 1
 }
 
 range(0, 60).each { |i|
-    var num = bernoulli_number(i) || next;
-    printf("B(%2d) = %44s / %s\n", i, num.parts);
+    var num = bernoulli_number(i) || next
+    printf("B(%2d) = %44s / %s\n", i, num.parts)
 }
 ```
 
@@ -34,18 +34,18 @@ Iterative solution:
 
 ```ruby
 func bernoulli_print {
-    var a = [];
+    var a = []
     range(0, 60).each { |m|
-        a.append(1 / m+1);
+        a.append(m+1 -> inv)
         range(m, 1, -1).each { |j|
-            a[j-1] = (j * (a[j-1] - a[j]));
+            (a[j-1] -= a[j]) *= j
         }
-        a[0] || next;
-        printf("B(%2d) = %44s / %s\n", m, a[0].parts);
+        a[0] || next
+        printf("B(%2d) = %44s / %s\n", m, a[0].parts)
     }
 }
  
-bernoulli_print();
+bernoulli_print()
 ```
 
 #### Output:

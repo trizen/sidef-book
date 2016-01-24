@@ -41,7 +41,7 @@ cuboid(2, 4, 1);
 
 ```ruby
 func cuboid (x=1,y=1,z=1,s=' ',c='+',h='-',v='|',d='/') {
-    say("cuboid %d %d %d:" % [x, y, z]);
+    say("cuboid %d %d %d:" % (x, y, z));
     ' ' * z+1 + c + h*x + c -> say;
  
     { |i|
