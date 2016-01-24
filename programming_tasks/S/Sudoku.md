@@ -6,16 +6,16 @@
 func _check(i, j) is cached {
     var (id, im) = i.divmod(9);
     var (jd, jm) = j.divmod(9);
- 
+
     jd == id && return true;
     jm == im && return true;
- 
-    var id2 = int(id/3);
-    var jd2 = int(jd/3);
- 
+
+    var id2 = id//3;
+    var jd2 = jd//3;
+
     jd2 == id2 || return false;
- 
-    int(jm/3) == int(im/3)
+
+    jm//3 == im//3
 }
  
 func solve(board) {
@@ -26,7 +26,7 @@ func solve(board) {
                 _check(i, j)
             }...
         );
-        1..9 -> grep {!(.~~t)}
+        1..9 -> grep { . !~ t }
              -> each {|k| board[i] = k; solve(board) };
         board[i] = 0;
         return;
@@ -59,15 +59,15 @@ solve(board);
 
 #### Output:
 ```
-5 3 9  8 2 4  7 6 1  
-6 7 2  1 5 9  8 3 4  
-1 8 4  7 6 3  9 5 2  
+5 3 9  8 2 4  7 6 1
+6 7 2  1 5 9  8 3 4
+1 8 4  7 6 3  9 5 2
 
-3 1 8  5 7 2  6 4 9  
-4 2 5  9 8 6  1 7 3  
-7 9 6  3 4 1  2 8 5  
+3 1 8  5 7 2  6 4 9
+4 2 5  9 8 6  1 7 3
+7 9 6  3 4 1  2 8 5
 
-8 4 1  2 3 7  5 9 6  
-9 6 7  4 1 5  3 2 8  
-2 5 3  6 9 8  4 1 7  
+8 4 1  2 3 7  5 9 6
+9 6 7  4 1 5  3 2 8
+2 5 3  6 9 8  4 1 7
 ```
