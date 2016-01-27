@@ -13,11 +13,11 @@ Usage: sidef [switches] [--] [programfile] [arguments]
   -i            interactive mode
   -k            keep track of potential unsafe parser interpretations
   -M mode       set the rounding mode of floating-point numbers
-                valid modes: [near], zero, +zero, +inf, -inf
+                valid modes: [near], zero, inf, +inf, -inf
   -o file       file where to dump the output
   -O level      perform code optimizations before execution
                 valid levels: [0], 1, 2
-  -P int        set the precision of floating-point numbers
+  -P int        set the precision of floating-point numbers (default: 32)
   -r            parse and deparse a Sidef program
   -R lang       parse and deparse a Sidef program into a given language
                 valid values: sidef, perl
