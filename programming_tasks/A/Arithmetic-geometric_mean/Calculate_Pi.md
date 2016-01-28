@@ -6,7 +6,7 @@
 func agm_pi(digits) {
     var acc = (digits + 8);
 
-    local Num!PREC = (3.3 * digits);
+    local Num!PREC = 4*digits;
 
     var an = 1;
     var bn = sqrt(0.5);
