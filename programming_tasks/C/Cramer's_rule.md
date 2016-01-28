@@ -4,29 +4,28 @@
 
 ```ruby
 func det(A) {
-    var dt = 0
-    var rows = A.len
-    A.each_index { |i|
-        var (p1=1, p2=1)
-        A[i].each_index { |j|
-            p1 *= A[(j+i)%rows][j]
-            p2 *= A[(j+i)%rows][-j]
+    gather {
+        A.each_index { |i|
+            var (p1=1, p2=1)
+            A[i].each_index { |j|
+                p1 *= A[(j+i)%A.len][j]
+                p2 *= A[(j+i)%A.len][-j]
+            }
+            take(p1-p2)
         }
-        dt += p1-p2
-    }
-    dt
+    } -> sum
 }
- 
+
 func cramers_rule(A, terms) {
-    var dxyz = []
-    A.each_index { |i|
-        var Ai = A.map{.map{_}}
-        terms.each_index { |j|
-            Ai[j][i] = terms[j]
+    gather {
+        A.each_index { |i|
+            var Ai = A.map{.map{_}}
+            terms.each_index { |j|
+                Ai[j][i] = terms[j]
+            }
+            take(det(Ai))
         }
-        dxyz[i] = det(Ai)
-    }
-    dxyz »/» det(A)
+    } »/» det(A)
 }
  
 var matrix = [
