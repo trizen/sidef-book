@@ -153,6 +153,7 @@
        * [Count in octal](programming_tasks/C/Count_in_octal.md)
        * [Count occurrences of a substring](programming_tasks/C/Count_occurrences_of_a_substring.md)
        * [Count the coins](programming_tasks/C/Count_the_coins.md)
+       * [Cramer's rule](programming_tasks/C/Cramer's_rule.md)
        * [Create a file](programming_tasks/C/Create_a_file.md)
        * [Create a two-dimensional array at runtime](programming_tasks/C/Create_a_two-dimensional_array_at_runtime.md)
        * [Create an HTML table](programming_tasks/C/Create_an_HTML_table.md)
@@ -616,6 +617,7 @@
        * Table creation
            * [Postal addresses](programming_tasks/T/Table_creation/Postal_addresses.md)
        * [Take notes on the command line](programming_tasks/T/Take_notes_on_the_command_line.md)
+       * [Taxicab numbers](programming_tasks/T/Taxicab_numbers.md)
        * [Temperature conversion](programming_tasks/T/Temperature_conversion.md)
        * Terminal control
            * [Clear the screen](programming_tasks/T/Terminal_control/Clear_the_screen.md)
