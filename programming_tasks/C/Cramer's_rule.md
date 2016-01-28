@@ -3,17 +3,24 @@
 # [Cramer's rule][1]
 
 ```ruby
-func det(A) {
-    gather {
-        A.each_index { |i|
-            var (p1=1, p2=1)
-            A[i].each_index { |j|
-                p1 *= A[(j+i)%A.len][j]
-                p2 *= A[(j+i)%A.len][-j]
-            }
-            take(p1-p2)
-        }
-    } -> sum
+func det(a) {
+    a = a.map{.map{_}}
+    var sign = +1
+    var pivot = 1
+    a.range.each { |k|
+      var r = (k+1 .. a.end)
+      var previous_pivot = pivot
+      if ((pivot = a[k][k]) == 0) {
+        a.swap(r.first_by {|i| a[i][k] != 0 } \\ (return 0), k)
+        pivot = a[k][k]
+        sign = -sign
+      }
+      r ~X r -> each { |p|
+        var(i, j) = p...
+        ((a[i][j] *= pivot) -= a[i][k]*a[k][j]) /= previous_pivot
+      }
+    }
+    sign * pivot
 }
 
 func cramers_rule(A, terms) {
@@ -27,16 +34,18 @@ func cramers_rule(A, terms) {
         }
     } »/» det(A)
 }
- 
+
 var matrix = [
-    [2, -3,  1],
-    [1, -2, -2],
-    [3, -4,  1],
+    [2, -1,  5,  1],
+    [3,  2,  2, -6],
+    [1,  3,  3, -1],
+    [5, -2, -3,  3],
 ]
- 
-var free_terms = [4, -6, 5]
-var (x, y, z) = cramers_rule(matrix, free_terms)...;
- 
+
+var free_terms = [-3, -32, -47, 49]
+var (w, x, y, z) = cramers_rule(matrix, free_terms)...;
+
+say "w = #{w}"
 say "x = #{x}"
 say "y = #{y}"
 say "z = #{z}"
@@ -44,7 +53,8 @@ say "z = #{z}"
 
 #### Output:
 ```
-x = 2
-y = 1
-z = 3
+w = 2
+x = -12
+y = -4
+z = 1
 ```
