@@ -315,6 +315,7 @@
        * [Interactive programming](programming_tasks/I/Interactive_programming.md)
        * [Inverted syntax](programming_tasks/I/Inverted_syntax.md)
    * J
+       * [Jaro distance](programming_tasks/J/Jaro_distance.md)
        * [Jensen's Device](programming_tasks/J/Jensen's_Device.md)
        * [JortSort](programming_tasks/J/JortSort.md)
        * [Josephus problem](programming_tasks/J/Josephus_problem.md)
