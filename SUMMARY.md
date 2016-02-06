@@ -341,6 +341,7 @@
        * [Left factorials](programming_tasks/L/Left_factorials.md)
        * [Letter frequency](programming_tasks/L/Letter_frequency.md)
        * [Levenshtein distance](programming_tasks/L/Levenshtein_distance.md)
+           * [Alignment](programming_tasks/L/Levenshtein_distance/Alignment.md)
        * [Linear congruential generator](programming_tasks/L/Linear_congruential_generator.md)
        * [List comprehensions](programming_tasks/L/List_comprehensions.md)
        * [List rooted trees](programming_tasks/L/List_rooted_trees.md)
