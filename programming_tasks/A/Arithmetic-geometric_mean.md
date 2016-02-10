@@ -5,13 +5,13 @@
 ```ruby
 func agm(a, g) {
     loop {
-        var x = [float(a+g / 2), sqrt(a*g)];
-        x == [a, g] && return a;
-        (a, g) = x...;
+        var x = [float(a+g / 2), sqrt(a*g)]
+        x == [a, g] && return a
+        x >> \(a, g)
     }
 }
 
-say agm(1, 1/sqrt(2));
+say agm(1, 1/sqrt(2))
 ```
 
 #### Output:
