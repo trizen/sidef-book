@@ -146,7 +146,10 @@
        * [Concurrent computing](programming_tasks/C/Concurrent_computing.md)
        * [Constrained random points on a circle](programming_tasks/C/Constrained_random_points_on_a_circle.md)
        * [Continued fraction](programming_tasks/C/Continued_fraction.md)
+           * Arithmetic
+               * [Construct from rational number](programming_tasks/C/Continued_fraction/Arithmetic/Construct_from_rational_number.md)
        * [Convert decimal number to rational](programming_tasks/C/Convert_decimal_number_to_rational.md)
+       * [Convert seconds to compound duration](programming_tasks/C/Convert_seconds_to_compound_duration.md)
        * [Conway's Game of Life](programming_tasks/C/Conway's_Game_of_Life.md)
        * [Copy a string](programming_tasks/C/Copy_a_string.md)
        * [Count in factors](programming_tasks/C/Count_in_factors.md)
@@ -158,6 +161,7 @@
        * [Create a two-dimensional array at runtime](programming_tasks/C/Create_a_two-dimensional_array_at_runtime.md)
        * [Create an HTML table](programming_tasks/C/Create_an_HTML_table.md)
        * [CSV data manipulation](programming_tasks/C/CSV_data_manipulation.md)
+       * [CSV to HTML translation](programming_tasks/C/CSV_to_HTML_translation.md)
        * [Currying](programming_tasks/C/Currying.md)
    * D
        * [Date format](programming_tasks/D/Date_format.md)
@@ -213,6 +217,7 @@
        * [Extreme floating point values](programming_tasks/E/Extreme_floating_point_values.md)
    * F
        * [Factorial](programming_tasks/F/Factorial.md)
+       * [Factors of a Mersenne number](programming_tasks/F/Factors_of_a_Mersenne_number.md)
        * [Factors of an integer](programming_tasks/F/Factors_of_an_integer.md)
        * [Fast Fourier transform](programming_tasks/F/Fast_Fourier_transform.md)
        * [Faulhaber's formula](programming_tasks/F/Faulhaber's_formula.md)
@@ -338,6 +343,7 @@
        * [Largest int from concatenated ints](programming_tasks/L/Largest_int_from_concatenated_ints.md)
        * [Last Friday of each month](programming_tasks/L/Last_Friday_of_each_month.md)
        * [Leap year](programming_tasks/L/Leap_year.md)
+       * [Least common multiple](programming_tasks/L/Least_common_multiple.md)
        * [Left factorials](programming_tasks/L/Left_factorials.md)
        * [Letter frequency](programming_tasks/L/Letter_frequency.md)
        * [Levenshtein distance](programming_tasks/L/Levenshtein_distance.md)
@@ -354,6 +360,7 @@
        * [Longest common prefix](programming_tasks/L/Longest_common_prefix.md)
        * [Longest common subsequence](programming_tasks/L/Longest_common_subsequence.md)
        * [Longest Common Substring](programming_tasks/L/Longest_Common_Substring.md)
+       * [Longest increasing subsequence](programming_tasks/L/Longest_increasing_subsequence.md)
        * [Longest string challenge](programming_tasks/L/Longest_string_challenge.md)
        * [Look-and-say sequence](programming_tasks/L/Look-and-say_sequence.md)
        * [Loop over multiple arrays simultaneously](programming_tasks/L/Loop_over_multiple_arrays_simultaneously.md)
