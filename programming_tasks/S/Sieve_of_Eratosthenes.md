@@ -4,27 +4,23 @@
 
 ```ruby
 func sieve(limit) {
-    var is_prime = [false, false, ([true] * limit-1)...];
+    var sieve_arr = [false, false, [true]*(limit-1)...]
     gather {
-        is_prime.each_kv { |number, prime|
-            if (prime) {
-                take(number);
-                number**2 ... limit -> each { |n| is_prime[n] = false if n%%number }
+        sieve_arr.each_kv { |number, is_prime|
+            if (is_prime) {
+                take(number)
+                number.sqr.to(limit).by(number).each { |i|
+                    sieve_arr[i] = false
+                }
             }
         }
     }
 }
- 
-say sieve(100).join(",");
+
+say sieve(100).join(",")
 ```
 
-
-Recursive solution:
-
-```ruby
-func sieve(Number n) { sieve(2..n) }
-func sieve(Array a   { .first > .last.sqrt }) { a }
-func sieve(Array a)  { [a[0], sieve(a.grep { !(_ %% a[0]) })...] }
- 
-say sieve(100).join(",");
+#### Output:
+```
+2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97
 ```
