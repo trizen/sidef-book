@@ -4,20 +4,20 @@
 
 ```ruby
 func happy(n) is cached {
-    static seen = Hash;
- 
-    return true  if n.is_one;
-    return false if seen.has_key(n);
- 
-    seen{n} = 1;
-    happy(n.digits »**» 2 -> sum)
+    static seen = Hash()
+
+    return true  if n.is_one
+    return false if seen.has_key(n)
+
+    seen{n} = 1
+    happy(n.digits »**» 2 -> sum)
 }
- 
+
 var count = 0;
-{ |i|
-    happy(i) ? say i : next;
-    ++count == 8 && break;
-} * Math.inf;
+Inf.times { |i|
+    happy(i) ? say i : next
+    ++count == 8 && break
+}
 ```
 
 #### Output:
