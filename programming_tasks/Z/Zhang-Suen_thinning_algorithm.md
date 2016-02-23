@@ -13,8 +13,8 @@ class ZhangSuen(str, black="1") {
   method init {
     var s1 = str.lines.map{|line| line.chars.map{|c| c==black ? 1 : 0 }}
     var s2 = s1.len.of { s1[0].len.of(0) }
-    var xr = (1 ... s1.end-1)
-    var yr = (1 ... s1[0].end-1)
+    var xr = RangeNum(1, s1.end-1)
+    var yr = RangeNum(1, s1[0].end-1)
     do {
         r = 0;
         xr.each{|x| yr.each{|y| s2[x][y] = (s1[x][y] - self.zs(s1,x,y,1)) }}  # Step 1
@@ -64,14 +64,14 @@ ZhangSuen.new(text, black: "1").display
 
 #### Output:
 ```
-                                
-  #######         ######        
-  #     #        ##             
-  #      #       #              
-  #     #        #              
-  ##### #        #              
-       ##        #              
-        #    #   ##    ##   #   
-         #         ####         
-                                
+
+  #######         ######
+  #     #        ##
+  #      #       #
+  #     #        #
+  ##### #        #
+       ##        #
+        #    #   ##    ##   #
+         #         ####
+
 ```

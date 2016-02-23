@@ -15,7 +15,7 @@ say('Longitude offset: ', offset);
 say('=' * 48);
 say(' Hour  : Sun hour angle° : Dial hour line angle°');
  
--6 ... 6 -> each { |hour|
+for hour in range(-6, 6) {
     var sun_deg  = (15*hour + offset);
     var line_deg = Math.rad2deg(
         Math.atan2(

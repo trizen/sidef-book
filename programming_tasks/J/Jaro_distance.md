@@ -16,11 +16,11 @@ func jaro(s, t) {
     var matches = 0
     var transpositions = 0
  
-    s_len.range.each { |i|
+    for i in range(s_len) {
         var start = max(0, i-match_distance)
         var end = min(i+match_distance, t_len-1)
  
-        start ... end -> each { |k|
+        for k in range(start, end) {
             t_matches[k] && next
             s[i] == t[k] || next
             s_matches[i] = true
@@ -33,7 +33,7 @@ func jaro(s, t) {
     return 0 if (matches == 0)
  
     var k = 0
-    s_len.range.each { |i|
+    for i in range(s_len) {
         s_matches[i] || next
         while (!t_matches[k]) { ++k }
         s[i] == t[k] || ++transpositions

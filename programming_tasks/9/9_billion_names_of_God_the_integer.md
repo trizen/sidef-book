@@ -3,33 +3,33 @@
 # [9 billion names of God the integer][1]
 
 ```ruby
-var cache = [[1]];
+var cache = [[1]]
  
 func cumu (n) {
-    cache.len ... n -> each { |l|
+    for l in range(cache.len, n) {
         var r = [0]
         l.times { |i|
-            r.append(r[-1] + cache[l-i][[i, l-i].min])
+            r << (r[-1] + cache[l-i][min(i, l-i)])
         }
-        cache.append(r)
+        cache << r
     }
     cache[n]
 }
  
 func row (n) {
-    var r = cumu(n);
+    var r = cumu(n)
     n.of {|i| r[i] - r[i-1] }
 }
  
-say "rows:";
+say "rows:"
 15.times { |i|
-    "%2d: %s\n".printf(i, row(i))
+    "%2s: %s\n".printf(i, row(i))
 }
  
-say "\nsums:";
+say "\nsums:"
  
-[23, 123, 1234, 12345].each { |i|
-    "%2d : %4d\n".printf(i, cumu(i)[-1])
+for i in [23, 123, 1234, 12345] {
+    "%2s : %4s\n".printf(i, cumu(i)[-1])
 }
 ```
 

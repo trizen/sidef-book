@@ -8,8 +8,8 @@ require 'GD';
 var gd_img = %s'GD::Image';
 var img = gd_img.new(256, 256, 1);
  
-0...255 -> each { |y|
-    0...255 -> each { |x|
+for y in range(256) {
+    for x in range(256) {
         var color = img.colorAllocate((255 - x - y).abs, (255-x)^y, x^(255-y));
         img.setPixel(x, y, color);
     }

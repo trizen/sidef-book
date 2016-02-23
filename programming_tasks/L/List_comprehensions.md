@@ -3,11 +3,11 @@
 # [List comprehensions][1]
 
 ```ruby
-var n = 20;
+var n = 20
 say gather {
-    1...n -> each { |x|
-         x...n -> each { |y|
-           y...n -> each { |z|
+    for x in range(1, n) {
+        for y in range(x, n) {
+           for z in range(y, n) {
              take([x,y,z]) if (x*x + y*y == z*z)
            }
         }

@@ -3,28 +3,28 @@
 # [Anagrams/Deranged anagrams][1]
 
 ```ruby
-func find_deranged(a) {
-    a.range.each { |i|
-        i+1 ... a.end -> each { |j|
-            a[i].overlaps(a[j]) || (
-                "length %d: %s => %s\n".printf(a[i].len, a[i], a[j]);
-                return true;
-            );
+func find_deranged(Array a) {
+    for i in range(a) {
+        for j in range(i+1, a.end) {
+            overlaps(a[i], a[j]) || (
+                printf("length %d: %s => %s\n", a[i].len, a[i], a[j])
+                return true
+            )
         }
     }
-    return false;
+    return false
 }
  
-func main(file) {
+func main(File file) {
  
-    file.open_r(&var fh, &var err)
-        || die "Can't open file `#{file}' for reading: #{err}\n";
+    file.open_r(\var fh, \var err)
+        || die "Can't open file `#{file}' for reading: #{err}\n"
  
-    var letter_list = Hash.new;
+    var letter_list = Hash()
  
     # Store anagrams in hash table by letters they contain
     fh.words.each { |word|
-        letter_list{word.sort} \\= [] -> append(word);
+        letter_list{word.sort} := [] << word
     }
  
     letter_list.keys
@@ -33,11 +33,11 @@ func main(file) {
          .each {|key|
  
         # If we find a pair, they are the longested due to the sort before
-        find_deranged(letter_list{key}) && break;
+        find_deranged(letter_list{key}) && break
     }
 }
  
-main(%f'/tmp/unixdict.txt');
+main(%f'/tmp/unixdict.txt')
 ```
 
 #### Output:

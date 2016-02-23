@@ -6,7 +6,7 @@ Straightforward:
 
 ```ruby
 func left_fact(k) {
-    range(0, k-1).map { _! }.sum(0);
+    range(0, k-1).map {|n| n! }.sum(0)
 }
 ```
 
@@ -14,7 +14,7 @@ Memory efficient with `Range.reduce()`:
 
 ```ruby
 func left_fact(k) {
-    0 ... k-1 -> reduce { |a,b| a + b! } + 1
+    0 ..^ k-1 -> reduce { |a,b| a + b! } + 1
 }
 ```
 
@@ -22,22 +22,22 @@ A bit more efficient approach:
 
 ```ruby
 func left_fact(n) {
-    static cached    = 0;
-    static factorial = 1;
-    static leftfact  = 0;
+    static cached    = 0
+    static factorial = 1
+    static leftfact  = 0
  
     if (n < cached) {
-        cached    = 0;
-        factorial = 1;
-        leftfact  = 0;
+        cached    = 0
+        factorial = 1
+        leftfact  = 0
     }
  
     while (n > cached) {
-        leftfact  += factorial;
-        factorial *= ++cached;
+        leftfact  += factorial
+        factorial *= ++cached
     }
  
-    leftfact;
+    leftfact
 }
 ```
 
@@ -45,16 +45,14 @@ func left_fact(n) {
 Completing the task:
 
 ```ruby
-[range(0, 10), range(20, 110).by(10)].each { |r|
-    r.each { |i|
-        printf("!%d  = %s\n", i, left_fact(i));
+for r in [range(0, 10), range(20, 110).by(10)] {
+    for i in r {
+        printf("!%d  = %s\n", i, left_fact(i));
     }
 }
- 
-[range(1000, 10000).by(1000)].each { |r|
-    r.each { |i|
-        printf("!%d has %d digits.\n", i, left_fact(i).len);
-    }
+
+for i in range(1000, 10000).by(1000) {
+    printf("!%d has %d digits.\n", i, left_fact(i).len);
 }
 ```
 
