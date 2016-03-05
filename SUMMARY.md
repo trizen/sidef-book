@@ -213,6 +213,7 @@
        * [Execute HQ9 ](programming_tasks/E/Execute_HQ9_.md)
        * [Exponentiation operator](programming_tasks/E/Exponentiation_operator.md)
        * [Extend your language](programming_tasks/E/Extend_your_language.md)
+       * [Extensible prime generator](programming_tasks/E/Extensible_prime_generator.md)
        * [Extract file extension](programming_tasks/E/Extract_file_extension.md)
        * [Extreme floating point values](programming_tasks/E/Extreme_floating_point_values.md)
    * F
@@ -411,6 +412,7 @@
        * [Named parameters](programming_tasks/N/Named_parameters.md)
        * [Names to numbers](programming_tasks/N/Names_to_numbers.md)
        * [Narcissist](programming_tasks/N/Narcissist.md)
+       * [Narcissistic decimal number](programming_tasks/N/Narcissistic_decimal_number.md)
        * [Native shebang](programming_tasks/N/Native_shebang.md)
        * [Natural sorting](programming_tasks/N/Natural_sorting.md)
        * [Non-continuous subsequences](programming_tasks/N/Non-continuous_subsequences.md)
