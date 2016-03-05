@@ -3,50 +3,39 @@
 # [Soundex][1]
 
 ```ruby
-func soundex(word, length=4) {
- 
+func soundex(word, length=3) {
+
     # Uppercase the argument passed in to normalize it
     # and drop any non-alphabetic characters
-    word.uc!.tr!('A-Z', '', 'cd');
- 
-    if (word.len == 0) {
-        return;    # return if word doesn't contain 'A-Z'
-    }
- 
-    var firstLetter = word.char_at(0);
- 
+    word.uc!.tr!('A-Z', '', 'cd')
+
+    # Return if word does not contain 'A-Z'
+    return(nil) if (word.is_empty)
+
+    var firstLetter = word.char(0)
+
     # Replace letters with corresponding number values
-    word.gsub!(/[BFPV]+/,     '1');
-    word.gsub!(/[CGJKQSXZ]+/, '2');
-    word.gsub!(/[DT]+/,       '3');
-    word.gsub!(/[L]+/,        '4');
-    word.gsub!(/[MN]+/,       '5');
-    word.gsub!(/[R]+/,        '6');
- 
-    # Replace word with word from first letter to the end
-    word.substr!(1);
- 
-    # Remove A, E, H, I, O, U W, and Y
-    word.tr!('AEHIOUWY', '', 'd');
- 
-    # Convert the string to a 4-digit number
-    var numValue = (
-        word ~~ /^\d+\z/ ? (
-            var num = word.to_f;
-            num * (10**(length-1 - num.log10.int)) -> to_i.to_s
-    ) : ('0' * length));
- 
-    # create the sdxValue with the leading firstLetter
-    var sdxValue = (firstLetter + numValue);
- 
-    return sdxValue;
+    word.tr!('BFPV',     '1', 's')
+    word.tr!('CGJKQSXZ', '2', 's')
+    word.tr!('DT',       '3', 's')
+    word.tr!('L',        '4', 's')
+    word.tr!('MN',       '5', 's')
+    word.tr!('R',        '6', 's')
+
+    # Discard the first letter
+    word.ft!(1)
+
+    # Remove A, E, H, I, O, U, W, and Y
+    word.tr!('AEHIOUWY', '', 'd')
+
+    # Return the soundex code
+    firstLetter + (word.chars + length.of('0') -> first(length).join)
 }
- 
-# Testing the soundex() function
+
 func testSoundex {
- 
-    # the key-value pairs are the name and the correct Soundex code
-    var sndx = Hash.new(
+
+    # Key-value pairs of names and corresponding Soundex codes
+    var sndx = Hash(
                 "Euler"                => "E4600",
                 "Gauss"                => "G2000",
                 "Hilbert"              => "H4163",
@@ -57,16 +46,16 @@ func testSoundex {
                 'faulkersuhn'          => 'F4262',
                 'fpfffffauhlkkersssin' => 'F4262',
                 'Aaeh'                 => 'A0000',
-               );
- 
+               )
+
     sndx.keys.sort.each { |name|
-        var findSdx = soundex(name, 4);    # calls function w/param of name
-        say "The soundex for #{name} should be #{sndx{name}} and is #{findSdx}";
-        if (findSdx != sndx{name}) {
-            say "\tHowever, that is incorrect!\n";
+        var findSdx = soundex(name, 4)
+        say "The soundex for #{name} should be #{sndx{name}} and is #{findSdx}"
+        if (findSdx != sndx{name}) {
+            say "\tHowever, that is incorrect!\n"
         }
     }
 }
- 
-testSoundex();
+
+testSoundex()
 ```
