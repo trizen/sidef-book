@@ -96,8 +96,7 @@ class Forest(p=0.01, f=0.001, height, width) {
     }
  
     method init_neighbors {
-        for pair in coords {
-            var(i, j) = @pair
+        for i,j in coords {
             neighbors[i][j] = gather {
                 for dir in DIRS {
                     take(\(spot[i + dir[0]][j + dir[1]] \\ next))
@@ -109,8 +108,7 @@ class Forest(p=0.01, f=0.001, height, width) {
     method step {
         var heat = []
  
-        for pair in coords {
-            var(i, j) = @pair
+        for i,j in coords {
             given (spot[i][j]) {
                 when Empty   { spot[i][j] = Tree    if (1.rand < p) }
                 when Tree    { spot[i][j] = Heating if (1.rand < f) }
@@ -119,8 +117,7 @@ class Forest(p=0.01, f=0.001, height, width) {
             }
         }
  
-        for pair in heat {
-            var(i, j) = @pair
+        for i,j in heat {
             neighbors[i][j].each { |ref|
                 *ref = Heating if (*ref == Tree)
             }
@@ -128,7 +125,7 @@ class Forest(p=0.01, f=0.001, height, width) {
     }
  
     method show {
-        range(0, height-1).each { |i|
+        for i in ^height {
             say pix.@[spot[i]]
         }
     }
@@ -139,6 +136,7 @@ var(height, width) = `stty size`.nums.map{.dec}...
  
 var forest = Forest(height: height, width: width)
 print "\e[2J"
+
 loop {
     print "\e[H"
     forest.show
