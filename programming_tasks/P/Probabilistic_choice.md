@@ -18,7 +18,7 @@ func prob_choice_picker(options) {
     }
 }
  
-var ps = Hash.new(
+var ps = Hash(
    aleph  => 1/5,
    beth   => 1/6,
    gimel  => 1/7,
@@ -26,20 +26,19 @@ var ps = Hash.new(
    he     => 1/9,
    waw    => 1/10,
    zayin  => 1/11
-);
+)
  
-ps{:heth} = (1 - ps.values.sum);
+ps{:heth} = (1 - ps.values.sum)
  
-var picker = prob_choice_picker(ps);
-var results = Hash.new;
+var picker = prob_choice_picker(ps)
+var results = Hash()
  
-range(0, TRIALS).each {
+TRIALS.times {
     results{picker()} := 0 ++;
 }
  
 say "Event   Occurred  Expected  Difference";
-results.sort_by {|k| results{k} }.reverse.each { |pair|
-    var(k, v) = pair...;
+for k,v in (results.sort_by {|k| results{k} }.reverse) {
     printf("%-6s  %f  %f  %f\n",
         k, v/TRIALS, ps{k},
         abs(v/TRIALS - ps{k})

@@ -3,22 +3,22 @@
 # [Short-circuit evaluation][1]
 
 ```ruby
-func a(bool) { print 'A'; return bool };
-func b(bool) { print 'B'; return bool };
+func a(bool) { print 'A'; return bool }
+func b(bool) { print 'B'; return bool }
  
 # Test-driver
 func test() {
-    ['&&', '||'].each { |op|
-        [[1,1],[1,0],[0,1],[0,0]].each { |pair|
-            "a(%s) %s b(%s): ".printf(pair[0], op, pair[1]);
-            eval "a(pair[0].to_bool) #{op} b(pair[1].to_bool)";
-            print "\n";
+    for op in ['&&', '||'] {
+        for x,y in [[1,1],[1,0],[0,1],[0,0]] {
+            "a(%s) %s b(%s): ".printf(x, op, y)
+            eval "a(Bool(x)) #{op} b(Bool(y))"
+            print "\n"
         }
     }
 }
  
 # Test and display
-test();
+test()
 ```
 
 #### Output:

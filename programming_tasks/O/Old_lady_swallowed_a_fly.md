@@ -12,12 +12,11 @@ var victims = [
     :goat:   "  She just opened her throat, and in walked the goat!",
     :cow:    "  I don't know how S!",
     :horse:  "  She's dead, of course...",
-];
+]
  
 var history = ["I guess she'll die...\n"];
  
-victims.each { |pair|
-    var (victim, verse) = pair...;
+for victim,verse in victims {
     say "There was an old lady who swallowed a #{victim}...";
  
     verse.sub!(/\bS\b/, "she swallowed the #{victim}");
@@ -30,5 +29,5 @@ victims.each { |pair|
     history.each{.say};
     history.len < 5 && history.unshift(verse);
     history.unshift("X to catch the #{victim},");
-};
+}
 ```

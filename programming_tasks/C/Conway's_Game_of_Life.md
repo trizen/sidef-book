@@ -17,11 +17,10 @@ var rw = w.range
 
 func iterate {
     var new = h.of { w.of(false) }
-    rh.each { |i|
-        rw.each { |j|
+    for i in rh {
+        for j in rw {
         var neighbor = 0
-        dirs.each { |dir|
-            var (y, x) = (dir[0]+i, dir[1]+j)
+        for y,x in (dirs.map {|dir| dir »+« [i, j] }) {
             universe[y % h][x % w] && ++neighbor
             neighbor > 3 && break
         }
@@ -32,6 +31,8 @@ func iterate {
     }
     universe = new
 }
+
+STDOUT.autoflush(true)
 
 loop {
     print r

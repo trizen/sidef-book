@@ -35,8 +35,7 @@ func drawLine(x0, y0, x1, y1) {
     var intery;
  
     # handle the endpoints
-    [[x0, y0], [x1, y1]].each { |xy|
-        var (x, y) = xy...;
+    for x,y in [[x0, y0], [x1, y1]] {
         var xend = int(x + 0.5);
         var yend = (y + gradient*(xend-x));
         var xgap = rfpart(x + 0.5);

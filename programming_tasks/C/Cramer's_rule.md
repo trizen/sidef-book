@@ -7,17 +7,23 @@ func det(a) {
     a = a.map{.map{_}}
     var sign = +1
     var pivot = 1
+
     a.range.each { |k|
       var r = (k+1 .. a.end)
       var previous_pivot = pivot
-      if ((pivot = a[k][k]) == 0) {
-        a.swap(r.first_by {|i| a[i][k] != 0 } \\ (return 0), k)
+
+      if ((pivot = a[k][k])==0) {
+        a.swap(r.first_by { |i|
+            a[i][k] != 0
+        } \\ (return 0), k)
         pivot = a[k][k]
         sign = -sign
       }
-      r ~X r -> each { |p|
-        var(i, j) = p...
-        ((a[i][j] *= pivot) -= a[i][k]*a[k][j]) /= previous_pivot
+
+      for i,j in (r ~X r) {
+        ((a[i][j] *= pivot)
+            -= a[i][k]*a[k][j]
+        ) /= previous_pivot
       }
     }
     sign * pivot
@@ -43,7 +49,7 @@ var matrix = [
 ]
 
 var free_terms = [-3, -32, -47, 49]
-var (w, x, y, z) = cramers_rule(matrix, free_terms)...;
+var (w, x, y, z) = cramers_rule(matrix, free_terms)...
 
 say "w = #{w}"
 say "x = #{x}"

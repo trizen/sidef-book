@@ -65,7 +65,7 @@ func evalArithmeticExp(s) {
 Testing the function:
 
 ```ruby
-[
+for expr,res in [
      ['2+3'                                      =>        5],
      ['-4-3'                                     =>       -7],
      ['-+2+3/4'                                  =>    -1.25],
@@ -73,14 +73,9 @@ Testing the function:
      ['2*(3+4)+2/4'                              => 2/4 + 14],
      ['2*-3--4+-0.25'                            =>    -2.25],
      ['2 * (3 + (4 * 5 + (6 * 7) * 8) - 9) * 10' =>     7000],
-].each { |arr|
- 
-    var (expr, res) = arr...;
+] { 
     var num = evalArithmeticExp(expr);
-    num == res || (
-            die "Error occurred on expression '#{expr}': got '#{num}' instead of '#{res}'\n";
-    );
- 
+    assert_eq(num, res);
     "%-45s == %10g\n".printf(expr, num);
 }
 ```

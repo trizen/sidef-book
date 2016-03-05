@@ -3,23 +3,24 @@
 # [Permutations by swapping][1]
 
 ```ruby
-func perms(xx) {
+func perms(n) {
    var perms = [[+1]];
-   range(1, xx).each { |x|
+   n.times { |x|
       var sign = -1;
-      perms.flat_map! { |arr|
-          var (s, *p) = arr...;
+      perms = gather {
+        for s,*p in perms {
           var r = range(0, p.len);
-          (s < 0 ? r : r.reverse).map {|i|
+          take((s < 0 ? r : r.reverse).map {|i|
             [sign *= -1, p.@[0..i-1], x, p.@[i..p.end]]
-          }
+          }...)
+        }
       }
    }
    perms;
 }
  
 var n = 4;
-perms(n).each { |p|
+for p in perms(n) {
     var s = p.shift;
     s > 0 && (s = '+1');
     say "#{p.dump} => #{s}";
