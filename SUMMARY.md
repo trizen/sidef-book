@@ -83,6 +83,7 @@
        * [Arithmetic evaluation](programming_tasks/A/Arithmetic_evaluation.md)
        * [Array concatenation](programming_tasks/A/Array_concatenation.md)
        * [Array length](programming_tasks/A/Array_length.md)
+       * [Array search](programming_tasks/A/Array_search.md)
        * [Arrays](programming_tasks/A/Arrays.md)
        * [Assertions](programming_tasks/A/Assertions.md)
        * Associative array
@@ -176,6 +177,7 @@
        * [Determine if only one instance is running](programming_tasks/D/Determine_if_only_one_instance_is_running.md)
        * Digital root
            * [Multiplicative digital root](programming_tasks/D/Digital_root/Multiplicative_digital_root.md)
+       * [Dijkstra's algorithm](programming_tasks/D/Dijkstra's_algorithm.md)
        * [Dinesman's multiple-dwelling problem](programming_tasks/D/Dinesman's_multiple-dwelling_problem.md)
        * [Discordian date](programming_tasks/D/Discordian_date.md)
        * [DNS query](programming_tasks/D/DNS_query.md)
@@ -475,6 +477,7 @@
        * [Problem of Apollonius](programming_tasks/P/Problem_of_Apollonius.md)
        * [Program name](programming_tasks/P/Program_name.md)
        * [Program termination](programming_tasks/P/Program_termination.md)
+       * [Proper divisors](programming_tasks/P/Proper_divisors.md)
        * [Pythagorean triples](programming_tasks/P/Pythagorean_triples.md)
    * Q
        * Queue
@@ -590,6 +593,7 @@
        * [Sparkline in unicode](programming_tasks/S/Sparkline_in_unicode.md)
        * [Speech synthesis](programming_tasks/S/Speech_synthesis.md)
        * [Spiral matrix](programming_tasks/S/Spiral_matrix.md)
+       * [SQL-based authentication](programming_tasks/S/SQL-based_authentication.md)
        * [Stable marriage problem](programming_tasks/S/Stable_marriage_problem.md)
        * [Stack](programming_tasks/S/Stack.md)
        * [Stair-climbing puzzle](programming_tasks/S/Stair-climbing_puzzle.md)
