@@ -19,8 +19,8 @@ class Array {
   method to_png(scale=1, bgcolor='white', fgcolor='black') {
  
     var gd = (
-      try   { require 'GD::Simple' }
-      catch { warn "GD::Simple is not installed!"; return };
+      try   { require('GD::Simple') }
+      catch { warn("GD::Simple is not installed!"); return };
     );
  
     var width = self.max_by{.len}.len;

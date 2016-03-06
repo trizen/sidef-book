@@ -3,7 +3,7 @@
 # [Table creation/Postal addresses][1]
 
 ```ruby
-require 'DBI';
+require('DBI');
  
 var db = %s'DBI'.connect('DBI:mysql:database:server','login','password');
  

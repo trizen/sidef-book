@@ -5,7 +5,7 @@
 Using the _ntheory_ library (very fast):
 
 ```ruby
-require 'ntheory';
+require('ntheory')
 func prime_factors(n) {
     [%S'ntheory'.factor(n)]
 }

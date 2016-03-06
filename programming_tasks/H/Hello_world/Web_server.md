@@ -35,7 +35,7 @@ while (var client = sock.accept) {
 A more friendly interface, using the _IO::Socket::INET_ library:
 
 ```ruby
-var inet = require 'IO::Socket::INET';
+var inet = require('IO::Socket::INET');
  
 var sock = inet.new( LocalAddr => "127.0.0.1:8080",
                      Listen    => 1,

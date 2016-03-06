@@ -3,7 +3,7 @@
 # [XML/XPath][1]
 
 ```ruby
-require 'XML::XPath';
+require('XML::XPath');
  
 var x = %s'XML::XPath'.new(ARGF.slurp);
  

@@ -3,7 +3,7 @@
 # [XML/Input][1]
 
 ```ruby
-require 'XML::Simple';
+require('XML::Simple');
  
 var ref = %S'XML::Simple'.XMLin('<Students>
   <Student Name="April" Gender="F" DateOfBirth="1989-01-02" />

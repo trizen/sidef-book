@@ -3,7 +3,7 @@
 # [Five weekends][1]
 
 ```ruby
-require 'DateTime';
+require('DateTime');
  
 var happymonths = [];
 var workhardyears = [];

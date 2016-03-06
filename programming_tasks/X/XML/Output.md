@@ -3,7 +3,7 @@
 # [XML/Output][1]
 
 ```ruby
-require 'XML::Mini::Document';
+require('XML::Mini::Document');
  
 var students = [
                 ["April",         "Bubbly: I'm > Tam and <= Emily"],

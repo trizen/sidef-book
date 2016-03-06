@@ -3,7 +3,7 @@
 # [Colour bars/Display][1]
 
 ```ruby
-require 'GD';
+require('GD');
  
 var colors = Hash.new(
               white   => [255, 255, 255],

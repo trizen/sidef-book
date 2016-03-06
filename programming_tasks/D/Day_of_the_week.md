@@ -3,9 +3,9 @@
 # [Day of the week][1]
 
 ```ruby
-var tl = frequire 'Time::Local';
+var tl = frequire('Time::Local');
  
-range(2008, 2121).each { |year|
+for year in (2008 ..^ 2121) {
     var time = tl.timelocal(0,0,0,25,11,year);
     var wd = Time.new(time).local.wday;
     if (wd == 0) {

@@ -7,7 +7,7 @@ Sidef can load and use Perl modules:
 ```ruby
 func get(url) {
     var lwp = (
-        try   { require 'LWP::UserAgent' }
+        try   { require('LWP::UserAgent') }
         catch { warn "'LWP::UserAgent' is not installed!"; return }
     );
     var ua = lwp.new(agent => 'Mozilla/5.0');

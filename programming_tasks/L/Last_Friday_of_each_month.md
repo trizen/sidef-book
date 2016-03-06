@@ -3,7 +3,7 @@
 # [Last Friday of each month][1]
 
 ```ruby
-require 'DateTime';
+require('DateTime');
 var (year=2015) = ARGV»to_i»()...;
  
 range(1, 12).each { |month|

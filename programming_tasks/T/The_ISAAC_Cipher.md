@@ -3,7 +3,7 @@
 # [The ISAAC Cipher][1]
 
 ```ruby
-require 'Math::Random::ISAAC';
+require('Math::Random::ISAAC');
  
 func xor_isaac(key, msg) {
   var rng = %s'Math::Random::ISAAC'.new(unpack('C*', key));

@@ -5,7 +5,7 @@
 Tk:
 
 ```ruby
-var tk = require 'Tk';
+var tk = require('Tk');
 var main = %s'MainWindow'.new;
 main.Button(
     '-text'    => 'Goodbye, World!',

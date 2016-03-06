@@ -3,7 +3,7 @@
 # [Semiprime][1]
 
 ```ruby
-require 'ntheory';
+require('ntheory');
  
 func is_semiprime(n) {
     static nt = %S'ntheory';

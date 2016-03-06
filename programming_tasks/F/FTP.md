@@ -3,7 +3,7 @@
 # [FTP][1]
 
 ```ruby
-require 'Net::FTP';
+require('Net::FTP');
  
 var ftp = %s'Net::FTP'.new('ftp.ed.ac.uk', Passive => 1);
 ftp.login('anonymous','email@example.com');

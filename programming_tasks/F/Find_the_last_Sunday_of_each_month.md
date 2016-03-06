@@ -3,10 +3,10 @@
 # [Find the last Sunday of each month][1]
 
 ```ruby
-var dt = require 'DateTime';
+var dt = require('DateTime');
 var (year=2015) = @ARGV.map{.to_i};
  
-range(1, 12).each { |i|
+for i in (1 .. 12) {
     var date = dt.last_day_of_month(
         year  => year,
         month => i
