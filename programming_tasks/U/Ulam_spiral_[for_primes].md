@@ -4,7 +4,6 @@
 
 ```ruby
 require('Imager');
-require('ntheory');
  
 var (n=512, start=1, file='ulam.png') = ARGV»to_i»()...;
  
@@ -22,12 +21,11 @@ var white = %s'Imager::Color'.new('#FFFFFF');
 var img = %s'Imager'.new(xsize => n, ysize => n, channels => 1);
 img.box(filled => 1, color => white);
  
-n.range.each { |y|
-    n.range.each { |x|
+for y in ^n {
+    for x in ^n {
         var v = cell(n, x, y, start);
-        %S'ntheory'.is_prime(v) && (
-            img.setpixel(x => x, y => y, color => black)
-        );
+        v.is_prime &&
+            img.setpixel(x => x, y => y, color => black);
     }
 }
  
