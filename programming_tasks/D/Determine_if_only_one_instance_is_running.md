@@ -8,7 +8,7 @@
 var fh = File.new(__FILE__).open_r;
  
 # Now call the flock() method on it
-fh.flock(File::LOCK_EX | File::LOCK_NB)
+fh.flock(File.LOCK_EX | File.LOCK_NB)
     || die "I'm already running!";
  
 # Your code here...

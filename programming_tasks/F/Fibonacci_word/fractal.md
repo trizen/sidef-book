@@ -7,7 +7,7 @@ var(m=17, scale=3) = @ARGV.map{.to_i};
  
 (var world = Hash.new){0}{0} = 1;
 var loc = Complex(0, 0);
-var dir = Complex::i;
+var dir = Complex.i;
  
 var fib = ['1', '0'];
 func fib_word(n) {
@@ -21,8 +21,8 @@ func step {
     }
 }
  
-func turn_left  { dir *=  Complex::i };
-func turn_right { dir *= -Complex::i };
+func turn_left  { dir *=  Complex.i };
+func turn_right { dir *= -Complex.i };
  
 var n = 1;
 fib_word(m).each_char { |c|
@@ -34,7 +34,7 @@ fib_word(m).each_char { |c|
 }
  
 func braille_graphics(a) {
-    var (xlo, xhi, ylo, yhi) = +([Math.inf, -Math.inf]*2)...;
+    var (xlo, xhi, ylo, yhi) = +([Inf, -Inf]*2)...;
  
     a.each_key { |y|
         ylo.min!(y.to_i);
