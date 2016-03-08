@@ -8,7 +8,7 @@ func det(a) {
     var sign = +1
     var pivot = 1
 
-    a.range.each { |k|
+    for k in ^a {
       var r = (k+1 .. a.end)
       var previous_pivot = pivot
 
@@ -31,9 +31,9 @@ func det(a) {
 
 func cramers_rule(A, terms) {
     gather {
-        A.each_index { |i|
+        for i in ^A {
             var Ai = A.map{.map{_}}
-            terms.each_index { |j|
+            for j in ^terms {
                 Ai[j][i] = terms[j]
             }
             take(det(Ai))
