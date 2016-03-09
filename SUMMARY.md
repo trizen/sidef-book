@@ -520,6 +520,7 @@
            * [Fix code tags](programming_tasks/R/Rosetta_Code/Fix_code_tags.md)
            * [Rank languages by popularity](programming_tasks/R/Rosetta_Code/Rank_languages_by_popularity.md)
        * [Rot-13](programming_tasks/R/Rot-13.md)
+       * [RSA code](programming_tasks/R/RSA_code.md)
        * [Run-length encoding](programming_tasks/R/Run-length_encoding.md)
        * [Runge-Kutta method](programming_tasks/R/Runge-Kutta_method.md)
        * [Runtime evaluation](programming_tasks/R/Runtime_evaluation.md)
