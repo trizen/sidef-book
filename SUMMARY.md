@@ -190,6 +190,7 @@
        * [Draw a sphere](programming_tasks/D/Draw_a_sphere.md)
        * [Dynamic variable names](programming_tasks/D/Dynamic_variable_names.md)
    * E
+       * [Egyptian fractions](programming_tasks/E/Egyptian_fractions.md)
        * [Elementary cellular automaton](programming_tasks/E/Elementary_cellular_automaton.md)
            * [Infinite length](programming_tasks/E/Elementary_cellular_automaton/Infinite_length.md)
            * [Random Number Generator](programming_tasks/E/Elementary_cellular_automaton/Random_Number_Generator.md)
