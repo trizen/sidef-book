@@ -341,6 +341,7 @@
            * [Continuous](programming_tasks/K/Knapsack_problem/Continuous.md)
            * [Unbounded](programming_tasks/K/Knapsack_problem/Unbounded.md)
        * [Knuth's algorithm S](programming_tasks/K/Knuth's_algorithm_S.md)
+       * [Knuth's power tree](programming_tasks/K/Knuth's_power_tree.md)
        * [Knuth shuffle](programming_tasks/K/Knuth_shuffle.md)
    * L
        * [Langton's ant](programming_tasks/L/Langton's_ant.md)
@@ -488,11 +489,14 @@
        * [Quickselect algorithm](programming_tasks/Q/Quickselect_algorithm.md)
        * [Quine](programming_tasks/Q/Quine.md)
    * R
+       * [Ramsey's theorem](programming_tasks/R/Ramsey's_theorem.md)
        * [Random number generator [device]](programming_tasks/R/Random_number_generator_[device].md)
        * [Random numbers](programming_tasks/R/Random_numbers.md)
        * [Range expansion](programming_tasks/R/Range_expansion.md)
        * [Rate counter](programming_tasks/R/Rate_counter.md)
        * [Read a configuration file](programming_tasks/R/Read_a_configuration_file.md)
+       * Read a file character by character
+           * [UTF8](programming_tasks/R/Read_a_file_character_by_character/UTF8.md)
        * [Read a file line by line](programming_tasks/R/Read_a_file_line_by_line.md)
        * [Read a specific line from a file](programming_tasks/R/Read_a_specific_line_from_a_file.md)
        * [Read entire file](programming_tasks/R/Read_entire_file.md)
@@ -604,6 +608,7 @@
        * [Standard deviation](programming_tasks/S/Standard_deviation.md)
        * Statistics
            * [Basic](programming_tasks/S/Statistics/Basic.md)
+           * [Normal distribution](programming_tasks/S/Statistics/Normal_distribution.md)
        * [Stem-and-leaf plot](programming_tasks/S/Stem-and-leaf_plot.md)
        * [Stern-Brocot sequence](programming_tasks/S/Stern-Brocot_sequence.md)
        * [String append](programming_tasks/S/String_append.md)
@@ -621,6 +626,7 @@
        * Strip whitespace from a string
            * [Top and tail](programming_tasks/S/Strip_whitespace_from_a_string/Top_and_tail.md)
        * [Subleq](programming_tasks/S/Subleq.md)
+       * [Subset sum problem](programming_tasks/S/Subset_sum_problem.md)
        * [Substring](programming_tasks/S/Substring.md)
            * [Top and tail](programming_tasks/S/Substring/Top_and_tail.md)
        * [Subtractive generator](programming_tasks/S/Subtractive_generator.md)
@@ -682,6 +688,7 @@
    * V
        * [Van der Corput sequence](programming_tasks/V/Van_der_Corput_sequence.md)
        * [Variadic function](programming_tasks/V/Variadic_function.md)
+       * [Vector](programming_tasks/V/Vector.md)
        * [Vector products](programming_tasks/V/Vector_products.md)
        * [Vigenère cipher](programming_tasks/V/Vigenère_cipher.md)
        * [Visualize a tree](programming_tasks/V/Visualize_a_tree.md)
