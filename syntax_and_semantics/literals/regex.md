@@ -9,5 +9,5 @@ A Regex object represents a regular expression, which is fully Perl5 compatible.
 Alternatively, one can write:
 
 ```ruby
-Regex('^my?\s*re(g|[ex])\z', 'i');
+Regex('^my?\s*re(g|[ex])\z', 'i')
 ```

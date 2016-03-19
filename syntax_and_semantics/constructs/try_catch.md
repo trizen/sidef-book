@@ -4,7 +4,7 @@ A `try/catch` construct it's used to try an unsafe block of code and catch any u
 
 ```ruby
 try {
-    "string".some_undefined_method
+    "foo".some_undefined_method
 }
 catch { |type, msg|
     say "Catched the following #{type}: #{msg}"
@@ -14,5 +14,5 @@ catch { |type, msg|
 #### Output:
 
 ```
-Catched the following error: Undefined method: Sidef::Types::String::String::some_undefined_method at /Sidef/lib/Sidef.pm line 57.
+Catched the following error: Undefined method `String.some_undefined_method' called from ...
 ```

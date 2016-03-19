@@ -3,7 +3,7 @@
 A `do/while` construct guarantees the execution of the block at least once.
 
 ```ruby
-var name;
+var name = ''
 
 do {
     name = read("username: ", String)

@@ -3,26 +3,20 @@
 A method is a distinct function defined for a specific type of object. There may be methods that share the same name, but each pointing at different functions, depending on the type of the object on which they are invoked.
 
 ```ruby
-"string".length;    # String.length()
-[1,2,3].length;     # Array.length()
+"string".length     # String.length()
+[1,2,3].length      # Array.length()
 ```
 
 The methods can also be invoked using the prefix notation:
 
 ```ruby
-length("string");
-length([1,2,3]);
+length("string")
+length([1,2,3])
 ```
 
-The parentheses are optional when the method is invoked with only one argument.
+The prefix and postfix notations can be used interchangeably:
 
 ```ruby
-int 12.5;   # means: int(12.5)
-```
-
-The prefix and postfix notations can be combined:
-
-```ruby
-say "string".length;    # means: "string".length.say
-length("string").say;   # =//=
+log("string".length)    # means: "string".length.log
+length("string").log    # =//=
 ```
