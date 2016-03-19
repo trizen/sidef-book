@@ -578,6 +578,7 @@
            * [Cocktail sort](programming_tasks/S/Sorting_algorithms/Cocktail_sort.md)
            * [Comb sort](programming_tasks/S/Sorting_algorithms/Comb_sort.md)
            * [Counting sort](programming_tasks/S/Sorting_algorithms/Counting_sort.md)
+           * [Cycle sort](programming_tasks/S/Sorting_algorithms/Cycle_sort.md)
            * [Gnome sort](programming_tasks/S/Sorting_algorithms/Gnome_sort.md)
            * [Heapsort](programming_tasks/S/Sorting_algorithms/Heapsort.md)
            * [Insertion sort](programming_tasks/S/Sorting_algorithms/Insertion_sort.md)
