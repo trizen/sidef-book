@@ -8,7 +8,7 @@ var primes = (^Inf -> lazy.grep{.is_prime})
 var upto = 1e6
 var conspiracy = Hash()
  
-primes.first(upto).reduce { |a,b|
+primes.first(upto+1).reduce { |a,b|
     var d = b%10
     conspiracy{"#{a} → #{d}"} := 0 ++
     d
@@ -29,7 +29,7 @@ for k,v in (conspiracy.sort_by{|k,_v| k }) {
 3 → 1 count: 58,255     frequency: 5.83 %
 3 → 3 count: 39,668     frequency: 3.97 %
 3 → 5 count:      1     frequency: 0.00 %
-3 → 7 count: 72,827     frequency: 7.28 %
+3 → 7 count: 72,828     frequency: 7.28 %
 3 → 9 count: 79,358     frequency: 7.94 %
 5 → 7 count:      1     frequency: 0.00 %
 7 → 1 count: 64,230     frequency: 6.42 %
