@@ -100,6 +100,7 @@
            * [Simple moving average](programming_tasks/A/Averages/Simple_moving_average.md)
    * B
        * [Balanced brackets](programming_tasks/B/Balanced_brackets.md)
+       * [Barnsley fern](programming_tasks/B/Barnsley_fern.md)
        * [Base64 encode data](programming_tasks/B/Base64_encode_data.md)
        * [Benford's law](programming_tasks/B/Benford's_law.md)
        * [Bernoulli numbers](programming_tasks/B/Bernoulli_numbers.md)
