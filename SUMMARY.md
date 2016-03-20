@@ -473,6 +473,7 @@
        * [Power set](programming_tasks/P/Power_set.md)
        * [Price fraction](programming_tasks/P/Price_fraction.md)
        * [Primality by trial division](programming_tasks/P/Primality_by_trial_division.md)
+       * [Prime conspiracy](programming_tasks/P/Prime_conspiracy.md)
        * [Prime decomposition](programming_tasks/P/Prime_decomposition.md)
        * [Primorial numbers](programming_tasks/P/Primorial_numbers.md)
        * [Priority queue](programming_tasks/P/Priority_queue.md)
