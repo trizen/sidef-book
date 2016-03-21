@@ -302,6 +302,7 @@
        * [Hofstadter Figure-Figure sequences](programming_tasks/H/Hofstadter_Figure-Figure_sequences.md)
        * [Hofstadter Q sequence](programming_tasks/H/Hofstadter_Q_sequence.md)
        * [Holidays related to Easter](programming_tasks/H/Holidays_related_to_Easter.md)
+       * [Honeycombs](programming_tasks/H/Honeycombs.md)
        * [Horizontal sundial calculations](programming_tasks/H/Horizontal_sundial_calculations.md)
        * [Horner's rule for polynomial evaluation](programming_tasks/H/Horner's_rule_for_polynomial_evaluation.md)
        * [Hostname](programming_tasks/H/Hostname.md)
