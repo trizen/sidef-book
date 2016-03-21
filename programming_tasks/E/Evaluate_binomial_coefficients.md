@@ -6,15 +6,15 @@ Straightforward translation of the formula:
 
 ```ruby
 func binomial(n,k) {
-    n! / ((n-k)! * k!);
+    n! / ((n-k)! * k!)
 }
  
-say binomial(400, 200);
+say binomial(400, 200)
 ```
 
 
 Alternatively, by using the _Number.nok()_ method:
 
 ```ruby
-say 400.nok(200);
+say 400.nok(200)
 ```
