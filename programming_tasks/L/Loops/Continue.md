@@ -4,11 +4,11 @@
 
 ```ruby
 for (1..10) { |i|
-    print i;
+    print i
     if (i %% 5) {
-        print "\n";
-        next;
-    };
-    print ', ';
+        print "\n"
+        next
+    }
+    print ', '
 }
 ```

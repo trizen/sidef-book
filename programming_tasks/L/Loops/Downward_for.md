@@ -2,17 +2,26 @@
 
 # [Loops/Downward for][1]
 
+*for(;;)* loop:
+
 ```ruby
 for (var i = 10; i >= 0; i--) {
-    say i;
+    say i
 }
 ```
 
+*for-in* loop:
 
-Idiomatic:
+```ruby
+for i in (10 ^.. 0) {
+    say i
+}
+```
+
+*.each* method:
 
 ```ruby
 10.downto(0).each { |i|
-    say i;
+    say i
 }
 ```

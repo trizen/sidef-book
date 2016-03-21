@@ -3,10 +3,10 @@
 # [Loops/Break][1]
 
 ```ruby
-var lim = 20;
+var lim = 20
 loop {
-    say (var n = lim.rand.int);
-    n == 10 && break;
-    say lim.rand.int;
+    say (var n = lim.rand.int)
+    n == 10 && break
+    say lim.rand.int
 }
 ```

@@ -2,17 +2,27 @@
 
 # [Loops/Foreach][1]
 
+*foreach* loop:
+
 ```ruby
 foreach [1,2,3] { |i|
-    say i;
+    say i
 }
 ```
 
+*for-in* loop:
 
-same as:
+```ruby
+for i in [1,2,3] {
+    say i
+}
+```
+
+*.each* method:
+
 
 ```ruby
 [1,2,3].each { |i|
-    say i;
+    say i
 }
 ```

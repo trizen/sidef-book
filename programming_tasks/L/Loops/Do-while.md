@@ -3,8 +3,8 @@
 # [Loops/Do-while][1]
 
 ```ruby
-var value = 0;
+var value = 0
 do {
-    say ++value;
-} while (value % 6);
+    say ++value
+} while (value % 6)
 ```
