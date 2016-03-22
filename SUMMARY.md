@@ -45,6 +45,8 @@
    * [Methods](syntax_and_semantics/methods.md)
    * [Operator precedence](syntax_and_semantics/operator_precedence.md)
    * [Method precedence](syntax_and_semantics/method_precedence.md)
+   * [Types](syntax_and_semantics/types.md)
+   * [Subsets](syntax_and_semantics/subsets.md)
    * [Multiple dispatch](syntax_and_semantics/multiple_dispatch.md)
    * [Functional pattern matching](syntax_and_semantics/pattern_matching.md)
 * [Programming tasks](programming_tasks/README.md)

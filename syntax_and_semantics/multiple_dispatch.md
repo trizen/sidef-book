@@ -25,8 +25,7 @@ func foo(Hash h)  { ... }       # works with an hash
 func foo(any)     { ... }       # works with anything else
 ```
 
-This is true for methods as well:
-
+It also works with methods:
 
 ```ruby
 class Example {
