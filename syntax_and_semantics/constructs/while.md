@@ -1,6 +1,6 @@
 # while
 
-The `while` construct is almost the same as the `if` construct, but it continues to evaluate the given block while the expression is true.
+The `while` construct is almost like the `if` construct, except that it will keep executing its block as long the given expression is true.
 
 
 ```ruby
