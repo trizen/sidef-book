@@ -12,13 +12,13 @@ class MyInt(value < MyIntLimit) {
     method get_value { value.get_value }
 
     method AUTOLOAD(_, name, *args) {
-        var result = value.(name)(args.map {|n| Number(n) }...)
-        result.kind_of(Number) ? MyInt(result.int) : result
+        var results = [value.(name)(args.map {|n| Number(n) }...)]
+        results.map{|r| r.kind_of(Number) ? MyInt(r.int) : r}...
     }
 }
 
 #
-## Tests:
+## Example:
 #
 var a = MyInt(2)    # creates a new object of type `MyInt`
 a += 7              # adds 7 to a
@@ -30,9 +30,11 @@ say b               # => 6
 
 say a.as_hex.dump   # => "9" -- an hexadecimal string
 
-a -= 7              # a=2
-say (a + b)         # => 8 -- the result of (2 + 6)
+a -= 6              # a=3
+var c = (a + b)     # MyInt(3) + MyInt(6)
+say c               # => 9
+say c.class         # => MyInt
 
-a += 4              # a=6
+a *= 2              # a=6
 say a+b             # error: class `MyInt` does not match MyInt(12)
 ```
