@@ -31,7 +31,7 @@ class Hey < Hi {
 }
 ```
 
-If we declare a function that accepts a subset of `Hi`, it can also accept `Hello`, but it cannot accept `Hey`:
+If we declare a function that accepts a subset of `Hi`, it will accept `Hello`, but it cannot accept `Hey`:
 
 ```ruby
 func greet(obj < Hi) { obj.greet }       # `Hi` is the upper limit

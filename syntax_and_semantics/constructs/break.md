@@ -3,7 +3,7 @@
 The `break` statement is used to exit early from loops.
 
 ```ruby
-var set_of_numbers = 0..100;
+var set_of_numbers = 0..100
 
 for n in set_of_numbers {
     if is_prime(n) {
