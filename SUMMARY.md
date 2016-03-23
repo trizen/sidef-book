@@ -63,6 +63,7 @@
        * [A B](programming_tasks/A/A_B.md)
        * [ABC Problem](programming_tasks/A/ABC_Problem.md)
        * [Abstract type](programming_tasks/A/Abstract_type.md)
+       * [Abundant  deficient and perfect number classifications](programming_tasks/A/Abundant__deficient_and_perfect_number_classifications.md)
        * [Accumulator factory](programming_tasks/A/Accumulator_factory.md)
        * [Ackermann function](programming_tasks/A/Ackermann_function.md)
        * [Add a variable to a class instance at runtime](programming_tasks/A/Add_a_variable_to_a_class_instance_at_runtime.md)
