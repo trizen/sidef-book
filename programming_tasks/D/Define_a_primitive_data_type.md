@@ -11,6 +11,9 @@ class MyInt(value < MyIntLimit) {
     method to_s      { value.to_s }
     method get_value { value.get_value }
 
+    method ==(Number x) { value == x }
+    method ==(MyInt  x) { value == x.value }
+
     method AUTOLOAD(_, name, *args) {
         var results = [value.(name)(args.map {|n| Number(n) }...)]
         results.map{|r| r.kind_of(Number) ? MyInt(r.int) : r}...
