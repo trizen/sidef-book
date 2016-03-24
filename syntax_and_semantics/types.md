@@ -15,7 +15,7 @@ say concat("x", "y");  # ok
 say concat(1, 2);      # run-time error
 ```
 
-The typed parameters require a specific type of object, but they do not default to anything when no value is provided. This means that all the typed-parameters are mandatory, unless a default value is provided:
+The typed parameters require a specific type of object, but they do not default to anything when no value is provided. This means that all typed-parameters are mandatory, unless a default value is provided:
 
 ```ruby
 func concat(String a="foo", String b="bar") {
