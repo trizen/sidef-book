@@ -9,7 +9,7 @@ class Graph(*args) {
         String name,
         Array edges = [],
         Number dist = Inf,
-        prev = nil,
+        Node prev = nil,
         Bool visited = false,
     }
  
