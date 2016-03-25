@@ -113,6 +113,7 @@
        * [Binary search](programming_tasks/B/Binary_search.md)
        * Bitmap
            * [Bresenham's line algorithm](programming_tasks/B/Bitmap/Bresenham's_line_algorithm.md)
+           * [Write a PPM file](programming_tasks/B/Bitmap/Write_a_PPM_file.md)
        * [Bitwise operations](programming_tasks/B/Bitwise_operations.md)
        * [Boolean values](programming_tasks/B/Boolean_values.md)
        * [Box the compass](programming_tasks/B/Box_the_compass.md)
