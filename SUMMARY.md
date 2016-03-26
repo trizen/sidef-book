@@ -336,6 +336,7 @@
        * [JortSort](programming_tasks/J/JortSort.md)
        * [Josephus problem](programming_tasks/J/Josephus_problem.md)
        * [JSON](programming_tasks/J/JSON.md)
+       * [Julia set](programming_tasks/J/Julia_set.md)
    * K
        * [K-d tree](programming_tasks/K/K-d_tree.md)
        * [Kaprekar numbers](programming_tasks/K/Kaprekar_numbers.md)
