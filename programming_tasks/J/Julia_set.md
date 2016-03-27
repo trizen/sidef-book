@@ -16,7 +16,7 @@ var color = %s'Imager::Color'.new('#000000')
 for x,y in (^w ~X ^h) {
     var i = maxIter
     var z = Complex((x - w/2) / w * 3, (y - h/2) / h * 2)
-    while (z.abs < 4 && --i) {
+    while (z.abs < 2 && --i) {
         z = (z*z + c)
     }
     color.set(hsv => [i / maxIter * 360, 1, i])
