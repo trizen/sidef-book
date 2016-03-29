@@ -102,6 +102,7 @@
            * [Pythagorean means](programming_tasks/A/Averages/Pythagorean_means.md)
            * [Root mean square](programming_tasks/A/Averages/Root_mean_square.md)
            * [Simple moving average](programming_tasks/A/Averages/Simple_moving_average.md)
+       * [AVL tree](programming_tasks/A/AVL_tree.md)
    * B
        * [Balanced brackets](programming_tasks/B/Balanced_brackets.md)
        * [Barnsley fern](programming_tasks/B/Barnsley_fern.md)
