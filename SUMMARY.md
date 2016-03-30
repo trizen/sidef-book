@@ -578,6 +578,7 @@
            * [Element insertion](programming_tasks/S/Singly-linked_list/Element_insertion.md)
            * [Traversal](programming_tasks/S/Singly-linked_list/Traversal.md)
        * [Sleep](programming_tasks/S/Sleep.md)
+       * [Snake](programming_tasks/S/Snake.md)
        * [Sockets](programming_tasks/S/Sockets.md)
        * [Sort an array of composite structures](programming_tasks/S/Sort_an_array_of_composite_structures.md)
        * [Sort an integer array](programming_tasks/S/Sort_an_integer_array.md)
