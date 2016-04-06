@@ -6,60 +6,56 @@ Creates a PNG image.
 
 ```ruby
 func sierpinski_triangle(n) -> Array {
-  var triangle = ['*'];
+  var triangle = ['*']
   { |i|
     var sp = (' ' * Math.pow(2, i-1));
     triangle = (triangle.map {|x| sp + x + sp} +
-                triangle.map {|x| x + ' ' + x});
-  } * n;
-  triangle;
+                triangle.map {|x| x + ' ' + x})
+  } * n
+  triangle
 }
- 
+
 class Array {
   method to_png(scale=1, bgcolor='white', fgcolor='black') {
- 
+
     var gd = (
       try   { require('GD::Simple') }
-      catch { warn("GD::Simple is not installed!"); return };
+      catch { warn "GD::Simple is not installed!"; return }
     );
- 
-    var width = self.max_by{.len}.len;
-    self.map!{|r| "%-#{width}s" % r};
- 
-    var img = gd.new(width * scale, self.len * scale);
- 
-    self.range.each { |i|
-      range(i * scale, i * scale + scale).each { |j|
-        var row = self[i];
-        img.moveTo(0, j);
-        loop {
-          if ((var sp = row.count(/^\s+/)) > 0) {
-             row.substr!(sp);
-             img.fgcolor(bgcolor);
-             img.line(scale * sp);
+
+    var width = self.max_by{.len}.len
+    self.map!{|r| "%-#{width}s" % r}
+
+    var img = gd.new(width * scale, self.len * scale)
+
+    for i in ^self {
+      for j in RangeNum(i*scale, i*scale + scale) {
+        var row = self[i]
+        img.moveTo(0, j)
+        var len = row.len
+        while (len) {
+          row.gsub!(/^\s+/)
+          var color = bgcolor
+          if (len == row.len) {
+            row.gsub!(/^\S+/)
+            color = fgcolor
           }
-          elsif ((var nsp = row.count(/^\S+/)) > 0) {
-             row.substr!(nsp);
-             img.fgcolor(fgcolor);
-             img.line(scale * nsp);
-          }
-          else {
-             break;
-          }
+          img.fgcolor(color)
+          var p = len-row.len
+          len = row.len
+          img.line(scale * p)
         }
       }
     }
- 
-    return img.png;
+    img.png
   }
 }
- 
-var triangle = sierpinski_triangle(8);
-var raw_png = triangle.to_png(bgcolor:'black', fgcolor:'red');
- 
-var file = %f'triangle.png';
-file.open('>:raw', \var fh, \var err)
-    || die "Can't write to file '#{file}': #{err}";
-fh.print(raw_png);
-fh.close;
+
+var triangle = sierpinski_triangle(8)
+var raw_png = triangle.to_png(bgcolor:'black', fgcolor:'red')
+
+var file = %f'triangle.png'
+var fh = file.open('>:raw')
+fh.print(raw_png)
+fh.close
 ```
