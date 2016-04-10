@@ -44,7 +44,7 @@ greet(Hey("Baz"))       # fail: `Hey` is too evolved
 On the other hand, if we use `Hi` as a type assertion, it will accept `Hey`, but not `Hello`:
 
 ```ruby
-func greet(Hi > obj) { obj.greet }       # `Hi` is the lower limit
+func greet(Hi obj) { obj.greet }         # `Hi` is the lower limit
 
 greet(Hi("Foo"))        # ok
 greet(Hey("Baz"))       # ok
