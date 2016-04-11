@@ -16,8 +16,14 @@ var n = 1+2         # correct
 var n = (1 + 2)     # correct
 ```
 
-When no precedence is declared, the order of operations is from left to right:
+When no precedence is defined, the order of operations is from left to right:
 
 ```ruby
-var n = (1 + 2 * 3)       # means: ((1 + 2) * 3)
+1 + 2 * 3       # means: ((1 + 2) * 3)
+```
+
+On the other hand, when too much precedence is defined, the order is from right to left:
+
+```ruby
+1+2*3           # means: (1 + (2 * 3))
 ```
