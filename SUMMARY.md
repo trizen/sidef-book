@@ -152,6 +152,7 @@
        * [Compile-time calculation](programming_tasks/C/Compile-time_calculation.md)
        * [Compound data type](programming_tasks/C/Compound_data_type.md)
        * [Concurrent computing](programming_tasks/C/Concurrent_computing.md)
+       * [Constrained genericity](programming_tasks/C/Constrained_genericity.md)
        * [Constrained random points on a circle](programming_tasks/C/Constrained_random_points_on_a_circle.md)
        * [Continued fraction](programming_tasks/C/Continued_fraction.md)
            * Arithmetic
