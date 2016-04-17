@@ -27,7 +27,7 @@ say fib(12)    # prints: 144
 In addition, instead of an expression, we can specify a block of code, which will get called with the value of the argument for checking:
 
 ```ruby
-func fib({.is_neg})  { Number.nan }
+func fib({.is_neg})  { NaN }
 func fib({.is_zero}) { 0 }
 func fib({.is_one})  { 1 }
 func fib(n)          { fib(n-1) + fib(n-2) }
@@ -38,8 +38,8 @@ say fib(12)    # prints: 144
 To keep the value of the argument, we can specify a name for the parameter in front of the block used for pattern matching:
 
 ```ruby
-func fib(n { _ <= 1}) { n }
-func fib(n)           { fib(n-1) + fib(n-2) }
+func fib(n { _ <= 1 }) { n }
+func fib(n)            { fib(n-1) + fib(n-2) }
 
 say fib(12)    # prints: 144
 ```
