@@ -38,7 +38,7 @@ Meow
 ...
 ```
 
-Inheritance of behaviors and attributes is declared with the `<` operator, followed by the name of the class from which the current class inherits. Multiple inheritance is supported by provided two or more classes separated by commas:
+Inheritance of behaviors and attributes is declared with the `<` operator, followed by the name of the class from which the current class inherits. Multiple inheritance is declared with `<<` operator, followed by two or more class names, separated by commas:
 
 ```ruby
 class Camera { }
