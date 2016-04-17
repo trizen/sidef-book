@@ -2,6 +2,8 @@
 
 A class is a declaration of a constructor of objects with a specific type. Each object has zero or more attributes (instance variables) with zero or more behaviours (methods), that are defined inside a specific class or inherited from super-classes.
 
+Inheritance of behaviors and attributes, by a given class, is declared with the `<` operator, followed by the name of the class from which the current class inherits:
+
 ```ruby
 class Animal(name) {
     method speak {
@@ -38,7 +40,7 @@ Meow
 ...
 ```
 
-Inheritance of behaviors and attributes is declared with the `<` operator, followed by the name of the class from which the current class inherits. Multiple inheritance is declared with `<<` operator, followed by two or more class names, separated by commas:
+Multiple inheritance is declared with the `<<` operator, followed by two or more class names, separated by commas:
 
 ```ruby
 class Camera { }
