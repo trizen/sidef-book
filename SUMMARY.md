@@ -45,6 +45,7 @@
    * [Methods](syntax_and_semantics/methods.md)
    * [Operator precedence](syntax_and_semantics/operator_precedence.md)
    * [Method precedence](syntax_and_semantics/method_precedence.md)
+   * [Classes](syntax_and_semantics/classes.md)
    * [Types](syntax_and_semantics/types.md)
    * [Subsets](syntax_and_semantics/subsets.md)
    * [Lazy evaluation](syntax_and_semantics/lazy_evaluation.md)

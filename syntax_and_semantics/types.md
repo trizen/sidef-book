@@ -27,7 +27,7 @@ say concat("mini")    # prints: "minibar"
 say concat(1, 2)      # this is still a run-time error
 ```
 
-An user-defined type is just a class:
+An user-defined type is a class:
 
 ```ruby
 class Point(Number x, Number y) {
