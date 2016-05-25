@@ -5,14 +5,14 @@ Sidef v2.25 introduced support for precompilation, by saving each compiled code 
 
 This method reduces significantly the boot-time of Sidef programs, and it works as follows:
 
-    * checks the database with the MD5 of the code
-    * if the MD5 exists inside the database, it returns the executable code
+* it checks the database with the MD5 of the code
+* if the MD5 exists inside the database, it returns the executable code
 
 
 otherwise:
 
-    * parses the code and generates the executable code
-    * stores the executable code inside the database and returns it
+* parses the code and generates the executable code
+* stores the executable code inside the database and returns it
 
 
 Next time when the same code is executed, Sidef will simply retrieve the executable code from the database, without parsing or generating any new executable code.
