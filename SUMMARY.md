@@ -14,6 +14,7 @@
    * [Dumping the AST](sidef_interpreter/dump_ast.md)
    * [Optimization](sidef_interpreter/optimization.md)
    * [Deparsing](sidef_interpreter/deparsing.md)
+   * [Precompilation](sidef_interpreter/precompilation.md)
    * [Compilation](sidef_interpreter/compilation.md)
 * [Syntax and semantics](syntax_and_semantics/README.md)
    * [Comments](syntax_and_semantics/comments.md)
