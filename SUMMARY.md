@@ -246,6 +246,7 @@
        * [Filter](programming_tasks/F/Filter.md)
        * [Find common directory path](programming_tasks/F/Find_common_directory_path.md)
        * [Find duplicate files](programming_tasks/F/Find_duplicate_files.md)
+       * [Find largest left truncatable prime in a given base](programming_tasks/F/Find_largest_left_truncatable_prime_in_a_given_base.md)
        * [Find limit of recursion](programming_tasks/F/Find_limit_of_recursion.md)
        * [Find the last Sunday of each month](programming_tasks/F/Find_the_last_Sunday_of_each_month.md)
        * [Find the missing permutation](programming_tasks/F/Find_the_missing_permutation.md)
@@ -394,6 +395,7 @@
            * [Nested](programming_tasks/L/Loops/Nested.md)
            * [While](programming_tasks/L/Loops/While.md)
        * [Lucas-Lehmer test](programming_tasks/L/Lucas-Lehmer_test.md)
+       * [Ludic numbers](programming_tasks/L/Ludic_numbers.md)
        * [Luhn test of credit card numbers](programming_tasks/L/Luhn_test_of_credit_card_numbers.md)
        * [LZW compression](programming_tasks/L/LZW_compression.md)
    * M
