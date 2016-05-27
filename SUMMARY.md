@@ -506,6 +506,7 @@
    * R
        * [Ramsey's theorem](programming_tasks/R/Ramsey's_theorem.md)
        * [Random number generator [device]](programming_tasks/R/Random_number_generator_[device].md)
+       * [Random number generator [included]](programming_tasks/R/Random_number_generator_[included].md)
        * [Random numbers](programming_tasks/R/Random_numbers.md)
        * [Range expansion](programming_tasks/R/Range_expansion.md)
        * [Rate counter](programming_tasks/R/Rate_counter.md)
@@ -690,6 +691,7 @@
        * [Truth table](programming_tasks/T/Truth_table.md)
    * U
        * [Ulam spiral [for primes]](programming_tasks/U/Ulam_spiral_[for_primes].md)
+       * [Unbias a random generator](programming_tasks/U/Unbias_a_random_generator.md)
        * [Undefined values](programming_tasks/U/Undefined_values.md)
        * [Unicode strings](programming_tasks/U/Unicode_strings.md)
        * [Unicode variable names](programming_tasks/U/Unicode_variable_names.md)
