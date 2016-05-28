@@ -4,11 +4,11 @@
 
 ```ruby
 func dsort(m, n) {
-    var h = Hash.new;
-    n.each {|item| h{item} := 0 ++ };
-    m.map  {|item| h{item} := 0 -- > 0 ? n.shift : item};
+    var h = Hash()
+    n.each {|item| h{item} := 0 ++ }
+    m.map  {|item| h{item} := 0 -- > 0 ? n.shift : item}
 }
- 
+
 <<'EOT'.lines.each { |line|
         the cat sat on the mat  | mat cat
         the cat sat on the mat  | cat mat
@@ -18,8 +18,8 @@ func dsort(m, n) {
         A B                     | B A
         A B B A                 | B A
 EOT
-        var (a, b) = line.split('|').map{.words}...;
-        say "#{a} | #{b} -> #{dsort(a.copy, b.copy)}";
+        var (a, b) = line.split('|').map{.words}...
+        say "#{a.to_s} | #{b.to_s} -> #{dsort(a.clone, b.clone).to_s}"
 }
 ```
 

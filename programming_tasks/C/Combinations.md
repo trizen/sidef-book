@@ -10,7 +10,7 @@ func combine(n, set) {
  
     var (head, result);
     head   = set.shift;
-    result = __FUNC__(n-1, set.copy);
+    result = __FUNC__(n-1, [set...]);
  
     result.each { |subarray|
         subarray.prepend(head);

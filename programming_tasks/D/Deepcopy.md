@@ -5,7 +5,7 @@
 _Sys.copy()_ returns a deep clone of any object.
 
 ```ruby
-var src = Hash.new(foo => 0, bar => [0,1]);
+var src = Hash(foo => 0, bar => [0,1]);
  
 # Add a cyclic reference
 src{:baz} = src;
