@@ -2,24 +2,24 @@
 
 # [Deepcopy][1]
 
-_Sys.copy()_ returns a deep clone of any object.
+_Object.dclone()_ returns a deep clone of any mutable object.
 
 ```ruby
-var src = Hash(foo => 0, bar => [0,1]);
- 
+var src = Hash(foo => 0, bar => [0,1])
+
 # Add a cyclic reference
-src{:baz} = src;
- 
-# Make a copy
-var dst = Sys.copy(src);
- 
+src{:baz} = src
+
+# Make a deep clone
+var dst = src.dclone
+
 # The address of src
-say Sys.refaddr(src);
-say Sys.refaddr(src{:baz});
- 
+say src.object_id
+say src{:baz}.object_id
+
 # The address of dst
-say Sys.refaddr(dst);
-say Sys.refaddr(dst{:baz});
+say dst.object_id
+say dst{:baz}.object_id
 ```
 
 #### Output:
