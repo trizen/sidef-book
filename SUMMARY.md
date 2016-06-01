@@ -456,12 +456,14 @@
    * P
        * [Palindrome detection](programming_tasks/P/Palindrome_detection.md)
        * [Pangram checker](programming_tasks/P/Pangram_checker.md)
+       * [Parallel calculations](programming_tasks/P/Parallel_calculations.md)
        * Parsing
            * [RPN calculator algorithm](programming_tasks/P/Parsing/RPN_calculator_algorithm.md)
            * [RPN to infix conversion](programming_tasks/P/Parsing/RPN_to_infix_conversion.md)
            * [Shunting-yard algorithm](programming_tasks/P/Parsing/Shunting-yard_algorithm.md)
        * [Partial function application](programming_tasks/P/Partial_function_application.md)
        * [Pascal's triangle](programming_tasks/P/Pascal's_triangle.md)
+           * [Puzzle](programming_tasks/P/Pascal's_triangle/Puzzle.md)
        * [Pascal matrix generation](programming_tasks/P/Pascal_matrix_generation.md)
        * Percolation
            * [Mean run density](programming_tasks/P/Percolation/Mean_run_density.md)
