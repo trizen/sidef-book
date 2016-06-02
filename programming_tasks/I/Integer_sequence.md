@@ -5,5 +5,5 @@
 No limit:
 
 ```ruby
-{|i| say i } * Math.inf;
+{|i| say i } * Inf;
 ```

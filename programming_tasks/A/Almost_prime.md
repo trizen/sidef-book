@@ -13,7 +13,7 @@ func is_k_almost_prime(n, k) {
 5.times { |k|
     var x = 10
     say gather {
-        Math.inf.times { |i|
+        Inf.times { |i|
             if (is_k_almost_prime(i, k)) {
                 take(i); (--x).is_zero && break;
             }

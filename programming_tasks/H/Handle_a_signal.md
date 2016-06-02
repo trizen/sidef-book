@@ -13,7 +13,7 @@ Sig.INT {
 { |i|
     Sys.say(i);
     Sys.sleep(0.5);
-} * Math.inf;
+} * Inf;
 ```
 
 #### Output:

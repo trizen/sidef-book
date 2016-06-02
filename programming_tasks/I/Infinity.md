@@ -11,7 +11,7 @@ var b = -1.5/0;       # -inf
 say b.is_inf;         # true
 say b.is_neg;         # true
  
-var inf = Math.inf;
-var ninf = -Math.inf;
+var inf = Inf;
+var ninf = -Inf;
 say (inf == -ninf);   # true
 ```

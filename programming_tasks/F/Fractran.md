@@ -15,7 +15,7 @@ func runner(n, callback) {
 
 func prime_generator(n, callback) {
     var x = 0;
-    runner(Math.inf, { |num|
+    runner(Inf, { |num|
         var l = num.log2
         if (l.floor == l) {
             callback(l.int)
