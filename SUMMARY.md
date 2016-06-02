@@ -332,6 +332,7 @@
        * [Input loop](programming_tasks/I/Input_loop.md)
        * [Integer comparison](programming_tasks/I/Integer_comparison.md)
        * [Integer overflow](programming_tasks/I/Integer_overflow.md)
+       * [Integer roots](programming_tasks/I/Integer_roots.md)
        * [Integer sequence](programming_tasks/I/Integer_sequence.md)
        * [Interactive programming](programming_tasks/I/Interactive_programming.md)
        * [Inverted syntax](programming_tasks/I/Inverted_syntax.md)
