@@ -2,7 +2,7 @@
 
 # [Metaprogramming][1]
 
-Sidef recognizes all mathematical operators in Unicode and allows the user to define methods that behave like infix operators, even for built-in types.
+Sidef recognizes all Unicode mathematical operators and allows the user to define methods that behave like infix operators, even for built-in types.
 
 ```ruby
 class Number {
