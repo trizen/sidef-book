@@ -657,6 +657,7 @@
        * [Sum multiples of 3 and 5](programming_tasks/S/Sum_multiples_of_3_and_5.md)
        * [Sum of a series](programming_tasks/S/Sum_of_a_series.md)
        * [Sum of squares](programming_tasks/S/Sum_of_squares.md)
+       * [Superellipse](programming_tasks/S/Superellipse.md)
        * [Symmetric difference](programming_tasks/S/Symmetric_difference.md)
        * [System time](programming_tasks/S/System_time.md)
    * T
@@ -680,6 +681,7 @@
        * [Textonyms](programming_tasks/T/Textonyms.md)
        * [The ISAAC Cipher](programming_tasks/T/The_ISAAC_Cipher.md)
        * [The Twelve Days of Christmas](programming_tasks/T/The_Twelve_Days_of_Christmas.md)
+       * [Thue-Morse](programming_tasks/T/Thue-Morse.md)
        * [Time a function](programming_tasks/T/Time_a_function.md)
        * [Tokenize a string](programming_tasks/T/Tokenize_a_string.md)
        * [Tokenize a string with escaping](programming_tasks/T/Tokenize_a_string_with_escaping.md)
