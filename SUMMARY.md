@@ -505,6 +505,7 @@
        * [Program name](programming_tasks/P/Program_name.md)
        * [Program termination](programming_tasks/P/Program_termination.md)
        * [Proper divisors](programming_tasks/P/Proper_divisors.md)
+       * [Pythagoras tree](programming_tasks/P/Pythagoras_tree.md)
        * [Pythagorean triples](programming_tasks/P/Pythagorean_triples.md)
    * Q
        * Queue
