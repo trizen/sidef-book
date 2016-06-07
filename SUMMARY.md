@@ -475,6 +475,7 @@
            * [Mean run density](programming_tasks/P/Percolation/Mean_run_density.md)
        * [Perfect numbers](programming_tasks/P/Perfect_numbers.md)
        * [Perfect shuffle](programming_tasks/P/Perfect_shuffle.md)
+       * [Perlin noise](programming_tasks/P/Perlin_noise.md)
        * [Permutation test](programming_tasks/P/Permutation_test.md)
        * [Permutations](programming_tasks/P/Permutations.md)
        * [Permutations by swapping](programming_tasks/P/Permutations_by_swapping.md)
