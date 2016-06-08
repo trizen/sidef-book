@@ -400,6 +400,7 @@
            * [N plus one half](programming_tasks/L/Loops/N_plus_one_half.md)
            * [Nested](programming_tasks/L/Loops/Nested.md)
            * [While](programming_tasks/L/Loops/While.md)
+       * [LU decomposition](programming_tasks/L/LU_decomposition.md)
        * [Lucas-Lehmer test](programming_tasks/L/Lucas-Lehmer_test.md)
        * [Ludic numbers](programming_tasks/L/Ludic_numbers.md)
        * [Luhn test of credit card numbers](programming_tasks/L/Luhn_test_of_credit_card_numbers.md)
