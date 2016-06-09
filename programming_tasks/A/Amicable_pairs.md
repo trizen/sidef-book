@@ -6,7 +6,7 @@
 func propdivsum(x) {
     gather {
         2.to(x.isqrt).each { |d|
-            if (x %% d) {
+            if (d.divides(x)) {
                 take(d)
                 take(x/d) if !x.is_sqr
             }
