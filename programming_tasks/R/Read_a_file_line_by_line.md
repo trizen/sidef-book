@@ -2,11 +2,11 @@
 
 # [Read a file line by line][1]
 
-FileHandle.each{} is lazy, so we can do this:
+*FileHandle.each{}* is lazy, allowing us to do this:
 
 ```ruby
-File.new(__FILE__).open_r.each { |line|
-    print line;
+File(__FILE__).open_r.each { |line|
+    print line
 }
 ```
 
@@ -14,8 +14,8 @@ File.new(__FILE__).open_r.each { |line|
 Same thing explicitly:
 
 ```ruby
-var fh = File.new(__FILE__).open_r;
-while (fh.readline(&var line)) {
-    print line;
+var fh = File(__FILE__).open_r
+while (fh.readline(\var line)) {
+    print line
 }
 ```

@@ -5,7 +5,7 @@
 To read from the standard input, you can use *STDIN* as your *fh*.
 
 ```ruby
-var file = File.new(__FILE__);
+var file = File(__FILE__);
 file.open_r(\var fh, \var err)
     || "Can't open file `#{file}': #{err}\n".die;
  

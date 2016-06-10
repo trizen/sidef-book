@@ -5,7 +5,7 @@
 Built-in method:
 
 ```ruby
-Dir.new('/my/dir').is_empty;    # true, false or nil
+Dir('/my/dir').is_empty;    # true, false or nil
 ```
 
 

@@ -4,7 +4,7 @@
 
 ```ruby
 func truncate(filename, len) {
-    var file = File.new(filename);
+    var file = File(filename);
     len > file.size
         && die "The provided length is greater than the length of the file";
     file.truncate(len);

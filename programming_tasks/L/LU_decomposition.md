@@ -73,8 +73,8 @@ var t = [[
  
 t.each { |test|
     say_it('A Matrix', test);
-    for a in (['P Matrix', 'Aʼ Matrix', 'L Matrix', 'U Matrix'] ~Z lu(test)) {
-        say_it(a[0], a[1])
+    for a,b in (['P Matrix', 'Aʼ Matrix', 'L Matrix', 'U Matrix'] ~Z lu(test)) {
+        say_it(a, b)
     }
 }
 ```

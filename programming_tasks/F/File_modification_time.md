@@ -3,7 +3,7 @@
 # [File modification time][1]
 
 ```ruby
-var file = File.new(__FILE__);
+var file = File(__FILE__);
 say file.stat.mtime;            # seconds since the epoch
  
 # keep atime unchanged

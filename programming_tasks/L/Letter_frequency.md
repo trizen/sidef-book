@@ -10,7 +10,7 @@ func letter_frequency(file) {
         .sort_by  {|_, val| -val}
 }
  
-var top = letter_frequency(File.new(__FILE__));
+var top = letter_frequency(File(__FILE__));
 top.each{|pair| say "#{pair[0]}: #{pair[1]}"};
 ```
 

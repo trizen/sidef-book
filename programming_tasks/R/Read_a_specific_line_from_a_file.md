@@ -4,7 +4,7 @@
 
 ```ruby
 func getNthLine(filename, n) {
-  var file = File.new(filename);
+  var file = File(filename);
   file.open_r.each { |line|
     Num($.) == n && return line;
   }

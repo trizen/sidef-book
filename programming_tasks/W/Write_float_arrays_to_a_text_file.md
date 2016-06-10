@@ -4,7 +4,7 @@
 
 ```ruby
 func writedat(filename, x, y, x_precision=3, y_precision=5) {
-    var fh = File.new(filename).open_w;
+    var fh = File(filename).open_w;
  
     MultiArray.new(x, y).each { |x, y|
         fh.printf("%.*g\t%.*g\n", x_precision, x, y_precision, y);
