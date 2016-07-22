@@ -13,7 +13,7 @@ func mdroot(n) {
 }
  
 say "Number: MDR  MP\n======  ===  =="
-[123321, 7739, 893, 899998].each{|n| "%6d: %3d %3d\n"
+[123321, 7739, 893, 899998].each{|n| "%6d: %3d %3d\n" \
                            .printf(n, mdroot(n)...) }
  
 var counter = Hash()

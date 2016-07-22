@@ -5,12 +5,12 @@
 Generates an EPS file.
 
 ```ruby
-var points = [];
+var points = []
 while (points.len < 100) {
-    var (x, y) = 2.of{31.rand.int - 15}...;
-    var r2 = (x**2 + y**2);
+    var (x, y) = 2.of{31.irand - 15}...
+    var r2 = (x**2 + y**2)
     if ((r2 >= 100) && (r2 <= 225)) {
-        points.append([x, y]);
+        points.append([x, y])
     }
 }
  

@@ -4,20 +4,19 @@
 
 ```ruby
 var ntheory = frequire('ntheory');
- 
-ntheory.forprimes({ |*p|
-   p = Number.new(p[-1]);
-   range(2, p-1).each { |h3|
+
+ntheory.forprimes({ |p|
+   for h3 in (2 .. p-1) {
       var ph3 = (p + h3);
-      range(1, ph3-1).each { |d|
-         ((-p * p) % h3) != (d % h3) && next;
+      for d in (1 .. ph3-1) {
+         ((-p * p) % h3) != (d % h3) && next;
          ((p-1)*ph3) % d && next;
          var q = 1+((p-1) * ph3 / d);
          ntheory.is_prime(q) || next;
          var r = 1+((p*q - 1)/h3);
          ntheory.is_prime(r) || next;
          (q*r) % (p-1) == 1 || next;
-         printf("%2d x %5d x %5d = %s\n",p,q,r,ntheory.vecprod(p,q,r));
+         printf("%2d x %5d x %5d = %s\n",p,q,r,ntheory.vecprod(p,q,r));
       }
    }
 }, 3, 61);

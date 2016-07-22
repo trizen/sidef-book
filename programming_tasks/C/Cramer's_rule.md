@@ -21,9 +21,10 @@ func det(a) {
       }
 
       for i,j in (r ~X r) {
-        ((a[i][j] *= pivot)
-            -= a[i][k]*a[k][j]
-        ) /= previous_pivot
+        a[i][j]              ->
+          *= pivot           ->
+          -= a[i][k]*a[k][j] ->
+          /= previous_pivot
       }
     }
     sign * pivot

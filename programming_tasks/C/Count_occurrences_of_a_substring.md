@@ -5,8 +5,8 @@
 *Built-in:*
 
 ```ruby
-say "the three truths".count("th");
-say "ababababab".count("abab");
+say "the three truths".count("th")
+say "ababababab".count("abab")
 ```
 
 
@@ -14,14 +14,14 @@ say "ababababab".count("abab");
 
 ```ruby
 func countSubstring(s, ss) {
-    var re = Regex.new(ss.escape, 'g');      # 'g' for global
-    var counter = 0;
-    while (s =~ re) { ++counter };
-    return counter;
+    var re = Regex(ss.escape, 'g')      # 'g' for global
+    var counter = 0
+    while (s =~ re) { ++counter }
+    return counter
 }
  
-say countSubstring("the three truths","th");
-say countSubstring("ababababab","abab");
+say countSubstring("the three truths","th")
+say countSubstring("ababababab","abab")
 ```
 
 #### Output:

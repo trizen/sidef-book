@@ -16,7 +16,7 @@ var doors = [];
 }
  
 100.times { |i|
-    "Door %3d is %s\n".printf(i, doors[i] ? 'open' : 'closed');
+    "Door %3d is %s\n".printf(i, doors[i] ? 'open' : 'closed')
 }
 ```
 
@@ -25,6 +25,6 @@ var doors = [];
 
 ```ruby
 { |i|
-    "Door %3d is %s\n".printf(i, ["closed", "open"][i.sqrt.is_int]);
-} * 100;
+    "Door %3d is %s\n".printf(i, ["closed", "open"][i.is_sqr])
+} * 100
 ```

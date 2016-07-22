@@ -5,7 +5,7 @@
 ```ruby
 func agm(a, g) {
     loop {
-        var x = [float(a+g / 2), sqrt(a*g)]
+        var x = [::float(a+g / 2), ::sqrt(a*g)]
         x == [a, g] && return a
         x >> \(a, g)
     }

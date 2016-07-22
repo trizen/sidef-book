@@ -5,7 +5,7 @@
 ```ruby
 func propdivsum(x) {
     gather {
-        for d in (2 ..^ x.isqrt) {
+        for d in (2 .. x.isqrt) {
             take(d, x/d) if d.divides(x)
         }
     }.uniq.sum(x > 1 ? 1 : 0)

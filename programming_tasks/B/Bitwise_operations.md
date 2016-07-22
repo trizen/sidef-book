@@ -6,15 +6,15 @@
 func bitwise(a, b) {
  
    # Make sure they are integers
-   a.to_int!;
-   b.to_int!;
+   a.to_i!
+   b.to_i!
  
-   say ('a and b : ',  a & b);
-   say ('a or b  : ',  a | b);
-   say ('a xor b : ',  a ^ b);
-   say ('not a   : ',     ~a);
-   say ('a << b  : ', a << b);  # left shift
-   say ('a >> b  : ', a >> b);  # arithmetic right shift
+   say ('a and b : ',  a & b)
+   say ('a or b  : ',  a | b)
+   say ('a xor b : ',  a ^ b)
+   say ('not a   : ',     ~a)
+   say ('a << b  : ', a << b)  # left shift
+   say ('a >> b  : ', a >> b)  # arithmetic right shift
 }
  
 bitwise(14,3)

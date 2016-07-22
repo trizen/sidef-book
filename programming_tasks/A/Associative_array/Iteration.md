@@ -3,24 +3,24 @@
 # [Associative array/Iteration][1]
 
 ```ruby
-var hash = Hash.new(
+var hash = Hash(
     key1 => 'value1',
     key2 => 'value2',
 )
  
 # Iterate over key-value pairs
 hash.each { |key, value|
-    say "#{key}: #{value}";
+    say "#{key}: #{value}"
 }
  
 # Iterate only over keys
 hash.keys.each { |key|
-    say key;
+    say key
 }
  
 # Iterate only over values
 hash.values.each { |value|
-    say value;
+    say value
 }
 ```
 

@@ -6,12 +6,12 @@
 func dinesman(problem) {
   var lines = problem.split('.');
   var names = lines.first.scan(/\b[A-Z]\w*/);
-  var re_names = Regex.new(names.join('|'));
+  var re_names = Regex(names.join('|'));
  
   # Later on, search for these keywords (the word "not" is handled separately).
   var words = %w(first second third fourth fifth sixth seventh eighth ninth tenth
                  bottom top higher lower adjacent);
-  var re_keywords = Regex.new(words.join('|'));
+  var re_keywords = Regex(words.join('|'));
  
   # Build an array of lambda's
   var predicates = lines.ft(1, lines.end-1).map{ |line|
@@ -93,7 +93,7 @@ Guinan
 Smith
 ```
 ```ruby
-var names = %w(Baker Cooper Fletcher Miller Smith);
+var names = %w(Baker Cooper Fletcher Miller Smith)
  
 var predicates = [
     ->(c){ :Baker != c.last },
@@ -102,12 +102,14 @@ var predicates = [
     ->(c){ c.index(:Miller) > c.index(:Cooper) },
     ->(c){ (c.index(:Smith) - c.index(:Fletcher)).abs != 1 },
     ->(c){ (c.index(:Cooper) - c.index(:Fletcher)).abs != 1 },
-];
+]
  
 names.permutations { |candidate|
-    predicates.all {|predicate| predicate(candidate) }
-        && (say candidate.join("\n"); break);
-};
+    if (predicates.all {|predicate| predicate(candidate) }) {
+        say candidate.join("\n")
+        break
+    }
+}
 ```
 
 #### Output:

@@ -4,7 +4,7 @@
 
 ```ruby
 func main(file) {
-    file.open_r(\var fh, \var err)
+    file.open_r(\var fh, \var err) ->
         || die "Can't open file `#{file}' for reading: #{err}\n";
  
     var vls = fh.words.group_by{.sort}.values;

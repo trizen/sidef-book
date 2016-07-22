@@ -4,17 +4,17 @@
 
 ```ruby
 func cholesky(matrix) {
-    var chol = matrix.len.of { matrix.len.of(0) };
-    matrix.range.each { |row|
-        0.to(row).each { |col|
-            var x = matrix[row][col];
-            0.to(col).each { |i|
-                x -= (chol[row][i] * chol[col][i]);
+    var chol = matrix.len.of { matrix.len.of(0) }
+    for row in ^matrix {
+        for col in (0..row) {
+            var x = matrix[row][col]
+            for i in (0..col) {
+                x -= (chol[row][i] * chol[col][i])
             }
-            chol[row][col] = (row == col ? x.sqrt : x/chol[col][col]);
+            chol[row][col] = (row == col ? x.sqrt : x/chol[col][col])
         }
     }
-    return chol;
+    return chol
 }
 ```
 
@@ -24,21 +24,21 @@ Examples:
 ```ruby
 var example1 = [ [ 25, 15, -5 ],
                  [ 15, 18,  0 ],
-                 [ -5,  0, 11 ] ];
- 
-say "Example 1:";
+                 [ -5,  0, 11 ] ]
+
+say "Example 1:"
 cholesky(example1).each { |row|
-    say row.map {'%7.4f' % _}.join(' ');
+    say row.map {'%7.4f' % _}.join(' ')
 }
- 
+
 var example2 = [ [ 18, 22,  54,  42],
                  [ 22, 70,  86,  62],
                  [ 54, 86, 174, 134],
-                 [ 42, 62, 134, 106] ];
- 
-say "\nExample 2:";
+                 [ 42, 62, 134, 106] ]
+
+say "\nExample 2:"
 cholesky(example2).each { |row|
-    say row.map {'%7.4f' % _}.join(' ');
+    say row.map {'%7.4f' % _}.join(' ')
 }
 ```
 

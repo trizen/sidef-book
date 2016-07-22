@@ -25,7 +25,7 @@ func binpoly(p) {
  
 say "expansions of (x-1)^p:";
 10.range.each { |i| say binpoly(i) };
-say "Primes to 80: [#{(2..80).grep { binprime(_) }}]";
+say "Primes to 80: [#{(2..80).grep { binprime(_) }.join(' ')}]";
 ```
 
 #### Output:

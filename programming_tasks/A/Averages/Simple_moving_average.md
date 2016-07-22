@@ -7,25 +7,25 @@ Implemented with closures:
 ```ruby
 func simple_moving_average(period) {
  
-    var list = [];
-    var sum = 0;
+    var list = []
+    var sum = 0
  
     func (number) {
-        list.append(number);
-        sum += number;
-        list.len > period && (
-            sum -= list.shift;
-        );
-        return (sum / list.length);
+        list.append(number)
+        sum += number
+        if (list.len > period) {
+            sum -= list.shift
+        }
+        (sum / list.length)
     }
 }
  
 var ma3 = simple_moving_average(3);
 var ma5 = simple_moving_average(5);
  
-[(1 ..^ 5)..., ( 5 ^.. 1 )...].reverse -> each {|num|
+[1 ..^ 6, 6 ^.. 1].map{@|_} -> each {|num|
   printf("Next number = %d, SMA_3 = %.3f, SMA_5 = %.1f\n",
-    num, ma3.call(num), ma5.call(num));
+    num, ma3.call(num), ma5.call(num))
 }
 ```
 
@@ -36,21 +36,21 @@ Implemented as a class:
 class sma_generator(period, list=[], sum=0) {
  
     method SMA(number) {
-        list.append(number);
-        sum += number;
-        list.len > period && (
-            sum -= list.shift;
-        );
-        return (sum / list.len);
+        list.append(number)
+        sum += number
+        if (list.len > period) {
+            sum -= list.shift
+        }
+        (sum / list.len)
     }
 }
  
-var ma3 = sma_generator(3);
-var ma5 = sma_generator(5);
+var ma3 = sma_generator(3)
+var ma5 = sma_generator(5)
  
-[(1 ..^ 5)..., ( 5 ^.. 1 )...].reverse -> each {|num|
+for num in [@|(1..5), @|(1..5 -> flip)] {
   printf("Next number = %d, SMA_3 = %.3f, SMA_5 = %.1f\n",
-    num, ma3.SMA(num), ma5.SMA(num));
+    num, ma3.SMA(num), ma5.SMA(num))
 }
 ```
 

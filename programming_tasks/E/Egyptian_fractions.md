@@ -26,8 +26,8 @@ for fr in [43/48, 5/121, 2014/59] {
 }
  
 var lenmax = (var denommax = [0])
-for b in range(2, 99) {
-  for a in range(1, b-1) {
+for b in (2 .. 99) {
+  for a in (1 .. b-1) {
     var fr = a/b
     var e = ef(fr)
     var (elen, edenom) = (e.length, e[-1].denominator)

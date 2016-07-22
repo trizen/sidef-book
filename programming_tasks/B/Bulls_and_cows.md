@@ -3,40 +3,40 @@
 # [Bulls and cows][1]
 
 ```ruby
-var size = 4;
-var num = (1..9 -> shuffle.first(size));
- 
+var size = 4
+var num = @(1..9).shuffle.first(size)
+
 for (var guesses = 1; true; guesses++) {
- 
-    var bulls = 0;
-    var cows  = 0;
- 
-    var input = Sys.scanln("Input: ").split(1)
-                                     .unique
-                                     .grep {.~~/^[1-9]$/}
-                                     .map  {.to_i};
- 
-    input.len == size || (
+
+    var bulls = 0
+    var cows  = 0
+
+    var input = Sys.scanln("Input: ").chars                \
+                                     .unique               \
+                                     .grep {.~~/^[1-9]$/}  \
+                                     .map  {.to_i}
+
+    if (input.len != size) {
         warn "Invalid input!\n"
-        guesses--;
-        next;
-    );
- 
-    if (input == num) {
-        printf("You did it in %d attempts!\n", guesses);
-        break;
+        guesses--
+        next
     }
- 
+
+    if (input == num) {
+        printf("You did it in %d attempts!\n", guesses)
+        break
+    }
+
     num.range.each { |i|
         if (num[i] == input[i]) {
-            bulls++;
+            bulls++
         }
         elsif (num.contains(input[i])) {
-            cows++;
+            cows++
         }
     }
- 
-    "Bulls: %d; Cows: %d\n".printf(bulls, cows);
+
+    "Bulls: %d; Cows: %d\n".printf(bulls, cows)
 }
 ```
 
