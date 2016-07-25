@@ -11,8 +11,8 @@ func mtest(b, p) {
     }
     sq == 1
 }
- 
-2..60 + [929] -> grep{.is_prime}.each { |m|
+
+[@|(2..60), 929] -> grep{.is_prime}.each { |m|
     var f = 0
     var x = (2**m - 1)
     var q
@@ -21,8 +21,8 @@ func mtest(b, p) {
         q%8 ~~ [1,7] || q.is_prime || next
         q*q > x || (f = mtest(m, q)) && break
     }
-    say (f ? "M#{m} is composite with factor #{q}"
-           : "M#{m} is prime")
+    say (f ? "M#{m} is composite with factor #{q}"
+           : "M#{m} is prime")
 }
 ```
 

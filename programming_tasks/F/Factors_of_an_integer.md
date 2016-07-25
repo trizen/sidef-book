@@ -6,7 +6,7 @@
 func factors(n) {
   var divs = []
   range(1, n.sqrt.int).each { |d|
-    divs << d if n%%d
+    divs << d if d.divides(n)
   }
   divs + [divs[-1]**2 == n ? divs.pop : ()] + divs.reverse.map{|d| n/d }
 }

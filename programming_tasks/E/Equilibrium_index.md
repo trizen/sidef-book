@@ -25,7 +25,7 @@ var indices = [
 ]
  
 indices.each { |x|
-    say ("%s => %s" % @[x, eq_index(x)].map{.dump});
+    say ("%s => %s" % @|[x, eq_index(x)].map{.dump});
 }
 ```
 
