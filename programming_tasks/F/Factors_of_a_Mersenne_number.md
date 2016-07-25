@@ -12,7 +12,7 @@ func mtest(b, p) {
     sq == 1
 }
 
-[@|(2..60), 929] -> grep{.is_prime}.each { |m|
+for m in (2..60 -> grep{.is_prime} + [929]) {
     var f = 0
     var x = (2**m - 1)
     var q
