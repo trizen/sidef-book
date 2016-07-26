@@ -5,17 +5,17 @@
 ```ruby
 func fib(n, xs=[1]) {
     loop {
-        var len = xs.len;
-        len >= 20 && break;
-        xs.append(xs.ft(0.max(len - n)).sum);
+        var len = xs.len
+        len >= 20 && break
+        xs.append(xs.ft(0.max(len - n)).sum)
     }
-    return xs;
+    return xs
 }
  
-range(2, 10).each { |i|
-    say fib(i).join(' ');
+for i in (2..10) {
+    say fib(i).join(' ')
 }
-say fib(2, [2, 1]).join(' ');
+say fib(2, [2, 1]).join(' ')
 ```
 
 #### Output:
