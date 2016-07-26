@@ -15,7 +15,7 @@ func maxsubseq(*a) {
             sum = 0;
             start = i;
         }
-    };
+    }
     a.ft(start+1, end);
 }
  

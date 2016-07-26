@@ -25,8 +25,6 @@ img.penSize(1, 1);
  
 tree(img, width/2, height);
  
-var file = %f'tree.png';
-var fh = file.open('>:raw');
-fh.print(img.png);
-fh.close;
+var file = File('tree.png')
+file.write(img.png, 'raw')
 ```

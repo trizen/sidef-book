@@ -4,16 +4,17 @@
 
 ```ruby
 require('WWW::Mechanize')
- 
-var mech = %s'WWW::Mechanize'.new(
-    cookie_jar => Hash.new,
+
+var mech = %s<WWW::Mechanize>.new(
+    cookie_jar => Hash(),
     agent => 'Mozilla/5.0',
+    show_progress => 1,
 )
- 
+
 mech.get('https://login.yahoo.com/')
 mech.submit_form(
     form_id => 'mbr-login-form',   # form id
-    fields => Hash.new(
+    fields => Hash(
         'login'  => 'XXXXXX',
         'passwd' => 'YYYYYY',
 ))

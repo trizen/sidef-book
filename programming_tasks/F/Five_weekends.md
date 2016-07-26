@@ -9,7 +9,7 @@ var happymonths = [];
 var workhardyears = [];
 var longmonths = [1, 3, 5, 7, 8, 10, 12];
  
-range(1900, 2100).each { |year|
+for year in (1900 .. 2100) {
    var countmonths = 0;
    longmonths.each { |month|
         var dt = %s'DateTime'.new(

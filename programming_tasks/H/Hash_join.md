@@ -4,35 +4,35 @@
 
 ```ruby
 func hashJoin(table1, index1, table2, index2) {
-    var a = Arr.new;
-    var h = Hash.new;
+    var a = []
+    var h = Hash()
  
     # hash phase
     table1.each { |s|
-        h{s[index1]} := [] -> append(s);
-    };
+        h{s[index1]} := [] << s
+    }
  
     # join phase
     table2.each { |r|
-        a += h{r[index2]}.map{[_,r]};
-    };
+        a += h{r[index2]}.map{[_,r]}
+    }
  
-    return a;
+    return a
 }
  
 var t1  = [[27, "Jonah"],
            [18, "Alan"],
            [28, "Glory"],
            [18, "Popeye"],
-           [28, "Alan"]];
+           [28, "Alan"]]
  
 var t2  = [["Jonah", "Whales"],
            ["Jonah", "Spiders"],
            ["Alan", "Ghosts"],
            ["Alan", "Zombies"],
-           ["Glory", "Buffy"]];
+           ["Glory", "Buffy"]]
  
-hashJoin(t1, 1, t2, 0).each { .dump.say };
+hashJoin(t1, 1, t2, 0).each { .say }
 ```
 
 #### Output:

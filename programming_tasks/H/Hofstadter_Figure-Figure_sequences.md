@@ -9,7 +9,7 @@ var s = [nil, 2]
 func ffsr(n) {
   while(r.end < n) {
     r << s[r.end]+r[-1];
-    s << @[@(s[-1]+1 .. r[-1]-1), r[-1]+1].grep{ s[-1] < _ }
+    s << [(s[-1]+1 .. r[-1]-1)..., r[-1]+1].grep{ s[-1] < _ }...
   }
   return n;
 }

@@ -12,8 +12,8 @@ func fitness(str) { str.chars ~Z== target.chars -> count(true) }
 func mutate(str)  { str.gsub(/(.)/, {|s1| 1.rand < mutate_chance ? alphabet.pick : s1 }) }
 
 for (
-    var (i, parent) = (0, alphabet.rand(target.len).join)
-    parent != target
+    var (i, parent) = (0, alphabet.rand(target.len).join);
+    parent != target;
     parent = C.of{ mutate(parent) }.max_by(fitness)
 ) { printf("%6d: '%s'\n", i++, parent) }
 ```

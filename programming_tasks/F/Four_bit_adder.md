@@ -4,7 +4,7 @@
 
 ```ruby
 func bxor(a, b) {
-  (a.not & b) | (a & b.not)
+  (~a & b) | (a & ~b)
 }
 
 func half_adder(a, b) {

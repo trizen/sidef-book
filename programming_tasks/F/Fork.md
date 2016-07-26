@@ -4,7 +4,6 @@
 
 ```ruby
 var x = 42;
-var child = { x += 1 }.fork;
-say child.wait; # prints: 43
-say x;          # but x is still 42
+{ x += 1; say x }.fork.wait;     # x is 43 here
+say x;                           # but here is still 42
 ```

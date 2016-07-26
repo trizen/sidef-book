@@ -9,7 +9,7 @@ func ham_gen {
  
     func {
         var n = [s[0][0], s[1][0], s[2][0]].min;
-        range(0, 2).each { |i|
+        for i in (0..2) {
             s[i].shift if (s[i][0] == n);
             s[i].append(n * m[i]);
         }

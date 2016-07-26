@@ -3,9 +3,10 @@
 # [Hash from two arrays][1]
 
 ```ruby
-var keys = %w(a b c);
-var vals = [1, 2, 3];
- 
-var hash = Hash.new;
-hash.@{keys} = @vals;
+var keys = %w(a b c)
+var vals = [1, 2, 3]
+
+var hash = Hash()
+hash{keys...} = vals...
+say hash
 ```

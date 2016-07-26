@@ -57,7 +57,7 @@ STDOUT.autoflush(true)
 func init_forest {
     print r
     forest.each { |row|
-        print chars.@[row]
+        print chars[row]
         print "\033[E\033[1G"
     }
     iterate()
@@ -67,7 +67,7 @@ loop { init_forest() }
 ```
 
 
-OO approach:
+OO version:
 
 ```ruby
 define RED = "\e[1;31m"
@@ -126,7 +126,7 @@ class Forest(p=0.01, f=0.001, height, width) {
  
     method show {
         for i in ^height {
-            say pix.@[spot[i]]
+            say pix[spot[i]]
         }
     }
 }

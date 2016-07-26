@@ -4,14 +4,14 @@
 
 ```ruby
 func flatten(a) {
-    var flat = [];
+    var flat = []
     a.each { |item|
-        flat += (item.is_an(Array) ? flatten(item) : [item]);
-    };
+        flat += (item.kind_of(Array) ? flatten(item) : [item])
+    }
     return flat;
 }
  
-var arr = [[1], 2, [[3,4], 5], [[[]]], [[[6]]], 7, 8, []];
-say flatten(arr).dump;      # used-defined function
-say arr.flatten.dump;       # built-in method for Array obj
+var arr = [[1], 2, [[3,4], 5], [[[]]], [[[6]]], 7, 8, []]
+say flatten(arr)      # used-defined function
+say arr.flatten       # built-in method for Array obj
 ```

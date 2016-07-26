@@ -12,7 +12,6 @@ var ua = lwp.new(
 );
  
 var resp = ua.get(url);
-resp.is_success
-    || die "Failed to GET #{url.dump}: #{resp.status_line}\n";
+resp.is_success || die "Failed to GET #{url.dump}: #{resp.status_line}";
 print resp.decoded_content;
 ```

@@ -34,9 +34,10 @@ class Triangle(a, b, c) {
  
 var (max, area) = (200, 210)
 var prim_triangles = []
-1.upto(max).each { |a|
-  a.upto(max).each { |b|
-    b.upto(max).each { |c|
+
+for a in (1..max) {
+  for b in (a..max) {
+    for c in (b..max) {
       next if (Math.gcd(a, b, c) > 1)
       prim_triangles << Triangle(a, b, c) if Triangle.is_valid(a, b, c)
     }

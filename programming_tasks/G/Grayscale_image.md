@@ -4,22 +4,20 @@
 
 ```ruby
 require('Image::Imlib2')
- 
+
 func tograyscale(img) {
     var (width, height) = (img.width, img.height)
     var gimg = %s'Image::Imlib2'.new(width, height)
-    0.to(width - 1).each { |x|
-        0.to(height - 1).each { |y|
-            var (r, g, b) = img.query_pixel(x, y)
-            var gray = int(0.2126*r + 0.7152*g + 0.0722*b)
-            gimg.set_color(gray, gray, gray, 255)
-            gimg.draw_point(x, y)
-        }
+    for y,x in (^height ~X ^width) {
+        var (r, g, b) = img.query_pixel(x, y)
+        var gray = int(0.2126*r + 0.7152*g + 0.0722*b)
+        gimg.set_color(gray, gray, gray, 255)
+        gimg.draw_point(x, y)
     }
     return gimg
 }
- 
-var (input='input.png', output='output.png') = @ARGV
+
+var (input='input.png', output='output.png') = ARGV...
 var image = %s'Image::Imlib2'.load(input)
 var gscale = tograyscale(image)
 gscale.set_quality(80)
