@@ -3,17 +3,17 @@
 # [Loops/Nested][1]
 
 ```ruby
-var arr = 10.of{ 10.of{ 20.rand.int + 1 } };
- 
-for (arr) { |row|
-    for (row) { |num|
+var arr = 10.of{ 10.of{ 20.irand + 1 } }
+
+for row in arr {
+    for num in row {
         "%3d".printf(num);
-        num == 20 && goto :OUT;
+        num == 20 && goto :OUT
     }
-    print "\n";
-} @:OUT;
- 
-print "\n";
+    print "\n"
+} @:OUT
+
+print "\n"
 ```
 
 #### Output:

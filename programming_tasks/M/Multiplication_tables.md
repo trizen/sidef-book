@@ -14,8 +14,8 @@ say fmt_row('x┃', (1..max)...);
 say "#{'━' * (width - 1)}╋#{'━' * (max * width)}";
  
 max.times { |i|
-    say fmt_row("#{i}┃", (1..max).map {|j| i <= j ? i*j : ''}...);
-};
+    say fmt_row("#{i}┃", max.of {|j| i <= j ? i*j : ''}...);
+}
 ```
 
 #### Output:

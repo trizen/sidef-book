@@ -18,7 +18,7 @@ var table = [
   ["Mexico City", "Mexico"],
 ];
  
-say table_sort(table, column: 1).dump;
+say table_sort(table, column: 1);
 ```
 
 #### Output:
@@ -27,18 +27,18 @@ say table_sort(table, column: 1).dump;
 ```
 
 
-You can also create and provide a custom method for sorting to _ordering_:
+Missing the point, we can also create and provide a custom method for sorting to _ordering_:
 
 ```ruby
 class String {
     method my_sort(arg) {
-           (self.len <=> arg.len)
-        || (self.lc <=> arg.lc)
+           (self.len <=> arg.len) ->
+        || (self.lc <=> arg.lc)   ->
         || (self <=> arg)
     }
 }
  
-say table_sort(table, column: 1, ordering: 'my_sort').dump;
+say table_sort(table, column: 1, ordering: 'my_sort');
 ```
 
 #### Output:

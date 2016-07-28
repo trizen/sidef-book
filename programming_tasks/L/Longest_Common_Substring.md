@@ -5,7 +5,7 @@
 ```ruby
 func createSubstrings(String word) -> Array {
   gather {
-    for i,j in (0 .. word.len -> combinations(2)) {
+    for i,j in @(0 .. word.len).combinations(2) {
         take(word.substr(i, j-i))
     }
   }

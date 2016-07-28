@@ -4,23 +4,23 @@
 
 ```ruby
 func jaro(s, t) {
- 
+
     var s_len = s.len
     var t_len = t.len
- 
-    var match_distance = (floor(max(s_len, t_len) / 2) - 1)
- 
+
+    var match_distance = ((::max(s_len, t_len) // 2) - 1)
+
     var s_matches = []
     var t_matches = []
- 
+
     var matches = 0
     var transpositions = 0
- 
-    for i in range(s_len) {
-        var start = max(0, i-match_distance)
-        var end = min(i+match_distance, t_len-1)
- 
-        for k in range(start, end) {
+
+    for i in ^s_len {
+        var start = ::max(0, i-match_distance)
+        var end = ::min(i+match_distance, t_len-1)
+
+        for k in (start .. end) {
             t_matches[k] && next
             s[i] == t[k] || next
             s_matches[i] = true
@@ -29,28 +29,28 @@ func jaro(s, t) {
             break
         }
     }
- 
+
     return 0 if (matches == 0)
- 
+
     var k = 0
-    for i in range(s_len) {
+    for i in ^s_len {
         s_matches[i] || next
         while (!t_matches[k]) { ++k }
         s[i] == t[k] || ++transpositions
         ++k
     }
- 
+
     ((matches / s_len) +
       (matches / t_len) +
         ((matches - transpositions/2) / matches)) / 3
 }
- 
+
 for pair in [
     [%c"MARTHA",    %c"MARHTA"],
     [%c"DIXON",     %c"DICKSONX"],
     [%c"JELLYFISH", %c"SMELLYFISH"],
 ] {
-    say "jaro(#{pair.map{.join.dump}.join(', ')}) = #{'%.10f' % jaro(pair...)}"
+    say "jaro(#{pair.map{.join.dump}.join(', ')}) = #{'%.10f' % jaro(pair...)}"
 }
 ```
 

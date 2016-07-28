@@ -6,7 +6,7 @@ Straightforward:
 
 ```ruby
 func left_fact(k) {
-    range(0, k-1).map {|n| n! }.sum(0)
+    ^k -> map {|n| n! } -> sum(0)
 }
 ```
 
@@ -14,7 +14,7 @@ Memory efficient with `Range.reduce()`:
 
 ```ruby
 func left_fact(k) {
-    0 ..^ k-1 -> reduce { |a,b| a + b! } + 1
+    ^k -> reduce { |a,b| a + b! } + 1
 }
 ```
 

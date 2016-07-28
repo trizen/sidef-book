@@ -6,23 +6,23 @@
 func propdiv (x) {
     var divs = []
     divs << 1 if (x > 1)
- 
-    for d in (2 ..^ x.isqrt) {
+
+    for d in (2 .. x.isqrt) {
         var y = (x // d)
         if (y*d == x) {
             divs << d
             y == d || (divs << y)
         }
     }
- 
+
     divs
 }
- 
-10.times { |i| say "#{i}\t#{propdiv(i).dump}" }
- 
+
+10.times { |i| say "#{i}\t#{propdiv(i)}" }
+
 var max = 0
 var candidates = []
-for i in (1 ..^ 20_000) {
+20_000.times { |i|
     var divs = propdiv(i).len
     if (divs > max) {
         candidates = []
@@ -30,8 +30,8 @@ for i in (1 ..^ 20_000) {
     }
     candidates << i if (divs == max)
 }
- 
-say "max = #{max}, candidates = #{candidates.dump}"
+
+say "max = #{max}, candidates = #{candidates}"
 ```
 
 #### Output:

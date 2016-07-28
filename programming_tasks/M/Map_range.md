@@ -8,8 +8,8 @@ func map_range(a, b, x) {
     x-a1 * b2-b1 / a2-a1 + b1;
 }
  
-var a = 0..^10;
-var b = -1..^0;
+var a = 0..10;
+var b = -1..0;
  
 a.each { |x|
     say "#{x} maps to #{map_range(a, b, x)}";

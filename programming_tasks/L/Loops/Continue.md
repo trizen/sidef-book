@@ -3,9 +3,9 @@
 # [Loops/Continue][1]
 
 ```ruby
-for (1..10) { |i|
+for i in (1..10) {
     print i
-    if (i %% 5) {
+    if (i % 5 == 0) {
         print "\n"
         next
     }

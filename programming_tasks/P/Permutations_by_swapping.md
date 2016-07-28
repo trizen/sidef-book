@@ -4,26 +4,26 @@
 
 ```ruby
 func perms(n) {
-   var perms = [[+1]];
+   var perms = [[+1]]
    n.times { |x|
       var sign = -1;
       perms = gather {
         for s,*p in perms {
-          var r = range(0, p.len);
-          take((s < 0 ? r : r.reverse).map {|i|
-            [sign *= -1, p.@[0..i-1], x, p.@[i..p.end]]
+          var r = (0 .. p.len);
+          take((s < 0 ? r : r.flip).map {|i|
+            [sign *= -1, p[0..i-1], x, p[i..p.end]]
           }...)
         }
       }
    }
    perms;
 }
- 
+
 var n = 4;
 for p in perms(n) {
-    var s = p.shift;
-    s > 0 && (s = '+1');
-    say "#{p.dump} => #{s}";
+    var s = p.shift
+    s > 0 && (s = '+1')
+    say "#{p} => #{s}"
 }
 ```
 

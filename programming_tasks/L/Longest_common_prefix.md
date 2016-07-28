@@ -5,30 +5,32 @@
 ```ruby
 # Finds the first point where the tree bifurcates
 func find_common_prefix(hash, acc) {
-    if ((var keys = hash.keys).len == 1) {
-        return __FUNC__(hash{keys[0]}, acc+keys[0]);
+    if (hash.len == 1) {
+        var pair = hash.to_a[0]
+        return __FUNC__(pair.value, acc+pair.key)
     }
-    return acc;
+    return acc
 }
- 
+
 # Creates a tree like: {a => {b => {c => {}}}}
 func lcp(*strings) {
-    var hash = Hash.new;
- 
-    strings.sort_by{.len}.each { |str|
-        var ref = hash;
-        str.is_empty && return '';
-        str.each { |char|
-            if (ref.has_key(char)) {
-                ref = ref{char};
-                ref.keys.len == 0 && break;
-            } else {
-                ref = (ref{char} = Hash.new);
+    var hash = Hash()
+
+    for str in (strings.sort_by{.len}) {
+        var ref = hash
+        str.is_empty && return ''
+        for char in str {
+            if (ref.contains(char)) {
+                ref = ref{char}
+                ref.len == 0 && break
             }
-        };
-    };
- 
-    return find_common_prefix(hash, '');
+            else {
+                ref = (ref{char} = Hash())
+            }
+        }
+    }
+
+    return find_common_prefix(hash, '')
 }
 ```
 
@@ -46,11 +48,11 @@ var data = [
   [],
   ["prefix","suffix"],
   ["foo","foobar"]
-];
- 
-data.each { |set|
-    say "lcp(#{set.dump.substr(1,-1)}) = #{lcp(set...).dump}";
-};
+]
+
+for set in data {
+    say "lcp(#{set.dump.substr(1,-1)}) = #{lcp(set...).dump}"
+}
 ```
 
 #### Output:

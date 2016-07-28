@@ -6,11 +6,11 @@ Iterative:
 
 ```ruby
 func josephus(n, k) {
-    var prisoners = (0 .. n-1);
+    var prisoners = @^n
     while (prisoners.len > 1) {
-        prisoners.rotate!(k - 1).shift;
-    };
-    return prisoners[0];
+        prisoners.rotate!(k - 1).shift
+    }
+    return prisoners[0]
 }
 ```
 
@@ -27,8 +27,8 @@ func josephus(n, k) {
 Calling the function:
 
 ```ruby
-var survivor = josephus(41, 3);
-say "Prisoner #{survivor} survived.";
+var survivor = josephus(41, 3)
+say "Prisoner #{survivor} survived."
 ```
 
 #### Output:

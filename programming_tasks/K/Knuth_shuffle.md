@@ -4,16 +4,16 @@
 
 ```ruby
 func shuffle(a) {
- 
+
     { |n|
-        var k = (n + 1 -> rand.int);
+        var k = (n+1 -> irand);
         k == n || (a[k, n] = a[n, k]);
     } * a.end;
- 
+
     return a;
 }
- 
-say shuffle(1..10);
+
+say shuffle(@(1..10));
 ```
 
 #### Output:

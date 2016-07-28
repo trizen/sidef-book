@@ -3,27 +3,21 @@
 # [Lucas-Lehmer test][1]
 
 ```ruby
-require('ntheory');
- 
-func is_prime(n) {
-    %S'ntheory'.is_prime(n);
-}
- 
 func is_mersenne_prime(p) {
     p == 2 && return(true);
-    var s = 4;
-    var mp = (2**p - 1);
-    (p-3).times {
-      s = (s.expmod(2, mp) - 2);
-      s < 0 && (s += mp);
+    var s = 4
+    var mp = (2**p - 1)
+    (p-2).times {
+      s = (s.expmod(2, mp) - 2)
+      s < 0 && (s += mp)
     }
-    s == 0;
+    s == 0
 }
- 
+
 Inf.times { |n|
-       is_prime(n)
-    && is_mersenne_prime(n)
-    && say "M#{n}";
+       n.is_prime           ->
+    && is_mersenne_prime(n) ->
+    && say "M#{n}"
 }
 ```
 

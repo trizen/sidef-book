@@ -8,7 +8,7 @@ func is_narcissistic(n) {
 }
  
 var count = 0
-for i in (0..^Inf) {
+Inf.itimes { |i|
     if (is_narcissistic(i)) {
         say "#{++count}\t#{i}"
         break if (count == 25)

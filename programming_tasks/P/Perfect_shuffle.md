@@ -4,29 +4,29 @@
 
 ```ruby
 func perfect_shuffle(deck) {
-     var mid = deck.len/2;
-     deck.ft(0, mid-1).zip(deck.ft(mid)).flatten;
+     var a = deck/2
+     a[0] ~Z a[1] -> flatten
 }
- 
+
 [8, 24, 52, 100, 1020, 1024, 10000].each { |size|
- 
-    var deck = 1..size;
+
+    var deck = @(1..size);
     var shuffled = deck;
- 
+
     var n = 0;
     loop {
         ++n;
         shuffled = perfect_shuffle(shuffled);
- 
+
         shuffled.each_index { |i|
-            shuffled[i] == deck[i] || goto :NEXT;
+            shuffled[i] == deck[i] || goto :NEXT;
         }
- 
+
         break;
         @:NEXT;
     }
- 
-    printf("%5d cards: %4d\n", size, n);
+
+    printf("%5d cards: %4d\n", size, n);
 }
 ```
 

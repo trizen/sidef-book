@@ -5,9 +5,9 @@
 ```ruby
 var n = 20
 say gather {
-    for x in range(1, n) {
-        for y in range(x, n) {
-           for z in range(y, n) {
+    for x in (1 .. n) {
+        for y in (x .. n) {
+           for z in (y .. n) {
              take([x,y,z]) if (x*x + y*y == z*z)
            }
         }

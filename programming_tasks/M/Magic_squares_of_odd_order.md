@@ -4,37 +4,37 @@
 
 ```ruby
 func magic_square(n {.is_pos && .is_odd}) {
-    var i = 0;
-    var j = int(n/2);
+    var i = 0
+    var j = int(n/2)
 
-    var magic_square = [];
-    range(1, n**2).each { |l|
-        magic_square[i][j] = l;
+    var magic_square = []
+    for l in (1 .. n**2) {
+        magic_square[i][j] = l
 
         if (magic_square[i.dec % n][j.inc % n]) {
-            i = (i.inc % n);
+            i = (i.inc % n)
         }
         else {
-            i = (i.dec % n);
-            j = (j.inc % n);
+            i = (i.dec % n)
+            j = (j.inc % n)
         }
     }
 
-    return magic_square;
+    return magic_square
 }
 
 func print_square(sq) {
     var f = "%#{(sq.len**2).len}d";
-    sq.each {|row|
-        say row.map{ f % _ }.join(' ');
+    for row in sq {
+        say row.map{ f % _ }.join(' ')
     }
 }
 
-var(n=5) = @ARGV»to_i»();
-var sq = magic_square(n);
-print_square(sq);
+var(n=5) = ARGV»to_i»()...
+var sq = magic_square(n)
+print_square(sq)
 
-say "\nThe magic number is: #{sq[0].sum}";
+say "\nThe magic number is: #{sq[0].sum}"
 ```
 
 #### Output:

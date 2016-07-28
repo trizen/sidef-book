@@ -22,7 +22,7 @@ say a(10, ->{1}, ->{-1}, ->{-1}, ->{1}, ->{0});      #=> -67
 ```
 
 
-Alternatively, we can implement it as a class also:
+Alternatively, we can implement it as a method too:
 
 ```ruby
 class MOB {

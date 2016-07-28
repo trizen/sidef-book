@@ -15,12 +15,12 @@ func part(s, args) {
 }
 
 func partitions(args) {
-  part(1..args.sum, args)
+  part(@(1..args.sum), args)
 }
 
 [[],[0,0,0],[1,1,1],[2,0,2]].each { |test_case|
-  say "partitions #{test_case.dump}:"
-  partitions(test_case).each{|part| say part.dump }
+  say "partitions #{test_case}:"
+  partitions(test_case).each{|part| say part }
   print "\n"
 }
 ```

@@ -6,6 +6,6 @@
 var i = 1024
 while (i > 0) {
     say i
-    i.div!(2).int!
+    i //= 2
 }
 ```

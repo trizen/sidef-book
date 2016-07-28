@@ -6,16 +6,16 @@ Iterative solution:
 
 ```ruby
 var sum = [0]
- 
+
 ARGF.each {  |line|
     var x = line.words.map{.to_i}
     sum = [
             x.first + sum.first,
-            1 ..^ x.len-2 -> map{|i| x[i] + [sum[i-1, i]].max}...,
+            1 ..^ x.end -> map{|i| x[i] + [sum[i-1, i]].max}...,
             x.last + sum.last,
-        ]
+          ]
 }
- 
+
 say sum.max
 ```
 

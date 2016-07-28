@@ -4,20 +4,20 @@
 
 ```ruby
 func menu (prompt, arr) {
-    arr.len > 0 || return '';
+    arr.len > 0 || return ''
     loop {
-        arr.range.each { |i|
-            say "  #{i}: #{arr[i]}";
-        };
-        var n = Sys.scanln(prompt);
-        n ~~ /^[0-9]+\z/ ? n.to_i! : next;
-        arr.exists(n) && return arr[n];
+        for i in ^arr {
+            say "  #{i}: #{arr[i]}"
+        }
+        var n = Sys.scanln(prompt) \\ return()
+        n ~~ /^[0-9]+\z/ ? Num(n) : next
+        arr.exists(n) && return arr[n]
     }
 }
- 
-var list = ['fee fie', 'huff and puff', 'mirror mirror', 'tick tock'];
-var prompt = 'Please choose an item number: ';
- 
-var answer = menu(prompt, list);
-say "You choose: #{answer}";
+
+var list = ['fee fie', 'huff and puff', 'mirror mirror', 'tick tock']
+var prompt = 'Please choose an item number: '
+
+var answer = menu(prompt, list)
+say "You choose: #{answer}"
 ```

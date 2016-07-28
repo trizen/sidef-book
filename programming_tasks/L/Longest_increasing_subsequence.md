@@ -8,8 +8,8 @@ Dynamic programming:
 func lis(a) {
     var l = a.len.of { [] }
     l[0] << a[0]
-    1.to(a.len-1).each { |i|
-        i.range.each { |j|
+    for i in (1..a.end) {
+        for j in ^i {
             if ((a[j] < a[i]) && (l[i].len < l[j].len+1)) {
                 l[i] = [l[j]...]
             }
@@ -18,7 +18,7 @@ func lis(a) {
     }
     l.max_by { .len }
 }
- 
+
 say lis(%i<3 2 6 4 5 1>)
 say lis(%i<0 8 4 12 2 10 6 14 1 9 5 13 3 11 7 15>)
 ```

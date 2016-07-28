@@ -3,7 +3,7 @@
 # [Non-decimal radices/Output][1]
 
 ```ruby
-range(0, 33).each { |n|
-    printf(" %6b %3o %2d %2X\n", ([n]*4)...);
+for i in (0 .. 33) {
+    printf(" %6b %3o %2d %2X\n", ([i]*4)...)
 }
 ```

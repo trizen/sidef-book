@@ -28,16 +28,16 @@ var colors = Hash(
                'cyan'    => "0ff",
                'white'   => "fff",
              )
- 
-colors.each { |color, code|
+
+for color,code in colors {
     String.def_method("in_#{color}", func (self) {
         '<span style="color: #' + code + '">' + self + '</span>'
     })
 }
- 
-say "blue".in_blue;
-say "red".in_red;
-say "white".in_white;
+
+say "blue".in_blue
+say "red".in_red
+say "white".in_white
 ```
 
 #### Output:

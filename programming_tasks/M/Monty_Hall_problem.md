@@ -28,6 +28,6 @@ say ("Switching wins %.2f%% of the time." % (100.0 * switchWins / n));
 
 #### Output:
 ```
-Staying wins 31.20% of the time.
-Switching wins 68.80% of the time.
+Staying wins 30.10% of the time.
+Switching wins 69.90% of the time.
 ```

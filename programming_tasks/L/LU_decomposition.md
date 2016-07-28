@@ -71,7 +71,7 @@ var t = [[
    %n( 2  5  7  1),
 ]]
  
-t.each { |test|
+for test in t {
     say_it('A Matrix', test);
     for a,b in (['P Matrix', 'Aʼ Matrix', 'L Matrix', 'U Matrix'] ~Z lu(test)) {
         say_it(a, b)

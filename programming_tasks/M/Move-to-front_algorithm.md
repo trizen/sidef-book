@@ -20,7 +20,7 @@ func decode(nums) {
         var s = '';
         table.sub!(Regex('(.{' + n + '})(.)'), {|s1, s2| s=s2; s2 + s1});
         s;
-    }.join;
+    }.join
 }
  
 %w(broood bananaaa hiphophiphop).each { |test|
@@ -38,7 +38,7 @@ Alternatively, implemented as a module, using arrays:
 ```ruby
 module MoveToFront {
  
-  define ABC = "a".."z"
+  define ABC = @("a".."z")
  
   func m2f(ar,i) {
     [ar.delete_index(i)] + ar

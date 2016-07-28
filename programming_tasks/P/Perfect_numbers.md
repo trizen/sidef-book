@@ -5,13 +5,13 @@
 ```ruby
 func is_perfect(n) {
     var sum = 0;
-    range(1, n-1).each { |i|
+    for i in (1 ..^ n) {
         i.divides(n) && (sum += i);
-    };
+    }
     sum == n;
 }
  
-range(1, 1000).each { |i|
+1000.times { |i|
     is_perfect(i) && say i;
 }
 ```

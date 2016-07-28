@@ -5,7 +5,7 @@
 ```ruby
 func multisplit(sep, str, keep_sep=false) {
     sep = sep.map{.escape}.join('|');
-    var re = Regex.new(keep_sep ? "(#{sep})" : sep);
+    var re = Regex(keep_sep ? "(#{sep})" : sep);
     str.split(re, -1);
 }
  

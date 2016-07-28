@@ -37,16 +37,17 @@ class Automaton(rule, cells) {
     method next {
         var previous = cells.map{_};
         var len = previous.len;
-        cells = [rule.@[
+        cells[] = rule[
                 previous.range.map { |i|
                     4*previous[i-1 % len] +
                     2*previous[i]         +
                       previous[i+1 % len]
-                }]];
+                }...
+            ]
     }
 
     method to_s {
-        cells.map { _ ? '#' : ' ' }.join('');
+        cells.map { _ ? '#' : ' ' }.join;
     }
 }
 

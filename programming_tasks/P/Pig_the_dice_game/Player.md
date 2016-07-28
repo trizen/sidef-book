@@ -3,7 +3,7 @@
 # [Pig the dice game/Player][1]
 
 ```ruby
-var (games=100) = @ARGV.map{.to_i};
+var (games=100) = ARGV.map{.to_i}...
  
 define DIE = 1..6;
 define GOAL = 100;
@@ -61,8 +61,8 @@ games.times {
     players.each { |p| p.score = 0 };
 }
  
-"\nSCORES: for #{games} games".say;
-wins.join("\t").say;
+say "\nSCORES: for #{games} games";
+say wins.join("\t");
 ```
 
 #### Output:

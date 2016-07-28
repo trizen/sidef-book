@@ -13,7 +13,7 @@ for (var i = 2; i <= 8; i += 2) {
 *for-in* loop:
 
 ```ruby
-for i in (2 ..^ (8, 2)) {
+for i in (2 .. (8, 2)) {
     say i
 }
 ```

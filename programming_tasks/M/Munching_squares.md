@@ -4,18 +4,13 @@
 
 ```ruby
 require('GD')
- 
-var gd_img = %s<GD::Image>
-var img = gd_img.new(256, 256, 1)
- 
-for y in ^256 {
-    for x in ^256 {
-        var color = img.colorAllocate((255 - x - y).abs, (255-x)^y, x^(255-y))
-        img.setPixel(x, y, color)
-    }
+
+var img = %s<GD::Image>.new(256, 256, 1)
+
+for y,x in (^256 ~X ^256) {
+    var color = img.colorAllocate((255 - x - y).abs, (255-x)^y, x^(255-y))
+    img.setPixel(x, y, color)
 }
- 
-if (var fh = %f(xor.png).open('>:raw')) {
-    fh << img.png
-}
+
+File('xor.png').write(img.png, :raw)
 ```

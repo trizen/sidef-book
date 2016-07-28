@@ -52,60 +52,55 @@ say longhand_multiplication('18446744073709551616', '18446744073709551616');
 
 ```ruby
 func long_multiplication(String a, String b) -> String {
- 
-    a.len < b.len && (
-        (a, b) = (b, a);
-    );
- 
-    '0' ~~ [a, b] && return '0';
- 
-    var x = a.split('').map{.to_i}.reverse;
-    var y = b.split('').map{.to_i}.reverse;
- 
-    var xlen = x.end;
-    var ylen = y.end;
- 
-    var mem = 0;
-    var map = y.len.of { Array.new };
- 
-    y.range.each { |j|
-        x.range.each { |i|
-            var n = (x[i]*y[j] + mem);
-            var(d, m) = n.divmod(10);
+
+    if (a.len < b.len) {
+        (a, b) = (b, a)
+    }
+
+    '0' ~~ [a, b] && return '0'
+
+    var x = a.reverse.chars.map{.to_n}
+    var y = b.reverse.chars.map{.to_n}
+
+    var xlen = x.end
+    var ylen = y.end
+
+    var mem = 0
+    var map = y.len.of { [] }
+
+    for j in ^y {
+        for i in ^x {
+            var n = (x[i]*y[j] + mem)
+            var(d, m) = n.divmod(10)
             if (i == xlen) {
-                map[j].append(m, d);
+                map[j] << (m, d)
                 mem = 0;
             }
             else {
-                map[j].append(m);
-                mem = d;
+                map[j] << m
+                mem = d
             }
         }
- 
-        var n = (ylen - j);
-        n > 0 && map[j].append(n.of(0)...);
-        var m = (ylen - n);
-        m > 0 && map[j].prepend(m.of(0)...);
+
+        var n = (ylen - j)
+        n > 0 && map[j].append(n.of(0)...)
+        var m = (ylen - n)
+        m > 0 && map[j].prepend(m.of(0)...)
     }
- 
-    var result = [];
-    var mrange = (0 .. map.end);
-    var end    = (xlen + ylen + 1);
- 
-    0.to(end).each { |i|
-        var n = (mrange.map {|j| map[j][i] }.sum + mem);
-        if (i == end) {
-            n != 0 && result.append(n);
-        }
-        else {
-            (mem, result[result.end+1]) = n.divmod(10);
-        }
+
+    var result = []
+    var mrange = ^map
+    var end    = (xlen + ylen + 2)
+
+    for i in ^end {
+        var n = (mrange.map {|j| map[j][i] }.sum + mem)
+        (mem, result[result.end+1]) = n.divmod(10)
     }
- 
-    result.reverse.join('');
+
+    result.join.reverse -= /^0+/
 }
- 
-say long_multiplication('18446744073709551616', '18446744073709551616');
+
+say long_multiplication('18446744073709551616', '18446744073709551616')
 ```
 
 #### Output:

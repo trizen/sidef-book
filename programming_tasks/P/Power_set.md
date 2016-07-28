@@ -3,9 +3,9 @@
 # [Power set][1]
 
 ```ruby
-var arr = %w(a b c);
-0.to(arr.len).each { |i|
-    say arr.combinations(i);
+var arr = %w(a b c)
+for i in (0 .. arr.len) {
+    say arr.combinations(i)
 }
 ```
 
