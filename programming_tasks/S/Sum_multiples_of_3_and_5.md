@@ -4,17 +4,17 @@
 
 ```ruby
 func sumMul(n, f) {
-    var n1 = int((n - 1) / f);
-    f * n1 * (n1 + 1) / 2;
+    var n1 = int((n - 1) / f)
+    f * n1 * (n1 + 1) / 2
 }
  
 func sum35(n) {
-    sumMul(n, 3) + sumMul(n, 5) - sumMul(n, 15);
+    sumMul(n, 3) + sumMul(n, 5) - sumMul(n, 15)
 }
  
 20.times { |i|
-    printf("%2s:%22s %s\n", i, 10**i, sum35(10**i));
-};
+    printf("%2s:%22s %s\n", i, 10**i, sum35(10**i))
+}
 ```
 
 #### Output:

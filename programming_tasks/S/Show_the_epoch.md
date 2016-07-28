@@ -3,7 +3,7 @@
 # [Show the epoch][1]
 
 ```ruby
-say Time.new(0).gmtime.ctime;
+say Time(0).gmtime.ctime
 ```
 
 #### Output:

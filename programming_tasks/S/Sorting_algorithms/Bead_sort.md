@@ -4,21 +4,21 @@
 
 ```ruby
 func beadsort(arr) {
- 
-    var rows = [];
-    var columns = [];
- 
-    arr.each { |datum|
-        range(0, datum-1).each { |column|
-            ++(columns[column] := 0);
-            ++(rows[columns[column] - 1] := 0);
+
+    var rows = []
+    var columns = []
+
+    for datum in arr {
+        for column in ^datum {
+            ++(columns[column] := 0)
+            ++(rows[columns[column] - 1] := 0)
         }
     }
- 
-    rows.reverse;
+
+    rows.reverse
 }
- 
-say beadsort([5,3,1,7,4,1,1]);
+
+say beadsort([5,3,1,7,4,1,1])
 ```
 
 #### Output:

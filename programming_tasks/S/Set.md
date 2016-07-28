@@ -29,12 +29,12 @@ class Set(*set) {
     }
  
     method ∩(Set that) {
-        Set(set.keys.grep{ |k| k ∈ that }
+        Set(set.keys.grep{ |k| k ∈ that }   \
                     .map { |k| set{k} }...);
     }
  
     method ∖(Set that) {
-        Set(set.keys.grep{|k| !(k ∈ that) }
+        Set(set.keys.grep{|k| !(k ∈ that) } \
                     .map {|k| set{k} }...);
     }
  

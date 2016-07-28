@@ -26,10 +26,10 @@ Test:
 
 ```ruby
 var numbers = [7,6,5,9,8,4,3,1,2,0];
-say cocktailsort(numbers).dump;
- 
+say cocktailsort(numbers);
+
 var strs = ["John", "Kate", "Zerg", "Alice", "Joe", "Jane"];
-say cocktailsort(strs).dump;
+say cocktailsort(strs);
 ```
 
 #### Output:

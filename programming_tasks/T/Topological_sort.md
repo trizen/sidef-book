@@ -3,29 +3,29 @@
 # [Topological sort][1]
 
 ```ruby
-func print_topo_sort (deps) {
-    var ba = Hash.new;
+func print_topo_sort(deps) {
+    var ba = Hash();
     deps.each { |before, afters|
         afters.each { |after|
-            if (before != after) {
+            if (before != after) {
                 ba{before}{after} = 1;
-            };
-            ba{after} \\= Hash.new;
+            }
+            ba{after} \\= Hash();
         }
-    };
- 
+    }
+
     loop {
         var afters = ba.keys.grep {|k| ba{k}.values.len == 0 }.sort;
         afters.len || break;
         say afters.join(" ");
         ba.delete(afters...);
         ba.values.each { |v| v.delete(afters...) };
-    };
- 
-    say (ba.len ? "Cicle found! #{ba.keys.sort}" : "---");
+    }
+
+    say (ba.len ? "Cicle found! #{ba.keys.sort.join(' ')}" : "---");
 }
- 
-var deps = Hash.new(
+
+var deps = Hash(
     des_system_lib => < std synopsys std_cell_lib des_system_lib dw02
                                                      dw01 ramlib ieee >,
     dw01           => < ieee dw01 dware gtech                         >,
@@ -41,7 +41,7 @@ var deps = Hash.new(
     std_cell_lib   => < ieee std_cell_lib                             >,
     synopsys       => <                                               >
 );
- 
+
 print_topo_sort(deps);
 deps{:dw01}.append('dw04');     # Add unresolvable dependency
 print_topo_sort(deps);

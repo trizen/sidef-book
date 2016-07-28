@@ -5,13 +5,13 @@
 ```ruby
 func urandom() {
     const device = %f'/dev/urandom';
- 
-    device.open('<:raw', \var fh, \var err)
+
+    device.open('<:raw', \var fh, \var err) ->
         || die "Can't open `#{device}': #{err}";
- 
+
     fh.sysread(\var noise, 4);
     'L'.unpack(noise);
 }
- 
+
 say urandom();    # sample: 3517432564
 ```

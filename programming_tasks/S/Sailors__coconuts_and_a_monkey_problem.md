@@ -16,7 +16,7 @@ func coconuts(sailors, monkeys=1) {
     return monkeys*(x_cocos / pow_bc * sailors**sailors - blue_cocos)
 }
 
-2.to(9).each { |sailor|
+for sailor in (2..9) {
     say "#{sailor}: #{coconuts(sailor)}";
 }
 ```

@@ -3,21 +3,21 @@
 # [Seven-sided dice from five-sided dice][1]
 
 ```ruby
-func dice5 { 1 + 5.rand.int }
- 
+func dice5 { 1 + 5.irand }
+
 func dice7 {
   loop {
     var d7 = ((5*dice5() + dice5() - 6) % 8);
     d7 && return d7;
   }
 }
- 
-var count7 = Hash.new;
- 
+
+var count7 = Hash()
+
 var n = 1e6;
-n.times { count7{dice7()} := 0 ++ }
+n.times { count7{dice7()} := 0 ++ }
 count7.keys.sort.each { |k|
-    printf("%s: %5.2f%%\n", k, 100*(count7{k}/n * 7 - 1));
+    printf("%s: %5.2f%%\n", k, 100*(count7{k}/n * 7 - 1));
 }
 ```
 

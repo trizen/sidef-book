@@ -33,11 +33,11 @@ func format(ss) {
 #### Output:
 ```
 (A B) (C D)
-        ==> (C D) (A B)
+    ==> (C D) (A B)
 (A B) (B D)
-        ==> (A D B)
+    ==> (A B D)
 (A B) (C D) (D B)
-        ==> (A C D B)
+    ==> (A B C D)
 (H I K) (A B) (C D) (D B) (F G H)
-        ==> (A C D B) (I K F G H)
+    ==> (A B C D) (H I K F G)
 ```

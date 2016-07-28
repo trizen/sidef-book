@@ -48,8 +48,8 @@ class SnakeGame(w, h) {
         var (food_x, food_y)
 
         do {
-            food_x = w.rand.int
-            food_y = h.rand.int
+            food_x = w.irand
+            food_y = h.irand
         } while (grid[food_y][food_x][0] != VOID)
 
         grid[food_y][food_x][0] = FOOD
@@ -123,10 +123,10 @@ class SnakeGame(w, h) {
                 }
 
                 given (key) {
-                    when ("\e[A") { dir = UP    }
-                    when ("\e[B") { dir = DOWN  }
-                    when ("\e[C") { dir = RIGHT }
-                    when ("\e[D") { dir = LEFT  }
+                    when ("\e[A") { if (dir != DOWN ) { dir = UP    } }
+                    when ("\e[B") { if (dir != UP   ) { dir = DOWN  } }
+                    when ("\e[C") { if (dir != LEFT ) { dir = RIGHT } }
+                    when ("\e[D") { if (dir != RIGHT) { dir = LEFT  } }
                 }
             }
         }

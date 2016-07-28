@@ -10,21 +10,16 @@ var sets = [
             [1,    0, -4],
             [1, -1e6,  1],
            ];
- 
+
 func quadroots(a, b, c) {
-    var root = (
-        (b**2 - 4*a*c) -> complex.sqrt
-    );
- 
-    a.complex!;
-    b.complex!;
- 
+    var root = sqrt(b**2 - 4*a*c)
+
     [(-b + root) / (2 * a),
-     (-b - root) / (2 * a)];
+     (-b - root) / (2 * a)]
 }
- 
+
 sets.each { |coefficients|
-    say ("Roots for #{coefficients.dump}",
+    say ("Roots for #{coefficients}",
         "=> (#{quadroots(coefficients...).join(', ')})");
 }
 ```

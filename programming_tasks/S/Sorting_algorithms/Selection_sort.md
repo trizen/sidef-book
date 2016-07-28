@@ -5,22 +5,22 @@
 ```ruby
 class Array {
     method selectionsort {
-        range(0, self.len-2).each { |i|
-            var min_idx = i;
-            range(i+1, self.len-1).each { |j|
-                self[j] < self[min_idx] && (
-                    min_idx = j;
-                )
+        for i in ^(self.end) {
+            var min_idx = i
+            for j in (i+1 .. self.end) {
+                if (self[j] < self[min_idx]) {
+                    min_idx = j
+                }
             }
-            self[i, min_idx] = self[min_idx, i];
+            self.swap(i, min_idx)
         }
-        return self;
+        return self
     }
 }
- 
+
 var nums = [7,6,5,9,8,4,3,1,2,0];
 say nums.selectionsort;
- 
+
 var strs = ["John", "Kate", "Zerg", "Alice", "Joe", "Jane"];
 say strs.selectionsort;
 ```

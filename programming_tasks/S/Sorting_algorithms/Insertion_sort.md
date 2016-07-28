@@ -18,6 +18,6 @@ class Array {
     }
 }
  
-var a = 10.of {100.rand.int};
+var a = 10.of {100.irand};
 say a.insertion_sort;
 ```

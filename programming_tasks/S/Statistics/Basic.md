@@ -15,14 +15,14 @@ func generate_statistics(n) {
     }
  
     var mean = sum/n;
-    var stddev = Math.sqrt(sum2/n - mean**2);
+    var stddev = ::sqrt(sum2/n - mean**2);
  
     say "size: #{n}";
     say "mean:   #{mean}";
     say "stddev: #{stddev}";
  
     var max = hist.max;
-    hist.range.each {|i|
+    for i in ^hist {
         printf("%.1f:%s\n", 0.1*i, "=" * 70*hist[i]/max);
     }
     print "\n";

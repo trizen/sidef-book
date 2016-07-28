@@ -3,14 +3,14 @@
 # [Sparkline in unicode][1]
 
 ```ruby
-var bar = '▁'..'█';
+var bar = @('▁'..'█');
 loop {
     print 'Numbers, please, separated by space/commas: ';
-    var numbers = read(String).trim.split(/[\s,]+/).map{.to_f};
+    var numbers = read(String).trim.split(/[\s,]+/).map{.to_n};
     var (min, max) = numbers.minmax;
-    say "min: %5f; max: %5f"%(min, max);
-    var div = ((max - min) / bar.offset);
-    say (min == max ? bar.last*numbers.len : numbers.map{|num| bar[(num - min) / div]}.join);
+    say "min: %5f; max: %5f"%(min, max);
+    var div = ((max - min) / bar.end);
+    say (min == max ? bar.last*numbers.len : numbers.map{|num| bar[(num - min) / div]}.join);
 }
 ```
 

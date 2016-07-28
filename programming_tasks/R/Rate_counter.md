@@ -13,5 +13,5 @@ func job2 {
 }
  
 const COUNT = -1;   # run for one CPU second
-benchmark.timethese(COUNT, Hash.new('Job1' => job1, 'Job2' => job2));
+benchmark.timethese(COUNT, Hash('Job1' => job1, 'Job2' => job2));
 ```

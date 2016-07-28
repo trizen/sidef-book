@@ -3,17 +3,17 @@
 # [Wireworld][1]
 
 ```ruby
-var f = [[], DATA.lines.map {['', @.chomp.split(''), '']}..., []];
- 
-range(1, 10).each {
+var f = [[], DATA.lines.map {['', .chars..., '']}..., []];
+
+10.times {
     say f.map { .join(" ") + "\n" }.join;
     var a = [[]];
-    range(1, f.end-1).each { |y|
+    for y in (1 .. f.end-1) {
         var r = f[y];
         var rr = [''];
-        range(1, r.end-1).each { |x|
+        for x in (1 .. r.end-1) {
             var c = r[x];
-            rr.append(
+            rr << (
               given(c) {
                 when('H') { 't' }
                 when('t') { '.' }
@@ -22,12 +22,12 @@ range(1, 10).each {
               }
             )
         }
-        rr.append('');
-        a.append(rr);
+        rr << '';
+        a << rr;
     }
     f = [a..., []];
 }
- 
+
 __DATA__
 tH.........
 .   .

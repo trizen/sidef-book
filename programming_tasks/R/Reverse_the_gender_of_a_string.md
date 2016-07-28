@@ -51,7 +51,7 @@ for m,f in m2f {
     }
 }
  
-var gen_re = Regex.new('\b(' + dict.keys.join('|') + ')\b', 'i')
+var gen_re = Regex('\b(' + dict.keys.join('|') + ')\b', 'i')
  
 func copy_case(orig, repl) {
     var a = orig.chars

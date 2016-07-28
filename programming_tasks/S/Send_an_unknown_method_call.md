@@ -5,11 +5,13 @@
 ```ruby
 class Example {
     method foo(x) {
-        42 + x;
+        42 + x
     }
 }
- 
-var name = 'foo';
-var obj = Example();
-say obj.(name)(5);      # prints: 47
+
+var name = 'foo'
+var obj = Example()
+
+say obj.(name)(5)          # prints: 47
+say obj.method(name)(5)    # =//=
 ```

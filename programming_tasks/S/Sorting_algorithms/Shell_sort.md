@@ -5,8 +5,8 @@
 ```ruby
 func shell_sort(a) {
     var h = a.len;
-    while (h = (h / 2 -> int)) {
-        range(h, a.end).each { |i|
+    while (h >>= 1) {
+        for i in (h .. a.end) {
             var k = a[i];
             for (var j = i; (j >= h) && (k < a[j - h]); j -= h) {
                 a[j] = a[j - h];
@@ -16,8 +16,8 @@ func shell_sort(a) {
     }
     return a;
 }
- 
-var a = 10.of {100.rand.int};
+
+var a = 10.of {100.irand};
 say a;
 shell_sort(a);
 say a;

@@ -5,12 +5,12 @@
 ```ruby
 func psort(x, d=x.end) {
  
-    d.is_zero && (
-        range(1, x.end).each { |i|
-            x[i] < x[i-1] && return false
+    if (d.is_zero) {
+        for i in (1 .. x.end) {
+            (x[i] < x[i-1]) && return false;
         }
         return true;
-    );
+    }
  
     (d+1).times {
         x.prepend(x.splice(d, 1)...);
@@ -21,7 +21,7 @@ func psort(x, d=x.end) {
     return false;
 }
  
-var a = 10.of { 100.rand.int };
+var a = 10.of { 100.irand };
 say "Before:\t#{a}";
 psort(a);
 say "After:\t#{a}";

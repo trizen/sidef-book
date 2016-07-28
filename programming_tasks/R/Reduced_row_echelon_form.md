@@ -6,37 +6,37 @@
 func rref (Array m) {
     m.is_empty && return;
     var (lead, rows, cols) = (0, m.len, m[0].len);
- 
-    rows.range.each { |r|
+
+    for r in ^rows {
         lead >= cols && return m;
         var i = r;
- 
+
         while (!m[i][lead]) {
             ++i == rows || next;
             i = r;
             ++lead == cols && return m;
         }
- 
+
         m[i, r] = m[r, i];
         var lv = m[r][lead];
-        m[r] = (m[r] »/» lv);
- 
-        rows.range.each { |n|
+        m[r] = (m[r] »/» lv);
+
+        for n in ^rows {
             n == r && next;
-            m[n] = (m[n] »-« (m[r] «*« m[n][lead]))
+            m[n] = (m[n] »-« (m[r] «*« m[n][lead]))
         }
         ++lead;
     }
     return m
 }
- 
+
 func say_it (message, array) {
     say "\n#{message}";
-    array.each { |row|
-        say row.map { |n| " %5s" % n.as_rat }.join
+    for row in array {
+        say row.map { |n| " %5s" % n.as_rat }.join
     }
 }
- 
+
 var M = [
     [ # base test case
       [  1,  2,  -1,  -4 ],
@@ -56,7 +56,7 @@ var M = [
       [ 5, 10, 24, 11, 15, -4],
     ],
 ];
- 
+
 M.each { |matrix|
     say_it('Original Matrix', matrix);
     say_it('Reduced Row Echelon Form Matrix', rref(matrix));

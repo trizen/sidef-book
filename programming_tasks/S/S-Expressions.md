@@ -4,14 +4,13 @@
 
 ```ruby
 var t = frequire('Text::Balanced');
- 
+
 func sexpr(txt) {
     txt.trim!;
- 
-    var m = txt.match(/^\((.*)\)$/s)
-        || die "Not an S-expression: <<#{txt}>>";
+
+    var m = txt.match(/^\((.*)\)$/s) || die "Invalid: <<#{txt}>>";
     txt = m[0];
- 
+
     var w;
     var ret = [];
     while (!txt.is_empty) {
@@ -33,22 +32,22 @@ func sexpr(txt) {
     }
     return ret;
 }
- 
+
 func sexpr2txt(String e) {
-    e ~~ /[\s"\(\)]/ ? do { e.gsub!('"', '\\"'); %Q("#{e}") } : e;
+    e ~~ /[\s"\(\)]/ ? do { e.gsub!('"', '\\"'); %Q("#{e}") } : e;
 }
- 
+
 func sexpr2txt(expr) {
     '(' + expr.map {|e| sexpr2txt(e) }.join(' ') + ')';
 }
- 
+
 var s = sexpr(%q{
- 
+
 ((data "quoted data" 123 4.5)
  (data (!@# (4.5) "(more" "data)")))
- 
+
 });
- 
+
 say s;              # dump structure
 say sexpr2txt(s);   # convert back
 ```

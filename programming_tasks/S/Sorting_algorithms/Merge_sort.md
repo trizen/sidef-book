@@ -7,7 +7,7 @@ func merge(left, right) {
     var result = [];
     while (!left.is_empty && !right.is_empty) {
         result.append([right,left][left.first <= right.first].shift);
-    };
+    }
     result + left + right;
 }
  
@@ -26,11 +26,11 @@ func mergesort(array) {
 }
  
 # Numeric sort
-var nums = (0..7 -> shuffle);
+var nums = @(0..7).shuffle;
 say mergesort(nums);
  
 # String sort
-var strings = ('a'..'e' -> shuffle);
+var strings = @('a'..'e').shuffle;
 say mergesort(strings);
 ```
 

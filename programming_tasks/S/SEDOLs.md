@@ -4,19 +4,19 @@
 
 ```ruby
 func sedol(s) {
- 
+
     die 'No vowels allowed' if (s ~~ /[AEIOU]/);
-    die 'Invalid format'    if (s !~ /^[0-9B-DF-HJ-NP-TV-Z]{6}$/);
- 
-    const base36 = ((0..9 + 'A'..'Z') ~Z 0..35 -> flatten.to_h);
+    die 'Invalid format'    if (s !~ /^[0-9B-DF-HJ-NP-TV-Z]{6}$/);
+
+    const base36 = ((@(0..9) + @('A'..'Z')) ~Z @(0..35) -> flatten.to_h);
     const weights = [1, 3, 1, 7, 3, 9];
- 
+
     var vs = [base36{ s.chars... }];
     var checksum = (vs ~Z* weights -> sum);
     var check_digit = ((10 - checksum%10) % 10);
     return (s + check_digit);
 }
- 
+
 %w(
     710889
     B0YBKJ

@@ -10,5 +10,5 @@ a ^ b -> unique.dump.say;
 
 #### Output:
 ```
-["Serena", "Jim"]
+["Jim", "Serena"]
 ```

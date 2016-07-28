@@ -13,7 +13,7 @@ class SubRandom(seed, state=[]) {
             s.append((s[-2] - s[-1]) % mod);
         }
         state = s.range.map {|i| s[(34 + 34*i) % 55] };
-        range(55, 219).each { self.subrand };
+        165.times { self.subrand };
     }
  
     method subrand {

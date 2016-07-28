@@ -5,15 +5,15 @@
 ```ruby
 func bubble_sort(arr) {
     loop {
-        var swapped = false;
+        var swapped = false
         { |i|
-            arr[i-1] > arr[i] && (
-                arr[i-1, i] = arr[i, i-1];
-                swapped = true;
-            );
-        } * arr.end;
-        swapped || break;
+            if (arr[i-1] > arr[i]) {
+                arr[i-1, i] = arr[i, i-1]
+                swapped = true
+            }
+        } * arr.end
+        swapped || break
     }
-    return arr;
+    return arr
 }
 ```

@@ -14,7 +14,7 @@ func vdc(value, base=2) {
     return sum;
 }
  
-2.to(5).each { |base|
+for base in (2..5) {
     var seq = (10.range.map {|i| vdc([i], base) });
     "base %d: %s\n".printf(base, seq.map{|n| "%.4f" % n}.join(', '));
 }

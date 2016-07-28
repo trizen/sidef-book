@@ -4,17 +4,17 @@
 
 ```ruby
 func rangex(str) {
-    str.split(',').map { |range|
-        var m = range.match(/^
+    str.split(',').map { |r|
+        var m = r.match(/^
             (?(DEFINE) (?<int>[+-]?[0-9]+) )
             (?<from>(?&int))-(?<to>(?&int))
-        $/x);
-        m ? ( var ncap = m.ncap; ncap{:from}.to_i .. ncap{:to}.to_i )
-          : range.to_i;
+        $/x)
+        m ? do {var c = m.ncap; @(Num(c{:from}) .. Num(c{:to}))}
+          : Num(r)
     }
 }
- 
-say rangex('-6,-3--1,3-5,7-11,14,15,17-20').flatten.join(',');
+
+say rangex('-6,-3--1,3-5,7-11,14,15,17-20').flatten.join(',')
 ```
 
 #### Output:

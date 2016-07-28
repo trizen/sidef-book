@@ -14,12 +14,12 @@ func merge(x, y) {
     }
     x + y + out;
 }
- 
+
 func strand(x) {
     x || return [];
     var out = [x.shift];
     if (x.len) {
-        range(-x.len, -1).each { |i|
+        for i in (-x.len .. -1) {
             if (x[i] >= out[-1]) {
                 out.append(x.pop_at(i));
             }
@@ -27,7 +27,7 @@ func strand(x) {
     }
     return out;
 }
- 
+
 func strand_sort(x) {
     var out = [];
     while (var strd = strand(x)) {
@@ -35,8 +35,8 @@ func strand_sort(x) {
     }
     return out;
 }
- 
-var a = 10.of {100.rand.int};
+
+var a = 10.of { 100.irand };
 say "Before: #{a}";
 say "After: #{strand_sort(a)}";
 ```

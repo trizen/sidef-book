@@ -4,21 +4,19 @@
 
 ```ruby
 func pancake(a) {
-    range(0, a.end-1).each { |idx|
-        var min = idx;
- 
-        range(idx+1, a.end).each {|i| min = i if (a[min] > a[i]) };
-        next if (a[min] == a[idx]);
- 
-        a.@[min..a.end] = [a.@[min..a.end]].reverse...;
-        a.@[idx..a.end] = [a.@[idx..a.end]].reverse...;
+    for idx in ^(a.end) {
+        var min = idx
+        for i in (idx+1 .. a.end) { min = i if (a[min] > a[i]) }
+        next if (a[min] == a[idx])
+        a[min..a.end] = [a[min..a.end]].reverse...
+        a[idx..a.end] = [a[idx..a.end]].reverse...
     }
-    return a;
+    return a
 }
- 
-var arr = 10.of{ 100.rand.int };
-say "Before: #{arr}";
-say "After:  #{pancake(arr)}";
+
+var arr = 10.of{ 100.irand }
+say "Before: #{arr}"
+say "After:  #{pancake(arr)}"
 ```
 
 #### Output:
