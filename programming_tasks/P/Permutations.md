@@ -2,62 +2,67 @@
 
 # [Permutations][1]
 
-Built-in:
+
+#### Built-in
 
 ```ruby
-[1,2,3].permutations { |set|
-    say set.join;
+[1,2,3].permutations { |p|
+    say p
 }
 ```
 
 
-Iterative:
+#### Iterative
 
 ```ruby
-func permutations(callback, arr) {
-    var end = arr.end
-    var idx = @^arr
+func forperm(callback, n) {
+    var idx = @^n
 
     loop {
-        callback([arr[idx]])
+        callback([idx...])
 
-        var p = end
-        while (idx[p-1] > idx[p]) {p--}
+        var p = n-1
+        while (idx[p-1] > idx[p]) {--p}
         p == 0 && return()
 
         var d = p
         idx += idx.splice(p).reverse
 
-        while (idx[p-1] > idx[d]) {d++}
+        while (idx[p-1] > idx[d]) {++d}
         idx.swap(p-1, d)
     }
+
+    return()
 }
 
-var list = [1,2,3]
-permutations({|set| say set.join }, list)
+forperm({|p| say p }, 3)
 ```
 
 
-Recursive:
+#### Recursive
 
 ```ruby
 func permutations(callback, set, perm=[]) {
-    set.is_empty && callback(perm);
-    set.range.each { |i|
-        __FUNC__(callback, [set[@|^i, @|(i+1 .. set.end)]], [perm..., set[i]]);
+    set.is_empty && callback(perm)
+    for i in ^set {
+        __FUNC__(callback, [
+            set[(0 ..^ i)..., (i+1 ..^ set.len)...]
+        ], [perm..., set[i]])
     }
+    return()
 }
 
-var list = [1,2,3];
-permutations({|set| say set.join}, list);
+permutations({|p| say p }, [0,1,2])
 ```
 
+
 #### Output:
+
 ```
-123
-132
-213
-231
-312
-321
+[0, 1, 2]
+[0, 2, 1]
+[1, 0, 2]
+[1, 2, 0]
+[2, 0, 1]
+[2, 1, 0]
 ```
