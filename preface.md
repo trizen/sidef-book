@@ -1,14 +1,14 @@
 # Preface
 
-My name is Daniel Șuteu and I'm a computer programmer born in Romania. My main interests are in image and text processing, computational number theory and, more recently, programming language design.
+In this book, we are going to take a complete tour of the Sidef programming language; a language which explores the features of the object-oriented paradigm and the awesomeness of functional programming.
 
-In this book, we are going to take a complete tour of the Sidef programming language; a language which explores the features of the object-oriented paradigm.
+All started out as an idea at the beginning of 2013 when I (Daniel Șuteu) talked with a good friend of mine, Ioana Fălcușan, about the concept of a new programming language. Together we started the Sidef project in March 30, 2013 on [GitHub](https://github.com/trizen/sidef). By the way, *Sidef* is a Romanian word which means *nacre* in English.
 
-All started out as an idea at the beginning of 2013 when I talked with a good friend of mine, Ioana Fălcușan, about the concept of a new programming language. Together we started the Sidef project in March 30, 2013 and we made the code public on Github. *Sidef* is a Romanian word which means *nacre* in English.
+The original design was for an elegant and beautiful object-oriented programming language, that was very easy to implement in terms of writing a parser for it and an interpreter. However, as the time passed by, the main implementation of the language no longer executes the code in the conventional way of interpretation, by walking the AST. Instead, it features a code generator that walks the AST and generates equivalent code in another programming language, which, by default, is Perl. This method of execution made the implementation about 50x faster and added more awesome features to the language.
 
-The original desing was for an elegant, object-oriented programming language that was easy to write, easy to parse and easy to implement. As the time passed by, the original design has changed a little bit, but the core concept remained the same.
+At the time of writing this book, Sidef is a little bit more than 3 years old and it vigorously continues to evolve with each monthly (or so) release, taking the best from modern languages like Perl 6, Julia and Ruby.
 
-At the time of writing this book, Sidef is a little bit more than 2 years old. This book will try to cover the entire language specifications, along with examples and notes. At the end of the book I included a large collection of programming tasks written in Sidef, hopping to give the reader a better grasp of the language.
+This book will try to cover the entire language specifications, along with examples and notes. At the end of the book, the reader can find a large collection of programming tasks implemented in Sidef, illustrating various different ways of usage of the language.
 
 ### WWW
 * Github: https://github.com/trizen
