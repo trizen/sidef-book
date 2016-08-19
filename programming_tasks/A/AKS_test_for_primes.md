@@ -4,28 +4,28 @@
 
 ```ruby
 func binprime(p) {
-    p >= 2 || return false;
-    range(1, p>>1).each { |i|
-        (binomial(p, i) % p) && return false;
-    };
-    return true;
+    p >= 2 || return false
+    for i in (1 .. p>>1) {
+        (binomial(p, i) % p) && return false
+    }
+    return true
 }
- 
+
 func coef(n, e) {
-    (e == 0) && return "#{n}";
-    (n == 1) && (n = "");
-    (e == 1) ? "#{n}x" : "#{n}x^#{e}";
+    (e == 0) && return "#{n}"
+    (n == 1) && (n = "")
+    (e == 1) ? "#{n}x" : "#{n}x^#{e}"
 }
- 
+
 func binpoly(p) {
-    join(" ", coef(1, p), p.range.reverse.map {|i|
-        join(" ", %w(+ -)[(p-i)&1], coef(binomial(p, i), i));
-    }...);
+    join(" ", coef(1, p), ^p -> map {|i|
+        join(" ", %w(+ -)[(p-i)&1], coef(binomial(p, i), i))
+    }.reverse...)
 }
- 
-say "expansions of (x-1)^p:";
-10.range.each { |i| say binpoly(i) };
-say "Primes to 80: [#{(2..80).grep { binprime(_) }.join(' ')}]";
+
+say "expansions of (x-1)^p:"
+for i in ^10 { say binpoly(i) }
+say "Primes to 80: [#{2..80 -> grep { binprime(_) }.join(' ')}]"
 ```
 
 #### Output:

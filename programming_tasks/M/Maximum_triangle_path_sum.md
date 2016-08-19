@@ -8,7 +8,7 @@ Iterative solution:
 var sum = [0]
 
 ARGF.each {  |line|
-    var x = line.words.map{.to_i}
+    var x = line.words.map{.to_n}
     sum = [
             x.first + sum.first,
             1 ..^ x.end -> map{|i| x[i] + [sum[i-1, i]].max}...,
@@ -23,7 +23,7 @@ say sum.max
 Recursive solution:
 
 ```ruby
-var triangle = ARGF.slurp.lines.map{.words.map{.to_i}}
+var triangle = ARGF.slurp.lines.map{.words.map{.to_n}}
  
 func max_value(i=0, j=0) is cached {
     i == triangle.len && return 0
