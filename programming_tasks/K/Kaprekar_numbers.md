@@ -3,12 +3,12 @@
 # [Kaprekar numbers][1]
 
 ```ruby
+require('ntheory')
 var kap = Hash()
-var nt = frequire('ntheory')
 
 15.times { |n|
     var np = (10**n - 1)
-    nt.fordivisors({ |d|
+    %S<ntheory>.fordivisors({ |d|
         var dp = np//d
         if (::gcd(d, dp) == 1) {
             kap{ dp == 1 ? d : d.invmod(dp)*d } := 0 ++

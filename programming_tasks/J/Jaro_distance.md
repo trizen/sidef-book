@@ -5,6 +5,8 @@
 ```ruby
 func jaro(s, t) {
 
+    return 1 if (s == t)
+
     var s_len = s.len
     var t_len = t.len
 
