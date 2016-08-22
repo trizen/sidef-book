@@ -15,11 +15,11 @@ otherwise:
 * stores the executable code inside the database and returns it
 
 
-Next time when the same code is executed, Sidef will simply retrieve the executable code from the database, without parsing or generating it again.
+Next time when the same code is executed, Sidef will simply retrieve the executable code from the database, without generating it again.
 
 ```console
 $ sidef -s script.sf             # may load slow the first time
-$ sidef -s script.sf             # will run instantaneously the second time
+$ sidef -s script.sf             # will load instantaneously the second time
 ```
 
 When a given code is not executed again in the next two or three days, it will be removed automatically from the database. The code which is used frequently, will not be removed.
