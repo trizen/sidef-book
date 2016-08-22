@@ -48,7 +48,7 @@ class MobilePhone { }
 class CameraPhone << Camera, MobilePhone { }
 ```
 
-Object instance variables are public and can be accessed by anyone who posses the object itself:
+Instance variables are public and can be accessed by anyone who has a reference to the object itself:
 
 ```ruby
 class Person (name, age, address) {

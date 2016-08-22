@@ -3,8 +3,7 @@
 The `continue` statement can be used inside a `given/when` construct to continue to the next branch.
 
 ```ruby
-var i = 10;
-given (i) {
+given (10) { |i|
     when (10) {
         say "It's ten"
         continue

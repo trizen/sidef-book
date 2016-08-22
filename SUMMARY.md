@@ -50,6 +50,7 @@
    * [Types](syntax_and_semantics/types.md)
    * [Subsets](syntax_and_semantics/subsets.md)
    * [Lazy evaluation](syntax_and_semantics/lazy_evaluation.md)
+   * [Lazy methods](syntax_and_semantics/lazy_methods.md)
    * [Multiple dispatch](syntax_and_semantics/multiple_dispatch.md)
    * [Functional pattern matching](syntax_and_semantics/pattern_matching.md)
 * [Programming tasks](programming_tasks/README.md)

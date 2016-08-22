@@ -19,4 +19,14 @@ The prefix and postfix notations can be used interchangeably:
 ```ruby
 log("string".length)    # means: "string".length.log
 length("string").log    # =//=
+log(length("string"))   # =//=
+```
+
+Starting with Sidef 2.30, a method can be invoked, using the prefix notation, even when a function with the same name is declared in the same scope:
+
+```ruby
+func sqrt(n) { "sqrt of #{n} is #{n.sqrt}" }
+
+say   sqrt(42)     # calls the `sqrt` function defined above
+say ::sqrt(42)     # calls the `sqrt` method on the number `42`
 ```
