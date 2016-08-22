@@ -21,7 +21,7 @@ $ ./Build test
 $ ./Build install
 ```
 
-If [Module::Build](https://metacpan.org/pod/Module::Build) is not installed, then try:
+When [Module::Build](https://metacpan.org/pod/Module::Build) is not installed, try:
 
 ```console
 $ perl Makefile.PL
