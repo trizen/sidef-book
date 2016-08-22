@@ -10,16 +10,17 @@ To install Sidef manually, download the [latest version](https://github.com/triz
 
 ```console
 $ perl Build.PL
+$ ./Build installdeps
 $ ./Build test
-$ sudo ./Build install --install_path script=/usr/bin
+$ ./Build install
 ```
 
-For packaging Sidef, run:
+If [Module::Build](https://metacpan.org/pod/Module::Build) is not installed, then use:
 
 ```console
-$ perl Build.PL --destdir "/my/package/path" --installdirs vendor
-$ ./Build test
-$ ./Build install --install_path script=/usr/bin
+$ perl Makefile.PL
+$ make test
+$ make install
 ```
 
 If the installation succeeded, you should be able to run the `sidef` command:
