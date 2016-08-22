@@ -14,8 +14,8 @@ User-defined:
 
 ```ruby
 static to = [@|'0'..'9', @|'a'..'z']
-static from = do { var h = Hash(); h{@|to} = @|0..36; h }
- 
+static from = Hash(to.pairs.map{@|_}.flip...)
+
 func base_to(n, b) {
     var s = ""
     while (n) {
@@ -24,10 +24,13 @@ func base_to(n, b) {
     }
     s.reverse
 }
- 
+
 func base_from(n, b) {
     var t = 0
     n.each { |c| t = (b*t + from{c}) }
     t
 }
+
+say base_from("rosetta", 36)        # string to number
+say base_to(60272032366, 36)        # number to string
 ```
