@@ -46,4 +46,4 @@ var obj = Example([1,2,3,4,5])
 say obj.lazy.grep{.is_prime}.to_a       # filters all the primes lazily
 ```
 
-Currently, the `.iter()` method is defined in the following built-in types: Array, String, FileHandle, DirHandle, RangeString, RangeNumber and Lazy.
+Currently, the `.iter()` method is defined in the following built-in classes: Array, String, FileHandle, DirHandle, RangeString, RangeNumber and Lazy.
