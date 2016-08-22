@@ -175,6 +175,7 @@
        * [Create an HTML table](programming_tasks/C/Create_an_HTML_table.md)
        * [CSV data manipulation](programming_tasks/C/CSV_data_manipulation.md)
        * [CSV to HTML translation](programming_tasks/C/CSV_to_HTML_translation.md)
+       * [Cumulative standard deviation](programming_tasks/C/Cumulative_standard_deviation.md)
        * [Currying](programming_tasks/C/Currying.md)
    * D
        * [Date format](programming_tasks/D/Date_format.md)
@@ -445,6 +446,7 @@
        * [Natural sorting](programming_tasks/N/Natural_sorting.md)
        * [Non-continuous subsequences](programming_tasks/N/Non-continuous_subsequences.md)
        * Non-decimal radices
+           * [Convert](programming_tasks/N/Non-decimal_radices/Convert.md)
            * [Input](programming_tasks/N/Non-decimal_radices/Input.md)
            * [Output](programming_tasks/N/Non-decimal_radices/Output.md)
        * [Nth root](programming_tasks/N/Nth_root.md)
@@ -567,6 +569,7 @@
        * Scope
            * [Function names and labels](programming_tasks/S/Scope/Function_names_and_labels.md)
        * [Search a list](programming_tasks/S/Search_a_list.md)
+       * [Search a list of records](programming_tasks/S/Search_a_list_of_records.md)
        * [Secure temporary file](programming_tasks/S/Secure_temporary_file.md)
        * [SEDOLs](programming_tasks/S/SEDOLs.md)
        * [Self-describing numbers](programming_tasks/S/Self-describing_numbers.md)
