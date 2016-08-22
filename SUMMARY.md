@@ -5,7 +5,7 @@
 * [Getting Started](getting_started/README.md)
    * [Running](getting_started/running.md)
    * [Installation](getting_started/installation.md)
-   * [Test installation](getting_started/hello_world.md)
+   * [Hello world](getting_started/hello_world.md)
 * [Sidef interpreter](sidef_interpreter/README.md)
    * [Command-line options](sidef_interpreter/command_line.md)
    * [One-line programs](sidef_interpreter/one_liners.md)
