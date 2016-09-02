@@ -14,7 +14,7 @@ func hitf(sph, x, y) {
     y -= sph[1];
 
     var z = (sq(sph[3]) - sq(x, y));
-    z < 0 && return;
+    z < 0 && return nil;
 
     z.sqrt!;
     [sph[2] - z, sph[2] + z];

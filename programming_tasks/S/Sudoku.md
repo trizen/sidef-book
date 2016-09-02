@@ -34,7 +34,7 @@ func solve(board) {
         } * 9;
 
         board[i] = 0;
-        return;
+        return nil;
     }
 
     for i in ^board {

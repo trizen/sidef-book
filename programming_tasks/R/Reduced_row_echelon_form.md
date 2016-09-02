@@ -4,7 +4,7 @@
 
 ```ruby
 func rref (Array m) {
-    m.is_empty && return;
+    m.is_empty && return nil;
     var (lead, rows, cols) = (0, m.len, m[0].len);
 
     for r in ^rows {

@@ -15,10 +15,10 @@ func find_duplicate_files(Block code, size_min=0, *dirs) {
             no_chdir => true,
             wanted   => func(arg) {
                 var file = File(arg)
-                file.is_file || return;
-                file.is_link && return;
+                file.is_file || return nil;
+                file.is_link && return nil;
                 var size = file.size
-                size >= size_min || return;
+                size >= size_min || return nil;
                 files{size} := [] << file
             },
         ) => dirs...
@@ -37,7 +37,7 @@ func find_duplicate_files(Block code, size_min=0, *dirs) {
         dups.each{ |k,v| code(k.to_file, v...) }
     }
 
-    return;
+    return nil;
 }
 
 var duplicates = Hash()

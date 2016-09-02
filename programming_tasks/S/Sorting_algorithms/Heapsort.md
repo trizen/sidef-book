@@ -14,7 +14,7 @@ func sift_down(a, start, end) {
             a[child, root] = a[root, child];
             root = child;
         } else {
-            return;
+            return nil;
         }
     }
 }

@@ -14,7 +14,7 @@ func get(url) {
     if (var resp = ua.get(url); resp.is_success) {
         return resp.decoded_content;
     }
-    return;
+    return nil;
 }
  
 print get("http://rosettacode.org");

@@ -5,7 +5,7 @@
 ```ruby
 func tree(img, x, y, scale=6/10, len=400, angle=270) {
  
-    len < 1 && return;
+    len < 1 && return nil;
  
     img.moveTo(x, y);
     img.angle(angle);

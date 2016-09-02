@@ -4,7 +4,7 @@
 
 ```ruby
 func traverse(Block callback, Dir dir) {
-    dir.open(\var dir_h) || return;
+    dir.open(\var dir_h) || return nil;
  
     dir_h.entries.each { |entry|
         if (entry.is_a(Dir)) {
