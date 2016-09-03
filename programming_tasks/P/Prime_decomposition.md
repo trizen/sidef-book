@@ -14,7 +14,7 @@ func prime_factors(n) {
 
 Trial division:
 
-```ruby
+```python
 func prime_factors(n) {
     var p = 3;
     var out = [];

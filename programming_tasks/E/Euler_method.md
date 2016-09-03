@@ -2,7 +2,7 @@
 
 # [Euler method][1]
 
-```ruby
+```python
 func euler_method(t0, t1, k, step_size) {
     var results = [[0, t0]]
     for s in (step_size..100 -> by(step_size)) {
