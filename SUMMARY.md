@@ -32,6 +32,7 @@
       * [Block](syntax_and_semantics/literals/block.md)
    * [Language constructs](syntax_and_semantics/constructs.md)
       * [If](syntax_and_semantics/constructs/if.md)
+      * [With](syntax_and_semantics/constructs/with.md)
       * [Goto](syntax_and_semantics/constructs/goto.md)
       * [While](syntax_and_semantics/constructs/while.md)
       * [Do/While](syntax_and_semantics/constructs/do_while.md)
