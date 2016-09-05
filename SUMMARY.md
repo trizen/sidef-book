@@ -147,6 +147,7 @@
        * Closures
            * [Value capture](programming_tasks/C/Closures/Value_capture.md)
        * [Collections](programming_tasks/C/Collections.md)
+       * [Color wheel](programming_tasks/C/Color_wheel.md)
        * Colour bars
            * [Display](programming_tasks/C/Colour_bars/Display.md)
        * [Combinations](programming_tasks/C/Combinations.md)
