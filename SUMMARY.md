@@ -537,6 +537,8 @@
        * [Read entire file](programming_tasks/R/Read_entire_file.md)
        * [Real constants and functions](programming_tasks/R/Real_constants_and_functions.md)
        * [Reduced row echelon form](programming_tasks/R/Reduced_row_echelon_form.md)
+       * Reflection
+           * [List methods](programming_tasks/R/Reflection/List_methods.md)
        * [Regular expressions](programming_tasks/R/Regular_expressions.md)
        * [Remove duplicate elements](programming_tasks/R/Remove_duplicate_elements.md)
        * [Remove lines from a file](programming_tasks/R/Remove_lines_from_a_file.md)
@@ -570,6 +572,7 @@
        * [S-Expressions](programming_tasks/S/S-Expressions.md)
        * [Sailors  coconuts and a monkey problem](programming_tasks/S/Sailors__coconuts_and_a_monkey_problem.md)
        * [Same Fringe](programming_tasks/S/Same_Fringe.md)
+       * [Sattolo cycle](programming_tasks/S/Sattolo_cycle.md)
        * Scope
            * [Function names and labels](programming_tasks/S/Scope/Function_names_and_labels.md)
        * [Search a list](programming_tasks/S/Search_a_list.md)
@@ -607,6 +610,7 @@
        * [Smith numbers](programming_tasks/S/Smith_numbers.md)
        * [Snake](programming_tasks/S/Snake.md)
        * [Sockets](programming_tasks/S/Sockets.md)
+       * [Sort a list of object identifiers](programming_tasks/S/Sort_a_list_of_object_identifiers.md)
        * [Sort an array of composite structures](programming_tasks/S/Sort_an_array_of_composite_structures.md)
        * [Sort an integer array](programming_tasks/S/Sort_an_integer_array.md)
        * [Sort disjoint sublist](programming_tasks/S/Sort_disjoint_sublist.md)
@@ -670,6 +674,7 @@
        * [Subtractive generator](programming_tasks/S/Subtractive_generator.md)
        * [Sudoku](programming_tasks/S/Sudoku.md)
        * [Sum and product of an array](programming_tasks/S/Sum_and_product_of_an_array.md)
+       * [Sum and Product Puzzle](programming_tasks/S/Sum_and_Product_Puzzle.md)
        * [Sum digits of an integer](programming_tasks/S/Sum_digits_of_an_integer.md)
        * [Sum multiples of 3 and 5](programming_tasks/S/Sum_multiples_of_3_and_5.md)
        * [Sum of a series](programming_tasks/S/Sum_of_a_series.md)
