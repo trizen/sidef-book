@@ -137,6 +137,7 @@
        * [Catalan numbers](programming_tasks/C/Catalan_numbers.md)
            * [Pascal's triangle](programming_tasks/C/Catalan_numbers/Pascal's_triangle.md)
        * [Catamorphism](programming_tasks/C/Catamorphism.md)
+       * [Chaos game](programming_tasks/C/Chaos_game.md)
        * [Character codes](programming_tasks/C/Character_codes.md)
        * [Chebyshev coefficients](programming_tasks/C/Chebyshev_coefficients.md)
        * [Check that file exists](programming_tasks/C/Check_that_file_exists.md)
