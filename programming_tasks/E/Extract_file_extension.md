@@ -3,29 +3,30 @@
 # [Extract file extension][1]
 
 ```ruby
-func extension (filename) {
-   given(filename.split('.').last) {
-       when(filename) { "" }
-       when(/[\/_]/)  { "" }
-       default        { "." + _ }
-   }
+func extension(filename) {
+    filename.match(/(\.[a-z0-9]+)\z/i).to_s
 }
- 
-['mywebsite.com/picture/image.png',
- 'http://mywebsite.com/picture/image.png',
- 'myuniquefile.longextension',
- 'IAmAFileWithoutExtension',
- '/path/to.my/file',
- 'file.odd_one',
-].each {|f| say "#{f} -> #{extension(f).dump}" }
+
+var files = [
+    'http://example.com/download.tar.gz',
+    'CharacterModel.3DS',
+    '.desktop',
+    'document',
+    'document.txt_backup',
+    '/etc/pam.d/login',
+]
+
+files.each {|f|
+    printf("%-36s -> %-11s\n", f.dump, extension(f).dump)
+}
 ```
 
 #### Output:
 ```
-mywebsite.com/picture/image.png -> ".png"
-http://mywebsite.com/picture/image.png -> ".png"
-myuniquefile.longextension -> ".longextension"
-IAmAFileWithoutExtension -> ""
-/path/to.my/file -> ""
-file.odd_one -> ""
+"http://example.com/download.tar.gz" -> ".gz"
+"CharacterModel.3DS"                 -> ".3DS"
+".desktop"                           -> ".desktop"
+"document"                           -> ""
+"document.txt_backup"                -> ""
+"/etc/pam.d/login"                   -> ""
 ```

@@ -82,6 +82,7 @@
        * [Append a record to the end of a text file](programming_tasks/A/Append_a_record_to_the_end_of_a_text_file.md)
        * [Apply a callback to an array](programming_tasks/A/Apply_a_callback_to_an_array.md)
        * [Arbitrary-precision integers [included]](programming_tasks/A/Arbitrary-precision_integers_[included].md)
+       * [Archimedean spiral](programming_tasks/A/Archimedean_spiral.md)
        * Arithmetic
            * [Complex](programming_tasks/A/Arithmetic/Complex.md)
            * [Integer](programming_tasks/A/Arithmetic/Integer.md)
@@ -130,6 +131,7 @@
    * C
        * [Caesar cipher](programming_tasks/C/Caesar_cipher.md)
        * [Calendar](programming_tasks/C/Calendar.md)
+       * [Calendar - for "REAL" programmers](programming_tasks/C/Calendar_-_for_"REAL"_programmers.md)
        * [Call a function](programming_tasks/C/Call_a_function.md)
        * [Call an object method](programming_tasks/C/Call_an_object_method.md)
        * [Carmichael 3 strong pseudoprimes](programming_tasks/C/Carmichael_3_strong_pseudoprimes.md)
@@ -180,7 +182,9 @@
        * [CSV data manipulation](programming_tasks/C/CSV_data_manipulation.md)
        * [CSV to HTML translation](programming_tasks/C/CSV_to_HTML_translation.md)
        * [Cumulative standard deviation](programming_tasks/C/Cumulative_standard_deviation.md)
+       * [Currency](programming_tasks/C/Currency.md)
        * [Currying](programming_tasks/C/Currying.md)
+       * [Cycle detection](programming_tasks/C/Cycle_detection.md)
    * D
        * [Date format](programming_tasks/D/Date_format.md)
        * [Date manipulation](programming_tasks/D/Date_manipulation.md)
@@ -465,6 +469,7 @@
        * [One of n lines in a file](programming_tasks/O/One_of_n_lines_in_a_file.md)
        * [Operator precedence](programming_tasks/O/Operator_precedence.md)
        * [Optional parameters](programming_tasks/O/Optional_parameters.md)
+       * [Orbital elements](programming_tasks/O/Orbital_elements.md)
        * [Order disjoint list items](programming_tasks/O/Order_disjoint_list_items.md)
        * [Ordered Partitions](programming_tasks/O/Ordered_Partitions.md)
        * [Ordered words](programming_tasks/O/Ordered_words.md)

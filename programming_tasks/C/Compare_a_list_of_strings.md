@@ -5,14 +5,14 @@
 Short-circuiting:
 
 ```ruby
-1..arr.offset -> all{ arr[0] == arr[_] };  # All equal
-1..arr.offset -> all{ arr[_-1] < arr[_] }; # Strictly ascending
+1..arr.end -> all{ arr[0] == arr[_] }   # all equal
+1..arr.end -> all{ arr[_-1] < arr[_] }  # strictly ascending
 ```
 
 
 Non short-circuiting:
 
 ```ruby
-arr.unique.len == 1;    # all equal?
-arr == arr.sort;        # sorted?
+arr.uniq.len == 1      # all equal
+arr == arr.uniq.sort   # strictly ascending
 ```
