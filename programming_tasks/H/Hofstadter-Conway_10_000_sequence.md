@@ -5,16 +5,16 @@
 ```ruby
 class HofstadterConway10000 {
   has sequence = [nil, 1, 1]
-
+ 
   method term(n {.is_pos}) {
     var a = sequence
     a.len .. n -> each {|i| a[i] = a[a[i-1]]+a[i-a[i-1]] }
     a[n]
   }
 }
-
+ 
 var hc = HofstadterConway10000()
-
+ 
 var mallows = nil
 for i in (1..19) {
   var j = i+1
@@ -24,9 +24,9 @@ for i in (1..19) {
     (max_n, max_v) = (n, v) if (v > max_v)
     mallows = n if (v >= 0.55)
   }
-  say ("maximum between 2^%2d and 2^%2d occurs at%7d: %.8f" % (i, j, max_n, max_v))
+  say ("maximum between 2^%2d and 2^%2d occurs at%7d: %.8f" % (i, j, max_n, max_v))
 }
-
+ 
 say "the mallows number is #{mallows}"
 ```
 
