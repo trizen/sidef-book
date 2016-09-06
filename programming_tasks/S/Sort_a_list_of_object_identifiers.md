@@ -4,9 +4,9 @@
 
 ```ruby
 func sort_OIDs(ids) {
-    ids.map {|id|
-        Pair(id, id.split('.').map { Num(_) })
-    }.sort_by { .second }.map { .first }
+    ids.sort_by { |id|
+        id.split('.').map { Num(_) }
+    }
 }
  
 var OIDs = %w(
