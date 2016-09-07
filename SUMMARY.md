@@ -465,6 +465,7 @@
        * [Numerical integration](programming_tasks/N/Numerical_integration.md)
            * [Gauss-Legendre Quadrature](programming_tasks/N/Numerical_integration/Gauss-Legendre_Quadrature.md)
    * O
+       * [Odd word problem](programming_tasks/O/Odd_word_problem.md)
        * [Old lady swallowed a fly](programming_tasks/O/Old_lady_swallowed_a_fly.md)
        * [One-dimensional cellular automata](programming_tasks/O/One-dimensional_cellular_automata.md)
        * [One of n lines in a file](programming_tasks/O/One_of_n_lines_in_a_file.md)
@@ -472,6 +473,7 @@
        * [Optional parameters](programming_tasks/O/Optional_parameters.md)
        * [Orbital elements](programming_tasks/O/Orbital_elements.md)
        * [Order disjoint list items](programming_tasks/O/Order_disjoint_list_items.md)
+       * [Order two numerical lists](programming_tasks/O/Order_two_numerical_lists.md)
        * [Ordered Partitions](programming_tasks/O/Ordered_Partitions.md)
        * [Ordered words](programming_tasks/O/Ordered_words.md)
    * P
