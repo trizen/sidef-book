@@ -142,6 +142,7 @@
        * [Chaos game](programming_tasks/C/Chaos_game.md)
        * [Character codes](programming_tasks/C/Character_codes.md)
        * [Chebyshev coefficients](programming_tasks/C/Chebyshev_coefficients.md)
+       * [Check Machin-like formulas](programming_tasks/C/Check_Machin-like_formulas.md)
        * [Check that file exists](programming_tasks/C/Check_that_file_exists.md)
        * [Chinese remainder theorem](programming_tasks/C/Chinese_remainder_theorem.md)
        * [Cholesky decomposition](programming_tasks/C/Cholesky_decomposition.md)
@@ -551,6 +552,7 @@
        * [Rep-string](programming_tasks/R/Rep-string.md)
        * [Repeat](programming_tasks/R/Repeat.md)
        * [Repeat a string](programming_tasks/R/Repeat_a_string.md)
+       * [Resistor mesh](programming_tasks/R/Resistor_mesh.md)
        * [Respond to an unknown method call](programming_tasks/R/Respond_to_an_unknown_method_call.md)
        * [Return multiple values](programming_tasks/R/Return_multiple_values.md)
        * [Reverse a string](programming_tasks/R/Reverse_a_string.md)
@@ -685,6 +687,7 @@
        * [Sum of a series](programming_tasks/S/Sum_of_a_series.md)
        * [Sum of squares](programming_tasks/S/Sum_of_squares.md)
        * [Superellipse](programming_tasks/S/Superellipse.md)
+       * [Sutherland-Hodgman polygon clipping](programming_tasks/S/Sutherland-Hodgman_polygon_clipping.md)
        * [Symmetric difference](programming_tasks/S/Symmetric_difference.md)
        * [System time](programming_tasks/S/System_time.md)
    * T
