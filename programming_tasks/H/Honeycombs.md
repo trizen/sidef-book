@@ -68,7 +68,7 @@ class Honeycombs(
     }
 
     method display(title) {
-        fork {
+        {
             var mw     = %s'MainWindow'.new('-title' => title)
             var canvas = mw.Canvas('-width'  => 8*size,
                                    '-height' => 8*size).pack
@@ -82,7 +82,7 @@ class Honeycombs(
                                ).pack
             mw.bind('<Alt-q>', { btn.invoke })
             tk.MainLoop()
-        }
+        }.fork
     }
 }
 
