@@ -6,10 +6,11 @@
 func suffix_tree(Str t) {
     suffix_tree(^t.len -> map { t.substr(_) })
 }
- 
-func suffix_tree({.is_empty})   { Hash() }
-func suffix_tree(a {.len == 1}) { Hash(a[0] => Hash()) }
- 
+
+func suffix_tree(a {.len == 1}) {
+    Hash(a[0] => nil)
+}
+
 func suffix_tree(Arr a) {
     var h = Hash()
     for k,v in (a.group_by { .char(0) }) {
@@ -25,25 +26,25 @@ func suffix_tree(Arr a) {
     }
     return h
 }
- 
+
 say suffix_tree('banana$')
 ```
 
 #### Output:
 ```
 Hash(
-    "$" => Hash(),
+    "$" => nil,
     "a" => Hash(
-        "$" => Hash(),
+        "$" => nil,
         "na" => Hash(
-            "$" => Hash(),
-            "na$" => Hash()
+            "$" => nil,
+            "na$" => nil
         )
     ),
-    "banana$" => Hash(),
+    "banana$" => nil,
     "na" => Hash(
-        "$" => Hash(),
-        "na$" => Hash()
+        "$" => nil,
+        "na$" => nil
     )
 )
 ```
