@@ -336,6 +336,7 @@
            * [Authenticated](programming_tasks/H/HTTPS/Authenticated.md)
        * [Huffman coding](programming_tasks/H/Huffman_coding.md)
    * I
+       * [I Q Puzzle](programming_tasks/I/I_Q_Puzzle.md)
        * [IBAN](programming_tasks/I/IBAN.md)
        * [Identity matrix](programming_tasks/I/Identity_matrix.md)
        * [Include a file](programming_tasks/I/Include_a_file.md)

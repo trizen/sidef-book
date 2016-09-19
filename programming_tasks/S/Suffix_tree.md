@@ -7,7 +7,7 @@ func suffix_tree(Str t) {
     suffix_tree(^t.len -> map { t.substr(_) })
 }
 
-func suffix_tree(a {.len == 1}) {
+func suffix_tree(Arr a {.len == 1}) {
     Hash(a[0] => nil)
 }
 
