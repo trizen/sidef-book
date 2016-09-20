@@ -429,6 +429,7 @@
        * [Maze generation](programming_tasks/M/Maze_generation.md)
        * [MD4](programming_tasks/M/MD4.md)
        * [MD5](programming_tasks/M/MD5.md)
+           * [Implementation](programming_tasks/M/MD5/Implementation.md)
        * [Menu](programming_tasks/M/Menu.md)
        * [Metaprogramming](programming_tasks/M/Metaprogramming.md)
        * [Middle three digits](programming_tasks/M/Middle_three_digits.md)
