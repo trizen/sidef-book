@@ -720,6 +720,7 @@
        * [Textonyms](programming_tasks/T/Textonyms.md)
        * [The ISAAC Cipher](programming_tasks/T/The_ISAAC_Cipher.md)
        * [The Twelve Days of Christmas](programming_tasks/T/The_Twelve_Days_of_Christmas.md)
+       * [Thiele's interpolation formula](programming_tasks/T/Thiele's_interpolation_formula.md)
        * [Thue-Morse](programming_tasks/T/Thue-Morse.md)
        * [Time a function](programming_tasks/T/Time_a_function.md)
        * [Tokenize a string](programming_tasks/T/Tokenize_a_string.md)
