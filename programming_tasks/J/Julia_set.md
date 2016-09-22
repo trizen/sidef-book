@@ -25,3 +25,24 @@ for x,y in (^w ~X ^h) {
 
 img.write(file => "JuliaSet_sidef.png")
 ```
+
+This version generates an ASCII representation:
+
+```ruby
+var (w, h) = (141, 50)
+
+var maxIter = 40
+var c = Complex(-0.8, 0.156)
+
+for y in ^h {
+    for x in ^w {
+        var i = maxIter
+        var z = Complex(3 * (x - w/2) / w, 2 * (y - h/2) / h)
+        while (z.abs < 2 && --i) {
+            z = (z*z + c)
+        }
+        print (i > 0 ? ' ' : '#')
+    }
+    print "\n"
+}
+```
