@@ -447,6 +447,7 @@
        * [Multiple distinct objects](programming_tasks/M/Multiple_distinct_objects.md)
        * [Multiplication tables](programming_tasks/M/Multiplication_tables.md)
        * [Multisplit](programming_tasks/M/Multisplit.md)
+       * [Munchausen numbers](programming_tasks/M/Munchausen_numbers.md)
        * [Munching squares](programming_tasks/M/Munching_squares.md)
        * [Mutual recursion](programming_tasks/M/Mutual_recursion.md)
    * N
@@ -508,6 +509,7 @@
        * [Pick random element](programming_tasks/P/Pick_random_element.md)
        * Pig the dice game
            * [Player](programming_tasks/P/Pig_the_dice_game/Player.md)
+       * [Plasma effect](programming_tasks/P/Plasma_effect.md)
        * [Playing cards](programming_tasks/P/Playing_cards.md)
        * [Plot coordinate pairs](programming_tasks/P/Plot_coordinate_pairs.md)
        * [Pointers and references](programming_tasks/P/Pointers_and_references.md)
@@ -515,6 +517,7 @@
        * [Polymorphism](programming_tasks/P/Polymorphism.md)
        * [Polynomial long division](programming_tasks/P/Polynomial_long_division.md)
        * [Polynomial regression](programming_tasks/P/Polynomial_regression.md)
+       * [Polynomial synthetic division](programming_tasks/P/Polynomial_synthetic_division.md)
        * [Population count](programming_tasks/P/Population_count.md)
        * [Power set](programming_tasks/P/Power_set.md)
        * [Price fraction](programming_tasks/P/Price_fraction.md)
@@ -601,6 +604,7 @@
        * [Separate the house number from the street name](programming_tasks/S/Separate_the_house_number_from_the_street_name.md)
        * [Sequence of non-squares](programming_tasks/S/Sequence_of_non-squares.md)
        * [Sequence of primes by Trial Division](programming_tasks/S/Sequence_of_primes_by_Trial_Division.md)
+       * [Sequence of primorial primes](programming_tasks/S/Sequence_of_primorial_primes.md)
        * [Set](programming_tasks/S/Set.md)
        * [Set consolidation](programming_tasks/S/Set_consolidation.md)
        * [Seven-sided dice from five-sided dice](programming_tasks/S/Seven-sided_dice_from_five-sided_dice.md)
