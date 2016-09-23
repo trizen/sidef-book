@@ -272,6 +272,7 @@
        * [FizzBuzz](programming_tasks/F/FizzBuzz.md)
        * [Flatten a list](programming_tasks/F/Flatten_a_list.md)
        * [Floyd's triangle](programming_tasks/F/Floyd's_triangle.md)
+       * [Floyd-Warshall algorithm](programming_tasks/F/Floyd-Warshall_algorithm.md)
        * [Forest fire](programming_tasks/F/Forest_fire.md)
        * [Fork](programming_tasks/F/Fork.md)
        * [Formatted numeric output](programming_tasks/F/Formatted_numeric_output.md)
