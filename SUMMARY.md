@@ -148,6 +148,7 @@
        * [Cholesky decomposition](programming_tasks/C/Cholesky_decomposition.md)
        * [Cipolla's algorithm](programming_tasks/C/Cipolla's_algorithm.md)
        * [Classes](programming_tasks/C/Classes.md)
+       * [Closest-pair problem](programming_tasks/C/Closest-pair_problem.md)
        * Closures
            * [Value capture](programming_tasks/C/Closures/Value_capture.md)
        * [Collections](programming_tasks/C/Collections.md)
@@ -268,6 +269,7 @@
        * [Find duplicate files](programming_tasks/F/Find_duplicate_files.md)
        * [Find largest left truncatable prime in a given base](programming_tasks/F/Find_largest_left_truncatable_prime_in_a_given_base.md)
        * [Find limit of recursion](programming_tasks/F/Find_limit_of_recursion.md)
+       * [Find palindromic numbers in both binary and ternary bases](programming_tasks/F/Find_palindromic_numbers_in_both_binary_and_ternary_bases.md)
        * [Find the last Sunday of each month](programming_tasks/F/Find_the_last_Sunday_of_each_month.md)
        * [Find the missing permutation](programming_tasks/F/Find_the_missing_permutation.md)
        * [First-class functions](programming_tasks/F/First-class_functions.md)
@@ -378,6 +380,7 @@
            * [Bounded](programming_tasks/K/Knapsack_problem/Bounded.md)
            * [Continuous](programming_tasks/K/Knapsack_problem/Continuous.md)
            * [Unbounded](programming_tasks/K/Knapsack_problem/Unbounded.md)
+       * [Knight's tour](programming_tasks/K/Knight's_tour.md)
        * [Knuth's algorithm S](programming_tasks/K/Knuth's_algorithm_S.md)
        * [Knuth's power tree](programming_tasks/K/Knuth's_power_tree.md)
        * [Knuth shuffle](programming_tasks/K/Knuth_shuffle.md)

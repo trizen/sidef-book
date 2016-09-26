@@ -3,23 +3,27 @@
 # [Carmichael 3 strong pseudoprimes][1]
 
 ```ruby
-var ntheory = frequire('ntheory');
+func forprimes(a, b, callback) {
+    for (a = (a-1 -> next_prime); a <= b; a.next_prime!) {
+        callback(a)
+    }
+}
 
-ntheory.forprimes({ |p|
+forprimes(3, 61, func(p) {
    for h3 in (2 .. p-1) {
-      var ph3 = (p + h3);
+      var ph3 = (p + h3)
       for d in (1 .. ph3-1) {
-         ((-p * p) % h3) != (d % h3) && next;
-         ((p-1)*ph3) % d && next;
-         var q = 1+((p-1) * ph3 / d);
-         ntheory.is_prime(q) || next;
-         var r = 1+((p*q - 1)/h3);
-         ntheory.is_prime(r) || next;
-         (q*r) % (p-1) == 1 || next;
-         printf("%2d x %5d x %5d = %s\n",p,q,r,ntheory.vecprod(p,q,r));
+         ((-p * p) % h3) != (d % h3) && next
+         ((p-1) * ph3) % d && next
+         var q = 1+((p-1) * ph3 / d)
+         q.is_prime || next
+         var r = 1+((p*q - 1)/h3)
+         r.is_prime || next
+         (q*r) % (p-1) == 1 || next
+         printf("%2d x %5d x %5d = %s\n",p,q,r, p*q*r)
       }
    }
-}, 3, 61);
+})
 ```
 
 #### Output:
