@@ -426,6 +426,7 @@
        * [Lucas-Lehmer test](programming_tasks/L/Lucas-Lehmer_test.md)
        * [Ludic numbers](programming_tasks/L/Ludic_numbers.md)
        * [Luhn test of credit card numbers](programming_tasks/L/Luhn_test_of_credit_card_numbers.md)
+       * [Lychrel numbers](programming_tasks/L/Lychrel_numbers.md)
        * [LZW compression](programming_tasks/L/LZW_compression.md)
    * M
        * [Mad Libs](programming_tasks/M/Mad_Libs.md)
