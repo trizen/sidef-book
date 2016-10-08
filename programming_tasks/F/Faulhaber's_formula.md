@@ -38,3 +38,22 @@ for p in ^10 {
  8: 1/9 * (n^9 + 9/2*n^8 + 6*n^7 + -21/5*n^5 + 2*n^3 + -3/10*n)
  9: 1/10 * (n^10 + 5*n^9 + 15/2*n^8 + -7*n^6 + 5*n^4 + -3/2*n^2)
 ```
+
+By not simplifying the formulas, we have a much clearer code:
+
+```ruby
+func faulhaber_s_formula(p) {
+
+    var formula = gather {
+        for j in ^(p+1) {
+            take "#{binomial(p+1, j) * j.bernfrac -> as_rat}*n^#{p+1 - j}"
+        }
+    }.join(' + ')
+
+    "1/#{p + 1} * (#{formula})"
+}
+
+for p in ^10 {
+    printf("%2d: %s\n", p, faulhaber_s_formula(p))
+}
+```
