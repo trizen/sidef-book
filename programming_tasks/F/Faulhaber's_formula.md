@@ -3,27 +3,11 @@
 # [Faulhaber's formula][1]
 
 ```ruby
-func bernoulli({.is_one}) { 1/2 }
-func bernoulli({.is_odd}) { 0/1 }
-
-func bernoulli(n) {
-
-    var a = []
-    for m in ^(n+1) {
-        a[m] = 1/(m + 1)
-        for j in (m^..0 + 1) {
-            a[j-1] = j*(a[j-1] - a[j])
-        }
-    }
-
-    return a[0]
-}
-
 func faulhaber_s_formula(p) {
 
     var formula = gather {
         for j in ^(p+1) {
-            take "(#{binomial(p+1, j) * bernoulli(j) -> as_rat})*n^#{p+1 - j}"
+            take "(#{binomial(p+1, j) * j.bernfrac -> as_rat})*n^#{p+1 - j}"
         }
     }
 
