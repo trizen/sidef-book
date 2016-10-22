@@ -4,38 +4,33 @@
 
 ```ruby
 func cipolla(n, p) {
-    func legendre_symbol(a) {
-        expmod(a, (p-1)//2, p)
-    }
- 
-    if (legendre_symbol(n) != 1) {
-        return nil
-    }
- 
+
+    legendre(n, p) == 1 || return nil
+
     var (a = 0, ω2 = 0)
     loop {
         ω2 = ((a*a - n) % p)
-        if (legendre_symbol(ω2) == p-1) {
+        if (legendre(ω2, p) == -1) {
             break
         }
         ++a
     }
- 
+
     struct point { x, y }
- 
+
     func mul(a, b) {
         point((a.x*b.x + a.y*b.y*ω2) % p, (a.x*b.y + b.x*a.y) % p)
     }
- 
+
     var r = point(1, 0)
     var s = point(a, 1)
- 
+
     for (var n = ((p+1) >> 1); n > 0; n >>= 1) {
         r = mul(r, s) if n.is_odd
         s = mul(s, s)
     }
- 
-    r.y == 0 ? r.x : nil
+
+    r.y == 0 ? r.x : nil
 }
  
 var tests = [
