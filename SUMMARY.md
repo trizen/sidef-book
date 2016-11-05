@@ -468,6 +468,7 @@
        * [Narcissistic decimal number](programming_tasks/N/Narcissistic_decimal_number.md)
        * [Native shebang](programming_tasks/N/Native_shebang.md)
        * [Natural sorting](programming_tasks/N/Natural_sorting.md)
+       * [Nested function](programming_tasks/N/Nested_function.md)
        * [Non-continuous subsequences](programming_tasks/N/Non-continuous_subsequences.md)
        * Non-decimal radices
            * [Convert](programming_tasks/N/Non-decimal_radices/Convert.md)
