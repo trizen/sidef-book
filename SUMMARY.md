@@ -200,6 +200,7 @@
        * [Detect division by zero](programming_tasks/D/Detect_division_by_zero.md)
        * [Determine if a string is numeric](programming_tasks/D/Determine_if_a_string_is_numeric.md)
        * [Determine if only one instance is running](programming_tasks/D/Determine_if_only_one_instance_is_running.md)
+       * [Dice game probabilities](programming_tasks/D/Dice_game_probabilities.md)
        * [Digital root](programming_tasks/D/Digital_root.md)
            * [Multiplicative digital root](programming_tasks/D/Digital_root/Multiplicative_digital_root.md)
        * [Dijkstra's algorithm](programming_tasks/D/Dijkstra's_algorithm.md)
