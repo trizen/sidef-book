@@ -78,6 +78,7 @@
        * [Amicable pairs](programming_tasks/A/Amicable_pairs.md)
        * [Anagrams](programming_tasks/A/Anagrams.md)
            * [Deranged anagrams](programming_tasks/A/Anagrams/Deranged_anagrams.md)
+       * [Animate a pendulum](programming_tasks/A/Animate_a_pendulum.md)
        * [Anonymous recursion](programming_tasks/A/Anonymous_recursion.md)
        * [Append a record to the end of a text file](programming_tasks/A/Append_a_record_to_the_end_of_a_text_file.md)
        * [Apply a callback to an array](programming_tasks/A/Apply_a_callback_to_an_array.md)
