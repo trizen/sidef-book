@@ -547,6 +547,7 @@
        * [Pythagoras tree](programming_tasks/P/Pythagoras_tree.md)
        * [Pythagorean triples](programming_tasks/P/Pythagorean_triples.md)
    * Q
+       * [Quaternion type](programming_tasks/Q/Quaternion_type.md)
        * Queue
            * [Definition](programming_tasks/Q/Queue/Definition.md)
            * [Usage](programming_tasks/Q/Queue/Usage.md)
@@ -558,6 +559,7 @@
        * [Random number generator [included]](programming_tasks/R/Random_number_generator_[included].md)
        * [Random numbers](programming_tasks/R/Random_numbers.md)
        * [Range expansion](programming_tasks/R/Range_expansion.md)
+       * [Ranking methods](programming_tasks/R/Ranking_methods.md)
        * [Rate counter](programming_tasks/R/Rate_counter.md)
        * [Read a configuration file](programming_tasks/R/Read_a_configuration_file.md)
        * Read a file character by character
@@ -775,6 +777,7 @@
        * [Vector products](programming_tasks/V/Vector_products.md)
        * [Vigenère cipher](programming_tasks/V/Vigenère_cipher.md)
        * [Visualize a tree](programming_tasks/V/Visualize_a_tree.md)
+       * [Voronoi diagram](programming_tasks/V/Voronoi_diagram.md)
    * W
        * Walk a directory
            * [Non-recursively](programming_tasks/W/Walk_a_directory/Non-recursively.md)
