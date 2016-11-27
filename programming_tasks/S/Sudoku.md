@@ -3,45 +3,41 @@
 # [Sudoku][1]
 
 ```ruby
-func _check(i, j) is cached {
-    var (id, im) = i.divmod(9);
-    var (jd, jm) = j.divmod(9);
+func check(i, j) is cached {
+    var (id, im) = i.divmod(9)
+    var (jd, jm) = j.divmod(9)
 
-    jd == id && return true;
-    jm == im && return true;
+    jd == id && return true
+    jm == im && return true
 
-    var id2 = id//3;
-    var jd2 = jd//3;
+    var id2 = id//3
+    var jd2 = jd//3
 
-    jd2 == id2 || return false;
+    jd2 == id2 || return false
 
     jm//3 == im//3
 }
 
 func solve(board) {
-    board.range.each { |i|
-        board[i] && next;
-        var t = board.items(
-            board.range.grep {|j|
-                _check(i, j)
-            }...
-        );
+    for i in ^board {
+        board[i] && next
+        var *t = board[^board -> grep {|j| check(i, j) }]
 
         { |k|
-            t.contains(k) && next;
-            board[i] = k;
-            solve(board);
-        } * 9;
+            t.contains(k) && next
+            board[i] = k
+            solve(board)
+        } * 9
 
-        board[i] = 0;
-        return nil;
+        board[i] = 0
+        return nil
     }
 
     for i in ^board {
         print "#{board[i]} ";
-        print " "  if (3  -> divides(i+1));
-        print "\n" if (9  -> divides(i+1));
-        print "\n" if (27 -> divides(i+1));
+        print " "  if (3  -> divides(i+1))
+        print "\n" if (9  -> divides(i+1))
+        print "\n" if (27 -> divides(i+1))
     }
 }
 
@@ -57,9 +53,9 @@ var board = %i(
     0 0 0  0 3 0  5 0 6
     9 6 0  0 1 0  3 0 0
     0 5 0  6 9 0  0 1 0
-);
+)
 
-solve(board);
+solve(board)
 ```
 
 #### Output:
