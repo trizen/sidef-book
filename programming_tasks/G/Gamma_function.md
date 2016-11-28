@@ -100,16 +100,16 @@ for i in 1..10 {
 A simpler implementation:
 
 ```ruby
-define e  = Math.e;
-define pi = Math.pi;
+define ℯ = Num.e
+define τ = Num.tau
  
 func Γ(t) {
     t < 20 ? (__FUNC__(t + 1) / t)
-           : (Math.sqrt(2*pi*t) * Math.pow(t/e + 1/(12*e*t), t) / t);
+           : (sqrt(τ*t) * pow(t/ℯ + 1/(12*ℯ*t), t) / t)
 }
  
-for i in 1..10 {
-    say ("%.14e" % Γ(i/3));
+for i in (1..10) {
+    say ("%.14f" % Γ(i/3))
 }
 ```
 
