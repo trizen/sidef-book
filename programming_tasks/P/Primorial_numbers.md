@@ -3,15 +3,13 @@
 # [Primorial numbers][1]
 
 ```ruby
-var nt = frequire('ntheory')
-
 say (
-    "First ten primorials: ",
-    10.of {|i| nt.pn_primorial(i-1) }.join(", ")
-);
+    'First ten primorials: ',
+    10.of {|i| pn_primorial(i-1) }.join(', ')
+)
 
 6.times { |i|
-    say ("primorial(10^#{i}) has " + nt.pn_primorial(10**i).length + " digits")
+    say ("primorial(10^#{i}) has " + pn_primorial(10**i).len + ' digits')
 }
 ```
 

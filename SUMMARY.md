@@ -269,6 +269,7 @@
        * [Filter](programming_tasks/F/Filter.md)
        * [Find common directory path](programming_tasks/F/Find_common_directory_path.md)
        * [Find duplicate files](programming_tasks/F/Find_duplicate_files.md)
+       * [Find first and last set bit of a long integer](programming_tasks/F/Find_first_and_last_set_bit_of_a_long_integer.md)
        * [Find largest left truncatable prime in a given base](programming_tasks/F/Find_largest_left_truncatable_prime_in_a_given_base.md)
        * [Find limit of recursion](programming_tasks/F/Find_limit_of_recursion.md)
        * [Find palindromic numbers in both binary and ternary bases](programming_tasks/F/Find_palindromic_numbers_in_both_binary_and_ternary_bases.md)
