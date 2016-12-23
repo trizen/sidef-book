@@ -5,18 +5,18 @@
 ```ruby
 func chebft (callback, a, b, n) {
  
-    var bma = (0.5 * b-a);
-    var bpa = (0.5 * b+a);
+    var bma = (0.5 * b-a)
+    var bpa = (0.5 * b+a)
  
-    var pi_n = ((0..(n-1) »+» 0.5) »*» (Number.pi / n));
-    var f = (pi_n »cos»() »*» bma »+» bpa «call« callback);
-    var sums = (0..(n-1) «run« {|i| f »*« ((pi_n »*» i) »cos»()) «+» });
+    var pi_n = ((^n »+» 0.5) »*» (Num.pi / n))
+    var f = (pi_n »cos()» »*» bma »+» bpa «call« callback)
+    var sums = (^n «run« {|i| f »*« ((pi_n »*» i) »cos()») «+» })
  
-    sums »*» (2/n);
+    sums »*» (2/n)
 }
  
-chebft(func(v){v.cos}, 0, 1, 10).each { |v|
-    say ("%+.10e" % v);
+for v in (chebft(func(v){v.cos}, 0, 1, 10)) {
+    say ("%+.10e" % v)
 }
 ```
 

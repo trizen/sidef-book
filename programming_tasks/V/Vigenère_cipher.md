@@ -4,7 +4,7 @@
 
 ```ruby
 func s2v(s) { s.uc.scan(/[A-Z]/)»ord»() »-» 65 };
-func v2s(v) { (v »%» 26 »+» 65)»chr»().join };
+func v2s(v) { (v »%» 26 »+» 65)»chr»() -> join };
  
 func blacken (red, key) { v2s(s2v(red) »+« s2v(key)) };
 func redden  (blk, key) { v2s(s2v(blk) »-« s2v(key)) };

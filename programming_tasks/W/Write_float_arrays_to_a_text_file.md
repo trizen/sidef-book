@@ -4,19 +4,19 @@
 
 ```ruby
 func writedat(filename, x, y, x_precision=3, y_precision=5) {
-    var fh = File(filename).open_w;
+    var fh = File(filename).open_w
  
-    MultiArray.new(x, y).each { |x, y|
-        fh.printf("%.*g\t%.*g\n", x_precision, x, y_precision, y);
+    for a,b in (x ~Z y) {
+        fh.printf("%.*g\t%.*g\n", x_precision, a, y_precision, b)
     }
  
-    fh.close;
+    fh.close
 }
  
-var x = [1, 2, 3, 1e11];
-var y = x»sqrt»();
+var x = [1, 2, 3, 1e11]
+var y = x»sqrt»()
  
-writedat('sqrt.dat', x, y);
+writedat('sqrt.dat', x, y)
 ```
 
 #### Output:

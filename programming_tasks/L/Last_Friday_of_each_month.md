@@ -3,15 +3,15 @@
 # [Last Friday of each month][1]
 
 ```ruby
-require('DateTime');
-var (year=2015) = ARGV»to_i»()...;
+require('DateTime')
+var (year=2016) = ARGV»to_i()»...
  
-range(1, 12).each { |month|
-   var dt = %s'DateTime'.last_day_of_month(year => year, month => month);
+for month in (1..12) {
+   var dt = %s<DateTime>.last_day_of_month(year => year, month => month)
    while (dt.day_of_week != 5) {
-      dt.subtract(days => 1);
-   };
-   say dt.ymd;
+      dt.subtract(days => 1)
+   }
+   say dt.ymd
 }
 ```
 

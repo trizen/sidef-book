@@ -11,7 +11,7 @@ say STDIN.readline.words.map{.to_i}.sum
 More idiomatically:
 
 ```ruby
-say read(String).words»to_i»()«+»
+say read(String).words»to_i()»«+»
 ```
 
 Explicit summation:

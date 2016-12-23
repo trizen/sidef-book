@@ -30,7 +30,7 @@ func print_square(sq) {
     }
 }
 
-var(n=5) = ARGV»to_i»()...
+var(n=5) = ARGV»to_i()»...
 var sq = magic_square(n)
 print_square(sq)
 
