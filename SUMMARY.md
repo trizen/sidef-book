@@ -78,10 +78,12 @@
        * [Amicable pairs](programming_tasks/A/Amicable_pairs.md)
        * [Anagrams](programming_tasks/A/Anagrams.md)
            * [Deranged anagrams](programming_tasks/A/Anagrams/Deranged_anagrams.md)
+       * [Angle difference between two bearings](programming_tasks/A/Angle_difference_between_two_bearings.md)
        * [Animate a pendulum](programming_tasks/A/Animate_a_pendulum.md)
        * [Anonymous recursion](programming_tasks/A/Anonymous_recursion.md)
        * [Append a record to the end of a text file](programming_tasks/A/Append_a_record_to_the_end_of_a_text_file.md)
        * [Apply a callback to an array](programming_tasks/A/Apply_a_callback_to_an_array.md)
+       * [Apply a digitial filter [direct form II transposed]](programming_tasks/A/Apply_a_digitial_filter_[direct_form_II_transposed].md)
        * [Arbitrary-precision integers [included]](programming_tasks/A/Arbitrary-precision_integers_[included].md)
        * [Archimedean spiral](programming_tasks/A/Archimedean_spiral.md)
        * Arithmetic
@@ -207,6 +209,7 @@
        * [Dijkstra's algorithm](programming_tasks/D/Dijkstra's_algorithm.md)
        * [Dinesman's multiple-dwelling problem](programming_tasks/D/Dinesman's_multiple-dwelling_problem.md)
        * [Discordian date](programming_tasks/D/Discordian_date.md)
+       * [Diversity prediction theorem](programming_tasks/D/Diversity_prediction_theorem.md)
        * [DNS query](programming_tasks/D/DNS_query.md)
        * [Dot product](programming_tasks/D/Dot_product.md)
        * Doubly-linked list
@@ -273,6 +276,8 @@
        * [Find largest left truncatable prime in a given base](programming_tasks/F/Find_largest_left_truncatable_prime_in_a_given_base.md)
        * [Find limit of recursion](programming_tasks/F/Find_limit_of_recursion.md)
        * [Find palindromic numbers in both binary and ternary bases](programming_tasks/F/Find_palindromic_numbers_in_both_binary_and_ternary_bases.md)
+       * [Find the intersection of a line with a plane](programming_tasks/F/Find_the_intersection_of_a_line_with_a_plane.md)
+       * [Find the intersection of two lines](programming_tasks/F/Find_the_intersection_of_two_lines.md)
        * [Find the last Sunday of each month](programming_tasks/F/Find_the_last_Sunday_of_each_month.md)
        * [Find the missing permutation](programming_tasks/F/Find_the_missing_permutation.md)
        * [First-class functions](programming_tasks/F/First-class_functions.md)
@@ -472,6 +477,7 @@
        * [Narcissistic decimal number](programming_tasks/N/Narcissistic_decimal_number.md)
        * [Native shebang](programming_tasks/N/Native_shebang.md)
        * [Natural sorting](programming_tasks/N/Natural_sorting.md)
+       * [Negative base numbers](programming_tasks/N/Negative_base_numbers.md)
        * [Nested function](programming_tasks/N/Nested_function.md)
        * [Non-continuous subsequences](programming_tasks/N/Non-continuous_subsequences.md)
        * Non-decimal radices
@@ -556,6 +562,7 @@
        * [Quickselect algorithm](programming_tasks/Q/Quickselect_algorithm.md)
        * [Quine](programming_tasks/Q/Quine.md)
    * R
+       * [Ramer-Douglas-Peucker line simplification](programming_tasks/R/Ramer-Douglas-Peucker_line_simplification.md)
        * [Ramsey's theorem](programming_tasks/R/Ramsey's_theorem.md)
        * [Random number generator [device]](programming_tasks/R/Random_number_generator_[device].md)
        * [Random number generator [included]](programming_tasks/R/Random_number_generator_[included].md)
@@ -679,6 +686,7 @@
        * [Sparkline in unicode](programming_tasks/S/Sparkline_in_unicode.md)
        * [Speech synthesis](programming_tasks/S/Speech_synthesis.md)
        * [Spiral matrix](programming_tasks/S/Spiral_matrix.md)
+       * [Split a character string based on change of character](programming_tasks/S/Split_a_character_string_based_on_change_of_character.md)
        * [SQL-based authentication](programming_tasks/S/SQL-based_authentication.md)
        * [Stable marriage problem](programming_tasks/S/Stable_marriage_problem.md)
        * [Stack](programming_tasks/S/Stack.md)
@@ -784,6 +792,7 @@
        * Walk a directory
            * [Non-recursively](programming_tasks/W/Walk_a_directory/Non-recursively.md)
            * [Recursively](programming_tasks/W/Walk_a_directory/Recursively.md)
+       * [Water collected between towers](programming_tasks/W/Water_collected_between_towers.md)
        * [Web scraping](programming_tasks/W/Web_scraping.md)
        * [Window creation](programming_tasks/W/Window_creation.md)
        * [Wireworld](programming_tasks/W/Wireworld.md)
