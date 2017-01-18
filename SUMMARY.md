@@ -64,6 +64,7 @@
        * [99 Bottles of Beer](programming_tasks/9/99_Bottles_of_Beer.md)
        * [9 billion names of God the integer](programming_tasks/9/9_billion_names_of_God_the_integer.md)
    * A
+       * [A* search algorithm](programming_tasks/A/A*_search_algorithm.md)
        * [A B](programming_tasks/A/A_B.md)
        * [ABC Problem](programming_tasks/A/ABC_Problem.md)
        * [Abstract type](programming_tasks/A/Abstract_type.md)
@@ -295,6 +296,7 @@
        * [Four bit adder](programming_tasks/F/Four_bit_adder.md)
        * [Fractal tree](programming_tasks/F/Fractal_tree.md)
        * [Fractran](programming_tasks/F/Fractran.md)
+       * [French Republican calendar](programming_tasks/F/French_Republican_calendar.md)
        * [FTP](programming_tasks/F/FTP.md)
        * [Function composition](programming_tasks/F/Function_composition.md)
        * [Function definition](programming_tasks/F/Function_definition.md)
@@ -725,6 +727,7 @@
        * [Sum of a series](programming_tasks/S/Sum_of_a_series.md)
        * [Sum of squares](programming_tasks/S/Sum_of_squares.md)
        * [Superellipse](programming_tasks/S/Superellipse.md)
+       * [Superpermutation minimisation](programming_tasks/S/Superpermutation_minimisation.md)
        * [Sutherland-Hodgman polygon clipping](programming_tasks/S/Sutherland-Hodgman_polygon_clipping.md)
        * [Symmetric difference](programming_tasks/S/Symmetric_difference.md)
        * [System time](programming_tasks/S/System_time.md)
