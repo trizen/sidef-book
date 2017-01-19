@@ -3,21 +3,22 @@
 # [Self-describing numbers][1]
 
 ```ruby
-func sdn(n) {
-    var b = n.len.of(0)
-    n.each { |i| b[i] := 0 ++ }
-    n == b.join
+func sdn(Number n) {
+    var b = [0]*n.len
+    var a = n.digits
+    a.each { |i| b[i] := 0 ++ }
+    a == b
 }
 
-var values = <1210 2020 21200 3211000
-42101000 521001000 6210001000 27 115508>
+var values = [1210, 2020, 21200, 3211000,
+42101000, 521001000, 6210001000, 27, 115508]
 
-for test in values {
+values.each { |test|
     say "#{test} is #{sdn(test) ? '' : 'NOT ' }a self describing number."
 }
 
 say "\nSelf-descriptive numbers less than 1e5 (in base 10):"
-for i in (0 .. 1e5) { say i if sdn(i.to_s) }
+^1e5 -> each { |i| say i if sdn(i) }
 ```
 
 #### Output:
