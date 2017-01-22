@@ -84,8 +84,8 @@
        * [Anonymous recursion](programming_tasks/A/Anonymous_recursion.md)
        * [Append a record to the end of a text file](programming_tasks/A/Append_a_record_to_the_end_of_a_text_file.md)
        * [Apply a callback to an array](programming_tasks/A/Apply_a_callback_to_an_array.md)
-       * [Apply a digitial filter [direct form II transposed]](programming_tasks/A/Apply_a_digitial_filter_[direct_form_II_transposed].md)
-       * [Arbitrary-precision integers [included]](programming_tasks/A/Arbitrary-precision_integers_[included].md)
+       * [Apply a digitial filter direct form II transposed](programming_tasks/A/Apply_a_digitial_filter_direct_form_II_transposed.md)
+       * [Arbitrary-precision integers included](programming_tasks/A/Arbitrary-precision_integers_included.md)
        * [Archimedean spiral](programming_tasks/A/Archimedean_spiral.md)
        * Arithmetic
            * [Complex](programming_tasks/A/Arithmetic/Complex.md)
@@ -318,7 +318,7 @@
        * [Greatest subsequential sum](programming_tasks/G/Greatest_subsequential_sum.md)
        * [Guess the number](programming_tasks/G/Guess_the_number.md)
            * [With feedback](programming_tasks/G/Guess_the_number/With_feedback.md)
-           * [With feedback [player]](programming_tasks/G/Guess_the_number/With_feedback_[player].md)
+           * [With feedback player](programming_tasks/G/Guess_the_number/With_feedback_player.md)
        * GUI
            * [Maximum window dimensions](programming_tasks/G/GUI/Maximum_window_dimensions.md)
    * H
@@ -566,8 +566,8 @@
    * R
        * [Ramer-Douglas-Peucker line simplification](programming_tasks/R/Ramer-Douglas-Peucker_line_simplification.md)
        * [Ramsey's theorem](programming_tasks/R/Ramsey's_theorem.md)
-       * [Random number generator [device]](programming_tasks/R/Random_number_generator_[device].md)
-       * [Random number generator [included]](programming_tasks/R/Random_number_generator_[included].md)
+       * [Random number generator device](programming_tasks/R/Random_number_generator_device.md)
+       * [Random number generator included](programming_tasks/R/Random_number_generator_included.md)
        * [Random numbers](programming_tasks/R/Random_numbers.md)
        * [Range expansion](programming_tasks/R/Range_expansion.md)
        * [Ranking methods](programming_tasks/R/Ranking_methods.md)
@@ -703,7 +703,7 @@
        * [String case](programming_tasks/S/String_case.md)
        * [String comparison](programming_tasks/S/String_comparison.md)
        * [String concatenation](programming_tasks/S/String_concatenation.md)
-       * [String interpolation [included]](programming_tasks/S/String_interpolation_[included].md)
+       * [String interpolation included](programming_tasks/S/String_interpolation_included.md)
        * [String length](programming_tasks/S/String_length.md)
        * [String matching](programming_tasks/S/String_matching.md)
        * [String prepend](programming_tasks/S/String_prepend.md)
@@ -770,7 +770,7 @@
        * [Truth table](programming_tasks/T/Truth_table.md)
        * [Two Sum](programming_tasks/T/Two_Sum.md)
    * U
-       * [Ulam spiral [for primes]](programming_tasks/U/Ulam_spiral_[for_primes].md)
+       * [Ulam spiral for primes](programming_tasks/U/Ulam_spiral_for_primes.md)
        * [Unbias a random generator](programming_tasks/U/Unbias_a_random_generator.md)
        * [Undefined values](programming_tasks/U/Undefined_values.md)
        * [Unicode strings](programming_tasks/U/Unicode_strings.md)
