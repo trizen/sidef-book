@@ -3,29 +3,31 @@
 # [Miller–Rabin primality test][1]
 
 ```ruby
-func is_prime(n { .is_odd && (_ > 2) }, k) {
-    var s = 0
-    var d = n.dec
-    (d //= 2; ++s) while d.is_even
- 
+func is_prime(n, k) {
+
+    n == 2 && return true
+    n <= 1 && return false
+    n  & 1 || return false
+
+    var d = n-1
+    var s = valuation(d, 2)
+    d >>= s
+
     k.times {
         var a = 2.irand(n)
         var x = expmod(a, d, n)
         next if (x ~~ [1, n-1])
- 
+
         (s-1).times {
             x.expmod!(2, n)
-            return false if x.is_one
+            return false if x==1
             break if (x == n-1)
         }
-        return false if (x != n-1)
+        return false if (x != n-1)
     }
- 
+
     return true
 }
- 
-func is_prime((2), _k) { true }
-func is_prime(_n, _k)  { false }
- 
-say 1000.range.grep {|n| is_prime(n, 10) }.join(", ")
+
+say(^1000->grep {|n| is_prime(n, 10) }.join(', '))
 ```
