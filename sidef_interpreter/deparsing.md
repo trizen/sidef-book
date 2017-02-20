@@ -13,22 +13,22 @@ Example:
 $ sidef -Rperl script.sf | perl
 ```
 
-The `-Rsidef` switch (or simply `-r`) it's very useful to check how the code is actually parsed.
+The `-Rsidef` switch (or simply `-r`) is useful for verifying how the code is parsed.
 
 Example:
 ```shell
-$ sidef -r -E 'sqrt(42)'
+$ sidef -r -E '1 + 2/3'
 ```
 
 Outputs:
 ```ruby
-42->sqrt;
+(1)->+((2)->/(3));
 ```
 
-Deparsing can be activated in interactive mode as well:
+Deparsing can also be activated in interactive mode:
 
 ```shell
-$ sf -i -Rperl
+$ sidef -i -Rperl
 >>> [1,2,3]
 
 use constant {

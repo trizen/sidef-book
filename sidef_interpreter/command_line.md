@@ -17,7 +17,7 @@ Usage: sidef [switches] [--] [programfile] [arguments]
   -o file       file where to dump the output
   -O level      perform code optimizations before execution
                 valid levels: [0], 1, 2
-  -P int        set the precision of floating-point numbers (default: 32)
+  -P int        set the precision of floating-point numbers (default: 50)
   -r            parse and deparse a Sidef program
   -R lang       parse and deparse a Sidef program into a given language
                 valid values: sidef, perl

@@ -58,12 +58,14 @@ class Person (name, age, address) {
 }
 
 var obj = Person(
-    name: "John Smith",
-    age: 42,
+       name: "John Smith",
+        age: 42,
     address: "St. Bar"
 )
 
 say obj.age                #=> 42
 say obj.name               #=> "John Smith"
 say obj.address            #=> "St. Bar"
+
+obj.walk                   #=> "John Smith is walking..."
 ```
