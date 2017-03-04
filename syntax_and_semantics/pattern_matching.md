@@ -35,7 +35,7 @@ func fib(n)          { fib(n-1) + fib(n-2) }
 say fib(12)    # prints: 144
 ```
 
-To keep the value of the argument, we can specify a name for the parameter in front of the block used for pattern matching:
+For keeping the value of the argument, we can specify a parameter name in front of the block used for pattern matching:
 
 ```ruby
 func fib(n { _ <= 1 }) { n }

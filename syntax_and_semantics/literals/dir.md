@@ -7,7 +7,7 @@ The Dir object represents a local directory.
 ```
 
 
-Alternatively, one can use:
+Alternatively, one can write:
 
 ```ruby
 Dir("/my/path")

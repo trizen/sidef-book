@@ -4,9 +4,9 @@ The `gather/take` construct  was borrowed from Perl 6 and it's an interesting on
 
 ```ruby
 var arr = gather {
-    take 1
-    take 2
-    take 3
+    take(1)
+    take(2)
+    take(3)
 }
 say arr             # prints: [1,2,3]
 ```

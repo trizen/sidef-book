@@ -3,11 +3,9 @@
 The `break` statement is used to exit early from loops.
 
 ```ruby
-var set_of_numbers = 0..100
-
-for n in set_of_numbers {
-    if is_prime(n) {
-        say "Set contains a prime number: #{n}"
+for n in (1..100) {
+    if (n.divisors.sum == 2*n) {
+        say "#{n} is the first perfect number"
         break
     }
 }
