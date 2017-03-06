@@ -783,6 +783,7 @@
        * User input
            * [Graphical](programming_tasks/U/User_input/Graphical.md)
            * [Text](programming_tasks/U/User_input/Text.md)
+       * [UTF-8 encode and decode](programming_tasks/U/UTF-8_encode_and_decode.md)
    * V
        * [Van der Corput sequence](programming_tasks/V/Van_der_Corput_sequence.md)
        * [Variadic function](programming_tasks/V/Variadic_function.md)
