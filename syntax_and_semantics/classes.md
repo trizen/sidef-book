@@ -5,39 +5,27 @@ A class is a declaration of a constructor of objects with a specific type. Each 
 Inheritance of behaviors and attributes, by a given class, is declared with the `<` operator, followed by the name of the class from which the current class inherits:
 
 ```ruby
-class Animal(name) {
-    method speak {
-        say "..."
-    }
+class Animal(String name, Number age)  {
+    method speak { "..." }
 }
 
-class Dog < Animal {
-    method speak {
-        say "Woof"
-    }
+class Dog(String color) < Animal {
+    method speak { "woof" }
+    method ageHumanYears { self.age * 7 }
 }
 
 class Cat < Animal {
-    method speak {
-        say "Meow"
-    }
+    method speak { "meow" }
 }
 
-var dog = Dog("Spot")
-var cat = Cat("Garfield")
-var animal = Animal("Animal")
+var dog = Dog(name: "Sparky", age: 6, color: "white")
+var cat = Cat(name: "Mitten", age: 3)
 
-dog.speak
-cat.speak
-animal.speak
-```
-
-Output:
-
-```text
-Woof
-Meow
-...
+say dog.speak          #=> woof
+say cat.speak          #=> meow
+say cat.age            #=> 3
+say dog.ageHumanYears  #=> 42
+say dog.color          #=> white
 ```
 
 Multiple inheritance is declared with the `<<` operator, followed by two or more class names, separated by commas:
