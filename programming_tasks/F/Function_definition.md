@@ -4,6 +4,6 @@
 
 ```ruby
 func multiply(a, b) {
-    a * b;
+    a * b
 }
 ```

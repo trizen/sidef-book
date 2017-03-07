@@ -6,6 +6,7 @@
 func compose(f, g) {
     func(x) { f(g(x)) }
 }
-var fg = compose(func(x){Math.sin(x)}, func(x){Math.cos(x)})
+
+var fg = compose(func(x){ sin(x) }, func(x){ cos(x) })
 say fg(0.5)      # => 0.76919635484100842185251475805107
 ```
