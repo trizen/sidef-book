@@ -19,7 +19,7 @@ func prime_generator(n, callback) {
         var l = num.log2
         if (l.floor == l) {
             callback(l.int)
-            ++x == n && return
+            ++x == n && return nil
         }
     })
 }
