@@ -4,16 +4,16 @@
 
 ```ruby
 var scale = Hash(
-    Celcius    => Hash.new(factor => 1  , offset => -273.15 ),
-    Rankine    => Hash.new(factor => 1.8, offset =>    0    ),
-    Fahrenheit => Hash.new(factor => 1.8, offset => -459.67 ),
-);
+    Celcius    => Hash(factor => 1  , offset => -273.15 ),
+    Rankine    => Hash(factor => 1.8, offset =>    0    ),
+    Fahrenheit => Hash(factor => 1.8, offset => -459.67 ),
+)
 
-var kelvin = Sys.readln("Enter a temperature in Kelvin: ").to_n;
-kelvin >= 0 || die "No such temperature!";
+var kelvin = read("Enter a temperature in Kelvin: ", Number)
+kelvin >= 0 || die "No such temperature!"
 
 scale.keys.sort.each { |key|
-    printf("%12s:%8.2f\n", key, kelvin*scale{key}{:factor} + scale{key}{:offset});
+    printf("%12s:%8.2f\n", key, kelvin*scale{key}{:factor} + scale{key}{:offset})
 }
 ```
 
