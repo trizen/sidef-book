@@ -2,7 +2,7 @@
 
 # [Unicode strings][1]
 
-Sidef use UTF-8 encoding for pretty much everything, such as source files, chars, strings, stdout, stderr and stdin.
+Sidef uses UTF-8 encoding for pretty much everything, including source files, strings, stdout, stderr and stdin.
 
 ```ruby
 # International class; name and street
