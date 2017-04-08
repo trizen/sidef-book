@@ -8,7 +8,7 @@ func tag(t, d)   { "<#{t}>#{d}</#{t}>" }
  
 func csv2html(str) {
  
-    var template = <<'-EOT'
+    var template = <<-'EOT'
     <!DOCTYPE html>
     <html>
     <head><title>Some Text</title></head>
