@@ -7,23 +7,23 @@ class MyClass {
     method foo(arg) { say arg }
 }
  
-var arg = 42;
+var arg = 42
  
 # Call a class method
-MyClass.foo(arg);
+MyClass.foo(arg)
  
 # Alternatively, using an expression for the method name
-MyClass.(:foo)(arg);
+MyClass.(:foo)(arg)
  
 # Create an instance
-var instance = MyClass();
+var instance = MyClass()
  
 # Instance method
-instance.foo(arg);
+instance.foo(arg)
  
 # Alternatively, by using an expression for the method name
-instance.(:foo)(arg);
+instance.(:foo)(arg)
  
 # Alternatively, by asking for a method
-instance.method(:foo)(arg);
+instance.method(:foo)(arg)
 ```

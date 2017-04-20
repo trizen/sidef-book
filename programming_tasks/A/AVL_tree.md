@@ -49,7 +49,7 @@ class AVLtree {
     }
  
     method delete_key(delKey) {
-        if (root == nil) { return }
+        if (root == nil) { return nil }
  
         var n = root
         var parent = root
@@ -85,7 +85,7 @@ class AVLtree {
     }
  
     method rebalance(n) {
-        if (n == nil) { return }
+        if (n == nil) { return nil }
         self.setBalance(n)
  
         given (n.balance) {
@@ -174,7 +174,7 @@ class AVLtree {
 var tree = AVLtree()
  
 say "Inserting values 1 to 10"
-10.times { |i| tree.insert(i) }
+(1..10).each { |i| tree.insert(i) }
 print "Printing balance: "
 tree.printBalance
 ```

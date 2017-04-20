@@ -4,11 +4,11 @@
 
 ```ruby
 var f = (
-    0 ..^ 9 -> map {|i| func(j){i * j} }
-);
- 
-0 ..^ 8 -> each { |j|
-    say f[j](j);
+    10.of {|i| func(j){i * j} }
+)
+
+9.times { |j|
+    say f[j](j)
 }
 ```
 
@@ -29,12 +29,12 @@ var f = (
 Starting from i=1:
 
 ```ruby
-var f = 10.of { |i|
+var f = (1..10).map { |i|
     func(j){i * j}
 }
- 
-9.times { |j|
-    say f[j-1](j);
+
+for j (1..9) {
+    say f[j-1](j)
 }
 ```
 

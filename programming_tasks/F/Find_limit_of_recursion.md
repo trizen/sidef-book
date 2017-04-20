@@ -6,11 +6,11 @@ Maximum recursion depth is memory dependent.
 
 ```ruby
 func recurse(n) {
-   say n;
-   recurse(n+1);
+   say n
+   recurse(n+1)
 }
  
-recurse(0);
+recurse(0)
 ```
 
 #### Output:

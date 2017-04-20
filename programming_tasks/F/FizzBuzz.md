@@ -13,7 +13,7 @@ Structured:
     }
     elsif (i %% 5) { say "Buzz" }
     else  { say i }
-} * 100
+} << 1..100
 ```
 
 Declarative:

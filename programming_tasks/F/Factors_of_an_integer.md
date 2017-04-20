@@ -4,14 +4,14 @@
 
 ```ruby
 func factors(n) {
-  var divs = []
-  range(1, n.sqrt.int).each { |d|
-    divs << d if d.divides(n)
-  }
-  divs + [divs[-1]**2 == n ? divs.pop : ()] + divs.reverse.map{|d| n/d }
+  gather {
+    { |d|
+        take(d, n//d) if d.divides(n)
+    } << 1..n.isqrt
+  }.sort.uniq
 }
  
-[53, 64, 32766].each { |n|
+for n [53, 64, 32766] {
     say "factors(#{n}): #{factors(n)}"
 }
 ```

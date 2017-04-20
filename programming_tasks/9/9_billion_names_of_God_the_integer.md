@@ -6,9 +6,9 @@
 var cache = [[1]]
  
 func cumu (n) {
-    for l in range(cache.len, n) {
+    for l (cache.len .. n) {
         var r = [0]
-        l.times { |i|
+        for i (1..l) {
             r << (r[-1] + cache[l-i][min(i, l-i)])
         }
         cache << r
@@ -18,11 +18,11 @@ func cumu (n) {
  
 func row (n) {
     var r = cumu(n)
-    n.of {|i| r[i] - r[i-1] }
+    n.of {|i| r[i+1] - r[i] }
 }
  
 say "rows:"
-15.times { |i|
+for i (1..15) {
     "%2s: %s\n".printf(i, row(i))
 }
  

@@ -5,7 +5,7 @@
 Recursive solution (with auto-memoization):
 
 ```ruby
-func bernoulli_number{}     # must be declared before first used
+func bernoulli_number{}
 
 func bern_helper(n, k) {
     binomial(n, k) * (bernoulli_number(k) / (n - k + 1))
@@ -23,9 +23,9 @@ bernoulli_number = func(n) is cached {
     n > 0 ? bern_diff(n - 1, 0, 1) : 1
 }
 
-range(0, 60).each { |i|
+for i (0..60) {
     var num = bernoulli_number(i) || next
-    printf("B(%2d) = %44s / %s\n", i, num.parts)
+    printf("B(%2d) = %44s / %s\n", i, num.nude)
 }
 ```
 
@@ -35,13 +35,13 @@ Iterative solution:
 ```ruby
 func bernoulli_print {
     var a = []
-    range(0, 60).each { |m|
-        a.append(m+1 -> inv)
-        range(m, 1, -1).each { |j|
+    for m (0..60) {
+        a.append(1/(m+1))
+        for j (flip(1..m)) {
             (a[j-1] -= a[j]) *= j
         }
         a[0] || next
-        printf("B(%2d) = %44s / %s\n", m, a[0].parts)
+        printf("B(%2d) = %44s / %s\n", m, a[0].nude)
     }
 }
  

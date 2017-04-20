@@ -4,10 +4,10 @@
 
 ```ruby
 # Here
-%f'output.txt' -> create;
-%d'docs'       -> create;
+%f'output.txt' -> create
+%d'docs'       -> create
  
 # Root dir
-Dir.root + %f'output.txt' -> create;
-Dir.root + %d'docs'       -> create;
+Dir.root + %f'output.txt' -> create
+Dir.root + %d'docs'       -> create
 ```

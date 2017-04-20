@@ -3,40 +3,40 @@
 # [Five weekends][1]
 
 ```ruby
-require('DateTime');
+require('DateTime')
  
-var happymonths = [];
-var workhardyears = [];
-var longmonths = [1, 3, 5, 7, 8, 10, 12];
+var happymonths = []
+var workhardyears = []
+var longmonths = [1, 3, 5, 7, 8, 10, 12]
  
 for year in (1900 .. 2100) {
-   var countmonths = 0;
+   var countmonths = 0
    longmonths.each { |month|
-        var dt = %s'DateTime'.new(
+        var dt = %O<DateTime>.new(
             year => year,
             month => month,
             day   => 1
-        );
+        )
  
         if (dt.day_of_week == 5) {
-            countmonths++;
-            var yearfound = dt.year;
-            var monthfound = dt.month_name;
-            happymonths.append(join("  ", yearfound, monthfound));
+            countmonths++
+            var yearfound = dt.year
+            var monthfound = dt.month_name
+            happymonths.append(join("  ", yearfound, monthfound))
       }
    }
  
     if (countmonths == 0) {
-        workhardyears.append(year);
+        workhardyears.append(year)
     }
 }
  
-say "There are #{happymonths.len} months with 5 full weekends!";
-say "The first 5 and the last 5 of them are:";
-say happymonths.first(5).join("\n");
-say happymonths.last(5).join("\n");
-say "No long weekends in the following #{workhardyears.len} years:";
-say workhardyears.join(",");
+say "There are #{happymonths.len} months with 5 full weekends!"
+say "The first 5 and the last 5 of them are:"
+say happymonths.first(5).join("\n")
+say happymonths.last(5).join("\n")
+say "No long weekends in the following #{workhardyears.len} years:"
+say workhardyears.join(",")
 ```
 
 #### Output:

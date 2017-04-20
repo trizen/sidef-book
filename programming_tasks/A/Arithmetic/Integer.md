@@ -3,11 +3,11 @@
 # [Arithmetic/Integer][1]
 
 ```ruby
-var a = Sys.scanln("First number: ").to_i;
-var b = Sys.scanln("Second number: ").to_i;
+var a = read("First number: ", Number).int
+var b = read("Second number: ", Number).int
  
 %w'+ - * // % ** ^ | & << >>'.each { |op|
-    "#{a} #{op} #{b} = #{a.$op(b)}".say;
+    "#{a} #{op} #{b} = #{a.$op(b)}".say
 }
 ```
 

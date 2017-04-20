@@ -5,7 +5,7 @@
 ```ruby
 require('WWW::Mechanize')
 
-var mech = %s<WWW::Mechanize>.new(
+var mech = %O<WWW::Mechanize>.new(
     cookie_jar => Hash(),
     agent => 'Mozilla/5.0',
     show_progress => 1,

@@ -3,6 +3,6 @@
 # [File size][1]
 
 ```ruby
-say (Dir.cwd  + %f'input.txt' -> size);
-say (Dir.root + %f'input.txt' -> size);
+say (Dir.cwd  + %f'input.txt' -> size)
+say (Dir.root + %f'input.txt' -> size)
 ```

@@ -4,38 +4,32 @@
 
 ```ruby
 func floyd_warshall(n, edge) {
-    var dist = n.of { |i| n.of { |j| i == j ? 0 : Inf }}
+    var dist = n.of {|i| n.of { |j| i == j ? 0 : Inf }}
     var nxt  = n.of { n.of(nil) }
     for u,v,w in edge {
         dist[u-1][v-1] = w
          nxt[u-1][v-1] = v-1
     }
- 
-    for k in ^n {
-        for i in ^n {
-            for j in ^n {
-                if (dist[i][j] > dist[i][k]+dist[k][j]) {
-                    dist[i][j] = dist[i][k]+dist[k][j]
-                     nxt[i][j] = nxt[i][k]
-                }
-            }
+
+    [^n] * 3 -> cartesian { |k, i, j|
+        if (dist[i][j] > dist[i][k]+dist[k][j]) {
+            dist[i][j] = dist[i][k]+dist[k][j]
+            nxt[i][j] = nxt[i][k]
         }
     }
  
     var summary = "pair     dist    path\n"
-    for i in ^n {
-        for j in ^n {
-            i==j && next
-            var u = i
-            var path = [u]
-            while (u != j) {
-                path << (u = nxt[u][j])
-            }
-            path.map!{|u| u+1 }.join!(" -> ")
-            summary += ("%d -> %d  %4d     %s\n" % (i+1, j+1, dist[i][j], path))
+    for i,j (^n ~X ^n) {
+        i==j && next
+        var u = i
+        var path = [u]
+        while (u != j) {
+            path << (u = nxt[u][j])
         }
+        path.map!{|u| u+1 }.join!(" -> ")
+        summary += ("%d -> %d  %4d     %s\n" % (i+1, j+1, dist[i][j], path))
     }
- 
+
     return summary
 }
  

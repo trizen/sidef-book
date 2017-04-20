@@ -44,10 +44,10 @@ loop {
 }
 
 # Print the secret number or the error message
-(
+say (
     candidates.len == 1 ? ("Your secret number is: %d" % candidates[0].join)
                         : ("I think you made a mistake with your scoring")
-)->say
+)
 ```
 
 

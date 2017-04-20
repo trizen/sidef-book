@@ -4,19 +4,19 @@
 
 ```ruby
 func dinesman(problem) {
-  var lines = problem.split('.');
-  var names = lines.first.scan(/\b[A-Z]\w*/);
-  var re_names = Regex(names.join('|'));
+  var lines = problem.split('.')
+  var names = lines.first.scan(/\b[A-Z]\w*/)
+  var re_names = Regex(names.join('|'))
  
   # Later on, search for these keywords (the word "not" is handled separately).
   var words = %w(first second third fourth fifth sixth seventh eighth ninth tenth
-                 bottom top higher lower adjacent);
-  var re_keywords = Regex(words.join('|'));
+                 bottom top higher lower adjacent)
+  var re_keywords = Regex(words.join('|'))
  
   # Build an array of lambda's
   var predicates = lines.ft(1, lines.end-1).map{ |line|
-    var keywords = line.scan(re_keywords);
-    var (name1, name2) = line.scan(re_names)...;
+    var keywords = line.scan(re_keywords)
+    var (name1, name2) = line.scan(re_names)...
  
     keywords.map{ |keyword|
       var l = do {
@@ -31,10 +31,10 @@ func dinesman(problem) {
       }
       line ~~ /\bnot\b/ ? func(c) { l(c) -> not } : l;  # handle "not"
     }
-  }.flatten;
+  }.flat
  
   names.permutations { |candidate|
-    predicates.all { |predicate| predicate(candidate) } && return candidate;
+    predicates.all { |predicate| predicate(candidate) } && return candidate
   }
 }
 ```
@@ -64,7 +64,7 @@ floor than does Cooper. Smith does not live on a floor
 adjacent to Fletcher's. Fletcher does not live on a floor
 adjacent to Cooper's. Where does everyone live?"
  
-[demo1, demo2, problem1, problem2].each{|problem| say dinesman(problem).join("\n"); say '' };
+[demo1, demo2, problem1, problem2].each{|problem| say dinesman(problem).join("\n"); say '' }
 ```
 
 #### Output:

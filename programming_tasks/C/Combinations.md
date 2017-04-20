@@ -4,7 +4,7 @@
 
 #### Built-in
 ```ruby
-(@^5).combinations(3, {|c| say c })
+combinations(5, 3, {|*c| say c })
 ```
 
 #### Recursive

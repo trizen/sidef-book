@@ -4,7 +4,7 @@
 
 ```ruby
 subset Integer    < Number  { .is_int }
-subset MyIntLimit < Integer { . ~~ (1 ..^ 10) }
+subset MyIntLimit < Integer { . ~~ (1 .. 10) }
 
 class MyInt(value < MyIntLimit) {
 

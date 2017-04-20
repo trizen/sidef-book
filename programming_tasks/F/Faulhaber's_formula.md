@@ -6,23 +6,23 @@
 func faulhaber_s_formula(p) {
 
     var formula = gather {
-        for j in ^(p+1) {
+        { |j|
             take "(#{binomial(p+1, j) * j.bernfrac -> as_rat})*n^#{p+1 - j}"
-        }
+        } << 0..p
     }
 
     formula.grep! { !.contains('(0)*') }.join!(' + ')
 
     formula -= /\(1\)\*/g
     formula -= /\^1\b/g
-    formula.gsub!(/\(([^+]*?)\)/, {|a| a })
+    formula.gsub!(/\(([^+]*?)\)/, { _ })
 
     "1/#{p + 1} * (#{formula})"
 }
 
-for p in ^10 {
+{ |p|
     printf("%2d: %s\n", p, faulhaber_s_formula(p))
-}
+} << ^10
 ```
 
 #### Output:
@@ -39,21 +39,18 @@ for p in ^10 {
  9: 1/10 * (n^10 + 5*n^9 + 15/2*n^8 + -7*n^6 + 5*n^4 + -3/2*n^2)
 ```
 
-By not simplifying the formulas, we have a much clearer code:
+By not simplifying the formulas, we have a much cleaner code:
 
 ```ruby
 func faulhaber_s_formula(p) {
-
-    var formula = gather {
-        for j in ^(p+1) {
-            take "#{binomial(p+1, j) * j.bernfrac -> as_rat}*n^#{p+1 - j}"
-        }
-    }.join(' + ')
-
-    "1/#{p + 1} * (#{formula})"
+    "1/#{p + 1} * (" + gather {
+      { |j|
+         take "#{binomial(p+1, j) * j.bernfrac -> as_rat}*n^#{p+1 - j}"
+      } << 0..p
+    }.join(' + ') + ")"
 }
 
-for p in ^10 {
+{ |p|
     printf("%2d: %s\n", p, faulhaber_s_formula(p))
-}
+} << ^10
 ```

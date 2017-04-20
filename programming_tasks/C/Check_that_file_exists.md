@@ -4,12 +4,12 @@
 
 ```ruby
 # Here
-say (Dir.cwd  + %f'input.txt' -> is_file);
-say (Dir.cwd  + %d'docs'      -> is_dir);
+say (Dir.cwd  + %f'input.txt' -> is_file)
+say (Dir.cwd  + %d'docs'      -> is_dir)
  
 # Root
-say (Dir.root + %f'input.txt' -> is_file);
-say (Dir.root + %d'docs'      -> is_dir);
+say (Dir.root + %f'input.txt' -> is_file)
+say (Dir.root + %d'docs'      -> is_dir)
 ```
 
 

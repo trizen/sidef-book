@@ -22,7 +22,7 @@ func my_draw_line(img, x0, y0, x1, y1) {
     var y = y0
     var ystep = (y0 < y1 ? 1 : -1)
  
-    x0.to(x1).each { |x|
+    for x (x0 .. x1) {
         img.draw_point(steep ? ((y, x)) : ((x, y)))
         error -= deltay
         if (error < 0) {
@@ -44,7 +44,7 @@ my_draw_line(img, 80, 160, 160, 80)
 my_draw_line(img, 160, 80, 80, 10)
 my_draw_line(img, 80, 10, 10, 80)
  
-img.save("test0.png");
+img.save("test0.png")
  
 # let's try the same using its internal algo
 img.set_color(255, 255, 255, 255) # white

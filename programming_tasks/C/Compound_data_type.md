@@ -3,7 +3,7 @@
 # [Compound data type][1]
 
 ```ruby
-struct Point {x, y};
-var point = Point(1, 2);
-say point.y;                #=> 2
+struct Point {x, y}
+var point = Point(1, 2)
+say point.y                #=> 2
 ```

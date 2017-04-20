@@ -12,7 +12,7 @@ With memoization:
 
 ```ruby
 func c(n) is cached {
-    n == 0 ? 1 : (c(n-1) * (4 * n - 2) / (n + 1));
+    n == 0 ? 1 : (c(n-1) * (4 * n - 2) / (n + 1))
 }
 ```
 
@@ -21,7 +21,7 @@ Calling the function:
 
 ```ruby
 15.times { |i|
-    say "#{i-1}\t#{c(i-1)}";
+    say "#{i}\t#{c(i)}"
 }
 ```
 

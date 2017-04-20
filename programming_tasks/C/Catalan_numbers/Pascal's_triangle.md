@@ -5,10 +5,10 @@
 ```ruby
 func catalan(num) {
   var t = [0, 1]
-  1..num -> map { |i|
-    ::range(i, 1, -1).each {|j| t[j] += t[j-1]}
+  (1..num).map { |i|
+    flip(^i    ).each {|j| t[j+1] += t[j] }
     t[i+1] = t[i]
-    ::range(i+1, 1, -1).each {|j| t[j] += t[j-1]}
+    flip(^i.inc).each {|j| t[j+1] += t[j] }
     t[i+1] - t[i]
   }
 }

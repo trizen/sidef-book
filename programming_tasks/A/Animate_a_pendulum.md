@@ -5,7 +5,7 @@
 ```ruby
 require('Tk')
  
-var root = %s<MainWindow>.new('-title' => 'Pendulum Animation')
+var root = %O<MainWindow>.new('-title' => 'Pendulum Animation')
 var canvas = root.Canvas('-width' => 320, '-height' => 200)
  
 canvas.createLine(  0,  25, 320,  25, '-tags' => <plate>,     '-width' => 2, '-fill' => :grey50)

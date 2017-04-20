@@ -6,7 +6,7 @@
 func mdroot(n) {
   var (mdr, persist) = (n, 0)
   while (mdr >= 10) {
-    mdr = mdr.digits.product
+    mdr = mdr.digits.prod
     ++persist
   }
   [mdr, persist]
@@ -18,14 +18,13 @@ say "Number: MDR  MP\n======  ===  =="
  
 var counter = Hash()
  
-Inf.times { |i|
-  var j = i-1
+Inf.times { |j|
   counter{mdroot(j).first} := [] << j
   break if counter.values.all {|v| v.len >= 5 }
 }
  
 say "\nMDR: [n0..n4]\n===  ========"
-10.times {|i| "%3d: %s\n".printf(i-1, counter{i-1}.first(5)) }
+10.times {|i| "%3d: %s\n".printf(i, counter{i}.first(5)) }
 ```
 
 #### Output:

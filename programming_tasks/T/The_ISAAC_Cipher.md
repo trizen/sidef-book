@@ -6,7 +6,7 @@
 require('Math::Random::ISAAC');
 
 func xor_isaac(key, msg) {
-  var rng = %s<Math::Random::ISAAC>.new(unpack('C*', key));
+  var rng = %O<Math::Random::ISAAC>.new(unpack('C*', key));
 
   msg.chars»ord()»                                             \
     -> »^« 256.of{ rng.irand % 95 + 32 }.last(msg.len).reverse \

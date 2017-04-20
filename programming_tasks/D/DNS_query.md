@@ -5,11 +5,11 @@
 ```ruby
 var (err, *res) = Socket.getaddrinfo(
         'www.kame.net', 0,
-        Hash.new(protocol => Socket.IPPROTO_TCP)
-);
-err && die err;
-res.each { |z|
-    say [Socket.getnameinfo(z{:addr}, Socket.NI_NUMERICHOST)][1];
+        Hash(protocol => Socket.IPPROTO_TCP)
+)
+err && die err
+for z (res) {
+    say [Socket.getnameinfo(z{:addr}, Socket.NI_NUMERICHOST)][1]
 }
 ```
 

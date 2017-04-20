@@ -8,7 +8,7 @@ require('Imager')
 var (width, height) = (300, 300)
 var center = Complex(width/2 , height/2)
  
-var img = %s|Imager|.new(
+var img = %O<Imager>.new(
                       xsize => width,
                       ysize => height,
                      )

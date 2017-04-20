@@ -9,12 +9,11 @@ func primes(n) {
         loop {
             i = j.next_prime
             i <= n || break
-            take(i)
-            j = i
+            take(j = i)
         }
     }
 }
- 
+
 func lltp(n) {
     var b = 1
     var best = nil
@@ -23,16 +22,14 @@ func lltp(n) {
     while (v) {
         best = v.max
         b *= n
-        v = gather {
-            v.each { |vi|
-                take((n-1).of { |i| i*b + vi }.grep{.is_prime}...)
-            }
+        v.map! { |vi|
+            {|i| i*b + vi }.map(1..^n).grep{.is_prime}...
         }
     }
  
     return best
 }
- 
+
 for i in (3..17) {
     printf("%2d %s\n", i, lltp(i))
 }

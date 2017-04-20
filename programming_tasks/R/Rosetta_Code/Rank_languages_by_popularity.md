@@ -5,7 +5,7 @@
 ```ruby
 require('MediaWiki::API')
 
-var api = %s<MediaWiki::API>.new(
+var api = %O<MediaWiki::API>.new(
     Hash(api_url => 'http://rosettacode.org/mw/api.php')
 )
 

@@ -5,8 +5,8 @@
 Sidef defines the _true_ and _false_ boolean values, which are part of the _Bool_ type.
 
 ```ruby
-var t = true;
-var f = false;
+var t = true
+var f = false
 ```
 
 
@@ -16,7 +16,7 @@ In conditional expressions, anything that evaluates to zero or nothing is consid
 if (0 || "0" || false || nil || "" || [] || :()) {
     say "true"
 } else {
-    say "false";
+    say "false"
 }
 ```
 

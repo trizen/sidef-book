@@ -2,13 +2,25 @@
 
 # [Detect division by zero][1]
 
+The numerical system of Sidef evaluates `x/0` to `+/-Inf`.
+
 ```ruby
-func div(a, b){
+func div_check(a, b){
     var result = a/b
-    result == Inf ? nil : result
+    result.abs == Inf ? nil : result
 }
- 
-say div(10, 2);      # 5
-say div(1, 0);       # nil          (detected)
-say div(1.c, 0.c);   # Inf+NaNi     (undetected)
+
+say div_check(10, 2)  # 5
+say div_check(1, 0)   # nil (detected)
+```
+
+Alternatively, we can do:
+
+```ruby
+func div_check(a, b){
+    Perl.eval("#{a} / #{b}")
+}
+
+say div_check(10, 2)  # 5
+say div_check(1, 0)   # nil (detected)
 ```

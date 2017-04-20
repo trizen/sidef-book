@@ -5,9 +5,9 @@
 ```ruby
 func createSubstrings(String word) -> Array {
   gather {
-    for i,j in @(0 .. word.len).combinations(2) {
+    combinations(word.len+1, 2, {|i,j|
         take(word.substr(i, j-i))
-    }
+    })
   }
 }
 

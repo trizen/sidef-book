@@ -3,11 +3,11 @@
 # [Doubly-linked list/Element definition][1]
 
 ```ruby
-var node = Hash.new(
+var node = Hash(
      data => 'say what',
      next => foo_node,
      prev => bar_node,
-);
+)
  
-node{:next} = quux_node;  # mutable
+node{:next} = quux_node  # mutable
 ```

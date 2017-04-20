@@ -4,10 +4,10 @@
 
 ```ruby
 # here
-%f'input.txt' -> delete;
-%d'docs'      -> delete;
+%f'input.txt' -> delete
+%d'docs'      -> delete
  
 # root dir
-Dir.root + %f'input.txt' -> delete;
-Dir.root + %d'docs'      -> delete;
+Dir.root + %f'input.txt' -> delete
+Dir.root + %d'docs'      -> delete
 ```

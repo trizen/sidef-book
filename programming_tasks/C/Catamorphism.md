@@ -3,6 +3,6 @@
 # [Catamorphism][1]
 
 ```ruby
-say (1..10 -> reduce('+'));
-say (1..10 -> reduce{|a,b| a + b});
+say (1..10 -> reduce('+'))
+say (1..10 -> reduce{|a,b| a + b})
 ```

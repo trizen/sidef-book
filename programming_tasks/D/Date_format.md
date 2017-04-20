@@ -3,10 +3,10 @@
 # [Date format][1]
 
 ```ruby
-var time = Time.local;
-say time.ctime;
-say time.strftime("%Y-%m-%d");
-say time.strftime("%A, %B %d, %Y");
+var time = Time.local
+say time.ctime
+say time.strftime("%Y-%m-%d")
+say time.strftime("%A, %B %d, %Y")
 ```
 
 #### Output:

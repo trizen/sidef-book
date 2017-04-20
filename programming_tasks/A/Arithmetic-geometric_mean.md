@@ -5,9 +5,9 @@
 ```ruby
 func agm(a, g) {
     loop {
-        var x = [::float(a+g / 2), ::sqrt(a*g)]
-        x == [a, g] && return a
-        x >> \(a, g)
+        var (a1, g1) = ((a+g)/2, sqrt(a*g))
+        [a1,g1] == [a,g] && return a
+        (a, g) = (a1, g1)
     }
 }
 

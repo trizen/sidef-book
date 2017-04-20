@@ -3,14 +3,14 @@
 # [Arithmetic/Complex][1]
 
 ```ruby
-var a = 1:1;                # Complex(1, 1)
-var b = 3.14159:1.25;       # Complex(3.14159, 1.25)
+var a = 1:1                 # Complex(1, 1)
+var b = 3.14159:1.25        # Complex(3.14159, 1.25)
  
 [   a + b,                  # addition
     a * b,                  # multiplication
     -a,                     # negation
-    1.c / a,                # multiplicative inverse
-    ~a,                     # complex conjugate
+    a.inv,                  # multiplicative inverse
+    a.conj,                 # complex conjugate
     a.abs,                  # abs
     a.sqrt,                 # sqrt
     b.re,                   # real

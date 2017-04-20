@@ -45,7 +45,7 @@ func tree(img, x1, y1, x2, y2, depth) {
 }
 
 var (width=1920, height=1080)
-var img = %s<Imager>.new(xsize => width, ysize => height)
+var img = %O<Imager>.new(xsize => width, ysize => height)
 img.box(filled => 1, color => 'white')
 tree(img, width/2.3, height, width/1.8, height, 10)
 img.write(file => 'pythagoras_tree.png')

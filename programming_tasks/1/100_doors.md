@@ -5,18 +5,18 @@
 *Unoptimized*
 
 ```ruby
-var doors = [];
- 
-100.times { |pass|
-    100.times { |i|
+var doors = []
+
+for pass (1..100) {
+    for i (1..100) {
         if (i % pass == 0) {
-            doors[i] := false -> not!
+            doors[i] := false -> not!
         }
     }
 }
- 
-100.times { |i|
-    "Door %3d is %s\n".printf(i, doors[i] ? 'open' : 'closed')
+
+for i (1..100) {
+    "Door %3d is %s\n".printf(i, doors[i] ? 'open' : 'closed')
 }
 ```
 
@@ -24,7 +24,7 @@ var doors = [];
 *Optimized*
 
 ```ruby
-{ |i|
-    "Door %3d is %s\n".printf(i, ["closed", "open"][i.is_sqr])
-} * 100
+for i (1..100) {
+    "Door %3d is %s\n".printf(i, ["closed", "open"][i -> is_sqr])
+}
 ```

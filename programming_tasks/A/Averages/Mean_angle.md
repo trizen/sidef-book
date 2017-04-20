@@ -4,7 +4,7 @@
 
 ```ruby
 func mean_angle(angles) {
-    Math.atan2(
+    atan2(
         Math.avg(angles.map{ .deg2rad.sin }...),
         Math.avg(angles.map{ .deg2rad.cos }...),
     ) -> rad2deg;
@@ -18,6 +18,6 @@ func mean_angle(angles) {
 #### Output:
 ```
 The mean angle of [350, 10] is: 0.00 degrees
-The mean angle of [90, 180, 270, 360] is: -25.24 degrees
+The mean angle of [90, 180, 270, 360] is: -90.00 degrees
 The mean angle of [10, 20, 30] is: 20.00 degrees
 ```

@@ -8,12 +8,12 @@ require('Imager')
 var w = 640
 var h = 640
  
-var img = %s<Imager>.new(xsize => w, ysize => h, channels => 3)
-var green = %s<Imager::Color>.new('#00FF00')
+var img = %O<Imager>.new(xsize => w, ysize => h, channels => 3)
+var green = %O<Imager::Color>.new('#00FF00')
  
 var (x, y) = (0, 0)
  
-for r in (^1e5 -> lazy.map { 100.rand }) {
+for r in (^1e4 -> lazy.map { 100.irand }) {
   (x, y) = (
     if    (r <=  1) { ( 0.00*x - 0.00*y,  0.00*x + 0.16*y + 0.00) }
     elsif (r <=  8) { ( 0.20*x - 0.26*y,  0.23*x + 0.22*y + 1.60) }

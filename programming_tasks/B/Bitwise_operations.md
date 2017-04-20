@@ -4,11 +4,6 @@
 
 ```ruby
 func bitwise(a, b) {
- 
-   # Make sure they are integers
-   a.to_i!
-   b.to_i!
- 
    say ('a and b : ',  a & b)
    say ('a or b  : ',  a | b)
    say ('a xor b : ',  a ^ b)

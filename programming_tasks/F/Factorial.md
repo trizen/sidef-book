@@ -2,24 +2,35 @@
 
 # [Factorial][1]
 
+
+Recursive:
+
 ```ruby
-# Recursive
 func factorial_recursive(n) {
-    n == 0 ? 1 : (n * __FUNC__(n-1));
+    n == 0 ? 1 : (n * __FUNC__(n-1))
 }
- 
-# Iterative with Array#reduce
+```
+
+Catamorphism:
+
+```ruby
 func factorial_reduce(n) {
-    1..n -> reduce('*');
+    1..n -> reduce({|a,b| a * b }, 1)
 }
- 
-# Iterative with Block#repeat
+```
+
+Iterative:
+
+```ruby
 func factorial_iterative(n) {
-    var f = 1;
-    {|i| f *= i } * n;
-    return f;
+    var f = 1
+    {|i| f *= i } << 2..n
+    return f
 }
- 
-# Built-in Number#factorial:
-say 5!;
+```
+
+Built-in:
+
+```ruby
+say 5!
 ```

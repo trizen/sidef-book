@@ -7,11 +7,11 @@
 ```ruby
 { |i|
     func (n) {
-        if (n < 0) { return };
+        if (n < 0) { return NaN }
         n < 2 ? n
-              : (__FUNC__(n-2) + __FUNC__(n-1));
-    }(i).to_s.say;
-} * 10;
+              : (__FUNC__(n-2) + __FUNC__(n-1))
+    }(i).say
+} * 10
 ```
 
 
@@ -20,9 +20,9 @@
 ```ruby
 { |i|
     { |n|
-        if (n < 0) { return };
+        if (n < 0) { return NaN }
         n < 2 ? n
-              : (__BLOCK__(n-2) + __BLOCK__(n-1));
-    }(i).to_s.say;
-} * 10;
+              : (__BLOCK__(n-2) + __BLOCK__(n-1))
+    }(i).say
+} * 10
 ```

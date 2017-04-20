@@ -3,9 +3,9 @@
 # [Draw a clock][1]
 
 ```ruby
-STDOUT.autoflush(1)
+STDOUT.autoflush(true)
 
-var (rows, cols) = `stty size`.words.map{.to_i}...
+var (rows, cols) = `stty size`.nums...
 
 var x = (rows/2 - 1  -> int)
 var y = (cols/2 - 16 -> int)
@@ -32,7 +32,7 @@ loop {
       print [chars[i][indices()]].join(' ')
     }
     print position(1, 1)
-    Sys.sleep(0.5)
+    Sys.sleep(0.1)
 }
 ```
 

@@ -3,8 +3,8 @@
 # [Conway's Game of Life][1]
 
 ```ruby
-var w = `tput cols`.to_i
-var h = `tput lines`.to_i
+var w = Num(`tput cols`)
+var h = Num(`tput lines`)
 var r = "\033[H"
 
 var dirs = [[-1,-1], [-1, 0], [-1, 1], [ 0,-1],
@@ -12,13 +12,10 @@ var dirs = [[-1,-1], [-1, 0], [-1, 1], [ 0,-1],
 
 var universe = h.of { w.of {1.rand < 0.1} }
 
-var rh = h.range
-var rw = w.range
-
 func iterate {
     var new = h.of { w.of(false) }
-    for i in rh {
-        for j in rw {
+    static rx = (^h ~X ^w)
+    for i,j in rx {
         var neighbor = 0
         for y,x in (dirs.map {|dir| dir »+« [i, j] }) {
             universe[y % h][x % w] && ++neighbor
@@ -27,7 +24,6 @@ func iterate {
         new[i][j] = (universe[i][j]
                         ? (neighbor==2 || neighbor==3)
                         : (neighbor==3))
-       }
     }
     universe = new
 }

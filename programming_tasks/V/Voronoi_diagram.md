@@ -6,7 +6,7 @@
 require('Imager')
  
 func generate_voronoi_diagram(width, height, num_cells) {
-    var img = %s<Imager>.new(xsize => width, ysize => height)
+    var img = %O<Imager>.new(xsize => width, ysize => height)
     var (nx,ny,nr,ng,nb) = 5.of { [] }...
  
     for i in ^num_cells {

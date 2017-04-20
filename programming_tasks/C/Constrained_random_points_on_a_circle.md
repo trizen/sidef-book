@@ -7,14 +7,14 @@ Generates an EPS file.
 ```ruby
 var points = []
 while (points.len < 100) {
-    var (x, y) = 2.of{31.irand - 15}...
+    var (x, y) = 2.of{ 30.irand - 15 }...
     var r2 = (x**2 + y**2)
     if ((r2 >= 100) && (r2 <= 225)) {
         points.append([x, y])
     }
 }
  
-print <<'HEAD';
+print <<'HEAD'
 %!PS-Adobe-3.0 EPSF-3.0
 %%BoundingBox 0 0 400 400
 200 200 translate 10 10 scale
@@ -26,6 +26,6 @@ print <<'HEAD';
 /pt { .1 0 360 arc fill } def
 HEAD
  
-points.each { |pt| say "#{pt.join(' ')} pt" };
-print '%%EOF';
+points.each { |pt| say "#{pt.join(' ')} pt" }
+print '%%EOF'
 ```

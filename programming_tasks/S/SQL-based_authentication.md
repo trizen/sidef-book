@@ -7,7 +7,7 @@ require('DBI')
  
  # returns a database handle configured to throw an exception on query errors
 func connect_db(dbname, host, user, pass) {
-    var db = %s<DBI>.connect("dbi:mysql:#{dbname}:#{host}", user, pass)
+    var db = %O<DBI>.connect("dbi:mysql:#{dbname}:#{host}", user, pass)
     db || die (global DBI::errstr)
     db{:RaiseError} = 1
     db

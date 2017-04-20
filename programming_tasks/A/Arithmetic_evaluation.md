@@ -4,60 +4,60 @@
 
 ```ruby
 func evalArithmeticExp(s) {
- 
+
     func evalExp(s) {
- 
+
         func operate(s, op) {
-           s.split(op).map{|c| c.to_num }.reduce(op);
+           s.split(op).map{|c| Number(c) }.reduce(op)
         }
- 
+
         func add(s) {
-            operate(s.sub(/^\+/,'').sub(/\++/,'+'), '+');
+            operate(s.sub(/^\+/,'').sub(/\++/,'+'), '+')
         }
- 
+
         func subtract(s) {
-            s.gsub!(/(\+-|-\+)/,'-');
- 
+            s.gsub!(/(\+-|-\+)/,'-')
+
             if (s ~~ /--/) {
-                return(add(s.sub(/--/,'+')));
+                return(add(s.sub(/--/,'+')))
             }
- 
-            var b = s.split('-');
-            b.len == 3 ? (-1*b[1].to_num - b[2].to_num)
-                       : operate(s, '-');
+
+            var b = s.split('-')
+            b.len == 3 ? (-1*Number(b[1]) - Number(b[2]))
+                       : operate(s, '-')
         }
- 
-        s.gsub!(/[()]/,'').gsub!(/-\+/, '-');
- 
-        var reM  = /\*/;
-        var reMD = %r"(\d+\.?\d*\s*[*/]\s*[+-]?\d+\.?\d*)";
- 
-        var reA  = /\d\+/;
-        var reAS = /(-?\d+\.?\d*\s*[+-]\s*[+-]?\d+\.?\d*)/;
- 
+
+        s.gsub!(/[()]/,'').gsub!(/-\+/, '-')
+
+        var reM  = /\*/
+        var reMD = %r"(\d+\.?\d*\s*[*/]\s*[+-]?\d+\.?\d*)"
+
+        var reA  = /\d\+/
+        var reAS = /(-?\d+\.?\d*\s*[+-]\s*[+-]?\d+\.?\d*)/
+
         while (var match = reMD.match(s)) {
             match[0] ~~ reM
-                ? s.sub!(reMD, operate(match[0], '*').to_s)
-                : s.sub!(reMD, operate(match[0], '/').to_s);
+                ? s.sub!(reMD, operate(match[0], '*').to_s)
+                : s.sub!(reMD, operate(match[0], '/').to_s)
         }
- 
+
         while (var match = reAS.match(s)) {
             match[0] ~~ reA
-                ? s.sub!(reAS,      add(match[0]).to_s)
-                : s.sub!(reAS, subtract(match[0]).to_s);
+                ? s.sub!(reAS,      add(match[0]).to_s)
+                : s.sub!(reAS, subtract(match[0]).to_s)
         }
- 
-        return s;
+
+        return s
     }
- 
-    var rePara = /(\([^\(\)]*\))/;
-    s.split!.join!('').sub!(/^\+/,'');
- 
+
+    var rePara = /(\([^\(\)]*\))/
+    s.split!.join!('').sub!(/^\+/,'')
+
     while (var match = s.match(rePara)) {
-        s.sub!(rePara, evalExp(match[0]));
+        s.sub!(rePara, evalExp(match[0]))
     }
- 
-    return evalExp(s).to_num;
+
+    return Number(evalExp(s))
 }
 ```
 
@@ -74,8 +74,8 @@ for expr,res in [
      ['2*-3--4+-0.25'                            =>    -2.25],
      ['2 * (3 + (4 * 5 + (6 * 7) * 8) - 9) * 10' =>     7000],
 ] { 
-    var num = evalArithmeticExp(expr);
-    assert_eq(num, res);
-    "%-45s == %10g\n".printf(expr, num);
+    var num = evalArithmeticExp(expr)
+    assert_eq(num, res)
+    "%-45s == %10g\n".printf(expr, num)
 }
 ```

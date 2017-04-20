@@ -5,10 +5,10 @@
 ```ruby
 func cholesky(matrix) {
     var chol = matrix.len.of { matrix.len.of(0) }
-    for row in ^matrix {
-        for col in (0..row) {
+    for row (^matrix) {
+        for col (0..row) {
             var x = matrix[row][col]
-            for i in (0..col) {
+            for i (0..col) {
                 x -= (chol[row][i] * chol[col][i])
             }
             chol[row][col] = (row == col ? x.sqrt : x/chol[col][col])

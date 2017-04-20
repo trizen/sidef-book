@@ -12,7 +12,7 @@ func propdivsum(x) {
 }
  
 var h = Hash()
-20000.times { |i| ++(h{propdivsum(i) <=> i} := 0) }
+1..20000 -> each { |i| ++(h{propdivsum(i) <=> i} := 0) }
 say "Perfect: #{h{0}}    Deficient: #{h{-1}}    Abundant: #{h{1}}"
 ```
 

@@ -17,17 +17,17 @@ func succ(this, get_next) {
     return this
 }
  
-var enviornments = (1..12 -> map {|i| Hash(value => i, count => 0) });
+var enviornments = (1..12 -> map {|i| Hash(value => i, count => 0) })
  
 while (!enviornments.map{ _{:value} }.all { .is_one }) {
-    say enviornments.map {|h| "%4s" % h{:value} }.join;
-    enviornments.range.each { |i|
-        enviornments[i] = succ(enviornments[i], calculator);
-    }
+    say enviornments.map {|h| "%4s" % h{:value} }.join
+    { |i|
+        enviornments[i] = succ(enviornments[i], calculator)
+    } << ^enviornments
 }
  
-say 'Counts';
-say enviornments.map{ |h| "%4s" % h{:count} }.join;
+say 'Counts'
+say enviornments.map{ |h| "%4s" % h{:count} }.join
 ```
 
 #### Output:

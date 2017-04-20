@@ -5,14 +5,14 @@
 ```ruby
 class HTML {
     method _attr(Hash h) {
-        h.keys.sort.map {|k| %Q' #{k}="#{h{k}}"' }.join('')
+        h.keys.sort.map {|k| %Q' #{k}="#{h{k}}"' }.join
     }
 
     method _tag(Hash h, name, value) {
         "<#{name}" + self._attr(h) + '>' + value + "</#{name}>"
     }
 
-    method table(Hash h, *data) { self._tag(h, 'table', data.join('')) }
+    method table(Hash h, *data) { self._tag(h, 'table', data.join) }
     method table(*data)         { self.table(Hash(), data...) }
 }
 
@@ -20,18 +20,18 @@ class Table < HTML {
     method th(Hash h, value) { self._tag(h, 'th', value) }
     method th(value)         { self.th(Hash(), value) }
 
-    method tr(Hash h, *rows) { self._tag(h, 'tr', rows.join('')) }
+    method tr(Hash h, *rows) { self._tag(h, 'tr', rows.join) }
     method tr(*rows)         { self.tr(Hash(), rows...) }
 
     method td(Hash h, value) { self._tag(h, 'td', value) }
     method td(value)         { self.td(Hash(), value) }
 }
 
-var header = %w(&nbsp; X Y Z);
-var rows = 5;
+var header = %w(&nbsp; X Y Z)
+var rows = 5
 
-var html = HTML.new;
-var table = Table.new;
+var html = HTML()
+var table = Table()
 
 say html.table(
     # attributes
@@ -48,11 +48,11 @@ say html.table(
         table.tr(
             table.td(:(align => 'right'), i),
             (header.len - 1).of {
-                table.td(Hash(align => 'right'), 10000.rand.int)
+                table.td(Hash(align => 'right'), 10000.irand)
             }...
         )
     }...
-);
+)
 ```
 
 

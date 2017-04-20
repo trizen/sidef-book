@@ -4,18 +4,18 @@
 
 ```ruby
 func caesar(msg, key, decode=false) {
-    decode && (key = (26 - key));
-    msg.gsub(/([A-Z])/i, {|c| ((c.uc.ord - 65 + key) % 26) + 65 -> chr});
-};
+    decode && (key = (26 - key))
+    msg.gsub(/([A-Z])/i, {|c| ((c.uc.ord - 65 + key) % 26) + 65 -> chr})
+}
  
-var msg = 'THE FIVE BOXING WIZARDS JUMP QUICKLY';
+var msg = 'THE FIVE BOXING WIZARDS JUMP QUICKLY'
  
-var enc = caesar(msg, 10);
-var dec = caesar(enc, 10, true);
+var enc = caesar(msg, 10)
+var dec = caesar(enc, 10, true)
  
-say "msg: #{msg}";
-say "enc: #{enc}";
-say "dec: #{dec}";
+say "msg: #{msg}"
+say "enc: #{enc}"
+say "dec: #{dec}"
 ```
 
 #### Output:

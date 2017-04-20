@@ -3,6 +3,6 @@
 # [Character codes][1]
 
 ```ruby
-say 'a'.ord;    # => 97
-say 97.chr;     # => 'a'
+say 'a'.ord     # => 97
+say 97.chr      # => 'a'
 ```

@@ -8,10 +8,10 @@ func flatten(a) {
     a.each { |item|
         flat += (item.kind_of(Array) ? flatten(item) : [item])
     }
-    return flat;
+    return flat
 }
  
 var arr = [[1], 2, [[3,4], 5], [[[]]], [[[6]]], 7, 8, []]
 say flatten(arr)      # used-defined function
-say arr.flatten       # built-in method for Array obj
+say arr.flatten       # built-in method inside the Array class
 ```

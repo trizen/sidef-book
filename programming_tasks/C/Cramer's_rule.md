@@ -8,7 +8,7 @@ func det(a) {
     var sign = +1
     var pivot = 1
 
-    for k in ^a {
+    for k (^a) {
       var r = (k+1 .. a.end)
       var previous_pivot = pivot
 
@@ -18,7 +18,7 @@ func det(a) {
         sign.neg!
       }
 
-      for i,j in (r ~X r) {
+      for i,j (r ~X r) {
         a[i][j] *= pivot           ->
                 -= a[i][k]*a[k][j] ->
                 /= previous_pivot
@@ -29,9 +29,9 @@ func det(a) {
 
 func cramers_rule(A, terms) {
     gather {
-        for i in ^A {
+        for i (^A) {
             var Ai = A.map{.map{_}}
-            for j in ^terms {
+            for j (^terms) {
                 Ai[j][i] = terms[j]
             }
             take(det(Ai))

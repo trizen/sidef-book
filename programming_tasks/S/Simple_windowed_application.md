@@ -6,20 +6,20 @@
 require('Gtk2') -> init
 
 # Window.
-var window = %s<Gtk2::Window>.new
-window.signal_connect('destroy' => { %s<Gtk2>.main_quit })
+var window = %O<Gtk2::Window>.new
+window.signal_connect('destroy' => { %O<Gtk2>.main_quit })
 
 # VBox.
-var vbox = %s<Gtk2::VBox>.new(0, 0)
+var vbox = %O<Gtk2::VBox>.new(0, 0)
 window.add(vbox)
 
 # Label.
-var label = %s<Gtk2::Label>.new('There have been no clicks yet.')
+var label = %O<Gtk2::Label>.new('There have been no clicks yet.')
 vbox.add(label)
 
 # Button.
 var count = 0
-var button = %s<Gtk2::Button>.new(' Click Me ')
+var button = %O<Gtk2::Button>.new(' Click Me ')
 vbox.add(button)
 button.signal_connect('clicked' => {
     label.set_text(++count)
@@ -29,5 +29,5 @@ button.signal_connect('clicked' => {
 window.show_all
 
 # Main loop.
-%s<Gtk2>.main
+%O<Gtk2>.main
 ```

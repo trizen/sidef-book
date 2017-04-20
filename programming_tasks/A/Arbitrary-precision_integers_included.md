@@ -3,9 +3,9 @@
 # [Arbitrary-precision integers (included)][1]
 
 ```ruby
-var x = 5**(4**(3**2));
-var y = x.to_s;
-printf("5**4**3**2 = %s...%s and has %i digits\n", y.ft(0,19), y.ft(-20), y.len);
+var x = 5**(4**(3**2))
+var y = x.to_s
+printf("5**4**3**2 = %s...%s and has %i digits\n", y.ft(0,19), y.ft(-20), y.len)
 ```
 
 #### Output:

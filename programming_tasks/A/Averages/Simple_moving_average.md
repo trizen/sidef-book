@@ -20,10 +20,10 @@ func simple_moving_average(period) {
     }
 }
  
-var ma3 = simple_moving_average(3);
-var ma5 = simple_moving_average(5);
+var ma3 = simple_moving_average(3)
+var ma5 = simple_moving_average(5)
  
-[1 ..^ 6, 6 ^.. 1].map{@|_} -> each {|num|
+for num (1..5, flip(1..5)) {
   printf("Next number = %d, SMA_3 = %.3f, SMA_5 = %.1f\n",
     num, ma3.call(num), ma5.call(num))
 }
@@ -48,7 +48,7 @@ class sma_generator(period, list=[], sum=0) {
 var ma3 = sma_generator(3)
 var ma5 = sma_generator(5)
  
-for num in [@|(1..5), @|(1..5 -> flip)] {
+for num (1..5, flip(1..5)) {
   printf("Next number = %d, SMA_3 = %.3f, SMA_5 = %.1f\n",
     num, ma3.SMA(num), ma5.SMA(num))
 }

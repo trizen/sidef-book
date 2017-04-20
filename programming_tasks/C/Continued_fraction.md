@@ -5,10 +5,10 @@
 ```ruby
 func continued_fraction(a, _, (0)) { a() }
 func continued_fraction(a, b, n=100) {
-    a() + (b() / continued_fraction(a, b, n-1));
+    a() + (b() / continued_fraction(a, b, n-1))
 }
 
-var f = Hash.new(
+var f = Hash(
     "√2" => [
         do { var n = 0; { n++ ? 2 : 1 } },
         { 1 },
@@ -30,7 +30,7 @@ var f = Hash.new(
 );
 
 f.each { |k,v|
-    printf("%3s ≈ %.9f\n", k, continued_fraction(v...));
+    printf("%3s ≈ %.9f\n", k, continued_fraction(v...))
 }
 ```
 
