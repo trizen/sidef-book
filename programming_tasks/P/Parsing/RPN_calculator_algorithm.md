@@ -3,7 +3,7 @@
 # [Parsing/RPN calculator algorithm][1]
 
 ```ruby
-var proggie = '3 4 2 * 1 5 - 2 3 ^ ^ / +';
+var proggie = '3 4 2 * 1 5 - 2 3 ^ ^ / +'
 
 class RPN(arr=[]) {
 
@@ -15,10 +15,10 @@ class RPN(arr=[]) {
 
     method run(p) {
         p.each_word { |w|
-            say "#{w} (#{arr})";
+            say "#{w} (#{arr})"
             given (w) {
                 when (/\d/) {
-                    arr << w.to_f
+                    arr << Num(w)
                 }
                 when (<+ - * />) {
                     self.binop(w)
@@ -35,7 +35,7 @@ class RPN(arr=[]) {
     }
 }
 
-RPN.new.run(proggie);
+RPN.new.run(proggie)
 ```
 
 #### Output:

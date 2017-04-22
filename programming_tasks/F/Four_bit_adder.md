@@ -28,7 +28,7 @@ func four_bit_adder(a, b) {
 say " A    B      A      B   C    S  sum"
 for a in ^16 {
   for b in ^16 {
-    var(abin, bbin) = [a,b].map{|n| "%04b"%n->chars.reverse.map{.to_i} }...
+    var(abin, bbin) = [a,b].map{|n| "%04b"%n->chars.flip.map{.to_i} }...
     var(s, c) = four_bit_adder(abin, bbin)
     printf("%2d + %2d = %s + %s = %s %s = %2d\n",
         a, b, abin.join, bbin.join, c, s, "#{c}#{s}".bin)

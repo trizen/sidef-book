@@ -5,5 +5,5 @@
 _max_ method returns the greatest element in a list. It works only if the array's elements have the same type (e.g.: strings, numbers).
 
 ```ruby
-values.max;
+values.max
 ```

@@ -18,7 +18,7 @@ values.each { |test|
 }
 
 say "\nSelf-descriptive numbers less than 1e5 (in base 10):"
-^1e5 -> each { |i| say i if sdn(i) }
+{|i| say i if sdn(i) } << ^1e5
 ```
 
 #### Output:

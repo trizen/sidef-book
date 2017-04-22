@@ -3,8 +3,8 @@
 # [SHA-1][1]
 
 ```ruby
-var sha = frequire('Digest::SHA');
-say sha.sha1_hex('Rosetta Code');
+var sha = frequire('Digest::SHA')
+say sha.sha1_hex('Rosetta Code')
 ```
 
 #### Output:

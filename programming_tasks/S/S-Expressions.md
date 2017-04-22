@@ -3,42 +3,42 @@
 # [S-Expressions][1]
 
 ```ruby
-var t = frequire('Text::Balanced');
+var t = frequire('Text::Balanced')
 
 func sexpr(txt) {
-    txt.trim!;
+    txt.trim!
 
-    var m = txt.match(/^\((.*)\)$/s) || die "Invalid: <<#{txt}>>";
-    txt = m[0];
+    var m = txt.match(/^\((.*)\)$/s) || die "Invalid: <<#{txt}>>"
+    txt = m[0]
 
-    var w;
-    var ret = [];
+    var w
+    var ret = []
     while (!txt.is_empty) {
         given (txt.first) {
             when('(') {
                 (w, txt) = t.extract_bracketed(txt, '()');
-                w = sexpr(w);
+                w = sexpr(w)
             }
             when ('"') {
                 (w, txt) = t.extract_delimited(txt, '"')
-                w.sub!(/^"(.*)"/, {|s1| s1 });
+                w.sub!(/^"(.*)"/, {|s1| s1 })
             }
             default {
-                txt.sub!(/^(\S+)/, {|s1| w = s1; '' });
+                txt.sub!(/^(\S+)/, {|s1| w = s1; '' })
             }
         }
-        ret << w;
-        txt.trim_beg!;
+        ret << w
+        txt.trim_beg!
     }
-    return ret;
+    return ret
 }
 
 func sexpr2txt(String e) {
-    e ~~ /[\s"\(\)]/ ? do { e.gsub!('"', '\\"'); %Q("#{e}") } : e;
+    e ~~ /[\s"\(\)]/ ? do { e.gsub!('"', '\\"'); %Q("#{e}") } : e
 }
 
 func sexpr2txt(expr) {
-    '(' + expr.map {|e| sexpr2txt(e) }.join(' ') + ')';
+    '(' + expr.map {|e| sexpr2txt(e) }.join(' ') + ')'
 }
 
 var s = sexpr(%q{
@@ -46,14 +46,14 @@ var s = sexpr(%q{
 ((data "quoted data" 123 4.5)
  (data (!@# (4.5) "(more" "data)")))
 
-});
+})
 
-say s;              # dump structure
-say sexpr2txt(s);   # convert back
+say s               # dump structure
+say sexpr2txt(s)    # convert back
 ```
 
 #### Output:
 ```
-[["data", "quoted data", "123", "4.5"], ["data", ["!\@#", ["4.5"], "(more", "data)"]]]
+[["data", "quoted data", "123", "4.5"], ["data", ["!@#", ["4.5"], "(more", "data)"]]]
 ((data "quoted data" 123 4.5) (data (!@# (4.5) "(more" "data)")))
 ```

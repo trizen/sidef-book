@@ -3,14 +3,14 @@
 # [Search a list][1]
 
 ```ruby
-var haystack = %w(Zig Zag Wally Ronald Bush Krusty Charlie Bush Bozo);
+var haystack = %w(Zig Zag Wally Ronald Bush Krusty Charlie Bush Bozo)
  
 %w(Bush Washington).each { |needle|
-    var i = haystack.first_index{|item| item == needle};
+    var i = haystack.first_index{|item| item == needle}
     if (i >= 0) {
-        say "#{i} #{needle}";
+        say "#{i} #{needle}"
     } else {
-        die "#{needle} is not in haystack";
+        die "#{needle} is not in haystack"
     }
 }
 ```
@@ -25,8 +25,8 @@ Washington is not in haystack at find.sf line 9.
 Extra credit:
 
 ```ruby
-var haystack = %w(Zig Zag Wally Ronald Bush Krusty Charlie Bush Bozo);
-say haystack.last_index{|item| item == "Bush"};
+var haystack = %w(Zig Zag Wally Ronald Bush Krusty Charlie Bush Bozo)
+say haystack.last_index{|item| item == "Bush"}
 ```
 
 #### Output:

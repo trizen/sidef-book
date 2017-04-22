@@ -6,10 +6,10 @@ Functional:
 
 ```ruby
 func horner(coeff, x) {
-    coeff.reverse.reduce { |a,b| a*x + b };
+    coeff.reverse.reduce { |a,b| a*x + b }
 }
  
-say horner([-19, 7, -4, 6], 3);   # => 128
+say horner([-19, 7, -4, 6], 3)   # => 128
 ```
 
 
@@ -22,5 +22,5 @@ func horner(coeff, x) {
         : 0
 }
 
-say horner([-19, 7, -4, 6], 3);   # => 128
+say horner([-19, 7, -4, 6], 3)   # => 128
 ```

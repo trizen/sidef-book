@@ -3,15 +3,15 @@
 # [Number reversal game][1]
 
 ```ruby
-var turn = 0;
-var jumble = @(1..9).bshuffle;        # best-shuffle
+var turn = 0
+var jumble = @(1..9).bshuffle        # best-shuffle
 
 for (turn; jumble != 1..9; ++turn) {
-    printf("%2d: %s - Flip how many digits ? ", turn, jumble.join(' '));
-    var d = read(Number) \\ break;
-    jumble[0 .. d-1] = [jumble[0 .. d-1]].reverse...;
+    printf("%2d: %s - Flip how many digits ? ", turn, jumble.join(' '))
+    var d = read(Number) \\ break
+    jumble[0 .. d-1] = [jumble[0 .. d-1]].reverse...
 }
 
-print "    #{jumble.join(' ')}\n";
-print "You won in #{turn} turns.\n";
+print "    #{jumble.join(' ')}\n"
+print "You won in #{turn} turns.\n"
 ```

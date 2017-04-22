@@ -4,11 +4,11 @@
 
 ```ruby
 func is_narcissistic(n) {
-    n.digits »**» n.len -> sum(0) == n
+    n.digits »**» n.len -> sum == n
 }
- 
+
 var count = 0
-Inf.itimes { |i|
+for i in ^Inf {
     if (is_narcissistic(i)) {
         say "#{++count}\t#{i}"
         break if (count == 25)

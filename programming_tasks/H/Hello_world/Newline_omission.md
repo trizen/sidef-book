@@ -3,12 +3,12 @@
 # [Hello world/Newline omission][1]
 
 ```ruby
-print "Goodbye, World!";
+print "Goodbye, World!"
 ```
 
 
 or:
 
 ```ruby
-"%s".printf("Goodbye, World!");
+"%s".printf("Goodbye, World!")
 ```

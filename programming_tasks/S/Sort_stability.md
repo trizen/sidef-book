@@ -10,9 +10,9 @@ var table = [
   <US  New\ York>,
   <US  Birmingham>,
   <UK  Birmingham>,
-];
+]
  
-table.sort {|a,b| a[0] <=> b[0]}.each { |col|
+table.sort {|a,b| a[0] <=> b[0] }.each { |col|
     say "#{col[0]} #{col[1]}"
 }
 ```

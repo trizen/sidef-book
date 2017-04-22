@@ -4,12 +4,12 @@
 
 ```ruby
 func repeat(f, n) {
-    { f() } * n;
+    { f() } * n
 }
  
 func example {
-    say "Example";
+    say "Example"
 }
  
-repeat(example, 4);
+repeat(example, 4)
 ```

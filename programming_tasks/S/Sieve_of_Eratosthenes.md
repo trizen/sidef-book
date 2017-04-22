@@ -4,12 +4,12 @@
 
 ```ruby
 func sieve(limit) {
-    var sieve_arr = [false, false, [true]*(limit-1)...]
+    var sieve_arr = [false, false, (limit-1).of(true)...]
     gather {
         sieve_arr.each_kv { |number, is_prime|
             if (is_prime) {
                 take(number)
-                number.sqr.to(limit).by(number).each { |i|
+                for i in (number**2 .. limit `by` number) {
                     sieve_arr[i] = false
                 }
             }

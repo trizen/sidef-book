@@ -3,6 +3,6 @@
 # [Generate lower case ASCII alphabet][1]
 
 ```ruby
-var arr = 'a'..'z';
-say arr.join(' ');
+var arr = 'a'..'z'
+say arr.join(' ')
 ```

@@ -9,7 +9,7 @@ func ludics_upto(nmax=100000) {
     var arr = @(2..nmax)
     while (arr) {
       collect(var n = arr[0])
-      arr.range.by(n).each {|i| arr[i] = nil}
+      {|i| arr[i] = nil} << (^arr `by` n)
       arr.compact!
     }
   })

@@ -4,14 +4,14 @@
 
 ```ruby
 func getNthLine(filename, n) {
-  var file = File(filename);
+  var file = File(filename)
   file.open_r.each { |line|
-    Num($.) == n && return line;
+    Num($.) == n && return line
   }
-  warn "file #{file} does not have #{n} lines, only #{$.}\n";
-  return nil;
+  warn "file #{file} does not have #{n} lines, only #{$.}\n"
+  return nil
 }
  
-var line = getNthLine("/etc/passwd", 7);
-print line if defined line;
+var line = getNthLine("/etc/passwd", 7)
+say line if defined(line)
 ```

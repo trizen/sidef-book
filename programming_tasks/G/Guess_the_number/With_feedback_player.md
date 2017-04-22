@@ -3,17 +3,17 @@
 # [Guess the number/With feedback (player)][1]
 
 ```ruby
-var min = 1;
-var max = 99;
-var tries = 0;
-var guess = max.rand(min).int;
+var min = 1
+var max = 99
+var tries = 0
+var guess = pick(min..max)
  
-print <<"EOT".chomp;
+print <<"EOT".chomp
 \n=>> Think of a number between #{min} and #{max} and I'll guess it!\n
 Press <ENTER> when are you ready...
 EOT
  
-STDIN.readline;
+STDIN.readline
  
 loop {
     print <<-EOT.chomp
@@ -21,28 +21,28 @@ loop {
     >#{' '}
     EOT
  
-    ++tries;
+    ++tries
     given (STDIN.readline) {
         case (max <= min) {
-            say "\nI give up...";
-            break;
+            say "\nI give up..."
+            break
         }
         when (/^h/i) {
-            min = guess+1;
+            min = guess+1
         }
         when (/^l/i) {
-            max = guess;
+            max = guess
         }
         when (/^e/i) {
-            say "\nI knew it! It took me only #{tries} tries.";
-            break;
+            say "\nI knew it! It took me only #{tries} tries."
+            break
         }
         default {
-            say "error: invalid score";
-            next;
+            say "error: invalid score"
+            next
         }
     }
  
-    guess = (min+max / 2 -> int);
+    guess = ((min+max) // 2)
 }
 ```

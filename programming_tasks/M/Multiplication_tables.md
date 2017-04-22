@@ -3,19 +3,19 @@
 # [Multiplication tables][1]
 
 ```ruby
-var max = 12;
-var width = (max**2 -> len+1);
+var max = 12
+var width = (max**2 -> len+1)
  
 func fmt_row(*items) {
-    items.map { |s| "%*s" % (width, s) }.join('');
+    items.map {|s| "%*s" % (width, s) }.join
 }
  
-say fmt_row('x┃', (1..max)...);
-say "#{'━' * (width - 1)}╋#{'━' * (max * width)}";
- 
-max.times { |i|
-    say fmt_row("#{i}┃", max.of {|j| i <= j ? i*j : ''}...);
-}
+say fmt_row('x┃', (1..max)...)
+say "#{'━' * (width - 1)}╋#{'━' * (max * width)}"
+
+{ |i| 
+    say fmt_row("#{i}┃", {|j| i <= j ? i*j : ''}.map(1..max)...)
+} << 1..max
 ```
 
 #### Output:

@@ -3,28 +3,28 @@
 # [Horizontal sundial calculations][1]
 
 ```ruby
-var latitude  = read('Enter latitude       => ', Number);
-var longitude = read('Enter longitude      => ', Number);
-var meridian  = read('Enter legal meridian => ', Number);
+var latitude  = read('Enter latitude       => ', Number)
+var longitude = read('Enter longitude      => ', Number)
+var meridian  = read('Enter legal meridian => ', Number)
  
-var lat_sin = Math.sin(Math.deg2rad(latitude));
-var offset = (meridian - longitude);
+var lat_sin = latitude.deg2rad.sin
+var offset = (meridian - longitude)
  
-say('Sine of latitude: ', "%.4f" % lat_sin);
-say('Longitude offset: ', offset);
-say('=' * 48);
-say(' Hour  : Sun hour angle° : Dial hour line angle°');
+say('Sine of latitude: ', "%.4f" % lat_sin)
+say('Longitude offset: ', offset)
+say('=' * 48)
+say(' Hour  : Sun hour angle° : Dial hour line angle°')
  
 for hour in range(-6, 6) {
-    var sun_deg  = (15*hour + offset);
-    var line_deg = Math.rad2deg(
-        Math.atan2(
-            Math.sin(Math.deg2rad(sun_deg)) * lat_sin,
-            Math.cos(Math.deg2rad(sun_deg))
+    var sun_deg  = (15*hour + offset)
+    var line_deg = rad2deg(
+        atan2(
+            sin(deg2rad(sun_deg)) * lat_sin,
+            cos(deg2rad(sun_deg))
         )
     )
     printf("%2d %s      %7.3f             %7.3f\n",
-      (hour + 12) % 12 || 12, (hour < 0 ? 'AM' : 'PM'), sun_deg, line_deg);
+      (hour + 12) % 12 || 12, (hour < 0 ? 'AM' : 'PM'), sun_deg, line_deg)
 }
 ```
 

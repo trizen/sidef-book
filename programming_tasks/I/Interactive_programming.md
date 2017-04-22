@@ -4,9 +4,9 @@
 
 ```ruby
 $ sidef -i
->>> func f(s1, s2, sep) { s1 + sep*2 + s2 };
+>>> func f(s1, s2, sep) { s1 + sep*2 + s2 }
 f
 >>> f('Rosetta', 'Code', ':')
 "Rosetta::Code"
->>> 
+>>>
 ```

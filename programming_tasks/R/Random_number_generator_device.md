@@ -4,14 +4,14 @@
 
 ```ruby
 func urandom() {
-    const device = %f'/dev/urandom';
+    static device = %f'/dev/urandom'
 
     device.open('<:raw', \var fh, \var err) ->
-        || die "Can't open `#{device}': #{err}";
+        || die "Can't open `#{device}': #{err}"
 
-    fh.sysread(\var noise, 4);
-    'L'.unpack(noise);
+    fh.sysread(\var noise, 4)
+    'L'.unpack(noise)
 }
 
-say urandom();    # sample: 3517432564
+say urandom()    # sample: 3517432564
 ```

@@ -7,7 +7,7 @@ When the token string is double-quoted ("") or not quoted,
 the content will be interpolated like a double-quoted string:
 
 ```ruby
-var text = <<"EOF";
+var text = <<"EOF"
 a = #{1+2}
 b = #{3+4}
 EOF
@@ -17,7 +17,7 @@ EOF
 If single quotes are used, then the here document will not support interpolation, like a normal single-quoted string:
 
 ```ruby
-var x = <<'FOO';
+var x = <<'FOO'
 No
 #{interpolation}
 here
@@ -29,7 +29,7 @@ The here document does not start immediately at the "&lt;&lt;END" token -- it st
 To further illustrate this fact, we can use the "&lt;&lt;END" inside a complex, nested expression:
 
 ```ruby
-say (<<EOF + "lamb");
+say (<<EOF + "lamb")
 Mary had
   a little
 EOF

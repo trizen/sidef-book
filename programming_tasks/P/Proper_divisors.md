@@ -3,22 +3,17 @@
 # [Proper divisors][1]
 
 ```ruby
-func propdiv (x) {
-    var divs = []
-    divs << 1 if (x > 1)
-
-    for d in (2 .. x.isqrt) {
-        var y = (x // d)
-        if (y*d == x) {
-            divs << d
-            y == d || (divs << y)
-        }
-    }
-
-    divs
+func propdiv (n) {
+    gather {
+        { |d|
+            if (d `divides` n) {
+                take(d, n//d)
+            }
+        } << 1..n.isqrt
+    }.grep{ _ != n }.uniq.sort
 }
 
-10.times { |i| say "#{i}\t#{propdiv(i)}" }
+{|i| say "#{i}\t#{propdiv(i)}" } << 1..10
 
 var max = 0
 var candidates = []

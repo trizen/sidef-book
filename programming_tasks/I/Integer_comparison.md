@@ -3,17 +3,17 @@
 # [Integer comparison][1]
 
 ```ruby
-var a = read("a: ", Number);
-var b = read("b: ", Number);
+var a = read("a: ", Number)
+var b = read("b: ", Number)
  
 if (a < b) {
-    say 'Lower';
+    say 'Lower'
 }
 elsif (a == b) {
-    say 'Equal';
+    say 'Equal'
 }
 elsif (a > b) {
-    say 'Greater';
+    say 'Greater'
 }
 ```
 

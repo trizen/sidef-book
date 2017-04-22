@@ -3,17 +3,17 @@
 # [Subleq][1]
 
 ```ruby
-var memory = ARGV.map{.to_i};
-var ip = 0;
+var memory = ARGV.map{.to_i}
+var ip = 0
  
 while (ip.ge(0) && ip.lt(memory.len)) {
-    var (a, b, c) = memory[ip, ip+1, ip+2];
-    ip += 3;
+    var (a, b, c) = memory[ip, ip+1, ip+2]
+    ip += 3
     if (a < 0) {
-        memory[b] = STDIN.getc.ord;
+        memory[b] = STDIN.getc.ord
     }
     elsif (b < 0) {
-        print memory[a].chr;
+        print memory[a].chr
     }
     elsif ((memory[b] -= memory[a]) <= 0) {
         ip = c

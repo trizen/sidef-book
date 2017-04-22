@@ -4,11 +4,11 @@
 
 ```ruby
 # Inverted syntax with assignment
-var raining = true;
-[false]»(\var needumbrella);
+var raining = true
+[false]»(\var needumbrella)
  
 # Inverted syntax with conditional expressions
-if (raining==true) {needumbrella=true};
-{needumbrella=true} -> if (raining==true);
-(needumbrella=true) if (raining==true);
+if (raining==true) {needumbrella=true}
+{needumbrella=true}.if (raining==true)
+(needumbrella=true) if (raining==true)
 ```

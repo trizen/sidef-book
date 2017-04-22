@@ -5,37 +5,37 @@
 ```ruby
 func is_square(m) { m.all { .len == m.len } }
 func matrix_zero(n, m=n) { m.of { n.of(0) } }
-func matrix_ident(n) { n.of {|i| [(i-1).of(0)..., 1, (n-i).of(0)...] } }
- 
+func matrix_ident(n) { n.of {|i| n.of {|j| i==j ? 1 : 0 } } }
+
 func pivotize(m) {
     var size = m.len
     var id = matrix_ident(size)
-    for i in ^size {
+    for i (^size) {
         var max = m[i][i]
         var row = i
-        for j in range(i, size-1) {
+        for j (i ..^ size) {
             if (m[j][i] > max) {
                 max = m[j][i]
                 row = j
             }
         }
-        if (row != i) {
+        if (row != i) {
             id.swap(row, i)
         }
     }
     return id
 }
- 
+
 func mmult(a, b) {
     var p = []
-    for r,c in (^a ~X ^b[0]) {
-        for i in ^b {
-            p[r][c] := 0 += (a[r][i] * b[i][c])
+    for r,c (^a ~X ^b[0]) {
+        for i (^b) {
+            p[r][c] := 0 += (a[r][i] * b[i][c])
         }
     }
     return p
 }
- 
+
 func lu(a) {
     is_square(a) || die "Defined only for square matrices!";
     var n = a.len
@@ -43,23 +43,23 @@ func lu(a) {
     var Aʼ = mmult(P, a)
     var L = matrix_ident(n)
     var U = matrix_zero(n)
-    for i,j in (^n ~X ^n) {
+    for i,j (^n ~X ^n) {
         if (j >= i) {
-            U[i][j] = (Aʼ[i][j] - (^i->map { U[_][j] * L[i][_] }.sum(0)))
+            U[i][j] = (Aʼ[i][j] - ({ U[_][j] * L[i][_] }.map(^i).sum))
         } else {
-            L[i][j] = ((Aʼ[i][j] - (^j->map { U[_][j] * L[i][_] }.sum(0))) / U[j][j])
+            L[i][j] = (Aʼ[i][j] - ({ U[_][j] * L[i][_] }.map(^j).sum))/U[j][j]
         }
     }
     return [P, Aʼ, L, U]
 }
- 
+
 func say_it(message, array) {
     say "\n#{message}"
     array.each { |row|
         say row.map{"%7s" % .as_rat}.join(' ')
     }
 }
- 
+
 var t = [[
    %n(1 3 5),
    %n(2 4 7),
@@ -70,10 +70,10 @@ var t = [[
    %n( 3 17 18  1),
    %n( 2  5  7  1),
 ]]
- 
-for test in t {
+
+for test (t) {
     say_it('A Matrix', test);
-    for a,b in (['P Matrix', 'Aʼ Matrix', 'L Matrix', 'U Matrix'] ~Z lu(test)) {
+    for a,b (['P Matrix', 'Aʼ Matrix', 'L Matrix', 'U Matrix'] ~Z lu(test)) {
         say_it(a, b)
     }
 }

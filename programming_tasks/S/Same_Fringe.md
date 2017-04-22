@@ -10,34 +10,34 @@ var trees = [
     [ [ [ 'd', 'c', ], 'a', ], 'b', ],
     # and this one's different!
     [ [ [ [ [ [ 'a' ], 'b' ], 'c', ], 'd', ], 'e', ], 'f' ],
-];
+]
  
 func get_tree_iterator(*rtrees) {
-    var tree;
+    var tree
     func {
-        tree = rtrees.pop;
-        while (defined(tree) && tree.is_an(Array)) {
-            rtrees.append(tree[1]);
-            tree = tree[0];
+        tree = rtrees.pop
+        while (defined(tree) && tree.kind_of(Array)) {
+            rtrees.append(tree[1])
+            tree = tree[0]
         }
-        return tree;
+        return tree
     }
 }
  
 func cmp_fringe(a, b) {
-    var ti1 = get_tree_iterator(a);
-    var ti2 = get_tree_iterator(b);
+    var ti1 = get_tree_iterator(a)
+    var ti2 = get_tree_iterator(b)
     loop {
-        var (L, R) = (ti1(), ti2());
-         defined(L) &&  defined(R) && (L == R) && next;
-        !defined(L) && !defined(R) && return "Same";
-        return "Different";
+        var (L, R) = (ti1(), ti2())
+         defined(L) &&  defined(R) && (L == R) && next
+        !defined(L) && !defined(R) && return "Same"
+        return "Different"
     }
 }
  
-range(1, trees.end).each { |tree_idx|
-    say ("tree[#{tree_idx-1}] vs tree[#{tree_idx}]: ",
-           cmp_fringe(trees[tree_idx-1], trees[tree_idx]));
+for idx in ^(trees.end) {
+    say ("tree[#{idx}] vs tree[#{idx+1}]: ",
+           cmp_fringe(trees[idx], trees[idx+1]))
 }
 ```
 

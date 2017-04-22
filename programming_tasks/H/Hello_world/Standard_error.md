@@ -3,5 +3,5 @@
 # [Hello world/Standard error][1]
 
 ```ruby
-STDERR.println("Goodbye, World!");
+STDERR.say("Goodbye, World!")
 ```

@@ -4,10 +4,10 @@
 
 ```ruby
 func eval_with_x(code, x, y) {
-    var f = eval(code);
-    x = y;
-    eval(code) - f;
+    var f = eval(code)
+    x = y
+    eval(code) - f
 }
  
-say eval_with_x(x: 3, y: 5, code: '2 ** x');   # => 24
+say eval_with_x(x: 3, y: 5, code: '2 ** x')   # => 24
 ```

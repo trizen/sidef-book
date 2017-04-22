@@ -10,7 +10,7 @@ func Q(n) is cached {
            : Q(n - Q(n-1))+Q(n-Q(n-2))
 }
  
-say "First 10 terms: #{10.of {|n| Q(n) }.dump }"
+say "First 10 terms: #{ {|n| Q(n) }.map(1..10) }"
 say "Term 1000: #{Q(1000)}"
 say "Terms less than preceding in first 100k: #{2..100000->count{|i|Q(i)<Q(i-1)}}"
 ```
@@ -19,12 +19,12 @@ say "Terms less than preceding in first 100k: #{2..100000->count{|i|Q(i)<Q(i-1)}
 Using an array:
 
 ```ruby
-var Q = [0, 1, 1];
+var Q = [0, 1, 1]
 100_000.times {
     Q << (Q[-Q[-1]] + Q[-Q[-2]])
 }
  
-say "First 10 terms: #{Q.ft(1, 10).dump}"
+say "First 10 terms: #{Q.ft(1, 10)}"
 say "Term 1000: #{Q[1000]}"
 say "Terms less than preceding in first 100k: #{2..100000->count{|i|Q[i]<Q[i-1]}}"
 ```

@@ -9,19 +9,19 @@ func fs(f) {
     }
 }
  
-func double(n) { n  * 2 };
-func square(n) { n ** 2 };
+func double(n) { n  * 2 }
+func square(n) { n ** 2 }
  
-var fs_double = fs(double);
-var fs_square = fs(square);
+var fs_double = fs(double)
+var fs_square = fs(square)
  
-var s = (0 .. 3);
-say "fs_double(#{s}): #{fs_double(s...)}";
-say "fs_square(#{s}): #{fs_square(s...)}";
+var s = @(0 .. 3)
+say "fs_double(#{s}): #{fs_double(s...)}"
+say "fs_square(#{s}): #{fs_square(s...)}"
  
-s = [2, 4, 6, 8];
-say "fs_double(#{s}): #{fs_double(s...)}";
-say "fs_square(#{s}): #{fs_square(s...)}";
+s = [2, 4, 6, 8]
+say "fs_double(#{s}): #{fs_double(s...)}"
+say "fs_square(#{s}): #{fs_square(s...)}"
 ```
 
 #### Output:

@@ -3,20 +3,18 @@
 # [Knuth shuffle][1]
 
 ```ruby
-func shuffle(a) {
-
-    { |n|
-        var k = (n+1 -> irand);
-        k == n || (a[k, n] = a[n, k]);
-    } * a.end;
-
-    return a;
+func knuth_shuffle(a) {
+    for i (a.len ^.. 1) {
+        var j = i.irand
+        a[i, j] = a[j, i]
+    }
+    return a
 }
 
-say shuffle(@(1..10));
+say knuth_shuffle(@(1..10))
 ```
 
 #### Output:
 ```
-[7, 4, 3, 8, 9, 6, 10, 2, 1, 5]
+[5, 8, 4, 7, 10, 2, 9, 3, 1, 6]
 ```

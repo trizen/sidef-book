@@ -21,15 +21,20 @@ var pairs = Hash(
     mycenae     =>  183, plugging   => -266,
     vein        =>  813,
 )
- 
+
 var weights = pairs.keys.sort.map{|k| pairs{k} }
 var inverse = pairs.flip
- 
+
 for n in (1 .. weights.end) {
-    given (weights.combinations(n).first_by { .sum(0) == 0 }) { |a|
-        when (nil) { say "Length #{n}: (none)" }
-        default    { say "Length #{n}: "+" ".join(inverse{a...}) }
-    }
+    var found = false
+    weights.combinations(n, {|*comb|
+        if (comb.sum == 0) {
+            say "Length #{n}: "+" ".join(inverse{comb...})
+            found = true
+            break
+        }
+    })
+    found || say "Length #{n}: (none)"
 }
 ```
 

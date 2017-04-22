@@ -6,7 +6,7 @@
 
 ```ruby
 File(__FILE__).open_r.each { |line|
-    print line
+    say line
 }
 ```
 
@@ -16,6 +16,6 @@ Same thing explicitly:
 ```ruby
 var fh = File(__FILE__).open_r
 while (fh.readline(\var line)) {
-    print line
+    say line
 }
 ```

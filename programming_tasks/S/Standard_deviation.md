@@ -7,23 +7,23 @@ Using an object to keep state:
 ```ruby
 class StdDevAccumulator(n=0, sum=0, sumofsquares=0) {
   method <<(num) {
-    n += 1;
-    sum += num;
-    sumofsquares += num**2;
-    self;
+    n += 1
+    sum += num
+    sumofsquares += num**2
+    self
   }
  
   method stddev {
-    ::sqrt(sumofsquares/n - ::pow(sum/n, 2));
+    sqrt(sumofsquares/n - pow(sum/n, 2))
   }
  
   method to_s {
-    self.stddev.to_s;
+    self.stddev.to_s
   }
 }
  
-var i = 0;
-var sd = StdDevAccumulator.new;
+var i = 0
+var sd = StdDevAccumulator()
 [2,4,4,4,5,5,7,9].each {|n|
     say "adding #{n}: stddev of #{i+=1} samples is #{sd << n}"
 }
@@ -46,15 +46,15 @@ Using _static_ variables:
 
 ```ruby
 func stddev(x) {
-    static(num=0, sum=0, sum2=0);
-    num++;
+    static(num=0, sum=0, sum2=0)
+    num++
     sqrt(
         (sum2 += x**2) / num -
         (((sum += x) / num)**2)
-    );
+    )
 }
  
-%n(2 4 4 4 5 5 7 9).each { say stddev(_) };
+%n(2 4 4 4 5 5 7 9).each { say stddev(_) }
 ```
 
 #### Output:

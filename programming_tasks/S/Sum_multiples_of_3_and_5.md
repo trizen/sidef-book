@@ -11,8 +11,8 @@ func sumMul(n, f) {
 func sum35(n) {
     sumMul(n, 3) + sumMul(n, 5) - sumMul(n, 15)
 }
- 
-20.times { |i|
+
+for i in (1..20) { 
     printf("%2s:%22s %s\n", i, 10**i, sum35(10**i))
 }
 ```

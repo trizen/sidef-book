@@ -5,22 +5,22 @@
 ```ruby
 func non_continuous(min, max, subseq=[], has_gap=false) {
  
-    static current = [];
+    static current = []
  
-    range(min, max).each { |i|
-        current.push(i);
-        has_gap && subseq.append([current...]);
-        i < max && non_continuous(i.inc, max, subseq, has_gap);
-        current.pop;
-        has_gap = current.len;
+    for i in (min .. max) {
+        current.push(i)
+        has_gap && subseq.append([current...])
+        i < max && non_continuous(i.inc, max, subseq, has_gap)
+        current.pop
+        has_gap = current.len
     }
  
-    subseq;
+    return subseq
 }
  
-say non_continuous(1, 3);
-say non_continuous(1, 4);
-say non_continuous("a", "d");
+say non_continuous(1, 3)
+say non_continuous(1, 4)
+say non_continuous("a", "d")
 ```
 
 #### Output:

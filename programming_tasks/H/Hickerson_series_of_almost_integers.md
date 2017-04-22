@@ -4,13 +4,13 @@
 
 ```ruby
 func h(n) {
-    n! / (2 * Math.pow(2.log, n+1));
+    n! / (2 * pow(2.log, n+1))
 }
  
-17.times { |n|
+{ |n|
     "h(%2d) = %22s is%s almost an integer.\n".printf(
-        n, var hn = h(n).roundf(-3), hn.to_s ~~ /\.[09]/ ? '' : ' NOT');
-}
+        n, var hn = h(n).round(-3), hn.to_s ~~ /\.[09]/ ? '' : ' NOT')
+} << 1..17
 ```
 
 #### Output:

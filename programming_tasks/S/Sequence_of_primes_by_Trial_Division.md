@@ -6,15 +6,15 @@ Using the _is_prime()_ function from: ["Primality by trial division"](http://ros
 
 ```ruby
 func prime_seq(amount, callback) {
-    var (counter, number) = (0, 0);
+    var (counter, number) = (0, 0)
     while (counter < amount) {
         if (is_prime(number)) {
-            callback(number);
-            ++counter;
+            callback(number)
+            ++counter
         }
-        ++number;
+        ++number
     }
 }
  
-prime_seq(100, {|p| say p});     # prints the first 100 primes
+prime_seq(100, {|p| say p })     # prints the first 100 primes
 ```

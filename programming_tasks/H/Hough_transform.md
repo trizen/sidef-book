@@ -12,7 +12,7 @@ func hough(im, width=460, height=360) {
     var xsize = im.getwidth
     var ysize = im.getheight
  
-    var ht = %s|Imager|.new(xsize => width, ysize => height)
+    var ht = %O<Imager>.new(xsize => width, ysize => height)
     var canvas = height.of { width.of(255) }
  
     ht.box(filled => true, color => 'white')
@@ -36,7 +36,7 @@ func hough(im, width=460, height=360) {
     return ht
 }
  
-var img = %s|Imager|.new(file => 'Pentagon.png')
+var img = %O<Imager>.new(file => 'Pentagon.png')
 var ht = hough(img)
 ht.write(file => 'Hough transform.png')
 ```

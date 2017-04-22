@@ -19,7 +19,7 @@ func forperm(callback, n) {
     var idx = @^n
 
     loop {
-        callback([idx...])
+        callback(idx...)
 
         var p = n-1
         while (idx[p-1] > idx[p]) {--p}
@@ -35,7 +35,7 @@ func forperm(callback, n) {
     return()
 }
 
-forperm({|p| say p }, 3)
+forperm({|*p| say p }, 3)
 ```
 
 
@@ -43,10 +43,10 @@ forperm({|p| say p }, 3)
 
 ```ruby
 func permutations(callback, set, perm=[]) {
-    set.is_empty && callback(perm)
+    set || callback(perm)
     for i in ^set {
         __FUNC__(callback, [
-            set[(0 ..^ i)..., (i+1 ..^ set.len)...]
+            set[^i, i+1 ..^ set.len]
         ], [perm..., set[i]])
     }
     return()

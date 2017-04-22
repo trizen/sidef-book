@@ -5,10 +5,10 @@
 Strip any characters:
 
 ```ruby
-say "knight".substr(1);       # strip first character
-say "socks".substr(0, -1);    # strip last character
-say "brooms".substr(1, -1);   # strip both first and last characters
-say "与今令".substr(1, -1);    # => 今
+say "knight".substr(1)        # strip first character
+say "socks".substr(0, -1)     # strip last character
+say "brooms".substr(1, -1)    # strip both first and last characters
+say "与今令".substr(1, -1)     # => 今
 ```
 
 #### Output:
@@ -23,10 +23,10 @@ room
 Strip graphemes:
 
 ```ruby
-var gstr = "J\x{332}o\x{332}s\x{332}e\x{301}\x{332}";
-say gstr-/^\X/;                    # strip first grapheme
-say gstr-/\X\z/;                   # strip last grapheme
-say gstr.sub(/^\X/).sub(/\X\z/);   # strip both first and last graphemes
+var gstr = "J\x{332}o\x{332}s\x{332}e\x{301}\x{332}"
+say gstr-/^\X/                     # strip first grapheme
+say gstr-/\X\z/                    # strip last grapheme
+say gstr.sub(/^\X/).sub(/\X\z/)    # strip both first and last graphemes
 ```
 
 #### Output:

@@ -8,11 +8,11 @@ Using the Tk library:
 require('Tk')
  
 func max_window_size() -> (Number, Number) {
-    %s'MainWindow'.new.maxsize;
+    %O<MainWindow>.new.maxsize
 }
  
-var (width, height) = max_window_size();
-say (width, 'x', height);
+var (width, height) = max_window_size()
+say (width, 'x', height)
 ```
 
 #### Output:

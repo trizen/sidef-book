@@ -9,7 +9,7 @@ define order = 5
 define sides = 5
 define dim   = 500
 define scaling_factor = ((3 - 5**0.5) / 2)
-var orders = order.of {|i| ((1-scaling_factor) * dim) * scaling_factor**(i-1) }
+var orders = order.of {|i| ((1-scaling_factor) * dim) * scaling_factor**i }
  
 say <<"STOP";
 <?xml version="1.0" standalone="no"?>
@@ -22,7 +22,7 @@ STOP
  
 var vertices = sides.of {|i| Complex(0, i * Number.tau / sides).exp }
  
-(sides**order).range.each { |i|
+for i in ^(sides**order) {
    var vector = ([vertices["%#{order}d" % i.base(sides) -> chars]] »*« orders «+»)
    var points = (vertices »*» orders[-1]*(1-scaling_factor) »+» vector »reals()» «%« '%0.3f')
    say ('<polygon points="' + points.join(' ') + '"/>')

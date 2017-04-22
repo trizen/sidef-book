@@ -16,10 +16,10 @@ func find_common_prefix(hash, acc) {
 func lcp(*strings) {
     var hash = Hash()
 
-    for str in (strings.sort_by{.len}) {
+    for str (strings.sort_by{.len}) {
         var ref = hash
         str.is_empty && return ''
-        for char in str {
+        for char (str) {
             if (ref.contains(char)) {
                 ref = ref{char}
                 ref.len == 0 && break

@@ -3,11 +3,11 @@
 # [Guess the number/With feedback][1]
 
 ```ruby
-var number = rand(1..10);
-say "Guess the number between 1 and 10";
+var number = pick(1..10)
+say "Guess the number between 1 and 10"
  
 loop {
-    given(var n = Sys.scanln("> ").to_i) {
+    given(var n = read("> ", Number).to_i) {
         when (number)     { say "You guessed it."; break }
         case (n < number) { say "Too low" }
         default           { say "Too high" }

@@ -6,7 +6,7 @@ Straightforward:
 
 ```ruby
 func left_fact(k) {
-    ^k -> map {|n| n! } -> sum(0)
+    ^k -> map {|n| n! } -> sum
 }
 ```
 
@@ -14,11 +14,11 @@ Memory efficient with `Range.reduce()`:
 
 ```ruby
 func left_fact(k) {
-    ^k -> reduce { |a,b| a + b! } + 1
+    ^k -> reduce({ |a,b| a + b! }, 0)
 }
 ```
 
-A bit more efficient approach:
+A much faster approach:
 
 ```ruby
 func left_fact(n) {
@@ -45,14 +45,12 @@ func left_fact(n) {
 Completing the task:
 
 ```ruby
-for r in [range(0, 10), range(20, 110).by(10)] {
-    for i in r {
-        printf("!%d  = %s\n", i, left_fact(i));
-    }
+for i (0..10, 20..110 `by` 10) {
+    printf("!%d  = %s\n", i, left_fact(i))
 }
 
-for i in range(1000, 10000).by(1000) {
-    printf("!%d has %d digits.\n", i, left_fact(i).len);
+for i (1000..10000 `by` 1000) {
+    printf("!%d has %d digits.\n", i, left_fact(i).len)
 }
 ```
 

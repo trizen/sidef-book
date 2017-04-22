@@ -3,17 +3,17 @@
 # [Handle a signal][1]
 
 ```ruby
-var start = Time.sec;
+var start = Time.sec
  
 Sig.INT {
-    Sys.say("Ran for #{Time.sec - start} seconds.");
-    Sys.exit;
+    say "Ran for #{Time.sec - start} seconds."
+    Sys.exit
 }
  
 { |i|
-    Sys.say(i);
-    Sys.sleep(0.5);
-} * Inf;
+    say i
+    Sys.sleep(0.5)
+} * Inf
 ```
 
 #### Output:

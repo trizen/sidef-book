@@ -4,13 +4,13 @@
 
 ```ruby
 func first(f) {
-  return f();
+  return f()
 }
  
 func second {
-  return "second";
+  return "second"
 }
  
-say first(second);              # => "second"
-say first(func { "third" });    # => "third"
+say first(second)               # => "second"
+say first(func { "third" })     # => "third"
 ```

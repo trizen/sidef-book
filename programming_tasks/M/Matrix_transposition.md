@@ -13,10 +13,10 @@ var m = [
   [3,  9,  27,  81],
   [4, 16,  64, 256],
   [5, 25, 125, 625],
-];
+]
  
 transpose(m).each { |row|
-    "%5d" * row.len -> printlnf(row...);
+    "%5d" * row.len -> printlnf(row...)
 }
 ```
 

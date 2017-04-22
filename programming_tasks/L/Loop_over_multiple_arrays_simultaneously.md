@@ -6,7 +6,7 @@ The simplest way is by using a MultiArray:
 
 ```ruby
 MultiArray(%w(a b c),%w(A B C),%w(1 2 3)).each { |i,j,k|
-    say (i, j, k);
+    say (i, j, k)
 }
 ```
 

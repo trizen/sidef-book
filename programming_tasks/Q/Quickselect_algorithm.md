@@ -4,19 +4,19 @@
 
 ```ruby
 func quickselect(a, k) {
-    var pivot = a.pick;
-    var left  = a.grep{|i| i < pivot};
-    var right = a.grep{|i| i > pivot};
+    var pivot = a.pick
+    var left  = a.grep{|i| i < pivot}
+    var right = a.grep{|i| i > pivot}
  
-    given(var l = left.len) {
+    given(left.len) { |l|
         when(k)     { pivot }
         case(k < l) { __FUNC__(left, k) }
         default     { __FUNC__(right, k - l - 1) }
     }
 }
  
-var v = [9, 8, 7, 6, 5, 0, 1, 2, 3, 4];
-say v.range.map{|i| quickselect(v, i)};
+var v = [9, 8, 7, 6, 5, 0, 1, 2, 3, 4]
+say v.range.map{|i| quickselect(v, i)}
 ```
 
 #### Output:

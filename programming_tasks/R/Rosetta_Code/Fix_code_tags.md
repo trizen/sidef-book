@@ -17,16 +17,16 @@ lotusformulas pixelbender reg _div whitespace providex asp css
 lolcode lisp inno mysql plsql matlab oobas vim delphi xorg_conf
 gml prolog bf per scheme mxml d basic4gl m68k gnuplot idl abap
 intercal c_mac thinbasic java5 xpp boo klonecpp blitzbasic eiffel
-povray c gettext).join('|');
+povray c gettext).join('|')
  
-var text = ARGF.slurp;
+var text = ARGF.slurp
  
-text.gsub!(Regex.new('<(' + langs + ')>'), {|s1| "<lang #{s1}>" });
-text.gsub!(Regex.new('</(' + langs + ')>'), "</" + "lang>");
+text.gsub!(Regex('<(' + langs + ')>'), {|s1| "<lang #{s1}>" })
+text.gsub!(Regex('</(' + langs + ')>'), "</" + "lang>")
 text.gsub!(
-    Regex.new('<code\h+(' + langs + ')>(.*?)</code>', 's'),
+    Regex('<code\h+(' + langs + ')>(.*?)</code>', 's'),
     {|s1,s2| "<lang #{s1}>#{s2}</" + "lang>"}
-);
+)
  
-print text;
+print text
 ```

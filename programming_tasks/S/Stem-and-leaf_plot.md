@@ -15,13 +15,13 @@ var data = %i(
      33 117 116 111  40 119  47 105  57 122 109
     124 115  43 120  43  27  27  18  28  48 125
     107 114  34 133  45 120  30 127  31 116 146
-).sort;
+).sort
  
-var stem_unit = 10;
-var h = data.group_by { |i| i / stem_unit -> int }
+var stem_unit = 10
+var h = data.group_by {|i| i // stem_unit }
  
-var rng = RangeNum(h.keys.map{.to_i}.minmax);
-var stem_format =  "%#{rng.min.len.max(rng.max.len)}d";
+var rng = RangeNum(h.keys.map{.to_i}.minmax)
+var stem_format =  "%#{rng.min.len.max(rng.max.len)}d"
  
 rng.each { |stem|
     var leafs = (h{stem} \\ [])
@@ -39,7 +39,7 @@ rng.each { |stem|
  5 | 2 3 7 8 8
  6 | 1 3 8
  7 | 1
- 8 | 
+ 8 |
  9 | 6 9
 10 | 4 5 5 5 5 6 7 9 9 9
 11 | 1 3 3 3 3 4 4 4 5 5 5 6 6 6 6 7 7 7 7 8 8 9 9

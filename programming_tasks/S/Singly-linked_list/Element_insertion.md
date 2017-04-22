@@ -4,21 +4,21 @@
 
 ```ruby
 func insert_after(a,b) {
-    b{:next} = a{:next};
-    a{:next} = b;
+    b{:next} = a{:next}
+    a{:next} = b
 }
  
-var B = Hash.new(
+var B = Hash(
     data => 3,
     next => nil,    # not a circular list
-);
-var A = Hash.new(
+)
+var A = Hash(
     data => 1,
     next => B,
-);
-var C = Hash.new(
+)
+var C = Hash(
     data => 2,
-);
+)
  
-insert_after(A, C);
+insert_after(A, C)
 ```

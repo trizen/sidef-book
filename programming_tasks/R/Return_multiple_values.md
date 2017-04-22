@@ -4,7 +4,7 @@
 
 ```ruby
 func foo(a,b) {
-    return (a+b, a*b);
+    return (a+b, a*b)
 }
 ```
 
@@ -12,7 +12,7 @@ func foo(a,b) {
 Catching the returned arguments:
 
 ```ruby
-var (x, y) = foo(4, 5);
-say x;   #=> 9
-say y;   #=> 20
+var (x, y) = foo(4, 5)
+say x   #=> 9
+say y   #=> 20
 ```

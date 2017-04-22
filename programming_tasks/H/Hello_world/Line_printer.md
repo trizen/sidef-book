@@ -3,7 +3,7 @@
 # [Hello world/Line printer][1]
 
 ```ruby
-Sys.open(\var fh, '>', '/dev/lp0')
-    && fh.println("Hello World!")
-    && fh.close;
+Sys.open(\var fh, '>', '/dev/lp0') \
+    && fh.say("Hello World!")      \
+    && fh.close
 ```

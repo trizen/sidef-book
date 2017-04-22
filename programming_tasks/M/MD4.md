@@ -3,8 +3,8 @@
 # [MD4][1]
 
 ```ruby
-var digest = frequire('Digest::MD4');
-say digest.md4_hex('Rosetta Code');
+var digest = frequire('Digest::MD4')
+say digest.md4_hex('Rosetta Code')
 ```
 
 #### Output:

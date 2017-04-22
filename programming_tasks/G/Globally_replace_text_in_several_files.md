@@ -3,15 +3,15 @@
 # [Globally replace text in several files][1]
 
 ```ruby
-var files = %w(
+var names = %w(
                 a.txt
                 b.txt
                 c.txt
-              );
+              )
  
-files.map{.to_file}.each { |file|
+names.map{ File(_) }.each { |file|
     say file.edit { |line|
-        line.gsub("Goodbye London!", "Hello New York!");
-    };
+        line.gsub("Goodbye London!", "Hello New York!")
+    }
 }
 ```

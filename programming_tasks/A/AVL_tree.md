@@ -174,7 +174,7 @@ class AVLtree {
 var tree = AVLtree()
  
 say "Inserting values 1 to 10"
-(1..10).each { |i| tree.insert(i) }
+{|i| tree.insert(i) } << 1..10
 print "Printing balance: "
 tree.printBalance
 ```

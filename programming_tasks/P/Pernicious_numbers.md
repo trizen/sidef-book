@@ -4,26 +4,26 @@
 
 ```ruby
 func is_pernicious(n) {
-    var c = 2693408940;  # primes < 32 as set bits
+    var c = 2693408940  # primes < 32 as set bits
     while (n > 0) { c >>= 1; n &= (n - 1) }
-    c & 1;
+    c & 1
 }
  
-var (i, *p) = 0;
+var (i, *p) = 0
 while (p.len < 25) {
-    p << i if is_pernicious(i);
-    ++i;
+    p << i if is_pernicious(i)
+    ++i
 }
  
-say p.join(' ');
+say p.join(' ')
  
-var (i, *p) = 888888877;
+var (i, *p) = 888888877
 while (i < 888888888) {
-    p << i if is_pernicious(i);
-    ++i;
+    p << i if is_pernicious(i)
+    ++i
 }
  
-say p.join(' ');
+say p.join(' ')
 ```
 
 #### Output:

@@ -3,9 +3,9 @@
 # [String append][1]
 
 ```ruby
-var str = 'Foo';
-str += 'bar';
-say str;
+var str = 'Foo'
+str += 'bar'
+say str
 ```
 
 #### Output:

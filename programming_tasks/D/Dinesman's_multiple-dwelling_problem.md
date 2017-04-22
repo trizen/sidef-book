@@ -33,7 +33,7 @@ func dinesman(problem) {
     }
   }.flat
  
-  names.permutations { |candidate|
+  names.permutations { |*candidate|
     predicates.all { |predicate| predicate(candidate) } && return candidate
   }
 }
@@ -104,7 +104,7 @@ var predicates = [
     ->(c){ (c.index(:Cooper) - c.index(:Fletcher)).abs != 1 },
 ]
  
-names.permutations { |candidate|
+names.permutations { |*candidate|
     if (predicates.all {|predicate| predicate(candidate) }) {
         say candidate.join("\n")
         break

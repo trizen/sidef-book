@@ -20,14 +20,14 @@ func pline(q) {
 }
  
 # Generate an SVG image
-say <<-"EOT";
+say <<-"EOT"
     <?xml version="1.0" standalone="no"?>
     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
     <svg height="#{b*2}" width="#{a*2}" version="1.1" xmlns="http://www.w3.org/2000/svg">
     EOT
  
 # find point pairs for one quadrant
-var q = 0.to(200).by(2).map { |x| (x, y(x)) }
+var q = { |x| (x, y(x)) }.map(0..200 `by` 2)
  
 [
     pline(q),

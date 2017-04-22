@@ -2,16 +2,24 @@
 
 # [Population count][1]
 
+Built-in:
+
 ```ruby
-func population_count(n) { n.as_bin.count('1') };
-say "#{0..29 «**« 3 «call« population_count}";
+say popcount(42)
+```
+
+User-defined:
+
+```ruby
+func population_count(n) { n.as_bin.count('1') }
+say "#{0..29 «**« 3 «call« population_count -> join(' ')}"
  
 var numbers = 60.of { |i|
-    [i-1, population_count(i-1)];
-};
+    [i, population_count(i)]
+}
  
-say "Evil:   #{numbers.grep{_[1].is_even}.map{_[0]}}";
-say "Odious: #{numbers.grep{_[1].is_odd}.map{_[0]}}";
+say "Evil:   #{numbers.grep{_[1] %% 2}.map{.first}.join(' ')}"
+say "Odious: #{numbers.grep{_[1] &  1}.map{.first}.join(' ')}"
 ```
 
 #### Output:

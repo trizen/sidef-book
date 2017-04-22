@@ -2,6 +2,11 @@
 
 # [Hello world/Text][1]
 
-```text
-„Hello world!”.say;
+```ruby
+„Hello world!”.say
+```
+
+Or:
+```ruby
+say „Hello world!”
 ```

@@ -6,10 +6,10 @@ A simple example of passing a variable-reference to a function:
 
 ```ruby
 func assign2ref(ref, value) {
-    *ref = value;
+    *ref = value
 }
  
-var x = 10;
-assign2ref(\x, 20);
-say x;      # x is now 20
+var x = 10
+assign2ref(\x, 20)
+say x      # x is now 20
 ```

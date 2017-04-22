@@ -5,7 +5,7 @@
 ```ruby
 func step_up() {
     while (!step()) {
-        step_up();
+        step_up()
     }
 }
 ```

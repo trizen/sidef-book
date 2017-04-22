@@ -3,11 +3,11 @@
 # [Loops/Nested][1]
 
 ```ruby
-var arr = 10.of{ 10.of{ 20.irand + 1 } }
+var arr = 10.of{ 10.of{ pick(1..20) } }
 
 for row in arr {
     for num in row {
-        "%3d".printf(num);
+        "%3d".printf(num)
         num == 20 && goto :OUT
     }
     print "\n"

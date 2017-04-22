@@ -17,13 +17,13 @@ func check(i, j) is cached {
 func solve(grid) {
     for i in ^grid {
         grid[i] && next
-        var t = [grid[^grid->grep{|j| check(i, j) }]].freq
+        var t = [grid[{|j| check(i, j) }.grep(^grid)]].freq
 
         { |k|
             t.has_key(k) && next
             grid[i] = k
             solve(grid)
-        } * 9
+        } << 1..9
 
         grid[i] = 0
         return nil

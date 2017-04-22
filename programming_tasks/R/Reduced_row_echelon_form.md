@@ -4,34 +4,34 @@
 
 ```ruby
 func rref (Array m) {
-    m.is_empty && return nil;
-    var (lead, rows, cols) = (0, m.len, m[0].len);
+    m || return nil
+    var (lead, rows, cols) = (0, m.len, m[0].len)
 
     for r in ^rows {
-        lead >= cols && return m;
-        var i = r;
+        lead >= cols && return m
+        var i = r
 
         while (!m[i][lead]) {
-            ++i == rows || next;
-            i = r;
-            ++lead == cols && return m;
+            ++i == rows || next
+            i = r
+            ++lead == cols && return m
         }
 
-        m[i, r] = m[r, i];
-        var lv = m[r][lead];
-        m[r] = (m[r] »/» lv);
+        m[i, r] = m[r, i]
+        var lv = m[r][lead]
+        m[r] = (m[r] »/» lv)
 
         for n in ^rows {
-            n == r && next;
+            n == r && next
             m[n] = (m[n] »-« (m[r] «*« m[n][lead]))
         }
-        ++lead;
+        ++lead
     }
     return m
 }
 
 func say_it (message, array) {
-    say "\n#{message}";
+    say "\n#{message}"
     for row in array {
         say row.map { |n| " %5s" % n.as_rat }.join
     }
@@ -55,12 +55,12 @@ var M = [
       [ 4,  8, 12, 10, 12,  4],
       [ 5, 10, 24, 11, 15, -4],
     ],
-];
+]
 
 M.each { |matrix|
-    say_it('Original Matrix', matrix);
-    say_it('Reduced Row Echelon Form Matrix', rref(matrix));
-    say '';
+    say_it('Original Matrix', matrix)
+    say_it('Reduced Row Echelon Form Matrix', rref(matrix))
+    say ''
 }
 ```
 

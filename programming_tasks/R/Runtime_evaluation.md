@@ -5,7 +5,7 @@
 The eval method evaluates a string as code and returns the resulting object.
 
 ```ruby
-var (a, b) = (-5, 7);
-say eval '(a * b).abs';  # => 35
-say (a * b -> abs);      # => 35
+var (a, b) = (-5, 7)
+say eval 'abs(a * b)'   # => 35
+say abs(a * b)          # => 35
 ```

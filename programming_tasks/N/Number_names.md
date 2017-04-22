@@ -3,8 +3,8 @@
 # [Number names][1]
 
 ```ruby
-var l = frequire('Lingua::EN::Numbers');
-say l.num2en(123456789);
+var l = frequire('Lingua::EN::Numbers')
+say l.num2en(123456789)
 ```
 
 #### Output:

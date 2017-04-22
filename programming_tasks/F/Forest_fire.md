@@ -3,8 +3,8 @@
 # [Forest fire][1]
 
 ```ruby
-define w = `tput cols`.to_i-1
-define h = `tput lines`.to_i-1
+define w = `tput cols`.to_i
+define h = `tput lines`.to_i
 define r = "\033[H"
 
 define red = "\033[31m"
@@ -90,7 +90,7 @@ class Forest(p=0.01, f=0.001, height, width) {
     has neighbors = []
  
     method init {
-        coords = (0..height ~X 0..width)
+        coords = (^height ~X ^width)
         spot = height.of { width.of { [true, false].pick ? Tree : Empty } }
         self.init_neighbors
     }
@@ -125,9 +125,9 @@ class Forest(p=0.01, f=0.001, height, width) {
     }
  
     method show {
-        for i in ^height {
+        { |i|
             say pix[spot[i]]
-        }
+        } << ^height
     }
 }
 

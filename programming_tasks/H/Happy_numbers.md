@@ -13,7 +13,7 @@ func happy(n) is cached {
     happy(n.digits »**» 2 -> sum)
 }
 
-var count = 0;
+var count = 0
 Inf.times { |i|
     happy(i) ? say i : next
     ++count == 8 && break

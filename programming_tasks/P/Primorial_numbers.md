@@ -5,12 +5,12 @@
 ```ruby
 say (
     'First ten primorials: ',
-    10.of {|i| pn_primorial(i-1) }.join(', ')
+    {|i| pn_primorial(i) }.map(^10).join(', ')
 )
 
-6.times { |i|
+{ |i|
     say ("primorial(10^#{i}) has " + pn_primorial(10**i).len + ' digits')
-}
+} << 1..6
 ```
 
 #### Output:

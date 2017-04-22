@@ -6,29 +6,29 @@ Implemented using regular expressions:
 
 ```ruby
 func encode(str) {
-    var table = ('a'..'z' -> join);
+    var table = ('a'..'z' -> join)
     str.chars.map { |c|
-        var s = '';
-        table.sub!(Regex('(.*?)' + c), {|s1| s=s1; c + s1});
-        s.len;
+        var s = ''
+        table.sub!(Regex('(.*?)' + c), {|s1| s=s1; c + s1})
+        s.len
     }
 }
  
 func decode(nums) {
-    var table = ('a'..'z' -> join);
+    var table = ('a'..'z' -> join)
     nums.map { |n|
-        var s = '';
-        table.sub!(Regex('(.{' + n + '})(.)'), {|s1, s2| s=s2; s2 + s1});
-        s;
+        var s = ''
+        table.sub!(Regex('(.{' + n + '})(.)'), {|s1, s2| s=s2; s2 + s1})
+        s
     }.join
 }
  
 %w(broood bananaaa hiphophiphop).each { |test|
-    var encoded = encode(test);
-    say "#{test}: #{encoded}";
-    var decoded = decode(encoded);
-    print "in" if (decoded != test);
-    say "correctly decoded to #{decoded}";
+    var encoded = encode(test)
+    say "#{test}: #{encoded}"
+    var decoded = decode(encoded)
+    print "in" if (decoded != test)
+    say "correctly decoded to #{decoded}"
 }
 ```
 
@@ -49,7 +49,7 @@ module MoveToFront {
     gather {
       str.each_char { |char|
         take(var i = ar.index(char))
-        ar = m2f(ar, i);
+        ar = m2f(ar, i)
       }
     }
   }
@@ -58,7 +58,7 @@ module MoveToFront {
     var ar = ABC+[]
     gather {
       indices.each { |i|
-        take ar[i];
+        take ar[i]
         ar = m2f(ar, i)
       }
     }.join
@@ -66,11 +66,11 @@ module MoveToFront {
 }
  
 %w(broood bananaaa hiphophiphop).each { |test|
-    var encoded = MoveToFront::encode(test);
-    say "#{test}: #{encoded}";
-    var decoded = MoveToFront::decode(encoded);
-    print "in" if (decoded != test);
-    say "correctly decoded to #{decoded}";
+    var encoded = MoveToFront::encode(test)
+    say "#{test}: #{encoded}"
+    var decoded = MoveToFront::decode(encoded)
+    print "in" if (decoded != test)
+    say "correctly decoded to #{decoded}"
 }
 ```
 

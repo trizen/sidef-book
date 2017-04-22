@@ -7,15 +7,15 @@ Implemented as a class:
 ```ruby
 class FIFO(*array) {
     method pop {
-        array.is_empty && die "underflow";
-        array.shift;
+        array.is_empty && die "underflow"
+        array.shift
     }
     method push(*items) {
-        array += items;
-        self;
+        array += items
+        self
     }
     method empty {
-        array.len == 0;
+        array.len == 0
     }
 }
 ```

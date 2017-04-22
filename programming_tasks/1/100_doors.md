@@ -7,24 +7,24 @@
 ```ruby
 var doors = []
 
-for pass (1..100) {
-    for i (1..100) {
-        if (i % pass == 0) {
+{ |pass|
+    { |i|
+        if (pass `divides` i) {
             doors[i] := false -> not!
         }
-    }
-}
+    } << 1..100
+} << 1..100
 
-for i (1..100) {
-    "Door %3d is %s\n".printf(i, doors[i] ? 'open' : 'closed')
-}
+{ |i|
+    say ("Door %3d is %s" % (i, doors[i] ? 'open' : 'closed'))
+} << 1..100
 ```
 
 
 *Optimized*
 
 ```ruby
-for i (1..100) {
-    "Door %3d is %s\n".printf(i, ["closed", "open"][i -> is_sqr])
-}
+{ |i|
+    "Door %3d is %s\n".printf(i, <closed open>[i.is_sqr])
+} << 1..100
 ```

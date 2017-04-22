@@ -11,7 +11,7 @@ ARGF.each {  |line|
     var x = line.words.map{.to_n}
     sum = [
             x.first + sum.first,
-            1 ..^ x.end -> map{|i| x[i] + [sum[i-1, i]].max}...,
+            {|i| x[i] + [sum[i-1, i]].max }.map(1 ..^ x.end)...
             x.last + sum.last,
           ]
 }

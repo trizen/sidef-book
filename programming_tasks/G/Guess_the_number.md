@@ -3,10 +3,10 @@
 # [Guess the number][1]
 
 ```ruby
-var n = 1.irand(10)
-print 'Guess the number: ';
+var n = pick(1..10)
+print 'Guess the number: '
 while (n != read(Number).int) {
     print 'Wrong! Guess again: '
 }
-say 'Well guessed!';
+say 'Well guessed!'
 ```

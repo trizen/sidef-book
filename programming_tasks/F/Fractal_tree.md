@@ -19,7 +19,7 @@ func tree(img, x, y, scale=6/10, len=400, angle=270) {
 require('GD::Simple')
 
 var (width=1000, height=1000)
-var img = %s|GD::Simple|.new(width, height)
+var img = %s<GD::Simple>.new(width, height)
 img.fgcolor('black')
 img.penSize(1, 1)
 

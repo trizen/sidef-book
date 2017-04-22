@@ -16,9 +16,9 @@ var table = [
   ["Ottowa", "Canada"],
   ["Washington", "USA"],
   ["Mexico City", "Mexico"],
-];
+]
  
-say table_sort(table, column: 1);
+say table_sort(table, column: 1)
 ```
 
 #### Output:
@@ -38,7 +38,7 @@ class String {
     }
 }
  
-say table_sort(table, column: 1, ordering: 'my_sort');
+say table_sort(table, column: 1, ordering: 'my_sort')
 ```
 
 #### Output:

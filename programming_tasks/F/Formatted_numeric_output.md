@@ -3,14 +3,14 @@
 # [Formatted numeric output][1]
 
 ```ruby
-printf("%09.3f\n", 7.125);
+printf("%09.3f\n", 7.125)
 ```
 
 
 or
 
 ```ruby
-say ("%09.3f" % 7.125);
+say ("%09.3f" % 7.125)
 ```
 
 #### Output:

@@ -5,8 +5,8 @@
 ```ruby
 var lim = 20
 loop {
-    say (var n = lim.rand.int)
+    say (var n = lim.irand)
     n == 10 && break
-    say lim.rand.int
+    say lim.irand
 }
 ```

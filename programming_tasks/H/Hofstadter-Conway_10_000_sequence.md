@@ -5,10 +5,9 @@
 ```ruby
 class HofstadterConway10000 {
   has sequence = [nil, 1, 1]
- 
   method term(n {.is_pos}) {
     var a = sequence
-    a.len .. n -> each {|i| a[i] = a[a[i-1]]+a[i-a[i-1]] }
+    {|i| a[i] = a[a[i-1]]+a[i-a[i-1]] } << a.len..n
     a[n]
   }
 }

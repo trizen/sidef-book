@@ -7,18 +7,18 @@ Recursive:
 ```ruby
 func lev(s, t) is cached {
  
-    s.is_empty && return t.len;
-    t.is_empty && return s.len;
+    s || return t.len
+    t || return s.len
  
-    var s1 = s.ft(1);
-    var t1 = t.ft(1);
+    var s1 = s.ft(1)
+    var t1 = t.ft(1)
  
     s[0] == t[0] ? __FUNC__(s1, t1)
-                 : 1+[
+                 : 1+Math.min(
                         __FUNC__(s1, t1),
                         __FUNC__(s,  t1),
                         __FUNC__(s1, t )
-                     ].min;
+                     )
 }
 ```
 

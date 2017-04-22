@@ -6,5 +6,5 @@ Latest versions of Sidef use the Mersenne Twister algorithm to compute pseudoran
 
 ```ruby
 say 1.rand          # random float in the interval [0,1)
-say 100.irand       # random integer in the interval [0,100)
+say 100.irand       # random integer in the interval [0,100]
 ```

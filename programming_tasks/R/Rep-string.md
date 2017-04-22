@@ -6,16 +6,16 @@
 var arr = <1001110011 1110111011
            0010010010 1010101010
            1111111111 0100101101
-           0100100  101  11 00 1>;
+           0100100  101  11 00 1>
  
- arr.each { |n|
+for n (arr) {
     if (var m = /^(.+)\1+(.*$)(?(?{ substr($1, 0, length $2) eq $2 })|(?!))/.match(n)) {
-       var i = m[0].len;
+       var i = m[0].len
        say (n.substr(0, i),
             n.substr(i, i).tr('01', '𝟘𝟙'),
-            n.substr(i*2));
+            n.substr(i*2))
     } else {
-        say "#{n} (no repeat)";
+        say "#{n} (no repeat)"
     }
 }
 ```

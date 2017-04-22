@@ -3,5 +3,5 @@
 # [Make directory path][1]
 
 ```ruby
-Dir(Dir.cwd, "path", "to", "dir").make_path;   # works cross-platform
+Dir(Dir.cwd, "path", "to", "dir").make_path   # works cross-platform
 ```

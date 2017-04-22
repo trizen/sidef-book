@@ -11,7 +11,7 @@ func _MostFreqKHashing(string, k) {
     var schars = freq.keys.sort_by {|c| -freq{c} }
  
     var mfkh = []
-    k.itimes { |i|
+    for i in ^k {
         chars.each { |c|
             seen{c} && next
             if (freq{c} == freq{schars[i]}) {

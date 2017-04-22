@@ -4,22 +4,22 @@
 
 ```ruby
 func harshad() {
-    var n = 0;
+    var n = 0
     {
-        ++n while !n.digits.sum.divides(n);
-        n;
+        ++n while !n.digits.sum.divides(n)
+        n
     }
 }
  
-var iter = harshad();
-say 20.of { iter.run };
+var iter = harshad()
+say 20.of { iter.run }
  
-var n;
+var n
 do {
     n = iter.run
-} while (n <= 1000);
+} while (n <= 1000)
  
-say n;
+say n
 ```
 
 #### Output:

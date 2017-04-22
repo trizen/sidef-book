@@ -4,11 +4,11 @@
 
 ```ruby
 func sum_of_squares(vector) {
-    var sum = 0;
-    vector.each { |n| sum += n**2 };
-    return sum;
+    var sum = 0
+    vector.each { |n| sum += n**2 }
+    return sum
 }
  
-say sum_of_squares([]);         # 0
-say sum_of_squares([1,2,3]);    # 14
+say sum_of_squares([])          # 0
+say sum_of_squares([1,2,3])     # 14
 ```

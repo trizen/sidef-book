@@ -4,9 +4,9 @@
 
 ```ruby
 require('DateTime')
-var (year=2016) = ARGV»to_i()»...
+var (year=2016) = ARGV.map{.to_i}...
  
-for month in (1..12) {
+for month (1..12) {
    var dt = %O<DateTime>.last_day_of_month(year => year, month => month)
    while (dt.day_of_week != 5) {
       dt.subtract(days => 1)

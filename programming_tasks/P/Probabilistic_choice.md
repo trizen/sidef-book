@@ -3,18 +3,18 @@
 # [Probabilistic choice][1]
 
 ```ruby
-define TRIALS = 1e4;
+define TRIALS = 1e4
  
 func prob_choice_picker(options) {
-    var n = 0;
-    var a = [];
+    var n = 0
+    var a = []
     options.each { |k,v|
-        n += v;
-        a << [n, k];
+        n += v
+        a << [n, k]
     }
     func {
-        var r = 1.rand;
-        a.first{|e| r <= e[0] }[1];
+        var r = 1.rand
+        a.first{|e| r <= e[0] }[1]
     }
 }
  
@@ -34,15 +34,15 @@ var picker = prob_choice_picker(ps)
 var results = Hash()
  
 TRIALS.times {
-    results{picker()} := 0 ++;
+    results{picker()} := 0 ++
 }
  
-say "Event   Occurred  Expected  Difference";
+say "Event   Occurred  Expected  Difference"
 for k,v in (results.sort_by {|k| results{k} }.reverse) {
     printf("%-6s  %f  %f  %f\n",
         k, v/TRIALS, ps{k},
         abs(v/TRIALS - ps{k})
-    );
+    )
 }
 ```
 

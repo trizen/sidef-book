@@ -3,48 +3,56 @@
 # [Parsing/Shunting-yard algorithm][1]
 
 ```ruby
-define prec = Hash.new(
+var prec = Hash(
     '^' => 4,
     '*' => 3,
     '/' => 3,
     '+' => 2,
     '-' => 2,
     '(' => 1,
-);
- 
-define assoc = Hash.new(
+)
+
+var assoc = Hash(
     '^' => 'right',
     '*' => 'left',
     '/' => 'left',
     '+' => 'left',
     '-' => 'left',
-);
- 
+)
+
 func shunting_yard(prog) {
-    var inp = prog.words;
-    var ops = [];
-    var res = [];
+    var inp = prog.words
+    var ops = []
+    var res = []
  
-    func report (op) { printf("%25s    %-7s %10s %s\n", res.to_s, ops.to_s, op, inp.to_s) };
-    func shift  (t)  { report( "shift #{t}"); ops << t };
-    func reduce (t)  { report("reduce #{t}"); res << t };
+    func report (op) {
+        printf("%25s    %-7s %10s %s\n",
+            res.join(' '), ops.join(' '), op, inp.join(' '))
+    }
+
+    func shift  (t)  { report( "shift #{t}"); ops << t }
+    func reduce (t)  { report("reduce #{t}"); res << t }
  
     while (inp) {
         given(var t = inp.shift) {
            when (/\d/) { reduce(t) }
            when ('(')  { shift(t) }
-           when (')')  { var x; while (ops && (x = ops.pop) && (x != '(')) { reduce(x) } }
+           when (')')  {
+               while (ops) {
+                 (var x = ops.pop) == '(' ? break : reduce(x)
+               }
+           }
            default {
-                var newprec = prec{t};
+                var newprec = prec{t}
                 while (ops) {
-                    var oldprec = prec{ops[-1]};
+                    var oldprec = prec{ops[-1]}
  
                     break if (newprec > oldprec)
                     break if ((newprec == oldprec) && (assoc{t} == 'right'))
  
-                    reduce(ops.pop);
+                    reduce(ops.pop)
                 }
-                shift(t);
+                shift(t)
             }
         }
     }
@@ -52,7 +60,7 @@ func shunting_yard(prog) {
     return res
 }
  
-say shunting_yard('3 + 4 * 2 / ( 1 - 5 ) ^ 2 ^ 3').to_s;
+say shunting_yard('3 + 4 * 2 / ( 1 - 5 ) ^ 2 ^ 3').join(' ')
 ```
 
 #### Output:
@@ -72,10 +80,10 @@ say shunting_yard('3 + 4 * 2 / ( 1 - 5 ) ^ 2 ^ 3').to_s;
             3 4 2 * 1 5 -    + /        shift ^ 2 ^ 3
             3 4 2 * 1 5 -    + / ^     reduce 2 ^ 3
           3 4 2 * 1 5 - 2    + / ^      shift ^ 3
-          3 4 2 * 1 5 - 2    + / ^ ^   reduce 3 
-        3 4 2 * 1 5 - 2 3    + / ^     reduce ^ 
-      3 4 2 * 1 5 - 2 3 ^    + /       reduce ^ 
-    3 4 2 * 1 5 - 2 3 ^ ^    +         reduce / 
-  3 4 2 * 1 5 - 2 3 ^ ^ /              reduce + 
+          3 4 2 * 1 5 - 2    + / ^ ^   reduce 3
+        3 4 2 * 1 5 - 2 3    + / ^     reduce ^
+      3 4 2 * 1 5 - 2 3 ^    + /       reduce ^
+    3 4 2 * 1 5 - 2 3 ^ ^    +         reduce /
+  3 4 2 * 1 5 - 2 3 ^ ^ /              reduce +
 3 4 2 * 1 5 - 2 3 ^ ^ / +
 ```

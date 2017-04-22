@@ -3,9 +3,9 @@
 # [Remove duplicate elements][1]
 
 ```ruby
-var ary = [1,1,2,1,'redundant',[1,2,3],[1,2,3],'redundant'];
-say ary.uniq.dump;
-say ary.last_uniq.dump;
+var ary = [1,1,2,1,'redundant',[1,2,3],[1,2,3],'redundant']
+say ary.uniq
+say ary.last_uniq
 ```
 
 #### Output:

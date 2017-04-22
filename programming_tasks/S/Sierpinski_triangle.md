@@ -4,14 +4,34 @@
 
 ```ruby
 func sierpinski_triangle(n) {
-    var triangle = ['*'];
+    var triangle = ['*']
     { |i|
-        var sp = (' ' * Math.pow(2, i-1));
+        var sp = (' ' * 2**i)
         triangle = (triangle.map {|x| sp + x + sp} +
-                    triangle.map {|x| x + ' ' + x});
-    } * n;
-    triangle.join("\n");
+                    triangle.map {|x| x + ' ' + x})
+    } * n
+    triangle.join("\n")
 }
  
-say sierpinski_triangle(4);
+say sierpinski_triangle(4)
+```
+
+Output:
+```
+               *
+              * *
+             *   *
+            * * * *
+           *       *
+          * *     * *
+         *   *   *   *
+        * * * * * * * *
+       *               *
+      * *             * *
+     *   *           *   *
+    * * * *         * * * *
+   *       *       *       *
+  * *     * *     * *     * *
+ *   *   *   *   *   *   *   *
+* * * * * * * * * * * * * * * *
 ```

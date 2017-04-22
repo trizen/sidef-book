@@ -6,8 +6,8 @@
 func grep_uniq(a, by) { a.group_by{ .(by) }.values.grep{.len == 1}.map{_[0]} }
 func sums     (n)     { 2 .. n//2 -> map {|i| [i, n-i] } }
  
-var pairs = (2..97 -> map {|i| ([i] ~X (i+1 .. 98))... })
- 
+var pairs = {|i| ([i] ~X (i+1 .. 98))... }.map(2..97)
+
 var p_uniq = Hash()
 p_uniq{grep_uniq(pairs, :prod).map { .to_s }...} = ()
  

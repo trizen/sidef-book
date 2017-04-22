@@ -10,15 +10,15 @@ const d = 5617843187844953170308463622230283376298685
 module Message {
     var alphabet = [('A' .. 'Z')..., ' ']
     var rad = alphabet.len
-    var code = Hash(^rad -> map {|i| (alphabet[i], i) }...)
+    var code = Hash({|i| (alphabet[i], i) }.map(^rad)...)
     func encode(String t) {
-        [code{t.reverse.chars...}] ~Z* t.len.range.map { |i| rad**i } -> sum(0)
+        [code{t.reverse.chars...}] ~Z* t.len.range.map { |i| rad**i } -> sum
     }
     func decode(Number n) {
         ''.join(alphabet[
             gather {
                 loop {
-                    var (d, m) = n.divmod(rad)
+                    var (d, m) = divmod(n, rad)
                     take(m)
                     break if (n < rad)
                     n = d

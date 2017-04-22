@@ -16,22 +16,22 @@ Trial division:
 
 ```python
 func prime_factors(n) {
-    var p = 3;
-    var out = [];
-    return out if (n < 1);
+    var p = 3
+    var out = []
+    return out if (n < 1)
     while (!(n & 1)) {
-        n >>= 1;
-        out << 2;
+        n >>= 1
+        out << 2
     }
     while ((n > 1) && (p*p <= n)) {
         while (n %% p) {
-            n /= p;
-            out << p;
+            n /= p
+            out << p
         }
-        p += 2;
+        p += 2
     }
-    out << n if (n > 1);
-    return out;
+    out << n if (n > 1)
+    return out
 }
 ```
 
@@ -39,7 +39,7 @@ func prime_factors(n) {
 Calling the function:
 
 ```ruby
-say prime_factors(536870911);
+say prime_factors(536870911)
 ```
 
 #### Output:

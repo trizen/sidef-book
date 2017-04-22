@@ -5,26 +5,26 @@
 ```ruby
 class SubRandom(seed, state=[]) {
  
-    const mod = 1_000_000_000;
+    const mod = 1_000_000_000
  
     method init {
-        var s = [seed % mod, 1];
+        var s = [seed % mod, 1]
         53.times {
-            s.append((s[-2] - s[-1]) % mod);
+            s.append((s[-2] - s[-1]) % mod)
         }
-        state = s.range.map {|i| s[(34 + 34*i) % 55] };
-        165.times { self.subrand };
+        state = s.range.map {|i| s[(34 + 34*i) % 55] }
+        165.times { self.subrand }
     }
  
     method subrand {
-        var x = ((state.shift - state[-24]) % mod);
-        state.append(x);
-        return x;
+        var x = ((state.shift - state[-24]) % mod)
+        state.append(x)
+        return x
     }
 }
  
-var r = SubRandom(292929);
-10.times { say r.subrand };
+var r = SubRandom(292929)
+10.times { say r.subrand }
 ```
 
 #### Output:

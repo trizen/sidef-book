@@ -3,14 +3,14 @@
 # [Mutual recursion][1]
 
 ```ruby
-func F(){};
-func M(){};
+func F(){}
+func M(){}
  
-F = func(n) { n > 0 ? (n - M(F(n-1))) : 1 };
-M = func(n) { n > 0 ? (n - F(M(n-1))) : 0 };
+F = func(n) { n > 0 ? (n - M(F(n-1))) : 1 }
+M = func(n) { n > 0 ? (n - F(M(n-1))) : 0 }
  
 [F, M].each { |seq|
-    (0..19).map {|i| seq.call(i)}.join(' ').say;
+    {|i| seq.call(i)}.map(^20).join(' ').say
 }
 ```
 

@@ -11,7 +11,7 @@ const msg = [
     "Scissors cut paper",
 ]
 
-say <<"EOT";
+say <<"EOT"
 \n>> Rock Paper Scissors <<\n
 ** Enter 'r', 'p', or 's' as your play.
 ** Enter 'q' to exit the game.
@@ -22,7 +22,7 @@ var plays   = 0
 var aScore  = 0
 var pScore  = 0
 var pcf     = [0,0,0]      # pcf = player choice frequency
-var aChoice = 3.irand      # ai choice for first play is completely random
+var aChoice = pick(0..2)   # ai choice for first play is completely random
 
 loop {
     var pi = Sys.scanln("Play: ")
@@ -51,7 +51,7 @@ loop {
     "%-6s".printf("%d:%d" % (pScore, aScore))
 
     # compute ai choice for next play
-    given (plays.irand) { |rn|
+    given (plays.rand.int) { |rn|
         case (rn < pcf[0])        { aChoice = 1 }
         case (pcf[0]+pcf[1] > rn) { aChoice = 2 }
         default                   { aChoice = 0 }

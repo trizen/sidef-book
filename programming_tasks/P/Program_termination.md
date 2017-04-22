@@ -4,6 +4,6 @@
 
 ```ruby
 if (problem) {
-    Sys.exit(code);
+    Sys.exit(code)
 }
 ```

@@ -4,15 +4,15 @@
 
 ```ruby
 func map_range(a, b, x) {
-    var (a1, a2, b1, b2) = (a.bounds, b.bounds);
-    x-a1 * b2-b1 / a2-a1 + b1;
+    var (a1, a2, b1, b2) = (a.bounds, b.bounds)
+    x-a1 * b2-b1 / a2-a1 + b1
 }
  
-var a = 0..10;
-var b = -1..0;
+var a = 0..10
+var b = -1..0
  
 a.each { |x|
-    say "#{x} maps to #{map_range(a, b, x)}";
+    say "#{x} maps to #{map_range(a, b, x)}"
 }
 ```
 

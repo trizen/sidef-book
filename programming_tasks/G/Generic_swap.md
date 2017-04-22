@@ -4,9 +4,9 @@
 
 ```ruby
 func swap(Ref a, Ref b) {
-    var tmp = *a;
-    *a = *b;
-    *b = tmp;
+    var tmp = *a
+    *a = *b
+    *b = tmp
 }
 ```
 
@@ -15,7 +15,7 @@ or:
 
 ```ruby
 func swap(Ref a, Ref b) {
-    (*a, *b) = (*b, *a);
+    (*a, *b) = (*b, *a)
 }
 ```
 
@@ -24,7 +24,7 @@ or:
 
 ```ruby
 func swap(Ref a, Ref b) {
-    [*a, *b] » (b, a);
+    [*a, *b] » (b, a)
 }
 ```
 
@@ -32,6 +32,6 @@ func swap(Ref a, Ref b) {
 The swap functions must be called with variable references.
 
 ```ruby
-var (x, y) = (1, 2);
-swap(\x, \y);
+var (x, y) = (1, 2)
+swap(\x, \y)
 ```

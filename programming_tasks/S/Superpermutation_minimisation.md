@@ -3,9 +3,9 @@
 # [Superpermutation minimisation][1]
 
 ```ruby
-1..8 -> each { |len|
+for len in (1..8) {
     var (pre="", post="")
-    ^len -> to_a.permutations {|p|
+    @^len -> permutations {|*p|
         var t = p.join
         post.append!(t) if !post.contains(t)
         pre.prepend!(t) if !pre.contains(t)

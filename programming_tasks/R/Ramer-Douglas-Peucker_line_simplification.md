@@ -9,7 +9,7 @@ func perpendicular_distance(Arr start, Arr end, Arr point) {
     var (Δpx, Δpy) = (point »-« start)...
     var h = hypot(Δx, Δy)
     [\Δx, \Δy].map { *_ /= h }
-    (([Δpx, Δpy] »-« ([Δx, Δy] »*» (Δx*Δpx + Δy*Δpy))) »**» 2).sum.sqrt
+    (([Δpx, Δpy] »-« ([Δx, Δy] »*» (Δx*Δpx + Δy*Δpy))) »**» 2).sum.sqrt.round(-20)
 }
  
 func Ramer_Douglas_Peucker(Arr points { .all { .len > 1 } }, ε = 1) {

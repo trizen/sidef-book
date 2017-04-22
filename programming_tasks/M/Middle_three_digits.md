@@ -4,7 +4,7 @@
 
 ```ruby
 func middle_three(n) {
-  var l = n.len;
+  var l = n.len
   if (l < 3) {
     "#{n} is too short"
   } elsif (l.is_even) {
@@ -17,8 +17,8 @@ func middle_three(n) {
 var nums = %n(
     123 12345 1234567 987654321 10001 -10001 -123 -100 100 -12345
     1 2 -1 -10 2002 -2002 0
-);
-nums.each { say middle_three(_) };
+)
+nums.each { say middle_three(_) }
 ```
 
 #### Output:

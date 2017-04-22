@@ -3,10 +3,10 @@
 # [Literals/Integer][1]
 
 ```ruby
-say 255;
-say 0xff;
-say 0377;
-say 0b1111_1111;
+say 255
+say 0xff
+say 0377
+say 0b1111_1111
 ```
 
 #### Output:

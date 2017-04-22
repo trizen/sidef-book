@@ -13,18 +13,18 @@ class Example {
         say "this is bar"
     }
     method AUTOLOAD(_, name, *args) {
-        say ("tried to handle unknown method %s" % name);
+        say ("tried to handle unknown method %s" % name)
         if (args.len > 0) {
-            say ("it had arguments: %s" % args.join(', '));
+            say ("it had arguments: %s" % args.join(', '))
         }
     }
 }
  
-var example = Example.new;
+var example = Example.new
  
-example.foo;          # prints “this is foo”
-example.bar;          # prints “this is bar”
-example.grill;        # prints “tried to handle unknown method grill”
-example.ding("dong"); # prints “tried to handle unknown method ding”
+example.foo           # prints “this is foo”
+example.bar           # prints “this is bar”
+example.grill         # prints “tried to handle unknown method grill”
+example.ding("dong")  # prints “tried to handle unknown method ding”
                       # prints “it had arguments: dong”
 ```

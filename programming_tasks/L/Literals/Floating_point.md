@@ -3,10 +3,10 @@
 # [Literals/Floating point][1]
 
 ```ruby
-say 1.234;
-say .1234;
-say 1234e-5;
-say 12.34e5;
+say 1.234
+say .1234
+say 1234e-5
+say 12.34e5
 ```
 
 #### Output:

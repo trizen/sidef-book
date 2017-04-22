@@ -7,7 +7,7 @@ Modifies the array in-place:
 ```ruby
 func sattolo_cycle(arr) {
     for i in (arr.len ^.. 1) {
-        arr.swap(i, i.irand)
+        arr.swap(i, pick(^i))
     }
 }
 ```

@@ -3,7 +3,7 @@
 # [Reverse words in a string][1]
 
 ```ruby
-DATA.each{|line| line.words.reverse.join(" ").say};
+DATA.each {|line| line.words.reverse.join(' ').say }
  
 __DATA__
 ---------- Ice and Fire ------------

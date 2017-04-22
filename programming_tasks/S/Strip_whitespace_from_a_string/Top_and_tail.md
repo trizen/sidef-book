@@ -3,10 +3,10 @@
 # [Strip whitespace from a string/Top and tail][1]
 
 ```ruby
-var s = " \t\v\r\n\ffoo bar \t\v\r\n\f";
-say s.strip_beg.dump;    # remove leading whitespaces
-say s.strip_end.dump;    # remove trailing whitespaces
-say s.strip.dump;        # remove both leading and trailing whitespace
+var s = " \t\v\r\n\ffoo bar \t\v\r\n\f"
+say s.strip_beg.dump     # remove leading whitespaces
+say s.strip_end.dump     # remove trailing whitespaces
+say s.strip.dump         # remove both leading and trailing whitespace
 ```
 
 #### Output:

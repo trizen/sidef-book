@@ -12,15 +12,15 @@ var a = [ 1.00000_00000_00000_00000,  0.57721_56649_01532_86061, -0.65587_80715_
           0.00000_00001_04342_67117,  0.00000_00000_07782_26344, -0.00000_00000_03696_80562,
           0.00000_00000_00510_03703, -0.00000_00000_00020_58326, -0.00000_00000_00005_34812,
           0.00000_00000_00001_22678, -0.00000_00000_00000_11813,  0.00000_00000_00000_00119,
-          0.00000_00000_00000_00141, -0.00000_00000_00000_00023,  0.00000_00000_00000_00002 ];
+          0.00000_00000_00000_00141, -0.00000_00000_00000_00023,  0.00000_00000_00000_00002 ]
  
 func gamma(x) {
-    var y = (x - 1);
-    1 / a.reverse.reduce {|sum, an| sum*y + an};
+    var y = (x - 1)
+    1 / a.reverse.reduce {|sum, an| sum*y + an}
 }
  
 for i in 1..10 {
-    say ("%.14e" % gamma(i/3));
+    say ("%.14e" % gamma(i/3))
 }
 ```
 
@@ -55,12 +55,11 @@ func gamma(z) {
         9.9843695780195716e-6,  1.5056327351493116e-7,
     ]
  
-    var result;
-    z = Complex(z)
-    const pi = Complex.pi
+    var result = 0
+    const pi = Num.pi
  
-    if (z.real < 0.5) {
-        result = (pi / (sin(pi * z) * gamma(Complex(1) - z)))
+    if (z.re < 0.5) {
+        result = (pi / (sin(pi * z) * gamma(1 - z)))
     }
     else {
         z -= 1
@@ -74,11 +73,11 @@ func gamma(z) {
         result = (sqrt(pi*2) * t**(z+0.5) * exp(-t) * x)
     }
  
-    withinepsilon(result.im) ? result.real : result
+    withinepsilon(result.im) ? result.re : result
 }
  
 for i in 1..10 {
-    say ("%.14e" % gamma(i/3));
+    say ("%.14e" % gamma(i/3))
 }
 ```
 
@@ -109,7 +108,7 @@ func Γ(t) {
 }
  
 for i in (1..10) {
-    say ("%.14f" % Γ(i/3))
+    say ("%.14e" % Γ(i/3))
 }
 ```
 

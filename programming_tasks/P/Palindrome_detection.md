@@ -5,7 +5,7 @@
 *Built-in*
 
 ```ruby
-say "noon".is_palindrome;    # true
+say "noon".is_palindrome    # true
 ```
 
 

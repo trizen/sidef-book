@@ -10,11 +10,11 @@ func consolidate(this, *those) {
             if (this & that) { this |= that }
             else             { take that }
         }
-        take this;
+        take this
     }
 }
  
-enum |A="A", B, C, D, _E, F, G, H, I, _J, K|;
+enum |A="A", B, C, D, _E, F, G, H, I, _J, K|
  
 func format(ss) {
     ss.map{ '(' + .join(' ') + ')' }.join(' ')
@@ -26,7 +26,7 @@ func format(ss) {
     [[A,B], [C,D], [D,B]],
     [[H,I,K], [A,B], [C,D], [D,B], [F,G,H]]
 ].each { |ss|
-    say (format(ss), "\n\t==> ", format(consolidate(ss...)));
+    say (format(ss), "\n\t==> ", format(consolidate(ss...)))
 }
 ```
 

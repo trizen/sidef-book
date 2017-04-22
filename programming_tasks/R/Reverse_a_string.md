@@ -3,6 +3,6 @@
 # [Reverse a string][1]
 
 ```ruby
-"asdf".reverse;             # fdsa
-"résumé niño".reverse;      # oñin émusér
+"asdf".reverse              # fdsa
+"résumé niño".reverse       # oñin émusér
 ```

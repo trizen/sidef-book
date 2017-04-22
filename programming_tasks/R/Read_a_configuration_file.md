@@ -3,12 +3,12 @@
 # [Read a configuration file][1]
 
 ```ruby
-var fullname = (var favouritefruit = "");
-var needspeeling = (var seedsremoved = false);
-var otherfamily = [];
+var fullname = (var favouritefruit = "")
+var needspeeling = (var seedsremoved = false)
+var otherfamily = []
  
 ARGF.each { |line|
-    var(key, value) = line.strip.split(/\h+/, 2)...;
+    var(key, value) = line.strip.split(/\h+/, 2)...
  
     given(key) {
         when (nil)              { }
@@ -17,18 +17,18 @@ ARGF.each { |line|
         when ("FAVOURITEFRUIT") { favouritefruit = value }
         when ("NEEDSPEELING")   { needspeeling = true }
         when ("SEEDSREMOVED")   { seedsremoved = true }
-        when ("OTHERFAMILY")    { otherfamily = value.split(',')»strip»() }
+        when ("OTHERFAMILY")    { otherfamily = value.split(',')»strip()» }
         default                 { say "#{key}: unknown key" }
     }
 }
  
-say "fullname       = #{fullname}";
-say "favouritefruit = #{favouritefruit}";
-say "needspeeling   = #{needspeeling}";
-say "seedsremoved   = #{seedsremoved}";
+say "fullname       = #{fullname}"
+say "favouritefruit = #{favouritefruit}"
+say "needspeeling   = #{needspeeling}"
+say "seedsremoved   = #{seedsremoved}"
  
 otherfamily.each_kv {|i, name|
-    say "otherfamily(#{i+1}) = #{name}";
+    say "otherfamily(#{i+1}) = #{name}"
 }
 ```
 

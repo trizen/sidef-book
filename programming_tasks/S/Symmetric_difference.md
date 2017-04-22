@@ -3,9 +3,9 @@
 # [Symmetric difference][1]
 
 ```ruby
-var a = ["John", "Serena", "Bob", "Mary", "Serena"];
-var b = ["Jim", "Mary", "John", "Jim", "Bob"];
-a ^ b -> unique.dump.say;
+var a = ["John", "Serena", "Bob", "Mary", "Serena"]
+var b = ["Jim", "Mary", "John", "Jim", "Bob"]
+say (a ^ b -> uniq)
 ```
 
 #### Output:

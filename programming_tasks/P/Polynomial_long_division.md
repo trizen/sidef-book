@@ -13,9 +13,9 @@ func poly_long_div(rn, rd) {
             while (n.len >= gd) {
                 var piv = n[0]/rd[0]
                 take(piv)
-                0.to(n.len.min(gd)-1).each { |i|
+                { |i|
                     n[i] -= (rd[i] * piv)
-                }
+                } << ^(n.len `min` gd)
                 n.shift
             }
         }, n)
@@ -35,7 +35,7 @@ func poly_print(c) {
         print n
         print("x^", (l - i - 1), " + ") if (i < l-1)
     }
-    print "\n";
+    print "\n"
 }
  
 var poly = [

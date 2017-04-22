@@ -10,7 +10,7 @@ var (
     max = 500,
 )
  
-for int in (1 .. 10_000) {
+for i in (1 .. 10_000) {
     var (test = [], count = 0)
  
     func lychrel(l) {
@@ -20,8 +20,8 @@ for int in (1 .. 10_000) {
         lychrel(m)
     }
  
-    if (lychrel(int)) {
-        lychrels << Pair(Str(int), test)
+    if (lychrel(i)) {
+        lychrels << Pair(Str(i), test)
     }
 }
  
@@ -32,7 +32,8 @@ for l in lychrels {
         palindromes << l.key
     }
  
-    (var h = Hash()){l.value} = ()
+    var h = Hash()
+    h.set_keys(l.value...)
  
     var trial = seeds.count_by { |s|
         s.value.any { |k| h.contains(k) } ? break : true

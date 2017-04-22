@@ -3,5 +3,5 @@
 # [Repeat a string][1]
 
 ```ruby
-'ha' * 5;  # ==> 'hahahahaha'
+'ha' * 5    #==> 'hahahahaha'
 ```

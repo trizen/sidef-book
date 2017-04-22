@@ -32,12 +32,3 @@ for i in (1..5) {
     print "\n"
 }
 ```
-
-Idiomatic:
-
-```ruby
-5.times { |i|
-    i.times { print '*' }
-    print "\n"
-}
-```

@@ -5,10 +5,10 @@
 ```ruby
 func roman2arabic(roman) {
  
-    var arabic = 0;
-    var last_digit = 1000;
+    var arabic = 0
+    var last_digit = 1000
  
-    static m = Hash.new(
+    static m = Hash(
         I =>    1,
         V =>    5,
         X =>   10,
@@ -16,20 +16,20 @@ func roman2arabic(roman) {
         C =>  100,
         D =>  500,
         M => 1000,
-    );
+    )
  
-    roman.uc.split('').map{m{_} \\ 0}.each { |digit|
-        last_digit < digit && (
-            arabic -= (2 * last_digit);
-        );
-        arabic += (last_digit = digit);
+    roman.uc.chars.map{m{_} \\ 0}.each { |digit|
+        if (last_digit < digit) {
+            arabic -= (2 * last_digit)
+        }
+        arabic += (last_digit = digit)
     }
  
-    return arabic;
+    return arabic
 }
  
 %w(MCMXC MMVIII MDCLXVI).each { |roman_digit|
-    "%-10s == %d\n".printf(roman_digit, roman2arabic(roman_digit));
+    "%-10s == %d\n".printf(roman_digit, roman2arabic(roman_digit))
 }
 ```
 

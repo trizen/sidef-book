@@ -14,12 +14,12 @@ func is_prime(n, k) {
     d >>= s
 
     k.times {
-        var a = 2.irand(n)
+        var a = irand(2, n-1)
         var x = expmod(a, d, n)
         next if (x ~~ [1, n-1])
 
         (s-1).times {
-            x.expmod!(2, n)
+            x = expmod(x, 2, n)
             return false if x==1
             break if (x == n-1)
         }
@@ -29,5 +29,5 @@ func is_prime(n, k) {
     return true
 }
 
-say(^1000->grep {|n| is_prime(n, 10) }.join(', '))
+say {|n| is_prime(n, 10) }.grep(^1000).join(', ')
 ```

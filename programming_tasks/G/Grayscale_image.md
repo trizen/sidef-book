@@ -7,7 +7,7 @@ require('Image::Imlib2')
 
 func tograyscale(img) {
     var (width, height) = (img.width, img.height)
-    var gimg = %s'Image::Imlib2'.new(width, height)
+    var gimg = %O<Image::Imlib2>.new(width, height)
     for y,x in (^height ~X ^width) {
         var (r, g, b) = img.query_pixel(x, y)
         var gray = int(0.2126*r + 0.7152*g + 0.0722*b)
@@ -18,7 +18,7 @@ func tograyscale(img) {
 }
 
 var (input='input.png', output='output.png') = ARGV...
-var image = %s'Image::Imlib2'.load(input)
+var image = %O<Image::Imlib2>.load(input)
 var gscale = tograyscale(image)
 gscale.set_quality(80)
 gscale.save(output)

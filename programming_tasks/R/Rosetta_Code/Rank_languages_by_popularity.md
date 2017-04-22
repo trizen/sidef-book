@@ -44,25 +44,22 @@ sorted_languages.each_kv { |i, lang|
 
 #### Output:
 ```
-  1.               Racket - 904
-  2.                  Tcl - 897
-  3.               Python - 867
-  4.                    J - 829
-  5.               Perl 6 - 800
-  6.                 Ruby - 789
-  7.                    C - 772
-  8.                   Go - 756
-  9.                    D - 745
- 10.                 Perl - 730
- 11.                 REXX - 725
- 12.              Haskell - 704
- 13.             PicoLisp - 699
- 14.          Mathematica - 689
- 15.                  Zkl - 683
- 16.                 Java - 663
- 17.                  Ada - 629
- 18.           AutoHotkey - 606
- 19.                  C++ - 599
- 20.                Sidef - 588
+  1.               Racket - 938
+  2.               Python - 930
+  3.                  Tcl - 904
+  4.               Perl 6 - 877
+  5.                    J - 863
+  6.                  Zkl - 834
+  7.                 Ruby - 830
+  8.                    C - 805
+  9.                   Go - 793
+ 10.              Haskell - 785
+ 11.                 Java - 783
+ 12.                 REXX - 776
+ 13.                 Perl - 765
+ 14.                    D - 753
+ 15.             PicoLisp - 731
+ 16.          Mathematica - 702
+ 17.                Sidef - 696
 ...
 ```

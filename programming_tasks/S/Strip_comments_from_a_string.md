@@ -4,14 +4,14 @@
 
 ```ruby
 func strip_comment(s) {
-    (s - %r'[#;].*').strip;
+    (s - %r'[#;].*').strip
 }
  
 [" apples, pears # and bananas",
  " apples, pears ; and bananas",
  " apples, pears "].each { |s|
     say strip_comment(s).dump;
-};
+}
 ```
 
 #### Output:

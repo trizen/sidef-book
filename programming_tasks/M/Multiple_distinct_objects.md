@@ -3,8 +3,8 @@
 # [Multiple distinct objects][1]
 
 ```ruby
-[Foo.new] * n;      # incorrect (only one distinct object is created)
+[Foo.new] * n       # incorrect (only one distinct object is created)
 ```
 ```ruby
-n.of {Foo.new};     # correct
+n.of {Foo.new}      # correct
 ```

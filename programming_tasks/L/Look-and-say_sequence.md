@@ -4,14 +4,14 @@
 
 ```ruby
 func lookandsay(str) {
-    str.gsub(/((.)\2*)/, {|a,b| a.len.to_s + b });
+    str.gsub(/((.)\2*)/, {|a,b| a.len.to_s + b })
 }
  
-var num = "1";
+var num = "1"
 {
   say num;
-  num = lookandsay(num);
-} * 10;
+  num = lookandsay(num)
+} * 10
 ```
 
 #### Output:

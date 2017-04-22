@@ -15,7 +15,7 @@ class Triangle(a, b, c) {
   }
  
   method is_valid(a,b,c) {
-    var (short, middle, long) = [a, b, c].sort...;
+    var (short, middle, long) = [a, b, c].sort...
     (short + middle) > long
   }
  

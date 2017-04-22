@@ -8,14 +8,14 @@ Sidef can load and use Perl modules:
 func get(url) {
     var lwp = (
         try   { require('LWP::UserAgent') }
-        catch { warn "'LWP::UserAgent' is not installed!"; return }
+        catch { warn "'LWP::UserAgent' is not installed!"; return nil }
     )
-    var ua = lwp.new(agent => 'Mozilla/5.0');
+    var ua = lwp.new(agent => 'Mozilla/5.0')
     if (var resp = ua.get(url); resp.is_success) {
-        return resp.decoded_content;
+        return resp.decoded_content
     }
-    return nil;
+    return nil
 }
  
-print get("http://rosettacode.org");
+print get("http://rosettacode.org")
 ```

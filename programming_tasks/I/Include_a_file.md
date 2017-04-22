@@ -5,13 +5,13 @@
 Include a file in the current namespace:
 
 ```ruby
-include 'file.sf';
+include('file.sf')
 ```
 
 
 Include a file as module (file must exists in *SIDEF_INC* as *Some/Name.sm*):
 
 ```ruby
-include Some::Name;
+include Some::Name
 # variables are available here as: Some::Name::var_name
 ```

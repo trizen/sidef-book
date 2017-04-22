@@ -5,11 +5,11 @@
 ```ruby
 func roots_of_unity(n) {
     n.of { |j|
-        exp(2.i * Num.pi / n * (j-1))
+        exp(2i * Num.pi / n * j)
     }
 }
 
-for c in (roots_of_unity(5)) {
+roots_of_unity(5).each { |c|
     printf("%+.5f%+.5fi\n", c.reals)
 }
 ```

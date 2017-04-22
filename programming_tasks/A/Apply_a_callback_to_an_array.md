@@ -11,7 +11,7 @@ func callback(i) { say i**2 }
 The function will get called for each element:
 
 ```ruby
-[1,2,3,4].each(callback);
+[1,2,3,4].each(callback)
 ```
 
 Same as above, but with the function inlined:
