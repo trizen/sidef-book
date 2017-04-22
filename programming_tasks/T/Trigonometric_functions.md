@@ -3,8 +3,8 @@
 # [Trigonometric functions][1]
 
 ```ruby
-var angle_deg = 45;
-var angle_rad = Num.pi/4;
+var angle_deg = 45
+var angle_rad = Num.pi/4
 
 for arr in [
     [sin(angle_rad), sin(deg2rad(angle_deg))],
@@ -12,7 +12,7 @@ for arr in [
     [tan(angle_rad), tan(deg2rad(angle_deg))],
     [cot(angle_rad), cot(deg2rad(angle_deg))],
 ] {
-    say arr.join(" ");
+    say arr.join(" ")
 }
 
 for n in [
@@ -21,7 +21,7 @@ for n in [
     atan(tan(angle_rad)),
     acot(cot(angle_rad)),
 ] {
-    say [n, rad2deg(n)].join(' ');
+    say [n, rad2deg(n)].join(' ')
 }
 ```
 

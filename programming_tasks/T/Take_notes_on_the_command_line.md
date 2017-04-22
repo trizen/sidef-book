@@ -3,14 +3,15 @@
 # [Take notes on the command line][1]
 
 ```ruby
-var file = %f'notes.txt';
+var file = %f'notes.txt'
  
 if (ARGV.len > 0) {
-    var fh = file.open_a;
-    fh.say(Time.local.ctime + "\n\t" + ARGV.join(" "));
-    fh.close;
+    var fh = file.open_a
+    fh.say(Time.local.ctime + "\n\t" + ARGV.join(" "))
+    fh.close
 } else {
-    file.open_r.each { .print };
+    var fh = file.open_r
+    fh && fh.each { .say }
 }
 ```
 

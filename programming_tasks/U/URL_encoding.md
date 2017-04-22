@@ -4,12 +4,12 @@
 
 ```ruby
 func urlencode(str) {
-    str.gsub!(%r"([^-A-Za-z0-9_.!~*'() ])", {|a| "%%%02X" % a.ord});
-    str.gsub!(' ', '+');
-    return str;
+    str.gsub!(%r"([^-A-Za-z0-9_.!~*'() ])", {|a| "%%%02X" % a.ord })
+    str.gsub!(' ', '+')
+    return str
 }
  
-say urlencode('http://foo bar/');
+say urlencode('http://foo bar/')
 ```
 
 #### Output:

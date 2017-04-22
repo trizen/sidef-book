@@ -3,9 +3,9 @@
 # [The Twelve Days of Christmas][1]
 
 ```ruby
-var days = <first second third fourth fifth sixth seventh eighth ninth tenth eleventh twelfth>;
+var days = <first second third fourth fifth sixth seventh eighth ninth tenth eleventh twelfth>
  
-var gifts = <<'EOT'.lines;
+var gifts = <<'EOT'.lines
   And a partridge in a pear tree.
   Two turtle doves,
   Three french hens,
@@ -20,16 +20,16 @@ var gifts = <<'EOT'.lines;
   Twelve drummers drumming,
 EOT
  
-func nth(n) { say "On the #{days[n]} day of Christmas, my true love gave to me:" };
+func nth(n) { say "On the #{days[n]} day of Christmas, my true love gave to me:" }
  
-nth(0);
-say gifts[0].sub('And a', 'A');
+nth(0)
+say gifts[0].sub('And a', 'A')
  
-range(1, 11).each { |d|
-    say '';
-    nth(d);
-    d.downto(0).each { |i|
-        say gifts[i];
+for d (1..11) {
+    say ''
+    nth(d)
+    for i flip(0..d) {
+        say gifts[i]
     }
 }
 ```

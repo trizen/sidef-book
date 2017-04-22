@@ -3,7 +3,7 @@
 # [Walk a directory/Non-recursively][1]
 
 ```ruby
-'*.p[lm]'.glob.each { |file| say file };    # Perl files under this directory
+'*.p[lm]'.glob.each { |file| say file }    # Perl files under this directory
 ```
 
 #### Output:
@@ -13,10 +13,10 @@ x.pm
 ```
 ```ruby
 func file_match(Block callback, pattern=/\.txt\z/, path=Dir.cwd) {
-    path.open(\var dir_h) || return nil;
+    path.open(\var dir_h) || return nil
     dir_h.entries.each { |entry|
         if (entry.basename ~~ pattern) {
-            callback(entry);
+            callback(entry)
         }
     }
 }
@@ -27,7 +27,7 @@ file_match(
     callback: { |file|
         say file;
     }
-);
+)
 ```
 
 #### Output:

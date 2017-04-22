@@ -7,22 +7,22 @@ Greedy:
 ```ruby
 class String {
     method wrap(width) {
-        var txt = self.gsub(/\s+/, " ");
-        var len = txt.len;
-        var para = [];
-        var i = 0;
+        var txt = self.gsub(/\s+/, " ")
+        var len = txt.len
+        var para = []
+        var i = 0
         while (i < len) {
-            var j = (i + width);
-            while ((j < len) && (txt.char_at(j) != ' ')) { --j };
-            para.append(txt.substr(i, j-i));
-            i = j+1;
-        };
-        return para.join("\n");
+            var j = (i + width)
+            while ((j < len) && (txt.char_at(j) != ' ')) { --j }
+            para.append(txt.substr(i, j-i))
+            i = j+1
+        }
+        return para.join("\n")
     }
 }
  
-var text = 'aaa bb cc ddddd';
-say text.wrap(6);
+var text = 'aaa bb cc ddddd'
+say text.wrap(6)
 ```
 
 #### Output:

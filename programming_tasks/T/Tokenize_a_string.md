@@ -3,5 +3,5 @@
 # [Tokenize a string][1]
 
 ```ruby
-'Hello,How,Are,You,Today'.split(',').join('.').say;
+'Hello,How,Are,You,Today'.split(',').join('.').say
 ```

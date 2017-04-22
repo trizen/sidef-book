@@ -8,8 +8,8 @@ var nums; do {
 } while(nums.len != 11)
  
 nums.reverse.each { |n|
-    var r = (n.abs.sqrt + (5 * n**3));
-    say "#{n}\t#{ r > 400 ? 'Urk!' : r }";
+    var r = (n.abs.sqrt + (5 * n**3))
+    say "#{n}\t#{ r > 400 ? 'Urk!' : r }"
 }
 ```
 

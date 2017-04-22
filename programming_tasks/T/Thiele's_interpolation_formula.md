@@ -4,13 +4,13 @@
 
 ```ruby
 func thiele(x, y) {
-    var ρ = y.range.map {|i| [y[i]]*(y.len-i) }
+    var ρ = {|i| [y[i]]*(y.len-i) }.map(^y)
  
     for i in ^(ρ.end) {
         ρ[i][1] = ((x[i] - x[i+1]) / (ρ[i][0] - ρ[i+1][0]))
     }
-    for i in range(2, ρ.end) {
-        for j in range(0, ρ.end - i) {
+    for i (2 .. ρ.end) {
+        for j (0 .. ρ.end-i) {
             ρ[j][i] = (((x[j]-x[j+i]) / (ρ[j][i-1]-ρ[j+1][i-1])) + ρ[j+1][i-2])
         }
     }
@@ -19,7 +19,7 @@ func thiele(x, y) {
  
     func t(xin) {
         var a = 0
-        for i in range(ρ0.end, 2, -1) {
+        for i (ρ0.len ^.. 2) {
             a = ((xin - x[i-1]) / (ρ0[i] - ρ0[i-2] + a))
         }
         y[0] + ((xin-x[0]) / (ρ0[1]+a))
@@ -28,7 +28,7 @@ func thiele(x, y) {
 }
  
 # task 1: build 32 row trig table
-var xVal = range(32).map { |k| k * 0.05 }
+var xVal = {|k| k * 0.05 }.map(^32)
 var tSin = xVal.map { .sin }
 var tCos = xVal.map { .cos }
 var tTan = xVal.map { .tan }
@@ -46,7 +46,7 @@ say 4*iTan(1)
 
 #### Output:
 ```
-3.14159265358979323846438729976819
-3.14159265358979323846157620314931
-3.14159265358979323846264318595256
+3.14159265358979323846438729976818601771260734312
+3.14159265358979323846157620314930763214337987744
+3.14159265358979323846264318595256260456200366896
 ```

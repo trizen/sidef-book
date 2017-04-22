@@ -10,7 +10,7 @@ Sidef uses UTF-8 encoding for pretty much everything, including source files, st
  
     # Say who am I!
     method 言え {
-        say "I am #{self.なまえ} from #{self.Straße}";
+        say "I am #{self.なまえ} from #{self.Straße}"
     }
 }
  
@@ -19,10 +19,10 @@ Sidef uses UTF-8 encoding for pretty much everything, including source files, st
               国際( "高田　Friederich", "台湾" ),
               国際( "Smith Σωκράτης", "Cantù" ),
               国際( "Stanisław Lec", "południow" ),
-            ];
+           ]
  
 民族.each { |garçon|
-    garçon.言え;
+    garçon.言え
 }
 ```
 

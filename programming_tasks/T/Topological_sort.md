@@ -4,25 +4,25 @@
 
 ```ruby
 func print_topo_sort(deps) {
-    var ba = Hash();
+    var ba = Hash()
     deps.each { |before, afters|
         afters.each { |after|
             if (before != after) {
-                ba{before}{after} = 1;
+                ba{before}{after} = 1
             }
-            ba{after} \\= Hash();
+            ba{after} \\= Hash()
         }
     }
 
     loop {
-        var afters = ba.keys.grep {|k| ba{k}.values.len == 0 }.sort;
-        afters.len || break;
-        say afters.join(" ");
-        ba.delete(afters...);
-        ba.values.each { |v| v.delete(afters...) };
+        var afters = ba.keys.grep {|k| ba{k}.values.len == 0 }.sort
+        afters.len || break
+        say afters.join(" ")
+        ba.delete(afters...)
+        ba.values.each { |v| v.delete(afters...) }
     }
 
-    say (ba.len ? "Cicle found! #{ba.keys.sort.join(' ')}" : "---");
+    say (ba.len ? "Cicle found! #{ba.keys.sort.join(' ')}" : "---")
 }
 
 var deps = Hash(
@@ -39,12 +39,12 @@ var deps = Hash(
     gtech          => < ieee gtech                                    >,
     ramlib         => < std ieee                                      >,
     std_cell_lib   => < ieee std_cell_lib                             >,
-    synopsys       => <                                               >
-);
+    synopsys       => <                                               >,
+)
 
-print_topo_sort(deps);
-deps{:dw01}.append('dw04');     # Add unresolvable dependency
-print_topo_sort(deps);
+print_topo_sort(deps)
+deps{:dw01}.append('dw04')     # Add unresolvable dependency
+print_topo_sort(deps)
 ```
 
 #### Output:

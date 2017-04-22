@@ -5,14 +5,14 @@
 Using the *read(Type)* built-in function:
 
 ```ruby
-var s = read(String);
-var i = read(Number);    # auto-conversion to a number
+var s = read(String)
+var i = read(Number)     # auto-conversion to a number
 ```
 
 
 or using the *Sys.readln(msg)* method:
 
 ```ruby
-var s = Sys.readln("Enter a string: ");
-var i = Sys.readln("Enter a number: ").to_i;
+var s = Sys.readln("Enter a string: ")
+var i = Sys.readln("Enter a number: ").to_i
 ```

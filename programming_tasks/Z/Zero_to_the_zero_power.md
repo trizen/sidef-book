@@ -4,21 +4,12 @@
 
 ```ruby
 [0, Complex(0, 0)].each {|n|
-    say n**n;
-    say n.pow(n);
-    say pow(n, n);
-    say Math.pow(n, n);
+    say n**n
 }
 ```
 
 #### Output:
 ```
-1
-1
-1
-1
-1
-1
 1
 1
 ```
@@ -27,6 +18,6 @@
 Taking the 0'th root of a number and raising it back to the zero power, we also get a 1:
 
 ```ruby
-say 0.root(0).pow(0);       # => 1
-say ((0**(1/0))**0);        # => 1
+say 0.root(0).pow(0)       # => 1
+say ((0**(1/0))**0)        # => 1
 ```

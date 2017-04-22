@@ -5,25 +5,25 @@
 ```ruby
 class Array {
     method gnomesort {
-        var (i=1, j=2);
-        var len = self.len;
+        var (i=1, j=2)
+        var len = self.len
         while (i < len) {
             if (self[i-1] <= self[i]) {
-                (i, j) = (j, j+1);
+                (i, j) = (j, j+1)
             }
             else {
-                self[i-1, i] = self[i, i-1];
+                self[i-1, i] = self[i, i-1]
                 if (--i == 0) {
-                    (i, j) = (j, j+1);
+                    (i, j) = (j, j+1)
                 }
             }
         }
-        return self;
+        return self
     }
 }
  
-var ary = [7,6,5,9,8,4,3,1,2,0];
-say ary.gnomesort;
+var ary = [7,6,5,9,8,4,3,1,2,0]
+say ary.gnomesort
 ```
 
 #### Output:

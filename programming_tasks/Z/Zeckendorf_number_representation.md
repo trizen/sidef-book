@@ -5,23 +5,23 @@
 ```ruby
 func fib(n) is cached {
     n < 2 ? 1
-          : (fib(n-1) + fib(n-2));
+          : (fib(n-1) + fib(n-2))
 }
  
 func zeckendorf(n) {
-    n == 0 && return '0';
-    var i = 1;
-    ++i while (fib(i) <= n);
+    n == 0 && return '0'
+    var i = 1
+    ++i while (fib(i) <= n)
     gather {
         while (--i > 0) {
-            var f = fib(i);
+            var f = fib(i)
             f > n ? (take '0')
-                  : (take '1'; n -= f);
+                  : (take '1'; n -= f)
         }
-    }.join('');
+    }.join
 }
  
-range(0, 20).each { |n|
+for n (0..20) {
     printf("%4d: %8s\n", n, zeckendorf(n))
 }
 ```

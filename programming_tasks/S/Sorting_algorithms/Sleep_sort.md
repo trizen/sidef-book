@@ -4,8 +4,8 @@
 
 ```ruby
 ARGV.map{.to_i}.map{ |i|
-    {Sys.sleep(i); say i}.fork;
-}.each{.wait};
+    { Sys.sleep(i); say i }.fork
+}.each{.wait}
 ```
 
 #### Output:

@@ -4,8 +4,10 @@
 
 ```ruby
 func quicksort (a) {
-    a.len < 2 && return(a);
-    var p = a.pop_rand;          # to avoid the worst cases
-    __FUNC__(a.grep{ .< p}) + [p] + __FUNC__(a.grep{ .>= p});
+    a.len < 2 && return(a)
+    var p = a.pop_rand           # to avoid the worst cases
+    __FUNC__(a.grep{ .< p}) + [p] + __FUNC__(a.grep{ .>= p})
 }
+
+say quicksort(rand(1..100, 10))
 ```

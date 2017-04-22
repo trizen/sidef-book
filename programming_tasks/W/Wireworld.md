@@ -3,16 +3,16 @@
 # [Wireworld][1]
 
 ```ruby
-var f = [[], DATA.lines.map {['', .chars..., '']}..., []];
+var f = [[], DATA.lines.map {['', .chars..., '']}..., []]
 
 10.times {
-    say f.map { .join(" ") + "\n" }.join;
-    var a = [[]];
-    for y in (1 .. f.end-1) {
-        var r = f[y];
-        var rr = [''];
-        for x in (1 .. r.end-1) {
-            var c = r[x];
+    say f.map { .join(" ") + "\n" }.join
+    var a = [[]]
+    for y in (1 ..^ f.end) {
+        var r = f[y]
+        var rr = ['']
+        for x in (1 ..^ r.end) {
+            var c = r[x]
             rr << (
               given(c) {
                 when('H') { 't' }
@@ -22,10 +22,10 @@ var f = [[], DATA.lines.map {['', .chars..., '']}..., []];
               }
             )
         }
-        rr << '';
-        a << rr;
+        rr << ''
+        a << rr
     }
-    f = [a..., []];
+    f = [a..., []]
 }
 
 __DATA__

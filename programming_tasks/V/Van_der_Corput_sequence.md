@@ -5,18 +5,18 @@
 ```ruby
 func vdc(value, base=2) {
     while (value[-1] > 0) {
-        value.append(value[-1] / base -> int);
+        value.append(value[-1] / base -> int)
     }
-    var (x, sum) = (1, 0);
+    var (x, sum) = (1, 0)
     value.each { |i|
-        sum += ((i % base) / (x *= base));
+        sum += ((i % base) / (x *= base))
     }
-    return sum;
+    return sum
 }
  
 for base in (2..5) {
-    var seq = (10.range.map {|i| vdc([i], base) });
-    "base %d: %s\n".printf(base, seq.map{|n| "%.4f" % n}.join(', '));
+    var seq = 10.of {|i| vdc([i], base) }
+    "base %d: %s\n".printf(base, seq.map{|n| "%.4f" % n}.join(', '))
 }
 ```
 

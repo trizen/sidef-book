@@ -5,14 +5,14 @@
 Explicit, by opening the current working directory:
 
 ```ruby
-var content = [];
+var content = []
 Dir.cwd.open.each { |file|
-    file ~~ < . .. > && next;
-    content.append(file);
+    file ~~ < . .. > && next
+    content.append(file)
 }
  
 content.sort.each { |file|
-    say file;
+    say file
 }
 ```
 
@@ -21,6 +21,6 @@ Implicit, by using the _String.glob_ method:
 
 ```ruby
 '*'.glob.each { |file|
-    say file;
+    say file
 }
 ```

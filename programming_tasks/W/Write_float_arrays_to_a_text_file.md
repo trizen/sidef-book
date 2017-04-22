@@ -14,7 +14,7 @@ func writedat(filename, x, y, x_precision=3, y_precision=5) {
 }
  
 var x = [1, 2, 3, 1e11]
-var y = x»sqrt»()
+var y = x.map{.sqrt}
  
 writedat('sqrt.dat', x, y)
 ```

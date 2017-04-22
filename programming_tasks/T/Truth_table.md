@@ -7,7 +7,7 @@ A simple solution which accepts arbitrary user-input:
 ```ruby
 loop {
   var expr = Sys.readln("\nBoolean expression (e.g. 'a & b'): ").strip.lc
-  break if expr.is_empty;
+  break if expr.is_empty
  
   var vars = expr.scan(/[[:alpha:]]+/)
   if (vars.is_empty) {

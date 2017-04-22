@@ -5,26 +5,26 @@
 ```ruby
 func psort(x, d=x.end) {
  
-    if (d.is_zero) {
+    if (d == 0) {
         for i in (1 .. x.end) {
-            (x[i] < x[i-1]) && return false;
+            (x[i] < x[i-1]) && return false
         }
-        return true;
+        return true
     }
  
     (d+1).times {
-        x.prepend(x.splice(d, 1)...);
-        x[d] < x[d-1] && next;
-        psort(x, d-1) && return true;
+        x.prepend(x.splice(d, 1)...)
+        x[d] < x[d-1] && next
+        psort(x, d-1) && return true
     }
  
-    return false;
+    return false
 }
  
-var a = 10.of { 100.irand };
-say "Before:\t#{a}";
-psort(a);
-say "After:\t#{a}";
+var a = 10.of { 100.irand }
+say "Before:\t#{a}"
+psort(a)
+say "After:\t#{a}"
 ```
 
 #### Output:

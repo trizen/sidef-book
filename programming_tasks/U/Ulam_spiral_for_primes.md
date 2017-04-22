@@ -5,7 +5,7 @@
 ```ruby
 require('Imager')
  
-var (n=512, start=1, file='ulam.png') = ARGV»to_i()»...
+var (n=512, start=1, file='ulam.png') = ARGV.map{.to_i}...
  
 func cell(n, x, y, start) {
     y -= (n   >> 1)

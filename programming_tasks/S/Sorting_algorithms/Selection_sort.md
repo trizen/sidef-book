@@ -18,9 +18,9 @@ class Array {
     }
 }
 
-var nums = [7,6,5,9,8,4,3,1,2,0];
-say nums.selectionsort;
+var nums = [7,6,5,9,8,4,3,1,2,0]
+say nums.selectionsort
 
-var strs = ["John", "Kate", "Zerg", "Alice", "Joe", "Jane"];
-say strs.selectionsort;
+var strs = ["John", "Kate", "Zerg", "Alice", "Joe", "Jane"]
+say strs.selectionsort
 ```

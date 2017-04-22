@@ -4,8 +4,8 @@
 
 ```ruby
 func in_order(a) {
-    return true if (a.len <= 1);
-    var first = a[0];
+    return true if (a.len <= 1)
+    var first = a[0]
     a.ft(1).all { |elem| first <= elem  ? do { first = elem; true } : false }
 }
 

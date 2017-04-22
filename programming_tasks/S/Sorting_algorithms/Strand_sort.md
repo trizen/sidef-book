@@ -4,7 +4,7 @@
 
 ```ruby
 func merge(x, y) {
-    var out = [];
+    var out = []
     while (x && y) {
         given (x[-1] <=> y[-1]) {
             when ( 1) { out.prepend(x.pop) }
@@ -12,33 +12,33 @@ func merge(x, y) {
             default   { out.prepend(x.pop, y.pop) }
         }
     }
-    x + y + out;
+    x + y + out
 }
 
 func strand(x) {
-    x || return [];
-    var out = [x.shift];
+    x || return []
+    var out = [x.shift]
     if (x.len) {
         for i in (-x.len .. -1) {
             if (x[i] >= out[-1]) {
-                out.append(x.pop_at(i));
+                out.append(x.pop_at(i))
             }
         }
     }
-    return out;
+    return out
 }
 
 func strand_sort(x) {
-    var out = [];
+    var out = []
     while (var strd = strand(x)) {
-        out = merge(out, strd);
+        out = merge(out, strd)
     }
-    return out;
+    return out
 }
 
-var a = 10.of { 100.irand };
-say "Before: #{a}";
-say "After: #{strand_sort(a)}";
+var a = 10.of { 100.irand }
+say "Before: #{a}"
+say "After: #{strand_sort(a)}"
 ```
 
 #### Output:

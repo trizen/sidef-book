@@ -4,33 +4,33 @@
 
 ```ruby
 func preorder(t) {
-    t ? [t[0], __FUNC__(t[1])..., __FUNC__(t[2])...] : [];
+    t ? [t[0], __FUNC__(t[1])..., __FUNC__(t[2])...] : []
 }
  
 func inorder(t) {
-    t ? [__FUNC__(t[1])..., t[0], __FUNC__(t[2])...] : [];
+    t ? [__FUNC__(t[1])..., t[0], __FUNC__(t[2])...] : []
 }
  
 func postorder(t) {
-    t ? [__FUNC__(t[1])..., __FUNC__(t[2])..., t[0]] : [];
+    t ? [__FUNC__(t[1])..., __FUNC__(t[2])..., t[0]] : []
 }
  
 func depth(t) {
-    var a = [t];
-    var ret = [];
+    var a = [t]
+    var ret = []
     while (a.len > 0) {
-        var v = (a.shift \\ next);
-        ret « v[0];
-        a += [v[1,2]];
-    };
-    return ret;
+        var v = (a.shift \\ next)
+        ret « v[0]
+        a += [v[1,2]]
+    }
+    return ret
 }
  
-var x = [1,[2,[4,[7]],[5]],[3,[6,[8],[9]]]];
-say "pre:   #{preorder(x)}";
-say "in:    #{inorder(x)}";
-say "post:  #{postorder(x)}";
-say "depth: #{depth(x)}";
+var x = [1,[2,[4,[7]],[5]],[3,[6,[8],[9]]]]
+say "pre:   #{preorder(x)}"
+say "in:    #{inorder(x)}"
+say "post:  #{postorder(x)}"
+say "depth: #{depth(x)}"
 ```
 
 #### Output:

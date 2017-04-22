@@ -6,6 +6,6 @@
 if (/\bUTF-?8/i ~~ [ENV{"LC_ALL","LC_CTYPE","LANG"}]) {
     say "△"
 } else {
-    die "Terminal can't handle UTF-8.\n";
+    die "Terminal can't handle UTF-8.\n"
 }
 ```

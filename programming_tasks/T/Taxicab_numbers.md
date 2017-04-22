@@ -3,11 +3,11 @@
 # [Taxicab numbers][1]
 
 ```ruby
-var (start=1, end=25) = ARGV.map{.to_i}...;
+var (start=1, end=25) = ARGV.map{.to_i}...
  
 func display (h, start, end) {
     var i = start
-    h.grep { |_,v| v.len > 1 }.keys.sort_by{.to_i}.ft(start-1, end-1).each {|n|
+    for n in [h.grep {|_,v| v.len > 1 }.keys.sort_by{.to_i}[start-1 .. end-1]] {
         printf("%4d %10d  =>\t%s\n", i++, n,
             h{n}.map{ "%4d³ + %-s" % (.first, "#{.last}³") }.join(",\t"))
     }
@@ -17,17 +17,17 @@ var taxi = Hash()
 var taxis = 0
 var terminate = 0
  
-Inf.times { |c1|
-    if (terminate>0 && terminate>c1) {
+for c1 (1..Inf) {
+    if (0<terminate && terminate<c1) {
         display(taxi, start, end)
         break
     }
     var c = c1**3
-    c1.times { |c2|
+    for c2 (1..c1) {
         var this = (c2**3 + c)
         taxi{this} := [] << [c2, c1]
-        ++taxis if (taxi{this}.len == 2);
-        if (taxis == end && terminate.is_zero) {
+        ++taxis if (taxi{this}.len == 2)
+        if (taxis==end && !terminate) {
             terminate = taxi.grep{|_,v| v.len > 1 }.keys.map{.to_i}.max.root(3)
         }
     }
