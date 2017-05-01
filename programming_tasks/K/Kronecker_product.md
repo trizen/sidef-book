@@ -7,7 +7,7 @@ func kronecker_product(a, b) {
     a ~X b -> map { _[0] ~X* _[1] }
 }
  
-kronecker_product([[1, 2], [3,4]],
+kronecker_product([[1, 2], [3, 4]],
                   [[0, 5], [6, 7]]).each { .say }
  
 say ''
