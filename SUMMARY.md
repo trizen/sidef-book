@@ -394,6 +394,8 @@
        * [Knuth's algorithm S](programming_tasks/K/Knuth's_algorithm_S.md)
        * [Knuth's power tree](programming_tasks/K/Knuth's_power_tree.md)
        * [Knuth shuffle](programming_tasks/K/Knuth_shuffle.md)
+       * [Kronecker product](programming_tasks/K/Kronecker_product.md)
+       * [Kronecker product based fractals](programming_tasks/K/Kronecker_product_based_fractals.md)
    * L
        * [Langton's ant](programming_tasks/L/Langton's_ant.md)
        * [Largest int from concatenated ints](programming_tasks/L/Largest_int_from_concatenated_ints.md)
