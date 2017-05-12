@@ -11,11 +11,11 @@ func ef(fr) {
     ans << intfr
     fr -= intfr
   }
-  var (x, y) = fr.parts
+  var (x, y) = fr.nude
   while (x != 1) {
     ans << fr.inv.ceil.inv
     fr = ((-y % x) / y*fr.inv.ceil)
-    (x, y) = fr.parts
+    (x, y) = fr.nude
   }
   ans << fr
   return ans
