@@ -121,6 +121,7 @@
        * [Benford's law](programming_tasks/B/Benford's_law.md)
        * [Bernoulli numbers](programming_tasks/B/Bernoulli_numbers.md)
        * [Best shuffle](programming_tasks/B/Best_shuffle.md)
+       * [Bilinear interpolation](programming_tasks/B/Bilinear_interpolation.md)
        * [Binary digits](programming_tasks/B/Binary_digits.md)
        * [Binary search](programming_tasks/B/Binary_search.md)
        * Bitmap
