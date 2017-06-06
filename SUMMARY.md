@@ -671,6 +671,7 @@
        * [Sort an integer array](programming_tasks/S/Sort_an_integer_array.md)
        * [Sort disjoint sublist](programming_tasks/S/Sort_disjoint_sublist.md)
        * [Sort stability](programming_tasks/S/Sort_stability.md)
+       * [Sort three variables](programming_tasks/S/Sort_three_variables.md)
        * [Sort using a custom comparator](programming_tasks/S/Sort_using_a_custom_comparator.md)
        * Sorting algorithms
            * [Bead sort](programming_tasks/S/Sorting_algorithms/Bead_sort.md)
@@ -737,6 +738,7 @@
        * [Sum multiples of 3 and 5](programming_tasks/S/Sum_multiples_of_3_and_5.md)
        * [Sum of a series](programming_tasks/S/Sum_of_a_series.md)
        * [Sum of squares](programming_tasks/S/Sum_of_squares.md)
+       * [Sum to 100](programming_tasks/S/Sum_to_100.md)
        * [Superellipse](programming_tasks/S/Superellipse.md)
        * [Superpermutation minimisation](programming_tasks/S/Superpermutation_minimisation.md)
        * [Sutherland-Hodgman polygon clipping](programming_tasks/S/Sutherland-Hodgman_polygon_clipping.md)
@@ -797,6 +799,7 @@
        * [UTF-8 encode and decode](programming_tasks/U/UTF-8_encode_and_decode.md)
    * V
        * [Van der Corput sequence](programming_tasks/V/Van_der_Corput_sequence.md)
+       * [Variable-length quantity](programming_tasks/V/Variable-length_quantity.md)
        * [Variadic function](programming_tasks/V/Variadic_function.md)
        * [Vector](programming_tasks/V/Vector.md)
        * [Vector products](programming_tasks/V/Vector_products.md)
