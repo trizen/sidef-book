@@ -28,6 +28,30 @@ say ''
 say faulhaber_triangle(p).map_kv{|k,v| v * n**(k+1) }.sum
 ```
 
+Simpler version:
+
+```ruby
+func faulhaber_triangle(p) {
+    { binomial(p, _) * bernoulli(_) / p }.map(p ^.. 0)
+}
+
+#
+## First 10 rows of Faulhaber's triangle:
+#
+{ |p|
+    say faulhaber_triangle(p).map{ '%6s' % .as_rat }.join
+} << 1..10
+
+#
+## Extra credit:
+#
+const p = 17
+const n = 1000
+
+say ''
+say faulhaber_triangle(p+1).map_kv {|k,v| v * n**(k+1) }.sum
+```
+
 #### Output:
 ```
      1
