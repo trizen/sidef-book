@@ -366,8 +366,10 @@
        * [I Q Puzzle](programming_tasks/I/I_Q_Puzzle.md)
        * [IBAN](programming_tasks/I/IBAN.md)
        * [Identity matrix](programming_tasks/I/Identity_matrix.md)
+       * [Implicit type conversion](programming_tasks/I/Implicit_type_conversion.md)
        * [Include a file](programming_tasks/I/Include_a_file.md)
        * [Increment a numerical string](programming_tasks/I/Increment_a_numerical_string.md)
+       * [Index finite lists of positive integers](programming_tasks/I/Index_finite_lists_of_positive_integers.md)
        * [Infinity](programming_tasks/I/Infinity.md)
        * Inheritance
            * [Multiple](programming_tasks/I/Inheritance/Multiple.md)
