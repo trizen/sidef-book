@@ -26,7 +26,7 @@ loop {
     }
  
     var n = input.split.map{.to_n}
-    var numbers = n.permute
+    var numbers = n.permutations
  
     formats.each { |format|
         numbers.each { |n|
@@ -92,7 +92,7 @@ loop {
     }
  
     var n = input.split.map{.to_n}
-    var numbers = n.permute
+    var numbers = n.permutations
  
     blocks.each { |block|
         numbers.each { |n|
