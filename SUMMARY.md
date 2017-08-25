@@ -60,6 +60,8 @@
    * 2
        * [24 game](programming_tasks/2/24_game.md)
            * [Solve](programming_tasks/2/24_game/Solve.md)
+   * 4
+       * [4-rings or 4-squares puzzle](programming_tasks/4/4-rings_or_4-squares_puzzle.md)
    * 9
        * [99 Bottles of Beer](programming_tasks/9/99_Bottles_of_Beer.md)
        * [9 billion names of God the integer](programming_tasks/9/9_billion_names_of_God_the_integer.md)
