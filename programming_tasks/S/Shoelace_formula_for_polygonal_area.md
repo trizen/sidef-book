@@ -1,0 +1,24 @@
+[1]: https://rosettacode.org/wiki/Shoelace_formula_for_polygonal_area
+
+# [Shoelace formula for polygonal area][1]
+
+```ruby
+func area_by_shoelace (*p) {
+    var x = p.map{_[0]}
+    var y = p.map{_[1]}
+ 
+    var s = (
+        (x ~Z* y.rotate(+1)).sum -
+        (x ~Z* y.rotate(-1)).sum
+    )
+ 
+    s.abs / 2
+}
+ 
+say area_by_shoelace([3,4], [5,11], [12,8], [9,5], [5,6])
+```
+
+#### Output:
+```
+30
+```
