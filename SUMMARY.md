@@ -205,6 +205,7 @@
        * [Day of the week](programming_tasks/D/Day_of_the_week.md)
        * [Death Star](programming_tasks/D/Death_Star.md)
        * [Decimal floating point number to binary](programming_tasks/D/Decimal_floating_point_number_to_binary.md)
+       * [Decision tables](programming_tasks/D/Decision_tables.md)
        * [Deepcopy](programming_tasks/D/Deepcopy.md)
        * [Define a primitive data type](programming_tasks/D/Define_a_primitive_data_type.md)
        * [Delete a file](programming_tasks/D/Delete_a_file.md)
@@ -553,6 +554,7 @@
        * Pig the dice game
            * [Player](programming_tasks/P/Pig_the_dice_game/Player.md)
        * [Plasma effect](programming_tasks/P/Plasma_effect.md)
+       * [Playfair cipher](programming_tasks/P/Playfair_cipher.md)
        * [Playing cards](programming_tasks/P/Playing_cards.md)
        * [Plot coordinate pairs](programming_tasks/P/Plot_coordinate_pairs.md)
        * [Pointers and references](programming_tasks/P/Pointers_and_references.md)
@@ -721,6 +723,7 @@
            * [Normal distribution](programming_tasks/S/Statistics/Normal_distribution.md)
        * [Stem-and-leaf plot](programming_tasks/S/Stem-and-leaf_plot.md)
        * [Stern-Brocot sequence](programming_tasks/S/Stern-Brocot_sequence.md)
+       * [Stream Merge](programming_tasks/S/Stream_Merge.md)
        * [String append](programming_tasks/S/String_append.md)
        * [String case](programming_tasks/S/String_case.md)
        * [String comparison](programming_tasks/S/String_comparison.md)
