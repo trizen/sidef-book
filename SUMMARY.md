@@ -794,6 +794,7 @@
        * [Truncatable primes](programming_tasks/T/Truncatable_primes.md)
        * [Truncate a file](programming_tasks/T/Truncate_a_file.md)
        * [Truth table](programming_tasks/T/Truth_table.md)
+       * [Twelve statements](programming_tasks/T/Twelve_statements.md)
        * [Two Sum](programming_tasks/T/Two_Sum.md)
    * U
        * [Ulam spiral for primes](programming_tasks/U/Ulam_spiral_for_primes.md)
