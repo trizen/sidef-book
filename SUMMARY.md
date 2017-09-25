@@ -137,6 +137,7 @@
            * [Player](programming_tasks/B/Bulls_and_cows/Player.md)
    * C
        * [Caesar cipher](programming_tasks/C/Caesar_cipher.md)
+       * [Calculate P-Value](programming_tasks/C/Calculate_P-Value.md)
        * [Calendar](programming_tasks/C/Calendar.md)
        * [Calendar - for REAL programmers](programming_tasks/C/Calendar_-_for_REAL_programmers.md)
        * [Call a function](programming_tasks/C/Call_a_function.md)
@@ -515,6 +516,7 @@
    * O
        * [Odd word problem](programming_tasks/O/Odd_word_problem.md)
        * [Old lady swallowed a fly](programming_tasks/O/Old_lady_swallowed_a_fly.md)
+       * [Old Russian measure of length](programming_tasks/O/Old_Russian_measure_of_length.md)
        * [One-dimensional cellular automata](programming_tasks/O/One-dimensional_cellular_automata.md)
        * [One of n lines in a file](programming_tasks/O/One_of_n_lines_in_a_file.md)
        * [Operator precedence](programming_tasks/O/Operator_precedence.md)
