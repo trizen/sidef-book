@@ -86,7 +86,7 @@
        * [Anonymous recursion](programming_tasks/A/Anonymous_recursion.md)
        * [Append a record to the end of a text file](programming_tasks/A/Append_a_record_to_the_end_of_a_text_file.md)
        * [Apply a callback to an array](programming_tasks/A/Apply_a_callback_to_an_array.md)
-       * [Apply a digitial filter direct form II transposed](programming_tasks/A/Apply_a_digitial_filter_direct_form_II_transposed.md)
+       * [Apply a digital filter direct form II transposed](programming_tasks/A/Apply_a_digital_filter_direct_form_II_transposed.md)
        * [Arbitrary-precision integers included](programming_tasks/A/Arbitrary-precision_integers_included.md)
        * [Archimedean spiral](programming_tasks/A/Archimedean_spiral.md)
        * Arithmetic
@@ -375,6 +375,7 @@
        * [I Q Puzzle](programming_tasks/I/I_Q_Puzzle.md)
        * [IBAN](programming_tasks/I/IBAN.md)
        * [Identity matrix](programming_tasks/I/Identity_matrix.md)
+       * [Imaginary base numbers](programming_tasks/I/Imaginary_base_numbers.md)
        * [Implicit type conversion](programming_tasks/I/Implicit_type_conversion.md)
        * [Include a file](programming_tasks/I/Include_a_file.md)
        * [Increment a numerical string](programming_tasks/I/Increment_a_numerical_string.md)
@@ -604,6 +605,7 @@
        * [Read a file line by line](programming_tasks/R/Read_a_file_line_by_line.md)
        * [Read a specific line from a file](programming_tasks/R/Read_a_specific_line_from_a_file.md)
        * [Read entire file](programming_tasks/R/Read_entire_file.md)
+       * [Readline interface](programming_tasks/R/Readline_interface.md)
        * [Real constants and functions](programming_tasks/R/Real_constants_and_functions.md)
        * [Reduced row echelon form](programming_tasks/R/Reduced_row_echelon_form.md)
        * Reflection
@@ -635,6 +637,7 @@
        * [Rot-13](programming_tasks/R/Rot-13.md)
        * [RSA code](programming_tasks/R/RSA_code.md)
        * [Run-length encoding](programming_tasks/R/Run-length_encoding.md)
+       * [Run as a daemon or service](programming_tasks/R/Run_as_a_daemon_or_service.md)
        * [Runge-Kutta method](programming_tasks/R/Runge-Kutta_method.md)
        * [Runtime evaluation](programming_tasks/R/Runtime_evaluation.md)
            * [In an environment](programming_tasks/R/Runtime_evaluation/In_an_environment.md)

@@ -1,0 +1,100 @@
+[1]: https://rosettacode.org/wiki/Imaginary_base_numbers
+
+# [Imaginary base numbers][1]
+
+```ruby
+func base (Number num, Number radix { _ ~~ (-36 .. -2) }, precision = -15) -> String {
+    num || return '0'
+ 
+    var place  = 0
+    var result = ''
+    var value  = num
+    var upper_bound = 1/(-radix + 1)
+    var lower_bound = radix*upper_bound
+ 
+    while (!(lower_bound <= value) || !(value < upper_bound)) {
+        value = num/(radix**++place)
+    }
+ 
+    while ((value || (place > 0)) && (place > precision)) {
+        var digit = (radix*value - lower_bound -> int)
+        value    =  (radix*value - digit)
+        result += '.' if (!place && !result.contains('.'))
+        result += ((digit == -radix) ? (digit-1 -> base(-radix) + '0') : digit.base(-radix))
+        place--
+    }
+ 
+    return result
+}
+ 
+func base (Number num, Number radix { .re == 0 }, precision = -8) -> String {
+ 
+    (radix.im.abs ~~ 2..6) || die "Base #{radix} out of range"
+ 
+    var (re, im)          = (num.re, num.im)
+    var (re_wh, re_fr='') = base(re,          -radix.im**2, precision).split('.')...
+    var (im_wh, im_fr='') = base(im/radix.im, -radix.im**2, precision).split('.')...
+ 
+    func zip (String a, String b) {
+        var l = ('0' * abs(a.len - b.len))
+        chars(a+l) ~Z chars(b+l) -> flat.join.sub(/0+\z/, '') || '0'
+    }
+ 
+    var whole = zip(re_wh.flip, im_wh.flip).flip
+    var fraction = zip(im_fr, re_fr)
+    fraction == '0' ? whole : "#{whole}.#{fraction}"
+}
+ 
+func parse_base (String str, Number radix { .re == 0 }) -> Number {
+ 
+    if (str.char(0) == '-') {
+        return (-1 * parse_base(str.substr(1), radix))
+    }
+ 
+    var (whole, frac='') = str.split('.')...
+ 
+    var fraction = frac.chars.map_kv {|k,v|
+        Number(v, radix.im**2) * radix**-(k+1)
+    }.sum
+ 
+    fraction += whole.flip.chars.map_kv {|k,v|
+        Number(v, radix.im**2) * radix**k
+    }.sum
+ 
+    return fraction
+}
+ 
+var tests = [0, 2i, 1, 2i, 5, 2i, -13, 2i, 9i, 2i, -3i, 2i, 7.75-7.5i, 2i, .25, 2i, # base 2i tests
+    5+5i,  2i, 5+5i,  3i, 5+5i,  4i, 5+5i,  5i, 5+5i,  6i, # same value, positive imaginary bases
+    5+5i, -2i, 5+5i, -3i, 5+5i, -4i, 5+5i, -5i, 5+5i, -6i, # same value, negative imaginary bases
+    227.65625+10.859375i, 4i] # larger test value
+ 
+tests.each_slice(2, {|v,r|
+    var ibase = base(v, r)
+    printf("base(%20s, %2si) = %-10s : parse_base(%12s, %2si) = %s\n",
+        v, r.im, ibase, "'#{ibase}'", r.im, parse_base(ibase, r).round(-8))
+})
+```
+
+#### Output:
+```
+base(                   0,  2i) = 0          : parse_base(         '0',  2i) = 0
+base(                   1,  2i) = 1          : parse_base(         '1',  2i) = 1
+base(                   5,  2i) = 10301      : parse_base(     '10301',  2i) = 5
+base(                 -13,  2i) = 1030003    : parse_base(   '1030003',  2i) = -13
+base(                  9i,  2i) = 103010.2   : parse_base(  '103010.2',  2i) = 9i
+base(                 -3i,  2i) = 1030.2     : parse_base(    '1030.2',  2i) = -3i
+base(           7.75-7.5i,  2i) = 11210.31   : parse_base(  '11210.31',  2i) = 7.75-7.5i
+base(                0.25,  2i) = 1.03       : parse_base(      '1.03',  2i) = 0.25
+base(                5+5i,  2i) = 10331.2    : parse_base(   '10331.2',  2i) = 5+5i
+base(                5+5i,  3i) = 25.3       : parse_base(      '25.3',  3i) = 5+5i
+base(                5+5i,  4i) = 25.c       : parse_base(      '25.c',  4i) = 5+5i
+base(                5+5i,  5i) = 15         : parse_base(        '15',  5i) = 5+5i
+base(                5+5i,  6i) = 15.6       : parse_base(      '15.6',  6i) = 5+5i
+base(                5+5i, -2i) = 11321.2    : parse_base(   '11321.2', -2i) = 5+5i
+base(                5+5i, -3i) = 1085.6     : parse_base(    '1085.6', -3i) = 5+5i
+base(                5+5i, -4i) = 10f5.4     : parse_base(    '10f5.4', -4i) = 5+5i
+base(                5+5i, -5i) = 10o5       : parse_base(      '10o5', -5i) = 5+5i
+base(                5+5i, -6i) = 5.u        : parse_base(       '5.u', -6i) = 5+5i
+base(227.65625+10.859375i,  4i) = 10234.5678 : parse_base('10234.5678',  4i) = 227.65625+10.859375i
+```
