@@ -5,9 +5,9 @@
 *NaN* and *Inf* literals can be used to represent the *Not-a-Number* and *Infinity* values, which are returned in special cases, such as *0/0* and *1/0*. However, one thing to notice, is that in Sidef there is no distinction between *0.0* and *-0.0* and can't be differentiated from each other.
 
 ```ruby
-var inf = (1 / 0)    #=> Inf
-var nan = (0 / 0)    #=> NaN
- 
+var inf = 1/0    # same as: Inf
+var nan = 0/0    # same as: NaN
+
 var exprs = [
   "1.0 / 0.0", "-1.0 / 0.0", "0.0 / 0.0", "- 0.0",
   "inf + 1", "5 - inf", "inf * 5", "inf / 5", "inf * 0",
@@ -16,25 +16,25 @@ var exprs = [
   "nan + 1", "nan * 5", "nan - nan", "nan * inf", "- nan",
   "nan == nan", "nan > 0", "nan < 0", "nan == 0", "0.0 == -0.0",
 ]
- 
+
 exprs.each { |expr|
-  "%15s => %s\n".printf(expr, eval(expr))
+  "%15s => %s\n".printf(expr, eval(expr))
 }
- 
+
 say "-"*40
-say("NaN equality: ",        NaN ==  nan)   #=> true
-say("Infinity equality: ",   Inf ==  inf)   #=> true
-say("-Infinity equality: ", -Inf == -inf)   #=> true
- 
+say("NaN equality: ",        NaN ==  nan)
+say("Infinity equality: ",   Inf ==  inf)
+say("-Infinity equality: ", -Inf == -inf)
+
 say "-"*40
-say("sqrt(-1)   = ",   sqrt(-1));     #=> i
-say("tanh(-Inf) = ", tanh(-inf));     #=> -1
-say("(-Inf)**2  = ",  (-inf)**2);     #=> Inf
-say("(-Inf)**3  = ",  (-inf)**3);     #=> -Inf
-say("acos(Inf)  = ",  acos(inf));     #=> Inf*i
-say("atan(Inf)  = ",  atan(inf));     #=> pi/2
-say("log(-1)    = ",    log(-1));     #=> pi*i
-say("atanh(Inf) = ", atanh(inf));     #=> -pi/2*i
+say("sqrt(-1)   = ",   sqrt(-1))
+say("tanh(-Inf) = ", tanh(-inf))
+say("(-Inf)**2  = ",  (-inf)**2)
+say("(-Inf)**3  = ",  (-inf)**3)
+say("acos(Inf)  = ",  acos(inf))
+say("atan(Inf)  = ",  atan(inf))
+say("log(-1)    = ",    log(-1))
+say("atanh(Inf) = ", atanh(inf))
 ```
 
 #### Output:
@@ -62,13 +62,13 @@ say("atanh(Inf) = ", atanh(inf));     #=> -pi/2*i
       nan - nan => NaN
       nan * inf => NaN
           - nan => NaN
-     nan == nan => true
-        nan > 0 => false
-        nan < 0 => false
+     nan == nan => false
+        nan > 0 =>
+        nan < 0 =>
        nan == 0 => false
     0.0 == -0.0 => true
 ----------------------------------------
-NaN equality: true
+NaN equality: false
 Infinity equality: true
 -Infinity equality: true
 ----------------------------------------
@@ -76,8 +76,8 @@ sqrt(-1)   = i
 tanh(-Inf) = -1
 (-Inf)**2  = Inf
 (-Inf)**3  = -Inf
-acos(Inf)  = Infi
-atan(Inf)  = 1.5707963267948966192313216916397514421
-log(-1)    = 3.1415926535897932384626433832795028842i
-atanh(Inf) = -1.5707963267948966192313216916397514421i
+acos(Inf)  = -Infi
+atan(Inf)  = 1.57079632679489661923132169163975144209858469969
+log(-1)    = 3.14159265358979323846264338327950288419716939938i
+atanh(Inf) = 1.57079632679489661923132169163975144209858469969i
 ```
