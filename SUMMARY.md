@@ -496,6 +496,7 @@
        * [Mutual recursion](programming_tasks/M/Mutual_recursion.md)
    * N
        * [N'th](programming_tasks/N/N'th.md)
+       * [N-queens problem](programming_tasks/N/N-queens_problem.md)
        * [Named parameters](programming_tasks/N/Named_parameters.md)
        * [Names to numbers](programming_tasks/N/Names_to_numbers.md)
        * [Narcissist](programming_tasks/N/Narcissist.md)
@@ -847,6 +848,7 @@
            * [Input](programming_tasks/X/XML/Input.md)
            * [Output](programming_tasks/X/XML/Output.md)
            * [XPath](programming_tasks/X/XML/XPath.md)
+       * [XML Validation](programming_tasks/X/XML_Validation.md)
    * Y
        * [Y combinator](programming_tasks/Y/Y_combinator.md)
        * [Yin and yang](programming_tasks/Y/Yin_and_yang.md)
