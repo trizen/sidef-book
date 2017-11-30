@@ -12,13 +12,14 @@ When the `cpan` command is not available, try:
 $ perl -MCPAN -e "CPAN::Shell->install(q{Sidef})"
 ```
 
+**IMPORTANT**: Sidef needs the [GMP](https://gmplib.org/), [MPFR](http://www.mpfr.org/) and [MPC](http://www.multiprecision.org/) C libraries.
+
 To install Sidef manually, download the [latest version](https://github.com/trizen/sidef/archive/master.zip), unzip it and follow the installation steps:
 
 ```console
 $ perl Build.PL
-$ ./Build installdeps
-$ ./Build test
-$ ./Build install
+# ./Build installdeps
+# ./Build install
 ```
 
 When [Module::Build](https://metacpan.org/pod/Module::Build) is not installed, try:
@@ -26,7 +27,7 @@ When [Module::Build](https://metacpan.org/pod/Module::Build) is not installed, t
 ```console
 $ perl Makefile.PL
 $ make test
-$ make install
+# make install
 ```
 
 If the installation succeeded, you should be able to run the `sidef` command:

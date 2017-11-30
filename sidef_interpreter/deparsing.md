@@ -25,17 +25,13 @@ Outputs:
 (1)->+((2)->/(3));
 ```
 
-Deparsing can also be activated in interactive mode:
+Deparsing can also be enabled in interactive mode:
 
 ```shell
-$ sidef -i -Rperl
->>> [1,2,3]
-
-use constant {
-    Number177381361 => Sidef::Types::Number::Number->new('1'),
-    Number176118801 => Sidef::Types::Number::Number->new('2'),
-    Number175894561 => Sidef::Types::Number::Number->new('3'),
-};
-
-Sidef::Types::Array::Array->new((main::Number177381361), (main::Number176118801), (main::Number175894561));
+$ sidef -i -r
+Sidef 3.05 on linux
+Type "help", "copyright" or "license" for more information.
+>> [1,2,3].map { .sqrt }
+[1, 2, 3]->map({|_| (_->sqrt()) });
+>>
 ```

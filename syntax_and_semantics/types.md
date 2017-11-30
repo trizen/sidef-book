@@ -1,33 +1,6 @@
 # Types
 
-A function can be declared with typed parameters, which are checked at run-time.
-
-```ruby
-func concat(String a, String b) {
-    a + b
-}
-```
-
-Now, the function can only be called with strings as arguments:
-
-```ruby
-say concat("o", "k")  # ok
-say concat(1, 2)      # run-time error
-```
-
-The typed parameters require a specific type of object, but they do not default to anything when no value is provided. This means that all typed-parameters are mandatory, unless a default value is provided:
-
-```ruby
-func concat(String a="foo", String b="bar") {
-   a + b
-}
-
-say concat()          # prints: "foobar"
-say concat("mini")    # prints: "minibar"
-say concat(1, 2)      # this is still a run-time error
-```
-
-A user-defined type, is a class:
+In Sidef, a new type can be declared as a class and its name can be used in function or method parameters to provide dynamic type checking:
 
 ```ruby
 class Point(Number x, Number y) {
@@ -39,4 +12,18 @@ func foo(Point p) {
 }
 
 foo(Point(5, 6))
+```
+
+A type can be veryfied by using the `.kind_of(TYPE)` method, which is defined inside the `Object` class, which is the parent of all classes (including user-defined classes):
+
+```ruby
+say "foo".kind_of(String)     #=> true
+say "bar".kind_of(Number)     #=> false
+```
+
+The type of an object can be found usind the following two methods (which are also defined inside the `Object` class):
+
+```ruby
+say "foo".ref           #=> Sidef::Types::String::String
+say "foo".class         #=> String
 ```

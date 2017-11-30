@@ -4,7 +4,7 @@ The interactive mode (aka REPL) is available by simply executing the `sidef` com
 
 ```shell
 $ sidef -i
-Sidef 2.10 on linux
+Sidef 3.05 on linux
 Type "help", "copyright" or "license" for more information.
 >> n = 41
 => 41

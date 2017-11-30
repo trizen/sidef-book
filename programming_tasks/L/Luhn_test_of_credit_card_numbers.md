@@ -4,7 +4,7 @@
 
 ```ruby
 func luhn (n) {
-    var chars = n.digits.reverse
+    var chars = n.digits
     var (i, sum) = (0, 0)
     static a = {|j| (2*j // 10) + (2*j % 10) }.map(^10)
     for j (chars) {

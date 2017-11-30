@@ -10,7 +10,7 @@ func middle_three(n) {
   } elsif (l.is_even) {
     "#{n} has an even number of digits"
   } else {
-    "The three middle digits of #{n} are: " + n.digits.ft(l-3 / 2, l/2 + 1).join
+    "The three middle digits of #{n} are: " + n.digits.ft(l-3 / 2, l/2 + 1).flip.join
   }
 }
  

@@ -4,7 +4,7 @@
 
 ```ruby
 var (actuals, expected) = ([], [])
-var fibonacci = 1000.of {|i| fib(i).digit(0) }
+var fibonacci = 1000.of {|i| fib(i).digit(-1) }
 
 for i (1..9) {
     var num = fibonacci.count_by {|j| j == i }
@@ -13,6 +13,7 @@ for i (1..9) {
 }
 
 "%17s%17s\n".printf("Observed","Expected")
+
 for i (1..9) {
     "%d : %11s %%%15s %%\n".printf(
             i, "%.2f".sprintf(100 *  actuals[i - 1]),

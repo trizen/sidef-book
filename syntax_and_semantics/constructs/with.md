@@ -14,7 +14,7 @@ else {
 }
 ```
 
-In addition to the `if` statement, it also supports capturing of a defined value in a block variable:
+Same as the `if` statement, it supports capturing of a defined value in a block variable:
 
 ```ruby
 with (some_function()) { |value|

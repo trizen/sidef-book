@@ -22,7 +22,7 @@ c
 d
 ```
 
-Output (which shows that `.map{}` is really lazy):
+Output (which illustrates that `.map{}` is truly lazy):
 
 ```text
 >> A

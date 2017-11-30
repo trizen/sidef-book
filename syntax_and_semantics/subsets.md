@@ -50,3 +50,17 @@ greet(Hi("Foo"))        # ok
 greet(Hey("Baz"))       # ok
 greet(Hello("Bar"))     # fail: `Hello` is too primitive
 ```
+
+Subsets can also be used for combining multiple types into one type, creating an union type:
+
+```ruby
+subset StrNum < String, Number
+
+func concat(a < StrNum, b < StrNum) {
+    a + b
+}
+
+say concat("o", "k")       # ok
+say concat(13, 29)         # 42
+say concat([41], [42])     # runtime error
+```
