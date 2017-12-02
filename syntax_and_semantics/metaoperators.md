@@ -89,3 +89,15 @@ The scalar operator applies a given operator to the elements of an arbitrary nes
 ```
 
 Internally, the `scalar_operator` method is called.
+
+### Reverse scalar operator
+
+The reverse scalar operator uses the given scalar as a first operand to the given operator and is also defined for arbitrary nested arrays.
+
+```ruby
+[3,4,5]       ~RS  1  # [[1,3], [1,4], [1,5]]
+[3,4,5]       ~RS/ 1  # [1/3, 1/4, 1/5]
+[3,[[4,[5]]]] ~RS/ 1  # [1/3, [[1/4, [1/5]]]]
+```
+
+Internally, the `rscalar_operator` method is called.
