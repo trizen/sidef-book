@@ -12,6 +12,18 @@ Alternatively, one can write:
 Array(123, "abc", true, nil)
 ```
 
+## Working with arrays:
+
+Elements of an array can be accessed with the special syntax `array[i]` where `i` is a zero-based index inside the array.
+
+```ruby
+var array = [1, 2, 3, 4, 5]
+
+array[0] = 6
+array[1] = 7
+
+say array
+```
 
 ## Special arrays
 
