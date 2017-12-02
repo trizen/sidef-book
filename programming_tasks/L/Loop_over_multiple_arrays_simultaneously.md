@@ -2,10 +2,10 @@
 
 # [Loop over multiple arrays simultaneously][1]
 
-The simplest way is by using a MultiArray:
+The simplest way is by using the `Array.zip()` method:
 
 ```ruby
-MultiArray(%w(a b c),%w(A B C),%w(1 2 3)).each { |i,j,k|
+[%w(a b c),%w(A B C),%w(1 2 3)].zip { |i,j,k|
     say (i, j, k)
 }
 ```

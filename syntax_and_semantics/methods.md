@@ -28,5 +28,20 @@ Starting with Sidef 2.30, a method can be invoked, using the prefix notation, ev
 func sqrt(n) { "sqrt of #{n} is #{n.sqrt}" }
 
 say   sqrt(42)     # calls the `sqrt` function defined above
-say ::sqrt(42)     # calls the `sqrt` method on the number `42`
+say ::sqrt(42)     # calls the `Number.sqrt()` method
 ```
+
+Additionally, any alphanumeric method name can be used as an infix operator, by surrounding it with two backticks:
+
+```ruby
+(1 `add` 2)           # means: 1.add(2)
+(Math `sum` (1,2,3))  # means: Math.sum(1,2,3)
+```
+
+There is also support for calling a method which its name is not known until at run-time, which can be any expression that evaluates to a string:
+
+```ruby
+say ( 50.(['+', '-'].rand)(30) )    # prints 20 or 80
+```
+
+If a method is not found for a given object, Sidef will throw a run-time error.
