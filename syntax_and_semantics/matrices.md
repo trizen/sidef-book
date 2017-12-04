@@ -39,12 +39,6 @@ Alternatively:
 say wise_op([1,2,[3,[4]]], '+', [42,43,[44,[45]]])   #=> [43, 45, [47, [49]]]
 ```
 
-When the provided operator is an empty string (`''`), the pairwise elements are combined together in a new array:
-
-```ruby
-say wise_op([1,2,[3,[4]]], '', [42,43,[44,[45]]])  #=> [[1, 42], [2, 43], [[3, 44], [[4, 45]]]]
-```
-
 Scalar operations:
 
 ```ruby
@@ -77,7 +71,7 @@ say ([1,2,[3,[4]]] ~S+ 42)   #=> [43, 44, [45,  [46]]]
 say ([1,2,[3,[4]]] ~S* 42)   #=> [42, 84, [126, [168]]]
 ```
 
-2-dimensional array exclusive operations:
+The following methods require 2-dimensional arrays exclusively:
 
 ```ruby
 A.transpose         # matrix transposition
