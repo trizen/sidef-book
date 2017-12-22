@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Calculate_P-Value
+[1]: https://rosettacode.org/wiki/Welch's_t-test
 
-# [Calculate P-Value][1]
+# [Welch's t-test][1]
 
 ```ruby
 func p_value (A, B) {

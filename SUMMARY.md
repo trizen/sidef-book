@@ -144,7 +144,6 @@
            * [Player](programming_tasks/B/Bulls_and_cows/Player.md)
    * C
        * [Caesar cipher](programming_tasks/C/Caesar_cipher.md)
-       * [Calculate P-Value](programming_tasks/C/Calculate_P-Value.md)
        * [Calendar](programming_tasks/C/Calendar.md)
        * [Calendar - for REAL programmers](programming_tasks/C/Calendar_-_for_REAL_programmers.md)
        * [Call a function](programming_tasks/C/Call_a_function.md)
@@ -841,6 +840,7 @@
            * [Recursively](programming_tasks/W/Walk_a_directory/Recursively.md)
        * [Water collected between towers](programming_tasks/W/Water_collected_between_towers.md)
        * [Web scraping](programming_tasks/W/Web_scraping.md)
+       * [Welch's t-test](programming_tasks/W/Welch's_t-test.md)
        * [Window creation](programming_tasks/W/Window_creation.md)
        * [Wireworld](programming_tasks/W/Wireworld.md)
        * [Word count](programming_tasks/W/Word_count.md)
