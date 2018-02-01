@@ -240,7 +240,9 @@
        * [Draw a sphere](programming_tasks/D/Draw_a_sphere.md)
        * [Dynamic variable names](programming_tasks/D/Dynamic_variable_names.md)
    * E
+       * [Egyptian division](programming_tasks/E/Egyptian_division.md)
        * [Egyptian fractions](programming_tasks/E/Egyptian_fractions.md)
+       * [Element-wise operations](programming_tasks/E/Element-wise_operations.md)
        * [Elementary cellular automaton](programming_tasks/E/Elementary_cellular_automaton.md)
            * [Infinite length](programming_tasks/E/Elementary_cellular_automaton/Infinite_length.md)
            * [Random Number Generator](programming_tasks/E/Elementary_cellular_automaton/Random_Number_Generator.md)
@@ -474,6 +476,8 @@
        * [Man or boy test](programming_tasks/M/Man_or_boy_test.md)
        * [Mandelbrot set](programming_tasks/M/Mandelbrot_set.md)
        * [Map range](programming_tasks/M/Map_range.md)
+       * [Matrix-exponentiation operator](programming_tasks/M/Matrix-exponentiation_operator.md)
+       * [Matrix arithmetic](programming_tasks/M/Matrix_arithmetic.md)
        * [Matrix multiplication](programming_tasks/M/Matrix_multiplication.md)
        * [Matrix transposition](programming_tasks/M/Matrix_transposition.md)
        * [Maximum triangle path sum](programming_tasks/M/Maximum_triangle_path_sum.md)
@@ -482,6 +486,7 @@
        * [MD5](programming_tasks/M/MD5.md)
            * [Implementation](programming_tasks/M/MD5/Implementation.md)
        * [Menu](programming_tasks/M/Menu.md)
+       * [Mersenne primes](programming_tasks/M/Mersenne_primes.md)
        * [Metaprogramming](programming_tasks/M/Metaprogramming.md)
        * [Middle three digits](programming_tasks/M/Middle_three_digits.md)
        * [Miller Rabin primality test](programming_tasks/M/Miller_Rabin_primality_test.md)
@@ -496,6 +501,7 @@
        * [Multiline shebang](programming_tasks/M/Multiline_shebang.md)
        * [Multiple distinct objects](programming_tasks/M/Multiple_distinct_objects.md)
        * [Multiplication tables](programming_tasks/M/Multiplication_tables.md)
+       * [Multiplicative order](programming_tasks/M/Multiplicative_order.md)
        * [Multisplit](programming_tasks/M/Multisplit.md)
        * [Munchausen numbers](programming_tasks/M/Munchausen_numbers.md)
        * [Munching squares](programming_tasks/M/Munching_squares.md)
@@ -548,6 +554,7 @@
        * [Pascal's triangle](programming_tasks/P/Pascal's_triangle.md)
            * [Puzzle](programming_tasks/P/Pascal's_triangle/Puzzle.md)
        * [Pascal matrix generation](programming_tasks/P/Pascal_matrix_generation.md)
+       * [Pathological floating point problems](programming_tasks/P/Pathological_floating_point_problems.md)
        * [Pentagram](programming_tasks/P/Pentagram.md)
        * [Percentage difference between images](programming_tasks/P/Percentage_difference_between_images.md)
        * Percolation
@@ -833,6 +840,7 @@
        * [Vector products](programming_tasks/V/Vector_products.md)
        * [Vigenère cipher](programming_tasks/V/Vigenère_cipher.md)
        * [Visualize a tree](programming_tasks/V/Visualize_a_tree.md)
+       * [Vogel's approximation method](programming_tasks/V/Vogel's_approximation_method.md)
        * [Voronoi diagram](programming_tasks/V/Voronoi_diagram.md)
    * W
        * Walk a directory
