@@ -140,6 +140,7 @@
        * [Boolean values](programming_tasks/B/Boolean_values.md)
        * [Box the compass](programming_tasks/B/Box_the_compass.md)
        * [Break OO privacy](programming_tasks/B/Break_OO_privacy.md)
+       * [Brownian tree](programming_tasks/B/Brownian_tree.md)
        * [Bulls and cows](programming_tasks/B/Bulls_and_cows.md)
            * [Player](programming_tasks/B/Bulls_and_cows/Player.md)
    * C
@@ -163,14 +164,18 @@
        * [Chinese zodiac](programming_tasks/C/Chinese_zodiac.md)
        * [Cholesky decomposition](programming_tasks/C/Cholesky_decomposition.md)
        * [Cipolla's algorithm](programming_tasks/C/Cipolla's_algorithm.md)
+       * [Circles of given radius through two points](programming_tasks/C/Circles_of_given_radius_through_two_points.md)
        * [Classes](programming_tasks/C/Classes.md)
        * [Closest-pair problem](programming_tasks/C/Closest-pair_problem.md)
        * Closures
            * [Value capture](programming_tasks/C/Closures/Value_capture.md)
        * [Collections](programming_tasks/C/Collections.md)
+       * [Color quantization](programming_tasks/C/Color_quantization.md)
        * [Color wheel](programming_tasks/C/Color_wheel.md)
        * Colour bars
            * [Display](programming_tasks/C/Colour_bars/Display.md)
+       * Colour pinstripe
+           * [Display](programming_tasks/C/Colour_pinstripe/Display.md)
        * [Combinations](programming_tasks/C/Combinations.md)
        * [Combinations and permutations](programming_tasks/C/Combinations_and_permutations.md)
        * [Combinations with repetitions](programming_tasks/C/Combinations_with_repetitions.md)
@@ -216,6 +221,7 @@
        * [Decision tables](programming_tasks/D/Decision_tables.md)
        * [Deepcopy](programming_tasks/D/Deepcopy.md)
        * [Define a primitive data type](programming_tasks/D/Define_a_primitive_data_type.md)
+       * [Delegates](programming_tasks/D/Delegates.md)
        * [Delete a file](programming_tasks/D/Delete_a_file.md)
        * [Deming's Funnel](programming_tasks/D/Deming's_Funnel.md)
        * [Department Numbers](programming_tasks/D/Department_Numbers.md)
@@ -833,6 +839,7 @@
            * [Text](programming_tasks/U/User_input/Text.md)
        * [UTF-8 encode and decode](programming_tasks/U/UTF-8_encode_and_decode.md)
    * V
+       * [Vampire number](programming_tasks/V/Vampire_number.md)
        * [Van der Corput sequence](programming_tasks/V/Van_der_Corput_sequence.md)
        * [Variable-length quantity](programming_tasks/V/Variable-length_quantity.md)
        * [Variadic function](programming_tasks/V/Variadic_function.md)
