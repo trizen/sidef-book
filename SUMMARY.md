@@ -427,6 +427,7 @@
        * [Knuth's algorithm S](programming_tasks/K/Knuth's_algorithm_S.md)
        * [Knuth's power tree](programming_tasks/K/Knuth's_power_tree.md)
        * [Knuth shuffle](programming_tasks/K/Knuth_shuffle.md)
+       * [Kosaraju](programming_tasks/K/Kosaraju.md)
        * [Kronecker product](programming_tasks/K/Kronecker_product.md)
        * [Kronecker product based fractals](programming_tasks/K/Kronecker_product_based_fractals.md)
    * L
@@ -500,6 +501,7 @@
        * [Modular exponentiation](programming_tasks/M/Modular_exponentiation.md)
        * [Modular inverse](programming_tasks/M/Modular_inverse.md)
        * [Monte Carlo methods](programming_tasks/M/Monte_Carlo_methods.md)
+       * [Montgomery reduction](programming_tasks/M/Montgomery_reduction.md)
        * [Monty Hall problem](programming_tasks/M/Monty_Hall_problem.md)
        * [Most frequent k chars distance](programming_tasks/M/Most_frequent_k_chars_distance.md)
        * [Move-to-front algorithm](programming_tasks/M/Move-to-front_algorithm.md)
@@ -798,6 +800,7 @@
            * [Preserve screen](programming_tasks/T/Terminal_control/Preserve_screen.md)
            * [Ringing the terminal bell](programming_tasks/T/Terminal_control/Ringing_the_terminal_bell.md)
            * [Unicode output](programming_tasks/T/Terminal_control/Unicode_output.md)
+       * [Text between](programming_tasks/T/Text_between.md)
        * Text processing
            * [1](programming_tasks/T/Text_processing/1.md)
            * [2](programming_tasks/T/Text_processing/2.md)

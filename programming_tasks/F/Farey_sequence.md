@@ -8,9 +8,17 @@ func farey_count(n) {
 }
 
 func farey(n) {
-    gather {
-        1..n -> each {|k| 0..k -> each {|m| take(m/k) }}
-    }.uniq.sort
+    var (a, b, c, d) = (0, 1, 1, n)
+
+    var seq = [a/b]
+
+    while (c <= n) {
+        var k = (n+b)//d
+        (a, b, c, d) = (c, d, k*c - a, k*d - b)
+        seq << a/b
+    }
+
+    return seq
 }
 
 say 'Farey sequence for order 1 through 11 (inclusive):'
@@ -19,7 +27,7 @@ for n in (1..11) {
 }
 
 say 'Number of fractions in the Farey sequence:'
-for i in (100..1000 -> by(100)) {
+for i in (100..1000 `by` 100) {
     say ("F(%4d) =%7d" % (i, farey_count(i)))
 }
 ```
