@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sequence_of_primes_by_Trial_Division
+[1]: https://rosettacode.org/wiki/Sequence_of_primes_by_trial_division
 
 # [Sequence of primes by Trial Division][1]
 
