@@ -266,6 +266,7 @@
        * [Environment variables](programming_tasks/E/Environment_variables.md)
        * [Equilibrium index](programming_tasks/E/Equilibrium_index.md)
        * [Ethiopian multiplication](programming_tasks/E/Ethiopian_multiplication.md)
+       * [Euler's identity](programming_tasks/E/Euler's_identity.md)
        * [Euler's sum of powers conjecture](programming_tasks/E/Euler's_sum_of_powers_conjecture.md)
        * [Euler method](programming_tasks/E/Euler_method.md)
        * [Evaluate binomial coefficients](programming_tasks/E/Evaluate_binomial_coefficients.md)
@@ -802,6 +803,7 @@
            * [Preserve screen](programming_tasks/T/Terminal_control/Preserve_screen.md)
            * [Ringing the terminal bell](programming_tasks/T/Terminal_control/Ringing_the_terminal_bell.md)
            * [Unicode output](programming_tasks/T/Terminal_control/Unicode_output.md)
+       * [Test integerness](programming_tasks/T/Test_integerness.md)
        * [Text between](programming_tasks/T/Text_between.md)
        * Text processing
            * [1](programming_tasks/T/Text_processing/1.md)
