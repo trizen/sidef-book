@@ -146,6 +146,7 @@
            * [Player](programming_tasks/B/Bulls_and_cows/Player.md)
    * C
        * [Caesar cipher](programming_tasks/C/Caesar_cipher.md)
+       * [Calculating the value of e](programming_tasks/C/Calculating_the_value_of_e.md)
        * [Calendar](programming_tasks/C/Calendar.md)
        * [Calendar - for REAL programmers](programming_tasks/C/Calendar_-_for_REAL_programmers.md)
        * [Call a function](programming_tasks/C/Call_a_function.md)
@@ -294,6 +295,7 @@
        * [FASTA format](programming_tasks/F/FASTA_format.md)
        * [Faulhaber's formula](programming_tasks/F/Faulhaber's_formula.md)
        * [Faulhaber's triangle](programming_tasks/F/Faulhaber's_triangle.md)
+       * [Feigenbaum constant calculation](programming_tasks/F/Feigenbaum_constant_calculation.md)
        * [Fibonacci n-step number sequences](programming_tasks/F/Fibonacci_n-step_number_sequences.md)
        * [Fibonacci sequence](programming_tasks/F/Fibonacci_sequence.md)
        * [Fibonacci word](programming_tasks/F/Fibonacci_word.md)
