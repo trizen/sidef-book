@@ -3,31 +3,30 @@
 # [Reduced row echelon form][1]
 
 ```ruby
-func rref (Array m) {
-    m || return nil
-    var (lead, rows, cols) = (0, m.len, m[0].len)
+func rref (M) {
+    var (j, rows, cols) = (0, M.len, M[0].len)
 
-    for r in ^rows {
-        lead >= cols && return m
+    for r in (^rows) {
+        j < cols || return M
+
         var i = r
-
-        while (!m[i][lead]) {
+        while (!M[i][j]) {
             ++i == rows || next
             i = r
-            ++lead == cols && return m
+            ++j == cols && return M
         }
 
-        m[i, r] = m[r, i]
-        var lv = m[r][lead]
-        m[r] = (m[r] »/» lv)
+        M[i, r] = M[r, i] if (r != i)
+        M[r] = (M[r] »/» M[r][j])
 
-        for n in ^rows {
-            n == r && next
-            m[n] = (m[n] »-« (m[r] «*« m[n][lead]))
+        for n in (^rows) {
+            next if (n == r)
+            M[n] = (M[n] »-« (M[r] »*» M[n][j]))
         }
-        ++lead
+        ++j
     }
-    return m
+
+    return M
 }
 
 func say_it (message, array) {

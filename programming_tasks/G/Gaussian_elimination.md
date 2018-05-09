@@ -2,7 +2,7 @@
 
 # [Gaussian elimination][1]
 
-Uses the `rref(A)` function from [Gauss-Jordan matrix inversion](https://rosettacode.org/wiki/Gauss-Jordan_matrix_inversion#Sidef).
+Uses the `rref(A)` function from [Reduced row echelon form](https://rosettacode.org/wiki/Reduced_row_echelon_form#Sidef).
 
 ```ruby
 func gauss_jordan_solve (a, b) {

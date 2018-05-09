@@ -2,33 +2,9 @@
 
 # [Gauss-Jordan matrix inversion][1]
 
-```ruby
-func rref (M) {
-    var (j, rows, cols) = (0, M.len, M[0].len)
- 
-    for r in (^rows) {
-        j < cols || return M
- 
-        var i = r
-        while (!M[i][j]) {
-            ++i == rows || next
-            i = r
-            ++j == cols && return M
-        }
- 
-        M[i, r] = M[r, i] if (r != i)
-        M[r] = (M[r] »/» M[r][j])
- 
-        for n in (^rows) {
-            next if (n == r)
-            M[n] = (M[n] »-« (M[r] »*» M[n][j]))
-        }
-        ++j
-    }
- 
-    return M
-}
- 
+Uses the `rref(A)` function from [Reduced row echelon form](https://rosettacode.org/wiki/Reduced_row_echelon_form#Sidef).
+
+```ruby 
 func gauss_jordan_invert (M) {
  
     var I = M.len.of {|i|
