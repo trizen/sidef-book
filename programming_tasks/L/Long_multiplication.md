@@ -13,7 +13,7 @@ func add_with_carry(result, addend, addendpos) {
         while (result.len < addendpos+1) {
             result.append(0)
         }
-        var addend_digits = (addend.to_i + result[addendpos] -> digits)
+        var addend_digits = (addend.to_i + result[addendpos] -> to_s.chars)
         result[addendpos] = addend_digits.pop
         addend_digits.len > 0 || break
         addend = addend_digits.pop
