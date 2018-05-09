@@ -99,6 +99,7 @@
        * Arithmetic
            * [Complex](programming_tasks/A/Arithmetic/Complex.md)
            * [Integer](programming_tasks/A/Arithmetic/Integer.md)
+           * [Rational](programming_tasks/A/Arithmetic/Rational.md)
        * [Arithmetic-geometric mean](programming_tasks/A/Arithmetic-geometric_mean.md)
            * [Calculate Pi](programming_tasks/A/Arithmetic-geometric_mean/Calculate_Pi.md)
        * Arithmetic coding
@@ -339,6 +340,7 @@
        * [Function frequency](programming_tasks/F/Function_frequency.md)
    * G
        * [Gamma function](programming_tasks/G/Gamma_function.md)
+       * [Gauss-Jordan matrix inversion](programming_tasks/G/Gauss-Jordan_matrix_inversion.md)
        * [Gaussian elimination](programming_tasks/G/Gaussian_elimination.md)
        * [General FizzBuzz](programming_tasks/G/General_FizzBuzz.md)
        * [Generate lower case ASCII alphabet](programming_tasks/G/Generate_lower_case_ASCII_alphabet.md)
@@ -778,6 +780,7 @@
            * [Top and tail](programming_tasks/S/Strip_whitespace_from_a_string/Top_and_tail.md)
        * [Subleq](programming_tasks/S/Subleq.md)
        * [Subset sum problem](programming_tasks/S/Subset_sum_problem.md)
+       * [Substitution Cipher](programming_tasks/S/Substitution_Cipher.md)
        * [Substring](programming_tasks/S/Substring.md)
            * [Top and tail](programming_tasks/S/Substring/Top_and_tail.md)
        * [Subtractive generator](programming_tasks/S/Subtractive_generator.md)
