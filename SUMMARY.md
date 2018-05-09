@@ -615,6 +615,7 @@
        * [Program termination](programming_tasks/P/Program_termination.md)
        * [Proper divisors](programming_tasks/P/Proper_divisors.md)
        * [Pythagoras tree](programming_tasks/P/Pythagoras_tree.md)
+       * [Pythagorean quadruples](programming_tasks/P/Pythagorean_quadruples.md)
        * [Pythagorean triples](programming_tasks/P/Pythagorean_triples.md)
    * Q
        * [Quaternion type](programming_tasks/Q/Quaternion_type.md)
