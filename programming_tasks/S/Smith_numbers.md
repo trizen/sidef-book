@@ -32,7 +32,7 @@ func factors(remainder) {
 }
  
 func is_smith_number(n) {
-    !n.is_prime && (n.digits.sum == factors(n).join.to_i.digits.sum)
+    !n.is_prime && (n.sumdigits == factors(n).join.to_i.sumdigits)
 }
  
 var s = range(2, 10_000).grep { is_smith_number(_) }
