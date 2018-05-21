@@ -4,27 +4,16 @@
 
 ```ruby
 func perfect_shuffle(deck) {
-     var a = deck/2
-     a[0] ~Z a[1] -> flatten
+     deck/2 -> zip.flat
 }
 
 [8, 24, 52, 100, 1020, 1024, 10000].each { |size|
-
     var deck = @(1..size)
     var shuffled = deck
 
-    var n = 0
-    loop {
-        ++n
-        shuffled = perfect_shuffle(shuffled)
-
-        shuffled.each_index { |i|
-            shuffled[i] == deck[i] || goto :NEXT
-        }
-
-        break
-        @:NEXT
-    }
+    var n = (1..Inf -> lazy.first {
+        (shuffled = perfect_shuffle(shuffled)) == deck
+    })
 
     printf("%5d cards: %4d\n", size, n)
 }
