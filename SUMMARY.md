@@ -322,6 +322,7 @@
            * [Use numbers analogously](programming_tasks/F/First-class_functions/Use_numbers_analogously.md)
        * [First class environments](programming_tasks/F/First_class_environments.md)
        * [Five weekends](programming_tasks/F/Five_weekends.md)
+       * [Fivenum](programming_tasks/F/Fivenum.md)
        * [FizzBuzz](programming_tasks/F/FizzBuzz.md)
        * [Flatten a list](programming_tasks/F/Flatten_a_list.md)
        * [Floyd's triangle](programming_tasks/F/Floyd's_triangle.md)
@@ -444,6 +445,7 @@
    * L
        * [Langton's ant](programming_tasks/L/Langton's_ant.md)
        * [Largest int from concatenated ints](programming_tasks/L/Largest_int_from_concatenated_ints.md)
+       * [Largest number divisible by its digits](programming_tasks/L/Largest_number_divisible_by_its_digits.md)
        * [Last Friday of each month](programming_tasks/L/Last_Friday_of_each_month.md)
        * [Last letter-first letter](programming_tasks/L/Last_letter-first_letter.md)
        * [Leap year](programming_tasks/L/Leap_year.md)
