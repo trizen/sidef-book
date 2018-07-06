@@ -4,6 +4,6 @@ A Block is a special object which encapsulates zero or more statements which can
 
 ```ruby
 {
-    say "Hello world!";
+    say "Hello world!"
 }
 ```
