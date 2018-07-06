@@ -71,6 +71,12 @@ say ([1,2,[3,[4]]] ~S+ 42)   #=> [43, 44, [45,  [46]]]
 say ([1,2,[3,[4]]] ~S* 42)   #=> [42, 84, [126, [168]]]
 ```
 
+Matrix exponentiation (by squaring) of a square-matrix is provided by the `Array.mpow()` method (also available as `**`):
+
+```ruby
+say [[1,1],[1,0]]**12       #=> [[233, 144], [144, 89]]
+```
+
 The following methods require 2-dimensional arrays exclusively:
 
 ```ruby
