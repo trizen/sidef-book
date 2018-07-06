@@ -33,7 +33,7 @@ The precision of floating-point numbers can be changed by modifying the `Num!PRE
 
 ```ruby
 say sqrt(2)          # 1.41421356237309504880168872420969807856967187538
-local Num!PREC = 20  # number of bits of precision
+local Num!PREC = 24  # number of bits of precision
 say sqrt(2)          # 1.41421
 ```
 
@@ -47,8 +47,8 @@ func my_sqrt(n) {
 say my_sqrt(2)              # 1.41421356237309504880168872420969807856967187538
 
 do {                        # creates a new scope
-    local Num!PREC = 20     # changes the floating-point precision locally
-    say my_sqrt(2)          # 1.4142
+    local Num!PREC = 24     # changes the floating-point precision locally
+    say my_sqrt(2)          # 1.41421
 }                           # the default precision is restored when the scope ends
 
 say my_sqrt(2)              # 1.41421356237309504880168872420969807856967187538
