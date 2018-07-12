@@ -493,6 +493,7 @@
        * [LZW compression](programming_tasks/L/LZW_compression.md)
    * M
        * [Mad Libs](programming_tasks/M/Mad_Libs.md)
+       * [Magic squares of doubly even order](programming_tasks/M/Magic_squares_of_doubly_even_order.md)
        * [Magic squares of odd order](programming_tasks/M/Magic_squares_of_odd_order.md)
        * [Make directory path](programming_tasks/M/Make_directory_path.md)
        * [Man or boy test](programming_tasks/M/Man_or_boy_test.md)
