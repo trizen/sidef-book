@@ -759,6 +759,7 @@
        * [Spiral matrix](programming_tasks/S/Spiral_matrix.md)
        * [Split a character string based on change of character](programming_tasks/S/Split_a_character_string_based_on_change_of_character.md)
        * [SQL-based authentication](programming_tasks/S/SQL-based_authentication.md)
+       * [Square-free integers](programming_tasks/S/Square-free_integers.md)
        * [Stable marriage problem](programming_tasks/S/Stable_marriage_problem.md)
        * [Stack](programming_tasks/S/Stack.md)
        * [Stair-climbing puzzle](programming_tasks/S/Stair-climbing_puzzle.md)
