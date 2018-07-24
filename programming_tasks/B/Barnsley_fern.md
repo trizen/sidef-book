@@ -1,18 +1,18 @@
-[1]: http://rosettacode.org/wiki/Barnsley_fern
+[1]: https://rosettacode.org/wiki/Barnsley_fern
 
 # [Barnsley fern][1]
 
 ```ruby
 require('Imager')
- 
+
 var w = 640
 var h = 640
- 
+
 var img = %O<Imager>.new(xsize => w, ysize => h, channels => 3)
 var green = %O<Imager::Color>.new('#00FF00')
- 
-var (x, y) = (0, 0)
- 
+
+var (x, y) = (0.float, 0.float)
+
 for r in (^1e4 -> lazy.map { 100.irand }) {
   (x, y) = (
     if    (r <=  1) { ( 0.00*x - 0.00*y,  0.00*x + 0.16*y + 0.00) }
@@ -22,7 +22,9 @@ for r in (^1e4 -> lazy.map { 100.irand }) {
   )
   img.setpixel(x => w/2 + 60*x, y => 60*y, color => green)
 }
- 
+
 img.flip(dir => 'v')
 img.write(file => 'barnsleyFern.png')
 ```
+
+[Output image](https://github.com/trizen/rc/blob/master/img/barnsley-fern-sidef.png)

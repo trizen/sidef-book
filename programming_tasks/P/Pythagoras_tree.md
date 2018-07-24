@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Pythagoras_tree
+[1]: https://rosettacode.org/wiki/Pythagoras_tree
 
 # [Pythagoras tree][1]
 
@@ -50,3 +50,5 @@ img.box(filled => 1, color => 'white')
 tree(img, width/2.3, height, width/1.8, height, 10)
 img.write(file => 'pythagoras_tree.png')
 ```
+
+[Output image](https://github.com/trizen/rc/blob/master/img/pythagoras-tree-sidef.png)

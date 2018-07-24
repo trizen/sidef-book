@@ -23,3 +23,5 @@ var lsys = LSystem(
  
 lsys.execute('F--F--F', 4, "koch_snowflake.png", rules)
 ```
+
+[Output image](https://github.com/trizen/rc/blob/master/img/koch-snowflake-sidef.png)

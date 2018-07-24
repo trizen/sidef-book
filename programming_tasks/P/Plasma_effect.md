@@ -1,31 +1,33 @@
-[1]: http://rosettacode.org/wiki/Plasma_effect
+[1]: https://rosettacode.org/wiki/Plasma_effect
 
 # [Plasma effect][1]
 
 ```ruby
 require('Imager')
- 
+
 class Plasma(width=400, height=400) {
- 
+
     has img = nil
- 
+
     method init {
-        img = %s|Imager|.new(xsize => width, ysize => height)
+        img = %O|Imager|.new(xsize => width, ysize => height)
     }
- 
+
     method generate {
-        for y,x in (^height ~X ^width) {
+        for y=(^height), x=(^width) {
             var hue = (4 + sin(x/19) + sin(y/9) + sin((x+y)/25) + sin(hypot(x, y)/8))
             img.setpixel(x => x, y => y, color => Hash(hsv => [360 * hue / 8, 1, 1]))
         }
     }
- 
+
     method save_as(filename) {
         img.write(file => filename)
     }
 }
- 
+
 var plasma = Plasma(256, 256)
 plasma.generate
 plasma.save_as('plasma.png')
 ```
+
+[Output image](https://github.com/trizen/rc/blob/master/img/plasma-effect-sidef.png)

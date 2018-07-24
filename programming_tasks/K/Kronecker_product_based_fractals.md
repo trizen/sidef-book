@@ -31,3 +31,9 @@ for name,shape,order in [
     img.write(file => "kronecker-#{name}-sidef.png")
 }
 ```
+
+Output images:
+
+    * [Kronecker six](https://github.com/trizen/rc/blob/master/img/kronecker-six-sidef.png)
+    * [Kronecker carpet](https://github.com/trizen/rc/blob/master/img/kronecker-carpet-sidef.png)
+    * [Kronecker vicsek](https://github.com/trizen/rc/blob/master/img/kronecker-vicsek-sidef.png)

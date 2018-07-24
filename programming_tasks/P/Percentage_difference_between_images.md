@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Percentage_difference_between_images
+[1]: https://rosettacode.org/wiki/Percentage_difference_between_images
 
 # [Percentage difference between images][1]
 
@@ -8,7 +8,7 @@ require('Imager')
 func img_diff(a, b) {
  
     func from_file(name) {
-         %s|Imager|.new(file => name)
+         %O<Imager>.new(file => name)
     }
  
     func size(img) {
@@ -33,7 +33,7 @@ func img_diff(a, b) {
     }
  
     var sum = 0
-    for y,x in (^h1 ~X ^w1) {
+    for y=(^h1), x=(^w1) {
         sum += pixel_diff(read_pixel(img1, x, y), read_pixel(img2, x, y))
     }
  

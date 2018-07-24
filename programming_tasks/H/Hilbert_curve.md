@@ -139,3 +139,5 @@ var lsys = LSystem(
  
 lsys.execute('a', 6, "hilbert_curve.png", rules)
 ```
+
+[Output image](https://github.com/trizen/rc/blob/master/img/hilbert-curve-sidef.png)
