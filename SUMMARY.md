@@ -147,6 +147,7 @@
        * [Brownian tree](programming_tasks/B/Brownian_tree.md)
        * [Bulls and cows](programming_tasks/B/Bulls_and_cows.md)
            * [Player](programming_tasks/B/Bulls_and_cows/Player.md)
+       * [Burrows Wheeler transform](programming_tasks/B/Burrows_Wheeler_transform.md)
    * C
        * [Caesar cipher](programming_tasks/C/Caesar_cipher.md)
        * [Calculating the value of e](programming_tasks/C/Calculating_the_value_of_e.md)
@@ -323,6 +324,7 @@
        * [First-class functions](programming_tasks/F/First-class_functions.md)
            * [Use numbers analogously](programming_tasks/F/First-class_functions/Use_numbers_analogously.md)
        * [First class environments](programming_tasks/F/First_class_environments.md)
+       * [First missing positive](programming_tasks/F/First_missing_positive.md)
        * [Five weekends](programming_tasks/F/Five_weekends.md)
        * [Fivenum](programming_tasks/F/Fivenum.md)
        * [FizzBuzz](programming_tasks/F/FizzBuzz.md)
@@ -567,6 +569,7 @@
        * [Ordered words](programming_tasks/O/Ordered_words.md)
    * P
        * [Palindrome detection](programming_tasks/P/Palindrome_detection.md)
+       * [Palindrome pairs](programming_tasks/P/Palindrome_pairs.md)
        * [Pangram checker](programming_tasks/P/Pangram_checker.md)
        * [Parallel calculations](programming_tasks/P/Parallel_calculations.md)
        * Parsing
@@ -800,6 +803,7 @@
        * [Sum of a series](programming_tasks/S/Sum_of_a_series.md)
        * [Sum of squares](programming_tasks/S/Sum_of_squares.md)
        * [Sum to 100](programming_tasks/S/Sum_to_100.md)
+       * [Sunflower fractal](programming_tasks/S/Sunflower_fractal.md)
        * [Superellipse](programming_tasks/S/Superellipse.md)
        * [Superpermutation minimisation](programming_tasks/S/Superpermutation_minimisation.md)
        * [Sutherland-Hodgman polygon clipping](programming_tasks/S/Sutherland-Hodgman_polygon_clipping.md)
