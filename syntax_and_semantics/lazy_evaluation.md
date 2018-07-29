@@ -12,7 +12,7 @@ The `.lazy` method returns a Lazy object, which behaves almost like an Array, ex
 
 ```ruby
 for line in (DATA.lazy.grep{ _ < 'd' }.map{ print ">> "; .uc }) {
-   print line
+   say line
 }
 
 __DATA__

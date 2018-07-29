@@ -731,6 +731,7 @@
        * [Sort an array of composite structures](programming_tasks/S/Sort_an_array_of_composite_structures.md)
        * [Sort an integer array](programming_tasks/S/Sort_an_integer_array.md)
        * [Sort disjoint sublist](programming_tasks/S/Sort_disjoint_sublist.md)
+       * [Sort numbers lexicographically](programming_tasks/S/Sort_numbers_lexicographically.md)
        * [Sort stability](programming_tasks/S/Sort_stability.md)
        * [Sort three variables](programming_tasks/S/Sort_three_variables.md)
        * [Sort using a custom comparator](programming_tasks/S/Sort_using_a_custom_comparator.md)

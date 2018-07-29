@@ -7,27 +7,18 @@ func happy(n) is cached {
     static seen = Hash()
 
     return true  if n.is_one
-    return false if seen.has_key(n)
+    return false if seen.exists(n)
 
     seen{n} = 1
-    happy(n.digits »**» 2 -> sum)
+    happy(n.digits.sum { _*_ })
 }
 
-var count = 0
-Inf.times { |i|
-    happy(i) ? say i : next
-    ++count == 8 && break
+say 8.defs {|i|
+    happy(i) ? i : nil
 }
 ```
 
 #### Output:
 ```
-1
-7
-10
-13
-19
-23
-28
-31
+[1, 7, 10, 13, 19, 23, 28, 31]
 ```
