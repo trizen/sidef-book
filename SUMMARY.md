@@ -650,6 +650,7 @@
        * [Read entire file](programming_tasks/R/Read_entire_file.md)
        * [Readline interface](programming_tasks/R/Readline_interface.md)
        * [Real constants and functions](programming_tasks/R/Real_constants_and_functions.md)
+       * [Recaman's sequence](programming_tasks/R/Recaman's_sequence.md)
        * [Reduced row echelon form](programming_tasks/R/Reduced_row_echelon_form.md)
        * Reflection
            * [List methods](programming_tasks/R/Reflection/List_methods.md)
