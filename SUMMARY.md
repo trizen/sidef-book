@@ -31,6 +31,8 @@
       * [Dir](syntax_and_semantics/literals/dir.md)
       * [Array](syntax_and_semantics/literals/array.md)
       * [Hash](syntax_and_semantics/literals/hash.md)
+      * [Set](syntax_and_semantics/literals/set.md)
+      * [Bag](syntax_and_semantics/literals/bag.md)
       * [Block](syntax_and_semantics/literals/block.md)
    * [Language constructs](syntax_and_semantics/constructs.md)
       * [If](syntax_and_semantics/constructs/if.md)
