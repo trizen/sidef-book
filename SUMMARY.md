@@ -687,6 +687,7 @@
            * [In an environment](programming_tasks/R/Runtime_evaluation/In_an_environment.md)
    * S
        * [S-Expressions](programming_tasks/S/S-Expressions.md)
+       * [Safe primes and unsafe primes](programming_tasks/S/Safe_primes_and_unsafe_primes.md)
        * [Sailors coconuts and a monkey problem](programming_tasks/S/Sailors_coconuts_and_a_monkey_problem.md)
        * [Same Fringe](programming_tasks/S/Same_Fringe.md)
        * [Sattolo cycle](programming_tasks/S/Sattolo_cycle.md)
