@@ -820,6 +820,7 @@
        * Table creation
            * [Postal addresses](programming_tasks/T/Table_creation/Postal_addresses.md)
        * [Take notes on the command line](programming_tasks/T/Take_notes_on_the_command_line.md)
+       * [Tarjan](programming_tasks/T/Tarjan.md)
        * [Taxicab numbers](programming_tasks/T/Taxicab_numbers.md)
        * [Temperature conversion](programming_tasks/T/Temperature_conversion.md)
        * Terminal control

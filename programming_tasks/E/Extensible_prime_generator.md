@@ -3,12 +3,10 @@
 # [Extensible prime generator][1]
 
 ```ruby
-var nt = frequire('ntheory')
- 
-say ("First 20: ", nt.primes(nt.nth_prime(20)).join(' '))
-say ("Between 100 and 150: ", nt.primes(100,150).join(' '))
-say (nt.prime_count(7700,8000), " primes between 7700 and 8000")
-say ("10,000th prime: ", nt.nth_prime(10_000))
+say ("First 20: ", 20.nth_prime.primes.join(' '))
+say ("Between 100 and 150: ", primes(100,150).join(' '))
+say (prime_count(7700,8000), " primes between 7700 and 8000")
+say ("10,000th prime: ", nth_prime(10_000))
 ```
 
 #### Output:
