@@ -5,7 +5,7 @@
 ```ruby
 func sdn(Number n) {
     var b = [0]*n.len
-    var a = n.digits
+    var a = n.digits.flip
     a.each { |i| b[i] := 0 ++ }
     a == b
 }
