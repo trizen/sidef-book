@@ -170,6 +170,7 @@
        * [Chebyshev coefficients](programming_tasks/C/Chebyshev_coefficients.md)
        * [Check Machin-like formulas](programming_tasks/C/Check_Machin-like_formulas.md)
        * [Check that file exists](programming_tasks/C/Check_that_file_exists.md)
+       * [Cheryl's Birthday](programming_tasks/C/Cheryl's_Birthday.md)
        * [Chinese remainder theorem](programming_tasks/C/Chinese_remainder_theorem.md)
        * [Chinese zodiac](programming_tasks/C/Chinese_zodiac.md)
        * [Cholesky decomposition](programming_tasks/C/Cholesky_decomposition.md)
