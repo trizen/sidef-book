@@ -1,6 +1,6 @@
 # Matrix
 
-Matrix is a built-in class which provides support for working with matrices.
+The `Matrix` built-in class (which is a child of the `Array` class), provides support for defining and working with matrices:
 
 ```ruby
 Matrix(
