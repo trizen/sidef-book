@@ -1,6 +1,6 @@
-# Matrices
+# Multidimensional arrays
 
-In Sidef, matrices can be represented with 2-dimensional arrays:
+Multidimensional arrays can be defined as:
 
 ```ruby
 var A = [
@@ -16,20 +16,11 @@ var B = [
         ]
 ```
 
-Starting with version 3.06, Sidef provides a set of basic matrix operations, such as addition, subtraction, multiplication, transposition, inverse, determinant and support for solving systems of linear equations. This operations are described bellow:
-
-```ruby
-A `mmul` B      # matrix multiplication
-A `madd` A      # matrix addition (entrywise)
-A `msub` A      # matrix subtraction (entrywise)
-```
-
-The last two methods are provided by `Array.wise_op()`, which takes two arbitrary nested arrays and an operator, folding each element (entrywise) with the provided operator.
+Starting with version 3.06, Sidef provides the `Array.wise_op()` method, which takes two arbitrary nested arrays and an operator, folding each element (entrywise) with the provided operator, which is also available as `a ~Wop b`:
 
 Example:
 
 ```ruby
-say ([1,2,[3,[4]]] `madd` [42,43,[44,[45]]])    #=> [43, 45, [47, [49]]]
 say ([1,2,[3,[4]]] ~W+ [42,43,[44,[45]]])       #=> [43, 45, [47, [49]]]
 ```
 
@@ -69,35 +60,6 @@ say scalar_op([1,2,[3,[4]]], '*', 42)  #=> [42, 84, [126, [168]]]
 ```ruby
 say ([1,2,[3,[4]]] ~S+ 42)   #=> [43, 44, [45,  [46]]]
 say ([1,2,[3,[4]]] ~S* 42)   #=> [42, 84, [126, [168]]]
-```
-
-Matrix exponentiation (by squaring) of a square-matrix is provided by the `Array.mpow()` method (also available as `**`):
-
-```ruby
-say [[1,1],[1,0]]**12       #=> [[233, 144], [144, 89]]
-```
-
-The following methods require 2-dimensional arrays exclusively:
-
-```ruby
-A.transpose         # matrix transposition
-A.inv               # matrix inverse
-A.det               # matrix determinant
-A.msolve(vector)    # solves a system of linear equations
-```
-
-Example:
-
-```ruby
-var A = [
-    [2, -1,  5,  1],
-    [3,  2,  2, -6],
-    [1,  3,  3, -1],
-    [5, -2, -3,  3],
-]
-
-say A.det                            #=> 684
-say (A `msolve` [-3, -32, -47, 49])  #=> [2, -12, -4, 1]
 ```
 
 ## Matrix iteration
