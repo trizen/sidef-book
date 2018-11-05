@@ -24,7 +24,8 @@ When using the Pair literal syntax with variable names, this overlaps with the s
 var (a, b) = ("a", "b")
 say a:b                 # prints "a:"
 say a:b.is_a(Pair)      # prints false
-say a:b.class           # prints NamedParam
+                        # it has type NamedParam
+
 var (c, d) = (1, 2)     
 say c:d                 # prints 1+2i
 say c:d.is_a(Pair)      # prints false
@@ -44,7 +45,7 @@ say (c : d)             # ==/==
 say Pair(c, d)          # prints Pair(1, 2)
 ```
 
-Note this does not override the Complex literal when the left-hand side *is* a number.
+Note this still calls the `:` method on numbers, converting its arguments to a Complex, so stick with the `Pair()` constructor if the types are uncertain.
 
 ## Indexing
 
@@ -77,7 +78,7 @@ The *`:` method* can be combined with the *infix `:` operator*, which symbol-ifi
 :a::chain::of::string::pairs      # -> ==/==
 :a::chain::of::string::pairs:     # -> Pair(String, NamedParam)
 ```
-Including a trailing `:` in such chains will cause the rest of the expression to be parsed as a `NamedParam`.
+Including a trailing `:` in such chains will cause the rest of the expression to be parsed as a NamedParam.
 
 To make this a (old-style) linked list, we should be able to find the end, thus include a trailing `nil` (or `null`, or `false`...). Then we can traverse it, destructively for brevity:
 
