@@ -3,7 +3,8 @@
 Support for complex numbers is provided by [Math::MPC](https://metacpan.org/pod/Math::MPC), which is a Perl interface to the [MPC](http://www.multiprecision.org/mpc/) library.
 
 ```ruby
-3 + 4i          # complex number: 3+4i
+3 + 4i          # complex: 3+4i
+3:4             # =//=
 Complex(3, 4)   # =//=
 ```
 

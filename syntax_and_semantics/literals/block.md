@@ -7,3 +7,12 @@ A Block is a special object which encapsulates zero or more statements which can
     say "Hello world!"
 }
 ```
+
+The `run` method on `Block` objects is used to call the block with arguments.
+
+```ruby
+{
+    say "Hello #{_}!"
+}.run("you")           # prints "Hello you!"
+
+```

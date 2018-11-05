@@ -10,7 +10,7 @@ var bool = true
 
 ## Lexical variables
 
-This kind of variables are lexical, but statically block scoped. This is the usual way of declaring variables in Sidef.
+These kinds of variables are lexical, but statically block scoped. This is the usual way of declaring variables in Sidef.
 
 ```ruby
 var x = 42    # sets the lexical x to 42
@@ -126,14 +126,30 @@ say x              # prints: 15
 
 ## Special variables
 
-Currently, there are only two real predefined variables: `ARGV` and `ENV`.
+Currently, there are only four real predefined variables:
+
+* `Array ARGV`: The program's command-line arguments, that were not given to Sidef
+* `Hash ENV`: Writable copy of environment variables and their values when the program was started.
+* `FileHandle ARGF`: Used to read lines from argument-files or from `STDIN` when no argument has been specified
+* `FileHandle DATA`:  Contains The data stored after the __END__ or __DATA__ tokens
+
 
 ```ruby
 ARGV.each { |arg|
-   say arg
+  say arg
 }
 
-say ENV{:HOME}
+say ENV{:HOME}  # get an environment variable
+
+ARGF.lines { |line|
+  say line
+}
+
+say DATA        # prints: "hello\nworld"
+
+__DATA__
+hello
+world
 ```
 
 ## Topic variable
