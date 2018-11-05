@@ -29,6 +29,7 @@ var y = 0.9.float   # floating-point
 var z = x+y         # floating-point
 ```
 
+
 The precision of floating-point numbers can be changed by modifying the `Num!PREC` class-variable:
 
 ```ruby
