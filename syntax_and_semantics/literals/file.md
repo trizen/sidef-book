@@ -1,14 +1,11 @@
-# File
+# FileHandle
 
-A File object represents a local file.
-
-```ruby
-%f(/path/to/filename.ext)
-```
-
-
-Alternatively, one can write:
+A FileHandle, or File object represents a local file. The literal syntax `%f` can be used:
 
 ```ruby
-File("/path/to/filename.ext")
+FileHandle("/path/to/file.ext")
+File("/path/to/file.ext")
+%f(/path/to/file.ext)
 ```
+
+Many operations are defined on FileHandles, from reading / writing to checksums to path operations.
