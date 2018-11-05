@@ -21,7 +21,7 @@ Hash(){:key} # -> nil
 
 ## Null
 
-The *Null* singleton type represents a defined value, with no specific meaning other than its existence.
+The *Null* singleton type represents a defined value, with its specific meaning depending on the context in which it is used.
 
 ```ruby
 null
@@ -31,4 +31,3 @@ null.ref      # Sidef::Types::Null::Null
 ```
 
 Unlike most Sidef typenames, it is not possible to refer to the Null type directly, because singleton classes have exactly one instance.
-

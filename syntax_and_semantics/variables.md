@@ -131,7 +131,7 @@ Currently, there are only four real predefined variables:
 * `Array ARGV`: The program's command-line arguments, that were not given to Sidef
 * `Hash ENV`: Writable copy of environment variables and their values when the program was started.
 * `FileHandle ARGF`: Used to read lines from argument-files or from `STDIN` when no argument has been specified
-* `FileHandle DATA`:  Contains The data stored after the __END__ or __DATA__ tokens
+* `FileHandle DATA`:  Contains the data stored after the __END__ or __DATA__ tokens
 
 
 ```ruby
