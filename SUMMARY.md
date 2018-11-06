@@ -19,7 +19,7 @@
 * [Syntax and semantics](syntax_and_semantics/README.md)
    * [Comments](syntax_and_semantics/comments.md)
    * [Literals](syntax_and_semantics/literals.md)
-      * [Nil](syntax_and_semantics/literals/nil_and_null.md)
+      * [Nil and Null](syntax_and_semantics/literals/nil_and_null.md)
       * [Bool](syntax_and_semantics/literals/bool.md)
       * [Integer](syntax_and_semantics/literals/integer.md)
       * [Rational](syntax_and_semantics/literals/rational.md)
