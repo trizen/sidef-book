@@ -31,6 +31,7 @@
       * [Dir](syntax_and_semantics/literals/dir.md)
       * [Array](syntax_and_semantics/literals/array.md)
       * [Pair](syntax_and_semantics/literals/pair.md)
+      * [NamedParam](syntax_and_semantics/literals/named_param.md)
       * [Matrix](syntax_and_semantics/literals/matrix.md)
       * [Hash](syntax_and_semantics/literals/hash.md)
       * [Set](syntax_and_semantics/literals/set.md)
