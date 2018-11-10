@@ -48,4 +48,4 @@ Match
 (str =~ /^a(.)$/) # a Match object
 ```
 
-because the entire Match object from the match expression `=~` will be captured by the Block. To save the first capture and make `m=="b"`, use `str=~/^a(.)$/->captures.first`.
+because the entire Match object from the match expression `=~` will be captured by the Block. To save the first capture and make `m=="b"`, use `(str=~/^a(.)$/)[0]`.

@@ -19,16 +19,6 @@ var args = [b:7, a:21]
 say foo(args...)          # -> 3
 ```
 
-This, with the slurpy parameter `:hash`, allows for Python-style arbitrary keyword arguments:
-
-```ruby
-func bar(:kw_args) {
-  say kw_args{:a}   #=> 42        
-  say kw_args{:b}   #=> "ok"
-}
-bar(a => 42, b => "ok")
-```
-
 It is not possible to write a function which takes a literal `NamedParam` argument, but this can be overcome by passing a variable reference that holds a `NamedParam` object, and later dereferencing it.
 
 ```ruby
