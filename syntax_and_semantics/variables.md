@@ -48,6 +48,23 @@ do {
 say x            # prints the global value of x (42)
 ```
 
+A slightly more advanced example, illustrating the localization of an hash lvalue, would be:
+
+```ruby
+func foo(h) {
+    say h{:key}
+}
+
+var h = Hash(key => "a")
+
+foo(h)                        # prints "a"
+do {
+    local h{:key} = "b"       # local change only
+    foo(h)                    # prints: "b"
+}
+foo(h)                        # prints: "a"
+```
+
 ## Variable scoping
 
 All variables (including functions and classes) are block scoped in the following way:
@@ -100,7 +117,7 @@ say hash                       # prints: Hash(a=>1, b=>2)
 
 ## Working with variables
 
-Any method applied to a variable is applied to the object stored inside the variable.
+Any method applied to a variable is applied on the object at which the variable is pointing at:
 
 ```ruby
 var x = 'sidef'
@@ -128,11 +145,10 @@ say x              # prints: 15
 
 Currently, there are only four real predefined variables:
 
-* `Array ARGV`: The program's command-line arguments, that were not given to Sidef
-* `Hash ENV`: Writable copy of environment variables and their values when the program was started.
-* `FileHandle ARGF`: Used to read lines from argument-files or from `STDIN` when no argument has been specified
-* `FileHandle DATA`:  Contains the data stored after the __END__ or __DATA__ tokens
-
+* `ARGV`: Special `Array` that contains the program's command-line arguments, that were not given to Sidef.
+* `ENV` : Writable `Hash` copy of environment variables and their values when the program was started.
+* `ARGF`: Special `FileHandle` object used to read lines from argument-files or from `STDIN` when no argument has been specified.
+* `DATA`: Special `FileHandle` object that points to the data stored after the `__END__` or `__DATA__` tokens.
 
 ```ruby
 ARGV.each { |arg|
@@ -154,7 +170,7 @@ world
 
 ## Topic variable
 
-The special topic variable (`_`) is declared at compile-time in each block-object in the program. You may not see its real name very often, because it has been overtaken by the elegant unary dot (.) operator:
+The special topic variable (`_`) is declared at compile-time in each block-object in the program. You may not see its real name very often, because it has been overtaken by the elegant prefix dot (.) operator:
 
 ```ruby
 [25,36,49].map {.sqrt} \
