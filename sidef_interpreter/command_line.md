@@ -24,7 +24,6 @@ Usage: sidef [switches] [--] [programfile] [arguments]
   -s            save compiled code in a database to reduce boot-time
   -t            treat all command-line arguments as scripts
   -v            print version number and exit
-  -V            print full build information and exit
   -w            enable warnings with stack backtrace
   -W            make warnings fatal (with stack backtrace)
 
