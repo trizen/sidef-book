@@ -241,6 +241,7 @@
        * [Deming's Funnel](programming_tasks/D/Deming's_Funnel.md)
        * [Department Numbers](programming_tasks/D/Department_Numbers.md)
        * [Detect division by zero](programming_tasks/D/Detect_division_by_zero.md)
+       * [Determinant and permanent](programming_tasks/D/Determinant_and_permanent.md)
        * [Determine if a string is numeric](programming_tasks/D/Determine_if_a_string_is_numeric.md)
        * [Determine if only one instance is running](programming_tasks/D/Determine_if_only_one_instance_is_running.md)
        * [Dice game probabilities](programming_tasks/D/Dice_game_probabilities.md)
@@ -510,7 +511,6 @@
        * [Mandelbrot set](programming_tasks/M/Mandelbrot_set.md)
        * [Map range](programming_tasks/M/Map_range.md)
        * [Matrix-exponentiation operator](programming_tasks/M/Matrix-exponentiation_operator.md)
-       * [Matrix arithmetic](programming_tasks/M/Matrix_arithmetic.md)
        * [Matrix multiplication](programming_tasks/M/Matrix_multiplication.md)
        * [Matrix transposition](programming_tasks/M/Matrix_transposition.md)
        * [Maximum triangle path sum](programming_tasks/M/Maximum_triangle_path_sum.md)
@@ -590,6 +590,7 @@
            * [Puzzle](programming_tasks/P/Pascal's_triangle/Puzzle.md)
        * [Pascal matrix generation](programming_tasks/P/Pascal_matrix_generation.md)
        * [Pathological floating point problems](programming_tasks/P/Pathological_floating_point_problems.md)
+       * [Penrose tiling](programming_tasks/P/Penrose_tiling.md)
        * [Pentagram](programming_tasks/P/Pentagram.md)
        * [Percentage difference between images](programming_tasks/P/Percentage_difference_between_images.md)
        * Percolation

@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Matrix_arithmetic
+[1]: https://rosettacode.org/wiki/Determinant_and_permanent
 
-# [Matrix arithmetic][1]
+# [Determinant and permanent][1]
 
 The \`determinant\` method is provided by the Array class.
 
