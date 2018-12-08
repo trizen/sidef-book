@@ -3,40 +3,16 @@
 # [Cramer's rule][1]
 
 ```ruby
-func det(a) {
-    a = a.map{.map{_}}
-    var sign = +1
-    var pivot = 1
-
-    for k (^a) {
-      var r = (k+1 .. a.end)
-      var previous_pivot = pivot
-
-      if ((pivot = a[k][k]) == 0) {
-        a.swap(r.first_by { a[_][k] != 0 } \\ return 0, k)
-        pivot = a[k][k]
-        sign.neg!
-      }
-
-      for i,j (r ~X r) {
-        a[i][j] *= pivot           ->
-                -= a[i][k]*a[k][j] ->
-                /= previous_pivot
-      }
-    }
-    sign * pivot
-}
-
 func cramers_rule(A, terms) {
     gather {
-        for i (^A) {
+        for i in ^A {
             var Ai = A.map{.map{_}}
-            for j (^terms) {
+            for j in ^terms {
                 Ai[j][i] = terms[j]
             }
-            take(det(Ai))
+            take(Ai.det)
         }
-    } »/» det(A)
+    } »/» A.det
 }
 
 var matrix = [
