@@ -1,13 +1,13 @@
-[1]: http://rosettacode.org/wiki/Vector
+[1]: https://rosettacode.org/wiki/Vector
 
 # [Vector][1]
 
 ```ruby
-class Vector(:args) {
- 
+class MyVector(:args) {
+
     has Number x
     has Number y
- 
+
     method init {
         if ([:x, :y] ~~ args) {
             x = args{:x}
@@ -25,30 +25,30 @@ class Vector(:args) {
             die "Invalid arguments: #{args}"
         }
     }
- 
+
     method length { hypot(x, y) }
     method angle  { atan2(y, x) }
- 
-    method +(Vector v) { Vector(x => x + v.x,  y => y + v.y) }
-    method -(Vector v) { Vector(x => x - v.x,  y => y - v.y) }
-    method *(Number n) { Vector(x => x * n,    y => y * n)   }
-    method /(Number n) { Vector(x => x / n,    y => y / n)   }
+
+    method +(MyVector v) { MyVector(x => x + v.x,  y => y + v.y) }
+    method -(MyVector v) { MyVector(x => x - v.x,  y => y - v.y) }
+    method *(Number n)   { MyVector(x => x * n,    y => y * n)   }
+    method /(Number n)   { MyVector(x => x / n,    y => y / n)   }
  
     method neg  { self * -1 }
     method to_s { "vec[#{x}, #{y}]" }
 }
- 
-var u = Vector(x => 3, y => 4)
-var v = Vector(from => [1, 0], to => [2, 3])
-var w = Vector(length => 1, angle => 45.deg2rad)
- 
+
+var u = MyVector(x => 3, y => 4)
+var v = MyVector(from => [1, 0], to => [2, 3])
+var w = MyVector(length => 1, angle => 45.deg2rad)
+
 say u    #: vec[3, 4]
 say v    #: vec[1, 3]
 say w    #: vec[0.70710678118654752440084436210485, 0.70710678118654752440084436210485]
- 
+
 say u.length                             #: 5
 say u.angle.rad2deg                      #: 53.13010235415597870314438744090659
- 
+
 say u+v                                  #: vec[4, 7]
 say u-v                                  #: vec[2, 1]
 say -u                                   #: vec[-3, -4]

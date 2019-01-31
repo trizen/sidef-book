@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Orbital_elements
+[1]: https://rosettacode.org/wiki/Orbital_elements
 
 # [Orbital elements][1]
 

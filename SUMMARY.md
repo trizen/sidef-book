@@ -137,6 +137,7 @@
        * [Babbage problem](programming_tasks/B/Babbage_problem.md)
        * [Balanced brackets](programming_tasks/B/Balanced_brackets.md)
        * [Barnsley fern](programming_tasks/B/Barnsley_fern.md)
+       * [Base64 decode data](programming_tasks/B/Base64_decode_data.md)
        * [Base64 encode data](programming_tasks/B/Base64_encode_data.md)
        * [Benford's law](programming_tasks/B/Benford's_law.md)
        * [Bernoulli numbers](programming_tasks/B/Bernoulli_numbers.md)
@@ -805,6 +806,7 @@
        * [Strip control codes and extended characters from a string](programming_tasks/S/Strip_control_codes_and_extended_characters_from_a_string.md)
        * Strip whitespace from a string
            * [Top and tail](programming_tasks/S/Strip_whitespace_from_a_string/Top_and_tail.md)
+       * [Strong and weak primes](programming_tasks/S/Strong_and_weak_primes.md)
        * [Subleq](programming_tasks/S/Subleq.md)
        * [Subset sum problem](programming_tasks/S/Subset_sum_problem.md)
        * [Substitution Cipher](programming_tasks/S/Substitution_Cipher.md)

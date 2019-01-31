@@ -1,15 +1,15 @@
-[1]: http://rosettacode.org/wiki/Vector_products
+[1]: https://rosettacode.org/wiki/Vector_products
 
 # [Vector products][1]
 
 ```ruby
-class Vector(x, y, z) {
+class MyVector(x, y, z) {
     method ∙(vec) {
         [self{:x,:y,:z}] »*« [vec{:x,:y,:z}] «+»
     }
  
     method ⨉(vec) {
-        Vector(self.y*vec.z - self.z*vec.y,
+        MyVector(self.y*vec.z - self.z*vec.y,
                self.z*vec.x - self.x*vec.z,
                self.x*vec.y - self.y*vec.x)
     }
@@ -19,9 +19,9 @@ class Vector(x, y, z) {
     }
 }
  
-var a = Vector(3, 4, 5)
-var b = Vector(4, 3, 5)
-var c = Vector(-5, -12, -13)
+var a = MyVector(3, 4, 5)
+var b = MyVector(4, 3, 5)
+var c = MyVector(-5, -12, -13)
  
 say "a=#{a}; b=#{b}; c=#{c};"
 say "a ∙ b = #{a ∙ b}"
