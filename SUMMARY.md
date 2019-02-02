@@ -225,6 +225,7 @@
        * [Create an HTML table](programming_tasks/C/Create_an_HTML_table.md)
        * [CSV data manipulation](programming_tasks/C/CSV_data_manipulation.md)
        * [CSV to HTML translation](programming_tasks/C/CSV_to_HTML_translation.md)
+       * [Cuban primes](programming_tasks/C/Cuban_primes.md)
        * [Cumulative standard deviation](programming_tasks/C/Cumulative_standard_deviation.md)
        * [Currency](programming_tasks/C/Currency.md)
        * [Currying](programming_tasks/C/Currying.md)
@@ -598,6 +599,7 @@
        * [Percentage difference between images](programming_tasks/P/Percentage_difference_between_images.md)
        * Percolation
            * [Mean run density](programming_tasks/P/Percolation/Mean_run_density.md)
+           * [Site percolation](programming_tasks/P/Percolation/Site_percolation.md)
        * [Perfect numbers](programming_tasks/P/Perfect_numbers.md)
        * [Perfect shuffle](programming_tasks/P/Perfect_shuffle.md)
        * [Perfect totient numbers](programming_tasks/P/Perfect_totient_numbers.md)
