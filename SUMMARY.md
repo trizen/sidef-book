@@ -268,6 +268,7 @@
    * E
        * [Egyptian division](programming_tasks/E/Egyptian_division.md)
        * [Egyptian fractions](programming_tasks/E/Egyptian_fractions.md)
+       * [EKG sequence convergence](programming_tasks/E/EKG_sequence_convergence.md)
        * [Element-wise operations](programming_tasks/E/Element-wise_operations.md)
        * [Elementary cellular automaton](programming_tasks/E/Elementary_cellular_automaton.md)
            * [Infinite length](programming_tasks/E/Elementary_cellular_automaton/Infinite_length.md)
@@ -594,6 +595,7 @@
            * [Puzzle](programming_tasks/P/Pascal's_triangle/Puzzle.md)
        * [Pascal matrix generation](programming_tasks/P/Pascal_matrix_generation.md)
        * [Pathological floating point problems](programming_tasks/P/Pathological_floating_point_problems.md)
+       * [Pell's equation](programming_tasks/P/Pell's_equation.md)
        * [Penrose tiling](programming_tasks/P/Penrose_tiling.md)
        * [Pentagram](programming_tasks/P/Pentagram.md)
        * [Percentage difference between images](programming_tasks/P/Percentage_difference_between_images.md)
