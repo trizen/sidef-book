@@ -5,24 +5,26 @@
 \_\_FUNC\_\_ refers to the current function.
 
 ```ruby
-{ |i|
+func fib(n) {
+    return NaN if (n < 0)
+
     func (n) {
-        if (n < 0) { return NaN }
-        n < 2 ? n
-              : (__FUNC__(n-2) + __FUNC__(n-1))
-    }(i).say
-} * 10
+        n < 2 ? n
+              : (__FUNC__(n-1) + __FUNC__(n-2))
+    }(n)
+}
 ```
 
 
 \_\_BLOCK\_\_ refers to the current block.
 
 ```ruby
-{ |i|
-    { |n|
-        if (n < 0) { return NaN }
-        n < 2 ? n
-              : (__BLOCK__(n-2) + __BLOCK__(n-1))
-    }(i).say
-} * 10
+func fib(n) {
+    return NaN if (n < 0)
+
+    {|n|
+        n < 2 ? n
+              : (__BLOCK__(n-1) + __BLOCK__(n-2))
+    }(n)
+}
 ```

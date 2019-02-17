@@ -6,7 +6,7 @@ All started out as an idea in the early Spring of 2013 when I started discussing
 
 The original design described a simple and elegant object-oriented programming language, that was very easy to implement in terms of writing a parser and an interpreter for it.
 
-About a week later, in March 30, 2013, we started the Sidef programming langauge project on [GitHub](https://github.com/trizen/sidef). By the way, *Sidef* (pronounced *C-def*) is a Romanian word which means *nacre* in English.
+About a week later, in March 30, 2013, we started the Sidef programming language project on [GitHub](https://github.com/trizen/sidef). By the way, *Sidef* (pronounced *C-def*) is a Romanian word which means *nacre* in English.
 
 As the time was passing by, we eventually started moving from AST interpretation towards code generation. The language now features a full code generator that walks the AST of a Sidef program, generating equivalent Perl 5 code. This method of execution made the implementation several times faster and also allowed the addition of more language constructs.
 
