@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Most_frequent_k_chars_distance
+[1]: https://rosettacode.org/wiki/Most_frequent_k_chars_distance
 
 # [Most frequent k chars distance][1]
 
@@ -39,7 +39,7 @@ func MostFreqKSDF(a, b, k, d) {
                     take(s{:f} + (s{:f} == t{:f} ? 0 : t{:f}))
             }
         }
-    }.sum(0)
+    }.sum
 }
  
 func MostFreqKHashing(string, k) {

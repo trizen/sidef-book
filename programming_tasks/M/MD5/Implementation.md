@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/MD5/Implementation
+[1]: https://rosettacode.org/wiki/MD5/Implementation
 
 # [MD5/Implementation][1]
 
@@ -33,7 +33,7 @@ class MD5(String msg) {
     ].flat
 
     func radix(Number b, Array a) {
-        ^a -> map {|i| b**i * a[i] }.sum(0)
+        ^a -> sum {|i| b**i * a[i] }
     }
 
     func little_endian(Number w, Number n, Array v) {

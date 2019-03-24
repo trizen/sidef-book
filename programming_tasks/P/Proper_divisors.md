@@ -1,23 +1,18 @@
-[1]: http://rosettacode.org/wiki/Proper_divisors
+[1]: https://rosettacode.org/wiki/Proper_divisors
 
 # [Proper divisors][1]
 
 ```ruby
 func propdiv (n) {
-    gather {
-        { |d|
-            if (d `divides` n) {
-                take(d, n//d)
-            }
-        } << 1..n.isqrt
-    }.grep{ _ != n }.uniq.sort
+    n.divisors.slice(0, -2)
 }
 
-{|i| say "#{i}\t#{propdiv(i)}" } << 1..10
+{|i| printf("%2d: %s\n", i, propdiv(i)) } << 1..10
 
 var max = 0
 var candidates = []
-20_000.times { |i|
+
+for i in (1..20_000) {
     var divs = propdiv(i).len
     if (divs > max) {
         candidates = []
@@ -31,15 +26,15 @@ say "max = #{max}, candidates = #{candidates}"
 
 #### Output:
 ```
-1       []
-2       [1]
-3       [1]
-4       [1, 2]
-5       [1]
-6       [1, 2, 3]
-7       [1]
-8       [1, 2, 4]
-9       [1, 3]
-10      [1, 2, 5]
+ 1: []
+ 2: [1]
+ 3: [1]
+ 4: [1, 2]
+ 5: [1]
+ 6: [1, 2, 3]
+ 7: [1]
+ 8: [1, 2, 4]
+ 9: [1, 3]
+10: [1, 2, 5]
 max = 79, candidates = [15120, 18480]
 ```

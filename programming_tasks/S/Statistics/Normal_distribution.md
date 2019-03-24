@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Statistics/Normal_distribution
+[1]: https://rosettacode.org/wiki/Statistics/Normal_distribution
 
 # [Statistics/Normal distribution][1]
 
@@ -16,14 +16,14 @@ var mean = 50
 var stddev = 4
  
 var dataset = size.of { normdist(mean, stddev) }
-var m = (dataset.sum(0) / size)
+var m = (dataset.sum / size)
 say ("m: #{m}")
  
-var σ = sqrt(dataset »**» 2 -> sum(0) / size - m**2)
+var σ = sqrt(dataset »**» 2 -> sum / size - m**2)
 say ("s: #{σ}")
  
 var hash = Hash()
-dataset.each { |n| hash{ n.round(0) } := 0 ++ }
+dataset.each { |n| hash{ n.round } := 0 ++ }
  
 var scale = (180 * stddev / size)
 const subbar = < ⎸ ▏ ▎ ▍ ▌ ▋ ▊ ▉ █ >

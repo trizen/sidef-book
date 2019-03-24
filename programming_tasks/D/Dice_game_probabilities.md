@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Dice_game_probabilities
+[1]: https://rosettacode.org/wiki/Dice_game_probabilities
 
 # [Dice game probabilities][1]
 
@@ -16,9 +16,9 @@ func winning(sides1, n1, sides2, n2) {
     var (p1, p2) = (combos(sides1, n1), combos(sides2, n2))
     var (win,loss,tie) = (0,0,0)
     p1.each_kv { |i, x|
-        win  += x*p2.ft(0,i-1).sum(0)
-        tie  += x*p2.ft(i, i).sum(0)
-        loss += x*p2.ft(i+1).sum(0)
+        win  += x*p2.ft(0,i-1).sum
+        tie  += x*p2.ft(i, i).sum
+        loss += x*p2.ft(i+1).sum
     }
     [win, tie, loss] »/» p1.sum*p2.sum
 }

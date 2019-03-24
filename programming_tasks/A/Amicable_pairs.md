@@ -1,19 +1,13 @@
-[1]: http://rosettacode.org/wiki/Amicable_pairs
+[1]: https://rosettacode.org/wiki/Amicable_pairs
 
 # [Amicable pairs][1]
 
 ```ruby
-func propdivsum(x) {
-    gather {
-        for d in (2 .. x.isqrt) {
-            if (d.divides(x)) {
-                take(d, x/d)
-            }
-        }
-    }.uniq.sum(x > 0 ? 1 : 0)
+func propdivsum(n) {
+    n.sigma - n
 }
- 
-for i (1..20000) {
+
+for i in (1..20000) {
     var j = propdivsum(i)
     say "#{i} #{j}" if (j>i && i==propdivsum(j))
 }
