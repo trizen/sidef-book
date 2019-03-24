@@ -2,6 +2,76 @@
 
 A class is a declaration of a constructor of objects with a specific type. Each object has zero or more attributes (instance variables) with zero or more behaviours (methods), that are defined inside a specific class or inherited from super-classes.
 
+```ruby
+class Person (name, age, address) {
+    method position {
+        # GPS.locate(self.address)
+    }
+
+    method increment_age(amount=1) {
+         self.age += amount
+    }
+}
+
+var obj = Person(
+       name: "Foo",
+        age: 50,
+    address: "St. Bar"
+)
+
+say obj.age                # prints: 50
+say obj.name               # prints: "Foo"
+say obj.address            # prints: "St. Bar"
+
+obj.name = "Baz"           # changes name to "Baz"
+say obj.name               # prints: "Baz"
+
+obj.increment_age          # increments age by 1
+say obj.age                # prints: 51
+```
+
+### Class attributes
+
+The attributes of a class can be either specified as parameters, or declared with the `has` keyword.
+
+```ruby
+class Example(a, b) {
+   has c = 3
+   has d = a+c
+}
+
+var obj = Example(1, 2)
+
+say obj.a   #=> 1
+say obj.b   #=> 2
+say obj.c   #=> 3
+say obj.d   #=> 4
+```
+
+### Class initialization
+
+Extra object-initialization setup can be done by defining a method named `init`, which will be called automatically called whenever a new instance-object is created.
+
+```ruby
+class Example (a, b) {
+
+   has r = 0
+
+   method init {      # called automatically
+      r = a+b
+   }
+
+   method foo {
+      r
+   }
+}
+
+var obj = Example(3, 4)
+say obj.foo              #=> 7
+```
+
+### Class inheritance (experimental)
+
 Inheritance of behaviors and attributes, by a given class, is declared with the `<` operator, followed by the name of the class from which the current class inherits:
 
 ```ruby
@@ -34,26 +104,4 @@ Multiple inheritance is declared with the `<<` operator, followed by two or more
 class Camera { }
 class MobilePhone { }
 class CameraPhone << Camera, MobilePhone { }
-```
-
-Instance variables are public and can be accessed by anyone who has a reference to the object itself:
-
-```ruby
-class Person (name, age, address) {
-    method walk {
-        say "#{name} is walking..."
-    }
-}
-
-var obj = Person(
-       name: "John Smith",
-        age: 42,
-    address: "St. Bar"
-)
-
-say obj.age                #=> 42
-say obj.name               #=> "John Smith"
-say obj.address            #=> "St. Bar"
-
-obj.walk                   #=> "John Smith is walking..."
 ```
