@@ -432,6 +432,7 @@
        * [Integer sequence](programming_tasks/I/Integer_sequence.md)
        * [Interactive programming](programming_tasks/I/Interactive_programming.md)
        * [Inverted syntax](programming_tasks/I/Inverted_syntax.md)
+       * [Iterated digits squaring](programming_tasks/I/Iterated_digits_squaring.md)
    * J
        * [Jaro distance](programming_tasks/J/Jaro_distance.md)
        * [Jensen's Device](programming_tasks/J/Jensen's_Device.md)
@@ -909,6 +910,7 @@
            * [Recursively](programming_tasks/W/Walk_a_directory/Recursively.md)
        * [Water collected between towers](programming_tasks/W/Water_collected_between_towers.md)
        * [Web scraping](programming_tasks/W/Web_scraping.md)
+       * [Weird numbers](programming_tasks/W/Weird_numbers.md)
        * [Welch's t-test](programming_tasks/W/Welch's_t-test.md)
        * [Window creation](programming_tasks/W/Window_creation.md)
        * [Wireworld](programming_tasks/W/Wireworld.md)
