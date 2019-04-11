@@ -123,6 +123,7 @@
        * Associative array
            * [Creation](programming_tasks/A/Associative_array/Creation.md)
            * [Iteration](programming_tasks/A/Associative_array/Iteration.md)
+       * [Attractive numbers](programming_tasks/A/Attractive_numbers.md)
        * Averages
            * [Arithmetic mean](programming_tasks/A/Averages/Arithmetic_mean.md)
            * [Mean angle](programming_tasks/A/Averages/Mean_angle.md)
@@ -721,9 +722,12 @@
        * [Semordnilap](programming_tasks/S/Semordnilap.md)
        * [Send an unknown method call](programming_tasks/S/Send_an_unknown_method_call.md)
        * [Separate the house number from the street name](programming_tasks/S/Separate_the_house_number_from_the_street_name.md)
+       * [Sequence nth number with exactly n divisors](programming_tasks/S/Sequence_nth_number_with_exactly_n_divisors.md)
        * [Sequence of non-squares](programming_tasks/S/Sequence_of_non-squares.md)
        * [Sequence of primes by trial division](programming_tasks/S/Sequence_of_primes_by_trial_division.md)
        * [Sequence of primorial primes](programming_tasks/S/Sequence_of_primorial_primes.md)
+       * [Sequence smallest number greater than previous term with exactly n divisors](programming_tasks/S/Sequence_smallest_number_greater_than_previous_term_with_exactly_n_divisors.md)
+       * [Sequence smallest number with exactly n divisors](programming_tasks/S/Sequence_smallest_number_with_exactly_n_divisors.md)
        * [Set](programming_tasks/S/Set.md)
        * [Set consolidation](programming_tasks/S/Set_consolidation.md)
        * [Seven-sided dice from five-sided dice](programming_tasks/S/Seven-sided_dice_from_five-sided_dice.md)
