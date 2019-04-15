@@ -4,16 +4,15 @@
 
 ```ruby
 func luhn (n) {
-    var chars = n.digits
-    var (i, sum) = (0, 0)
     static a = {|j| (2*j // 10) + (2*j % 10) }.map(^10)
-    for j (chars) {
-        sum += (i++.is_odd ? a[j] : j)
-    }
-    return (sum % 10 == 0)
+
+    var checksum = n.digits.map_kv {|i,j|
+        i.is_odd ? a[j] : j
+    }.sum
+
+    checksum % 10 == 0
 }
- 
-# Test and display
+
 for n in [49927398716, 49927398717, 1234567812345678, 1234567812345670] {
     say [n, luhn(n)]
 }
