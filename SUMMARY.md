@@ -363,6 +363,7 @@
        * [Gauss-Jordan matrix inversion](programming_tasks/G/Gauss-Jordan_matrix_inversion.md)
        * [Gaussian elimination](programming_tasks/G/Gaussian_elimination.md)
        * [General FizzBuzz](programming_tasks/G/General_FizzBuzz.md)
+       * [Generate Chess960 starting position](programming_tasks/G/Generate_Chess960_starting_position.md)
        * [Generate lower case ASCII alphabet](programming_tasks/G/Generate_lower_case_ASCII_alphabet.md)
        * Generator
            * [Exponential](programming_tasks/G/Generator/Exponential.md)
