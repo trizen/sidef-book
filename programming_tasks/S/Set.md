@@ -3,68 +3,68 @@
 # [Set][1]
 
 ```ruby
-class Set(*set) {
- 
+class MySet(*set) {
+
     method init {
         var elems = set
         set = Hash()
         elems.each { |e| self += e }
     }
- 
+
     method +(elem) {
         set{elem} = elem
         self
     }
- 
+
     method del(elem) {
         set.delete(elem)
     }
- 
+
     method has(elem) {
         set.has_key(elem)
     }
- 
-    method ∪(Set that) {
-        Set(set.values..., that.values...)
+
+    method ∪(MySet that) {
+        MySet(set.values..., that.values...)
     }
- 
-    method ∩(Set that) {
-        Set(set.keys.grep{ |k| k ∈ that }   \
+
+    method ∩(MySet that) {
+        MySet(set.keys.grep{ |k| k ∈ that } \
                     .map { |k| set{k} }...)
     }
- 
-    method ∖(Set that) {
-        Set(set.keys.grep{|k| !(k ∈ that) } \
+
+    method ∖(MySet that) {
+        MySet(set.keys.grep{|k| !(k ∈ that) } \
                     .map {|k| set{k} }...)
     }
- 
-    method ^(Set that) {
-        var d = ((self ∖ that) ∪ (that ∖ self));
-        Set(d.values...)
+
+    method ^(MySet that) {
+        var d = ((self ∖ that) ∪ (that ∖ self))
+        MySet(d.values...)
     }
- 
+
     method count { set.len }
- 
-    method ≡(Set that) {
+
+    method ≡(MySet that) {
         (self ∖ that -> count.is_zero) && (that ∖ self -> count.is_zero)
     }
- 
+
     method values { set.values }
- 
-    method ⊆(Set that) {
+
+    method ⊆(MySet that) {
         that.set.keys.each { |k|
             k ∈ self || return false
         }
         return true
     }
- 
+
     method to_s {
         "Set{" + set.values.map{|e| "#{e}"}.sort.join(', ') + "}"
     }
 }
- 
+
 class Object {
-    method ∈(Set set) {
+    method ∈(MySet set) {
         set.has(self)
     }
 }
@@ -74,28 +74,28 @@ class Object {
 Usage example:
 
 ```ruby
-var x = Set(1, 2, 3)
+var x = MySet(1, 2, 3)
 5..7 -> each { |i| x += i }
- 
-var y = Set(1, 2, 4, x)
- 
+
+var y = MySet(1, 2, 4, x)
+
 say "set x is: #{x}"
 say "set y is: #{y}"
- 
+
 [1,2,3,4,x].each { |elem|
-    say ("#{elem} is ", elem ∈ y ? '' : 'not', " in y")
+    say ("#{elem} is ", elem ∈ y ? '' : 'not', " in y")
 }
- 
+
 var (w, z)
 say ("union: ", x ∪ y)
 say ("intersect: ", x ∩ y)
 say ("z = x ∖ y = ", z = (x ∖ y) )
-say ("y is ", x ⊆ y ? "" : "not ", "a subset of x")
-say ("z is ", x ⊆ z ? "" : "not ", "a subset of x")
+say ("y is ", x ⊆ y ? "" : "not ", "a subset of x")
+say ("z is ", x ⊆ z ? "" : "not ", "a subset of x")
 say ("z = (x ∪ y) ∖ (x ∩ y) = ", z = ((x ∪ y) ∖ (x ∩ y)))
 say ("w = x ^ y = ", w = (x ^ y))
-say ("w is ", w ≡ z ? "" : "not ", "equal to z")
-say ("w is ", w ≡ x ? "" : "not ", "equal to x")
+say ("w is ", w ≡ z ? "" : "not ", "equal to z")
+say ("w is ", w ≡ x ? "" : "not ", "equal to x")
 ```
 
 #### Output:
