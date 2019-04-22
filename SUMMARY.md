@@ -359,6 +359,7 @@
        * [Function composition](programming_tasks/F/Function_composition.md)
        * [Function definition](programming_tasks/F/Function_definition.md)
        * [Function frequency](programming_tasks/F/Function_frequency.md)
+       * [Fusc sequence](programming_tasks/F/Fusc_sequence.md)
    * G
        * [Gamma function](programming_tasks/G/Gamma_function.md)
        * [Gauss-Jordan matrix inversion](programming_tasks/G/Gauss-Jordan_matrix_inversion.md)

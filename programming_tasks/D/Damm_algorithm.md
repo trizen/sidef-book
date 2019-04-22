@@ -17,7 +17,7 @@ func damm(digits) {
           [2, 5, 8, 1, 4, 3, 6, 7, 9, 0],
     ]
  
-    !digits.reduce({|row,col| tbl[row][col] }, 0)
+    !digits.flip.reduce({|row,col| tbl[row][col] }, 0)
 }
  
 for n in [5724, 5727, 112946] {
