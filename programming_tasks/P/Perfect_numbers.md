@@ -4,34 +4,30 @@
 
 ```ruby
 func is_perfect(n) {
-    var sum = 0
-    for i in (1 ..^ n) {
-        i.divides(n) && (sum += i)
-    }
-    sum == n
+    n.sigma == 2*n
 }
- 
-10000.times { |i|
-    is_perfect(i) && say i
+
+for n in (1..10000) {
+    say n if is_perfect(n)
 }
 ```
 
-For even perfect numbers, we can have a much faster check:
+Alternatively, a more efficient check for even perfect numbers:
 
 ```ruby
 func is_even_perfect(n) {
 
     var square = (8*n + 1)
-    square.is_sqr || return false
+    square.is_square || return false
 
-    var tp = ((square.isqrt + 1) / 2)
-    tp.is_pow || return false
+    var t = ((square.isqrt + 1) / 2)
+    t.is_smooth(2) || return false
 
-    (tp-1).is_prime ? true : false
+    t-1 -> is_prime
 }
 
-for i in range(0, 10000, 2) {
-    is_even_perfect(i) && say i
+for n in (1..10000) {
+    say n if is_even_perfect(n)
 }
 ```
 

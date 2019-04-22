@@ -21,4 +21,4 @@ In the second half of the book, the reader can find a large collection of progra
 
 ### Email
 
-If you have any questions or find any issues, please contact me at `trizen@protonmail.com`.
+If you have any questions or find any issues, please contact me at `trizen@cpan.org`.
