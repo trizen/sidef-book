@@ -3,22 +3,25 @@
 # [Fusc sequence][1]
 
 ```ruby
-func fusc(n) {
-    static S = [0, 1]
-    S[n] \\= (n.is_even ? S[n/2] : (S[(n-1)/2] + S[((n-1)/2)+1]))
+func fusc(n) is cached {
+
+    return 0 if n.is_zero
+    return 1 if n.is_one
+
+    n.is_even ? fusc(n/2) : (fusc((n-1)/2) + fusc(((n-1)/2)+1))
 }
- 
+
 say ("First 61 terms of the Stern-Brocot sequence: ", 61.of(fusc).join(' '))
- 
+
 say "\nIndex and value for first term longer than any previous:"
-printf("%15s : %s\n", "Index", "Value");
- 
+printf("%15s : %s\n", "Index", "Value");
+
 var (index=0, len=0)
- 
+
 5.times {
     index = (index..Inf -> first_by { fusc(_).len > len })
     len = fusc(index).len
-    printf("%15s : %s\n", index.commify, fusc(index).commify)
+    printf("%15s : %s\n", index.commify, fusc(index).commify)
 }
 ```
 
