@@ -5,30 +5,31 @@
 ```ruby
 func build_dict (n, words) {
     var dict = Hash()
-    for i in (0 .. words.len-n) {
-        var prefix = words.slice(i, i+n-1)
-        dict{prefix.join(' ')} := [] << words[i+n]
-    }
+    words.each_cons(n+1, {|*prefix|
+        var suffix = prefix.pop
+        dict{prefix.join(' ')} := [] << suffix
+    })
     return dict
 }
- 
+
 var file = File(ARGV[0] || "alice_oz.txt")
 var n    =  Num(ARGV[1] || 2)
 var max  =  Num(ARGV[2] || 100)
- 
+
 var words = file.open_r.words
+words << words.first(n)...
+
 var dict = build_dict(n, words)
- 
 var rotor = words.first(n)
 var chain = [rotor...]
- 
+
 max.times {
     var new = dict{rotor.join(' ')}.rand
     chain.push(new)
     rotor.shift
     rotor.push(new)
 }
- 
+
 say chain.join(' ')
 ```
 
