@@ -660,6 +660,7 @@
        * [Quickselect algorithm](programming_tasks/Q/Quickselect_algorithm.md)
        * [Quine](programming_tasks/Q/Quine.md)
    * R
+       * [Ramanujan's constant](programming_tasks/R/Ramanujan's_constant.md)
        * [Ramer-Douglas-Peucker line simplification](programming_tasks/R/Ramer-Douglas-Peucker_line_simplification.md)
        * [Ramsey's theorem](programming_tasks/R/Ramsey's_theorem.md)
        * [Random number generator device](programming_tasks/R/Random_number_generator_device.md)
@@ -830,6 +831,7 @@
        * [Substring](programming_tasks/S/Substring.md)
            * [Top and tail](programming_tasks/S/Substring/Top_and_tail.md)
        * [Subtractive generator](programming_tasks/S/Subtractive_generator.md)
+       * [Successive prime differences](programming_tasks/S/Successive_prime_differences.md)
        * [Sudoku](programming_tasks/S/Sudoku.md)
        * [Suffix tree](programming_tasks/S/Suffix_tree.md)
        * [Sum and product of an array](programming_tasks/S/Sum_and_product_of_an_array.md)
