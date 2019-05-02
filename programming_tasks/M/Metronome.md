@@ -1,0 +1,39 @@
+[1]: https://rosettacode.org/wiki/Metronome
+
+# [Metronome][1]
+
+```ruby
+func metronome (beats_per_minute = 72, beats_per_bar = 4) {
+ 
+    var counter   = 0
+    var duration  = 60/beats_per_minute
+    var base_time = Time.micro+duration
+ 
+    STDOUT.autoflush(true)
+ 
+    for next_time in (base_time..Inf `by` duration) {
+        if (counter++ %% beats_per_bar) {
+            print "\nTICK"
+        }
+        else {
+            print " tick"
+        }
+        Sys.sleep(next_time - Time.micro)
+    }
+}
+ 
+say metronome(ARGV.map{ Num(_) }...)
+```
+
+#### Output:
+```
+% sidef metronome.sf 60 6
+
+TICK tick tick tick tick tick
+TICK tick tick tick tick tick
+TICK tick tick tick tick tick
+TICK tick tick tick tick tick
+TICK tick tick tick tick tick
+TICK tick tick tick tick tick
+TICK tick tick tick^C
+```
