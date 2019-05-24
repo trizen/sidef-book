@@ -340,6 +340,7 @@
            * [Use numbers analogously](programming_tasks/F/First-class_functions/Use_numbers_analogously.md)
        * [First class environments](programming_tasks/F/First_class_environments.md)
        * [First missing positive](programming_tasks/F/First_missing_positive.md)
+       * [First perfect square in base N with N unique digits](programming_tasks/F/First_perfect_square_in_base_N_with_N_unique_digits.md)
        * [Five weekends](programming_tasks/F/Five_weekends.md)
        * [Fivenum](programming_tasks/F/Fivenum.md)
        * [FizzBuzz](programming_tasks/F/FizzBuzz.md)
