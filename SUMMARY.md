@@ -579,6 +579,7 @@
        * [Number names](programming_tasks/N/Number_names.md)
        * [Number reversal game](programming_tasks/N/Number_reversal_game.md)
        * [Numerical integration](programming_tasks/N/Numerical_integration.md)
+           * [Adaptive Simpson's method](programming_tasks/N/Numerical_integration/Adaptive_Simpson's_method.md)
            * [Gauss-Legendre Quadrature](programming_tasks/N/Numerical_integration/Gauss-Legendre_Quadrature.md)
    * O
        * [Odd word problem](programming_tasks/O/Odd_word_problem.md)
@@ -756,6 +757,7 @@
            * [Graphical](programming_tasks/S/Sierpinski_triangle/Graphical.md)
        * [Sieve of Eratosthenes](programming_tasks/S/Sieve_of_Eratosthenes.md)
        * [Simple windowed application](programming_tasks/S/Simple_windowed_application.md)
+       * [Simulated annealing](programming_tasks/S/Simulated_annealing.md)
        * [Singleton](programming_tasks/S/Singleton.md)
        * Singly-linked list
            * [Element definition](programming_tasks/S/Singly-linked_list/Element_definition.md)
