@@ -19,6 +19,7 @@ ARGF.each {|line|
 }
 ```
 
+<div style="background-color:black; color:white; width:600px; font-size:100%; font-family: Monaco, monospace;">
 
 <font color="#FF5252">% </font>md5sum \*.sf | sf checksumcolor.sf
 
@@ -33,3 +34,5 @@ ARGF.each {|line|
 
 
 <font color="#D7AFAF">b5</font><font color="#AF5FAF">85</font><font color="#D7FFD7">c2</font><font color="#5FD7FF">51</font><font color="#5FAF00">46</font><font color="#121212">e9</font><font color="#5FD75F">4d</font><font color="#767676">f3</font><font color="#87D700">70</font><font color="#303030">ec</font><font color="#5FAF87">48</font><font color="#5FAF00">46</font><font color="#8787FF">69</font><font color="#00005F">11</font><font color="#FFAFAF">d9</font><font color="#D78787">ae</font> pell.sf
+
+</div>
