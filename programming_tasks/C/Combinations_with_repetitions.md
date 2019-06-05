@@ -1,17 +1,23 @@
-[1]: http://rosettacode.org/wiki/Combinations_with_repetitions
+[1]: https://rosettacode.org/wiki/Combinations_with_repetitions
 
 # [Combinations with repetitions][1]
 
 ```ruby
-func p (n, a, l) { n>0 ? (^l->map{p(n-1, a+[l[_]], l.ft(_))}) : a }
-func f (n)       { n>0 ? (n * f(n - 1)) : 1 }
-func n (n, m)    { f(n + m - 1) / f(n) / f(m - 1) }
- 
-for a in p(2, [], %w(iced jam plain)) {
-    say a.map{|pair| pair.join(" ") }.join("\n")
+func cwr (n, l, a = []) {
+    n>0 ? (^l -> map {|k| __FUNC__(n-1, l.slice(k), [a..., l[k]]) }) : a
 }
- 
-printf("\nThere are %d ways to pick 7 out of 10\n", n(7, 10))
+
+cwr(2, %w(iced jam plain)).each {|a|
+    say a.map{ .join(' ') }.join("\n")
+}
+```
+
+Also built-in:
+
+```ruby
+%w(iced jam plain).combinations_with_repetition(2, {|*a|
+    say a.join(' ')
+})
 ```
 
 #### Output:
@@ -22,6 +28,16 @@ iced plain
 jam jam
 jam plain
 plain plain
+```
 
-There are 11440 ways to pick 7 out of 10
+Efficient counting of the total number of combinations with repetition:
+
+```ruby
+func cwr_count (n, m) { binomial(n + m - 1, m) }
+printf("\nThere are %s ways to pick 7 out of 10 with repetition\n", cwr_count(10, 7))
+```
+
+#### Output:
+```
+There are 11440 ways to pick 7 out of 10 with repetition
 ```

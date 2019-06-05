@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Combinations_and_permutations
+[1]: https://rosettacode.org/wiki/Combinations_and_permutations
 
 # [Combinations and permutations][1]
 
