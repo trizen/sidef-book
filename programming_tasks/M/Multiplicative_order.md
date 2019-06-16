@@ -2,15 +2,24 @@
 
 # [Multiplicative order][1]
 
+Built-in:
+
+```ruby
+say 37.znorder(1000)     #=> 100
+say 54.znorder(100001)   #=> 9090
+```
+
+User-defined:
+
 ```ruby
 func mo_prime(a, p, e) {
     var m  = p**e
     var t  = (p-1)*(p**(e-1))
     var qs = [1]
  
-    for f in (t.factor_exp) {
+    for p,e in (t.factor_exp) {
         qs.map! {|q|
-            0..f[1] -> map {|j| q * f[0]**j }...
+            0..e -> map {|j| q * p**j }...
         }
     }
  
