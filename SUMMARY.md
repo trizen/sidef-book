@@ -140,6 +140,7 @@
        * [Barnsley fern](programming_tasks/B/Barnsley_fern.md)
        * [Base64 decode data](programming_tasks/B/Base64_decode_data.md)
        * [Base64 encode data](programming_tasks/B/Base64_encode_data.md)
+       * [Bell numbers](programming_tasks/B/Bell_numbers.md)
        * [Benford's law](programming_tasks/B/Benford's_law.md)
        * [Bernoulli numbers](programming_tasks/B/Bernoulli_numbers.md)
        * [Best shuffle](programming_tasks/B/Best_shuffle.md)
