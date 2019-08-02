@@ -918,6 +918,7 @@
    * V
        * [Vampire number](programming_tasks/V/Vampire_number.md)
        * [Van der Corput sequence](programming_tasks/V/Van_der_Corput_sequence.md)
+       * [Van Eck sequence](programming_tasks/V/Van_Eck_sequence.md)
        * [Variable-length quantity](programming_tasks/V/Variable-length_quantity.md)
        * [Variadic function](programming_tasks/V/Variadic_function.md)
        * [Vector](programming_tasks/V/Vector.md)
@@ -937,7 +938,7 @@
        * [Window creation](programming_tasks/W/Window_creation.md)
        * [Wireworld](programming_tasks/W/Wireworld.md)
        * [Word break problem](programming_tasks/W/Word_break_problem.md)
-       * [Word count](programming_tasks/W/Word_count.md)
+       * [Word frequency](programming_tasks/W/Word_frequency.md)
        * [Word wrap](programming_tasks/W/Word_wrap.md)
        * [Write entire file](programming_tasks/W/Write_entire_file.md)
        * [Write float arrays to a text file](programming_tasks/W/Write_float_arrays_to_a_text_file.md)

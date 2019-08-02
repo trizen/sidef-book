@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Word_count
+[1]: https://rosettacode.org/wiki/Word_frequency
 
-# [Word count][1]
+# [Word frequency][1]
 
 ```ruby
 var count = Hash()
