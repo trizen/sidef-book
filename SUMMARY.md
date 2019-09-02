@@ -104,6 +104,7 @@
        * [Append a record to the end of a text file](programming_tasks/A/Append_a_record_to_the_end_of_a_text_file.md)
        * [Apply a callback to an array](programming_tasks/A/Apply_a_callback_to_an_array.md)
        * [Apply a digital filter direct form II transposed](programming_tasks/A/Apply_a_digital_filter_direct_form_II_transposed.md)
+       * [Approximate Equality](programming_tasks/A/Approximate_Equality.md)
        * [Arbitrary-precision integers included](programming_tasks/A/Arbitrary-precision_integers_included.md)
        * [Archimedean spiral](programming_tasks/A/Archimedean_spiral.md)
        * Arithmetic
