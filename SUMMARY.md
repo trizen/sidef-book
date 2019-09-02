@@ -568,6 +568,7 @@
    * N
        * [N'th](programming_tasks/N/N'th.md)
        * [N-queens problem](programming_tasks/N/N-queens_problem.md)
+       * [N-smooth numbers](programming_tasks/N/N-smooth_numbers.md)
        * [Named parameters](programming_tasks/N/Named_parameters.md)
        * [Names to numbers](programming_tasks/N/Names_to_numbers.md)
        * [Narcissist](programming_tasks/N/Narcissist.md)
@@ -585,6 +586,7 @@
        * [Null object](programming_tasks/N/Null_object.md)
        * [Number names](programming_tasks/N/Number_names.md)
        * [Number reversal game](programming_tasks/N/Number_reversal_game.md)
+       * [Numeric separator syntax](programming_tasks/N/Numeric_separator_syntax.md)
        * [Numerical integration](programming_tasks/N/Numerical_integration.md)
            * [Adaptive Simpson's method](programming_tasks/N/Numerical_integration/Adaptive_Simpson's_method.md)
            * [Gauss-Legendre Quadrature](programming_tasks/N/Numerical_integration/Gauss-Legendre_Quadrature.md)
