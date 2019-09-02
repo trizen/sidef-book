@@ -70,6 +70,38 @@ var obj = Example(3, 4)
 say obj.foo              #=> 7
 ```
 
+### Class variables
+
+The syntax `ClassName!var_name` can be used for defining, accessing or modifying a class variable.
+
+```ruby
+class Example {
+
+    Example!hidden = 'secret'    # global class variable
+
+    method concat (str) {
+        str + ' ' + Example!hidden
+    }
+}
+
+var x = Example()
+var y = Example()
+
+say x.concat('foo')   #=> 'foo secret'
+say y.concat('bar')   #=> 'bar secret'
+
+Example!hidden = 'public'  # changing the class variable
+
+say x.concat('foo')   #=> 'foo public'
+say y.concat('bar')   #=> 'bar public'
+```
+
+The modification of a class variable can be localized by prefixing the declaration with the `local` keyword:
+
+```ruby
+local Example!hidden = 'local value'
+```
+
 ### Class inheritance (experimental)
 
 Inheritance of behaviors and attributes, by a given class, is declared with the `<` operator, followed by the name of the class from which the current class inherits:
