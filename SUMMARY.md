@@ -638,6 +638,7 @@
        * [Phrase reversals](programming_tasks/P/Phrase_reversals.md)
        * [Pi](programming_tasks/P/Pi.md)
        * [Pick random element](programming_tasks/P/Pick_random_element.md)
+       * [Pierpont primes](programming_tasks/P/Pierpont_primes.md)
        * Pig the dice game
            * [Player](programming_tasks/P/Pig_the_dice_game/Player.md)
        * [Plasma effect](programming_tasks/P/Plasma_effect.md)
@@ -827,6 +828,7 @@
            * [Normal distribution](programming_tasks/S/Statistics/Normal_distribution.md)
        * [Stem-and-leaf plot](programming_tasks/S/Stem-and-leaf_plot.md)
        * [Stern-Brocot sequence](programming_tasks/S/Stern-Brocot_sequence.md)
+       * [Stirling numbers of the first kind](programming_tasks/S/Stirling_numbers_of_the_first_kind.md)
        * [Stream Merge](programming_tasks/S/Stream_Merge.md)
        * [String append](programming_tasks/S/String_append.md)
        * [String case](programming_tasks/S/String_case.md)
@@ -968,4 +970,5 @@
        * [Zero to the zero power](programming_tasks/Z/Zero_to_the_zero_power.md)
        * [Zhang-Suen thinning algorithm](programming_tasks/Z/Zhang-Suen_thinning_algorithm.md)
        * [Zig-zag matrix](programming_tasks/Z/Zig-zag_matrix.md)
+       * [Zumkeller numbers](programming_tasks/Z/Zumkeller_numbers.md)
 * [The End](the_end.md)
