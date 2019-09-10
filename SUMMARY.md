@@ -313,6 +313,7 @@
        * [Extreme floating point values](programming_tasks/E/Extreme_floating_point_values.md)
    * F
        * [Factorial](programming_tasks/F/Factorial.md)
+       * [Factorions](programming_tasks/F/Factorions.md)
        * [Factors of a Mersenne number](programming_tasks/F/Factors_of_a_Mersenne_number.md)
        * [Factors of an integer](programming_tasks/F/Factors_of_an_integer.md)
        * [Farey sequence](programming_tasks/F/Farey_sequence.md)
@@ -635,6 +636,7 @@
        * [Permutations](programming_tasks/P/Permutations.md)
        * [Permutations by swapping](programming_tasks/P/Permutations_by_swapping.md)
        * [Permutations with repetitions](programming_tasks/P/Permutations_with_repetitions.md)
+       * [Permutations with some identical elements](programming_tasks/P/Permutations_with_some_identical_elements.md)
        * [Pernicious numbers](programming_tasks/P/Pernicious_numbers.md)
        * [Phrase reversals](programming_tasks/P/Phrase_reversals.md)
        * [Pi](programming_tasks/P/Pi.md)
