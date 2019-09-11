@@ -937,6 +937,8 @@
        * [Variadic function](programming_tasks/V/Variadic_function.md)
        * [Vector](programming_tasks/V/Vector.md)
        * [Vector products](programming_tasks/V/Vector_products.md)
+       * Verify distribution uniformity
+           * [Chi-squared test](programming_tasks/V/Verify_distribution_uniformity/Chi-squared_test.md)
        * [Vigenère cipher](programming_tasks/V/Vigenère_cipher.md)
        * [Visualize a tree](programming_tasks/V/Visualize_a_tree.md)
        * [Vogel's approximation method](programming_tasks/V/Vogel's_approximation_method.md)

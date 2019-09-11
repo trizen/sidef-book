@@ -3,28 +3,27 @@
 # [Kaprekar numbers][1]
 
 ```ruby
-var kap = Hash()
+var kapr = Set()
 
 for n in (1..15) {
-    var np = (10**n - 1)
-    for d in (np.divisors) {
-        var dp = np/d
-        if (is_coprime(dp, d)) {
-            kap{ dp == 1 ? d : d*invmod(d, dp) } := 0 ++
-        }
+    var k = (10**n - 1)
+    k.udivisors.each {|d|
+        var dp = k/d
+        kapr << (dp == 1 ? d : d*invmod(d, dp))
     }
 }
 
-var nums = kap.keys.map{ Num(_) }.sort
+say kapr.grep { .<= 1e4 }.sort
 
 for n in (6 .. 14) {
-    var np = (10**n - 1)
-    printf("Kaprekar numbers <= 10^%2d:  %5d\n", n, nums.count_by { .<= np })
+    var k = (10**n - 1)
+    printf("Kaprekar numbers <= 10^%2d:  %5d\n", n, kapr.count_by { .<= k })
 }
 ```
 
 #### Output:
 ```
+[1, 9, 45, 55, 99, 297, 703, 999, 2223, 2728, 4879, 4950, 5050, 5292, 7272, 7777, 9999]
 Kaprekar numbers <= 10^ 6:     54
 Kaprekar numbers <= 10^ 7:     62
 Kaprekar numbers <= 10^ 8:     91
