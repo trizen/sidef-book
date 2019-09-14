@@ -3,8 +3,6 @@
 # [Pythagorean quadruples][1]
 
 ```ruby
-require('ntheory')
- 
 # Finds all solutions (a,b) such that: a^2 + b^2 = n^2
 func sum_of_two_squares(n) is cached {
  
@@ -44,7 +42,7 @@ func sum_of_two_squares(n) is cached {
         gather {
             for p,e in (prime_powers) {
                 var pp = p**e
-                var r = %S<ntheory>.sqrtmod("#{pp - 1}", "#{pp}")
+                var r = sqrtmod(-1, pp)
                 take([[r, pp], [pp - r, pp]])
             }
         }.cartesian { |*a|

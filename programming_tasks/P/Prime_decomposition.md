@@ -1,14 +1,12 @@
-[1]: http://rosettacode.org/wiki/Prime_decomposition
+[1]: https://rosettacode.org/wiki/Prime_decomposition
 
 # [Prime decomposition][1]
 
-Using the _ntheory_ library (very fast):
+Built-in:
 
 ```ruby
-require('ntheory')
-func prime_factors(n) {
-    [%S<ntheory>.factor(n.to_s)]
-}
+say factor(536870911)      #=> [233, 1103, 2089]
+say factor_exp(536870911)  #=> [[233, 1], [1103, 1], [2089, 1]]
 ```
 
 
@@ -16,22 +14,22 @@ Trial division:
 
 ```python
 func prime_factors(n) {
-    var p = 3
-    var out = []
-    return out if (n < 1)
-    while (!(n & 1)) {
-        n >>= 1
-        out << 2
-    }
-    while ((n > 1) && (p*p <= n)) {
-        while (n %% p) {
-            n /= p
-            out << p
+    return [] if (n < 1)
+    gather {
+        while (!(n & 1)) {
+            n >>= 1
+            take(2)
         }
-        p += 2
+        var p = 3
+        while ((n > 1) && (p*p <= n)) {
+            while (n %% p) {
+                n //= p
+                take(p)
+            }
+            p += 2
+        }
+        take(n) if (n > 1)
     }
-    out << n if (n > 1)
-    return out
 }
 ```
 

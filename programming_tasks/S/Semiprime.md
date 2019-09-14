@@ -1,20 +1,28 @@
-[1]: http://rosettacode.org/wiki/Semiprime
+[1]: https://rosettacode.org/wiki/Semiprime
 
 # [Semiprime][1]
 
+Built-in:
+
 ```ruby
-require('ntheory')
- 
-func is_semiprime(n) {
-    static nt = %S'ntheory'
-    if (var p = [nt.trial_factor(n, 500)]) {
-        return false if (p.len > 2)
-        return !!nt.is_prime(p[1]) if (p.len == 2)
-  }
-  [nt.factor(n)].len == 2
+say is_semiprime(2**128 + 1)   #=> true
+say is_semiprime(2**256 - 1)   #=> false
+```
+
+User-defined function, with trial division up to a given bound `B`:
+
+```ruby
+func is_semiprime(n, B=1e4) {
+
+    with (n.trial_factor(B)) { |f|
+        return false if (f.len > 2)
+        return f.all { .is_prime } if (f.len == 2)
+    }
+
+    n.factor.len == 2
 }
- 
-say [2,4,99,100,1679,32768,1234567,9876543,900660121].grep{ is_semiprime(_) }
+
+say [2,4,99,100,1679,32768,1234567,9876543,900660121].grep(is_semiprime)
 ```
 
 #### Output:
