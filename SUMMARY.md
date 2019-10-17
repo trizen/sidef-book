@@ -621,6 +621,7 @@
            * [Puzzle](programming_tasks/P/Pascal's_triangle/Puzzle.md)
        * [Pascal matrix generation](programming_tasks/P/Pascal_matrix_generation.md)
        * [Pathological floating point problems](programming_tasks/P/Pathological_floating_point_problems.md)
+       * [Peano curve](programming_tasks/P/Peano_curve.md)
        * [Pell's equation](programming_tasks/P/Pell's_equation.md)
        * [Penrose tiling](programming_tasks/P/Penrose_tiling.md)
        * [Pentagram](programming_tasks/P/Pentagram.md)
