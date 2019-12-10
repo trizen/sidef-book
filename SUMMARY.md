@@ -926,6 +926,7 @@
        * [Universal Turing machine](programming_tasks/U/Universal_Turing_machine.md)
        * Unix
            * [Ls](programming_tasks/U/Unix/ls.md)
+       * [Unprimeable numbers](programming_tasks/U/Unprimeable_numbers.md)
        * [URL decoding](programming_tasks/U/URL_decoding.md)
        * [URL encoding](programming_tasks/U/URL_encoding.md)
        * User input

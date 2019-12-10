@@ -13,9 +13,7 @@ func happy(n) is cached {
     happy(n.digits.sum { _*_ })
 }
 
-say 8.defs {|i|
-    happy(i) ? i : nil
-}
+say happy.first(10)
 ```
 
 #### Output:
