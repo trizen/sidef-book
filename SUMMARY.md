@@ -452,6 +452,7 @@
        * [Inverted syntax](programming_tasks/I/Inverted_syntax.md)
        * [Iterated digits squaring](programming_tasks/I/Iterated_digits_squaring.md)
    * J
+       * [Jacobi symbol](programming_tasks/J/Jacobi_symbol.md)
        * [Jaro distance](programming_tasks/J/Jaro_distance.md)
        * [Jensen's Device](programming_tasks/J/Jensen's_Device.md)
        * [Jewels and Stones](programming_tasks/J/Jewels_and_Stones.md)
@@ -661,6 +662,7 @@
        * [Power set](programming_tasks/P/Power_set.md)
        * [Price fraction](programming_tasks/P/Price_fraction.md)
        * [Primality by trial division](programming_tasks/P/Primality_by_trial_division.md)
+       * [Primalty by Wilson's theorem](programming_tasks/P/Primalty_by_Wilson's_theorem.md)
        * [Prime conspiracy](programming_tasks/P/Prime_conspiracy.md)
        * [Prime decomposition](programming_tasks/P/Prime_decomposition.md)
        * [Primes - allocate descendants to their ancestors](programming_tasks/P/Primes_-_allocate_descendants_to_their_ancestors.md)
