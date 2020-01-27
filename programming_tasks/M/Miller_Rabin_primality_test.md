@@ -3,31 +3,32 @@
 # [Miller–Rabin primality test][1]
 
 ```ruby
-func is_prime(n, k) {
+func miller_rabin(n, k=10) {
 
-    n == 2 && return true
-    n <= 1 && return false
-    n  & 1 || return false
+    return false if (n <= 1)
+    return true  if (n == 2)
+    return false if (n.is_even)
 
-    var d = n-1
-    var s = valuation(d, 2)
-    d >>= s
+    var t = n-1
+    var s = t.valuation(2)
+    var d = t>>s
 
     k.times {
-        var a = irand(2, n-1)
-        var x = expmod(a, d, n)
-        next if (x ~~ [1, n-1])
+        var a = irand(2, t)
+        var x = powmod(a, d, n)
+        next if (x ~~ [1, t])
 
         (s-1).times {
-            x = expmod(x, 2, n)
-            return false if x==1
-            break if (x == n-1)
+            x.powmod!(2, n)
+            return false if (x == 1)
+            break if (x == t)
         }
-        return false if (x != n-1)
+
+        return false if (x != t)
     }
 
     return true
 }
 
-say {|n| is_prime(n, 10) }.grep(^1000).join(', ')
+say miller_rabin.grep(^1000).join(', ')
 ```

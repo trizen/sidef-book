@@ -374,6 +374,7 @@
        * [Fusc sequence](programming_tasks/F/Fusc_sequence.md)
    * G
        * [Gamma function](programming_tasks/G/Gamma_function.md)
+       * [Gapful numbers](programming_tasks/G/Gapful_numbers.md)
        * [Gauss-Jordan matrix inversion](programming_tasks/G/Gauss-Jordan_matrix_inversion.md)
        * [Gaussian elimination](programming_tasks/G/Gaussian_elimination.md)
        * [General FizzBuzz](programming_tasks/G/General_FizzBuzz.md)
@@ -547,6 +548,7 @@
            * [Implementation](programming_tasks/M/MD5/Implementation.md)
        * [Menu](programming_tasks/M/Menu.md)
        * [Mersenne primes](programming_tasks/M/Mersenne_primes.md)
+       * [Mertens function](programming_tasks/M/Mertens_function.md)
        * [Metallic ratios](programming_tasks/M/Metallic_ratios.md)
        * [Metaprogramming](programming_tasks/M/Metaprogramming.md)
        * [Metronome](programming_tasks/M/Metronome.md)
@@ -612,6 +614,7 @@
    * P
        * [Palindrome detection](programming_tasks/P/Palindrome_detection.md)
        * [Palindrome pairs](programming_tasks/P/Palindrome_pairs.md)
+       * [Palindromic gapful numbers](programming_tasks/P/Palindromic_gapful_numbers.md)
        * [Pangram checker](programming_tasks/P/Pangram_checker.md)
        * [Parallel calculations](programming_tasks/P/Parallel_calculations.md)
        * Parsing

@@ -34,18 +34,18 @@ Sidef is a modern, high-level, general-purpose programming language, inspired by
 ### WWW
 
 * Github: https://github.com/trizen/sidef
-* Gitbook: http://trizen.gitbooks.io/sidef-lang
-* RosettaCode: http://rosettacode.org/wiki/Sidef
+* Gitbook: https://trizen.gitbooks.io/sidef-lang
+* RosettaCode: https://rosettacode.org/wiki/Sidef
 
 ### LICENSE AND COPYRIGHT
 
-* Copyright (C) 2013-2019 Daniel Șuteu, Ioana Fălcușan
+* Copyright (C) 2013-2020 Daniel Șuteu, Ioana Fălcușan
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of the *Artistic License (2.0)*. You may obtain a
 copy of the full license at:
 
-http://www.perlfoundation.org/artistic_license_2_0
+https://www.perlfoundation.org/artistic-license-20.html
 
 Any use, modification, and distribution of the Standard or Modified
 Versions is governed by this Artistic License. By using, modifying or
