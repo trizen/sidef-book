@@ -530,6 +530,7 @@
        * [Lychrel numbers](programming_tasks/L/Lychrel_numbers.md)
        * [LZW compression](programming_tasks/L/LZW_compression.md)
    * M
+       * [Möbius function](programming_tasks/M/Möbius_function.md)
        * [Mad Libs](programming_tasks/M/Mad_Libs.md)
        * [Magic squares of doubly even order](programming_tasks/M/Magic_squares_of_doubly_even_order.md)
        * [Magic squares of odd order](programming_tasks/M/Magic_squares_of_odd_order.md)
