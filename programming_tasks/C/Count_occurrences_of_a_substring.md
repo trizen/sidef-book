@@ -2,7 +2,7 @@
 
 # [Count occurrences of a substring][1]
 
-*Built-in:*
+Built-in:
 
 ```ruby
 say "the three truths".count("th")
@@ -10,7 +10,7 @@ say "ababababab".count("abab")
 ```
 
 
-*User-created function:*
+User-created function:
 
 ```ruby
 func countSubstring(s, ss) {

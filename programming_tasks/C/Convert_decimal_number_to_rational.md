@@ -2,21 +2,20 @@
 
 # [Convert decimal number to rational][1]
 
-This can be done by using the _num_ method, which converts a scalar-object into a number, followed by the _as_rat_ method, which converts it back into a string as a fraction:
+By default, literal numbers are represented in rational form:
 
 ```ruby
-'0.9054054 0.518518 0.75'.words.each { |d|
-    say Num(d).as_rat
-}
+say 0.75.as_frac          #=> 3/4
+say 0.518518.as_frac      #=> 259259/500000
+say 0.9054054.as_frac     #=> 4527027/5000000
 ```
 
-
-Another way is by calling the _as_rat_ method directly on Number objects:
+Additionally, *Num(str)* can be used for parsing a decimal expansion into rational form:
 
 ```ruby
-say 0.9054054.as_rat
-say 0.518518.as_rat
-say 0.75.as_rat
+'0.9054054 0.518518 0.75'.split.each { |str|
+    say Num(str).as_frac
+}
 ```
 
 #### Output:
@@ -24,4 +23,11 @@ say 0.75.as_rat
 4527027/5000000
 259259/500000
 3/4
+```
+
+For rational approximations, the Number *.rat_approx* method can be used:
+
+```ruby
+say 0.518518.rat_approx.as_frac    #=> 14/27
+say 0.9054054.rat_approx.as_frac   #=> 67/74
 ```
