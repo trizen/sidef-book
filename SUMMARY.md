@@ -238,6 +238,7 @@
        * [Currency](programming_tasks/C/Currency.md)
        * [Currying](programming_tasks/C/Currying.md)
        * [Cycle detection](programming_tasks/C/Cycle_detection.md)
+       * [Cyclotomic Polynomial](programming_tasks/C/Cyclotomic_Polynomial.md)
    * D
        * [Damm algorithm](programming_tasks/D/Damm_algorithm.md)
        * [Date format](programming_tasks/D/Date_format.md)
