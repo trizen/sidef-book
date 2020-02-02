@@ -620,6 +620,7 @@
        * [Ordered Partitions](programming_tasks/O/Ordered_Partitions.md)
        * [Ordered words](programming_tasks/O/Ordered_words.md)
    * P
+       * [Palindrome dates](programming_tasks/P/Palindrome_dates.md)
        * [Palindrome detection](programming_tasks/P/Palindrome_detection.md)
        * [Palindrome pairs](programming_tasks/P/Palindrome_pairs.md)
        * [Palindromic gapful numbers](programming_tasks/P/Palindromic_gapful_numbers.md)
@@ -882,6 +883,7 @@
        * [Sum of squares](programming_tasks/S/Sum_of_squares.md)
        * [Sum to 100](programming_tasks/S/Sum_to_100.md)
        * [Sunflower fractal](programming_tasks/S/Sunflower_fractal.md)
+       * [Super-d numbers](programming_tasks/S/Super-d_numbers.md)
        * [Superellipse](programming_tasks/S/Superellipse.md)
        * [Superpermutation minimisation](programming_tasks/S/Superpermutation_minimisation.md)
        * [Sutherland-Hodgman polygon clipping](programming_tasks/S/Sutherland-Hodgman_polygon_clipping.md)
