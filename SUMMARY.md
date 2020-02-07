@@ -126,6 +126,7 @@
            * [Creation](programming_tasks/A/Associative_array/Creation.md)
            * [Iteration](programming_tasks/A/Associative_array/Iteration.md)
        * [Attractive numbers](programming_tasks/A/Attractive_numbers.md)
+       * [Average loop length](programming_tasks/A/Average_loop_length.md)
        * Averages
            * [Arithmetic mean](programming_tasks/A/Averages/Arithmetic_mean.md)
            * [Mean angle](programming_tasks/A/Averages/Mean_angle.md)
