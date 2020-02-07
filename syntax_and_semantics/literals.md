@@ -1,3 +1,3 @@
-# Literals
+# Built-in types
 
-Several literals are available for creating many basic types in the language.
+Several built-in types are available for creating new objects.
