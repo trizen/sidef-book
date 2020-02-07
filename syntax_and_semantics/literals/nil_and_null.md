@@ -13,10 +13,10 @@ nil.ref       # -> error, methods cannot be called on undefined values
 
 The `nil` type has only one possible representation, `nil`.
 
-Instead of an error or exception, an *undefined* Hash key has the value `nil`.
+Instead of an error or exception, an *undefined* value is represented by `nil`:
 
 ```ruby
-Hash(){:key} # -> nil
+Hash(){:key}    # -> nil
 ```
 
 ## Null
@@ -25,9 +25,9 @@ The *Null* singleton type represents a defined value, with its specific meaning 
 
 ```ruby
 null
-defined(null) # -> true
-null.class    # -> Null
-null.ref      # -> Sidef::Types::Null::Null
+defined(null)   # -> true
+null.class      # -> Null
+null.ref        # -> Sidef::Types::Null::Null
 ```
 
 Unlike most Sidef typenames, it is not possible to refer to the Null type directly, because singleton classes have exactly one instance.

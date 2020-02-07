@@ -1,6 +1,6 @@
-# Rational
+# Rational literals
 
-Rational numbers are supported by using [Math::GMPq](https://metacpan.org/pod/Math::GMPq), which provides a Perl interface to the `mpq` layer in the [GMP](https://gmplib.org/) library.
+Rational numbers are built-in, using [Math::GMPq](https://metacpan.org/pod/Math::GMPq), which provides a Perl interface to the `mpq` layer in the [GMP](https://gmplib.org/) library.
 
 ```ruby
 3/4         # rational value: 3/4

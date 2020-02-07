@@ -1,6 +1,6 @@
-# Integer
+# Integer literals
 
-Sidef supports arbitary large integers, by using [Math::GMPz](https://metacpan.org/pod/Math::GMPz), which is the Perl interface to the [GMP](https://gmplib.org/) library.
+Sidef supports arbitarily large integers, by using [Math::GMPz](https://metacpan.org/pod/Math::GMPz), which is the Perl interface to the [GMP](https://gmplib.org/) library.
 
 ```ruby
 255               # decimal

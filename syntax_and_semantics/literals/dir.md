@@ -1,14 +1,11 @@
 # Dir
 
-The Dir object represents a local directory.
+The Dir object represents the name of a local directory:
 
 ```ruby
-%d(/my/path)
+%d(/my/path)      # Dir("/my/path")
+Dir("/my/path")   # =//=
+%d(/my)+%d(path)  # =//=
 ```
 
-
-Alternatively, one can write:
-
-```ruby
-Dir("/my/path")
-```
+See the [DirHandle](dirhandle.md) documentation for more information.
