@@ -16,7 +16,7 @@ var B = [
         ]
 ```
 
-Starting with version 3.06, Sidef provides the `Array.wise_op()` method, which takes two arbitrary nested arrays and an operator, folding each element (entrywise) with the provided operator, which is also available as `a ~Wop b`:
+In Sidef, we have the `Array.wise_op()` method, which takes two arbitrary nested arrays and an operator, folding each element (entrywise) with the provided operator, which is also available as `a ~Wop b`:
 
 
 ```ruby
@@ -54,7 +54,7 @@ say scalar_op([1,2,[3,[4]]], '*', 42)  #=> [42, 84, [126, [168]]]
 
 ## Iteration over 2D arrays
 
-The extended `for-in` loop, introduced in Sidef 2.23, provides support for iterating over a 2D-array, which is useful in combination with the cross and zip metaoperators:
+The extended `for-in` loop provides support for iterating over a 2D-array, which is useful in combination with the cross and zip metaoperators:
 
 ```ruby
 for a,b in ([1,2] ~X [3,4]) {

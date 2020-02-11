@@ -22,7 +22,7 @@ length("string").log    # =//=
 log(length("string"))   # =//=
 ```
 
-Starting with Sidef 2.30, a method can be invoked, using the prefix notation, even when a function with the same name is declared in the same scope:
+A method can be invoked using the prefix notation, even when a function with the same name is declared in the same scope. This is done by preceding the method with `::`, as illustrated below:
 
 ```ruby
 func sqrt(n) { "sqrt of #{n} is #{n.sqrt}" }

@@ -27,7 +27,7 @@ Blocks are also used as arguments to many built-in methods as callback blocks:
 
 ```ruby
 { print "Sidef! " } * 3        # prints "Sidef! Sidef! Sidef! "
-5.times {|x| print x }         # prints "12345"
+5.times {|x| print x }         # prints "01234"
 [1,2,3].sort {|a,b| b <=> a }  # returns a new array: [3,2,1]
 ```
 
