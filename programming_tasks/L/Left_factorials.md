@@ -2,41 +2,47 @@
 
 # [Left factorials][1]
 
+Built-in:
+
+```ruby
+say 20.of { .left_factorial }
+```
+
 Straightforward:
 
 ```ruby
-func left_fact(k) {
-    ^k -> map {|n| n! } -> sum
+func left_factorial(n) {
+    ^n -> sum { _! }
 }
 ```
 
 Memory efficient with `Range.reduce()`:
 
 ```ruby
-func left_fact(k) {
-    ^k -> reduce({ |a,b| a + b! }, 0)
+func left_factorial(n) {
+    ^n -> reduce({ |a,b| a + b! }, 0)
 }
 ```
 
-A much faster approach:
+A faster approach:
 
 ```ruby
-func left_fact(n) {
+func left_factorial(n) {
     static cached    = 0
     static factorial = 1
     static leftfact  = 0
- 
+
     if (n < cached) {
         cached    = 0
         factorial = 1
         leftfact  = 0
     }
- 
+
     while (n > cached) {
         leftfact  += factorial
         factorial *= ++cached
     }
- 
+
     leftfact
 }
 ```
@@ -45,12 +51,12 @@ func left_fact(n) {
 Completing the task:
 
 ```ruby
-for i (0..10, 20..110 `by` 10) {
-    printf("!%d  = %s\n", i, left_fact(i))
+for n in (0..10, 20..110 `by` 10) {
+    printf("!%d  = %s\n", n, left_factorial(n))
 }
 
-for i (1000..10000 `by` 1000) {
-    printf("!%d has %d digits.\n", i, left_fact(i).len)
+for n in (1000..10000 `by` 1000) {
+    printf("!%d has %d digits.\n", n, left_factorial(n).len)
 }
 ```
 

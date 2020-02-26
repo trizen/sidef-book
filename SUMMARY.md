@@ -678,6 +678,7 @@
        * [Polynomial synthetic division](programming_tasks/P/Polynomial_synthetic_division.md)
        * [Population count](programming_tasks/P/Population_count.md)
        * [Power set](programming_tasks/P/Power_set.md)
+       * [Powerful numbers](programming_tasks/P/Powerful_numbers.md)
        * [Price fraction](programming_tasks/P/Price_fraction.md)
        * [Primality by trial division](programming_tasks/P/Primality_by_trial_division.md)
        * [Primalty by Wilson's theorem](programming_tasks/P/Primalty_by_Wilson's_theorem.md)
