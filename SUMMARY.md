@@ -666,6 +666,7 @@
        * [Pierpont primes](programming_tasks/P/Pierpont_primes.md)
        * Pig the dice game
            * [Player](programming_tasks/P/Pig_the_dice_game/Player.md)
+       * [Pisano period](programming_tasks/P/Pisano_period.md)
        * [Plasma effect](programming_tasks/P/Plasma_effect.md)
        * [Playfair cipher](programming_tasks/P/Playfair_cipher.md)
        * [Playing cards](programming_tasks/P/Playing_cards.md)
