@@ -2,9 +2,11 @@
 
 # [Hilbert curve][1]
 
+Generic implementation of the Lindenmayer system:
+
 ```ruby
 require('Image::Magick')
- 
+
 class Turtle(
     x      = 500,
     y      = 500,
@@ -15,53 +17,53 @@ class Turtle(
     yoff   = 0,
     color  = 'black',
 ) {
- 
+
     has im = %O<Image::Magick>.new(size => "#{x}x#{y}")
- 
+
     method init {
         angle.deg2rad!
         im.ReadImage('canvas:white')
     }
- 
+
     method forward(r) {
         var (newx, newy) = (x + r*sin(angle), y + r*-cos(angle))
- 
+
         im.Draw(
             primitive => 'line',
             points    => join(' ',
-                           int(x    * scale + xoff),
-                           int(y    * scale + yoff),
-                           int(newx * scale + xoff),
-                           int(newy * scale + yoff),
+                           round(x    * scale + xoff),
+                           round(y    * scale + yoff),
+                           round(newx * scale + xoff),
+                           round(newy * scale + yoff),
                         ),
             stroke      => color,
             strokewidth => 1,
         )
- 
+
         (x, y) = (newx, newy)
     }
- 
+
     method save_as(filename) {
         im.Write(filename)
     }
- 
+
     method turn(theta) {
         angle += theta*mirror
     }
- 
+
     method state {
         [x, y, angle, mirror]
     }
- 
+
     method setstate(state) {
         (x, y, angle, mirror) = state...
     }
- 
+
     method mirror {
         mirror.neg!
     }
 }
- 
+
 class LSystem(
     angle  = 90,
     scale  = 1,
@@ -73,10 +75,10 @@ class LSystem(
     height = 500,
     turn   = 0,
 ) {
- 
+
     has stack = []
     has table = Hash()
- 
+
     has turtle = Turtle(
         x:     width,
         y:     height,
@@ -86,12 +88,12 @@ class LSystem(
         xoff:  xoff,
         yoff:  yoff,
     )
- 
+
     method init {
- 
+
         angle.deg2rad!
         turn.deg2rad!
- 
+
         table = Hash(
             '+' => { turtle.turn(angle) },
             '-' => { turtle.turn(-angle) },
@@ -100,26 +102,30 @@ class LSystem(
             ']' => { turtle.setstate(stack.pop) },
         )
     }
- 
+
     method execute(string, repetitions, filename, rules) {
- 
+
         repetitions.times {
             string.gsub!(/(.)/, {|c| rules{c} \\ c })
         }
- 
+
         string.each_char { |c|
             if (table.contains(c)) {
                 table{c}.run
             }
-            elsif (c.contains(/^[[:upper:]]\z/)) {
+            elsif (c.is_uppercase) {
                 turtle.forward(len)
             }
         }
- 
+
         turtle.save_as(filename)
     }
 }
- 
+```
+
+Generating the Hilbert curve:
+
+```ruby
 var rules = Hash(
     a => '-bF+aFa+Fb-',
     b => '+aF-bFb-Fa+',
@@ -140,4 +146,4 @@ var lsys = LSystem(
 lsys.execute('a', 6, "hilbert_curve.png", rules)
 ```
 
-[Output image](https://github.com/trizen/rc/blob/master/img/hilbert-curve-sidef.png)
+Output image: [Hilbert curve](https://github.com/trizen/rc/blob/master/img/hilbert-curve-sidef.png)

@@ -2,45 +2,27 @@
 
 # [Dragon curve][1]
 
+Uses the LSystem class defined at [Hilbert curve](https://rosettacode.org/wiki/Hilbert_curve#Sidef).
+
 ```ruby
-define halfpi = Num.pi/2
- 
-# Computing the dragon with a L-System
-var dragon = 'FX'
-{
-    dragon.gsub!('X', 'x+yF+')
-    dragon.gsub!('Y', '-Fx-y')
-    dragon.tr!('xy', 'XY')
-} * 10
- 
-# Drawing the dragon in SVG
-var (x, y) = (100, 100)
-var theta = 0
-var r = 2
- 
-print <<'EOT'
-<?xml version='1.0' encoding='utf-8' standalone='no'?>
-<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN'
-'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg width='100%' height='100%' version='1.1'
-xmlns='http://www.w3.org/2000/svg'>
-EOT
- 
-dragon.each { |c|
-    given(c) {
-        when ('F') {
-            printf("<line x1='%.0f' y1='%.0f' ", x, y)
-            printf("x2='%.0f' ", x += r*cos(theta))
-            printf("y2='%.0f' ", y += r*sin(theta))
-            printf("style='stroke:rgb(0,0,0);stroke-width:1'/>\n")
-        }
-        when ('+') { theta += halfpi }
-        when ('-') { theta -= halfpi }
-    }
-}
- 
-print '</svg>'
+var rules = Hash(
+    x => 'x+yF+',
+    y => '-Fx-y',
+)
+
+var lsys = LSystem(
+    width:  600,
+    height: 600,
+
+    xoff: -430,
+    yoff: -380,
+
+    len:   8,
+    angle: 90,
+    color: 'dark green',
+)
+
+lsys.execute('Fx', 11, "dragon_curve.png", rules)
 ```
 
-
-Generates a SVG image to the standard output.
+Output image: [Dragon curve](https://github.com/trizen/rc/blob/master/img/dragon_curve-sidef.png)
