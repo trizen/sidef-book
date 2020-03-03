@@ -569,6 +569,7 @@
        * [Mian-Chowla sequence](programming_tasks/M/Mian-Chowla_sequence.md)
        * [Middle three digits](programming_tasks/M/Middle_three_digits.md)
        * [Miller Rabin primality test](programming_tasks/M/Miller_Rabin_primality_test.md)
+       * [Minimum positive multiple in base 10 using only 0 and 1](programming_tasks/M/Minimum_positive_multiple_in_base_10_using_only_0_and_1.md)
        * [Modular arithmetic](programming_tasks/M/Modular_arithmetic.md)
        * [Modular exponentiation](programming_tasks/M/Modular_exponentiation.md)
        * [Modular inverse](programming_tasks/M/Modular_inverse.md)
