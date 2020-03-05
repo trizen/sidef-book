@@ -793,6 +793,7 @@
        * [Show the epoch](programming_tasks/S/Show_the_epoch.md)
        * [Sierpinski arrowhead curve](programming_tasks/S/Sierpinski_arrowhead_curve.md)
        * [Sierpinski carpet](programming_tasks/S/Sierpinski_carpet.md)
+       * [Sierpinski curve](programming_tasks/S/Sierpinski_curve.md)
        * [Sierpinski pentagon](programming_tasks/S/Sierpinski_pentagon.md)
        * [Sierpinski square curve](programming_tasks/S/Sierpinski_square_curve.md)
        * [Sierpinski triangle](programming_tasks/S/Sierpinski_triangle.md)
