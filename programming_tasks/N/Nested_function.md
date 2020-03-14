@@ -4,15 +4,15 @@
 
 ```ruby
 func make_list(separator = ') ') {
- 
+
     var count = 1
     func make_item(item) {
         [count++, separator, item].join
     }
- 
-    <first second third> «call« make_item -> join("\n")
+
+    <first second third>.map(make_item).join("\n")
 }
- 
+
 say make_list('. ')
 ```
 

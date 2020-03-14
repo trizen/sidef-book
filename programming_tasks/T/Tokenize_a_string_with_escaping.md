@@ -7,9 +7,9 @@ func tokenize(string, sep, esc) {
     var fields = string.split(
         Regex(esc.escape + '.(*SKIP)(*FAIL)|' + sep.escape, 's'), -1
     )
-    fields.map{.gsub(Regex(esc + '(.)'), {|s1| s1 }) }
+    fields.map{.gsub(Regex(esc.escape + '(.)'), {|s1| s1 }) }
 }
- 
+
 tokenize("one^|uno||three^^^^|four^^^|^cuatro|", '|', '^').each { |str|
     say str.dump
 }
@@ -17,9 +17,9 @@ tokenize("one^|uno||three^^^^|four^^^|^cuatro|", '|', '^').each { |str|
 
 #### Output:
 ```
-"one^|uno"
+"one|uno"
 ""
-"three^^^^"
-"four^^^|^cuatro"
+"three^^"
+"four^|cuatro"
 ""
 ```

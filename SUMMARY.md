@@ -600,6 +600,7 @@
        * [Natural sorting](programming_tasks/N/Natural_sorting.md)
        * [Negative base numbers](programming_tasks/N/Negative_base_numbers.md)
        * [Nested function](programming_tasks/N/Nested_function.md)
+       * [Next highest int from digits](programming_tasks/N/Next_highest_int_from_digits.md)
        * [Non-continuous subsequences](programming_tasks/N/Non-continuous_subsequences.md)
        * Non-decimal radices
            * [Convert](programming_tasks/N/Non-decimal_radices/Convert.md)
