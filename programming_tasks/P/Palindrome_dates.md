@@ -33,15 +33,15 @@ palindates.first(15).each { .strftime("%Y-%m-%d").say }
 2130-03-12
 ```
 
-Faster solution:
+Faster approach:
 
 ```ruby
-define DateCalc = frequire('Date::Calc')
-
 var palindates = gather {
     for y in (2020 .. 9999) {
         var (m, d) = Str(y).flip.last(4).split(2)...
-        take([y,m,d].join('-')) if DateCalc.check_date(y, m, d)
+        with ([y,m,d].join('-')) {|t|
+            take(t) if Date.valid(t, "%Y-%m-%d")
+        }
     }
 }
 

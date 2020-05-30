@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Primalty_by_Wilson's_theorem
+[1]: https://rosettacode.org/wiki/Primality_by_Wilson's_theorem
 
-# [Primalty by Wilson's theorem][1]
+# [Primality by Wilson's theorem][1]
 
 ```ruby
 func is_wilson_prime_slow(n) {
