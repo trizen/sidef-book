@@ -445,7 +445,6 @@
        * [Huffman coding](programming_tasks/H/Huffman_coding.md)
        * [Humble numbers](programming_tasks/H/Humble_numbers.md)
    * I
-       * [I Q Puzzle](programming_tasks/I/I_Q_Puzzle.md)
        * [IBAN](programming_tasks/I/IBAN.md)
        * [Identity matrix](programming_tasks/I/Identity_matrix.md)
        * [Imaginary base numbers](programming_tasks/I/Imaginary_base_numbers.md)
@@ -815,6 +814,7 @@
        * [Smith numbers](programming_tasks/S/Smith_numbers.md)
        * [Snake](programming_tasks/S/Snake.md)
        * [Sockets](programming_tasks/S/Sockets.md)
+       * [Solve triangle solitare puzzle](programming_tasks/S/Solve_triangle_solitare_puzzle.md)
        * [Sort a list of object identifiers](programming_tasks/S/Sort_a_list_of_object_identifiers.md)
        * [Sort an array of composite structures](programming_tasks/S/Sort_an_array_of_composite_structures.md)
        * [Sort an integer array](programming_tasks/S/Sort_an_integer_array.md)

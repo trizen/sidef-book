@@ -4,97 +4,90 @@
 
 ```ruby
 func generate_esthetic(root, upto, callback, b=10) {
- 
+
     var v = root.digits2num(b)
- 
-    if (v > upto) {
-        return nil
-    }
- 
+
+    return nil if (v > upto)
     callback(v)
- 
+
     var t = root.head
- 
+
     __FUNC__([t+1, root...], upto, callback, b) if (t+1  < b)
     __FUNC__([t-1, root...], upto, callback, b) if (t-1 >= 0)
 }
- 
-func upto_esthetic(upto, b=10) {
+
+func between_esthetic(from, upto, b=10) {
     gather {
         for k in (1..^b) {
-            generate_esthetic([k], upto, { take(_) }, b)
+            generate_esthetic([k], upto, { take(_) if (_ >= from) }, b)
         }
     }.sort
 }
- 
+
 func first_n_esthetic(n, b=10) {
- 
-    var m = n**2
- 
-    loop {
-        var list = upto_esthetic(m, b)
+    for (var m = n**2; true ; m *= b) {
+        var list = between_esthetic(1, m, b)
         return list.first(n) if (list.len >= n)
-        m *= b
     }
 }
- 
+
 for b in (2..16) {
     say "\n#{b}-esthetic numbers with indices #{4*b}..#{6*b}: "
     say first_n_esthetic(6*b, b).last(6*b - 4*b + 1).map{.base(b)}.join(' ')
 }
- 
+
 say "\nBase 10 esthetic numbers between 1,000 and 9,999:"
-upto_esthetic(9_999).grep { _ > 1_000 }.slices(20).each { .join(' ').say }
- 
+between_esthetic(1e3, 1e4).slices(20).each { .join(' ').say }
+
 say "\nBase 10 esthetic numbers between 100,000,000 and 130,000,000:"
-upto_esthetic(13e7).grep { _ > 1e8 }.slices(9).each { .join(' ').say }
+between_esthetic(1e8, 13e7).slices(9).each { .join(' ').say }
 ```
 
 #### Output:
 ```
-2-esthetic numbers with indices 8..12: 
+2-esthetic numbers with indices 8..12:
 10101010 101010101 1010101010 10101010101 101010101010
 
-3-esthetic numbers with indices 12..18: 
+3-esthetic numbers with indices 12..18:
 1210 1212 2101 2121 10101 10121 12101
 
-4-esthetic numbers with indices 16..24: 
+4-esthetic numbers with indices 16..24:
 323 1010 1012 1210 1212 1232 2101 2121 2123
 
-5-esthetic numbers with indices 20..30: 
+5-esthetic numbers with indices 20..30:
 323 343 432 434 1010 1012 1210 1212 1232 1234 2101
 
-6-esthetic numbers with indices 24..36: 
+6-esthetic numbers with indices 24..36:
 343 345 432 434 454 543 545 1010 1012 1210 1212 1232 1234
 
-7-esthetic numbers with indices 28..42: 
+7-esthetic numbers with indices 28..42:
 345 432 434 454 456 543 545 565 654 656 1010 1012 1210 1212 1232
 
-8-esthetic numbers with indices 32..48: 
+8-esthetic numbers with indices 32..48:
 432 434 454 456 543 545 565 567 654 656 676 765 767 1010 1012 1210 1212
 
-9-esthetic numbers with indices 36..54: 
+9-esthetic numbers with indices 36..54:
 434 454 456 543 545 565 567 654 656 676 678 765 767 787 876 878 1010 1012 1210
 
-10-esthetic numbers with indices 40..60: 
+10-esthetic numbers with indices 40..60:
 454 456 543 545 565 567 654 656 676 678 765 767 787 789 876 878 898 987 989 1010 1012
 
-11-esthetic numbers with indices 44..66: 
+11-esthetic numbers with indices 44..66:
 456 543 545 565 567 654 656 676 678 765 767 787 789 876 878 898 89a 987 989 9a9 a98 a9a 1010
 
-12-esthetic numbers with indices 48..72: 
+12-esthetic numbers with indices 48..72:
 543 545 565 567 654 656 676 678 765 767 787 789 876 878 898 89a 987 989 9a9 9ab a98 a9a aba ba9 bab
 
-13-esthetic numbers with indices 52..78: 
+13-esthetic numbers with indices 52..78:
 545 565 567 654 656 676 678 765 767 787 789 876 878 898 89a 987 989 9a9 9ab a98 a9a aba abc ba9 bab bcb cba
 
-14-esthetic numbers with indices 56..84: 
+14-esthetic numbers with indices 56..84:
 565 567 654 656 676 678 765 767 787 789 876 878 898 89a 987 989 9a9 9ab a98 a9a aba abc ba9 bab bcb bcd cba cbc cdc
 
-15-esthetic numbers with indices 60..90: 
+15-esthetic numbers with indices 60..90:
 567 654 656 676 678 765 767 787 789 876 878 898 89a 987 989 9a9 9ab a98 a9a aba abc ba9 bab bcb bcd cba cbc cdc cde dcb dcd
 
-16-esthetic numbers with indices 64..96: 
+16-esthetic numbers with indices 64..96:
 654 656 676 678 765 767 787 789 876 878 898 89a 987 989 9a9 9ab a98 a9a aba abc ba9 bab bcb bcd cba cbc cdc cde dcb dcd ded def edc
 
 Base 10 esthetic numbers between 1,000 and 9,999:

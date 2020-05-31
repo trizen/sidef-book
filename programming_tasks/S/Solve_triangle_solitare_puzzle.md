@@ -1,10 +1,10 @@
-[1]: http://rosettacode.org/wiki/I.Q._Puzzle
+[1]: https://rosettacode.org/wiki/Solve_triangle_solitare_puzzle
 
-# [I.Q. Puzzle][1]
+# [Solve triangle solitare puzzle][1]
 
 ```ruby
 const N = [0,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
-
+ 
 const G = [
     [ 0, 1, 3],[ 0, 2, 5],[ 1, 3, 6],
     [ 1, 4, 8],[ 2, 4, 7],[ 2, 5, 9],
@@ -13,13 +13,13 @@ const G = [
     [ 5, 9,14],[ 6, 7, 8],[ 7, 8, 9],
     [10,11,12],[11,12,13],[12,13,14],
 ]
-
+ 
 const format = ({"#{' '*(5-_)}#{'%d '*_}\n"}.map(1..5).join + "\n")
-
+ 
 func solve(n, i, g) is cached {
     i == N.end && return "Solved"
     n[g[1]] == 0 && return nil
-
+ 
     var s = given(n[g[0]]) {
         when(0) {
             n[g[2]] == 0 && return nil
@@ -30,17 +30,17 @@ func solve(n, i, g) is cached {
             "#{g[0]} to #{g[2]}\n"
         }
     }
-
+ 
     var a = n.clone
     g.each {|n| a[n] = 1-a[n] }
     var r = ''
     G.each {|g| (r = solve(a, i+1, g)) && break }
-    r ? (s + (format % (a...)) + r) : r
+    r ? (s + (format % (a...)) + r) : r
 }
-
+ 
 format.printf(N...)
-
+ 
 var r = ''
 G.each {|g| (r = solve(N, 1, g)) && break }
-say (r ? r : "No solution found")
+say (r ? r : "No solution found")
 ```
