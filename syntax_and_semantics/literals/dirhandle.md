@@ -6,7 +6,7 @@ Abstraction on a directory descriptor, to access the content of a directory:
 var dh = Dir("/my/path").open
 ```
 
-Some useful methods on FileHandle objects:
+Some useful methods on DirHandle objects:
 
 ```ruby
 dh.read                 # read one entry as a File or a Dir object

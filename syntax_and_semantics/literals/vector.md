@@ -6,6 +6,12 @@ The `Vector` built-in class (which is a child of the `Array` class), provides su
 Vector(1, 2, 3, 4, 5)
 ```
 
+Alternatively:
+
+```ruby
+%v(1 2 3 4 5)
+```
+
 ## Operations
 
 ```ruby

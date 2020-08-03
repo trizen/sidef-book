@@ -1,11 +1,16 @@
-# Complex literals
+# Complex
 
 Support for complex numbers is provided by [Math::MPC](https://metacpan.org/pod/Math::MPC), which is a Perl interface to the [MPC](http://www.multiprecision.org/mpc/) library.
 
 ```ruby
-3 + 4i          # complex: 3+4i
-3:4             # =//=
-Complex(3, 4)   # =//=
+Complex(3, 4)
+```
+
+Alternatively:
+
+```ruby
+3 + 4i
+3:4
 ```
 
 Complex numbers are deeply integrated into the language and can be used in combination with all the other Number types (with implicit propagation):
@@ -23,5 +28,3 @@ All complex numbers are Number object:
 (3 + 4i).class       # Number
 Complex(3, 4).class  # =//=
 ```
-
-See the [Number](number.md) documentation for more information.

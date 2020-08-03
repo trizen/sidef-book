@@ -1,4 +1,4 @@
-# Rational literals
+# Rational
 
 Rational numbers are built-in, using [Math::GMPq](https://metacpan.org/pod/Math::GMPq), which provides a Perl interface to the `mpq` layer in the [GMP](https://gmplib.org/) library.
 

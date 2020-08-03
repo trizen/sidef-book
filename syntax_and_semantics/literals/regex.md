@@ -6,7 +6,7 @@ A Regex object represents a regular expression, which is fully Perl5 compatible.
 /^my?\s*re(g|[ex])\z/i
 ```
 
-Alternatively, one can write:
+Alternatively:
 
 ```ruby
 Regex('^my?\s*re(g|[ex])\z', 'i')

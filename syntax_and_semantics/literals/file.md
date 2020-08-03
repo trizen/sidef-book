@@ -4,7 +4,13 @@ A File object represents the name of a local file:
 
 ```ruby
 File("/path/to/file.ext")
+```
+
+Alternatively:
+
+```ruby
 %f(/path/to/file.ext)
+%d(/path/to) + %f(file.ext)
 ```
 
 A file can be opened for reading or writing, using the `open_r` and `open_w` methods, respectively:

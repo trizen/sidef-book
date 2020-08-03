@@ -9,6 +9,12 @@ Matrix(
 )
 ```
 
+Alternatively:
+
+```ruby
+%m(1 2; 3 4)
+```
+
 ## Operations
 
 A subset of `Matrix` operations are included in the following example:

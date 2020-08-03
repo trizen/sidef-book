@@ -1,4 +1,4 @@
-# Float literals
+# Float
 
 In Sidef, all literal numbers are specially parsed and converted implicitly into a rational number, which are internally represented by [Math::GMPz](https://metacpan.org/pod/Math::GMPz) and [Math::GMPq](https://metacpan.org/pod/Math::GMPq).
 
