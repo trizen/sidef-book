@@ -141,27 +141,44 @@ x += 10            # adds 10 to "x"
 say x              # prints: 15
 ```
 
-## Special variables
-
-Currently, there are only four real predefined variables:
-
-* `ARGV`: Special `Array` that contains the program's command-line arguments, that were not given to Sidef.
-* `ENV` : Writable `Hash` copy of environment variables and their values when the program was started.
-* `ARGF`: Special `FileHandle` object used to read lines from argument-files or from `STDIN` when no argument has been specified.
-* `DATA`: Special `FileHandle` object that points to the data stored after the `__END__` or `__DATA__` tokens.
+The special operator `:=` (also available as `\\=`), assigns a value to a variable if the current value of the variable is `nil`:
 
 ```ruby
-ARGV.each { |arg|
-  say arg
-}
+var x = nil
+x := 42           # assigns 42 to x if x is nil
+x := 99           # x is already defined
+say x             #=> 42
+```
 
+The defined-or operator `\\` can be used for checking if a variable is defined or not:
+
+```ruby
+var x = nil         # nil represents an undefined value
+say defined(x)      # prints 'false'
+
+x \\ say 'undefined'        # prints 'undefined'
+x \\= 99                    # sets x to 99
+x \\ say 'undefined'        # no longer prints 'undefined'
+```
+
+## Special identitiers
+
+* `ARGV` is an Array that contains the program's command-line arguments, that were not given to Sidef.
+* `ENV` is an Hash copy of environment variables and their values when the program was started.
+* `ARGF` is a FileHandle object used to read lines from argument-files or from `STDIN` when no argument has been specified.
+* `DATA` is a FileHandle object that points to the data stored after the `__END__` or `__DATA__` tokens.
+
+```ruby
+say ARGV        # command-line arguments
 say ENV{:HOME}  # get an environment variable
 
-ARGF.lines { |line|
-  say line
+ARGF.each { |line|     # cat-like program
+    say line
 }
 
-say DATA        # prints: "hello\nworld"
+DATA.each {|line|       # iterate over lines in __DATA__
+    say line
+}
 
 __DATA__
 hello

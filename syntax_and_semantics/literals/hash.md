@@ -27,9 +27,40 @@ hash{"age"} = 6
 say hash
 ```
 
+## Hash of Arrays
+
+The idiom `hash{key} := [] << value` can be used for creating an hash of arrays, as illustrated in the example below:
+
+```ruby
+var hash = Hash()
+
+for p in (primes(100)) {
+    for d in (divisors(p-1)) {
+        if (powmod(2, d, p) == 1) {
+            hash{d} := [] << p
+        }
+    }
+}
+
+say hash.grep_v { .len > 1 }
+```
+
+which outputs:
+
+```
+Hash(
+    "10" => [11, 31],
+    "11" => [23, 89],
+    "18" => [19, 73],
+    "22" => [23, 89],
+    "36" => [37, 73]
+)
+```
+
 ## Existent key
 
-A key can be checked if it exists in a hash using the syntax: `hash.exists(key)`.
+A key can be checked if it exists in a hash using the syntax: `hash.has(key)`.
+
 
 ## Deleting a key
 
