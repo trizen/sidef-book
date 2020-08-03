@@ -34,7 +34,7 @@ Sidef is a modern, high-level, general-purpose programming language, inspired by
 ### WWW
 
 * Github: https://github.com/trizen/sidef
-* Gitbook: https://trizen.gitbooks.io/sidef-lang
+* Gitbook: https://trizen.gitbook.io/sidef-lang/ ([legacy](https://trizen.gitbooks.io/sidef-lang))
 * RosettaCode: https://rosettacode.org/wiki/Sidef
 
 ### LICENSE AND COPYRIGHT
