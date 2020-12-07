@@ -1,6 +1,6 @@
-[1]: http://rosettacode.org/wiki/Sum_and_Product_Puzzle
+[1]: https://rosettacode.org/wiki/Sum_and_product_puzzle
 
-# [Sum and Product Puzzle][1]
+# [Sum and product puzzle][1]
 
 ```ruby
 func grep_uniq(a, by) { a.group_by{ .(by) }.values.grep{.len == 1}.map{_[0]} }

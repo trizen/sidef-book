@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Substitution_Cipher
+[1]: https://rosettacode.org/wiki/Substitution_cipher
 
-# [Substitution Cipher][1]
+# [Substitution cipher][1]
 
 ```ruby
 module SubstitutionCipher {

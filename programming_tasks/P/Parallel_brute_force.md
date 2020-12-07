@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Parallel_Brute_Force
+[1]: https://rosettacode.org/wiki/Parallel_brute_force
 
-# [Parallel Brute Force][1]
+# [Parallel brute force][1]
 
 ```ruby
 func invert_sha256(hash) {

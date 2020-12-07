@@ -1,6 +1,6 @@
-[1]: http://rosettacode.org/wiki/Same_Fringe
+[1]: https://rosettacode.org/wiki/Same_fringe
 
-# [Same Fringe][1]
+# [Same fringe][1]
 
 ```ruby
 var trees = [

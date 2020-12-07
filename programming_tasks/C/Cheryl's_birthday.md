@@ -1,0 +1,39 @@
+[1]: https://rosettacode.org/wiki/Cheryl%27s_birthday
+
+# [Cheryl's birthday][1]
+
+```ruby
+func f(day, month) {
+    Date.parse("#{day} #{month}", "%d %B")
+}
+
+var dates = [
+    f(15, "May"),
+    f(16, "May"),
+    f(19, "May"),
+    f(17, "June"),
+    f(18, "June"),
+    f(14, "July"),
+    f(16, "July"),
+    f(14, "August"),
+    f(15, "August"),
+    f(17, "August")
+]
+ 
+var filtered = dates.grep {
+    dates.grep {
+        dates.map{ .day }.count(.day) == 1
+    }.map{ .month }.count(.month) != 1
+}
+ 
+var birthday = filtered.grep {
+    filtered.map{ .day }.count(.day) == 1
+}.group_by{ .month }.values.first_by { .len == 1 }[0]
+ 
+say "Cheryl's birthday is #{birthday.fullmonth} #{birthday.day}."
+```
+
+#### Output:
+```
+Cheryl's birthday is July 16.
+```

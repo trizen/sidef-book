@@ -1,6 +1,6 @@
-[1]: http://rosettacode.org/wiki/Longest_Common_Substring
+[1]: https://rosettacode.org/wiki/Longest_common_substring
 
-# [Longest Common Substring][1]
+# [Longest common substring][1]
 
 ```ruby
 func createSubstrings(String word) -> Array {
@@ -10,11 +10,11 @@ func createSubstrings(String word) -> Array {
     })
   }
 }
-
+ 
 func findLongestCommon(String first, String second) -> String {
     createSubstrings(first) & createSubstrings(second) -> max_by { .len }
 }
-
+ 
 say findLongestCommon("thisisatest", "testing123testing")
 ```
 

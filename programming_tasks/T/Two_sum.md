@@ -1,6 +1,6 @@
-[1]: http://rosettacode.org/wiki/Two_Sum
+[1]: https://rosettacode.org/wiki/Two_sum
 
-# [Two Sum][1]
+# [Two sum][1]
 
 ```ruby
 func two_sum(numbers, sum) {

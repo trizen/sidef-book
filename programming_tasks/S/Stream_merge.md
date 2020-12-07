@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Stream_Merge
+[1]: https://rosettacode.org/wiki/Stream_merge
 
-# [Stream Merge][1]
+# [Stream merge][1]
 
 ```ruby
 func merge_streams(streams) {

@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Department_Numbers
+[1]: https://rosettacode.org/wiki/Department_numbers
 
-# [Department Numbers][1]
+# [Department numbers][1]
 
 ```ruby
 @(1..7)->combinations(3, {|*a|

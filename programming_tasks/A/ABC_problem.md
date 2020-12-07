@@ -1,6 +1,6 @@
-[1]: http://rosettacode.org/wiki/ABC_Problem
+[1]: https://rosettacode.org/wiki/ABC_problem
 
-# [ABC Problem][1]
+# [ABC problem][1]
 
 ```ruby
 func can_make_word(word, blocks) {

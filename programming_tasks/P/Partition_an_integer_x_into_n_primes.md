@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Partition_an_integer_X_into_N_primes
+[1]: https://rosettacode.org/wiki/Partition_an_integer_x_into_n_primes
 
-# [Partition an integer X into N primes][1]
+# [Partition an integer x into n primes][1]
 
 ```ruby
 func prime_partition(num, parts) {

@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/First_perfect_square_in_base_N_with_N_unique_digits
+[1]: https://rosettacode.org/wiki/First_perfect_square_in_base_n_with_n_unique_digits
 
-# [First perfect square in base N with N unique digits][1]
+# [First perfect square in base n with n unique digits][1]
 
 ```ruby
 func first_square(b) {

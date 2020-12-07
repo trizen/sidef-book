@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Approximate_Equality
+[1]: https://rosettacode.org/wiki/Approximate_equality
 
-# [Approximate Equality][1]
+# [Approximate equality][1]
 
 Two values can be compared for approximate equality by using the built-in operator **≅**, available in ASCII as **=~=**, which does approximate comparison by rounding both operands at **(PREC&gt;&gt;2)-1** decimals. However, by default, Sidef uses a floating-point precision of 192 bits.
 

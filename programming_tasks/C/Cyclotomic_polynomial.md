@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Cyclotomic_Polynomial
+[1]: https://rosettacode.org/wiki/Cyclotomic_polynomial
 
-# [Cyclotomic Polynomial][1]
+# [Cyclotomic polynomial][1]
 
 Solution based on polynomial interpolation (slow).
 

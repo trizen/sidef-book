@@ -1,11 +1,11 @@
-[1]: http://rosettacode.org/wiki/Ordered_Partitions
+[1]: https://rosettacode.org/wiki/Ordered_partitions
 
-# [Ordered Partitions][1]
+# [Ordered partitions][1]
 
 ```ruby
 func part(_,    {.is_empty}) { [[]] }
 func partitions({.is_empty}) { [[]] }
-
+ 
 func part(s, args) {
   gather {
     s.combinations(args[0], { |*c|
@@ -13,11 +13,11 @@ func part(s, args) {
     })
   }
 }
-
+ 
 func partitions(args) {
   part(@(1..args.sum), args)
 }
-
+ 
 [[],[0,0,0],[1,1,1],[2,0,2]].each { |test_case|
   say "partitions #{test_case}:"
   partitions(test_case).each{|part| say part }

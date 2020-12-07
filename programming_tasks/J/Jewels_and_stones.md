@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Jewels_and_Stones
+[1]: https://rosettacode.org/wiki/Jewels_and_stones
 
-# [Jewels and Stones][1]
+# [Jewels and stones][1]
 
 ```ruby
 func countJewels(s, j) {

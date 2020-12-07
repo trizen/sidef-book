@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/XML_Validation
+[1]: https://rosettacode.org/wiki/XML_validation
 
-# [XML Validation][1]
+# [XML validation][1]
 
 ```ruby
 require('XML::LibXML')

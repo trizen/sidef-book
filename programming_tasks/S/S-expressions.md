@@ -1,29 +1,32 @@
-[1]: http://rosettacode.org/wiki/S-Expressions
+[1]: https://rosettacode.org/wiki/S-expressions
 
-# [S-Expressions][1]
+# [S-expressions][1]
 
 ```ruby
-var t = frequire('Text::Balanced')
-
 func sexpr(txt) {
     txt.trim!
 
-    var m = txt.match(/^\((.*)\)$/s) || die "Invalid: <<#{txt}>>"
-    txt = m[0]
+    if (txt.match(/^\((.*)\)$/s)) {|m|
+        txt = m[0]
+    }
+    else {
+        die "Invalid: <<#{txt}>>"
+    }
 
     var w
     var ret = []
+
     while (!txt.is_empty) {
         given (txt.first) {
             when('(') {
-                (w, txt) = t.extract_bracketed(txt, '()');
+                (w, txt) = txt.extract_bracketed('()');
                 w = sexpr(w)
             }
             when ('"') {
-                (w, txt) = t.extract_delimited(txt, '"')
+                (w, txt) = txt.extract_delimited('"')
                 w.sub!(/^"(.*)"/, {|s1| s1 })
             }
-            default {
+            else {
                 txt.sub!(/^(\S+)/, {|s1| w = s1; '' })
             }
         }

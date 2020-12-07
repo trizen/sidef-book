@@ -1,6 +1,6 @@
-[1]: http://rosettacode.org/wiki/99_Bottles_of_Beer
+[1]: https://rosettacode.org/wiki/99_bottles_of_beer
 
-# [99 Bottles of Beer][1]
+# [99 bottles of beer][1]
 
 ```ruby
 for i in (100 ^.. 0) {
@@ -14,7 +14,7 @@ for i in (100 ^.. 0) {
 ```
 
 
-*Simpler:*
+**Simpler:**
 
 ```ruby
 for n in (100 ^.. 2) {
