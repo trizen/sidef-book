@@ -468,6 +468,7 @@
        * [Integer sequence](programming_tasks%2FI%2FInteger_sequence.md)
        * [Interactive programming](programming_tasks%2FI%2FInteractive_programming.md)
        * [Inverted syntax](programming_tasks%2FI%2FInverted_syntax.md)
+       * [Isqrt integer square root of X](programming_tasks%2FI%2FIsqrt_integer_square_root_of_X.md)
        * [Iterated digits squaring](programming_tasks%2FI%2FIterated_digits_squaring.md)
    * J
        * [Jacobi symbol](programming_tasks%2FJ%2FJacobi_symbol.md)
