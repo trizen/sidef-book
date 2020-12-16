@@ -3,20 +3,20 @@
 # [Exceptions/Catch an exception thrown in a nested call][1]
 
 ```ruby
-func baz(i) { die "U#{i}" };
-func bar(i) { baz(i)      };
+func baz(i) { die "U#{i}" }
+func bar(i) { baz(i)      }
  
 func foo {
     [0, 1].each { |i|
         try   { bar(i) }
-        catch { |_, msg|
+        catch { |msg|
             msg ~~ /^U0/ ? say "Function foo() caught exception U0"
-                         : die msg;       # re-raise the exception
-        };
+                         : die msg       # re-raise the exception
+        }
     }
 }
  
-foo();
+foo()
 ```
 
 #### Output:

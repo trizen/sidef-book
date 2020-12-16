@@ -6,22 +6,20 @@ An exception is thrown by the _die_ keyword, which, if not caught, it terminates
 
 ```ruby
 try  {
-    die "I'm dead!";        # throws an exception of type 'error'
+    die "I'm dead!"        # throws an exception
 }
-catch { |type, msg|
-    say "type: #{type}";    # type: error
-    say "msg: #{msg}";      # msg: I'm dead! at test.sf line 2.
+catch { |msg|
+    say "msg: #{msg}"      # msg: I'm dead! at test.sf line 2.
 };
  
-say "I'm alive...";
-die "Now I'm dead!";        # this line terminates the program
-say "Or am I?";             # Yes, you are!
+say "I'm alive..."
+die "Now I'm dead!"        # this line terminates the program
+say "Or am I?"             # Yes, you are!
 ```
 
 #### Output:
 ```
-type: error
 msg: I'm dead! at test.sf line 2.
 I'm alive...
-Now I'm dead! at test.sf line 10.
+Now I'm dead! at test.sf line 9.
 ```
