@@ -10,7 +10,7 @@ try  {
 }
 catch { |msg|
     say "msg: #{msg}"      # msg: I'm dead! at test.sf line 2.
-};
+}
  
 say "I'm alive..."
 die "Now I'm dead!"        # this line terminates the program

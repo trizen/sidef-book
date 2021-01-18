@@ -649,6 +649,7 @@
            * [Shunting-yard algorithm](programming_tasks%2FP%2FParsing%2FShunting-yard_algorithm.md)
        * [Partial function application](programming_tasks%2FP%2FPartial_function_application.md)
        * [Partition an integer x into n primes](programming_tasks%2FP%2FPartition_an_integer_x_into_n_primes.md)
+       * [Partition function P](programming_tasks%2FP%2FPartition_function_P.md)
        * [Pascal's triangle](programming_tasks/P/Pascal's_triangle.md)
            * [Puzzle](programming_tasks%2FP%2FPascal%27s_triangle%2FPuzzle.md)
        * [Pascal matrix generation](programming_tasks%2FP%2FPascal_matrix_generation.md)
