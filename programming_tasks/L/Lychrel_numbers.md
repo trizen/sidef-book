@@ -9,41 +9,41 @@ var (
     seeds = [],
     max = 500,
 )
- 
+
 for i in (1 .. 10_000) {
     var (test = [], count = 0)
- 
+
     func lychrel(l) {
         count++ > max && return true
-        test << (var m = (l + Num(Str(l).flip)))
-        Str(m).is_palindrome && return false
+        test << (var m = (l + l.flip))
+        m.is_palindrome && return false
         lychrel(m)
     }
- 
+
     if (lychrel(i)) {
         lychrels << Pair(Str(i), test)
     }
 }
- 
+
 seeds << lychrels[0]
- 
+
 for l in lychrels {
     if (l.key.is_palindrome) {
         palindromes << l.key
     }
- 
+
     var h = Hash()
     h.set_keys(l.value...)
- 
+
     var trial = seeds.count_by { |s|
-        s.value.any { |k| h.contains(k) } ? break : true
+        s.value.any { |k| h.contains(k) } ? break : true
     }
- 
+
     if (trial == seeds.len) {
         seeds << l
     }
 }
- 
+
 say ("   Number of Lychrel seed numbers < 10_000: ", seeds.len)
 say ("             Lychrel seed numbers < 10_000: ", seeds.map{.key}.join(', '))
 say ("Number of Lychrel related numbers < 10_000: ", lychrels.len - seeds.len)

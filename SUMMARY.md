@@ -705,6 +705,10 @@
        * [Program name](programming_tasks%2FP%2FProgram_name.md)
        * [Program termination](programming_tasks%2FP%2FProgram_termination.md)
        * [Proper divisors](programming_tasks%2FP%2FProper_divisors.md)
+       * Pseudo-random numbers
+           * [PCG32](programming_tasks%2FP%2FPseudo-random_numbers%2FPCG32.md)
+           * [Splitmix64](programming_tasks%2FP%2FPseudo-random_numbers%2FSplitmix64.md)
+           * [Xorshift star](programming_tasks%2FP%2FPseudo-random_numbers%2FXorshift_star.md)
        * [Pythagoras tree](programming_tasks%2FP%2FPythagoras_tree.md)
        * [Pythagorean quadruples](programming_tasks%2FP%2FPythagorean_quadruples.md)
        * [Pythagorean triples](programming_tasks%2FP%2FPythagorean_triples.md)
