@@ -1,27 +1,27 @@
-[1]: http://rosettacode.org/wiki/Jaro_distance
+[1]: https://rosettacode.org/wiki/Jaro_similarity
 
-# [Jaro distance][1]
+# [Jaro similarity][1]
 
 ```ruby
 func jaro(s, t) {
-
+ 
     return 1 if (s == t)
-
+ 
     var s_len = s.len
     var t_len = t.len
-
+ 
     var match_distance = ((s_len `max` t_len) // 2 - 1)
-
+ 
     var s_matches = []
     var t_matches = []
-
+ 
     var matches = 0
     var transpositions = 0
-
+ 
     for i (^s_len) {
         var start = (0 `max` i-match_distance)
         var end = (i+match_distance `min` t_len-1)
-
+ 
         for k (start..end) {
             t_matches[k] && next
             s[i] == t[k] || next
@@ -31,9 +31,9 @@ func jaro(s, t) {
             break
         }
     }
-
+ 
     return 0 if (matches == 0)
-
+ 
     var k = 0
     for i (^s_len) {
         s_matches[i] || next
@@ -41,18 +41,18 @@ func jaro(s, t) {
         s[i] == t[k] || ++transpositions
         ++k
     }
-
+ 
     ((matches / s_len) +
       (matches / t_len) +
         ((matches - transpositions/2) / matches)) / 3
 }
-
+ 
 for pair in [
     [%c"MARTHA",    %c"MARHTA"],
     [%c"DIXON",     %c"DICKSONX"],
     [%c"JELLYFISH", %c"SMELLYFISH"],
 ] {
-    say "jaro(#{pair.map{.join.dump}.join(', ')}) = #{'%.10f' % jaro(pair...)}"
+    say "jaro(#{pair.map{.join.dump}.join(', ')}) = #{'%.10f' % jaro(pair...)}"
 }
 ```
 
