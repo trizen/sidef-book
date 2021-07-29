@@ -4,38 +4,40 @@
 
 ```ruby
 func primes_with_one_odd_digit(upto, base = 10) {
- 
+
     var list = []
     var digits = @(^base)
- 
+
     var even_digits = digits.grep { .is_even }
-    var odd_digits  = digits.grep { .is_odd }
- 
+    var odd_digits  = digits.grep { .is_odd && .is_coprime(base) }
+
+    list << digits.grep { .is_odd && .is_prime && !.is_coprime(base) }...
+
     for k in (0 .. upto.len(base)-1) {
         even_digits.variations_with_repetition(k, {|*a|
             next if (a.last == 0)
             break if ([1, a...].digits2num(base) > upto)
             odd_digits.each {|d|
                 var n = [d, a...].digits2num(base)
-                list << n if ((n <= upto) && n.is_prime)
+                list << n if n.is_prime
             }
         })
     }
- 
+
     list.sort
 }
- 
+
 with (1e3) {|n|
-    var list = primes_with_one_odd_digit(1000)
+    var list = primes_with_one_odd_digit(n)
     say "There are #{list.len} primes under #{n.commify} which contain only one odd digit:"
     list.each_slice(9, {|*a| say a.map { '%3s' % _ }.join(' ') })
 }
- 
+
 say ''
- 
+
 for k in (1..8) {
     var count = primes_with_one_odd_digit(10**k).len
-    say "There are #{'%6s' % count.commify} such primes <= 10^#{k}"
+    say "There are #{'%6s' % count.commify} such primes <= 10^#{k}"
 }
 ```
 
