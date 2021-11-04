@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Primes_which_sum_of_digits_is_25
+[1]: https://rosettacode.org/wiki/Primes_whose_sum_of_digits_is_25
 
-# [Primes which sum of digits is 25][1]
+# [Primes whose sum of digits is 25][1]
 
 Simple solution:
 

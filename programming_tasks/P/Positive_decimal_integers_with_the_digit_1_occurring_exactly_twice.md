@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Numbers_n_in_which_number_1_occur_twice
+[1]: https://rosettacode.org/wiki/Positive_decimal_integers_with_the_digit_1_occurring_exactly_twice
 
-# [Numbers n in which number 1 occur twice][1]
+# [Positive decimal integers with the digit 1 occurring exactly twice][1]
 
 ```ruby
 say (1..1000 -> grep { .digits.count { _ == 1 } == 2 })

@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Consecutive_primes_with_ascending_or_descending_dfferences
+[1]: https://rosettacode.org/wiki/Consecutive_primes_with_ascending_or_descending_differences
 
-# [Consecutive primes with ascending or descending dfferences][1]
+# [Consecutive primes with ascending or descending differences][1]
 
 ```ruby
 func runs(f, arr) {

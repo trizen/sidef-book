@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Numbers_which_count_of_divisors_is_prime
+[1]: https://rosettacode.org/wiki/Numbers_whose_count_of_divisors_is_prime
 
-# [Numbers which count of divisors is prime][1]
+# [Numbers whose count of divisors is prime][1]
 
 ```ruby
 var limit = 100_000
