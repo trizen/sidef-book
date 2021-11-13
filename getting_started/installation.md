@@ -52,9 +52,3 @@ If the installation succeeded, the `sidef` command should be available:
 ```console
 $ sidef -h
 ```
-
-If the installation succeeded, you should be able to run the `sidef` command:
-
-```console
-$ sidef -h
-```
