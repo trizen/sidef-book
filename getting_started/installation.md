@@ -38,6 +38,25 @@ $ make test
 # make install
 ```
 
+## Linux installation
+
+### Arch Linux
+
+Sidef is available on the [AUR](https://aur.archlinux.org/packages/sidef) and can be installed using an AUR helper, like [trizen](https://github.com/trizen/trizen):
+
+```console
+$ trizen -S sidef
+```
+
+### Debian / Ubuntu / Linux Mint
+
+On Debian-based distributions, Sidef can be installed from the [CPAN](https://metacpan.org/dist/Sidef), by executing the following commands:
+
+```console
+$ sudo apt install libgmp-dev libmpfr-dev libmpc-dev libc-dev cpanminus
+$ sudo cpanm -n Sidef
+```
+
 ## Android installation
 
 It's also possible to install Sidef on Android, by installing [Termux](https://f-droid.org/en/packages/com.termux/) and executing the following commands:
