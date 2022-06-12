@@ -853,6 +853,7 @@
        * [Reverse a string](programming_tasks%2FR%2FReverse_a_string.md)
        * [Reverse the gender of a string](programming_tasks%2FR%2FReverse_the_gender_of_a_string.md)
        * [Reverse words in a string](programming_tasks%2FR%2FReverse_words_in_a_string.md)
+       * [Rhonda numbers](programming_tasks%2FR%2FRhonda_numbers.md)
        * [Rock-paper-scissors](programming_tasks%2FR%2FRock-paper-scissors.md)
        * Roman numerals
            * [Decode](programming_tasks%2FR%2FRoman_numerals%2FDecode.md)
