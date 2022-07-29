@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Deming's_Funnel
+[1]: https://rosettacode.org/wiki/Deming%27s_funnel
 
-# [Deming's Funnel][1]
+# [Deming's funnel][1]
 
 ```ruby
 func x̄(a) {

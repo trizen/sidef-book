@@ -29,7 +29,7 @@ say 42.kind_of(Number)          #=> true
 say sqrt(-1).kind_of(Number)    #=> true
 ```
 
-Additionally, the `Number` type can be used for constructing new Number objects:
+Additionally, the `Number` class can be used for constructing new Number objects:
 
 ```ruby
 Number("1234.52")         # set decimal number

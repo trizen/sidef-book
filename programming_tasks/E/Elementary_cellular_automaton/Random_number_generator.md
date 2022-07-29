@@ -1,6 +1,6 @@
-[1]: http://rosettacode.org/wiki/Elementary_cellular_automaton/Random_Number_Generator
+[1]: https://rosettacode.org/wiki/Elementary_cellular_automaton/Random_number_generator
 
-# [Elementary cellular automaton/Random Number Generator][1]
+# [Elementary cellular automaton/Random number generator][1]
 
 ```ruby
 var auto = Automaton(30, [1] + 100.of(0));

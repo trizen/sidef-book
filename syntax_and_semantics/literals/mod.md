@@ -18,6 +18,7 @@ a /= 17             # Mod(1, 19)
 
 say a               # Mod(1, 19)
 say (a == 1)        # true
+say (a == 20)       # true
 
 a -= 43             # Mod(15, 19)
 

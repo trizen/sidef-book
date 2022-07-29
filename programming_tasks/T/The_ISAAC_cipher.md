@@ -1,27 +1,27 @@
-[1]: http://rosettacode.org/wiki/The_ISAAC_Cipher
+[1]: https://rosettacode.org/wiki/The_ISAAC_cipher
 
-# [The ISAAC Cipher][1]
+# [The ISAAC cipher][1]
 
 ```ruby
 require('Math::Random::ISAAC')
-
+ 
 func xor_isaac(key, msg) {
   var rng = %O<Math::Random::ISAAC>.new(unpack('C*', key))
-
+ 
   msg.chars»ord()»                                          \
-    -> »^« 256.of{ rng.irand % 95 + 32 }.last(msg.len).flip \
-    -> «%« '%02X' -> join
+    -> »^« 256.of{ rng.irand % 95 + 32 }.last(msg.len).flip \
+    -> «%« '%02X' -> join
 }
-
+ 
 var msg = 'a Top Secret secret'
 var key = 'this is my secret key'
-
+ 
 var enc = xor_isaac(key, msg)
 var dec = xor_isaac(key, pack('H*', enc))
-
+ 
 say "Message: #{msg}"
-say "Key    : #{key}"
-say "XOR    : #{enc}"
+say "Key    : #{key}"
+say "XOR    : #{enc}"
 say "XOR dcr: #{pack('H*', dec)}"
 ```
 

@@ -16,13 +16,13 @@ Alternatively:
 Complex numbers are deeply integrated into the language and can be used in combination with all the other Number types (with implicit propagation):
 
 ```ruby
-sqrt(-1)        # i
+sqrt(-1)        # 1i
 log(-1)         # 3.14159265358979323846264338327950288419716939938i
 4 + sqrt(-1)    # 4+i
 (3+4i)**2       # -7+24i
 ```
 
-All complex numbers are Number object:
+All complex numbers are Number objects:
 
 ```ruby
 (3 + 4i).class       # Number
