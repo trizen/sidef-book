@@ -12,7 +12,7 @@ goto :INCR if (i < 10)
 say "Program Completed."
 ```
 
-#### Output:
+#### Output
 
 ```
 1 squared = 1

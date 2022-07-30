@@ -12,7 +12,7 @@ Alternatively, one can write:
 Array(123, "abc", true, nil)
 ```
 
-## Working with arrays:
+## Working with arrays
 
 Elements of an array can be accessed with the special syntax `array[i]` where `i` is a zero-based index inside the array.
 
