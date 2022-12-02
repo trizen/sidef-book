@@ -2,53 +2,20 @@
 
 # [Cyclotomic polynomial][1]
 
-Solution based on polynomial interpolation (slow).
+Built-in:
 
 ```ruby
-var Poly = require('Math::Polynomial')
-Poly.string_config(Hash(fold_sign => true, prefix => "", suffix => ""))
- 
-func poly_interpolation(v) {
-    v.len.of {|n| v.len.of {|k| n**k } }.msolve(v)
-}
- 
 say "First 30 cyclotomic polynomials:"
 for k in (1..30) {
-    var a = (k+1).of { cyclotomic(k, _) }
-    var Φ = poly_interpolation(a)
-    say ("Φ(#{k}) = ", Poly.new(Φ...))
+    say ("Φ(#{k}) = ", cyclotomic(k))
 }
- 
+
 say "\nSmallest cyclotomic polynomial with n or -n as a coefficient:"
-for n in (1..10) {  # very slow
+for n in (1..10) {  # slow
     var k = (1..Inf -> first {|k|
-        poly_interpolation((k+1).of { cyclotomic(k, _) }).first { .abs == n }
+        cyclotomic(k).coeffs.any { .tail.abs == n }
     })
     say "Φ(#{k}) has coefficient with magnitude #{n}"
-}
-```
-
-
-Slightly faster solution, using the **Math::Polynomial::Cyclotomic** Perl module.
-
-```ruby
-var Poly = require('Math::Polynomial')
-           require('Math::Polynomial::Cyclotomic')
- 
-Poly.string_config(Hash(fold_sign => true, prefix => "", suffix => ""))
- 
-say "First 30 cyclotomic polynomials:"
-for k in (1..30) {
-    say ("Φ(#{k}) = ", Poly.new.cyclotomic(k))
-}
- 
-say "\nSmallest cyclotomic polynomial with n or -n as a coefficient:"
-for n in (1..10) {
-    var p = Poly.new
-    var k = (1..Inf -> first {|k|
-        [p.cyclotomic(k).coeff].first { .abs == n }
-    })
-    say "Φ(#{k}) has coefficient with magnitude = #{n}"
 }
 ```
 
