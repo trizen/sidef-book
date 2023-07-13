@@ -21,8 +21,8 @@ func Ramer_Douglas_Peucker(Arr points { .all { .len > 1 } }, ε = 1) {
  
     if (d.max > ε) {
         var i = d.index(d.max)
-        return [Ramer_Douglas_Peucker(points.ft(0, i), ε).ft(0, -2)...,
-                Ramer_Douglas_Peucker(points.ft(i),    ε)...]
+        return [Ramer_Douglas_Peucker(points.first(i), ε).first(-1)...,
+                Ramer_Douglas_Peucker(points.slice(i), ε)...]
     }
  
     return [points[0,-1]]

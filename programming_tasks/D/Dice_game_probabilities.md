@@ -11,18 +11,18 @@ func combos(sides, n) {
     }
     return ret
 }
- 
+
 func winning(sides1, n1, sides2, n2) {
     var (p1, p2) = (combos(sides1, n1), combos(sides2, n2))
     var (win,loss,tie) = (0,0,0)
     p1.each_kv { |i, x|
-        win  += x*p2.ft(0,i-1).sum
-        tie  += x*p2.ft(i, i).sum
-        loss += x*p2.ft(i+1).sum
+        win  += x*p2.first(i).sum
+        tie  += x*p2.slice(i).first(1).sum
+        loss += x*p2.slice(i+1).sum
     }
     [win, tie, loss] »/» p1.sum*p2.sum
 }
- 
+
 func display_results(String title, Array res) {
     say "=> #{title}"
     for name, prob in (%w(p₁\ win tie p₂\ win) ~Z res) {
@@ -30,7 +30,7 @@ func display_results(String title, Array res) {
     }
     print "\n"
 }
- 
+
 display_results('9D4 vs 6D6',  winning(range(1, 4), 9, range(1,6), 6))
 display_results('5D10 vs 6D7', winning(range(1,10), 5, range(1,7), 6))
 ```

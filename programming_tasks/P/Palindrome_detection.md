@@ -29,7 +29,7 @@ func palindrome(s) {
         false
     }
     else {
-        __FUNC__(s.ft(1, -2))
+        __FUNC__(s.first(-1).last(-1))
     }
 }
 ```

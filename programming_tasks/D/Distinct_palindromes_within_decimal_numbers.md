@@ -6,16 +6,16 @@
 func palindromes(arr) {
     gather {
         for a in (0..arr.end), b in (a .. arr.end) {
-            var sublist = arr.ft(a, b)
+            var sublist = arr.items(a..b -> ...)
             take(sublist) if (sublist == sublist.flip)
         }
     }.uniq
 }
- 
+
 for n in (100..125) {
     say "#{n} -> #{palindromes(n.digits).sort.map{.join}.sort_by{.len}.join(' ')}"
 }
- 
+
 [9, 169, 12769, 1238769, 123498769, 12346098769, 1234572098769,
  123456832098769, 12345679432098769, 1234567905432098769, 123456790165432098769,
  83071934127905179083, 1320267947849490361205695, "amanaplanacanalpanama"].each {|n|
@@ -53,18 +53,18 @@ for n in (100..125) {
 123 -> 1 2 3
 124 -> 1 2 4
 125 -> 1 2 5
-                        9 has  0 palindromes of length 2 or more: 
-                      169 has  0 palindromes of length 2 or more: 
-                    12769 has  0 palindromes of length 2 or more: 
-                  1238769 has  0 palindromes of length 2 or more: 
-                123498769 has  0 palindromes of length 2 or more: 
-              12346098769 has  0 palindromes of length 2 or more: 
-            1234572098769 has  0 palindromes of length 2 or more: 
-          123456832098769 has  0 palindromes of length 2 or more: 
-        12345679432098769 has  0 palindromes of length 2 or more: 
-      1234567905432098769 has  0 palindromes of length 2 or more: 
-    123456790165432098769 has  0 palindromes of length 2 or more: 
-     83071934127905179083 has  0 palindromes of length 2 or more: 
+                        9 has  0 palindromes of length 2 or more:
+                      169 has  0 palindromes of length 2 or more:
+                    12769 has  0 palindromes of length 2 or more:
+                  1238769 has  0 palindromes of length 2 or more:
+                123498769 has  0 palindromes of length 2 or more:
+              12346098769 has  0 palindromes of length 2 or more:
+            1234572098769 has  0 palindromes of length 2 or more:
+          123456832098769 has  0 palindromes of length 2 or more:
+        12345679432098769 has  0 palindromes of length 2 or more:
+      1234567905432098769 has  0 palindromes of length 2 or more:
+    123456790165432098769 has  0 palindromes of length 2 or more:
+     83071934127905179083 has  0 palindromes of length 2 or more:
 1320267947849490361205695 has  3 palindromes of length 2 or more: 202 494 949
     amanaplanacanalpanama has 12 palindromes of length 2 or more: aca ama ana nacan anacana lanacanal planacanalp aplanacanalpa naplanacanalpan anaplanacanalpana manaplanacanalpanam amanaplanacanalpanama
 ```

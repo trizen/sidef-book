@@ -8,8 +8,8 @@ func lcs(xstr, ystr) is cached {
     xstr.is_empty && return xstr
     ystr.is_empty && return ystr
  
-    var(x, xs, y, ys) = (xstr.ft(0,0), xstr.ft(1),
-                         ystr.ft(0,0), ystr.ft(1))
+    var(x, xs, y, ys) = (xstr.first(1), xstr.slice(1),
+                         ystr.first(1), ystr.slice(1))
  
     if (x == y) {
         x + lcs(xs, ys)

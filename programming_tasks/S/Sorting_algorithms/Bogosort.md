@@ -6,7 +6,7 @@
 func in_order(a) {
     return true if (a.len <= 1)
     var first = a[0]
-    a.ft(1).all { |elem| first <= elem  ? do { first = elem; true } : false }
+    a.last(-1).all { |elem| first <= elem  ? do { first = elem; true } : false }
 }
 
 func bogosort(a) {
@@ -14,7 +14,7 @@ func bogosort(a) {
     return a
 }
 
-var arr = 5.of{ 100.irand }
+var arr = 5.of { 100.irand }
 say "Before: #{arr}"
 say "After:  #{bogosort(arr)}"
 ```

@@ -4,11 +4,11 @@
 
 ```ruby
 func comma_quibbling(words) {
-    '{' + ([words.ft(0, -2).join(', ')]-[''] + [words.last] -> join(' and ')) + '}';
+    '{' + ([words.first(-1).join(', ')]-[''] + [words.last] -> join(' and ')) + '}'
 }
- 
+
 [<>, <ABC>, <ABC DEF>, <ABC DEF G H>].each { |w|
-    say comma_quibbling(w);
+    say comma_quibbling(w)
 }
 ```
 

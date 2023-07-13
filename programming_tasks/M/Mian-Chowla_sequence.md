@@ -24,8 +24,8 @@ for i in (1 ..^ n) {
 }
 var et = (Time.micro - st)
 var s = " of the Mian-Chowla sequence are:\n"
-say "The first 30 terms#{s}#{mc.ft(0, 29).join(' ')}\n"
-say "Terms 91 to 100#{s}#{mc.ft(90, 99).join(' ')}\n"
+say "The first 30 terms#{s}#{mc.first(30).join(' ')}\n"
+say "Terms 91 to 100#{s}#{mc.slice(90).first(10).join(' ')}\n"
 say "Computation time was #{et} seconds."
 ```
 
@@ -37,5 +37,5 @@ The first 30 terms of the Mian-Chowla sequence are:
 Terms 91 to 100 of the Mian-Chowla sequence are:
 22526 23291 23564 23881 24596 24768 25631 26037 26255 27219
 
-Computation time was 3.41664 seconds.
+Computation time was 2.6288 seconds.
 ```

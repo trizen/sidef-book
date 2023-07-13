@@ -17,7 +17,7 @@ var f = [[], DATA.lines.map {['', .chars..., '']}..., []]
               given(c) {
                 when('H') { 't' }
                 when('t') { '.' }
-                when('.') { <. H>[f.ft(y-1, y+1).map{.ft(x-1, x+1)...}.count('H') ~~ [1,2]] }
+                when('.') { <. H>[[f[y-1 .. y+1]].map{.[x-1 .. x+1]}.count('H') ~~ [1,2]] }
                 default   { c }
               }
             )
