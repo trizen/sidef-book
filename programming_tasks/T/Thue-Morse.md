@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Thue-Morse
+[1]: https://rosettacode.org/wiki/Thue-Morse
 
 # [Thue-Morse][1]
 

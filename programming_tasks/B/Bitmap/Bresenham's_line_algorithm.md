@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Bitmap/Bresenham's_line_algorithm
+[1]: https://rosettacode.org/wiki/Bitmap/Bresenham's_line_algorithm
 
 # [Bitmap/Bresenham's line algorithm][1]
 

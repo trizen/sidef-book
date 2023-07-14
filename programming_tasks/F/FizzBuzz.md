@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/FizzBuzz
+[1]: https://rosettacode.org/wiki/FizzBuzz
 
 # [FizzBuzz][1]
 
@@ -30,5 +30,5 @@ for n in (1..100) { say fizzbuzz(n) }
 One-liner:
 
 ```ruby
-{|i|say "#{<Fizz>[i%3]}#{<Buzz>[i%5]}"||i}*100;
+{>"#{<Fizz>[.%3]}#{<Buzz>[.%5]}"||_}<<1..100
 ```

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Find_largest_left_truncatable_prime_in_a_given_base
+[1]: https://rosettacode.org/wiki/Find_largest_left_truncatable_prime_in_a_given_base
 
 # [Find largest left truncatable prime in a given base][1]
 

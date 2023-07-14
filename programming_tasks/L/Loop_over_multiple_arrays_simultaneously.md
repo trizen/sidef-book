@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Loop_over_multiple_arrays_simultaneously
+[1]: https://rosettacode.org/wiki/Loop_over_multiple_arrays_simultaneously
 
 # [Loop over multiple arrays simultaneously][1]
 

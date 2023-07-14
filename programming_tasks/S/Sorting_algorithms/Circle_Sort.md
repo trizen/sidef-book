@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sorting_Algorithms/Circle_Sort
+[1]: https://rosettacode.org/wiki/Sorting_Algorithms/Circle_Sort
 
 # [Sorting Algorithms/Circle Sort][1]
 

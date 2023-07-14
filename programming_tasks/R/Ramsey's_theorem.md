@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Ramsey's_theorem
+[1]: https://rosettacode.org/wiki/Ramsey's_theorem
 
 # [Ramsey's theorem][1]
 

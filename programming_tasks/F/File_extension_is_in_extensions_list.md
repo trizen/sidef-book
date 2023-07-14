@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/File_extension_is_in_extensions_list
+[1]: https://rosettacode.org/wiki/File_extension_is_in_extensions_list
 
 # [File extension is in extensions list][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Order_disjoint_list_items
+[1]: https://rosettacode.org/wiki/Order_disjoint_list_items
 
 # [Order disjoint list items][1]
 

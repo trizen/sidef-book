@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Luhn_test_of_credit_card_numbers
+[1]: https://rosettacode.org/wiki/Luhn_test_of_credit_card_numbers
 
 # [Luhn test of credit card numbers][1]
 

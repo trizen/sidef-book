@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Variadic_function
+[1]: https://rosettacode.org/wiki/Variadic_function
 
 # [Variadic function][1]
 

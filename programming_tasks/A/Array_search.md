@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Array_search
+[1]: https://rosettacode.org/wiki/Array_search
 
 # [Array search][1]
 

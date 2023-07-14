@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Flatten_a_list
+[1]: https://rosettacode.org/wiki/Flatten_a_list
 
 # [Flatten a list][1]
 

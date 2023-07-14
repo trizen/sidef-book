@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Find_common_directory_path
+[1]: https://rosettacode.org/wiki/Find_common_directory_path
 
 # [Find common directory path][1]
 

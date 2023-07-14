@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Search_a_list
+[1]: https://rosettacode.org/wiki/Search_a_list
 
 # [Search a list][1]
 

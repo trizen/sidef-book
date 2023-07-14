@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Find_palindromic_numbers_in_both_binary_and_ternary_bases
+[1]: https://rosettacode.org/wiki/Find_palindromic_numbers_in_both_binary_and_ternary_bases
 
 # [Find palindromic numbers in both binary and ternary bases][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Parallel_calculations
+[1]: https://rosettacode.org/wiki/Parallel_calculations
 
 # [Parallel calculations][1]
 

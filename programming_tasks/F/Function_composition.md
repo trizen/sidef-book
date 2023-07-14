@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Function_composition
+[1]: https://rosettacode.org/wiki/Function_composition
 
 # [Function composition][1]
 

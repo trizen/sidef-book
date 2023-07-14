@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Diversity_prediction_theorem
+[1]: https://rosettacode.org/wiki/Diversity_prediction_theorem
 
 # [Diversity prediction theorem][1]
 

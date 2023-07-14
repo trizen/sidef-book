@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Compound_data_type
+[1]: https://rosettacode.org/wiki/Compound_data_type
 
 # [Compound data type][1]
 

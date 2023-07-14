@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Magic_squares_of_odd_order
+[1]: https://rosettacode.org/wiki/Magic_squares_of_odd_order
 
 # [Magic squares of odd order][1]
 

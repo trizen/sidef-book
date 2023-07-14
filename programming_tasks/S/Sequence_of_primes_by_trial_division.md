@@ -2,7 +2,7 @@
 
 # [Sequence of primes by Trial Division][1]
 
-Using the _is_prime()_ function from: ["Primality by trial division"](http://rosettacode.org/wiki/Primality_by_trial_division#Sidef)
+Using the _is_prime()_ function from: ["Primality by trial division"](https://rosettacode.org/wiki/Primality_by_trial_division#Sidef)
 
 ```ruby
 func prime_seq(amount, callback) {

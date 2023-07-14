@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Natural_sorting
+[1]: https://rosettacode.org/wiki/Natural_sorting
 
 # [Natural sorting][1]
 

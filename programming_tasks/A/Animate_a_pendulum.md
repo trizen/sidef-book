@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Animate_a_pendulum
+[1]: https://rosettacode.org/wiki/Animate_a_pendulum
 
 # [Animate a pendulum][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Seven-sided_dice_from_five-sided_dice
+[1]: https://rosettacode.org/wiki/Seven-sided_dice_from_five-sided_dice
 
 # [Seven-sided dice from five-sided dice][1]
 

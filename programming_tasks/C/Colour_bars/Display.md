@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Colour_bars/Display
+[1]: https://rosettacode.org/wiki/Colour_bars/Display
 
 # [Colour bars/Display][1]
 

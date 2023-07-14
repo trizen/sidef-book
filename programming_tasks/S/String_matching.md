@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/String_matching
+[1]: https://rosettacode.org/wiki/String_matching
 
 # [String matching][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Read_a_configuration_file
+[1]: https://rosettacode.org/wiki/Read_a_configuration_file
 
 # [Read a configuration file][1]
 

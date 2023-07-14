@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Roots_of_a_function
+[1]: https://rosettacode.org/wiki/Roots_of_a_function
 
 # [Roots of a function][1]
 

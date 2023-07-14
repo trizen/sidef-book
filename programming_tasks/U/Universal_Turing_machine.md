@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Universal_Turing_machine
+[1]: https://rosettacode.org/wiki/Universal_Turing_machine
 
 # [Universal Turing machine][1]
 

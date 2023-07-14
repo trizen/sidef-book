@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sort_disjoint_sublist
+[1]: https://rosettacode.org/wiki/Sort_disjoint_sublist
 
 # [Sort disjoint sublist][1]
 

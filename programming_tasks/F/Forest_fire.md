@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Forest_fire
+[1]: https://rosettacode.org/wiki/Forest_fire
 
 # [Forest fire][1]
 

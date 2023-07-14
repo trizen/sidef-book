@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Death_Star
+[1]: https://rosettacode.org/wiki/Death_Star
 
 # [Death Star][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Grayscale_image
+[1]: https://rosettacode.org/wiki/Grayscale_image
 
 # [Grayscale image][1]
 

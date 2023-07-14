@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sequence_of_primorial_primes
+[1]: https://rosettacode.org/wiki/Sequence_of_primorial_primes
 
 # [Sequence of primorial primes][1]
 

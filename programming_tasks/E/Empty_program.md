@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Empty_program
+[1]: https://rosettacode.org/wiki/Empty_program
 
 # [Empty program][1]
 

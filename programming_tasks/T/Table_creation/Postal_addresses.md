@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Table_creation/Postal_addresses
+[1]: https://rosettacode.org/wiki/Table_creation/Postal_addresses
 
 # [Table creation/Postal addresses][1]
 

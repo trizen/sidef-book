@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Call_an_object_method
+[1]: https://rosettacode.org/wiki/Call_an_object_method
 
 # [Call an object method][1]
 

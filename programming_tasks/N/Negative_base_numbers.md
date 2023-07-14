@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Negative_base_numbers
+[1]: https://rosettacode.org/wiki/Negative_base_numbers
 
 # [Negative base numbers][1]
 

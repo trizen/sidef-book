@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Date_manipulation
+[1]: https://rosettacode.org/wiki/Date_manipulation
 
 # [Date manipulation][1]
 

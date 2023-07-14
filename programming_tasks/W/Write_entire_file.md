@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Write_entire_file
+[1]: https://rosettacode.org/wiki/Write_entire_file
 
 # [Write entire file][1]
 

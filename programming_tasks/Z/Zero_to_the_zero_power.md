@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Zero_to_the_zero_power
+[1]: https://rosettacode.org/wiki/Zero_to_the_zero_power
 
 # [Zero to the zero power][1]
 

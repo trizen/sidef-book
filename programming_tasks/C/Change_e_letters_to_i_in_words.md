@@ -13,18 +13,18 @@ if (!file.exists) {
         'http://www.puzzlers.org:80/pub/wordlists/unixdict.txt',
     'unixdict.txt')
 }
- 
+
 var words = file.read.words
 var dict  = Hash().set_keys(words...)
 var count = 0
- 
+
 words.each {|word|
- 
+
     word.len > 5 || next
     word.contains('e') || next
- 
+
     var changed = word.gsub('e', 'i')
- 
+
     if (dict.contains(changed)) {
         printf("%2d: %20s <-> %s\n", ++count, word, changed)
     }

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Keyboard_input/Flush_the_keyboard_buffer
+[1]: https://rosettacode.org/wiki/Keyboard_input/Flush_the_keyboard_buffer
 
 # [Keyboard input/Flush the keyboard buffer][1]
 

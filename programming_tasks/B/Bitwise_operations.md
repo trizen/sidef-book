@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Bitwise_operations
+[1]: https://rosettacode.org/wiki/Bitwise_operations
 
 # [Bitwise operations][1]
 

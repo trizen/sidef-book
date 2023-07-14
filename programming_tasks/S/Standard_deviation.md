@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Standard_deviation
+[1]: https://rosettacode.org/wiki/Standard_deviation
 
 # [Standard deviation][1]
 

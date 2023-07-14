@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Strip_control_codes_and_extended_characters_from_a_string
+[1]: https://rosettacode.org/wiki/Strip_control_codes_and_extended_characters_from_a_string
 
 # [Strip control codes and extended characters from a string][1]
 

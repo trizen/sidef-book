@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Fractran
+[1]: https://rosettacode.org/wiki/Fractran
 
 # [Fractran][1]
 

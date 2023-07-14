@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Hello_world/Web_server
+[1]: https://rosettacode.org/wiki/Hello_world/Web_server
 
 # [Hello world/Web server][1]
 

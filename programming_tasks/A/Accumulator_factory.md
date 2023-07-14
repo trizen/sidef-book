@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Accumulator_factory
+[1]: https://rosettacode.org/wiki/Accumulator_factory
 
 # [Accumulator factory][1]
 

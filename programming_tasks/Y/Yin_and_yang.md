@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Yin_and_yang
+[1]: https://rosettacode.org/wiki/Yin_and_yang
 
 # [Yin and yang][1]
 

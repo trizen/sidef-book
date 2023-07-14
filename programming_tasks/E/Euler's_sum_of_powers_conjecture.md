@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Euler's_sum_of_powers_conjecture
+[1]: https://rosettacode.org/wiki/Euler's_sum_of_powers_conjecture
 
 # [Euler's sum of powers conjecture][1]
 

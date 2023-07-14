@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Subtractive_generator
+[1]: https://rosettacode.org/wiki/Subtractive_generator
 
 # [Subtractive generator][1]
 

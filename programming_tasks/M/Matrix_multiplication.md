@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Matrix_multiplication
+[1]: https://rosettacode.org/wiki/Matrix_multiplication
 
 # [Matrix multiplication][1]
 

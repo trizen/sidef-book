@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Base64_encode_data
+[1]: https://rosettacode.org/wiki/Base64_encode_data
 
 # [Base64 encode data][1]
 

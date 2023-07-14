@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Input_loop
+[1]: https://rosettacode.org/wiki/Input_loop
 
 # [Input loop][1]
 

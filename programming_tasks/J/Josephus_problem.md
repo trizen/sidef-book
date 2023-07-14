@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Josephus_problem
+[1]: https://rosettacode.org/wiki/Josephus_problem
 
 # [Josephus problem][1]
 

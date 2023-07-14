@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Random_number_generator_(device)
+[1]: https://rosettacode.org/wiki/Random_number_generator_(device)
 
 # [Random number generator (device)][1]
 

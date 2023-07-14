@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Permutation_test
+[1]: https://rosettacode.org/wiki/Permutation_test
 
 # [Permutation test][1]
 

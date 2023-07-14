@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Catamorphism
+[1]: https://rosettacode.org/wiki/Catamorphism
 
 # [Catamorphism][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Extreme_floating_point_values
+[1]: https://rosettacode.org/wiki/Extreme_floating_point_values
 
 # [Extreme floating point values][1]
 

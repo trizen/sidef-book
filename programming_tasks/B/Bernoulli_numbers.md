@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Bernoulli_numbers
+[1]: https://rosettacode.org/wiki/Bernoulli_numbers
 
 # [Bernoulli numbers][1]
 

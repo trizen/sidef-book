@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/File_modification_time
+[1]: https://rosettacode.org/wiki/File_modification_time
 
 # [File modification time][1]
 

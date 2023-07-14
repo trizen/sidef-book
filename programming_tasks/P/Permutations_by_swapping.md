@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Permutations_by_swapping
+[1]: https://rosettacode.org/wiki/Permutations_by_swapping
 
 # [Permutations by swapping][1]
 

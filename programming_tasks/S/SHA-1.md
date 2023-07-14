@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/SHA-1
+[1]: https://rosettacode.org/wiki/SHA-1
 
 # [SHA-1][1]
 

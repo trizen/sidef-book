@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Short-circuit_evaluation
+[1]: https://rosettacode.org/wiki/Short-circuit_evaluation
 
 # [Short-circuit evaluation][1]
 

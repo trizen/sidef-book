@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Write_language_name_in_3D_ASCII
+[1]: https://rosettacode.org/wiki/Write_language_name_in_3D_ASCII
 
 # [Write language name in 3D ASCII][1]
 

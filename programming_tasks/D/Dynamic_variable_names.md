@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Dynamic_variable_names
+[1]: https://rosettacode.org/wiki/Dynamic_variable_names
 
 # [Dynamic variable names][1]
 

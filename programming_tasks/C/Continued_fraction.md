@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Continued_fraction
+[1]: https://rosettacode.org/wiki/Continued_fraction
 
 # [Continued fraction][1]
 

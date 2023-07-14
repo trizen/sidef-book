@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Named_parameters
+[1]: https://rosettacode.org/wiki/Named_parameters
 
 # [Named parameters][1]
 

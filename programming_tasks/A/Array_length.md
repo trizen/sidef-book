@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Array_length
+[1]: https://rosettacode.org/wiki/Array_length
 
 # [Array length][1]
 

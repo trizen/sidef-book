@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Greatest_subsequential_sum
+[1]: https://rosettacode.org/wiki/Greatest_subsequential_sum
 
 # [Greatest subsequential sum][1]
 

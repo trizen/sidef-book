@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Longest_increasing_subsequence
+[1]: https://rosettacode.org/wiki/Longest_increasing_subsequence
 
 # [Longest increasing subsequence][1]
 

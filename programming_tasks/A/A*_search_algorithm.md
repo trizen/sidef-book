@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/A*_search_algorithm
+[1]: https://rosettacode.org/wiki/A*_search_algorithm
 
 # [A* search algorithm][1]
 

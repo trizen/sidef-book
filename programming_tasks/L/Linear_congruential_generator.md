@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Linear_congruential_generator
+[1]: https://rosettacode.org/wiki/Linear_congruential_generator
 
 # [Linear congruential generator][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Longest_common_subsequence
+[1]: https://rosettacode.org/wiki/Longest_common_subsequence
 
 # [Longest common subsequence][1]
 

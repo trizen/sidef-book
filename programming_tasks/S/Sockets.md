@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sockets
+[1]: https://rosettacode.org/wiki/Sockets
 
 # [Sockets][1]
 

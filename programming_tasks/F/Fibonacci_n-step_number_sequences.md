@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Fibonacci_n-step_number_sequences
+[1]: https://rosettacode.org/wiki/Fibonacci_n-step_number_sequences
 
 # [Fibonacci n-step number sequences][1]
 

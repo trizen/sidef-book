@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Textonyms
+[1]: https://rosettacode.org/wiki/Textonyms
 
 # [Textonyms][1]
 

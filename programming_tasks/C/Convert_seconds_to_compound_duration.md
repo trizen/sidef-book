@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Convert_seconds_to_compound_duration
+[1]: https://rosettacode.org/wiki/Convert_seconds_to_compound_duration
 
 # [Convert seconds to compound duration][1]
 

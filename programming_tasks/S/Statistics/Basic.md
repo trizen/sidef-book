@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Statistics/Basic
+[1]: https://rosettacode.org/wiki/Statistics/Basic
 
 # [Statistics/Basic][1]
 

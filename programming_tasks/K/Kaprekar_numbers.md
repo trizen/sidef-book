@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Kaprekar_numbers
+[1]: https://rosettacode.org/wiki/Kaprekar_numbers
 
 # [Kaprekar numbers][1]
 

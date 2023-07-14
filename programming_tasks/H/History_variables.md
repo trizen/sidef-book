@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/History_variables
+[1]: https://rosettacode.org/wiki/History_variables
 
 # [History variables][1]
 

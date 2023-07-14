@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/String_concatenation
+[1]: https://rosettacode.org/wiki/String_concatenation
 
 # [String concatenation][1]
 

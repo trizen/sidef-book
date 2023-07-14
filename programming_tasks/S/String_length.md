@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/String_length
+[1]: https://rosettacode.org/wiki/String_length
 
 # [String length][1]
 

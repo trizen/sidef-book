@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Perfect_numbers
+[1]: https://rosettacode.org/wiki/Perfect_numbers
 
 # [Perfect numbers][1]
 

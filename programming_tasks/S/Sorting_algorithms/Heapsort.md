@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sorting_algorithms/Heapsort
+[1]: https://rosettacode.org/wiki/Sorting_algorithms/Heapsort
 
 # [Sorting algorithms/Heapsort][1]
 

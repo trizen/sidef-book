@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Horner's_rule_for_polynomial_evaluation
+[1]: https://rosettacode.org/wiki/Horner's_rule_for_polynomial_evaluation
 
 # [Horner's rule for polynomial evaluation][1]
 

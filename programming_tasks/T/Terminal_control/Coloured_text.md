@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Terminal_control/Coloured_text
+[1]: https://rosettacode.org/wiki/Terminal_control/Coloured_text
 
 # [Terminal control/Coloured text][1]
 

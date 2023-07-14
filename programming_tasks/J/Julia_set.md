@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Julia_set
+[1]: https://rosettacode.org/wiki/Julia_set
 
 # [Julia set][1]
 

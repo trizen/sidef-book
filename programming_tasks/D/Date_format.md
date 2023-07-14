@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Date_format
+[1]: https://rosettacode.org/wiki/Date_format
 
 # [Date format][1]
 

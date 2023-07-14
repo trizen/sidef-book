@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Associative_array/Iteration
+[1]: https://rosettacode.org/wiki/Associative_array/Iteration
 
 # [Associative array/Iteration][1]
 

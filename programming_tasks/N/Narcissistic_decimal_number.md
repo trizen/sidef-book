@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Narcissistic_decimal_number
+[1]: https://rosettacode.org/wiki/Narcissistic_decimal_number
 
 # [Narcissistic decimal number][1]
 

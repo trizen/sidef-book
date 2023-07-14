@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Playing_cards
+[1]: https://rosettacode.org/wiki/Playing_cards
 
 # [Playing cards][1]
 

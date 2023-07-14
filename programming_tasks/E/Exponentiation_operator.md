@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Exponentiation_operator
+[1]: https://rosettacode.org/wiki/Exponentiation_operator
 
 # [Exponentiation operator][1]
 

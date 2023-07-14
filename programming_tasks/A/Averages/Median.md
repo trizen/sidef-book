@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Averages/Median
+[1]: https://rosettacode.org/wiki/Averages/Median
 
 # [Averages/Median][1]
 

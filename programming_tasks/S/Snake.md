@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Snake
+[1]: https://rosettacode.org/wiki/Snake
 
 # [Snake][1]
 

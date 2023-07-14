@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Repeat_a_string
+[1]: https://rosettacode.org/wiki/Repeat_a_string
 
 # [Repeat a string][1]
 

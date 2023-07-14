@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Bitmap/Write_a_PPM_file
+[1]: https://rosettacode.org/wiki/Bitmap/Write_a_PPM_file
 
 # [Bitmap/Write a PPM file][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Queue/Definition
+[1]: https://rosettacode.org/wiki/Queue/Definition
 
 # [Queue/Definition][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Equilibrium_index
+[1]: https://rosettacode.org/wiki/Equilibrium_index
 
 # [Equilibrium index][1]
 

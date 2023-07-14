@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Monte_Carlo_methods
+[1]: https://rosettacode.org/wiki/Monte_Carlo_methods
 
 # [Monte Carlo methods][1]
 

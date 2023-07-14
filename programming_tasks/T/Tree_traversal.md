@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Tree_traversal
+[1]: https://rosettacode.org/wiki/Tree_traversal
 
 # [Tree traversal][1]
 

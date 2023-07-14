@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Knuth's_power_tree
+[1]: https://rosettacode.org/wiki/Knuth's_power_tree
 
 # [Knuth's power tree][1]
 

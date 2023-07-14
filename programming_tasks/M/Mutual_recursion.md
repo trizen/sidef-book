@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Mutual_recursion
+[1]: https://rosettacode.org/wiki/Mutual_recursion
 
 # [Mutual recursion][1]
 

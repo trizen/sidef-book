@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Gray_code
+[1]: https://rosettacode.org/wiki/Gray_code
 
 # [Gray code][1]
 

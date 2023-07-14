@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Truth_table
+[1]: https://rosettacode.org/wiki/Truth_table
 
 # [Truth table][1]
 

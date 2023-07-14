@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Multiline_shebang
+[1]: https://rosettacode.org/wiki/Multiline_shebang
 
 # [Multiline shebang][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Harshad_or_Niven_series
+[1]: https://rosettacode.org/wiki/Harshad_or_Niven_series
 
 # [Harshad or Niven series][1]
 

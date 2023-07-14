@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Subleq
+[1]: https://rosettacode.org/wiki/Subleq
 
 # [Subleq][1]
 

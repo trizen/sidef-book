@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Phrase_reversals
+[1]: https://rosettacode.org/wiki/Phrase_reversals
 
 # [Phrase reversals][1]
 

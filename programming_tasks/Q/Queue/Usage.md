@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Queue/Usage
+[1]: https://rosettacode.org/wiki/Queue/Usage
 
 # [Queue/Usage][1]
 

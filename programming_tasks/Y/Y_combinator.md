@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Y_combinator
+[1]: https://rosettacode.org/wiki/Y_combinator
 
 # [Y combinator][1]
 

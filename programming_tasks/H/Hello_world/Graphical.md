@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Hello_world/Graphical
+[1]: https://rosettacode.org/wiki/Hello_world/Graphical
 
 # [Hello world/Graphical][1]
 

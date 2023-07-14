@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Suffix_tree
+[1]: https://rosettacode.org/wiki/Suffix_tree
 
 # [Suffix tree][1]
 

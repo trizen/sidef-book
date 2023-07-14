@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Undefined_values
+[1]: https://rosettacode.org/wiki/Undefined_values
 
 # [Undefined values][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Knight's_tour
+[1]: https://rosettacode.org/wiki/Knight's_tour
 
 # [Knight's tour][1]
 

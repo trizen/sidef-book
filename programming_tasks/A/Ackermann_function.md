@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Ackermann_function
+[1]: https://rosettacode.org/wiki/Ackermann_function
 
 # [Ackermann function][1]
 

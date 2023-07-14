@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Thiele's_interpolation_formula
+[1]: https://rosettacode.org/wiki/Thiele's_interpolation_formula
 
 # [Thiele's interpolation formula][1]
 

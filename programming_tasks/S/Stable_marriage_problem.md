@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Stable_marriage_problem
+[1]: https://rosettacode.org/wiki/Stable_marriage_problem
 
 # [Stable marriage problem][1]
 

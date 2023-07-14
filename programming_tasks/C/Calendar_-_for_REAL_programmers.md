@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Calendar_-_for_"REAL"_programmers
+[1]: https://rosettacode.org/wiki/Calendar_-_for_"REAL"_programmers
 
 # [Calendar - for &quot;REAL&quot; programmers][1]
 

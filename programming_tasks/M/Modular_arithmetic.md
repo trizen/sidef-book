@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Modular_arithmetic
+[1]: https://rosettacode.org/wiki/Modular_arithmetic
 
 # [Modular arithmetic][1]
 

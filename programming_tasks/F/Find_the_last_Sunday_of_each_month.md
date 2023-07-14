@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Find_the_last_Sunday_of_each_month
+[1]: https://rosettacode.org/wiki/Find_the_last_Sunday_of_each_month
 
 # [Find the last Sunday of each month][1]
 

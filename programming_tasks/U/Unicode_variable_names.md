@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Unicode_variable_names
+[1]: https://rosettacode.org/wiki/Unicode_variable_names
 
 # [Unicode variable names][1]
 

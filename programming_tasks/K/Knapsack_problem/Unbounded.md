@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Knapsack_problem/Unbounded
+[1]: https://rosettacode.org/wiki/Knapsack_problem/Unbounded
 
 # [Knapsack problem/Unbounded][1]
 

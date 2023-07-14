@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Exponentiation_order
+[1]: https://rosettacode.org/wiki/Exponentiation_order
 
 # [Exponentiation order][1]
 

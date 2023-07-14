@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Bulls_and_cows/Player
+[1]: https://rosettacode.org/wiki/Bulls_and_cows/Player
 
 # [Bulls and cows/Player][1]
 

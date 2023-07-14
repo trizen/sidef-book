@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Plot_coordinate_pairs
+[1]: https://rosettacode.org/wiki/Plot_coordinate_pairs
 
 # [Plot coordinate pairs][1]
 

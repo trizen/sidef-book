@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Zebra_puzzle
+[1]: https://rosettacode.org/wiki/Zebra_puzzle
 
 # [Zebra puzzle][1]
 

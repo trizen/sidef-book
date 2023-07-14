@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Anonymous_recursion
+[1]: https://rosettacode.org/wiki/Anonymous_recursion
 
 # [Anonymous recursion][1]
 

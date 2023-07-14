@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/UTF-8_encode_and_decode
+[1]: https://rosettacode.org/wiki/UTF-8_encode_and_decode
 
 # [UTF-8 encode and decode][1]
 

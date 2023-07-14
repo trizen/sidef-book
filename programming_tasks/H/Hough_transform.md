@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Hough_transform
+[1]: https://rosettacode.org/wiki/Hough_transform
 
 # [Hough transform][1]
 

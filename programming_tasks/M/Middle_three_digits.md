@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Middle_three_digits
+[1]: https://rosettacode.org/wiki/Middle_three_digits
 
 # [Middle three digits][1]
 

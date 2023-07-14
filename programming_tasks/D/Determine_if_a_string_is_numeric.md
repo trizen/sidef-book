@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Determine_if_a_string_is_numeric
+[1]: https://rosettacode.org/wiki/Determine_if_a_string_is_numeric
 
 # [Determine if a string is numeric][1]
 

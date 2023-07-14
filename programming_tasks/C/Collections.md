@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Collections
+[1]: https://rosettacode.org/wiki/Collections
 
 # [Collections][1]
 

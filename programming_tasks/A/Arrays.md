@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Arrays
+[1]: https://rosettacode.org/wiki/Arrays
 
 # [Arrays][1]
 

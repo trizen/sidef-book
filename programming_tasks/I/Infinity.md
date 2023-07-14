@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Infinity
+[1]: https://rosettacode.org/wiki/Infinity
 
 # [Infinity][1]
 

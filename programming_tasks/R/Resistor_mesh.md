@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Resistor_mesh
+[1]: https://rosettacode.org/wiki/Resistor_mesh
 
 # [Resistor mesh][1]
 

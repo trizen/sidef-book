@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/URL_decoding
+[1]: https://rosettacode.org/wiki/URL_decoding
 
 # [URL decoding][1]
 

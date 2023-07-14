@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Balanced_brackets
+[1]: https://rosettacode.org/wiki/Balanced_brackets
 
 # [Balanced brackets][1]
 

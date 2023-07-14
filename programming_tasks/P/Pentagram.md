@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Pentagram
+[1]: https://rosettacode.org/wiki/Pentagram
 
 # [Pentagram][1]
 

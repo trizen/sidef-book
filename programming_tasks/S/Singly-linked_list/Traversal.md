@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Singly-linked_list/Traversal
+[1]: https://rosettacode.org/wiki/Singly-linked_list/Traversal
 
 # [Singly-linked list/Traversal][1]
 

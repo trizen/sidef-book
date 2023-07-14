@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Look-and-say_sequence
+[1]: https://rosettacode.org/wiki/Look-and-say_sequence
 
 # [Look-and-say sequence][1]
 

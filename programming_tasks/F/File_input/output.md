@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/File_input/output
+[1]: https://rosettacode.org/wiki/File_input/output
 
 # [File input/output][1]
 

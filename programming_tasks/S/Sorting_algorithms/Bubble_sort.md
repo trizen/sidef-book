@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sorting_algorithms/Bubble_sort
+[1]: https://rosettacode.org/wiki/Sorting_algorithms/Bubble_sort
 
 # [Sorting algorithms/Bubble sort][1]
 

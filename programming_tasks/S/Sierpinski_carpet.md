@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sierpinski_carpet
+[1]: https://rosettacode.org/wiki/Sierpinski_carpet
 
 # [Sierpinski carpet][1]
 

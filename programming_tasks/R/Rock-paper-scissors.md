@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Rock-paper-scissors
+[1]: https://rosettacode.org/wiki/Rock-paper-scissors
 
 # [Rock-paper-scissors][1]
 

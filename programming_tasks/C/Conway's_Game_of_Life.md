@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Conway's_Game_of_Life
+[1]: https://rosettacode.org/wiki/Conway's_Game_of_Life
 
 # [Conway's Game of Life][1]
 

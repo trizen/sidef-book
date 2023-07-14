@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/XML/DOM_serialization
+[1]: https://rosettacode.org/wiki/XML/DOM_serialization
 
 # [XML/DOM serialization][1]
 

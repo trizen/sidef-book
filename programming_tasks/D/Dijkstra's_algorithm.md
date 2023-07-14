@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Dijkstra's_algorithm
+[1]: https://rosettacode.org/wiki/Dijkstra's_algorithm
 
 # [Dijkstra's algorithm][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Ordered_words
+[1]: https://rosettacode.org/wiki/Ordered_words
 
 # [Ordered words][1]
 

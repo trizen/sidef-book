@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sieve_of_Eratosthenes
+[1]: https://rosettacode.org/wiki/Sieve_of_Eratosthenes
 
 # [Sieve of Eratosthenes][1]
 

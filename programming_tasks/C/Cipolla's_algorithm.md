@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Cipolla's_algorithm
+[1]: https://rosettacode.org/wiki/Cipolla's_algorithm
 
 # [Cipolla's algorithm][1]
 

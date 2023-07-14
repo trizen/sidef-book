@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Almost_prime
+[1]: https://rosettacode.org/wiki/Almost_prime
 
 # [Almost prime][1]
 

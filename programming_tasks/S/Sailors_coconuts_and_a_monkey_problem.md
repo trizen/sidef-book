@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sailors,_coconuts_and_a_monkey_problem
+[1]: https://rosettacode.org/wiki/Sailors,_coconuts_and_a_monkey_problem
 
 # [Sailors, coconuts and a monkey problem][1]
 

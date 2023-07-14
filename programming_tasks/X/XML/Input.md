@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/XML/Input
+[1]: https://rosettacode.org/wiki/XML/Input
 
 # [XML/Input][1]
 

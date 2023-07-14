@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Matrix_transposition
+[1]: https://rosettacode.org/wiki/Matrix_transposition
 
 # [Matrix transposition][1]
 

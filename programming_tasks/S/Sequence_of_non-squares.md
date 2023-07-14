@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sequence_of_non-squares
+[1]: https://rosettacode.org/wiki/Sequence_of_non-squares
 
 # [Sequence of non-squares][1]
 

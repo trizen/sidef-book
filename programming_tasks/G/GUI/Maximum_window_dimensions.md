@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/GUI/Maximum_window_dimensions
+[1]: https://rosettacode.org/wiki/GUI/Maximum_window_dimensions
 
 # [GUI/Maximum window dimensions][1]
 

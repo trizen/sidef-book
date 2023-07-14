@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Function_definition
+[1]: https://rosettacode.org/wiki/Function_definition
 
 # [Function definition][1]
 

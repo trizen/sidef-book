@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Stern-Brocot_sequence
+[1]: https://rosettacode.org/wiki/Stern-Brocot_sequence
 
 # [Stern-Brocot sequence][1]
 

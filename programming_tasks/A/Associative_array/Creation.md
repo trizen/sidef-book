@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Associative_array/Creation
+[1]: https://rosettacode.org/wiki/Associative_array/Creation
 
 # [Associative array/Creation][1]
 

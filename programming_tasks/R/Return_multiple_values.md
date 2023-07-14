@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Return_multiple_values
+[1]: https://rosettacode.org/wiki/Return_multiple_values
 
 # [Return multiple values][1]
 

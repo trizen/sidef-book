@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Rosetta_Code/Rank_languages_by_popularity
+[1]: https://rosettacode.org/wiki/Rosetta_Code/Rank_languages_by_popularity
 
 # [Rosetta Code/Rank languages by popularity][1]
 
@@ -6,7 +6,7 @@
 require('MediaWiki::API')
 
 var api = %O<MediaWiki::API>.new(
-    Hash(api_url => 'http://rosettacode.org/mw/api.php')
+    Hash(api_url => 'https://rosettacode.org/mw/api.php')
 )
 
 var languages = []

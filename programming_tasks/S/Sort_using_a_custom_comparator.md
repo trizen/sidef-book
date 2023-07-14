@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sort_using_a_custom_comparator
+[1]: https://rosettacode.org/wiki/Sort_using_a_custom_comparator
 
 # [Sort using a custom comparator][1]
 

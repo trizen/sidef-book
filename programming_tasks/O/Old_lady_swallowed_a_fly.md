@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Old_lady_swallowed_a_fly
+[1]: https://rosettacode.org/wiki/Old_lady_swallowed_a_fly
 
 # [Old lady swallowed a fly][1]
 

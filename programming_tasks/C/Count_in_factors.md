@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Count_in_factors
+[1]: https://rosettacode.org/wiki/Count_in_factors
 
 # [Count in factors][1]
 

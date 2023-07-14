@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/File_size
+[1]: https://rosettacode.org/wiki/File_size
 
 # [File size][1]
 

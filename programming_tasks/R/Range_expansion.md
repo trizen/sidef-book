@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Range_expansion
+[1]: https://rosettacode.org/wiki/Range_expansion
 
 # [Range expansion][1]
 

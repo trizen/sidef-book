@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Here_document
+[1]: https://rosettacode.org/wiki/Here_document
 
 # [Here document][1]
 

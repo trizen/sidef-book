@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/HTTPS
+[1]: https://rosettacode.org/wiki/HTTPS
 
 # [HTTPS][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Honeycombs
+[1]: https://rosettacode.org/wiki/Honeycombs
 
 # [Honeycombs][1]
 

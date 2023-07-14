@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Hash_join
+[1]: https://rosettacode.org/wiki/Hash_join
 
 # [Hash join][1]
 

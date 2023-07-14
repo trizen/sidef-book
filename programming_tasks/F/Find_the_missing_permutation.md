@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Find_the_missing_permutation
+[1]: https://rosettacode.org/wiki/Find_the_missing_permutation
 
 # [Find the missing permutation][1]
 

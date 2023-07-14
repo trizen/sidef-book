@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/9_billion_names_of_God_the_integer
+[1]: https://rosettacode.org/wiki/9_billion_names_of_God_the_integer
 
 # [9 billion names of God the integer][1]
 

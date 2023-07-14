@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Visualize_a_tree
+[1]: https://rosettacode.org/wiki/Visualize_a_tree
 
 # [Visualize a tree][1]
 

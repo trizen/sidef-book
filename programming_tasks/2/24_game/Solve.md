@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/24_game/Solve
+[1]: https://rosettacode.org/wiki/24_game/Solve
 
 # [24 game/Solve][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Dinesman's_multiple-dwelling_problem
+[1]: https://rosettacode.org/wiki/Dinesman's_multiple-dwelling_problem
 
 # [Dinesman's multiple-dwelling problem][1]
 

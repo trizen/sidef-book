@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Polynomial_synthetic_division
+[1]: https://rosettacode.org/wiki/Polynomial_synthetic_division
 
 # [Polynomial synthetic division][1]
 

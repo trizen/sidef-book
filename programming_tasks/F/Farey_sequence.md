@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Farey_sequence
+[1]: https://rosettacode.org/wiki/Farey_sequence
 
 # [Farey sequence][1]
 

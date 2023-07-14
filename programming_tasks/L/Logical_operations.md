@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Logical_operations
+[1]: https://rosettacode.org/wiki/Logical_operations
 
 # [Logical operations][1]
 

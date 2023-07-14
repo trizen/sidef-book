@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Handle_a_signal
+[1]: https://rosettacode.org/wiki/Handle_a_signal
 
 # [Handle a signal][1]
 

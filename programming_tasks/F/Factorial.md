@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Factorial
+[1]: https://rosettacode.org/wiki/Factorial
 
 # [Factorial][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Mandelbrot_set
+[1]: https://rosettacode.org/wiki/Mandelbrot_set
 
 # [Mandelbrot set][1]
 

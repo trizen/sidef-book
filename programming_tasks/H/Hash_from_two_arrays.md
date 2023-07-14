@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Hash_from_two_arrays
+[1]: https://rosettacode.org/wiki/Hash_from_two_arrays
 
 # [Hash from two arrays][1]
 

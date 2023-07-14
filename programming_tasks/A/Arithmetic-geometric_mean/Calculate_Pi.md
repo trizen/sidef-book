@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Arithmetic-geometric_mean/Calculate_Pi
+[1]: https://rosettacode.org/wiki/Arithmetic-geometric_mean/Calculate_Pi
 
 # [Arithmetic-geometric mean/Calculate Pi][1]
 

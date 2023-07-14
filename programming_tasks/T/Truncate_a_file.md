@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Truncate_a_file
+[1]: https://rosettacode.org/wiki/Truncate_a_file
 
 # [Truncate a file][1]
 

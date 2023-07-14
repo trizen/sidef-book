@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Superpermutation_minimisation
+[1]: https://rosettacode.org/wiki/Superpermutation_minimisation
 
 # [Superpermutation minimisation][1]
 

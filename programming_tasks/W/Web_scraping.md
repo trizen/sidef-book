@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Web_scraping
+[1]: https://rosettacode.org/wiki/Web_scraping
 
 # [Web scraping][1]
 

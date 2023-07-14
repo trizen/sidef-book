@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Jensen's_Device
+[1]: https://rosettacode.org/wiki/Jensen's_Device
 
 # [Jensen's Device][1]
 

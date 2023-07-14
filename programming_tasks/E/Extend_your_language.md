@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Extend_your_language
+[1]: https://rosettacode.org/wiki/Extend_your_language
 
 # [Extend your language][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Hailstone_sequence
+[1]: https://rosettacode.org/wiki/Hailstone_sequence
 
 # [Hailstone sequence][1]
 

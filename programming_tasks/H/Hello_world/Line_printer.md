@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Hello_world/Line_printer
+[1]: https://rosettacode.org/wiki/Hello_world/Line_printer
 
 # [Hello world/Line printer][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Levenshtein_distance/Alignment
+[1]: https://rosettacode.org/wiki/Levenshtein_distance/Alignment
 
 # [Levenshtein distance/Alignment][1]
 

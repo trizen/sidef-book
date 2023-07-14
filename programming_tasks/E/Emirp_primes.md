@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Emirp_primes
+[1]: https://rosettacode.org/wiki/Emirp_primes
 
 # [Emirp primes][1]
 

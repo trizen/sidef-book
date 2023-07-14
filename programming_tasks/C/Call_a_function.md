@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Call_a_function
+[1]: https://rosettacode.org/wiki/Call_a_function
 
 # [Call a function][1]
 

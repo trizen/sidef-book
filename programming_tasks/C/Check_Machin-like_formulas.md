@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Check_Machin-like_formulas
+[1]: https://rosettacode.org/wiki/Check_Machin-like_formulas
 
 # [Check Machin-like formulas][1]
 

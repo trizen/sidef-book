@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Ramer-Douglas-Peucker_line_simplification
+[1]: https://rosettacode.org/wiki/Ramer-Douglas-Peucker_line_simplification
 
 # [Ramer-Douglas-Peucker line simplification][1]
 

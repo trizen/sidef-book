@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Unbias_a_random_generator
+[1]: https://rosettacode.org/wiki/Unbias_a_random_generator
 
 # [Unbias a random generator][1]
 

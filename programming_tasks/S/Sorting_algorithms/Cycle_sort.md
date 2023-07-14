@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sorting_algorithms/Cycle_sort
+[1]: https://rosettacode.org/wiki/Sorting_algorithms/Cycle_sort
 
 # [Sorting algorithms/Cycle sort][1]
 

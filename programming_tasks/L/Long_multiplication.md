@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Long_multiplication
+[1]: https://rosettacode.org/wiki/Long_multiplication
 
 # [Long multiplication][1]
 

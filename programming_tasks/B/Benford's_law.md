@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Benford's_law
+[1]: https://rosettacode.org/wiki/Benford's_law
 
 # [Benford's law][1]
 

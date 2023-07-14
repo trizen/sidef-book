@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/One-dimensional_cellular_automata
+[1]: https://rosettacode.org/wiki/One-dimensional_cellular_automata
 
 # [One-dimensional cellular automata][1]
 

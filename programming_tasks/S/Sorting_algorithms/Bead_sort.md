@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sorting_algorithms/Bead_sort
+[1]: https://rosettacode.org/wiki/Sorting_algorithms/Bead_sort
 
 # [Sorting algorithms/Bead sort][1]
 

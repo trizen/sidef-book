@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Averages/Simple_moving_average
+[1]: https://rosettacode.org/wiki/Averages/Simple_moving_average
 
 # [Averages/Simple moving average][1]
 

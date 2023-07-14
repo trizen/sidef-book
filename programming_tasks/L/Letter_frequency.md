@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Letter_frequency
+[1]: https://rosettacode.org/wiki/Letter_frequency
 
 # [Letter frequency][1]
 

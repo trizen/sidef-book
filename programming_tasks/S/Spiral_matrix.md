@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Spiral_matrix
+[1]: https://rosettacode.org/wiki/Spiral_matrix
 
 # [Spiral matrix][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Align_columns
+[1]: https://rosettacode.org/wiki/Align_columns
 
 # [Align columns][1]
 

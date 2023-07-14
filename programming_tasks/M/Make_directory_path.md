@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Make_directory_path
+[1]: https://rosettacode.org/wiki/Make_directory_path
 
 # [Make directory path][1]
 

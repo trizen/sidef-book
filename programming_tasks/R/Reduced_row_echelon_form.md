@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Reduced_row_echelon_form
+[1]: https://rosettacode.org/wiki/Reduced_row_echelon_form
 
 # [Reduced row echelon form][1]
 

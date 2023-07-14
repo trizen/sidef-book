@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Multiplication_tables
+[1]: https://rosettacode.org/wiki/Multiplication_tables
 
 # [Multiplication tables][1]
 

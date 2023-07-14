@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Largest_int_from_concatenated_ints
+[1]: https://rosettacode.org/wiki/Largest_int_from_concatenated_ints
 
 # [Largest int from concatenated ints][1]
 

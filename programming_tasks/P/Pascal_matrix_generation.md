@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Pascal_matrix_generation
+[1]: https://rosettacode.org/wiki/Pascal_matrix_generation
 
 # [Pascal matrix generation][1]
 

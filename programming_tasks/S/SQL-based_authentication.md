@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/SQL-based_authentication
+[1]: https://rosettacode.org/wiki/SQL-based_authentication
 
 # [SQL-based authentication][1]
 

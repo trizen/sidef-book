@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Extract_file_extension
+[1]: https://rosettacode.org/wiki/Extract_file_extension
 
 # [Extract file extension][1]
 

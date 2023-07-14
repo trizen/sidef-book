@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Compare_a_list_of_strings
+[1]: https://rosettacode.org/wiki/Compare_a_list_of_strings
 
 # [Compare a list of strings][1]
 

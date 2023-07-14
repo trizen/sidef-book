@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Catalan_numbers/Pascal's_triangle
+[1]: https://rosettacode.org/wiki/Catalan_numbers/Pascal's_triangle
 
 # [Catalan numbers/Pascal's triangle][1]
 

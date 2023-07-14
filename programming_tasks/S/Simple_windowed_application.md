@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Simple_windowed_application
+[1]: https://rosettacode.org/wiki/Simple_windowed_application
 
 # [Simple windowed application][1]
 

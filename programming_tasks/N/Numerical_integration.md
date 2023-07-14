@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Numerical_integration
+[1]: https://rosettacode.org/wiki/Numerical_integration
 
 # [Numerical integration][1]
 

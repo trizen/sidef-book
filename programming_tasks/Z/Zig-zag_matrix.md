@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Zig-zag_matrix
+[1]: https://rosettacode.org/wiki/Zig-zag_matrix
 
 # [Zig-zag matrix][1]
 

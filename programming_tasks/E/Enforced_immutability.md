@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Enforced_immutability
+[1]: https://rosettacode.org/wiki/Enforced_immutability
 
 # [Enforced immutability][1]
 

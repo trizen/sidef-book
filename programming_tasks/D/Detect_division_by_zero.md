@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Detect_division_by_zero
+[1]: https://rosettacode.org/wiki/Detect_division_by_zero
 
 # [Detect division by zero][1]
 

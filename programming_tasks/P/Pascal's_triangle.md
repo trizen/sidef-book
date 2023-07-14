@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Pascal's_triangle
+[1]: https://rosettacode.org/wiki/Pascal's_triangle
 
 # [Pascal's triangle][1]
 

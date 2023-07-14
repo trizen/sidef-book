@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Split_a_character_string_based_on_change_of_character
+[1]: https://rosettacode.org/wiki/Split_a_character_string_based_on_change_of_character
 
 # [Split a character string based on change of character][1]
 

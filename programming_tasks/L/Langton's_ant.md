@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Langton's_ant
+[1]: https://rosettacode.org/wiki/Langton's_ant
 
 # [Langton's ant][1]
 

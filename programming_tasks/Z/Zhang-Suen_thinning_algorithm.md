@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Zhang-Suen_thinning_algorithm
+[1]: https://rosettacode.org/wiki/Zhang-Suen_thinning_algorithm
 
 # [Zhang-Suen thinning algorithm][1]
 

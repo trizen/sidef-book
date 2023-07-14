@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/AKS_test_for_primes
+[1]: https://rosettacode.org/wiki/AKS_test_for_primes
 
 # [AKS test for primes][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Van_der_Corput_sequence
+[1]: https://rosettacode.org/wiki/Van_der_Corput_sequence
 
 # [Van der Corput sequence][1]
 

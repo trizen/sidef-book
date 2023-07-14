@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Elementary_cellular_automaton
+[1]: https://rosettacode.org/wiki/Elementary_cellular_automaton
 
 # [Elementary cellular automaton][1]
 

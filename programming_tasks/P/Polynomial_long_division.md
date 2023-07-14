@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Polynomial_long_division
+[1]: https://rosettacode.org/wiki/Polynomial_long_division
 
 # [Polynomial long division][1]
 

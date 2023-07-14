@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Walk_a_directory/Non-recursively
+[1]: https://rosettacode.org/wiki/Walk_a_directory/Non-recursively
 
 # [Walk a directory/Non-recursively][1]
 

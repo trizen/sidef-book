@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Anagrams
+[1]: https://rosettacode.org/wiki/Anagrams
 
 # [Anagrams][1]
 

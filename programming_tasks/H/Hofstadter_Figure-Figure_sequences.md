@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Hofstadter_Figure-Figure_sequences
+[1]: https://rosettacode.org/wiki/Hofstadter_Figure-Figure_sequences
 
 # [Hofstadter Figure-Figure sequences][1]
 

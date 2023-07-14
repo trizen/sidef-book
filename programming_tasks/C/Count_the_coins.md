@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Count_the_coins
+[1]: https://rosettacode.org/wiki/Count_the_coins
 
 # [Count the coins][1]
 

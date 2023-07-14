@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Temperature_conversion
+[1]: https://rosettacode.org/wiki/Temperature_conversion
 
 # [Temperature conversion][1]
 

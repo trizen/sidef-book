@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Primality_by_trial_division
+[1]: https://rosettacode.org/wiki/Primality_by_trial_division
 
 # [Primality by trial division][1]
 

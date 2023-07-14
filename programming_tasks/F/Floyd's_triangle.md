@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Floyd's_triangle
+[1]: https://rosettacode.org/wiki/Floyd's_triangle
 
 # [Floyd's triangle][1]
 

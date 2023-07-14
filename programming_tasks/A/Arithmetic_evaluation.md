@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Arithmetic_evaluation
+[1]: https://rosettacode.org/wiki/Arithmetic_evaluation
 
 # [Arithmetic evaluation][1]
 

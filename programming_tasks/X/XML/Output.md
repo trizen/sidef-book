@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/XML/Output
+[1]: https://rosettacode.org/wiki/XML/Output
 
 # [XML/Output][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sorting_algorithms/Gnome_sort
+[1]: https://rosettacode.org/wiki/Sorting_algorithms/Gnome_sort
 
 # [Sorting algorithms/Gnome sort][1]
 

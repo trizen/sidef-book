@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/N'th
+[1]: https://rosettacode.org/wiki/N'th
 
 # [N'th][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Wireworld
+[1]: https://rosettacode.org/wiki/Wireworld
 
 # [Wireworld][1]
 

@@ -1,11 +1,11 @@
-[1]: http://rosettacode.org/wiki/Rosetta_Code/Count_examples
+[1]: https://rosettacode.org/wiki/Rosetta_Code/Count_examples
 
 # [Rosetta Code/Count examples][1]
 
 ```ruby
 var lwp = require('LWP::UserAgent').new(agent => 'Mozilla/5.0');
  
-var site = 'http://rosettacode.org';
+var site = 'https://rosettacode.org';
 var list_url = '/mw/api.php?action=query&list=categorymembers&'+
                'cmtitle=Category:Programming_Tasks&cmlimit=500&format=xml';
  

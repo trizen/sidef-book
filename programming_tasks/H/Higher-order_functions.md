@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Higher-order_functions
+[1]: https://rosettacode.org/wiki/Higher-order_functions
 
 # [Higher-order functions][1]
 

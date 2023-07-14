@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Entropy/Narcissist
+[1]: https://rosettacode.org/wiki/Entropy/Narcissist
 
 # [Entropy/Narcissist][1]
 

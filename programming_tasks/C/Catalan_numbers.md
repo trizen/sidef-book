@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Catalan_numbers
+[1]: https://rosettacode.org/wiki/Catalan_numbers
 
 # [Catalan numbers][1]
 

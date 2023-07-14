@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Count_occurrences_of_a_substring
+[1]: https://rosettacode.org/wiki/Count_occurrences_of_a_substring
 
 # [Count occurrences of a substring][1]
 

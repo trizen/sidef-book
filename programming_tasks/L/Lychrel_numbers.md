@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Lychrel_numbers
+[1]: https://rosettacode.org/wiki/Lychrel_numbers
 
 # [Lychrel numbers][1]
 

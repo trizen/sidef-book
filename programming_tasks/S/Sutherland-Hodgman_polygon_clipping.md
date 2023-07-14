@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sutherland-Hodgman_polygon_clipping
+[1]: https://rosettacode.org/wiki/Sutherland-Hodgman_polygon_clipping
 
 # [Sutherland-Hodgman polygon clipping][1]
 

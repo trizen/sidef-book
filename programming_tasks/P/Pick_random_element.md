@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Pick_random_element
+[1]: https://rosettacode.org/wiki/Pick_random_element
 
 # [Pick random element][1]
 

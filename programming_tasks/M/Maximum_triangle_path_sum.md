@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Maximum_triangle_path_sum
+[1]: https://rosettacode.org/wiki/Maximum_triangle_path_sum
 
 # [Maximum triangle path sum][1]
 

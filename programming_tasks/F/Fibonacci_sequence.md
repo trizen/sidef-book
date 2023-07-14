@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Fibonacci_sequence
+[1]: https://rosettacode.org/wiki/Fibonacci_sequence
 
 # [Fibonacci sequence][1]
 

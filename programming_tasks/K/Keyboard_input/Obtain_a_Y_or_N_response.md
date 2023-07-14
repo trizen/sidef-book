@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Keyboard_input/Obtain_a_Y_or_N_response
+[1]: https://rosettacode.org/wiki/Keyboard_input/Obtain_a_Y_or_N_response
 
 # [Keyboard input/Obtain a Y or N response][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Babbage_problem
+[1]: https://rosettacode.org/wiki/Babbage_problem
 
 # [Babbage problem][1]
 

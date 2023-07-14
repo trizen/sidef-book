@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Rosetta_Code/Fix_code_tags
+[1]: https://rosettacode.org/wiki/Rosetta_Code/Fix_code_tags
 
 # [Rosetta Code/Fix code tags][1]
 

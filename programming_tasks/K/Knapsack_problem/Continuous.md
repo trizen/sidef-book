@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Knapsack_problem/Continuous
+[1]: https://rosettacode.org/wiki/Knapsack_problem/Continuous
 
 # [Knapsack problem/Continuous][1]
 

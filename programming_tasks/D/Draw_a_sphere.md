@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Draw_a_sphere
+[1]: https://rosettacode.org/wiki/Draw_a_sphere
 
 # [Draw a sphere][1]
 

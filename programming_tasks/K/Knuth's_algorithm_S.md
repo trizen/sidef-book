@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Knuth's_algorithm_S
+[1]: https://rosettacode.org/wiki/Knuth's_algorithm_S
 
 # [Knuth's algorithm S][1]
 

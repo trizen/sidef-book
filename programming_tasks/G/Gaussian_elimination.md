@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Gaussian_elimination
+[1]: https://rosettacode.org/wiki/Gaussian_elimination
 
 # [Gaussian elimination][1]
 

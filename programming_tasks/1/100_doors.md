@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/100_doors
+[1]: https://rosettacode.org/wiki/100_doors
 
 # [100 doors][1]
 

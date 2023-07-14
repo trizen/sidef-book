@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Top_rank_per_group
+[1]: https://rosettacode.org/wiki/Top_rank_per_group
 
 # [Top rank per group][1]
 

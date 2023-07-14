@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Greatest_common_divisor
+[1]: https://rosettacode.org/wiki/Greatest_common_divisor
 
 # [Greatest common divisor][1]
 

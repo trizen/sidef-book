@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Xiaolin_Wu's_line_algorithm
+[1]: https://rosettacode.org/wiki/Xiaolin_Wu's_line_algorithm
 
 # [Xiaolin Wu's line algorithm][1]
 

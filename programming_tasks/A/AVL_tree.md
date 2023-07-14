@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/AVL_tree
+[1]: https://rosettacode.org/wiki/AVL_tree
 
 # [AVL tree][1]
 

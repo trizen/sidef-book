@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Check_that_file_exists
+[1]: https://rosettacode.org/wiki/Check_that_file_exists
 
 # [Check that file exists][1]
 

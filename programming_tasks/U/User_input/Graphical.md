@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/User_input/Graphical
+[1]: https://rosettacode.org/wiki/User_input/Graphical
 
 # [User input/Graphical][1]
 

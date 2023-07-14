@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Anagrams/Deranged_anagrams
+[1]: https://rosettacode.org/wiki/Anagrams/Deranged_anagrams
 
 # [Anagrams/Deranged anagrams][1]
 

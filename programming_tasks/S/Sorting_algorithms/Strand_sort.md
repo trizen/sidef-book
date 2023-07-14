@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sorting_algorithms/Strand_sort
+[1]: https://rosettacode.org/wiki/Sorting_algorithms/Strand_sort
 
 # [Sorting algorithms/Strand sort][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sudoku
+[1]: https://rosettacode.org/wiki/Sudoku
 
 # [Sudoku][1]
 

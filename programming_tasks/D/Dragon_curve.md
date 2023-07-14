@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Dragon_curve
+[1]: https://rosettacode.org/wiki/Dragon_curve
 
 # [Dragon curve][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Huffman_coding
+[1]: https://rosettacode.org/wiki/Huffman_coding
 
 # [Huffman coding][1]
 

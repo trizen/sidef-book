@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Draw_a_cuboid
+[1]: https://rosettacode.org/wiki/Draw_a_cuboid
 
 # [Draw a cuboid][1]
 

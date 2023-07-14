@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Hofstadter_Q_sequence
+[1]: https://rosettacode.org/wiki/Hofstadter_Q_sequence
 
 # [Hofstadter Q sequence][1]
 

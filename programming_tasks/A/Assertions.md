@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Assertions
+[1]: https://rosettacode.org/wiki/Assertions
 
 # [Assertions][1]
 

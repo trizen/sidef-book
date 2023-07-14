@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Sum_of_a_series
+[1]: https://rosettacode.org/wiki/Sum_of_a_series
 
 # [Sum of a series][1]
 

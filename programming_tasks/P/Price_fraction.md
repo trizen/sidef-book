@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Price_fraction
+[1]: https://rosettacode.org/wiki/Price_fraction
 
 # [Price fraction][1]
 

@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/LZW_compression
+[1]: https://rosettacode.org/wiki/LZW_compression
 
 # [LZW compression][1]
 

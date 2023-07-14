@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Egyptian_fractions
+[1]: https://rosettacode.org/wiki/Egyptian_fractions
 
 # [Egyptian fractions][1]
 

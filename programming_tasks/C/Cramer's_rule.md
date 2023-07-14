@@ -1,4 +1,4 @@
-[1]: http://rosettacode.org/wiki/Cramer's_rule
+[1]: https://rosettacode.org/wiki/Cramer's_rule
 
 # [Cramer's rule][1]
 

@@ -1,8 +1,8 @@
-[1]: http://rosettacode.org/wiki/Averages/Mean_time_of_day
+[1]: https://rosettacode.org/wiki/Averages/Mean_time_of_day
 
 # [Averages/Mean time of day][1]
 
-Using the *mean_angle()* function from: ["Averages/Mean angle"](http://rosettacode.org/wiki/Averages/Mean_angle#Sidef)
+Using the *mean_angle()* function from: ["Averages/Mean angle"](https://rosettacode.org/wiki/Averages/Mean_angle#Sidef)
 
 ```ruby
 func time2deg(t) {
