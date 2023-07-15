@@ -11,9 +11,11 @@ Usage: sidef [switches] [--] [programfile] [arguments]
   -E program    one line of program
   -H            interactive help
   -i            interactive mode
-  -k            keep track of potential unsafe parser interpretations
+  -k            keep track of potentially incorrect parser interpretations
   -M mode       set the rounding mode of floating-point numbers
-                valid modes: [near], zero, inf, +inf, -inf
+                valid modes: [near], zero, inf, +inf, -inf, faith
+  -N options    modify class-variables inside the Number class
+                valid format: 'VERBOSE=1; USE_YAFU=1; USE_PRIMECOUNT=1'
   -o file       file where to dump the output
   -O level      perform code optimizations before execution
                 valid levels: [0], 1, 2
