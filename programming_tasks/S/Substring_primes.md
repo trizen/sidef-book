@@ -11,7 +11,7 @@ func split_at_indices(array, indices) {
     var i = 0
  
     for j in (indices) {
-        parts << array.slice(i, j)
+        parts << [array[i..j]]
         i = j+1
     }
  

@@ -3,7 +3,7 @@
 # [Weird numbers][1]
 
 ```ruby
-func is_pseudoperfect(n, d = n.divisors.slice(0, -2), s = d.sum, m = d.end) {
+func is_pseudoperfect(n, d = n.divisors.first(-1), s = d.sum, m = d.end) {
  
     return false if (m < 0)
  

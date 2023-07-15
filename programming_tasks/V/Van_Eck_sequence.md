@@ -19,7 +19,7 @@ func van_eck(n) {
 }
  
 say van_eck(10)
-say van_eck(1000).slice(991-1, 1000-1)
+say van_eck(1000).last(10)
 ```
 
 #### Output:
