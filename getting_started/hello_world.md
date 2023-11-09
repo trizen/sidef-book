@@ -1,4 +1,4 @@
-# Creating the first Sidef script
+# Hello world!
 
 A Sidef script can be written in any text editor and, by convention, it has the **`.sf`** extension.
 
