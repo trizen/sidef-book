@@ -1,6 +1,6 @@
-[1]: https://rosettacode.org/wiki/Ap%C3%A9ry%27s_constant
+[1]: https://rosettacode.org/wiki/Apéry%27s_constant
 
-# [Apéry's constant][1]
+# [Apéry&#039;s constant][1]
 
 ```ruby
 local Num!PREC = 4*101
