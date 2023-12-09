@@ -11,7 +11,7 @@ func getNthLine(filename, n) {
   warn "file #{file} does not have #{n} lines, only #{$.}\n"
   return nil
 }
- 
+
 var line = getNthLine("/etc/passwd", 7)
 say line if defined(line)
 ```

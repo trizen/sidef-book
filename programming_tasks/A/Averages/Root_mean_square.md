@@ -6,8 +6,15 @@
 func rms(a) {
     sqrt(a.map{.**2}.sum / a.len)
 }
- 
+
 say rms(1..10)
+```
+
+
+Using hyper operators, we can write it as:
+
+```ruby
+func rms(a) { a »**» 2 «+» / a.len -> sqrt }
 ```
 
 #### Output:

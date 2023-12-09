@@ -13,7 +13,7 @@ while (points.len < 100) {
         points.append([x, y])
     }
 }
- 
+
 print <<'HEAD'
 %!PS-Adobe-3.0 EPSF-3.0
 %%BoundingBox 0 0 400 400
@@ -25,7 +25,7 @@ print <<'HEAD'
 0 setgray
 /pt { .1 0 360 arc fill } def
 HEAD
- 
+
 points.each { |pt| say "#{pt.join(' ')} pt" }
 print '%%EOF'
 ```

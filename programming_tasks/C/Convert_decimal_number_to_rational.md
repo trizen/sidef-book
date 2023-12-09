@@ -10,7 +10,7 @@ say 0.518518.as_frac      #=> 259259/500000
 say 0.9054054.as_frac     #=> 4527027/5000000
 ```
 
-Additionally, *Num(str)* can be used for parsing a decimal expansion into rational form:
+Additionally, `Num(str)` can be used for parsing a decimal expansion into rational form:
 
 ```ruby
 '0.9054054 0.518518 0.75'.split.each { |str|
@@ -25,7 +25,7 @@ Additionally, *Num(str)* can be used for parsing a decimal expansion into ration
 3/4
 ```
 
-For rational approximations, the Number *.rat_approx* method can be used:
+For rational approximations, the Number `.rat_approx` method can be used:
 
 ```ruby
 say 0.518518.rat_approx.as_frac    #=> 14/27

@@ -2,7 +2,7 @@
 
 # [Hello world/Graphical][1]
 
-Tk:
+### Tk:
 
 ```ruby
 var tk = require('Tk')
@@ -14,7 +14,7 @@ main.Button(
 tk.MainLoop
 ```
 
-Gtk2:
+### Gtk2:
 
 ```ruby
 var gtk2 = require('Gtk2') -> init
@@ -29,4 +29,22 @@ window.add(label)
 window.show_all
  
 gtk2.main
+```
+
+### Gtk3:
+
+```ruby
+use('Gtk3 -init')
+
+var gtk3   = %O'Gtk3'
+var window = %O'Gtk3::Window'.new
+var label  = %O'Gtk3::Label'.new('Goodbye, World!')
+
+window.set_title('Goodbye, World!')
+window.signal_connect(destroy => { gtk3.main_quit })
+
+window.add(label)
+window.show_all
+
+gtk3.main
 ```

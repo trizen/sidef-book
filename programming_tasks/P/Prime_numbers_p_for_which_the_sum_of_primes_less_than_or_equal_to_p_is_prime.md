@@ -10,9 +10,9 @@ func primes_with_prime_sum(n, callback) {
         callback(p, s) if s.is_prime
     }
 }
- 
+
 primes_with_prime_sum(1000, {|p,s|
-    say "prime: #{'%3s' % p}   prime sum: #{'%5s' % s}"
+    say "prime: #{'%3s' % p}   prime sum: #{'%5s' % s}"
 })
 ```
 

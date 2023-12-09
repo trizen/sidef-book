@@ -5,7 +5,7 @@
 ```ruby
 func magic_square(n {.is_pos && .is_odd}) {
     var i = 0
-    var j = int(n/2)
+    var j = idiv(n, 2)
 
     var magic_square = []
     for l in (1 .. n**2) {

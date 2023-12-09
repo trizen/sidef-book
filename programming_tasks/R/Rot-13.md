@@ -7,7 +7,7 @@
 func rot13(s) {
     s.tr('A-Za-z', 'N-ZA-Mn-za-m')
 }
- 
+
 # Perform rot13 on standard input.
 STDIN.each { |line| say rot13(line) }
 ```

@@ -7,7 +7,7 @@ struct City {
     String name,
     Number population,
 }
- 
+
 var cities = [
     City("Lagos", 21),
     City("Cairo", 15.2),
@@ -20,7 +20,15 @@ var cities = [
     City("Abidjan", 4.4),
     City("Casablanca", 3.98),
 ]
- 
-say cities.index{|city| city.name == "Dar Es Salaam"}   # => 6
-say cities.first{|city| city.population < 5.0}.name     # => Khartoum-Omdurman
+
+say cities.index{|city| city.name == "Dar Es Salaam"}
+say cities.first{|city| city.population < 5.0}.name
+say cities.first{|city| city.name.begins_with("A")}.population
+```
+
+#### Output:
+```
+6
+Khartoum-Omdurman
+4.58
 ```

@@ -5,5 +5,5 @@
 No limit:
 
 ```ruby
-{|i| say i } * Inf
+1..Inf -> each {.say}
 ```

@@ -6,9 +6,9 @@
 func eq_index(nums) {
     var (i, sum, sums) = (0, 0, Hash.new);
     nums.each { |n|
-        sums{2*sum + n} := [] -> append(i++);
+        sums{2*sum + n} := [] -> append(i++)
         sum += n;
-    };
+    }
     sums{sum} \\ [];
 }
 ```

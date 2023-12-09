@@ -5,7 +5,7 @@
 ```ruby
 func baz(i) { die "U#{i}" }
 func bar(i) { baz(i)      }
- 
+
 func foo {
     [0, 1].each { |i|
         try   { bar(i) }
@@ -15,7 +15,7 @@ func foo {
         }
     }
 }
- 
+
 foo()
 ```
 

@@ -68,10 +68,10 @@ for i in (5..10, 20) {
 #### Output:
 ```
 Gauss-Legendre  5-point quadrature ∫₋₃⁺³ exp(x) dx ≈ 20.035577718385561
-Gauss-Legendre  6-point quadrature ∫₋₃⁺³ exp(x) dx ≈ 20.035746975092341
+Gauss-Legendre  6-point quadrature ∫₋₃⁺³ exp(x) dx ≈ 20.035746975092344
 Gauss-Legendre  7-point quadrature ∫₋₃⁺³ exp(x) dx ≈ 20.035749819726600
-Gauss-Legendre  8-point quadrature ∫₋₃⁺³ exp(x) dx ≈ 20.035749854494515
-Gauss-Legendre  9-point quadrature ∫₋₃⁺³ exp(x) dx ≈ 20.035749854817432
-Gauss-Legendre 10-point quadrature ∫₋₃⁺³ exp(x) dx ≈ 20.035749854819787
-Gauss-Legendre 20-point quadrature ∫₋₃⁺³ exp(x) dx ≈ 20.035749854819802
+Gauss-Legendre  8-point quadrature ∫₋₃⁺³ exp(x) dx ≈ 20.035749854494519
+Gauss-Legendre  9-point quadrature ∫₋₃⁺³ exp(x) dx ≈ 20.035749854817436
+Gauss-Legendre 10-point quadrature ∫₋₃⁺³ exp(x) dx ≈ 20.035749854819791
+Gauss-Legendre 20-point quadrature ∫₋₃⁺³ exp(x) dx ≈ 20.035749854819805
 ```

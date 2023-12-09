@@ -14,12 +14,12 @@ func EncodeNegBase(Num n, Num b { .~~ (-36 .. -2) }) {
         }
         out << r.base(-b)
     }
-    return (out.join.flip || 0)
+    return (out.join.flip || "0")
 }
  
 func DecodeNegBase(Str s, Num b { .~~ (-36 .. -2) }) {
     var total = 0
-    for i,c in (s.flip.chars.pairs) {
+    for i,c in (s.flip.chars.kv) {
         total += (Num(c, -b) * b**i)
     }
     return total

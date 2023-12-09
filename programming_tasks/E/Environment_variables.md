@@ -2,8 +2,8 @@
 
 # [Environment variables][1]
 
-The _ENV_ hash maps environment variables to their values:
+The `ENV` hash maps environment variables to their values:
 
 ```ruby
-say ENV{'HOME'};
+say ENV{'HOME'}
 ```

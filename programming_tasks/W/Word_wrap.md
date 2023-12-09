@@ -2,7 +2,7 @@
 
 # [Word wrap][1]
 
-Greedy:
+### Greedy word wrap
 
 ```ruby
 class String {
@@ -33,7 +33,7 @@ ddddd
 ```
 
 
-Smart:
+### Smart word wrap
 
 ```ruby
 class SmartWordWrap {

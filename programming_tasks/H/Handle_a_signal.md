@@ -4,12 +4,12 @@
 
 ```ruby
 var start = Time.sec
- 
+
 Sig.INT {
     say "Ran for #{Time.sec - start} seconds."
     Sys.exit
 }
- 
+
 { |i|
     say i
     Sys.sleep(0.5)

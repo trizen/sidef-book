@@ -2,7 +2,7 @@
 
 # [Permutations with some identical elements][1]
 
-Simple implementation, by filtering out the duplicated permutations:
+Simple implementation, by filtering out the duplicated permutations.
 
 ```ruby
 func permutations_with_some_identical_elements (reps) {

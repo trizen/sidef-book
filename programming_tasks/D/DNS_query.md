@@ -8,7 +8,7 @@ var (err, *res) = Socket.getaddrinfo(
         Hash(protocol => Socket.IPPROTO_TCP)
 )
 err && die err
-for z (res) {
+res.each { |z|
     say [Socket.getnameinfo(z{:addr}, Socket.NI_NUMERICHOST)][1]
 }
 ```

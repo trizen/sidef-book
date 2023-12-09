@@ -51,9 +51,6 @@ say (
 ```
 
 
-*Output:*
-
-
 #### Output:
 ```
 My guess: 7432   (from 3024 possibilities)

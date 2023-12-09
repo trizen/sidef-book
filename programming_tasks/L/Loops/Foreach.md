@@ -2,7 +2,7 @@
 
 # [Loops/Foreach][1]
 
-*foreach* loop:
+**foreach** loop:
 
 ```ruby
 foreach [1,2,3] { |i|
@@ -10,7 +10,8 @@ foreach [1,2,3] { |i|
 }
 ```
 
-*for-in* loop:
+
+**for-in** loop:
 
 ```ruby
 for i in [1,2,3] {
@@ -18,8 +19,8 @@ for i in [1,2,3] {
 }
 ```
 
-*.each* method:
 
+**.each** method:
 
 ```ruby
 [1,2,3].each { |i|

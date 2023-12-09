@@ -12,9 +12,8 @@ func binomial(n,k) {
 say binomial(400, 200)
 ```
 
-
-Alternatively, by using the _Number.nok()_ method:
+Alternatively, by using the `Number.binomial()` function:
 
 ```ruby
-say 400.nok(200)
+say binomial(400,200)
 ```

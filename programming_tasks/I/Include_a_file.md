@@ -9,7 +9,7 @@ include('file.sf')
 ```
 
 
-Include a file as module (file must exists in *SIDEF_INC* as *Some/Name.sm*):
+Include a file as module (file must exists in `SIDEF_INC` as `Some/Name.sm`):
 
 ```ruby
 include Some::Name

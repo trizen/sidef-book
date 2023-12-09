@@ -6,8 +6,8 @@
 #### Built-in
 
 ```ruby
-[1,2,3].permutations { |p|
-    say p
+[0,1,2].permutations { |*a|
+    say a
 }
 ```
 

@@ -4,10 +4,10 @@
 
 ```ruby
 var (games=100) = ARGV.map{.to_i}...
- 
+
 define DIE = 1..6
 define GOAL = 100
- 
+
 class Player(score=0, ante=0, rolls=0, strategy={false}) {
     method turn {
         rolls = 0
@@ -28,26 +28,26 @@ class Player(score=0, ante=0, rolls=0, strategy={false}) {
         score += ante
     }
 }
- 
+
 var players = []
- 
+
 # default, go-for-broke, always roll again
 players[0] = Player()
- 
+
 # try to roll 5 times but no more per turn
 players[1] = Player( strategy: { players[1].rolls >= 5 } )
- 
+
 # try to accumulate at least 20 points per turn
 players[2] = Player( strategy: { players[2].ante > 20 } )
- 
+
 # random but 90% chance of rolling again
 players[3] = Player( strategy: { 1.rand < 0.1 } )
- 
+
 # random but more conservative as approaches goal
 players[4] = Player( strategy: { 1.rand < ((GOAL - players[4].score) * 0.6 / GOAL) } )
- 
+
 var wins = players.len.of(0)
- 
+
 games.times {
     var player = -1
     loop {
@@ -60,7 +60,7 @@ games.times {
     players.map{.score}.join("\t").say
     players.each { |p| p.score = 0 }
 }
- 
+
 say "\nSCORES: for #{games} games"
 say wins.join("\t")
 ```

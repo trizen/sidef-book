@@ -7,7 +7,7 @@ func avg(Array list) {
     list.len > 0 || return 0
     list.sum / list.len
 }
- 
+
 say avg([Inf, Inf])
 say avg([3,1,4,1,5,9])
 say avg([1e+20, 3, 1, 4, 1, 5, 9, -1e+20])

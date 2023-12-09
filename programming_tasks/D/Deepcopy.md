@@ -2,7 +2,7 @@
 
 # [Deepcopy][1]
 
-_Object.dclone()_ returns a deep clone of any mutable object.
+`Object.dclone()` returns a deep clone of any mutable object.
 
 ```ruby
 var src = Hash(foo => 0, bar => [0,1])

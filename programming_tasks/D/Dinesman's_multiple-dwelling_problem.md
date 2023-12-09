@@ -2,6 +2,8 @@
 
 # [Dinesman's multiple-dwelling problem][1]
 
+### By parsing the problem
+
 ```ruby
 func dinesman(problem) {
   var lines = problem.split('.')
@@ -92,6 +94,10 @@ Fletcher
 Guinan
 Smith
 ```
+
+
+### Simple solution
+
 ```ruby
 var names = %w(Baker Cooper Fletcher Miller Smith)
  

@@ -2,6 +2,8 @@
 
 # [Collections][1]
 
+### Array
+
 Arrays are ordered, integer-indexed collections of any object.
 
 ```ruby
@@ -13,6 +15,8 @@ a << 3.14           #=> [1, nil, nil, "abc", 3.14]
 ```
 
 
+### Hash
+
 A Hash is a dictionary-like collection of unique keys and their values. Also called associative arrays, they are similar to Arrays, but where an Array uses integers as its index, a Hash allows you to use any object type, which is automatically converted into a String.
 
 ```ruby
@@ -23,6 +27,8 @@ h{:bar} = 2.4     #=> Hash("foo"=>1, "bar"=>2.4)
 h{:bar} += 3      #=> Hash("foo"=>1, "bar"=>5.4)
 ```
 
+
+### Pair
 
 A Pair is an array-like collection, but restricted only to two elements.
 
@@ -43,6 +49,8 @@ loop {
 }
 ```
 
+
+### Struct
 
 A Struct is a convenient way to bundle a number of attributes together.
 

@@ -36,8 +36,7 @@ func arithmethic_coding(bytes, radix=10) {
     # Each term is multiplied by the product of the
     # frequencies of all previously occurring symbols
     bytes.each { |b|
-        var x = cf{b}
-        L *= base += x*pf
+        L = (L*base + cf{b}*pf)
         pf *= freq{b}
     }
 
@@ -55,8 +54,8 @@ func arithmethic_decoding(enc, radix, pow, freq) {
     # Multiply enc by radix^pow
     enc *= radix**pow;
 
-    var base = 0
-    freq.each_value { |v| base += v }
+    # Base
+    var base = freq.values.sum
 
     # Create the cumulative frequency table
     var cf = cumulative_freq(freq);

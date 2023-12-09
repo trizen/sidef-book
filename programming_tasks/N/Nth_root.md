@@ -4,11 +4,11 @@
 
 ```ruby
 func nthroot(n, a, precision=1e-5) {
-  var x = 1
-  var prev = 0
+  var x = 1.float
+  var prev = 0.float
   while (abs(prev-x) > precision) {
     prev = x
-    x = float(((n-1)*prev + a/(prev**(n-1))) / n)
+    x = (((n-1)*prev + a/(prev**(n-1))) / n)
   }
   return x
 }

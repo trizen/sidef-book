@@ -10,7 +10,7 @@ func cuboid(nx, ny, nz) {
   var(x, y, z) = (8*nx, 2*ny, 4*nz)
   var area = []
   var line = func(n, sx, sy, c) {
-    var(dx, dy) = dirs{c}...;
+    var(dx, dy) = dirs{c}...
     for i (0..n) {
       var (xi, yi) = (sx + i*dx, sy + i*dy)
       area[yi] \\= [" "]*(x+y+1)
@@ -18,12 +18,12 @@ func cuboid(nx, ny, nz) {
     }
   }
  
-  0 .. nz-1 -> each {|i| line.call(x,       0,     4*i, "-")}
-  0 .. ny   -> each {|i| line.call(x,     2*i, z + 2*i, "-")}
-  0 .. nx-1 -> each {|i| line.call(z,     8*i,       0, "|")}
-  0 .. ny   -> each {|i| line.call(z, x + 2*i,     2*i, "|")}
-  0 .. nz-1 -> each {|i| line.call(y,       x,     4*i, "/")}
-  0 .. nx   -> each {|i| line.call(y,     8*i,       z, "/")}
+  0 .. nz-1 -> each {|i| line(x,       0,     4*i, "-") }
+  0 .. ny   -> each {|i| line(x,     2*i, z + 2*i, "-") }
+  0 .. nx-1 -> each {|i| line(z,     8*i,       0, "|") }
+  0 .. ny   -> each {|i| line(z, x + 2*i,     2*i, "|") }
+  0 .. nz-1 -> each {|i| line(y,       x,     4*i, "/") }
+  0 .. nx   -> each {|i| line(y,     8*i,       z, "/") }
  
   area.reverse.each { |line|
      say line.join('')
@@ -37,7 +37,7 @@ cuboid(2, 4, 1)
 ```
 
 
-*A faster approach:*
+**A faster approach:**
 
 ```ruby
 func cuboid (x=1,y=1,z=1,s=' ',c='+',h='-',v='|',d='/') {

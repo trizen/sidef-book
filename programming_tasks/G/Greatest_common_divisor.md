@@ -2,14 +2,15 @@
 
 # [Greatest common divisor][1]
 
-Built-in:
+### Built-in
 
 ```ruby
 var arr = [100, 1_000, 10_000, 20]
 say Math.gcd(arr...)
 ```
 
-Recursive Euclid algorithm:
+
+### Recursive Euclid algorithm
 
 ```ruby
 func gcd(a, b) {

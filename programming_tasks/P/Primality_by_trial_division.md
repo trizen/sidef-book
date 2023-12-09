@@ -11,3 +11,17 @@ func is_prime(a) {
   }
 }
 ```
+
+
+Alternative version, excluding multiples of 2 and 3:
+
+```ruby
+func is_prime(n) {
+    return (n >= 2) if (n < 4)
+    return false if (n%%2 || n%%3)
+    for k in (5 .. n.isqrt -> by(6)) {
+        return false if (n%%k || n%%(k+2))
+    }
+    return true
+}
+```

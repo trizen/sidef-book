@@ -8,7 +8,7 @@ require('Imager')
 var w = 640
 var h = 640
 
-var img = %O<Imager>.new(xsize => w, ysize => h, channels => 3)
+var img   = %O<Imager>.new(xsize => w, ysize => h, channels => 3)
 var green = %O<Imager::Color>.new('#00FF00')
 
 var (x, y) = (0.float, 0.float)

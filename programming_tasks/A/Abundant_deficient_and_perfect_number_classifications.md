@@ -3,10 +3,8 @@
 # [Abundant, deficient and perfect number classifications][1]
 
 ```ruby
-func propdivsum(n) {
-    n.sigma - n
-}
- 
+func propdivsum(n) { n.sigma - n }
+
 var h = Hash()
 {|i| ++(h{propdivsum(i) <=> i} := 0) } << 1..20000
 say "Perfect: #{h{0}}    Deficient: #{h{-1}}    Abundant: #{h{1}}"

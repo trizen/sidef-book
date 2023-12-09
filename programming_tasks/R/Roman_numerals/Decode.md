@@ -41,7 +41,7 @@ MDCLXVI    == 1666
 ```
 
 
-Simpler:
+Simpler solution:
 
 ```ruby
 func roman2arabic(digit) {

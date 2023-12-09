@@ -2,7 +2,7 @@
 
 # [Levenshtein distance][1]
 
-Recursive:
+### Recursive
 
 ```ruby
 func lev(s, t) is cached {
@@ -22,7 +22,8 @@ func lev(s, t) is cached {
 }
 ```
 
-Iterative:
+
+### Iterative
 
 ```ruby
 func lev(s, t) {

@@ -9,7 +9,7 @@ say divisors(97)    #=> [1, 97]
 say divisors(2695)  #=> [1, 5, 7, 11, 35, 49, 55, 77, 245, 385, 539, 2695]
 ```
 
-Trial division (slow for large n):
+Trial-division (slow for large n):
 
 ```ruby
 func divisors(n) {

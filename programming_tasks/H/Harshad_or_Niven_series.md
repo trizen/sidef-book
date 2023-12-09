@@ -10,15 +10,15 @@ func harshad() {
         n
     }
 }
- 
+
 var iter = harshad()
 say 20.of { iter.run }
- 
+
 var n
 do {
     n = iter.run
 } while (n <= 1000)
- 
+
 say n
 ```
 

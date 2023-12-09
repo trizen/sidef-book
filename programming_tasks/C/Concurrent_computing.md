@@ -2,12 +2,16 @@
 
 # [Concurrent computing][1]
 
-A very basic threading support is provided by the *Block.fork()* method:
+A very basic threading support is provided by the `Block.fork()` method:
 
 ```ruby
-<Enjoy Rosetta Code>            \
-    .map{|str| {say str}.fork } \
-    .map{|thr| thr.wait }
+var a = <Enjoy Rosetta Code>
+
+a.map{|str|
+    {   Sys.sleep(1.rand)
+        say str
+    }.fork
+}.map{|thr| thr.wait }
 ```
 
 #### Output:

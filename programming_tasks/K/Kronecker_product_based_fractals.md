@@ -32,7 +32,7 @@ for name,shape,order in [
 }
 ```
 
-Output images:
+### Output images:
 
     * [Kronecker six](https://github.com/trizen/rc/blob/master/img/kronecker-six-sidef.png)
     * [Kronecker carpet](https://github.com/trizen/rc/blob/master/img/kronecker-carpet-sidef.png)

@@ -15,7 +15,7 @@ func patience(deck) {
       }
     }
   }
- 
+
   gather {
     while (stacks) {
       take stacks.min_by { .last }.pop
@@ -23,7 +23,7 @@ func patience(deck) {
     }
   }
 }
- 
+
 var a = [4, 65, 2, -31, 0, 99, 83, 782, 1]
 say patience(a)
 ```

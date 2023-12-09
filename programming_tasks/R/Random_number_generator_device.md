@@ -13,5 +13,5 @@ func urandom() {
     'L'.unpack(noise)
 }
 
-say urandom()    # sample: 3517432564
+say urandom()    # sample: 1989353410
 ```

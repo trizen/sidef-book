@@ -2,7 +2,7 @@
 
 # [Loops/Downward for][1]
 
-*for(;;)* loop:
+**for(;;)** loop:
 
 ```ruby
 for (var i = 10; i >= 0; i--) {
@@ -10,7 +10,8 @@ for (var i = 10; i >= 0; i--) {
 }
 ```
 
-*for-in* loop:
+
+**for-in** loop:
 
 ```ruby
 for i in (11 ^.. 0) {
@@ -18,7 +19,8 @@ for i in (11 ^.. 0) {
 }
 ```
 
-*.each* method:
+
+**.each** method:
 
 ```ruby
 10.downto(0).each { |i|

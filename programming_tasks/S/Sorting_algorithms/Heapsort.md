@@ -18,7 +18,7 @@ func sift_down(a, start, end) {
         }
     }
 }
- 
+
 func heapify(a, count) {
     var start = ((count - 2) / 2)
     while (start >= 0) {
@@ -26,7 +26,7 @@ func heapify(a, count) {
         start -= 1
     }
 }
- 
+
 func heap_sort(a, count) {
     heapify(a, count)
     var end = (count - 1)
@@ -37,7 +37,7 @@ func heap_sort(a, count) {
     }
     return a
 }
- 
+
 var arr = (1..10 -> shuffle)   # creates a shuffled array
 say arr                        # prints the unsorted array
 heap_sort(arr, arr.len)        # sorts the array in-place

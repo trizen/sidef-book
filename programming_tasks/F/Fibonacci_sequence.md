@@ -2,7 +2,7 @@
 
 # [Fibonacci sequence][1]
 
-Iterative:
+### Iterative
 
 ```ruby
 func fib_iter(n) {
@@ -12,7 +12,8 @@ func fib_iter(n) {
 }
 ```
 
-Recursive:
+
+### Recursive
 
 ```ruby
 func fib_rec(n) {
@@ -20,14 +21,18 @@ func fib_rec(n) {
 }
 ```
 
-Recursive with memoization:
+
+### Recursive with memoization
+
 ```ruby
 func fib_mem (n) is cached {
     n < 2 ? n : (__FUNC__(n-1) + __FUNC__(n-2))
 }
 ```
 
-Closed-form:
+
+### Closed-form
+
 ```ruby
 func fib_closed(n) {
     define S = (1.25.sqrt + 0.5)
@@ -36,7 +41,9 @@ func fib_closed(n) {
 }
 ```
 
-Built-in:
+
+### Built-in
+
 ```ruby
 say fib(12)        #=> 144
 ```

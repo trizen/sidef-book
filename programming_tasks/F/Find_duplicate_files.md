@@ -2,7 +2,7 @@
 
 # [Find duplicate files][1]
 
-It uses the portable _File::Find_ module which means that it should work, virtually, on any platform.
+It uses the portable `File::Find` module which means that it should work, virtually, on any platform.
 
 ```ruby
 # usage: sidef fdf.sf [size] [dir1] [...]

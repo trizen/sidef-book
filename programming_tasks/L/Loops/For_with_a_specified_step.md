@@ -2,7 +2,7 @@
 
 # [Loops/For with a specified step][1]
 
-*for(;;)* loop:
+**for(;;)** loop:
 
 ```ruby
 for (var i = 2; i <= 8; i += 2) {
@@ -10,7 +10,8 @@ for (var i = 2; i <= 8; i += 2) {
 }
 ```
 
-*for-in* loop:
+
+**for-in** loop:
 
 ```ruby
 for i in (2 .. (8, 2)) {
@@ -18,7 +19,8 @@ for i in (2 .. (8, 2)) {
 }
 ```
 
-*.each* method:
+
+**.each** method:
 
 ```ruby
 2.to(8).by(2).each { |i|

@@ -2,12 +2,14 @@
 
 # [Combinations][1]
 
-#### Built-in
+### Built-in
+
 ```ruby
 combinations(5, 3, {|*c| say c })
 ```
 
-#### Recursive
+
+### Recursive
 
 ```ruby
 func combine(n, set) {
@@ -29,7 +31,8 @@ func combine(n, set) {
 combine(3, @^5).each {|c| say c }
 ```
 
-#### Iterative
+
+### Iterative
 
 ```ruby
 func forcomb(callback, n, k) {

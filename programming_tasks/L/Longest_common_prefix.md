@@ -16,10 +16,10 @@ func find_common_prefix(hash, acc) {
 func lcp(*strings) {
     var hash = Hash()
 
-    for str (strings.sort_by{.len}) {
+    for str in (strings.sort_by{.len}) {
         var ref = hash
         str.is_empty && return ''
-        for char (str) {
+        for char in str {
             if (ref.contains(char)) {
                 ref = ref{char}
                 ref.len == 0 && break
@@ -50,7 +50,7 @@ var data = [
   ["foo","foobar"]
 ]
 
-for set in data {
+data.each { |set|
     say "lcp(#{set.dump.substr(1,-1)}) = #{lcp(set...).dump}"
 }
 ```

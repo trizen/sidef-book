@@ -2,7 +2,7 @@
 
 # [Loops/For][1]
 
-*for(;;)* loop:
+**for(;;)** loop:
 
 ```ruby
 for (var i = 1; i <= 5; i++) {
@@ -14,7 +14,7 @@ for (var i = 1; i <= 5; i++) {
 ```
 
 
-*for([])* loop:
+**for([])** loop:
 
 ```ruby
 for (1..5) { |i|
@@ -24,11 +24,21 @@ for (1..5) { |i|
 ```
 
 
-*for-in* loop:
+**for-in** loop:
 
 ```ruby
 for i in (1..5) {
     for j in (1..i) { print '*' }
+    print "\n"
+}
+```
+
+
+Idiomatic:
+
+```ruby
+5.times { |i|
+    i.times { print '*' }
     print "\n"
 }
 ```

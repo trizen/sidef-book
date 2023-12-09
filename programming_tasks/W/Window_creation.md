@@ -2,7 +2,7 @@
 
 # [Window creation][1]
 
-*Tk*:
+### Tk
 
 ```ruby
 require('Tk')
@@ -10,7 +10,8 @@ require('Tk')
 %S'Tk'.MainLoop
 ```
 
-*Gtk2*:
+
+### Gtk2
 
 ```ruby
 var gtk2 = require('Gtk2') -> init
