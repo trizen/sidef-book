@@ -16,5 +16,5 @@ func get(url) {
     return nil
 }
 
-say get("http://rosettacode.org")
+say get("http://example.net")
 ```

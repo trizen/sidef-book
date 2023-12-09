@@ -59,11 +59,8 @@ loop {
 }
 ```
 
+#### Sample run:
 
-*Sample run:*
-
-
-#### Output:
 ```
 >> Rock Paper Scissors <<
 

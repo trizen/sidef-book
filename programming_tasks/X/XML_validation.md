@@ -22,7 +22,7 @@ var good_xml = '<a>5</a>'
 var bad_xml  = '<a>5<b>foobar</b></a>'
  
 var xmlschema_markup = <<'END'
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:schema xmlns:xsd="https://www.w3.org/2001/XMLSchema">
   <xsd:element name="a" type="xsd:integer"/>
 </xsd:schema>
 END
