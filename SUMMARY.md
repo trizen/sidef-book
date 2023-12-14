@@ -625,6 +625,7 @@
            * [Nested](programming_tasks%2FL%2FLoops%2FNested.md)
            * [While](programming_tasks%2FL%2FLoops%2FWhile.md)
        * [LU decomposition](programming_tasks%2FL%2FLU_decomposition.md)
+       * [Lucas-Carmichael numbers](programming_tasks%2FL%2FLucas-Carmichael_numbers.md)
        * [Lucas-Lehmer test](programming_tasks%2FL%2FLucas-Lehmer_test.md)
        * [Ludic numbers](programming_tasks%2FL%2FLudic_numbers.md)
        * [Luhn test of credit card numbers](programming_tasks%2FL%2FLuhn_test_of_credit_card_numbers.md)
