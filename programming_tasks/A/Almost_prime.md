@@ -2,25 +2,55 @@
 
 # [Almost prime][1]
 
+Efficient algorithm for generating all the `k`-almost prime numbers in a given range `[a,b]`:
+
 ```ruby
-func is_k_almost_prime(n, k) {
-    for (var (p, f) = (2, 0); (f < k) && (p*p <= n); ++p) {
-        (n /= p; ++f) while (p `divides` n)
-    }
-    n > 1 ? (f+1 == k) : (f == k)
+func almost_primes(a, b, k) {
+
+    a = max(2**k, a)
+    var arr = []
+
+    func (m, lo, k) {
+
+        var hi = idiv(b,m).iroot(k)
+
+        if (k == 1) {
+
+            lo = max(lo, idiv_ceil(a, m))
+
+            each_prime(lo, hi, {|p|
+                arr << m*p
+            })
+
+            return nil
+        }
+
+        each_prime(lo, hi, {|p|
+
+            var t = m*p
+            var u = idiv_ceil(a, t)
+            var v = idiv(b, t)
+
+            next if (u > v)
+
+            __FUNC__(t, p, k-1)
+        })
+    }(1, 2, k)
+
+    return arr.sort
 }
 
-{ |k|
-    var x = 10
-    say gather {
-        { |i|
-            if (is_k_almost_prime(i, k)) {
-                take(i)
-                --x == 0 && break
-            }
-        } << 1..Inf
+for k in (1..5) {
+    var (x=10, lo=1, hi=2)
+    var arr = []
+    loop {
+        arr += almost_primes(lo, hi, k)
+        break if (arr.len >= x)
+        lo = hi+1
+        hi = 2*lo
     }
-} << 1..5
+    say arr.first(x)
+}
 ```
 
 #### Output:
@@ -31,3 +61,15 @@ func is_k_almost_prime(n, k) {
 [16, 24, 36, 40, 54, 56, 60, 81, 84, 88]
 [32, 48, 72, 80, 108, 112, 120, 162, 168, 176]
 ```
+
+
+Also built-in:
+
+```ruby
+for k in (1..5) {
+    var x = 10
+    say k.almost_primes(x.nth_almost_prime(k))
+}
+```
+
+(same output as above)
