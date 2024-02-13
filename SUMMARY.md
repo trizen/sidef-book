@@ -148,6 +148,7 @@
            * [Iteration](programming_tasks%2FA%2FAssociative_array%2FIteration.md)
        * [Attractive numbers](programming_tasks%2FA%2FAttractive_numbers.md)
        * [Audio alarm](programming_tasks%2FA%2FAudio_alarm.md)
+       * [Audio frequency generator](programming_tasks%2FA%2FAudio_frequency_generator.md)
        * [Average loop length](programming_tasks%2FA%2FAverage_loop_length.md)
        * Averages
            * [Arithmetic mean](programming_tasks%2FA%2FAverages%2FArithmetic_mean.md)
@@ -255,6 +256,7 @@
        * [Continued fraction](programming_tasks/C/Continued_fraction.md)
            * Arithmetic
                * [Construct from rational number](programming_tasks%2FC%2FContinued_fraction%2FArithmetic%2FConstruct_from_rational_number.md)
+       * [Continued fraction convergents](programming_tasks%2FC%2FContinued_fraction_convergents.md)
        * [Convert decimal number to rational](programming_tasks%2FC%2FConvert_decimal_number_to_rational.md)
        * [Convert seconds to compound duration](programming_tasks%2FC%2FConvert_seconds_to_compound_duration.md)
        * [Convex hull](programming_tasks%2FC%2FConvex_hull.md)
@@ -363,6 +365,7 @@
        * [Esthetic numbers](programming_tasks%2FE%2FEsthetic_numbers.md)
        * [Ethiopian multiplication](programming_tasks%2FE%2FEthiopian_multiplication.md)
        * [Euclid-Mullin sequence](programming_tasks%2FE%2FEuclid-Mullin_sequence.md)
+       * [Euclidean rhythm](programming_tasks%2FE%2FEuclidean_rhythm.md)
        * [Euler's constant 0 5772](programming_tasks%2FE%2FEuler%27s_constant_0_5772.md)
        * [Euler's identity](programming_tasks%2FE%2FEuler%27s_identity.md)
        * [Euler's sum of powers conjecture](programming_tasks%2FE%2FEuler%27s_sum_of_powers_conjecture.md)
