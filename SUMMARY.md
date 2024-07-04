@@ -472,6 +472,7 @@
        * [Gapful numbers](programming_tasks%2FG%2FGapful_numbers.md)
        * [Gauss-Jordan matrix inversion](programming_tasks%2FG%2FGauss-Jordan_matrix_inversion.md)
        * [Gaussian elimination](programming_tasks%2FG%2FGaussian_elimination.md)
+       * [Gaussian primes](programming_tasks%2FG%2FGaussian_primes.md)
        * [General FizzBuzz](programming_tasks%2FG%2FGeneral_FizzBuzz.md)
        * [Generate Chess960 starting position](programming_tasks%2FG%2FGenerate_Chess960_starting_position.md)
        * [Generate lower case ASCII alphabet](programming_tasks%2FG%2FGenerate_lower_case_ASCII_alphabet.md)
@@ -561,6 +562,7 @@
    * J
        * [Jacobi symbol](programming_tasks%2FJ%2FJacobi_symbol.md)
        * [Jacobsthal numbers](programming_tasks%2FJ%2FJacobsthal_numbers.md)
+       * [Jaro-Winkler distance](programming_tasks%2FJ%2FJaro-Winkler_distance.md)
        * [Jaro similarity](programming_tasks%2FJ%2FJaro_similarity.md)
        * [Jensen's Device](programming_tasks%2FJ%2FJensen%27s_Device.md)
        * [Jewels and stones](programming_tasks%2FJ%2FJewels_and_stones.md)
