@@ -1,6 +1,6 @@
 # given/when
 
-The `given/when` construct is borrowed from Perl 6 and it's somewhat equivalent with `switch/case` from other languages.
+The `given/when` construct is borrowed from Raku and it's somewhat equivalent with `switch/case` from other languages.
 
 ```ruby
 given (42) {

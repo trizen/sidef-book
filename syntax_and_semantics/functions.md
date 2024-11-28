@@ -80,7 +80,7 @@ say foo(21, 21)     # prints: 42
 
 ## Named parameters
 
-This is a very nice feature borrowed from Perl 6 which allows a function to be called with named parameters, giving us the flexibility to put the arguments in no specific order:
+This is a very nice feature borrowed from Raku which allows a function to be called with named parameters, giving us the flexibility to put the arguments in no specific order:
 
 ```ruby
 func divide(a, b) {

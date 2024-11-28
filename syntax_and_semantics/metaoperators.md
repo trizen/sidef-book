@@ -4,7 +4,7 @@ In Sidef we have an interesting set of metaoperators, which provide an easier wa
 
 ### Unroll operator
 
-It's a nice metaoperator borrowed from Perl 6, which unrolls two arrays and applies the operator on each two element-wise objects, creating a new array with the results. The operator can be a method or any other valid operator and must be enclosed between `» «` or `>> <<`.
+It's a nice metaoperator borrowed from Raku, which unrolls two arrays and applies the operator on each two element-wise objects, creating a new array with the results. The operator can be a method or any other valid operator and must be enclosed between `» «` or `>> <<`.
 
 ```ruby
 [1,2,3] »+« [4,5,6]           # [1+4, 2+5, 3+6]

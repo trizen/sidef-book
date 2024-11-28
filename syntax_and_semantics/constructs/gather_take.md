@@ -1,6 +1,6 @@
 # gather/take
 
-The `gather/take` construct  was borrowed from Perl 6 and it's an interesting one.
+The `gather/take` construct  was borrowed from Raku and it's an interesting one.
 
 ```ruby
 var arr = gather {

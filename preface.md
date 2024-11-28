@@ -10,7 +10,7 @@ About a week later, in March 30, 2013, we started the Sidef programming language
 
 As the time was passing by, we eventually started moving from AST interpretation towards code generation. The language now features a full code generator that walks the AST of a Sidef program, generating equivalent Perl 5 code. This method of execution made the implementation several times faster and also allowed the addition of more language constructs.
 
-At the time of writing this book, Sidef is a little bit more than 5 years old and it vigorously continues to evolve with each monthly (or so) release, taking the best from other modern languages, like Perl 6, Julia and Ruby.
+At the time of writing this book, Sidef is a little bit more than 5 years old and it vigorously continues to evolve with each monthly (or so) release, taking the best from other modern languages, like Raku, Julia and Ruby.
 
 In the second half of the book, the reader can find a large collection of programming tasks implemented in Sidef, illustrating various ways for how the language can be used.
 
